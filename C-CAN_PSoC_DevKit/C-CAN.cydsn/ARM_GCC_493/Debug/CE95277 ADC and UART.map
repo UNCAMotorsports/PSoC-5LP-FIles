@@ -1,0 +1,1926 @@
+Archive member included because of file (symbol)
+
+.\ARM_GCC_493\Debug\CE95277 ADC and UART.a(cyfitter_cfg.o)
+                              .\ARM_GCC_493\Debug\Cm3Start.o (cyfitter_cfg)
+.\ARM_GCC_493\Debug\CE95277 ADC and UART.a(UART_1.o)
+                              .\ARM_GCC_493\Debug\main.o (UART_1_Start)
+.\ARM_GCC_493\Debug\CE95277 ADC and UART.a(UART_1_IntClock.o)
+                              .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(UART_1.o) (UART_1_IntClock_Start)
+.\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CyBootAsmGnu.o)
+                              .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(cyfitter_cfg.o) (CyDelayCycles)
+.\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CyLib.o)
+                              .\ARM_GCC_493\Debug\Cm3Start.o (CyHalt)
+.\ARM_GCC_493\Debug\CE95277 ADC and UART.a(cyPm.o)
+                              .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CyLib.o) (CyPmReadStatus)
+.\ARM_GCC_493\Debug\CE95277 ADC and UART.a(ADC_SAR_1.o)
+                              .\ARM_GCC_493\Debug\main.o (ADC_SAR_1_Start)
+.\ARM_GCC_493\Debug\CE95277 ADC and UART.a(ADC_SAR_1_INT.o)
+                              .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(ADC_SAR_1.o) (ADC_SAR_1_ISR)
+.\ARM_GCC_493\Debug\CE95277 ADC and UART.a(ADC_SAR_1_theACLK.o)
+                              .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(ADC_SAR_1.o) (ADC_SAR_1_theACLK_SetModeRegister)
+.\ARM_GCC_493\Debug\CE95277 ADC and UART.a(AMux_1.o)
+                              .\ARM_GCC_493\Debug\main.o (AMux_1_Start)
+.\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CAN_1.o)
+                              .\ARM_GCC_493\Debug\main.o (CAN_1_Start)
+.\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CAN_1_INT.o)
+                              .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CAN_1.o) (CAN_1_ISR)
+.\ARM_GCC_493\Debug\CE95277 ADC and UART.a(Encoder_Count.o)
+                              .\ARM_GCC_493\Debug\main.o (Encoder_Count_Start)
+.\ARM_GCC_493\Debug\CE95277 ADC and UART.a(Time_Count.o)
+                              .\ARM_GCC_493\Debug\main.o (Time_Count_Start)
+.\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CAN_TIMER.o)
+                              .\ARM_GCC_493\Debug\main.o (CAN_TIMER_Start)
+.\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CAN_ISR.o)
+                              .\ARM_GCC_493\Debug\main.o (CAN_ISR_Start)
+.\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CyFlash.o)
+                              .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(cyPm.o) (CyFlash_SetWaitCycles)
+.\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CySpc.o)
+                              .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CyFlash.o) (CySpcStart)
+c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libgcc.a(_arm_addsubsf3.o)
+                              .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(ADC_SAR_1.o) (__aeabi_i2f)
+c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libgcc.a(_arm_muldivsf3.o)
+                              .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(ADC_SAR_1.o) (__aeabi_fmul)
+c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libgcc.a(_aeabi_ldivmod.o)
+                              .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(ADC_SAR_1.o) (__aeabi_ldivmod)
+c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libgcc.a(bpabi.o)
+                              c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libgcc.a(_aeabi_ldivmod.o) (__gnu_ldivmod_helper)
+c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libgcc.a(_dvmd_tls.o)
+                              c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libgcc.a(_aeabi_ldivmod.o) (__aeabi_ldiv0)
+c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libgcc.a(_divdi3.o)
+                              c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libgcc.a(bpabi.o) (__divdi3)
+c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libgcc.a(_udivdi3.o)
+                              c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libgcc.a(bpabi.o) (__udivdi3)
+c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-errno.o)
+                              .\ARM_GCC_493\Debug\Cm3Start.o (__errno)
+c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-exit.o)
+                              c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/crt0.o (exit)
+c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-impure.o)
+                              c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-exit.o) (_global_impure_ptr)
+c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-init.o)
+                              c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/crt0.o (__libc_init_array)
+c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memcpy.o)
+                              .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(cyfitter_cfg.o) (memcpy)
+c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memset.o)
+                              c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/crt0.o (memset)
+c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-sprintf.o)
+                              .\ARM_GCC_493\Debug\main.o (sprintf)
+c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-svfprintf.o)
+                              c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-sprintf.o) (_svfprintf_r)
+c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-vfprintf_i.o)
+                              c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-svfprintf.o) (_printf_i)
+c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memchr.o)
+                              c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-svfprintf.o) (memchr)
+c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memmove.o)
+                              c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-svfprintf.o) (memmove)
+c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-freer.o)
+                              c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-svfprintf.o) (_free_r)
+c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-mallocr.o)
+                              c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-svfprintf.o) (_malloc_r)
+c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-reallocr.o)
+                              c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-svfprintf.o) (_realloc_r)
+c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-sbrkr.o)
+                              c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-mallocr.o) (_sbrk_r)
+c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-msizer.o)
+                              c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-reallocr.o) (_malloc_usable_size_r)
+c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-reent.o)
+                              c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-sbrkr.o) (errno)
+
+Allocating common symbols
+Common symbol       size              file
+
+ADC_SAR_1_countsPerVolt
+                    0x2               .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(ADC_SAR_1.o)
+ADC_SAR_1_shift     0x2               .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(ADC_SAR_1.o)
+bIndex              0x1               .\ARM_GCC_493\Debug\main.o
+errno               0x4               c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-reent.o)
+ADC_SAR_1_countsPer10Volt
+                    0x4               .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(ADC_SAR_1.o)
+TxMessage1          0x8               .\ARM_GCC_493\Debug\main.o
+RxMessage1          0x8               .\ARM_GCC_493\Debug\main.o
+RxFlag1             0x1               .\ARM_GCC_493\Debug\main.o
+dieTemperature      0x2               .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CyFlash.o)
+ADC_SAR_1_offset    0x2               .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(ADC_SAR_1.o)
+RXDLC1              0x1               .\ARM_GCC_493\Debug\main.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+rom              0x00000000         0x00040000         xr
+ram              0x1fff8000         0x00010000         xrw
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crti.o
+LOAD c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crtbegin.o
+LOAD c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/crt0.o
+START GROUP
+LOAD .\ARM_GCC_493\Debug\main.o
+LOAD .\ARM_GCC_493\Debug\cymetadata.o
+LOAD .\ARM_GCC_493\Debug\Cm3Start.o
+LOAD .\ARM_GCC_493\Debug\CE95277 ADC and UART.a
+LOAD C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CortexM3\ARM_GCC_493\Debug\CyComponentLibrary.a
+END GROUP
+START GROUP
+LOAD c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libgcc.a
+LOAD c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a
+LOAD c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libc_nano.a
+END GROUP
+START GROUP
+LOAD c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libgcc.a
+LOAD c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libc_nano.a
+END GROUP
+LOAD c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crtend.o
+LOAD c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crtn.o
+START GROUP
+LOAD c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libgcc.a
+LOAD c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libc.a
+LOAD c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libnosys.a
+END GROUP
+                0x00000000                CY_APPL_ORIGIN = 0x0
+                0x00000100                CY_FLASH_ROW_SIZE = 0x100
+                0x00000020                CY_ECC_ROW_SIZE = 0x20
+                0x00000000                CY_EE_IN_BTLDR = 0x0
+                0x00000000                CY_APPL_LOADABLE = 0x0
+                0x00000800                CY_EE_SIZE = 0x800
+                0x00000001                CY_APPL_NUM = 0x1
+                0x00000001                CY_APPL_MAX = 0x1
+                0x00000040                CY_METADATA_SIZE = 0x40
+                0x00000000                CY_APPL_LOADABLE = 0x0
+                0x00000000                CY_CHECKSUM_EXCLUDE_SIZE = ALIGN (0x0, CY_FLASH_ROW_SIZE)
+                0x1fff8260                PROVIDE (__cy_heap_start, _end)
+                0x00000001                PROVIDE (__cy_region_num, ((__cy_regions_end - __cy_regions) / 0x10))
+                0x20008000                PROVIDE (__cy_stack, (ORIGIN (ram) + 0x10000))
+                0x20007800                PROVIDE (__cy_heap_end, (__cy_stack - 0x800))
+
+.cybootloader   0x00000000        0x0
+ *(.cybootloader)
+                0x00000000                appl1_start = CY_APPL_ORIGIN?CY_APPL_ORIGIN:ALIGN (CY_FLASH_ROW_SIZE)
+                0x0001ff00                appl2_start = (appl1_start + ALIGN ((((0x40000 - appl1_start) - (0x2 * CY_FLASH_ROW_SIZE)) / 0x2), CY_FLASH_ROW_SIZE))
+                0x00000000                appl_start = (CY_APPL_NUM == 0x1)?appl1_start:appl2_start
+                0x00000000                ecc_offset = ((appl_start / CY_FLASH_ROW_SIZE) * CY_ECC_ROW_SIZE)
+                0x00000000                ee_offset = (CY_APPL_LOADABLE && ! (CY_EE_IN_BTLDR))?((CY_EE_SIZE / CY_APPL_MAX) * (CY_APPL_NUM - 0x1)):0x0
+                0x00000800                ee_size = (CY_APPL_LOADABLE && ! (CY_EE_IN_BTLDR))?(CY_EE_SIZE / CY_APPL_MAX):CY_EE_SIZE
+                0x00000000                PROVIDE (CY_ECC_OFFSET, ecc_offset)
+
+.text           0x00000000     0x5ec4
+ CREATE_OBJECT_SYMBOLS
+                0x00000000                PROVIDE (__cy_interrupt_vector, RomVectors)
+ *(.romvectors)
+ .romvectors    0x00000000       0x10 .\ARM_GCC_493\Debug\Cm3Start.o
+                0x00000000                RomVectors
+                0x00000001                ASSERT ((. != __cy_interrupt_vector), No interrupt vector)
+                0x00000001                ASSERT (CY_APPL_ORIGIN?(SIZEOF (.cybootloader) <= CY_APPL_ORIGIN):0x1, Wrong image location)
+                0x00000010                PROVIDE (__cy_reset, Reset)
+ *(.text.Reset)
+ .text.Reset    0x00000010       0x18 .\ARM_GCC_493\Debug\Cm3Start.o
+                0x00000010                Reset
+                0x00000001                ASSERT ((. != __cy_reset), No reset code)
+ *(.dma_init)
+                0x00000001                ASSERT ((((appl_start + .) <= 0x10000) || 0x1), DMA Init must be within the first 64k of flash)
+ *(.text .text.* .gnu.linkonce.t.*)
+ .text          0x00000028        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crti.o
+ .text          0x00000028       0x5c c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crtbegin.o
+ .text          0x00000084       0x74 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/crt0.o
+                0x00000084                _start
+                0x00000084                _mainCRTStartup
+ .text          0x000000f8        0x0 .\ARM_GCC_493\Debug\main.o
+ .text.CAN_1_SendMsg
+                0x000000f8      0x180 .\ARM_GCC_493\Debug\main.o
+                0x000000f8                CAN_1_SendMsg
+ .text.CAN_1_TxCancel
+                0x00000278       0x1c .\ARM_GCC_493\Debug\main.o
+                0x00000278                CAN_1_TxCancel
+ .text.CAN_1_SendMsg0
+                0x00000294       0x64 .\ARM_GCC_493\Debug\main.o
+                0x00000294                CAN_1_SendMsg0
+ .text.CAN_1_ReceiveMsg
+                0x000002f8       0x18 .\ARM_GCC_493\Debug\main.o
+                0x000002f8                CAN_1_ReceiveMsg
+ .text.startup.main
+                0x00000310      0x208 .\ARM_GCC_493\Debug\main.o
+                0x00000310                main
+ .text.GetSample
+                0x00000518       0x60 .\ARM_GCC_493\Debug\main.o
+                0x00000518                GetSample
+ .text          0x00000578        0x0 .\ARM_GCC_493\Debug\cymetadata.o
+ .text          0x00000578        0x0 .\ARM_GCC_493\Debug\Cm3Start.o
+ .text.IntDefaultHandler
+                0x00000578        0x4 .\ARM_GCC_493\Debug\Cm3Start.o
+                0x00000578                IntDefaultHandler
+ .text._exit    0x0000057c        0xc .\ARM_GCC_493\Debug\Cm3Start.o
+                0x0000057c                _exit
+ .text._sbrk    0x00000588       0x30 .\ARM_GCC_493\Debug\Cm3Start.o
+                0x00000588                _sbrk
+ .text.Start_c  0x000005b8       0x58 .\ARM_GCC_493\Debug\Cm3Start.o
+                0x000005b8                Start_c
+ .text.startup.initialize_psoc
+                0x00000610       0x74 .\ARM_GCC_493\Debug\Cm3Start.o
+                0x00000610                initialize_psoc
+ .text          0x00000684        0x0 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(cyfitter_cfg.o)
+ .text.SetAnalogRoutingPumps
+                0x00000684       0x20 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(cyfitter_cfg.o)
+                0x00000684                SetAnalogRoutingPumps
+ .text.AMux_1_Set
+                0x000006a4       0x58 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(cyfitter_cfg.o)
+                0x000006a4                AMux_1_Set
+ .text.AMux_1_Unset
+                0x000006fc       0x60 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(cyfitter_cfg.o)
+                0x000006fc                AMux_1_Unset
+ .text.cyfitter_cfg
+                0x0000075c      0x2e4 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(cyfitter_cfg.o)
+                0x0000075c                cyfitter_cfg
+ .text          0x00000a40        0x0 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(UART_1.o)
+ .text.UART_1_Start
+                0x00000a40       0x8c .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(UART_1.o)
+                0x00000a40                UART_1_Start
+ .text.UART_1_Init
+                0x00000acc       0x3c .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(UART_1.o)
+                0x00000acc                UART_1_Init
+ .text.UART_1_Enable
+                0x00000b08       0x40 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(UART_1.o)
+                0x00000b08                UART_1_Enable
+ .text.UART_1_Stop
+                0x00000b48       0x40 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(UART_1.o)
+                0x00000b48                UART_1_Stop
+ .text.UART_1_ReadControlRegister
+                0x00000b88        0x4 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(UART_1.o)
+                0x00000b88                UART_1_ReadControlRegister
+ .text.UART_1_WriteControlRegister
+                0x00000b8c        0x4 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(UART_1.o)
+                0x00000b8c                UART_1_WriteControlRegister
+ .text.UART_1_SetRxInterruptMode
+                0x00000b90        0xc .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(UART_1.o)
+                0x00000b90                UART_1_SetRxInterruptMode
+ .text.UART_1_ReadRxData
+                0x00000b9c        0xc .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(UART_1.o)
+                0x00000b9c                UART_1_ReadRxData
+ .text.UART_1_ReadRxStatus
+                0x00000ba8       0x10 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(UART_1.o)
+                0x00000ba8                UART_1_ReadRxStatus
+ .text.UART_1_GetChar
+                0x00000bb8       0x28 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(UART_1.o)
+                0x00000bb8                UART_1_GetChar
+ .text.UART_1_GetByte
+                0x00000be0       0x1c .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(UART_1.o)
+                0x00000be0                UART_1_GetByte
+ .text.UART_1_GetRxBufferSize
+                0x00000bfc       0x10 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(UART_1.o)
+                0x00000bfc                UART_1_GetRxBufferSize
+ .text.UART_1_ClearRxBuffer
+                0x00000c0c       0x24 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(UART_1.o)
+                0x00000c0c                UART_1_ClearRxBuffer
+ .text.UART_1_SetRxAddressMode
+                0x00000c30        0x4 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(UART_1.o)
+                0x00000c30                UART_1_SetRxAddressMode
+ .text.UART_1_SetRxAddress1
+                0x00000c34        0xc .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(UART_1.o)
+                0x00000c34                UART_1_SetRxAddress1
+ .text.UART_1_SetRxAddress2
+                0x00000c40        0xc .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(UART_1.o)
+                0x00000c40                UART_1_SetRxAddress2
+ .text.UART_1_SetTxInterruptMode
+                0x00000c4c        0xc .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(UART_1.o)
+                0x00000c4c                UART_1_SetTxInterruptMode
+ .text.UART_1_WriteTxData
+                0x00000c58       0x14 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(UART_1.o)
+                0x00000c58                UART_1_WriteTxData
+ .text.UART_1_ReadTxStatus
+                0x00000c6c        0xc .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(UART_1.o)
+                0x00000c6c                UART_1_ReadTxStatus
+ .text.UART_1_PutChar
+                0x00000c78       0x18 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(UART_1.o)
+                0x00000c78                UART_1_PutChar
+ .text.UART_1_PutString
+                0x00000c90       0x34 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(UART_1.o)
+                0x00000c90                UART_1_PutString
+ .text.UART_1_PutArray
+                0x00000cc4       0x38 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(UART_1.o)
+                0x00000cc4                UART_1_PutArray
+ .text.UART_1_PutCRLF
+                0x00000cfc       0x3c .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(UART_1.o)
+                0x00000cfc                UART_1_PutCRLF
+ .text.UART_1_GetTxBufferSize
+                0x00000d38       0x1c .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(UART_1.o)
+                0x00000d38                UART_1_GetTxBufferSize
+ .text.UART_1_ClearTxBuffer
+                0x00000d54       0x24 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(UART_1.o)
+                0x00000d54                UART_1_ClearTxBuffer
+ .text.UART_1_SendBreak
+                0x00000d78       0x5c .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(UART_1.o)
+                0x00000d78                UART_1_SendBreak
+ .text.UART_1_SetTxAddressMode
+                0x00000dd4        0x4 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(UART_1.o)
+                0x00000dd4                UART_1_SetTxAddressMode
+ .text          0x00000dd8        0x0 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(UART_1_IntClock.o)
+ .text.UART_1_IntClock_Start
+                0x00000dd8       0x20 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(UART_1_IntClock.o)
+                0x00000dd8                UART_1_IntClock_Start
+ .text.UART_1_IntClock_Stop
+                0x00000df8       0x20 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(UART_1_IntClock.o)
+                0x00000df8                UART_1_IntClock_Stop
+ .text.UART_1_IntClock_StopBlock
+                0x00000e18       0x78 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(UART_1_IntClock.o)
+                0x00000e18                UART_1_IntClock_StopBlock
+ .text.UART_1_IntClock_StandbyPower
+                0x00000e90       0x1c .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(UART_1_IntClock.o)
+                0x00000e90                UART_1_IntClock_StandbyPower
+ .text.UART_1_IntClock_SetDividerRegister
+                0x00000eac       0xe8 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(UART_1_IntClock.o)
+                0x00000eac                UART_1_IntClock_SetDividerRegister
+ .text.UART_1_IntClock_GetDividerRegister
+                0x00000f94        0xc .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(UART_1_IntClock.o)
+                0x00000f94                UART_1_IntClock_GetDividerRegister
+ .text.UART_1_IntClock_SetModeRegister
+                0x00000fa0       0x14 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(UART_1_IntClock.o)
+                0x00000fa0                UART_1_IntClock_SetModeRegister
+ .text.UART_1_IntClock_ClearModeRegister
+                0x00000fb4       0x14 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(UART_1_IntClock.o)
+                0x00000fb4                UART_1_IntClock_ClearModeRegister
+ .text.UART_1_IntClock_GetModeRegister
+                0x00000fc8       0x10 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(UART_1_IntClock.o)
+                0x00000fc8                UART_1_IntClock_GetModeRegister
+ .text.UART_1_IntClock_SetSourceRegister
+                0x00000fd8       0x58 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(UART_1_IntClock.o)
+                0x00000fd8                UART_1_IntClock_SetSourceRegister
+ .text.UART_1_IntClock_GetSourceRegister
+                0x00001030       0x10 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(UART_1_IntClock.o)
+                0x00001030                UART_1_IntClock_GetSourceRegister
+ .text          0x00001040       0x58 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CyBootAsmGnu.o)
+                0x00001040                CyDelayCycles
+                0x0000107e                CyEnterCriticalSection
+                0x00001086                CyExitCriticalSection
+ .text          0x00001098        0x0 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CyLib.o)
+ .text.CyIMO_SetTrimValue
+                0x00001098       0xf4 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CyLib.o)
+ .text.CySysTickServiceCallbacks
+                0x0000118c       0x28 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CyLib.o)
+ .text.CyPLL_OUT_Start
+                0x000011b4       0x78 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CyLib.o)
+                0x000011b4                CyPLL_OUT_Start
+ .text.CyPLL_OUT_Stop
+                0x0000122c       0x10 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CyLib.o)
+                0x0000122c                CyPLL_OUT_Stop
+ .text.CyPLL_OUT_SetPQ
+                0x0000123c       0x50 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CyLib.o)
+                0x0000123c                CyPLL_OUT_SetPQ
+ .text.CyPLL_OUT_SetSource
+                0x0000128c       0x28 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CyLib.o)
+                0x0000128c                CyPLL_OUT_SetSource
+ .text.CyIMO_Start
+                0x000012b4       0x6c .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CyLib.o)
+                0x000012b4                CyIMO_Start
+ .text.CyIMO_Stop
+                0x00001320       0x20 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CyLib.o)
+                0x00001320                CyIMO_Stop
+ .text.CyIMO_SetFreq
+                0x00001340      0x130 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CyLib.o)
+                0x00001340                CyIMO_SetFreq
+ .text.CyIMO_SetSource
+                0x00001470       0x50 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CyLib.o)
+                0x00001470                CyIMO_SetSource
+ .text.CyIMO_EnableDoubler
+                0x000014c0       0x10 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CyLib.o)
+                0x000014c0                CyIMO_EnableDoubler
+ .text.CyIMO_DisableDoubler
+                0x000014d0       0x10 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CyLib.o)
+                0x000014d0                CyIMO_DisableDoubler
+ .text.CyMasterClk_SetSource
+                0x000014e0       0x18 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CyLib.o)
+                0x000014e0                CyMasterClk_SetSource
+ .text.CyMasterClk_SetDivider
+                0x000014f8        0xc .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CyLib.o)
+                0x000014f8                CyMasterClk_SetDivider
+ .text.CyBusClk_SetDivider
+                0x00001504      0x110 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CyLib.o)
+                0x00001504                CyBusClk_SetDivider
+ .text.CyUsbClk_SetSource
+                0x00001614       0x18 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CyLib.o)
+                0x00001614                CyUsbClk_SetSource
+ .text.CyILO_Start1K
+                0x0000162c       0x10 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CyLib.o)
+                0x0000162c                CyILO_Start1K
+ .text.CyILO_Stop1K
+                0x0000163c       0x10 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CyLib.o)
+                0x0000163c                CyILO_Stop1K
+ .text.CyILO_Start100K
+                0x0000164c       0x10 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CyLib.o)
+                0x0000164c                CyILO_Start100K
+ .text.CyILO_Stop100K
+                0x0000165c       0x10 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CyLib.o)
+                0x0000165c                CyILO_Stop100K
+ .text.CyILO_Enable33K
+                0x0000166c       0x10 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CyLib.o)
+                0x0000166c                CyILO_Enable33K
+ .text.CyILO_Disable33K
+                0x0000167c       0x10 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CyLib.o)
+                0x0000167c                CyILO_Disable33K
+ .text.CyILO_SetSource
+                0x0000168c       0x18 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CyLib.o)
+                0x0000168c                CyILO_SetSource
+ .text.CyILO_SetPowerMode
+                0x000016a4       0x24 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CyLib.o)
+                0x000016a4                CyILO_SetPowerMode
+ .text.CyXTAL_32KHZ_Start
+                0x000016c8       0xb4 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CyLib.o)
+                0x000016c8                CyXTAL_32KHZ_Start
+ .text.CyXTAL_32KHZ_Stop
+                0x0000177c       0x3c .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CyLib.o)
+                0x0000177c                CyXTAL_32KHZ_Stop
+ .text.CyXTAL_32KHZ_ReadStatus
+                0x000017b8       0x10 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CyLib.o)
+                0x000017b8                CyXTAL_32KHZ_ReadStatus
+ .text.CyXTAL_32KHZ_SetPowerMode
+                0x000017c8       0x90 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CyLib.o)
+                0x000017c8                CyXTAL_32KHZ_SetPowerMode
+ .text.CyXTAL_Start
+                0x00001858       0xac .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CyLib.o)
+                0x00001858                CyXTAL_Start
+ .text.CyXTAL_Stop
+                0x00001904       0x10 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CyLib.o)
+                0x00001904                CyXTAL_Stop
+ .text.CyXTAL_EnableErrStatus
+                0x00001914       0x10 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CyLib.o)
+                0x00001914                CyXTAL_EnableErrStatus
+ .text.CyXTAL_DisableErrStatus
+                0x00001924       0x10 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CyLib.o)
+                0x00001924                CyXTAL_DisableErrStatus
+ .text.CyXTAL_ReadStatus
+                0x00001934        0xc .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CyLib.o)
+                0x00001934                CyXTAL_ReadStatus
+ .text.CyXTAL_EnableFaultRecovery
+                0x00001940       0x10 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CyLib.o)
+                0x00001940                CyXTAL_EnableFaultRecovery
+ .text.CyXTAL_DisableFaultRecovery
+                0x00001950       0x10 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CyLib.o)
+                0x00001950                CyXTAL_DisableFaultRecovery
+ .text.CyXTAL_SetStartup
+                0x00001960       0x18 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CyLib.o)
+                0x00001960                CyXTAL_SetStartup
+ .text.CyXTAL_SetFbVoltage
+                0x00001978       0x18 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CyLib.o)
+                0x00001978                CyXTAL_SetFbVoltage
+ .text.CyXTAL_SetWdVoltage
+                0x00001990       0x18 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CyLib.o)
+                0x00001990                CyXTAL_SetWdVoltage
+ .text.CyHalt   0x000019a8        0x4 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CyLib.o)
+                0x000019a8                CyHalt
+ .text.CySoftwareReset
+                0x000019ac       0x10 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CyLib.o)
+                0x000019ac                CySoftwareReset
+ .text.CyDelay  0x000019bc       0x48 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CyLib.o)
+                0x000019bc                CyDelay
+ .text.CyDelayUs
+                0x00001a04       0x10 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CyLib.o)
+                0x00001a04                CyDelayUs
+ .text.CyDelayFreq
+                0x00001a14       0x58 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CyLib.o)
+                0x00001a14                CyDelayFreq
+ .text.CyWdtStart
+                0x00001a6c       0x40 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CyLib.o)
+                0x00001a6c                CyWdtStart
+ .text.CyWdtClear
+                0x00001aac        0xc .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CyLib.o)
+                0x00001aac                CyWdtClear
+ .text.CyVdLvDigitEnable
+                0x00001ab8       0xb0 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CyLib.o)
+                0x00001ab8                CyVdLvDigitEnable
+ .text.CyVdLvAnalogEnable
+                0x00001b68       0xac .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CyLib.o)
+                0x00001b68                CyVdLvAnalogEnable
+ .text.CyVdLvDigitDisable
+                0x00001c14       0x58 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CyLib.o)
+                0x00001c14                CyVdLvDigitDisable
+ .text.CyVdLvAnalogDisable
+                0x00001c6c       0x44 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CyLib.o)
+                0x00001c6c                CyVdLvAnalogDisable
+ .text.CyVdHvAnalogEnable
+                0x00001cb0       0x78 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CyLib.o)
+                0x00001cb0                CyVdHvAnalogEnable
+ .text.CyVdHvAnalogDisable
+                0x00001d28       0x38 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CyLib.o)
+                0x00001d28                CyVdHvAnalogDisable
+ .text.CyVdStickyStatus
+                0x00001d60       0x2c .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CyLib.o)
+                0x00001d60                CyVdStickyStatus
+ .text.CyVdRealTimeStatus
+                0x00001d8c       0x1c .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CyLib.o)
+                0x00001d8c                CyVdRealTimeStatus
+ .text.CyDisableInts
+                0x00001da8       0x1c .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CyLib.o)
+                0x00001da8                CyDisableInts
+ .text.CyEnableInts
+                0x00001dc4       0x18 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CyLib.o)
+                0x00001dc4                CyEnableInts
+ .text.CyFlushCache
+                0x00001ddc       0x44 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CyLib.o)
+                0x00001ddc                CyFlushCache
+ .text.CyIntSetSysVector
+                0x00001e20       0x1c .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CyLib.o)
+                0x00001e20                CyIntSetSysVector
+ .text.CyIntGetSysVector
+                0x00001e3c       0x18 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CyLib.o)
+                0x00001e3c                CyIntGetSysVector
+ .text.CyIntSetVector
+                0x00001e54       0x20 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CyLib.o)
+                0x00001e54                CyIntSetVector
+ .text.CyIntGetVector
+                0x00001e74       0x1c .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CyLib.o)
+                0x00001e74                CyIntGetVector
+ .text.CyIntSetPriority
+                0x00001e90       0x20 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CyLib.o)
+                0x00001e90                CyIntSetPriority
+ .text.CyIntGetPriority
+                0x00001eb0       0x18 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CyLib.o)
+                0x00001eb0                CyIntGetPriority
+ .text.CyIntGetState
+                0x00001ec8       0x1c .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CyLib.o)
+                0x00001ec8                CyIntGetState
+ .text.CySysTickStart
+                0x00001ee4       0x8c .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CyLib.o)
+                0x00001ee4                CySysTickStart
+ .text.CySysTickInit
+                0x00001f70       0x70 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CyLib.o)
+                0x00001f70                CySysTickInit
+ .text.CySysTickEnable
+                0x00001fe0       0x18 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CyLib.o)
+                0x00001fe0                CySysTickEnable
+ .text.CySysTickStop
+                0x00001ff8       0x10 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CyLib.o)
+                0x00001ff8                CySysTickStop
+ .text.CySysTickEnableInterrupt
+                0x00002008       0x10 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CyLib.o)
+                0x00002008                CySysTickEnableInterrupt
+ .text.CySysTickDisableInterrupt
+                0x00002018       0x10 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CyLib.o)
+                0x00002018                CySysTickDisableInterrupt
+ .text.CySysTickSetReload
+                0x00002028       0x10 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CyLib.o)
+                0x00002028                CySysTickSetReload
+ .text.CySysTickGetReload
+                0x00002038       0x10 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CyLib.o)
+                0x00002038                CySysTickGetReload
+ .text.CySysTickGetValue
+                0x00002048       0x10 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CyLib.o)
+                0x00002048                CySysTickGetValue
+ .text.CySysTickSetClockSource
+                0x00002058       0x18 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CyLib.o)
+                0x00002058                CySysTickSetClockSource
+ .text.CySysTickGetCountFlag
+                0x00002070       0x10 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CyLib.o)
+                0x00002070                CySysTickGetCountFlag
+ .text.CySysTickClear
+                0x00002080        0xc .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CyLib.o)
+                0x00002080                CySysTickClear
+ .text.CySysTickSetCallback
+                0x0000208c       0x14 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CyLib.o)
+                0x0000208c                CySysTickSetCallback
+ .text.CySysTickGetCallback
+                0x000020a0        0xc .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CyLib.o)
+                0x000020a0                CySysTickGetCallback
+ .text.CyGetUniqueId
+                0x000020ac       0x68 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CyLib.o)
+                0x000020ac                CyGetUniqueId
+ .text          0x00002114        0x0 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(cyPm.o)
+ .text.CyPmHibSlpSaveSet
+                0x00002114      0x1c8 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(cyPm.o)
+ .text.CyPmHibSlpRestore
+                0x000022dc      0x140 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(cyPm.o)
+ .text.CyPmSaveClocks
+                0x0000241c      0x1e4 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(cyPm.o)
+                0x0000241c                CyPmSaveClocks
+ .text.CyPmRestoreClocks
+                0x00002600      0x240 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(cyPm.o)
+                0x00002600                CyPmRestoreClocks
+ .text.CyPmAltAct
+                0x00002840       0x78 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(cyPm.o)
+                0x00002840                CyPmAltAct
+ .text.CyPmSleep
+                0x000028b8       0xf8 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(cyPm.o)
+                0x000028b8                CyPmSleep
+ .text.CyPmHibernateEx
+                0x000029b0      0x28c .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(cyPm.o)
+                0x000029b0                CyPmHibernateEx
+ .text.CyPmHibernate
+                0x00002c3c        0x8 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(cyPm.o)
+                0x00002c3c                CyPmHibernate
+ .text.CyPmReadStatus
+                0x00002c44       0x30 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(cyPm.o)
+                0x00002c44                CyPmReadStatus
+ .text.CyPmCtwSetInterval
+                0x00002c74       0x54 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(cyPm.o)
+                0x00002c74                CyPmCtwSetInterval
+ .text.CyPmOppsSet
+                0x00002cc8       0x2c .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(cyPm.o)
+                0x00002cc8                CyPmOppsSet
+ .text.CyPmFtwSetInterval
+                0x00002cf4       0x54 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(cyPm.o)
+                0x00002cf4                CyPmFtwSetInterval
+ .text          0x00002d48        0x0 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(ADC_SAR_1.o)
+ .text.ADC_SAR_1_Start
+                0x00002d48      0x114 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(ADC_SAR_1.o)
+                0x00002d48                ADC_SAR_1_Start
+ .text.ADC_SAR_1_Init
+                0x00002e5c       0x64 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(ADC_SAR_1.o)
+                0x00002e5c                ADC_SAR_1_Init
+ .text.ADC_SAR_1_Enable
+                0x00002ec0       0xa0 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(ADC_SAR_1.o)
+                0x00002ec0                ADC_SAR_1_Enable
+ .text.ADC_SAR_1_Stop
+                0x00002f60       0x50 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(ADC_SAR_1.o)
+                0x00002f60                ADC_SAR_1_Stop
+ .text.ADC_SAR_1_SetPower
+                0x00002fb0       0x18 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(ADC_SAR_1.o)
+                0x00002fb0                ADC_SAR_1_SetPower
+ .text.ADC_SAR_1_SetResolution
+                0x00002fc8       0x78 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(ADC_SAR_1.o)
+                0x00002fc8                ADC_SAR_1_SetResolution
+ .text.ADC_SAR_1_StartConvert
+                0x00003040       0x18 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(ADC_SAR_1.o)
+                0x00003040                ADC_SAR_1_StartConvert
+ .text.ADC_SAR_1_StopConvert
+                0x00003058       0x18 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(ADC_SAR_1.o)
+                0x00003058                ADC_SAR_1_StopConvert
+ .text.ADC_SAR_1_IsEndConversion
+                0x00003070       0x2c .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(ADC_SAR_1.o)
+                0x00003070                ADC_SAR_1_IsEndConversion
+ .text.ADC_SAR_1_GetResult8
+                0x0000309c       0x18 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(ADC_SAR_1.o)
+                0x0000309c                ADC_SAR_1_GetResult8
+ .text.ADC_SAR_1_GetResult16
+                0x000030b4       0x18 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(ADC_SAR_1.o)
+                0x000030b4                ADC_SAR_1_GetResult16
+ .text.ADC_SAR_1_SetOffset
+                0x000030cc        0xc .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(ADC_SAR_1.o)
+                0x000030cc                ADC_SAR_1_SetOffset
+ .text.ADC_SAR_1_SetGain
+                0x000030d8       0x10 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(ADC_SAR_1.o)
+                0x000030d8                ADC_SAR_1_SetGain
+ .text.ADC_SAR_1_SetScaledGain
+                0x000030e8        0xc .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(ADC_SAR_1.o)
+                0x000030e8                ADC_SAR_1_SetScaledGain
+ .text.ADC_SAR_1_CountsTo_mVolts
+                0x000030f4       0x4c .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(ADC_SAR_1.o)
+                0x000030f4                ADC_SAR_1_CountsTo_mVolts
+ .text.ADC_SAR_1_CountsTo_uVolts
+                0x00003140       0x48 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(ADC_SAR_1.o)
+                0x00003140                ADC_SAR_1_CountsTo_uVolts
+ .text.ADC_SAR_1_CountsTo_Volts
+                0x00003188       0x50 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(ADC_SAR_1.o)
+                0x00003188                ADC_SAR_1_CountsTo_Volts
+ .text          0x000031d8        0x0 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(ADC_SAR_1_INT.o)
+ .text.ADC_SAR_1_ISR
+                0x000031d8        0x4 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(ADC_SAR_1_INT.o)
+                0x000031d8                ADC_SAR_1_ISR
+ .text          0x000031dc        0x0 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(ADC_SAR_1_theACLK.o)
+ .text.ADC_SAR_1_theACLK_Start
+                0x000031dc       0x20 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(ADC_SAR_1_theACLK.o)
+                0x000031dc                ADC_SAR_1_theACLK_Start
+ .text.ADC_SAR_1_theACLK_Stop
+                0x000031fc       0x20 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(ADC_SAR_1_theACLK.o)
+                0x000031fc                ADC_SAR_1_theACLK_Stop
+ .text.ADC_SAR_1_theACLK_StopBlock
+                0x0000321c       0x78 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(ADC_SAR_1_theACLK.o)
+                0x0000321c                ADC_SAR_1_theACLK_StopBlock
+ .text.ADC_SAR_1_theACLK_StandbyPower
+                0x00003294       0x1c .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(ADC_SAR_1_theACLK.o)
+                0x00003294                ADC_SAR_1_theACLK_StandbyPower
+ .text.ADC_SAR_1_theACLK_SetDividerRegister
+                0x000032b0       0xe8 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(ADC_SAR_1_theACLK.o)
+                0x000032b0                ADC_SAR_1_theACLK_SetDividerRegister
+ .text.ADC_SAR_1_theACLK_GetDividerRegister
+                0x00003398        0xc .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(ADC_SAR_1_theACLK.o)
+                0x00003398                ADC_SAR_1_theACLK_GetDividerRegister
+ .text.ADC_SAR_1_theACLK_SetModeRegister
+                0x000033a4       0x14 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(ADC_SAR_1_theACLK.o)
+                0x000033a4                ADC_SAR_1_theACLK_SetModeRegister
+ .text.ADC_SAR_1_theACLK_ClearModeRegister
+                0x000033b8       0x14 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(ADC_SAR_1_theACLK.o)
+                0x000033b8                ADC_SAR_1_theACLK_ClearModeRegister
+ .text.ADC_SAR_1_theACLK_GetModeRegister
+                0x000033cc       0x10 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(ADC_SAR_1_theACLK.o)
+                0x000033cc                ADC_SAR_1_theACLK_GetModeRegister
+ .text.ADC_SAR_1_theACLK_SetSourceRegister
+                0x000033dc       0x58 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(ADC_SAR_1_theACLK.o)
+                0x000033dc                ADC_SAR_1_theACLK_SetSourceRegister
+ .text.ADC_SAR_1_theACLK_GetSourceRegister
+                0x00003434       0x10 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(ADC_SAR_1_theACLK.o)
+                0x00003434                ADC_SAR_1_theACLK_GetSourceRegister
+ .text          0x00003444        0x0 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(AMux_1.o)
+ .text.AMux_1_Start
+                0x00003444       0x20 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(AMux_1.o)
+                0x00003444                AMux_1_Start
+ .text.AMux_1_FastSelect
+                0x00003464       0x20 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(AMux_1.o)
+                0x00003464                AMux_1_FastSelect
+ .text.AMux_1_DisconnectAll
+                0x00003484       0x18 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(AMux_1.o)
+                0x00003484                AMux_1_DisconnectAll
+ .text          0x0000349c        0x0 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CAN_1.o)
+ .text.CAN_1_RxTxBuffersConfig
+                0x0000349c      0x14c .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CAN_1.o)
+                0x0000349c                CAN_1_RxTxBuffersConfig
+ .text.CAN_1_Init
+                0x000035e8       0xf0 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CAN_1.o)
+                0x000035e8                CAN_1_Init
+ .text.CAN_1_Enable
+                0x000036d8       0x78 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CAN_1.o)
+                0x000036d8                CAN_1_Enable
+ .text.CAN_1_Start
+                0x00003750       0x90 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CAN_1.o)
+                0x00003750                CAN_1_Start
+ .text.CAN_1_Stop
+                0x000037e0       0x5c .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CAN_1.o)
+                0x000037e0                CAN_1_Stop
+ .text.CAN_1_GlobalIntEnable
+                0x0000383c       0x1c .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CAN_1.o)
+                0x0000383c                CAN_1_GlobalIntEnable
+ .text.CAN_1_GlobalIntDisable
+                0x00003858       0x18 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CAN_1.o)
+                0x00003858                CAN_1_GlobalIntDisable
+ .text.CAN_1_SetPreScaler
+                0x00003870       0x1c .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CAN_1.o)
+                0x00003870                CAN_1_SetPreScaler
+ .text.CAN_1_SetArbiter
+                0x0000388c       0x2c .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CAN_1.o)
+                0x0000388c                CAN_1_SetArbiter
+ .text.CAN_1_SetTsegSample
+                0x000038b8       0x64 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CAN_1.o)
+                0x000038b8                CAN_1_SetTsegSample
+ .text.CAN_1_SetRestartType
+                0x0000391c       0x2c .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CAN_1.o)
+                0x0000391c                CAN_1_SetRestartType
+ .text.CAN_1_SetEdgeMode
+                0x00003948       0x2c .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CAN_1.o)
+                0x00003948                CAN_1_SetEdgeMode
+ .text.CAN_1_SetOpMode
+                0x00003974       0x68 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CAN_1.o)
+                0x00003974                CAN_1_SetOpMode
+ .text.CAN_1_RXRegisterInit
+                0x000039dc       0x60 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CAN_1.o)
+                0x000039dc                CAN_1_RXRegisterInit
+ .text.CAN_1_SetIrqMask
+                0x00003a3c       0x14 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CAN_1.o)
+                0x00003a3c                CAN_1_SetIrqMask
+ .text.CAN_1_GetTXErrorFlag
+                0x00003a50       0x10 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CAN_1.o)
+                0x00003a50                CAN_1_GetTXErrorFlag
+ .text.CAN_1_GetRXErrorFlag
+                0x00003a60       0x10 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CAN_1.o)
+                0x00003a60                CAN_1_GetRXErrorFlag
+ .text.CAN_1_GetTXErrorCount
+                0x00003a70        0xc .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CAN_1.o)
+                0x00003a70                CAN_1_GetTXErrorCount
+ .text.CAN_1_GetRXErrorCount
+                0x00003a7c        0xc .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CAN_1.o)
+                0x00003a7c                CAN_1_GetRXErrorCount
+ .text.CAN_1_GetErrorState
+                0x00003a88       0x10 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CAN_1.o)
+                0x00003a88                CAN_1_GetErrorState
+ .text.CAN_1_RxBufConfig
+                0x00003a98       0x88 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CAN_1.o)
+                0x00003a98                CAN_1_RxBufConfig
+ .text.CAN_1_TxBufConfig
+                0x00003b20       0x58 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CAN_1.o)
+                0x00003b20                CAN_1_TxBufConfig
+ .text          0x00003b78        0x0 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CAN_1_INT.o)
+ .text.CAN_1_BusOffIsr
+                0x00003b78       0x18 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CAN_1_INT.o)
+                0x00003b78                CAN_1_BusOffIsr
+ .text.CAN_1_MsgRXIsr
+                0x00003b90       0x44 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CAN_1_INT.o)
+                0x00003b90                CAN_1_MsgRXIsr
+ .text.CAN_1_ISR
+                0x00003bd4       0x60 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CAN_1_INT.o)
+                0x00003bd4                CAN_1_ISR
+ .text          0x00003c34        0x0 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(Encoder_Count.o)
+ .text.Encoder_Count_Init
+                0x00003c34       0x74 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(Encoder_Count.o)
+                0x00003c34                Encoder_Count_Init
+ .text.Encoder_Count_Enable
+                0x00003ca8       0x10 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(Encoder_Count.o)
+                0x00003ca8                Encoder_Count_Enable
+ .text.Encoder_Count_Start
+                0x00003cb8       0x8c .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(Encoder_Count.o)
+                0x00003cb8                Encoder_Count_Start
+ .text.Encoder_Count_Stop
+                0x00003d44       0x10 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(Encoder_Count.o)
+                0x00003d44                Encoder_Count_Stop
+ .text.Encoder_Count_SetInterruptMode
+                0x00003d54        0xc .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(Encoder_Count.o)
+                0x00003d54                Encoder_Count_SetInterruptMode
+ .text.Encoder_Count_ReadStatusRegister
+                0x00003d60        0xc .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(Encoder_Count.o)
+                0x00003d60                Encoder_Count_ReadStatusRegister
+ .text.Encoder_Count_ReadControlRegister
+                0x00003d6c        0xc .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(Encoder_Count.o)
+                0x00003d6c                Encoder_Count_ReadControlRegister
+ .text.Encoder_Count_WriteControlRegister
+                0x00003d78        0xc .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(Encoder_Count.o)
+                0x00003d78                Encoder_Count_WriteControlRegister
+ .text.Encoder_Count_WriteCounter
+                0x00003d84        0xc .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(Encoder_Count.o)
+                0x00003d84                Encoder_Count_WriteCounter
+ .text.Encoder_Count_ReadCounter
+                0x00003d90       0x14 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(Encoder_Count.o)
+                0x00003d90                Encoder_Count_ReadCounter
+ .text.Encoder_Count_ReadCapture
+                0x00003da4        0xc .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(Encoder_Count.o)
+                0x00003da4                Encoder_Count_ReadCapture
+ .text.Encoder_Count_WritePeriod
+                0x00003db0        0xc .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(Encoder_Count.o)
+                0x00003db0                Encoder_Count_WritePeriod
+ .text.Encoder_Count_ReadPeriod
+                0x00003dbc        0xc .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(Encoder_Count.o)
+                0x00003dbc                Encoder_Count_ReadPeriod
+ .text.Encoder_Count_WriteCompare
+                0x00003dc8        0xc .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(Encoder_Count.o)
+                0x00003dc8                Encoder_Count_WriteCompare
+ .text.Encoder_Count_ReadCompare
+                0x00003dd4        0xc .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(Encoder_Count.o)
+                0x00003dd4                Encoder_Count_ReadCompare
+ .text.Encoder_Count_ClearFIFO
+                0x00003de0       0x1c .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(Encoder_Count.o)
+                0x00003de0                Encoder_Count_ClearFIFO
+ .text          0x00003dfc        0x0 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(Time_Count.o)
+ .text.Time_Count_Init
+                0x00003dfc       0x74 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(Time_Count.o)
+                0x00003dfc                Time_Count_Init
+ .text.Time_Count_Enable
+                0x00003e70       0x10 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(Time_Count.o)
+                0x00003e70                Time_Count_Enable
+ .text.Time_Count_Start
+                0x00003e80       0x8c .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(Time_Count.o)
+                0x00003e80                Time_Count_Start
+ .text.Time_Count_Stop
+                0x00003f0c       0x10 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(Time_Count.o)
+                0x00003f0c                Time_Count_Stop
+ .text.Time_Count_SetInterruptMode
+                0x00003f1c        0xc .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(Time_Count.o)
+                0x00003f1c                Time_Count_SetInterruptMode
+ .text.Time_Count_ReadStatusRegister
+                0x00003f28        0xc .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(Time_Count.o)
+                0x00003f28                Time_Count_ReadStatusRegister
+ .text.Time_Count_ReadControlRegister
+                0x00003f34        0xc .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(Time_Count.o)
+                0x00003f34                Time_Count_ReadControlRegister
+ .text.Time_Count_WriteControlRegister
+                0x00003f40        0xc .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(Time_Count.o)
+                0x00003f40                Time_Count_WriteControlRegister
+ .text.Time_Count_WriteCounter
+                0x00003f4c        0xc .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(Time_Count.o)
+                0x00003f4c                Time_Count_WriteCounter
+ .text.Time_Count_ReadCounter
+                0x00003f58       0x14 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(Time_Count.o)
+                0x00003f58                Time_Count_ReadCounter
+ .text.Time_Count_ReadCapture
+                0x00003f6c        0xc .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(Time_Count.o)
+                0x00003f6c                Time_Count_ReadCapture
+ .text.Time_Count_WritePeriod
+                0x00003f78        0xc .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(Time_Count.o)
+                0x00003f78                Time_Count_WritePeriod
+ .text.Time_Count_ReadPeriod
+                0x00003f84        0xc .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(Time_Count.o)
+                0x00003f84                Time_Count_ReadPeriod
+ .text.Time_Count_WriteCompare
+                0x00003f90        0xc .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(Time_Count.o)
+                0x00003f90                Time_Count_WriteCompare
+ .text.Time_Count_ReadCompare
+                0x00003f9c        0xc .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(Time_Count.o)
+                0x00003f9c                Time_Count_ReadCompare
+ .text.Time_Count_ClearFIFO
+                0x00003fa8       0x1c .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(Time_Count.o)
+                0x00003fa8                Time_Count_ClearFIFO
+ .text          0x00003fc4        0x0 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CAN_TIMER.o)
+ .text.CAN_TIMER_Init
+                0x00003fc4       0x54 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CAN_TIMER.o)
+                0x00003fc4                CAN_TIMER_Init
+ .text.CAN_TIMER_Enable
+                0x00004018       0x10 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CAN_TIMER.o)
+                0x00004018                CAN_TIMER_Enable
+ .text.CAN_TIMER_Start
+                0x00004028       0x70 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CAN_TIMER.o)
+                0x00004028                CAN_TIMER_Start
+ .text.CAN_TIMER_Stop
+                0x00004098       0x10 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CAN_TIMER.o)
+                0x00004098                CAN_TIMER_Stop
+ .text.CAN_TIMER_SetInterruptMode
+                0x000040a8        0xc .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CAN_TIMER.o)
+                0x000040a8                CAN_TIMER_SetInterruptMode
+ .text.CAN_TIMER_SoftwareCapture
+                0x000040b4        0xc .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CAN_TIMER.o)
+                0x000040b4                CAN_TIMER_SoftwareCapture
+ .text.CAN_TIMER_ReadStatusRegister
+                0x000040c0        0xc .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CAN_TIMER.o)
+                0x000040c0                CAN_TIMER_ReadStatusRegister
+ .text.CAN_TIMER_ReadControlRegister
+                0x000040cc        0xc .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CAN_TIMER.o)
+                0x000040cc                CAN_TIMER_ReadControlRegister
+ .text.CAN_TIMER_WriteControlRegister
+                0x000040d8        0xc .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CAN_TIMER.o)
+                0x000040d8                CAN_TIMER_WriteControlRegister
+ .text.CAN_TIMER_ReadPeriod
+                0x000040e4        0xc .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CAN_TIMER.o)
+                0x000040e4                CAN_TIMER_ReadPeriod
+ .text.CAN_TIMER_WritePeriod
+                0x000040f0        0xc .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CAN_TIMER.o)
+                0x000040f0                CAN_TIMER_WritePeriod
+ .text.CAN_TIMER_ReadCapture
+                0x000040fc        0xc .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CAN_TIMER.o)
+                0x000040fc                CAN_TIMER_ReadCapture
+ .text.CAN_TIMER_WriteCounter
+                0x00004108        0xc .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CAN_TIMER.o)
+                0x00004108                CAN_TIMER_WriteCounter
+ .text.CAN_TIMER_ReadCounter
+                0x00004114       0x14 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CAN_TIMER.o)
+                0x00004114                CAN_TIMER_ReadCounter
+ .text.CAN_TIMER_ClearFIFO
+                0x00004128       0x1c .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CAN_TIMER.o)
+                0x00004128                CAN_TIMER_ClearFIFO
+ .text          0x00004144        0x0 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CAN_ISR.o)
+ .text.CAN_ISR_Interrupt
+                0x00004144       0x10 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CAN_ISR.o)
+                0x00004144                CAN_ISR_Interrupt
+ .text.CAN_ISR_Start
+                0x00004154       0x34 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CAN_ISR.o)
+                0x00004154                CAN_ISR_Start
+ .text.CAN_ISR_StartEx
+                0x00004188       0x2c .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CAN_ISR.o)
+                0x00004188                CAN_ISR_StartEx
+ .text.CAN_ISR_Stop
+                0x000041b4       0x1c .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CAN_ISR.o)
+                0x000041b4                CAN_ISR_Stop
+ .text.CAN_ISR_SetVector
+                0x000041d0        0xc .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CAN_ISR.o)
+                0x000041d0                CAN_ISR_SetVector
+ .text.CAN_ISR_GetVector
+                0x000041dc        0xc .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CAN_ISR.o)
+                0x000041dc                CAN_ISR_GetVector
+ .text.CAN_ISR_SetPriority
+                0x000041e8       0x10 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CAN_ISR.o)
+                0x000041e8                CAN_ISR_SetPriority
+ .text.CAN_ISR_GetPriority
+                0x000041f8        0xc .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CAN_ISR.o)
+                0x000041f8                CAN_ISR_GetPriority
+ .text.CAN_ISR_Enable
+                0x00004204        0xc .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CAN_ISR.o)
+                0x00004204                CAN_ISR_Enable
+ .text.CAN_ISR_GetState
+                0x00004210       0x10 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CAN_ISR.o)
+                0x00004210                CAN_ISR_GetState
+ .text.CAN_ISR_Disable
+                0x00004220        0xc .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CAN_ISR.o)
+                0x00004220                CAN_ISR_Disable
+ .text.CAN_ISR_SetPending
+                0x0000422c        0xc .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CAN_ISR.o)
+                0x0000422c                CAN_ISR_SetPending
+ .text.CAN_ISR_ClearPending
+                0x00004238        0xc .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CAN_ISR.o)
+                0x00004238                CAN_ISR_ClearPending
+ .text          0x00004244        0x0 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CyFlash.o)
+ .text.CyFlash_Start
+                0x00004244       0x50 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CyFlash.o)
+                0x00004244                CyFlash_Start
+ .text.CyFlash_Stop
+                0x00004294       0x2c .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CyFlash.o)
+                0x00004294                CyFlash_Stop
+ .text.CySetTemp
+                0x000042c0       0xa4 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CyFlash.o)
+                0x000042c0                CySetTemp
+ .text.CySetFlashEEBuffer
+                0x00004364       0x34 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CyFlash.o)
+                0x00004364                CySetFlashEEBuffer
+ .text.CyWriteRowData
+                0x00004398       0xd0 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CyFlash.o)
+                0x00004398                CyWriteRowData
+ .text.CyWriteRowFull
+                0x00004468       0xcc .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CyFlash.o)
+                0x00004468                CyWriteRowFull
+ .text.CyFlash_SetWaitCycles
+                0x00004534       0x90 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CyFlash.o)
+                0x00004534                CyFlash_SetWaitCycles
+ .text.CyEEPROM_Start
+                0x000045c4       0x50 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CyFlash.o)
+                0x000045c4                CyEEPROM_Start
+ .text.CyEEPROM_Stop
+                0x00004614       0x2c .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CyFlash.o)
+                0x00004614                CyEEPROM_Stop
+ .text.CyEEPROM_ReadReserve
+                0x00004640       0x18 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CyFlash.o)
+                0x00004640                CyEEPROM_ReadReserve
+ .text.CyEEPROM_ReadRelease
+                0x00004658       0x10 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CyFlash.o)
+                0x00004658                CyEEPROM_ReadRelease
+ .text          0x00004668        0x0 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CySpc.o)
+ .text.CySpcStart
+                0x00004668       0x2c .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CySpc.o)
+                0x00004668                CySpcStart
+ .text.CySpcStop
+                0x00004694       0x2c .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CySpc.o)
+                0x00004694                CySpcStop
+ .text.CySpcReadData
+                0x000046c0       0x40 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CySpc.o)
+                0x000046c0                CySpcReadData
+ .text.CySpcLoadMultiByte
+                0x00004700       0x6c .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CySpc.o)
+                0x00004700                CySpcLoadMultiByte
+ .text.CySpcLoadRow
+                0x0000476c       0x50 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CySpc.o)
+                0x0000476c                CySpcLoadRow
+ .text.CySpcLoadRowFull
+                0x000047bc       0x74 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CySpc.o)
+                0x000047bc                CySpcLoadRowFull
+ .text.CySpcWriteRow
+                0x00004830       0x44 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CySpc.o)
+                0x00004830                CySpcWriteRow
+ .text.CySpcEraseSector
+                0x00004874       0x3c .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CySpc.o)
+                0x00004874                CySpcEraseSector
+ .text.CySpcGetTemp
+                0x000048b0       0x38 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CySpc.o)
+                0x000048b0                CySpcGetTemp
+ .text.CySpcLock
+                0x000048e8       0x44 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CySpc.o)
+                0x000048e8                CySpcLock
+ .text.CySpcUnlock
+                0x0000492c       0x34 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CySpc.o)
+                0x0000492c                CySpcUnlock
+ .text.CySpcGetAlgorithm
+                0x00004960       0x28 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CySpc.o)
+                0x00004960                CySpcGetAlgorithm
+ .text          0x00004988      0x21c c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libgcc.a(_arm_addsubsf3.o)
+                0x00004988                __aeabi_frsub
+                0x00004990                __subsf3
+                0x00004990                __aeabi_fsub
+                0x00004994                __aeabi_fadd
+                0x00004994                __addsf3
+                0x00004af4                __aeabi_ui2f
+                0x00004af4                __floatunsisf
+                0x00004afc                __aeabi_i2f
+                0x00004afc                __floatsisf
+                0x00004b18                __aeabi_ul2f
+                0x00004b18                __floatundisf
+                0x00004b28                __aeabi_l2f
+                0x00004b28                __floatdisf
+ .text          0x00004ba4      0x2a0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libgcc.a(_arm_muldivsf3.o)
+                0x00004ba4                __mulsf3
+                0x00004ba4                __aeabi_fmul
+                0x00004d0c                __aeabi_fdiv
+                0x00004d0c                __divsf3
+ .text          0x00004e44       0x38 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libgcc.a(_aeabi_ldivmod.o)
+                0x00004e44                __aeabi_ldivmod
+ .text          0x00004e7c       0x60 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libgcc.a(bpabi.o)
+                0x00004e7c                __gnu_ldivmod_helper
+                0x00004eac                __gnu_uldivmod_helper
+ .text          0x00004edc        0x4 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libgcc.a(_dvmd_tls.o)
+                0x00004edc                __aeabi_idiv0
+                0x00004edc                __aeabi_ldiv0
+ .text          0x00004ee0      0x2ac c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libgcc.a(_divdi3.o)
+                0x00004ee0                __divdi3
+ .text          0x0000518c      0x270 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libgcc.a(_udivdi3.o)
+                0x0000518c                __udivdi3
+ .text          0x000053fc        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-errno.o)
+ .text.__errno  0x000053fc        0xc c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-errno.o)
+                0x000053fc                __errno
+ .text          0x00005408        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-exit.o)
+ .text.exit     0x00005408       0x28 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-exit.o)
+                0x00005408                exit
+ .text          0x00005430        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-impure.o)
+ .text          0x00005430        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-init.o)
+ .text.__libc_init_array
+                0x00005430       0x4c c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-init.o)
+                0x00005430                __libc_init_array
+ .text          0x0000547c        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memcpy.o)
+ .text.memcpy   0x0000547c       0x16 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memcpy.o)
+                0x0000547c                memcpy
+ .text          0x00005492        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memset.o)
+ .text.memset   0x00005492       0x10 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memset.o)
+                0x00005492                memset
+ .text          0x000054a2        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-sprintf.o)
+ .text._sprintf_r
+                0x000054a2       0x40 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-sprintf.o)
+                0x000054a2                _sprintf_r
+                0x000054a2                _siprintf_r
+ *fill*         0x000054e2        0x2 
+ .text.sprintf  0x000054e4       0x48 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-sprintf.o)
+                0x000054e4                siprintf
+                0x000054e4                sprintf
+ .text          0x0000552c        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-svfprintf.o)
+ .text.__ssputs_r
+                0x0000552c       0xb2 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-svfprintf.o)
+                0x0000552c                __ssputs_r
+ .text.__ssprint_r
+                0x000055de       0xfe c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-svfprintf.o)
+                0x000055de                __ssprint_r
+ .text._svfprintf_r
+                0x000056dc      0x1e4 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-svfprintf.o)
+                0x000056dc                _svfiprintf_r
+                0x000056dc                _svfprintf_r
+ .text          0x000058c0        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-vfprintf_i.o)
+ .text._printf_common
+                0x000058c0       0xea c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-vfprintf_i.o)
+                0x000058c0                _printf_common
+ *fill*         0x000059aa        0x2 
+ .text._printf_i
+                0x000059ac      0x240 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-vfprintf_i.o)
+                0x000059ac                _printf_i
+ .text          0x00005bec        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memchr.o)
+ .text.memchr   0x00005bec       0x1c c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memchr.o)
+                0x00005bec                memchr
+ .text          0x00005c08        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memmove.o)
+ .text.memmove  0x00005c08       0x36 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memmove.o)
+                0x00005c08                memmove
+ .text          0x00005c3e        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-freer.o)
+ *fill*         0x00005c3e        0x2 
+ .text._free_r  0x00005c40       0x88 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-freer.o)
+                0x00005c40                _free_r
+ .text          0x00005cc8        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-mallocr.o)
+ .text._malloc_r
+                0x00005cc8       0xac c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-mallocr.o)
+                0x00005cc8                _malloc_r
+ .text          0x00005d74        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-reallocr.o)
+ .text._realloc_r
+                0x00005d74       0x4c c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-reallocr.o)
+                0x00005d74                _realloc_r
+ .text          0x00005dc0        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-sbrkr.o)
+ .text._sbrk_r  0x00005dc0       0x20 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-sbrkr.o)
+                0x00005dc0                _sbrk_r
+ .text          0x00005de0        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-msizer.o)
+ .text._malloc_usable_size_r
+                0x00005de0       0x14 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-msizer.o)
+                0x00005de0                _malloc_usable_size_r
+ .text          0x00005df4        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-reent.o)
+ .text.cleanup_glue
+                0x00005df4       0x1a c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-reent.o)
+                0x00005df4                cleanup_glue
+ *fill*         0x00005e0e        0x2 
+ .text._reclaim_reent
+                0x00005e10       0xb4 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-reent.o)
+                0x00005e10                _reclaim_reent
+ .text          0x00005ec4        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crtend.o
+ .text          0x00005ec4        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crtn.o
+ *(.plt)
+ *(.gnu.warning)
+ *(.glue_7t)
+ .glue_7t       0x00000000        0x0 linker stubs
+ *(.glue_7)
+ .glue_7        0x00000000        0x0 linker stubs
+ *(.vfp11_veneer)
+ .vfp11_veneer  0x00000000        0x0 linker stubs
+ *(.bootloader)
+ *(.ARM.extab* .gnu.linkonce.armextab.*)
+ .ARM.extab     0x00005ec4        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/crt0.o
+ .ARM.extab     0x00005ec4        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libgcc.a(_divdi3.o)
+ .ARM.extab     0x00005ec4        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libgcc.a(_udivdi3.o)
+ *(.gcc_except_table)
+
+.v4_bx          0x00005ec4        0x0
+ .v4_bx         0x00000000        0x0 linker stubs
+
+.iplt           0x00005ec4        0x0
+ .iplt          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crtbegin.o
+
+.eh_frame_hdr
+ *(.eh_frame_hdr)
+
+.eh_frame       0x00005ec4        0x4
+ *(.eh_frame)
+ .eh_frame      0x00005ec4        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crtbegin.o
+ .eh_frame      0x00005ec4        0x4 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crtend.o
+                0x00005ec8                PROVIDE (__exidx_start, .)
+
+.ARM.exidx      0x00005ec8        0x8
+ *(.ARM.exidx* .gnu.linkonce.armexidx.*)
+ .ARM.exidx     0x00005ec8        0x8 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/crt0.o
+ .ARM.exidx     0x00005ed0        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libgcc.a(_divdi3.o)
+                                  0x8 (size before relaxing)
+ .ARM.exidx     0x00005ed0        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libgcc.a(_udivdi3.o)
+                                  0x8 (size before relaxing)
+                0x00005ed0                __exidx_end = .
+
+.rodata         0x00005ed0      0x1f0
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata.str1.4
+                0x00005ed0       0x20 .\ARM_GCC_493\Debug\main.o
+ .rodata        0x00005ef0       0x50 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(cyfitter_cfg.o)
+ .rodata        0x00005f40       0x10 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(cyPm.o)
+ .rodata        0x00005f50      0x100 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CAN_1.o)
+ .rodata.str1.1
+                0x00006050        0x2 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-impure.o)
+ *fill*         0x00006052        0x2 
+ .rodata._global_impure_ptr
+                0x00006054        0x4 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-impure.o)
+                0x00006054                _global_impure_ptr
+ .rodata.str1.1
+                0x00006058       0x11 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-svfprintf.o)
+ .rodata.str1.1
+                0x00006069       0x22 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-vfprintf_i.o)
+                0x0000608c                . = ALIGN (0x4)
+ *fill*         0x0000608b        0x1 
+ *(.init)
+ .init          0x0000608c        0x4 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crti.o
+                0x0000608c                _init
+ .init          0x00006090        0x8 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crtn.o
+                0x00006098                . = ALIGN (0x4)
+                0x00006098                __preinit_array_start = .
+ *(.preinit_array)
+                0x00006098                __preinit_array_end = .
+                0x00006098                . = ALIGN (0x4)
+                0x00006098                __init_array_start = .
+ *(SORT(.init_array.*))
+ *(.init_array)
+ .init_array    0x00006098        0x4 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crtbegin.o
+ .init_array    0x0000609c        0x4 .\ARM_GCC_493\Debug\Cm3Start.o
+                0x000060a0                __init_array_end = .
+                0x000060a0                . = ALIGN (0x4)
+ *(.fini)
+ .fini          0x000060a0        0x4 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crti.o
+                0x000060a0                _fini
+ .fini          0x000060a4        0x8 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crtn.o
+                0x000060ac                . = ALIGN (0x4)
+                0x000060ac                __fini_array_start = .
+ *(.fini_array)
+ .fini_array    0x000060ac        0x4 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crtbegin.o
+ *(SORT(.fini_array.*))
+                0x000060b0                __fini_array_end = .
+                0x000060b0                . = ALIGN (0x4)
+ *crtbegin.o(.ctors)
+ *(EXCLUDE_FILE(*crtend.o) .ctors)
+ *(SORT(.ctors.*))
+ *crtend.o(.ctors)
+                0x000060b0                . = ALIGN (0x4)
+ *crtbegin.o(.dtors)
+ *(EXCLUDE_FILE(*crtend.o) .dtors)
+ *(SORT(.dtors.*))
+ *crtend.o(.dtors)
+                0x000060b0                . = ALIGN (0x4)
+                0x000060b0                __cy_regions = .
+                0x000060b0        0x4 LONG 0x60c0 __cy_region_init_ram
+                0x000060b4        0x4 LONG 0x1fff8108 __cy_region_start_data
+                0x000060b8        0x4 LONG 0x88 __cy_region_init_size_ram
+                0x000060bc        0x4 LONG 0xd0 __cy_region_zero_size_ram
+                0x000060c0                __cy_regions_end = .
+                0x000060c0                . = ALIGN (0x8)
+                0x000060c0                _etext = .
+
+.cy_checksum_exclude
+                0x000060c0        0x0
+ *(.cy_checksum_exclude)
+
+.ramvectors     0x1fff8000      0x100
+                0x1fff8000                __cy_region_start_ram = .
+ *(.ramvectors)
+ .ramvectors    0x1fff8000      0x100 .\ARM_GCC_493\Debug\Cm3Start.o
+                0x1fff8000                CyRamVectors
+
+.noinit         0x1fff8100        0x5
+ *(.noinit)
+ .noinit        0x1fff8100        0x4 .\ARM_GCC_493\Debug\Cm3Start.o
+ .noinit        0x1fff8104        0x1 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CyLib.o)
+                0x1fff8104                CyResetStatus
+
+.data           0x1fff8108       0x88 load address 0x000060c0
+                0x1fff8108                __cy_region_start_data = .
+ *(.jcr)
+ .jcr           0x1fff8108        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crtbegin.o
+ .jcr           0x1fff8108        0x4 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crtend.o
+ *(.got.plt)
+ *(.got)
+ *(.shdata)
+ *(.data .data.* .gnu.linkonce.d.*)
+ .data          0x1fff810c        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crti.o
+ .data          0x1fff810c        0x4 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crtbegin.o
+                0x1fff810c                __dso_handle
+ .data          0x1fff8110        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/crt0.o
+ .data          0x1fff8110        0x0 .\ARM_GCC_493\Debug\main.o
+ .data          0x1fff8110        0x0 .\ARM_GCC_493\Debug\cymetadata.o
+ .data          0x1fff8110        0x4 .\ARM_GCC_493\Debug\Cm3Start.o
+ .data          0x1fff8114        0x0 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(cyfitter_cfg.o)
+ .data          0x1fff8114        0x0 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(UART_1.o)
+ .data          0x1fff8114        0x0 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(UART_1_IntClock.o)
+ .data          0x1fff8114        0x0 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CyBootAsmGnu.o)
+ .data          0x1fff8114       0x10 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CyLib.o)
+                0x1fff8114                cydelay_freq_mhz
+                0x1fff8118                cydelay_32k_ms
+                0x1fff811c                cydelay_freq_khz
+                0x1fff8120                cydelay_freq_hz
+ .data          0x1fff8124        0x0 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(cyPm.o)
+ .data          0x1fff8124        0x0 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(ADC_SAR_1.o)
+ .data          0x1fff8124        0x0 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(ADC_SAR_1_INT.o)
+ .data          0x1fff8124        0x0 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(ADC_SAR_1_theACLK.o)
+ .data          0x1fff8124        0x1 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(AMux_1.o)
+ .data          0x1fff8125        0x0 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CAN_1.o)
+ .data          0x1fff8125        0x0 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CAN_1_INT.o)
+ .data          0x1fff8125        0x0 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(Encoder_Count.o)
+ .data          0x1fff8125        0x0 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(Time_Count.o)
+ .data          0x1fff8125        0x0 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CAN_TIMER.o)
+ .data          0x1fff8125        0x0 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CAN_ISR.o)
+ .data          0x1fff8125        0x0 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CyFlash.o)
+ .data          0x1fff8125        0x0 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CySpc.o)
+ .data          0x1fff8125        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libgcc.a(_arm_addsubsf3.o)
+ .data          0x1fff8125        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libgcc.a(_arm_muldivsf3.o)
+ .data          0x1fff8125        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libgcc.a(_aeabi_ldivmod.o)
+ .data          0x1fff8125        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libgcc.a(bpabi.o)
+ .data          0x1fff8125        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libgcc.a(_dvmd_tls.o)
+ .data          0x1fff8125        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libgcc.a(_divdi3.o)
+ .data          0x1fff8125        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libgcc.a(_udivdi3.o)
+ .data          0x1fff8125        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-errno.o)
+ .data          0x1fff8125        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-exit.o)
+ .data          0x1fff8125        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-impure.o)
+ *fill*         0x1fff8125        0x3 
+ .data.impure_data
+                0x1fff8128       0x60 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-impure.o)
+ .data._impure_ptr
+                0x1fff8188        0x4 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-impure.o)
+                0x1fff8188                _impure_ptr
+ .data          0x1fff818c        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-init.o)
+ .data          0x1fff818c        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memcpy.o)
+ .data          0x1fff818c        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memset.o)
+ .data          0x1fff818c        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-sprintf.o)
+ .data          0x1fff818c        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-svfprintf.o)
+ .data          0x1fff818c        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-vfprintf_i.o)
+ .data          0x1fff818c        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memchr.o)
+ .data          0x1fff818c        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memmove.o)
+ .data          0x1fff818c        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-freer.o)
+ .data          0x1fff818c        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-mallocr.o)
+ .data          0x1fff818c        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-reallocr.o)
+ .data          0x1fff818c        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-sbrkr.o)
+ .data          0x1fff818c        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-msizer.o)
+ .data          0x1fff818c        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-reent.o)
+ .data          0x1fff818c        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crtend.o
+ .data          0x1fff818c        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crtn.o
+                0x1fff8190                . = ALIGN (0x8)
+ *fill*         0x1fff818c        0x4 
+ *(.ram)
+                0x1fff8190                _edata = .
+
+.igot.plt       0x1fff8190        0x0 load address 0x00006148
+ .igot.plt      0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crtbegin.o
+
+.bss            0x1fff8190       0xd0 load address 0x00006148
+                0x1fff8190                PROVIDE (__bss_start__, .)
+ *(.shbss)
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ .bss           0x1fff8190        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crti.o
+ .bss           0x1fff8190       0x1c c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crtbegin.o
+ .bss           0x1fff81ac        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/crt0.o
+ .bss           0x1fff81ac        0x0 .\ARM_GCC_493\Debug\main.o
+ .bss           0x1fff81ac        0x0 .\ARM_GCC_493\Debug\cymetadata.o
+ .bss           0x1fff81ac        0x0 .\ARM_GCC_493\Debug\Cm3Start.o
+ .bss           0x1fff81ac        0x8 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(cyfitter_cfg.o)
+ .bss           0x1fff81b4        0x2 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(UART_1.o)
+                0x1fff81b4                UART_1_initVar
+ .bss           0x1fff81b6        0x0 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(UART_1_IntClock.o)
+ .bss           0x1fff81b6        0x0 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CyBootAsmGnu.o)
+ *fill*         0x1fff81b6        0x2 
+ .bss           0x1fff81b8       0x1c .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CyLib.o)
+                0x1fff81d0                CySysTickInitVar
+ .bss           0x1fff81d4       0x44 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(cyPm.o)
+ .bss           0x1fff8218        0x1 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(ADC_SAR_1.o)
+                0x1fff8218                ADC_SAR_1_initVar
+ .bss           0x1fff8219        0x0 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(ADC_SAR_1_INT.o)
+ .bss           0x1fff8219        0x0 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(ADC_SAR_1_theACLK.o)
+ .bss           0x1fff8219        0x0 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(AMux_1.o)
+ .bss           0x1fff8219        0x1 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CAN_1.o)
+                0x1fff8219                CAN_1_initVar
+ .bss           0x1fff821a        0x0 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CAN_1_INT.o)
+ .bss           0x1fff821a        0x1 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(Encoder_Count.o)
+                0x1fff821a                Encoder_Count_initVar
+ .bss           0x1fff821b        0x1 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(Time_Count.o)
+                0x1fff821b                Time_Count_initVar
+ .bss           0x1fff821c        0x1 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CAN_TIMER.o)
+                0x1fff821c                CAN_TIMER_initVar
+ .bss           0x1fff821d        0x0 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CAN_ISR.o)
+ *fill*         0x1fff821d        0x3 
+ .bss           0x1fff8220        0x4 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CyFlash.o)
+ .bss           0x1fff8224        0x8 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CySpc.o)
+                0x1fff8224                SpcLockState
+ .bss           0x1fff822c        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libgcc.a(_arm_addsubsf3.o)
+ .bss           0x1fff822c        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libgcc.a(_arm_muldivsf3.o)
+ .bss           0x1fff822c        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libgcc.a(_aeabi_ldivmod.o)
+ .bss           0x1fff822c        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libgcc.a(bpabi.o)
+ .bss           0x1fff822c        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libgcc.a(_dvmd_tls.o)
+ .bss           0x1fff822c        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libgcc.a(_divdi3.o)
+ .bss           0x1fff822c        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libgcc.a(_udivdi3.o)
+ .bss           0x1fff822c        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-errno.o)
+ .bss           0x1fff822c        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-exit.o)
+ .bss           0x1fff822c        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-impure.o)
+ .bss           0x1fff822c        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-init.o)
+ .bss           0x1fff822c        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memcpy.o)
+ .bss           0x1fff822c        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memset.o)
+ .bss           0x1fff822c        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-sprintf.o)
+ .bss           0x1fff822c        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-svfprintf.o)
+ .bss           0x1fff822c        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-vfprintf_i.o)
+ .bss           0x1fff822c        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memchr.o)
+ .bss           0x1fff822c        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memmove.o)
+ .bss           0x1fff822c        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-freer.o)
+ .bss           0x1fff822c        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-mallocr.o)
+ .bss.__malloc_sbrk_start
+                0x1fff822c        0x4 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-mallocr.o)
+                0x1fff822c                __malloc_sbrk_start
+ .bss.__malloc_free_list
+                0x1fff8230        0x4 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-mallocr.o)
+                0x1fff8230                __malloc_free_list
+ .bss           0x1fff8234        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-reallocr.o)
+ .bss           0x1fff8234        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-sbrkr.o)
+ .bss           0x1fff8234        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-msizer.o)
+ .bss           0x1fff8234        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-reent.o)
+ .bss           0x1fff8234        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crtend.o
+ .bss           0x1fff8234        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crtn.o
+ *(COMMON)
+ COMMON         0x1fff8234       0x16 .\ARM_GCC_493\Debug\main.o
+                0x1fff8234                bIndex
+                0x1fff8238                TxMessage1
+                0x1fff8240                RxMessage1
+                0x1fff8248                RxFlag1
+                0x1fff8249                RXDLC1
+ *fill*         0x1fff824a        0x2 
+ COMMON         0x1fff824c        0xa .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(ADC_SAR_1.o)
+                0x1fff824c                ADC_SAR_1_countsPerVolt
+                0x1fff824e                ADC_SAR_1_shift
+                0x1fff8250                ADC_SAR_1_countsPer10Volt
+                0x1fff8254                ADC_SAR_1_offset
+ *fill*         0x1fff8256        0x2 
+ COMMON         0x1fff8258        0x2 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CyFlash.o)
+                0x1fff8258                dieTemperature
+ *fill*         0x1fff825a        0x2 
+ COMMON         0x1fff825c        0x4 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-reent.o)
+                0x1fff825c                errno
+                0x1fff8260                . = ALIGN (0x8)
+ *(.ram.b)
+                0x1fff8260                _end = .
+                0x1fff8260                __end = .
+                0x1fff8260                PROVIDE (end, .)
+                0x1fff8260                PROVIDE (__bss_end__, .)
+                0x000060c0                __cy_region_init_ram = LOADADDR (.data)
+                0x00000088                __cy_region_init_size_ram = (_edata - ADDR (.data))
+                0x000000d0                __cy_region_zero_size_ram = (_end - _edata)
+
+.heap           0x1fff8260       0x80 load address 0x00006148
+                0x1fff8260                . = _end
+                0x1fff82e0                . = (. + 0x80)
+ *fill*         0x1fff8260       0x80 
+                0x1fff82e0                __cy_heap_limit = .
+
+.stack          0x20007800      0x800
+                0x20007800                __cy_stack_limit = .
+                0x20008000                . = (. + 0x800)
+ *fill*         0x20007800      0x800 
+                0x00000001                ASSERT ((__cy_stack_limit >= __cy_heap_limit), region RAM overflowed with stack)
+                0x00000000                cy_checksum_exclude_size = (CY_APPL_LOADABLE == 0x1)?SIZEOF (.cy_checksum_exclude):0x0
+                0x00000001                ASSERT ((cy_checksum_exclude_size <= CY_CHECKSUM_EXCLUDE_SIZE), CY_BOOT: Section .cy_checksum_exclude size exceedes specified limit.)
+
+.cyloadermeta
+ *(.cyloadermeta)
+
+.cyloadablemeta
+ *(.cyloadablemeta)
+
+.cyconfigecc    0x80000000      0x674
+ *(.cyconfigecc)
+ .cyconfigecc   0x80000000      0x674 .\ARM_GCC_493\Debug\cymetadata.o
+                0x80000000                cy_meta_configecc
+
+.cycustnvl      0x90000000        0x4
+ *(.cycustnvl)
+ .cycustnvl     0x90000000        0x4 .\ARM_GCC_493\Debug\cymetadata.o
+                0x90000000                cy_meta_custnvl
+
+.cywolatch      0x90100000        0x4
+ *(.cywolatch)
+ .cywolatch     0x90100000        0x4 .\ARM_GCC_493\Debug\cymetadata.o
+                0x90100000                cy_meta_wonvl
+
+.cyeeprom       0x90200000        0x0
+ *(.cyeeprom)
+                0x00000001                ASSERT ((. <= ((0x90200000 + ee_offset) + ee_size)), .cyeeprom data will not fit in EEPROM)
+
+.cyflashprotect
+                0x90400000      0x100
+ *(.cyflashprotect)
+ .cyflashprotect
+                0x90400000      0x100 .\ARM_GCC_493\Debug\cymetadata.o
+                0x90400000                cy_meta_flashprotect
+
+.cymeta         0x90500000        0xc
+ *(.cymeta)
+ .cymeta        0x90500000        0xc .\ARM_GCC_493\Debug\cymetadata.o
+                0x90500000                cy_metadata
+
+.rel.dyn        0x00006148        0x0 load address 0x9050000c
+ .rel.iplt      0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crtbegin.o
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x00000000      0xae0
+ *(.debug_aranges)
+ .debug_aranges
+                0x00000000       0x48 .\ARM_GCC_493\Debug\main.o
+ .debug_aranges
+                0x00000048       0x18 .\ARM_GCC_493\Debug\cymetadata.o
+ .debug_aranges
+                0x00000060       0x48 .\ARM_GCC_493\Debug\Cm3Start.o
+ .debug_aranges
+                0x000000a8       0x38 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(cyfitter_cfg.o)
+ .debug_aranges
+                0x000000e0       0xf0 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(UART_1.o)
+ .debug_aranges
+                0x000001d0       0x70 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(UART_1_IntClock.o)
+ .debug_aranges
+                0x00000240       0x20 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CyBootAsmGnu.o)
+ .debug_aranges
+                0x00000260      0x288 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CyLib.o)
+ .debug_aranges
+                0x000004e8       0x78 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(cyPm.o)
+ .debug_aranges
+                0x00000560       0xa0 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(ADC_SAR_1.o)
+ .debug_aranges
+                0x00000600       0x20 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(ADC_SAR_1_INT.o)
+ .debug_aranges
+                0x00000620       0x70 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(ADC_SAR_1_theACLK.o)
+ .debug_aranges
+                0x00000690       0x30 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(AMux_1.o)
+ .debug_aranges
+                0x000006c0       0xc8 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CAN_1.o)
+ .debug_aranges
+                0x00000788       0x30 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CAN_1_INT.o)
+ .debug_aranges
+                0x000007b8       0x98 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(Encoder_Count.o)
+ .debug_aranges
+                0x00000850       0x98 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(Time_Count.o)
+ .debug_aranges
+                0x000008e8       0x90 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CAN_TIMER.o)
+ .debug_aranges
+                0x00000978       0x80 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CAN_ISR.o)
+ .debug_aranges
+                0x000009f8       0x70 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CyFlash.o)
+ .debug_aranges
+                0x00000a68       0x78 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CySpc.o)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info     0x00000000     0x7d32
+ *(.debug_info .gnu.linkonce.wi.*)
+ .debug_info    0x00000000      0x980 .\ARM_GCC_493\Debug\main.o
+ .debug_info    0x00000980      0x13e .\ARM_GCC_493\Debug\cymetadata.o
+ .debug_info    0x00000abe      0x39f .\ARM_GCC_493\Debug\Cm3Start.o
+ .debug_info    0x00000e5d      0x7aa .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(cyfitter_cfg.o)
+ .debug_info    0x00001607      0x6e3 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(UART_1.o)
+ .debug_info    0x00001cea      0x29b .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(UART_1_IntClock.o)
+ .debug_info    0x00001f85       0xa5 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CyBootAsmGnu.o)
+ .debug_info    0x0000202a     0x18df .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CyLib.o)
+ .debug_info    0x00003909      0xa0f .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(cyPm.o)
+ .debug_info    0x00004318      0x746 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(ADC_SAR_1.o)
+ .debug_info    0x00004a5e       0x92 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(ADC_SAR_1_INT.o)
+ .debug_info    0x00004af0      0x29b .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(ADC_SAR_1_theACLK.o)
+ .debug_info    0x00004d8b      0x173 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(AMux_1.o)
+ .debug_info    0x00004efe      0xd52 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CAN_1.o)
+ .debug_info    0x00005c50      0x2be .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CAN_1_INT.o)
+ .debug_info    0x00005f0e      0x4eb .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(Encoder_Count.o)
+ .debug_info    0x000063f9      0x4eb .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(Time_Count.o)
+ .debug_info    0x000068e4      0x449 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CAN_TIMER.o)
+ .debug_info    0x00006d2d      0x38d .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CAN_ISR.o)
+ .debug_info    0x000070ba      0x77d .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CyFlash.o)
+ .debug_info    0x00007837      0x4fb .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CySpc.o)
+
+.debug_abbrev   0x00000000     0x27f4
+ *(.debug_abbrev)
+ .debug_abbrev  0x00000000      0x2b4 .\ARM_GCC_493\Debug\main.o
+ .debug_abbrev  0x000002b4       0x77 .\ARM_GCC_493\Debug\cymetadata.o
+ .debug_abbrev  0x0000032b      0x200 .\ARM_GCC_493\Debug\Cm3Start.o
+ .debug_abbrev  0x0000052b      0x2a9 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(cyfitter_cfg.o)
+ .debug_abbrev  0x000007d4      0x270 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(UART_1.o)
+ .debug_abbrev  0x00000a44      0x142 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(UART_1_IntClock.o)
+ .debug_abbrev  0x00000b86       0x14 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CyBootAsmGnu.o)
+ .debug_abbrev  0x00000b9a      0x40e .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CyLib.o)
+ .debug_abbrev  0x00000fa8      0x211 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(cyPm.o)
+ .debug_abbrev  0x000011b9      0x2cd .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(ADC_SAR_1.o)
+ .debug_abbrev  0x00001486       0x42 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(ADC_SAR_1_INT.o)
+ .debug_abbrev  0x000014c8      0x142 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(ADC_SAR_1_theACLK.o)
+ .debug_abbrev  0x0000160a       0xd8 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(AMux_1.o)
+ .debug_abbrev  0x000016e2      0x2d3 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CAN_1.o)
+ .debug_abbrev  0x000019b5      0x163 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CAN_1_INT.o)
+ .debug_abbrev  0x00001b18      0x22c .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(Encoder_Count.o)
+ .debug_abbrev  0x00001d44      0x22c .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(Time_Count.o)
+ .debug_abbrev  0x00001f70      0x234 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CAN_TIMER.o)
+ .debug_abbrev  0x000021a4      0x1f8 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CAN_ISR.o)
+ .debug_abbrev  0x0000239c      0x298 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CyFlash.o)
+ .debug_abbrev  0x00002634      0x1c0 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CySpc.o)
+
+.debug_line     0x00000000     0x36b2
+ *(.debug_line)
+ .debug_line    0x00000000      0x343 .\ARM_GCC_493\Debug\main.o
+ .debug_line    0x00000343       0x53 .\ARM_GCC_493\Debug\cymetadata.o
+ .debug_line    0x00000396      0x230 .\ARM_GCC_493\Debug\Cm3Start.o
+ .debug_line    0x000005c6      0x2c4 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(cyfitter_cfg.o)
+ .debug_line    0x0000088a      0x38a .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(UART_1.o)
+ .debug_line    0x00000c14      0x202 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(UART_1_IntClock.o)
+ .debug_line    0x00000e16       0x7f .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CyBootAsmGnu.o)
+ .debug_line    0x00000e95      0xadb .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CyLib.o)
+ .debug_line    0x00001970      0x521 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(cyPm.o)
+ .debug_line    0x00001e91      0x308 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(ADC_SAR_1.o)
+ .debug_line    0x00002199       0x58 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(ADC_SAR_1_INT.o)
+ .debug_line    0x000021f1      0x204 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(ADC_SAR_1_theACLK.o)
+ .debug_line    0x000023f5       0x9b .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(AMux_1.o)
+ .debug_line    0x00002490      0x420 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CAN_1.o)
+ .debug_line    0x000028b0       0xfa .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CAN_1_INT.o)
+ .debug_line    0x000029aa      0x23f .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(Encoder_Count.o)
+ .debug_line    0x00002be9      0x23c .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(Time_Count.o)
+ .debug_line    0x00002e25      0x1d5 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CAN_TIMER.o)
+ .debug_line    0x00002ffa      0x1c9 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CAN_ISR.o)
+ .debug_line    0x000031c3      0x26f .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CyFlash.o)
+ .debug_line    0x00003432      0x280 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CySpc.o)
+
+.debug_frame    0x00000000     0x21dc
+ *(.debug_frame)
+ .debug_frame   0x00000000       0xe8 .\ARM_GCC_493\Debug\main.o
+ .debug_frame   0x000000e8       0xac .\ARM_GCC_493\Debug\Cm3Start.o
+ .debug_frame   0x00000194       0xb4 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(cyfitter_cfg.o)
+ .debug_frame   0x00000248      0x29c .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(UART_1.o)
+ .debug_frame   0x000004e4       0xec .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(UART_1_IntClock.o)
+ .debug_frame   0x000005d0      0x744 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CyLib.o)
+ .debug_frame   0x00000d14      0x1f8 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(cyPm.o)
+ .debug_frame   0x00000f0c      0x1d8 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(ADC_SAR_1.o)
+ .debug_frame   0x000010e4       0x20 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(ADC_SAR_1_INT.o)
+ .debug_frame   0x00001104       0xec .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(ADC_SAR_1_theACLK.o)
+ .debug_frame   0x000011f0       0x68 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(AMux_1.o)
+ .debug_frame   0x00001258      0x230 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CAN_1.o)
+ .debug_frame   0x00001488       0x80 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CAN_1_INT.o)
+ .debug_frame   0x00001508      0x13c .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(Encoder_Count.o)
+ .debug_frame   0x00001644      0x13c .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(Time_Count.o)
+ .debug_frame   0x00001780      0x118 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CAN_TIMER.o)
+ .debug_frame   0x00001898      0x11c .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CAN_ISR.o)
+ .debug_frame   0x000019b4      0x1cc .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CyFlash.o)
+ .debug_frame   0x00001b80      0x1dc .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CySpc.o)
+ .debug_frame   0x00001d5c       0x28 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libgcc.a(_aeabi_ldivmod.o)
+ .debug_frame   0x00001d84       0x54 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libgcc.a(bpabi.o)
+ .debug_frame   0x00001dd8       0x34 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libgcc.a(_divdi3.o)
+ .debug_frame   0x00001e0c       0x34 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libgcc.a(_udivdi3.o)
+ .debug_frame   0x00001e40       0x20 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-errno.o)
+ .debug_frame   0x00001e60       0x28 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-exit.o)
+ .debug_frame   0x00001e88       0x2c c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-init.o)
+ .debug_frame   0x00001eb4       0x28 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memcpy.o)
+ .debug_frame   0x00001edc       0x20 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memset.o)
+ .debug_frame   0x00001efc       0x70 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-sprintf.o)
+ .debug_frame   0x00001f6c       0x8c c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-svfprintf.o)
+ .debug_frame   0x00001ff8       0x58 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-vfprintf_i.o)
+ .debug_frame   0x00002050       0x28 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memchr.o)
+ .debug_frame   0x00002078       0x28 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memmove.o)
+ .debug_frame   0x000020a0       0x2c c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-freer.o)
+ .debug_frame   0x000020cc       0x2c c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-mallocr.o)
+ .debug_frame   0x000020f8       0x3c c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-reallocr.o)
+ .debug_frame   0x00002134       0x2c c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-sbrkr.o)
+ .debug_frame   0x00002160       0x20 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-msizer.o)
+ .debug_frame   0x00002180       0x5c c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-reent.o)
+
+.debug_str      0x00000000     0x27aa
+ *(.debug_str)
+ .debug_str     0x00000000      0x4dc .\ARM_GCC_493\Debug\main.o
+                                0x52e (size before relaxing)
+ .debug_str     0x000004dc       0x77 .\ARM_GCC_493\Debug\cymetadata.o
+                                0x1ff (size before relaxing)
+ .debug_str     0x00000553      0x15a .\ARM_GCC_493\Debug\Cm3Start.o
+                                0x313 (size before relaxing)
+ .debug_str     0x000006ad      0x22f .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(cyfitter_cfg.o)
+                                0x3ff (size before relaxing)
+ .debug_str     0x000008dc      0x2e1 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(UART_1.o)
+                                0x4bc (size before relaxing)
+ .debug_str     0x00000bbd      0x19f .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(UART_1_IntClock.o)
+                                0x363 (size before relaxing)
+ .debug_str     0x00000d5c      0x7eb .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CyLib.o)
+                                0xa38 (size before relaxing)
+ .debug_str     0x00001547      0x35b .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(cyPm.o)
+                                0x730 (size before relaxing)
+ .debug_str     0x000018a2      0x1fa .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(ADC_SAR_1.o)
+                                0x4d3 (size before relaxing)
+ .debug_str     0x00001a9c       0x37 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(ADC_SAR_1_INT.o)
+                                0x1b0 (size before relaxing)
+ .debug_str     0x00001ad3      0x16f .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(ADC_SAR_1_theACLK.o)
+                                0x37b (size before relaxing)
+ .debug_str     0x00001c42       0x4f .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(AMux_1.o)
+                                0x20d (size before relaxing)
+ .debug_str     0x00001c91      0x27e .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CAN_1.o)
+                                0x537 (size before relaxing)
+ .debug_str     0x00001f0f       0x5c .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CAN_1_INT.o)
+                                0x28e (size before relaxing)
+ .debug_str     0x00001f6b      0x1d9 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(Encoder_Count.o)
+                                0x3f9 (size before relaxing)
+ .debug_str     0x00002144      0x186 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(Time_Count.o)
+                                0x3c0 (size before relaxing)
+ .debug_str     0x000022ca      0x19e .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CAN_TIMER.o)
+                                0x38c (size before relaxing)
+ .debug_str     0x00002468       0xf6 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CAN_ISR.o)
+                                0x2da (size before relaxing)
+ .debug_str     0x0000255e      0x19e .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CyFlash.o)
+                                0x3aa (size before relaxing)
+ .debug_str     0x000026fc       0xae .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CySpc.o)
+                                0x333 (size before relaxing)
+
+.debug_loc      0x00000000     0x3cf8
+ *(.debug_loc)
+ .debug_loc     0x00000000      0x53a .\ARM_GCC_493\Debug\main.o
+ .debug_loc     0x0000053a      0x19b .\ARM_GCC_493\Debug\Cm3Start.o
+ .debug_loc     0x000006d5      0x287 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(cyfitter_cfg.o)
+ .debug_loc     0x0000095c      0x21b .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(UART_1.o)
+ .debug_loc     0x00000b77       0xec .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(UART_1_IntClock.o)
+ .debug_loc     0x00000c63      0xde0 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CyLib.o)
+ .debug_loc     0x00001a43      0x198 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(cyPm.o)
+ .debug_loc     0x00001bdb      0x3f3 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(ADC_SAR_1.o)
+ .debug_loc     0x00001fce       0xec .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(ADC_SAR_1_theACLK.o)
+ .debug_loc     0x000020ba       0x59 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(AMux_1.o)
+ .debug_loc     0x00002113      0xafe .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CAN_1.o)
+ .debug_loc     0x00002c11       0xa8 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CAN_1_INT.o)
+ .debug_loc     0x00002cb9       0xa2 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(Encoder_Count.o)
+ .debug_loc     0x00002d5b       0xa2 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(Time_Count.o)
+ .debug_loc     0x00002dfd       0x26 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CAN_TIMER.o)
+ .debug_loc     0x00002e23       0x8d .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CAN_ISR.o)
+ .debug_loc     0x00002eb0      0x6e2 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CyFlash.o)
+ .debug_loc     0x00003592      0x766 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CySpc.o)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_ranges   0x00000000     0x1820
+ *(.debug_ranges)
+ .debug_ranges  0x00000000       0x88 .\ARM_GCC_493\Debug\main.o
+ .debug_ranges  0x00000088       0x38 .\ARM_GCC_493\Debug\Cm3Start.o
+ .debug_ranges  0x000000c0      0x180 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(cyfitter_cfg.o)
+ .debug_ranges  0x00000240      0x1e8 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(UART_1.o)
+ .debug_ranges  0x00000428       0xf0 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(UART_1_IntClock.o)
+ .debug_ranges  0x00000518      0x548 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CyLib.o)
+ .debug_ranges  0x00000a60      0x130 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(cyPm.o)
+ .debug_ranges  0x00000b90      0x190 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(ADC_SAR_1.o)
+ .debug_ranges  0x00000d20       0x10 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(ADC_SAR_1_INT.o)
+ .debug_ranges  0x00000d30       0xf0 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(ADC_SAR_1_theACLK.o)
+ .debug_ranges  0x00000e20       0x20 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(AMux_1.o)
+ .debug_ranges  0x00000e40      0x1b8 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CAN_1.o)
+ .debug_ranges  0x00000ff8       0x20 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CAN_1_INT.o)
+ .debug_ranges  0x00001018      0x210 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(Encoder_Count.o)
+ .debug_ranges  0x00001228      0x210 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(Time_Count.o)
+ .debug_ranges  0x00001438      0x128 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CAN_TIMER.o)
+ .debug_ranges  0x00001560      0x198 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CAN_ISR.o)
+ .debug_ranges  0x000016f8       0xc0 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CyFlash.o)
+ .debug_ranges  0x000017b8       0x68 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CySpc.o)
+
+.comment        0x00000000       0x70
+ .comment       0x00000000       0x70 .\ARM_GCC_493\Debug\main.o
+                                 0x71 (size before relaxing)
+ .comment       0x00000000       0x71 .\ARM_GCC_493\Debug\cymetadata.o
+ .comment       0x00000000       0x71 .\ARM_GCC_493\Debug\Cm3Start.o
+ .comment       0x00000000       0x71 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(cyfitter_cfg.o)
+ .comment       0x00000000       0x71 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(UART_1.o)
+ .comment       0x00000000       0x71 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(UART_1_IntClock.o)
+ .comment       0x00000000       0x71 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CyLib.o)
+ .comment       0x00000000       0x71 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(cyPm.o)
+ .comment       0x00000000       0x71 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(ADC_SAR_1.o)
+ .comment       0x00000000       0x71 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(ADC_SAR_1_INT.o)
+ .comment       0x00000000       0x71 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(ADC_SAR_1_theACLK.o)
+ .comment       0x00000000       0x71 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(AMux_1.o)
+ .comment       0x00000000       0x71 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CAN_1.o)
+ .comment       0x00000000       0x71 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CAN_1_INT.o)
+ .comment       0x00000000       0x71 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(Encoder_Count.o)
+ .comment       0x00000000       0x71 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(Time_Count.o)
+ .comment       0x00000000       0x71 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CAN_TIMER.o)
+ .comment       0x00000000       0x71 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CAN_ISR.o)
+ .comment       0x00000000       0x71 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CyFlash.o)
+ .comment       0x00000000       0x71 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CySpc.o)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.note.gnu.arm.ident
+ *(.note.gnu.arm.ident)
+
+.ARM.attributes
+                0x00000000       0x29
+ *(.ARM.attributes)
+ .ARM.attributes
+                0x00000000       0x1d c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crti.o
+ .ARM.attributes
+                0x0000001d       0x2d c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crtbegin.o
+ .ARM.attributes
+                0x0000004a       0x1b c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/crt0.o
+ .ARM.attributes
+                0x00000065       0x33 .\ARM_GCC_493\Debug\main.o
+ .ARM.attributes
+                0x00000098       0x33 .\ARM_GCC_493\Debug\cymetadata.o
+ .ARM.attributes
+                0x000000cb       0x33 .\ARM_GCC_493\Debug\Cm3Start.o
+ .ARM.attributes
+                0x000000fe       0x33 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(cyfitter_cfg.o)
+ .ARM.attributes
+                0x00000131       0x33 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(UART_1.o)
+ .ARM.attributes
+                0x00000164       0x33 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(UART_1_IntClock.o)
+ .ARM.attributes
+                0x00000197       0x21 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CyBootAsmGnu.o)
+ .ARM.attributes
+                0x000001b8       0x33 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CyLib.o)
+ .ARM.attributes
+                0x000001eb       0x33 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(cyPm.o)
+ .ARM.attributes
+                0x0000021e       0x33 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(ADC_SAR_1.o)
+ .ARM.attributes
+                0x00000251       0x33 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(ADC_SAR_1_INT.o)
+ .ARM.attributes
+                0x00000284       0x33 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(ADC_SAR_1_theACLK.o)
+ .ARM.attributes
+                0x000002b7       0x33 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(AMux_1.o)
+ .ARM.attributes
+                0x000002ea       0x33 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CAN_1.o)
+ .ARM.attributes
+                0x0000031d       0x33 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CAN_1_INT.o)
+ .ARM.attributes
+                0x00000350       0x33 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(Encoder_Count.o)
+ .ARM.attributes
+                0x00000383       0x33 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(Time_Count.o)
+ .ARM.attributes
+                0x000003b6       0x33 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CAN_TIMER.o)
+ .ARM.attributes
+                0x000003e9       0x33 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CAN_ISR.o)
+ .ARM.attributes
+                0x0000041c       0x33 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CyFlash.o)
+ .ARM.attributes
+                0x0000044f       0x33 .\ARM_GCC_493\Debug\CE95277 ADC and UART.a(CySpc.o)
+ .ARM.attributes
+                0x00000482       0x1d c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libgcc.a(_arm_addsubsf3.o)
+ .ARM.attributes
+                0x0000049f       0x1d c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libgcc.a(_arm_muldivsf3.o)
+ .ARM.attributes
+                0x000004bc       0x1d c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libgcc.a(_aeabi_ldivmod.o)
+ .ARM.attributes
+                0x000004d9       0x2d c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libgcc.a(bpabi.o)
+ .ARM.attributes
+                0x00000506       0x1d c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libgcc.a(_dvmd_tls.o)
+ .ARM.attributes
+                0x00000523       0x2d c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libgcc.a(_divdi3.o)
+ .ARM.attributes
+                0x00000550       0x2d c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libgcc.a(_udivdi3.o)
+ .ARM.attributes
+                0x0000057d       0x2d c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-errno.o)
+ .ARM.attributes
+                0x000005aa       0x2d c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-exit.o)
+ .ARM.attributes
+                0x000005d7       0x2d c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-impure.o)
+ .ARM.attributes
+                0x00000604       0x2d c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-init.o)
+ .ARM.attributes
+                0x00000631       0x2d c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memcpy.o)
+ .ARM.attributes
+                0x0000065e       0x2d c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memset.o)
+ .ARM.attributes
+                0x0000068b       0x2d c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-sprintf.o)
+ .ARM.attributes
+                0x000006b8       0x2d c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-svfprintf.o)
+ .ARM.attributes
+                0x000006e5       0x2d c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-vfprintf_i.o)
+ .ARM.attributes
+                0x00000712       0x2d c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memchr.o)
+ .ARM.attributes
+                0x0000073f       0x2d c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memmove.o)
+ .ARM.attributes
+                0x0000076c       0x2d c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-freer.o)
+ .ARM.attributes
+                0x00000799       0x2d c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-mallocr.o)
+ .ARM.attributes
+                0x000007c6       0x2d c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-reallocr.o)
+ .ARM.attributes
+                0x000007f3       0x2d c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-sbrkr.o)
+ .ARM.attributes
+                0x00000820       0x2d c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-msizer.o)
+ .ARM.attributes
+                0x0000084d       0x2d c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-reent.o)
+ .ARM.attributes
+                0x0000087a       0x2d c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crtend.o
+ .ARM.attributes
+                0x000008a7       0x1d c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crtn.o
+
+/DISCARD/
+ *(.note.GNU-stack)
+OUTPUT(.\ARM_GCC_493\Debug\CE95277 ADC and UART.elf elf32-littlearm)

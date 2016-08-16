@@ -1,0 +1,1179 @@
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccwdPxt9.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m3
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 2
+  11              		.eabi_attribute 34, 1
+  12              		.eabi_attribute 18, 4
+  13              		.thumb
+  14              		.file	"Encoder_Cnt_PM.c"
+  15              		.text
+  16              	.Ltext0:
+  17              		.cfi_sections	.debug_frame
+  18              		.section	.text.Encoder_Cnt_SaveConfig,"ax",%progbits
+  19              		.align	2
+  20              		.global	Encoder_Cnt_SaveConfig
+  21              		.thumb
+  22              		.thumb_func
+  23              		.type	Encoder_Cnt_SaveConfig, %function
+  24              	Encoder_Cnt_SaveConfig:
+  25              	.LFB0:
+  26              		.file 1 ".\\Generated_Source\\PSoC5\\Encoder_Cnt_PM.c"
+   1:.\Generated_Source\PSoC5/Encoder_Cnt_PM.c **** /*******************************************************************************
+   2:.\Generated_Source\PSoC5/Encoder_Cnt_PM.c **** * File Name: Encoder_Cnt_PM.c  
+   3:.\Generated_Source\PSoC5/Encoder_Cnt_PM.c **** * Version 3.0
+   4:.\Generated_Source\PSoC5/Encoder_Cnt_PM.c **** *
+   5:.\Generated_Source\PSoC5/Encoder_Cnt_PM.c **** *  Description:
+   6:.\Generated_Source\PSoC5/Encoder_Cnt_PM.c **** *    This file provides the power management source code to API for the
+   7:.\Generated_Source\PSoC5/Encoder_Cnt_PM.c **** *    Counter.  
+   8:.\Generated_Source\PSoC5/Encoder_Cnt_PM.c **** *
+   9:.\Generated_Source\PSoC5/Encoder_Cnt_PM.c **** *   Note:
+  10:.\Generated_Source\PSoC5/Encoder_Cnt_PM.c **** *     None
+  11:.\Generated_Source\PSoC5/Encoder_Cnt_PM.c **** *
+  12:.\Generated_Source\PSoC5/Encoder_Cnt_PM.c **** ********************************************************************************
+  13:.\Generated_Source\PSoC5/Encoder_Cnt_PM.c **** * Copyright 2008-2012, Cypress Semiconductor Corporation.  All rights reserved.
+  14:.\Generated_Source\PSoC5/Encoder_Cnt_PM.c **** * You may use this file only in accordance with the license, terms, conditions, 
+  15:.\Generated_Source\PSoC5/Encoder_Cnt_PM.c **** * disclaimers, and limitations in the end user license agreement accompanying 
+  16:.\Generated_Source\PSoC5/Encoder_Cnt_PM.c **** * the software package with which this file was provided.
+  17:.\Generated_Source\PSoC5/Encoder_Cnt_PM.c **** *******************************************************************************/
+  18:.\Generated_Source\PSoC5/Encoder_Cnt_PM.c **** 
+  19:.\Generated_Source\PSoC5/Encoder_Cnt_PM.c **** #include "Encoder_Cnt.h"
+  20:.\Generated_Source\PSoC5/Encoder_Cnt_PM.c **** 
+  21:.\Generated_Source\PSoC5/Encoder_Cnt_PM.c **** static Encoder_Cnt_backupStruct Encoder_Cnt_backup;
+  22:.\Generated_Source\PSoC5/Encoder_Cnt_PM.c **** 
+  23:.\Generated_Source\PSoC5/Encoder_Cnt_PM.c **** 
+  24:.\Generated_Source\PSoC5/Encoder_Cnt_PM.c **** /*******************************************************************************
+  25:.\Generated_Source\PSoC5/Encoder_Cnt_PM.c **** * Function Name: Encoder_Cnt_SaveConfig
+  26:.\Generated_Source\PSoC5/Encoder_Cnt_PM.c **** ********************************************************************************
+  27:.\Generated_Source\PSoC5/Encoder_Cnt_PM.c **** * Summary:
+  28:.\Generated_Source\PSoC5/Encoder_Cnt_PM.c **** *     Save the current user configuration
+  29:.\Generated_Source\PSoC5/Encoder_Cnt_PM.c **** *
+  30:.\Generated_Source\PSoC5/Encoder_Cnt_PM.c **** * Parameters:  
+  31:.\Generated_Source\PSoC5/Encoder_Cnt_PM.c **** *  void
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccwdPxt9.s 			page 2
+
+
+  32:.\Generated_Source\PSoC5/Encoder_Cnt_PM.c **** *
+  33:.\Generated_Source\PSoC5/Encoder_Cnt_PM.c **** * Return: 
+  34:.\Generated_Source\PSoC5/Encoder_Cnt_PM.c **** *  void
+  35:.\Generated_Source\PSoC5/Encoder_Cnt_PM.c **** *
+  36:.\Generated_Source\PSoC5/Encoder_Cnt_PM.c **** * Global variables:
+  37:.\Generated_Source\PSoC5/Encoder_Cnt_PM.c **** *  Encoder_Cnt_backup:  Variables of this global structure are modified to 
+  38:.\Generated_Source\PSoC5/Encoder_Cnt_PM.c **** *  store the values of non retention configuration registers when Sleep() API is 
+  39:.\Generated_Source\PSoC5/Encoder_Cnt_PM.c **** *  called.
+  40:.\Generated_Source\PSoC5/Encoder_Cnt_PM.c **** *
+  41:.\Generated_Source\PSoC5/Encoder_Cnt_PM.c **** *******************************************************************************/
+  42:.\Generated_Source\PSoC5/Encoder_Cnt_PM.c **** void Encoder_Cnt_SaveConfig(void) 
+  43:.\Generated_Source\PSoC5/Encoder_Cnt_PM.c **** {
+  27              		.loc 1 43 0
+  28              		.cfi_startproc
+  29              		@ args = 0, pretend = 0, frame = 0
+  30              		@ frame_needed = 0, uses_anonymous_args = 0
+  31 0000 10B5     		push	{r4, lr}
+  32              		.cfi_def_cfa_offset 8
+  33              		.cfi_offset 4, -8
+  34              		.cfi_offset 14, -4
+  44:.\Generated_Source\PSoC5/Encoder_Cnt_PM.c ****     #if (!Encoder_Cnt_UsingFixedFunction)
+  45:.\Generated_Source\PSoC5/Encoder_Cnt_PM.c **** 
+  46:.\Generated_Source\PSoC5/Encoder_Cnt_PM.c ****         Encoder_Cnt_backup.CounterUdb = Encoder_Cnt_ReadCounter();
+  35              		.loc 1 46 0
+  36 0002 FFF7FEFF 		bl	Encoder_Cnt_ReadCounter
+  37              	.LVL0:
+  38 0006 034C     		ldr	r4, .L3
+  39 0008 6080     		strh	r0, [r4, #2]	@ movhi
+  47:.\Generated_Source\PSoC5/Encoder_Cnt_PM.c **** 
+  48:.\Generated_Source\PSoC5/Encoder_Cnt_PM.c ****         #if(!Encoder_Cnt_ControlRegRemoved)
+  49:.\Generated_Source\PSoC5/Encoder_Cnt_PM.c ****             Encoder_Cnt_backup.CounterControlRegister = Encoder_Cnt_ReadControlRegister();
+  40              		.loc 1 49 0
+  41 000a FFF7FEFF 		bl	Encoder_Cnt_ReadControlRegister
+  42              	.LVL1:
+  43 000e 2071     		strb	r0, [r4, #4]
+  44 0010 10BD     		pop	{r4, pc}
+  45              	.L4:
+  46 0012 00BF     		.align	2
+  47              	.L3:
+  48 0014 00000000 		.word	.LANCHOR0
+  49              		.cfi_endproc
+  50              	.LFE0:
+  51              		.size	Encoder_Cnt_SaveConfig, .-Encoder_Cnt_SaveConfig
+  52              		.section	.text.Encoder_Cnt_RestoreConfig,"ax",%progbits
+  53              		.align	2
+  54              		.global	Encoder_Cnt_RestoreConfig
+  55              		.thumb
+  56              		.thumb_func
+  57              		.type	Encoder_Cnt_RestoreConfig, %function
+  58              	Encoder_Cnt_RestoreConfig:
+  59              	.LFB1:
+  50:.\Generated_Source\PSoC5/Encoder_Cnt_PM.c ****         #endif /* (!Encoder_Cnt_ControlRegRemoved) */
+  51:.\Generated_Source\PSoC5/Encoder_Cnt_PM.c **** 
+  52:.\Generated_Source\PSoC5/Encoder_Cnt_PM.c ****     #endif /* (!Encoder_Cnt_UsingFixedFunction) */
+  53:.\Generated_Source\PSoC5/Encoder_Cnt_PM.c **** }
+  54:.\Generated_Source\PSoC5/Encoder_Cnt_PM.c **** 
+  55:.\Generated_Source\PSoC5/Encoder_Cnt_PM.c **** 
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccwdPxt9.s 			page 3
+
+
+  56:.\Generated_Source\PSoC5/Encoder_Cnt_PM.c **** /*******************************************************************************
+  57:.\Generated_Source\PSoC5/Encoder_Cnt_PM.c **** * Function Name: Encoder_Cnt_RestoreConfig
+  58:.\Generated_Source\PSoC5/Encoder_Cnt_PM.c **** ********************************************************************************
+  59:.\Generated_Source\PSoC5/Encoder_Cnt_PM.c **** *
+  60:.\Generated_Source\PSoC5/Encoder_Cnt_PM.c **** * Summary:
+  61:.\Generated_Source\PSoC5/Encoder_Cnt_PM.c **** *  Restores the current user configuration.
+  62:.\Generated_Source\PSoC5/Encoder_Cnt_PM.c **** *
+  63:.\Generated_Source\PSoC5/Encoder_Cnt_PM.c **** * Parameters:  
+  64:.\Generated_Source\PSoC5/Encoder_Cnt_PM.c **** *  void
+  65:.\Generated_Source\PSoC5/Encoder_Cnt_PM.c **** *
+  66:.\Generated_Source\PSoC5/Encoder_Cnt_PM.c **** * Return: 
+  67:.\Generated_Source\PSoC5/Encoder_Cnt_PM.c **** *  void
+  68:.\Generated_Source\PSoC5/Encoder_Cnt_PM.c **** *
+  69:.\Generated_Source\PSoC5/Encoder_Cnt_PM.c **** * Global variables:
+  70:.\Generated_Source\PSoC5/Encoder_Cnt_PM.c **** *  Encoder_Cnt_backup:  Variables of this global structure are used to 
+  71:.\Generated_Source\PSoC5/Encoder_Cnt_PM.c **** *  restore the values of non retention registers on wakeup from sleep mode.
+  72:.\Generated_Source\PSoC5/Encoder_Cnt_PM.c **** *
+  73:.\Generated_Source\PSoC5/Encoder_Cnt_PM.c **** *******************************************************************************/
+  74:.\Generated_Source\PSoC5/Encoder_Cnt_PM.c **** void Encoder_Cnt_RestoreConfig(void) 
+  75:.\Generated_Source\PSoC5/Encoder_Cnt_PM.c **** {      
+  60              		.loc 1 75 0
+  61              		.cfi_startproc
+  62              		@ args = 0, pretend = 0, frame = 0
+  63              		@ frame_needed = 0, uses_anonymous_args = 0
+  64 0000 10B5     		push	{r4, lr}
+  65              		.cfi_def_cfa_offset 8
+  66              		.cfi_offset 4, -8
+  67              		.cfi_offset 14, -4
+  76:.\Generated_Source\PSoC5/Encoder_Cnt_PM.c ****     #if (!Encoder_Cnt_UsingFixedFunction)
+  77:.\Generated_Source\PSoC5/Encoder_Cnt_PM.c **** 
+  78:.\Generated_Source\PSoC5/Encoder_Cnt_PM.c ****        Encoder_Cnt_WriteCounter(Encoder_Cnt_backup.CounterUdb);
+  68              		.loc 1 78 0
+  69 0002 044C     		ldr	r4, .L7
+  70 0004 6088     		ldrh	r0, [r4, #2]
+  71 0006 FFF7FEFF 		bl	Encoder_Cnt_WriteCounter
+  72              	.LVL2:
+  79:.\Generated_Source\PSoC5/Encoder_Cnt_PM.c **** 
+  80:.\Generated_Source\PSoC5/Encoder_Cnt_PM.c ****         #if(!Encoder_Cnt_ControlRegRemoved)
+  81:.\Generated_Source\PSoC5/Encoder_Cnt_PM.c ****             Encoder_Cnt_WriteControlRegister(Encoder_Cnt_backup.CounterControlRegister);
+  73              		.loc 1 81 0
+  74 000a 2079     		ldrb	r0, [r4, #4]	@ zero_extendqisi2
+  82:.\Generated_Source\PSoC5/Encoder_Cnt_PM.c ****         #endif /* (!Encoder_Cnt_ControlRegRemoved) */
+  83:.\Generated_Source\PSoC5/Encoder_Cnt_PM.c **** 
+  84:.\Generated_Source\PSoC5/Encoder_Cnt_PM.c ****     #endif /* (!Encoder_Cnt_UsingFixedFunction) */
+  85:.\Generated_Source\PSoC5/Encoder_Cnt_PM.c **** }
+  75              		.loc 1 85 0
+  76 000c BDE81040 		pop	{r4, lr}
+  77              		.cfi_restore 14
+  78              		.cfi_restore 4
+  79              		.cfi_def_cfa_offset 0
+  81:.\Generated_Source\PSoC5/Encoder_Cnt_PM.c ****         #endif /* (!Encoder_Cnt_ControlRegRemoved) */
+  80              		.loc 1 81 0
+  81 0010 FFF7FEBF 		b	Encoder_Cnt_WriteControlRegister
+  82              	.LVL3:
+  83              	.L8:
+  84              		.align	2
+  85              	.L7:
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccwdPxt9.s 			page 4
+
+
+  86 0014 00000000 		.word	.LANCHOR0
+  87              		.cfi_endproc
+  88              	.LFE1:
+  89              		.size	Encoder_Cnt_RestoreConfig, .-Encoder_Cnt_RestoreConfig
+  90              		.section	.text.Encoder_Cnt_Sleep,"ax",%progbits
+  91              		.align	2
+  92              		.global	Encoder_Cnt_Sleep
+  93              		.thumb
+  94              		.thumb_func
+  95              		.type	Encoder_Cnt_Sleep, %function
+  96              	Encoder_Cnt_Sleep:
+  97              	.LFB2:
+  86:.\Generated_Source\PSoC5/Encoder_Cnt_PM.c **** 
+  87:.\Generated_Source\PSoC5/Encoder_Cnt_PM.c **** 
+  88:.\Generated_Source\PSoC5/Encoder_Cnt_PM.c **** /*******************************************************************************
+  89:.\Generated_Source\PSoC5/Encoder_Cnt_PM.c **** * Function Name: Encoder_Cnt_Sleep
+  90:.\Generated_Source\PSoC5/Encoder_Cnt_PM.c **** ********************************************************************************
+  91:.\Generated_Source\PSoC5/Encoder_Cnt_PM.c **** * Summary:
+  92:.\Generated_Source\PSoC5/Encoder_Cnt_PM.c **** *     Stop and Save the user configuration
+  93:.\Generated_Source\PSoC5/Encoder_Cnt_PM.c **** *
+  94:.\Generated_Source\PSoC5/Encoder_Cnt_PM.c **** * Parameters:  
+  95:.\Generated_Source\PSoC5/Encoder_Cnt_PM.c **** *  void
+  96:.\Generated_Source\PSoC5/Encoder_Cnt_PM.c **** *
+  97:.\Generated_Source\PSoC5/Encoder_Cnt_PM.c **** * Return: 
+  98:.\Generated_Source\PSoC5/Encoder_Cnt_PM.c **** *  void
+  99:.\Generated_Source\PSoC5/Encoder_Cnt_PM.c **** *
+ 100:.\Generated_Source\PSoC5/Encoder_Cnt_PM.c **** * Global variables:
+ 101:.\Generated_Source\PSoC5/Encoder_Cnt_PM.c **** *  Encoder_Cnt_backup.enableState:  Is modified depending on the enable 
+ 102:.\Generated_Source\PSoC5/Encoder_Cnt_PM.c **** *  state of the block before entering sleep mode.
+ 103:.\Generated_Source\PSoC5/Encoder_Cnt_PM.c **** *
+ 104:.\Generated_Source\PSoC5/Encoder_Cnt_PM.c **** *******************************************************************************/
+ 105:.\Generated_Source\PSoC5/Encoder_Cnt_PM.c **** void Encoder_Cnt_Sleep(void) 
+ 106:.\Generated_Source\PSoC5/Encoder_Cnt_PM.c **** {
+  98              		.loc 1 106 0
+  99              		.cfi_startproc
+ 100              		@ args = 0, pretend = 0, frame = 0
+ 101              		@ frame_needed = 0, uses_anonymous_args = 0
+ 102 0000 10B5     		push	{r4, lr}
+ 103              		.cfi_def_cfa_offset 8
+ 104              		.cfi_offset 4, -8
+ 105              		.cfi_offset 14, -4
+ 107:.\Generated_Source\PSoC5/Encoder_Cnt_PM.c ****     #if(!Encoder_Cnt_ControlRegRemoved)
+ 108:.\Generated_Source\PSoC5/Encoder_Cnt_PM.c ****         /* Save Counter's enable state */
+ 109:.\Generated_Source\PSoC5/Encoder_Cnt_PM.c ****         if(Encoder_Cnt_CTRL_ENABLE == (Encoder_Cnt_CONTROL & Encoder_Cnt_CTRL_ENABLE))
+ 106              		.loc 1 109 0
+ 107 0002 074B     		ldr	r3, .L11
+ 108 0004 074C     		ldr	r4, .L11+4
+ 109 0006 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
+ 110 0008 DB09     		lsrs	r3, r3, #7
+ 111 000a 2370     		strb	r3, [r4]
+ 110:.\Generated_Source\PSoC5/Encoder_Cnt_PM.c ****         {
+ 111:.\Generated_Source\PSoC5/Encoder_Cnt_PM.c ****             /* Counter is enabled */
+ 112:.\Generated_Source\PSoC5/Encoder_Cnt_PM.c ****             Encoder_Cnt_backup.CounterEnableState = 1u;
+ 113:.\Generated_Source\PSoC5/Encoder_Cnt_PM.c ****         }
+ 114:.\Generated_Source\PSoC5/Encoder_Cnt_PM.c ****         else
+ 115:.\Generated_Source\PSoC5/Encoder_Cnt_PM.c ****         {
+ 116:.\Generated_Source\PSoC5/Encoder_Cnt_PM.c ****             /* Counter is disabled */
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccwdPxt9.s 			page 5
+
+
+ 117:.\Generated_Source\PSoC5/Encoder_Cnt_PM.c ****             Encoder_Cnt_backup.CounterEnableState = 0u;
+ 118:.\Generated_Source\PSoC5/Encoder_Cnt_PM.c ****         }
+ 119:.\Generated_Source\PSoC5/Encoder_Cnt_PM.c ****     #else
+ 120:.\Generated_Source\PSoC5/Encoder_Cnt_PM.c ****         Encoder_Cnt_backup.CounterEnableState = 1u;
+ 121:.\Generated_Source\PSoC5/Encoder_Cnt_PM.c ****         if(Encoder_Cnt_backup.CounterEnableState != 0u)
+ 122:.\Generated_Source\PSoC5/Encoder_Cnt_PM.c ****         {
+ 123:.\Generated_Source\PSoC5/Encoder_Cnt_PM.c ****             Encoder_Cnt_backup.CounterEnableState = 0u;
+ 124:.\Generated_Source\PSoC5/Encoder_Cnt_PM.c ****         }
+ 125:.\Generated_Source\PSoC5/Encoder_Cnt_PM.c ****     #endif /* (!Encoder_Cnt_ControlRegRemoved) */
+ 126:.\Generated_Source\PSoC5/Encoder_Cnt_PM.c ****     
+ 127:.\Generated_Source\PSoC5/Encoder_Cnt_PM.c ****     Encoder_Cnt_Stop();
+ 112              		.loc 1 127 0
+ 113 000c FFF7FEFF 		bl	Encoder_Cnt_Stop
+ 114              	.LVL4:
+ 115              	.LBB4:
+ 116              	.LBB5:
+  46:.\Generated_Source\PSoC5/Encoder_Cnt_PM.c **** 
+ 117              		.loc 1 46 0
+ 118 0010 FFF7FEFF 		bl	Encoder_Cnt_ReadCounter
+ 119              	.LVL5:
+ 120 0014 6080     		strh	r0, [r4, #2]	@ movhi
+  49:.\Generated_Source\PSoC5/Encoder_Cnt_PM.c ****         #endif /* (!Encoder_Cnt_ControlRegRemoved) */
+ 121              		.loc 1 49 0
+ 122 0016 FFF7FEFF 		bl	Encoder_Cnt_ReadControlRegister
+ 123              	.LVL6:
+ 124 001a 2071     		strb	r0, [r4, #4]
+ 125 001c 10BD     		pop	{r4, pc}
+ 126              	.L12:
+ 127 001e 00BF     		.align	2
+ 128              	.L11:
+ 129 0020 7A650040 		.word	1073767802
+ 130 0024 00000000 		.word	.LANCHOR0
+ 131              	.LBE5:
+ 132              	.LBE4:
+ 133              		.cfi_endproc
+ 134              	.LFE2:
+ 135              		.size	Encoder_Cnt_Sleep, .-Encoder_Cnt_Sleep
+ 136              		.section	.text.Encoder_Cnt_Wakeup,"ax",%progbits
+ 137              		.align	2
+ 138              		.global	Encoder_Cnt_Wakeup
+ 139              		.thumb
+ 140              		.thumb_func
+ 141              		.type	Encoder_Cnt_Wakeup, %function
+ 142              	Encoder_Cnt_Wakeup:
+ 143              	.LFB3:
+ 128:.\Generated_Source\PSoC5/Encoder_Cnt_PM.c ****     Encoder_Cnt_SaveConfig();
+ 129:.\Generated_Source\PSoC5/Encoder_Cnt_PM.c **** }
+ 130:.\Generated_Source\PSoC5/Encoder_Cnt_PM.c **** 
+ 131:.\Generated_Source\PSoC5/Encoder_Cnt_PM.c **** 
+ 132:.\Generated_Source\PSoC5/Encoder_Cnt_PM.c **** /*******************************************************************************
+ 133:.\Generated_Source\PSoC5/Encoder_Cnt_PM.c **** * Function Name: Encoder_Cnt_Wakeup
+ 134:.\Generated_Source\PSoC5/Encoder_Cnt_PM.c **** ********************************************************************************
+ 135:.\Generated_Source\PSoC5/Encoder_Cnt_PM.c **** *
+ 136:.\Generated_Source\PSoC5/Encoder_Cnt_PM.c **** * Summary:
+ 137:.\Generated_Source\PSoC5/Encoder_Cnt_PM.c **** *  Restores and enables the user configuration
+ 138:.\Generated_Source\PSoC5/Encoder_Cnt_PM.c **** *  
+ 139:.\Generated_Source\PSoC5/Encoder_Cnt_PM.c **** * Parameters:  
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccwdPxt9.s 			page 6
+
+
+ 140:.\Generated_Source\PSoC5/Encoder_Cnt_PM.c **** *  void
+ 141:.\Generated_Source\PSoC5/Encoder_Cnt_PM.c **** *
+ 142:.\Generated_Source\PSoC5/Encoder_Cnt_PM.c **** * Return: 
+ 143:.\Generated_Source\PSoC5/Encoder_Cnt_PM.c **** *  void
+ 144:.\Generated_Source\PSoC5/Encoder_Cnt_PM.c **** *
+ 145:.\Generated_Source\PSoC5/Encoder_Cnt_PM.c **** * Global variables:
+ 146:.\Generated_Source\PSoC5/Encoder_Cnt_PM.c **** *  Encoder_Cnt_backup.enableState:  Is used to restore the enable state of 
+ 147:.\Generated_Source\PSoC5/Encoder_Cnt_PM.c **** *  block on wakeup from sleep mode.
+ 148:.\Generated_Source\PSoC5/Encoder_Cnt_PM.c **** *
+ 149:.\Generated_Source\PSoC5/Encoder_Cnt_PM.c **** *******************************************************************************/
+ 150:.\Generated_Source\PSoC5/Encoder_Cnt_PM.c **** void Encoder_Cnt_Wakeup(void) 
+ 151:.\Generated_Source\PSoC5/Encoder_Cnt_PM.c **** {
+ 144              		.loc 1 151 0
+ 145              		.cfi_startproc
+ 146              		@ args = 0, pretend = 0, frame = 0
+ 147              		@ frame_needed = 0, uses_anonymous_args = 0
+ 148 0000 10B5     		push	{r4, lr}
+ 149              		.cfi_def_cfa_offset 8
+ 150              		.cfi_offset 4, -8
+ 151              		.cfi_offset 14, -4
+ 152              	.LBB8:
+ 153              	.LBB9:
+  78:.\Generated_Source\PSoC5/Encoder_Cnt_PM.c **** 
+ 154              		.loc 1 78 0
+ 155 0002 074C     		ldr	r4, .L18
+ 156 0004 6088     		ldrh	r0, [r4, #2]
+ 157 0006 FFF7FEFF 		bl	Encoder_Cnt_WriteCounter
+ 158              	.LVL7:
+  81:.\Generated_Source\PSoC5/Encoder_Cnt_PM.c ****         #endif /* (!Encoder_Cnt_ControlRegRemoved) */
+ 159              		.loc 1 81 0
+ 160 000a 2079     		ldrb	r0, [r4, #4]	@ zero_extendqisi2
+ 161 000c FFF7FEFF 		bl	Encoder_Cnt_WriteControlRegister
+ 162              	.LVL8:
+ 163              	.LBE9:
+ 164              	.LBE8:
+ 152:.\Generated_Source\PSoC5/Encoder_Cnt_PM.c ****     Encoder_Cnt_RestoreConfig();
+ 153:.\Generated_Source\PSoC5/Encoder_Cnt_PM.c ****     #if(!Encoder_Cnt_ControlRegRemoved)
+ 154:.\Generated_Source\PSoC5/Encoder_Cnt_PM.c ****         if(Encoder_Cnt_backup.CounterEnableState == 1u)
+ 165              		.loc 1 154 0
+ 166 0010 2378     		ldrb	r3, [r4]	@ zero_extendqisi2
+ 167 0012 012B     		cmp	r3, #1
+ 168 0014 00D0     		beq	.L17
+ 169 0016 10BD     		pop	{r4, pc}
+ 170              	.L17:
+ 155:.\Generated_Source\PSoC5/Encoder_Cnt_PM.c ****         {
+ 156:.\Generated_Source\PSoC5/Encoder_Cnt_PM.c ****             /* Enable Counter's operation */
+ 157:.\Generated_Source\PSoC5/Encoder_Cnt_PM.c ****             Encoder_Cnt_Enable();
+ 158:.\Generated_Source\PSoC5/Encoder_Cnt_PM.c ****         } /* Do nothing if Counter was disabled before */    
+ 159:.\Generated_Source\PSoC5/Encoder_Cnt_PM.c ****     #endif /* (!Encoder_Cnt_ControlRegRemoved) */
+ 160:.\Generated_Source\PSoC5/Encoder_Cnt_PM.c ****     
+ 161:.\Generated_Source\PSoC5/Encoder_Cnt_PM.c **** }
+ 171              		.loc 1 161 0
+ 172 0018 BDE81040 		pop	{r4, lr}
+ 173              		.cfi_restore 14
+ 174              		.cfi_restore 4
+ 175              		.cfi_def_cfa_offset 0
+ 157:.\Generated_Source\PSoC5/Encoder_Cnt_PM.c ****         } /* Do nothing if Counter was disabled before */    
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccwdPxt9.s 			page 7
+
+
+ 176              		.loc 1 157 0
+ 177 001c FFF7FEBF 		b	Encoder_Cnt_Enable
+ 178              	.LVL9:
+ 179              	.L19:
+ 180              		.align	2
+ 181              	.L18:
+ 182 0020 00000000 		.word	.LANCHOR0
+ 183              		.cfi_endproc
+ 184              	.LFE3:
+ 185              		.size	Encoder_Cnt_Wakeup, .-Encoder_Cnt_Wakeup
+ 186              		.bss
+ 187              		.align	2
+ 188              		.set	.LANCHOR0,. + 0
+ 189              		.type	Encoder_Cnt_backup, %object
+ 190              		.size	Encoder_Cnt_backup, 6
+ 191              	Encoder_Cnt_backup:
+ 192 0000 00000000 		.space	6
+ 192      0000
+ 193 0006 0000     		.text
+ 194              	.Letext0:
+ 195              		.file 2 ".\\Generated_Source\\PSoC5\\cytypes.h"
+ 196              		.file 3 ".\\Generated_Source\\PSoC5\\Encoder_Cnt.h"
+ 197              		.section	.debug_info,"",%progbits
+ 198              	.Ldebug_info0:
+ 199 0000 22020000 		.4byte	0x222
+ 200 0004 0400     		.2byte	0x4
+ 201 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 202 000a 04       		.byte	0x4
+ 203 000b 01       		.uleb128 0x1
+ 204 000c 0E010000 		.4byte	.LASF30
+ 205 0010 01       		.byte	0x1
+ 206 0011 68000000 		.4byte	.LASF31
+ 207 0015 13000000 		.4byte	.LASF32
+ 208 0019 00000000 		.4byte	.Ldebug_ranges0+0
+ 209 001d 00000000 		.4byte	0
+ 210 0021 00000000 		.4byte	.Ldebug_line0
+ 211 0025 02       		.uleb128 0x2
+ 212 0026 01       		.byte	0x1
+ 213 0027 06       		.byte	0x6
+ 214 0028 FF020000 		.4byte	.LASF0
+ 215 002c 02       		.uleb128 0x2
+ 216 002d 01       		.byte	0x1
+ 217 002e 08       		.byte	0x8
+ 218 002f 00010000 		.4byte	.LASF1
+ 219 0033 02       		.uleb128 0x2
+ 220 0034 02       		.byte	0x2
+ 221 0035 05       		.byte	0x5
+ 222 0036 9B020000 		.4byte	.LASF2
+ 223 003a 02       		.uleb128 0x2
+ 224 003b 02       		.byte	0x2
+ 225 003c 07       		.byte	0x7
+ 226 003d AC000000 		.4byte	.LASF3
+ 227 0041 02       		.uleb128 0x2
+ 228 0042 04       		.byte	0x4
+ 229 0043 05       		.byte	0x5
+ 230 0044 DD020000 		.4byte	.LASF4
+ 231 0048 02       		.uleb128 0x2
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccwdPxt9.s 			page 8
+
+
+ 232 0049 04       		.byte	0x4
+ 233 004a 07       		.byte	0x7
+ 234 004b B2010000 		.4byte	.LASF5
+ 235 004f 02       		.uleb128 0x2
+ 236 0050 08       		.byte	0x8
+ 237 0051 05       		.byte	0x5
+ 238 0052 76020000 		.4byte	.LASF6
+ 239 0056 02       		.uleb128 0x2
+ 240 0057 08       		.byte	0x8
+ 241 0058 07       		.byte	0x7
+ 242 0059 43020000 		.4byte	.LASF7
+ 243 005d 03       		.uleb128 0x3
+ 244 005e 04       		.byte	0x4
+ 245 005f 05       		.byte	0x5
+ 246 0060 696E7400 		.ascii	"int\000"
+ 247 0064 02       		.uleb128 0x2
+ 248 0065 04       		.byte	0x4
+ 249 0066 07       		.byte	0x7
+ 250 0067 36020000 		.4byte	.LASF8
+ 251 006b 04       		.uleb128 0x4
+ 252 006c C4010000 		.4byte	.LASF9
+ 253 0070 02       		.byte	0x2
+ 254 0071 9201     		.2byte	0x192
+ 255 0073 2C000000 		.4byte	0x2c
+ 256 0077 04       		.uleb128 0x4
+ 257 0078 0E020000 		.4byte	.LASF10
+ 258 007c 02       		.byte	0x2
+ 259 007d 9301     		.2byte	0x193
+ 260 007f 3A000000 		.4byte	0x3a
+ 261 0083 02       		.uleb128 0x2
+ 262 0084 04       		.byte	0x4
+ 263 0085 04       		.byte	0x4
+ 264 0086 FA000000 		.4byte	.LASF11
+ 265 008a 02       		.uleb128 0x2
+ 266 008b 08       		.byte	0x8
+ 267 008c 04       		.byte	0x4
+ 268 008d F4010000 		.4byte	.LASF12
+ 269 0091 02       		.uleb128 0x2
+ 270 0092 01       		.byte	0x1
+ 271 0093 08       		.byte	0x8
+ 272 0094 96020000 		.4byte	.LASF13
+ 273 0098 04       		.uleb128 0x4
+ 274 0099 AD010000 		.4byte	.LASF14
+ 275 009d 02       		.byte	0x2
+ 276 009e 3C02     		.2byte	0x23c
+ 277 00a0 A4000000 		.4byte	0xa4
+ 278 00a4 05       		.uleb128 0x5
+ 279 00a5 6B000000 		.4byte	0x6b
+ 280 00a9 02       		.uleb128 0x2
+ 281 00aa 04       		.byte	0x4
+ 282 00ab 07       		.byte	0x7
+ 283 00ac 5A020000 		.4byte	.LASF15
+ 284 00b0 06       		.uleb128 0x6
+ 285 00b1 06       		.byte	0x6
+ 286 00b2 03       		.byte	0x3
+ 287 00b3 40       		.byte	0x40
+ 288 00b4 DD000000 		.4byte	0xdd
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccwdPxt9.s 			page 9
+
+
+ 289 00b8 07       		.uleb128 0x7
+ 290 00b9 63020000 		.4byte	.LASF16
+ 291 00bd 03       		.byte	0x3
+ 292 00be 42       		.byte	0x42
+ 293 00bf 6B000000 		.4byte	0x6b
+ 294 00c3 00       		.byte	0
+ 295 00c4 07       		.uleb128 0x7
+ 296 00c5 BF000000 		.4byte	.LASF17
+ 297 00c9 03       		.byte	0x3
+ 298 00ca 43       		.byte	0x43
+ 299 00cb 77000000 		.4byte	0x77
+ 300 00cf 02       		.byte	0x2
+ 301 00d0 07       		.uleb128 0x7
+ 302 00d1 CA000000 		.4byte	.LASF18
+ 303 00d5 03       		.byte	0x3
+ 304 00d6 46       		.byte	0x46
+ 305 00d7 6B000000 		.4byte	0x6b
+ 306 00db 04       		.byte	0x4
+ 307 00dc 00       		.byte	0
+ 308 00dd 08       		.uleb128 0x8
+ 309 00de E1000000 		.4byte	.LASF19
+ 310 00e2 03       		.byte	0x3
+ 311 00e3 49       		.byte	0x49
+ 312 00e4 B0000000 		.4byte	0xb0
+ 313 00e8 09       		.uleb128 0x9
+ 314 00e9 CA010000 		.4byte	.LASF20
+ 315 00ed 01       		.byte	0x1
+ 316 00ee 2A       		.byte	0x2a
+ 317 00ef 01       		.byte	0x1
+ 318 00f0 0A       		.uleb128 0xa
+ 319 00f1 E8000000 		.4byte	0xe8
+ 320 00f5 00000000 		.4byte	.LFB0
+ 321 00f9 18000000 		.4byte	.LFE0-.LFB0
+ 322 00fd 01       		.uleb128 0x1
+ 323 00fe 9C       		.byte	0x9c
+ 324 00ff 16010000 		.4byte	0x116
+ 325 0103 0B       		.uleb128 0xb
+ 326 0104 06000000 		.4byte	.LVL0
+ 327 0108 DF010000 		.4byte	0x1df
+ 328 010c 0B       		.uleb128 0xb
+ 329 010d 0E000000 		.4byte	.LVL1
+ 330 0111 EA010000 		.4byte	0x1ea
+ 331 0115 00       		.byte	0
+ 332 0116 09       		.uleb128 0x9
+ 333 0117 92000000 		.4byte	.LASF21
+ 334 011b 01       		.byte	0x1
+ 335 011c 4A       		.byte	0x4a
+ 336 011d 01       		.byte	0x1
+ 337 011e 0A       		.uleb128 0xa
+ 338 011f 16010000 		.4byte	0x116
+ 339 0123 00000000 		.4byte	.LFB1
+ 340 0127 18000000 		.4byte	.LFE1-.LFB1
+ 341 012b 01       		.uleb128 0x1
+ 342 012c 9C       		.byte	0x9c
+ 343 012d 44010000 		.4byte	0x144
+ 344 0131 0B       		.uleb128 0xb
+ 345 0132 0A000000 		.4byte	.LVL2
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccwdPxt9.s 			page 10
+
+
+ 346 0136 F5010000 		.4byte	0x1f5
+ 347 013a 0C       		.uleb128 0xc
+ 348 013b 14000000 		.4byte	.LVL3
+ 349 013f 06020000 		.4byte	0x206
+ 350 0143 00       		.byte	0
+ 351 0144 0D       		.uleb128 0xd
+ 352 0145 84020000 		.4byte	.LASF22
+ 353 0149 01       		.byte	0x1
+ 354 014a 69       		.byte	0x69
+ 355 014b 00000000 		.4byte	.LFB2
+ 356 014f 28000000 		.4byte	.LFE2-.LFB2
+ 357 0153 01       		.uleb128 0x1
+ 358 0154 9C       		.byte	0x9c
+ 359 0155 89010000 		.4byte	0x189
+ 360 0159 0E       		.uleb128 0xe
+ 361 015a E8000000 		.4byte	0xe8
+ 362 015e 10000000 		.4byte	.LBB4
+ 363 0162 18000000 		.4byte	.LBE4-.LBB4
+ 364 0166 01       		.byte	0x1
+ 365 0167 80       		.byte	0x80
+ 366 0168 7F010000 		.4byte	0x17f
+ 367 016c 0B       		.uleb128 0xb
+ 368 016d 14000000 		.4byte	.LVL5
+ 369 0171 DF010000 		.4byte	0x1df
+ 370 0175 0B       		.uleb128 0xb
+ 371 0176 1A000000 		.4byte	.LVL6
+ 372 017a EA010000 		.4byte	0x1ea
+ 373 017e 00       		.byte	0
+ 374 017f 0B       		.uleb128 0xb
+ 375 0180 10000000 		.4byte	.LVL4
+ 376 0184 17020000 		.4byte	0x217
+ 377 0188 00       		.byte	0
+ 378 0189 0D       		.uleb128 0xd
+ 379 018a FB010000 		.4byte	.LASF23
+ 380 018e 01       		.byte	0x1
+ 381 018f 96       		.byte	0x96
+ 382 0190 00000000 		.4byte	.LFB3
+ 383 0194 24000000 		.4byte	.LFE3-.LFB3
+ 384 0198 01       		.uleb128 0x1
+ 385 0199 9C       		.byte	0x9c
+ 386 019a CE010000 		.4byte	0x1ce
+ 387 019e 0E       		.uleb128 0xe
+ 388 019f 16010000 		.4byte	0x116
+ 389 01a3 02000000 		.4byte	.LBB8
+ 390 01a7 0E000000 		.4byte	.LBE8-.LBB8
+ 391 01ab 01       		.byte	0x1
+ 392 01ac 98       		.byte	0x98
+ 393 01ad C4010000 		.4byte	0x1c4
+ 394 01b1 0B       		.uleb128 0xb
+ 395 01b2 0A000000 		.4byte	.LVL7
+ 396 01b6 F5010000 		.4byte	0x1f5
+ 397 01ba 0B       		.uleb128 0xb
+ 398 01bb 10000000 		.4byte	.LVL8
+ 399 01bf 06020000 		.4byte	0x206
+ 400 01c3 00       		.byte	0
+ 401 01c4 0C       		.uleb128 0xc
+ 402 01c5 20000000 		.4byte	.LVL9
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccwdPxt9.s 			page 11
+
+
+ 403 01c9 1E020000 		.4byte	0x21e
+ 404 01cd 00       		.byte	0
+ 405 01ce 0F       		.uleb128 0xf
+ 406 01cf E1010000 		.4byte	.LASF33
+ 407 01d3 01       		.byte	0x1
+ 408 01d4 15       		.byte	0x15
+ 409 01d5 DD000000 		.4byte	0xdd
+ 410 01d9 05       		.uleb128 0x5
+ 411 01da 03       		.byte	0x3
+ 412 01db 00000000 		.4byte	Encoder_Cnt_backup
+ 413 01df 10       		.uleb128 0x10
+ 414 01e0 C5020000 		.4byte	.LASF24
+ 415 01e4 03       		.byte	0x3
+ 416 01e5 5D       		.byte	0x5d
+ 417 01e6 77000000 		.4byte	0x77
+ 418 01ea 10       		.uleb128 0x10
+ 419 01eb A5020000 		.4byte	.LASF25
+ 420 01ef 03       		.byte	0x3
+ 421 01f0 55       		.byte	0x55
+ 422 01f1 6B000000 		.4byte	0x6b
+ 423 01f5 11       		.uleb128 0x11
+ 424 01f6 E6020000 		.4byte	.LASF26
+ 425 01fa 03       		.byte	0x3
+ 426 01fb 5A       		.byte	0x5a
+ 427 01fc 06020000 		.4byte	0x206
+ 428 0200 12       		.uleb128 0x12
+ 429 0201 77000000 		.4byte	0x77
+ 430 0205 00       		.byte	0
+ 431 0206 11       		.uleb128 0x11
+ 432 0207 15020000 		.4byte	.LASF27
+ 433 020b 03       		.byte	0x3
+ 434 020c 56       		.byte	0x56
+ 435 020d 17020000 		.4byte	0x217
+ 436 0211 12       		.uleb128 0x12
+ 437 0212 6B000000 		.4byte	0x6b
+ 438 0216 00       		.byte	0
+ 439 0217 13       		.uleb128 0x13
+ 440 0218 9C010000 		.4byte	.LASF28
+ 441 021c 03       		.byte	0x3
+ 442 021d 50       		.byte	0x50
+ 443 021e 13       		.uleb128 0x13
+ 444 021f 00000000 		.4byte	.LASF29
+ 445 0223 03       		.byte	0x3
+ 446 0224 71       		.byte	0x71
+ 447 0225 00       		.byte	0
+ 448              		.section	.debug_abbrev,"",%progbits
+ 449              	.Ldebug_abbrev0:
+ 450 0000 01       		.uleb128 0x1
+ 451 0001 11       		.uleb128 0x11
+ 452 0002 01       		.byte	0x1
+ 453 0003 25       		.uleb128 0x25
+ 454 0004 0E       		.uleb128 0xe
+ 455 0005 13       		.uleb128 0x13
+ 456 0006 0B       		.uleb128 0xb
+ 457 0007 03       		.uleb128 0x3
+ 458 0008 0E       		.uleb128 0xe
+ 459 0009 1B       		.uleb128 0x1b
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccwdPxt9.s 			page 12
+
+
+ 460 000a 0E       		.uleb128 0xe
+ 461 000b 55       		.uleb128 0x55
+ 462 000c 17       		.uleb128 0x17
+ 463 000d 11       		.uleb128 0x11
+ 464 000e 01       		.uleb128 0x1
+ 465 000f 10       		.uleb128 0x10
+ 466 0010 17       		.uleb128 0x17
+ 467 0011 00       		.byte	0
+ 468 0012 00       		.byte	0
+ 469 0013 02       		.uleb128 0x2
+ 470 0014 24       		.uleb128 0x24
+ 471 0015 00       		.byte	0
+ 472 0016 0B       		.uleb128 0xb
+ 473 0017 0B       		.uleb128 0xb
+ 474 0018 3E       		.uleb128 0x3e
+ 475 0019 0B       		.uleb128 0xb
+ 476 001a 03       		.uleb128 0x3
+ 477 001b 0E       		.uleb128 0xe
+ 478 001c 00       		.byte	0
+ 479 001d 00       		.byte	0
+ 480 001e 03       		.uleb128 0x3
+ 481 001f 24       		.uleb128 0x24
+ 482 0020 00       		.byte	0
+ 483 0021 0B       		.uleb128 0xb
+ 484 0022 0B       		.uleb128 0xb
+ 485 0023 3E       		.uleb128 0x3e
+ 486 0024 0B       		.uleb128 0xb
+ 487 0025 03       		.uleb128 0x3
+ 488 0026 08       		.uleb128 0x8
+ 489 0027 00       		.byte	0
+ 490 0028 00       		.byte	0
+ 491 0029 04       		.uleb128 0x4
+ 492 002a 16       		.uleb128 0x16
+ 493 002b 00       		.byte	0
+ 494 002c 03       		.uleb128 0x3
+ 495 002d 0E       		.uleb128 0xe
+ 496 002e 3A       		.uleb128 0x3a
+ 497 002f 0B       		.uleb128 0xb
+ 498 0030 3B       		.uleb128 0x3b
+ 499 0031 05       		.uleb128 0x5
+ 500 0032 49       		.uleb128 0x49
+ 501 0033 13       		.uleb128 0x13
+ 502 0034 00       		.byte	0
+ 503 0035 00       		.byte	0
+ 504 0036 05       		.uleb128 0x5
+ 505 0037 35       		.uleb128 0x35
+ 506 0038 00       		.byte	0
+ 507 0039 49       		.uleb128 0x49
+ 508 003a 13       		.uleb128 0x13
+ 509 003b 00       		.byte	0
+ 510 003c 00       		.byte	0
+ 511 003d 06       		.uleb128 0x6
+ 512 003e 13       		.uleb128 0x13
+ 513 003f 01       		.byte	0x1
+ 514 0040 0B       		.uleb128 0xb
+ 515 0041 0B       		.uleb128 0xb
+ 516 0042 3A       		.uleb128 0x3a
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccwdPxt9.s 			page 13
+
+
+ 517 0043 0B       		.uleb128 0xb
+ 518 0044 3B       		.uleb128 0x3b
+ 519 0045 0B       		.uleb128 0xb
+ 520 0046 01       		.uleb128 0x1
+ 521 0047 13       		.uleb128 0x13
+ 522 0048 00       		.byte	0
+ 523 0049 00       		.byte	0
+ 524 004a 07       		.uleb128 0x7
+ 525 004b 0D       		.uleb128 0xd
+ 526 004c 00       		.byte	0
+ 527 004d 03       		.uleb128 0x3
+ 528 004e 0E       		.uleb128 0xe
+ 529 004f 3A       		.uleb128 0x3a
+ 530 0050 0B       		.uleb128 0xb
+ 531 0051 3B       		.uleb128 0x3b
+ 532 0052 0B       		.uleb128 0xb
+ 533 0053 49       		.uleb128 0x49
+ 534 0054 13       		.uleb128 0x13
+ 535 0055 38       		.uleb128 0x38
+ 536 0056 0B       		.uleb128 0xb
+ 537 0057 00       		.byte	0
+ 538 0058 00       		.byte	0
+ 539 0059 08       		.uleb128 0x8
+ 540 005a 16       		.uleb128 0x16
+ 541 005b 00       		.byte	0
+ 542 005c 03       		.uleb128 0x3
+ 543 005d 0E       		.uleb128 0xe
+ 544 005e 3A       		.uleb128 0x3a
+ 545 005f 0B       		.uleb128 0xb
+ 546 0060 3B       		.uleb128 0x3b
+ 547 0061 0B       		.uleb128 0xb
+ 548 0062 49       		.uleb128 0x49
+ 549 0063 13       		.uleb128 0x13
+ 550 0064 00       		.byte	0
+ 551 0065 00       		.byte	0
+ 552 0066 09       		.uleb128 0x9
+ 553 0067 2E       		.uleb128 0x2e
+ 554 0068 00       		.byte	0
+ 555 0069 3F       		.uleb128 0x3f
+ 556 006a 19       		.uleb128 0x19
+ 557 006b 03       		.uleb128 0x3
+ 558 006c 0E       		.uleb128 0xe
+ 559 006d 3A       		.uleb128 0x3a
+ 560 006e 0B       		.uleb128 0xb
+ 561 006f 3B       		.uleb128 0x3b
+ 562 0070 0B       		.uleb128 0xb
+ 563 0071 27       		.uleb128 0x27
+ 564 0072 19       		.uleb128 0x19
+ 565 0073 20       		.uleb128 0x20
+ 566 0074 0B       		.uleb128 0xb
+ 567 0075 00       		.byte	0
+ 568 0076 00       		.byte	0
+ 569 0077 0A       		.uleb128 0xa
+ 570 0078 2E       		.uleb128 0x2e
+ 571 0079 01       		.byte	0x1
+ 572 007a 31       		.uleb128 0x31
+ 573 007b 13       		.uleb128 0x13
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccwdPxt9.s 			page 14
+
+
+ 574 007c 11       		.uleb128 0x11
+ 575 007d 01       		.uleb128 0x1
+ 576 007e 12       		.uleb128 0x12
+ 577 007f 06       		.uleb128 0x6
+ 578 0080 40       		.uleb128 0x40
+ 579 0081 18       		.uleb128 0x18
+ 580 0082 9742     		.uleb128 0x2117
+ 581 0084 19       		.uleb128 0x19
+ 582 0085 01       		.uleb128 0x1
+ 583 0086 13       		.uleb128 0x13
+ 584 0087 00       		.byte	0
+ 585 0088 00       		.byte	0
+ 586 0089 0B       		.uleb128 0xb
+ 587 008a 898201   		.uleb128 0x4109
+ 588 008d 00       		.byte	0
+ 589 008e 11       		.uleb128 0x11
+ 590 008f 01       		.uleb128 0x1
+ 591 0090 31       		.uleb128 0x31
+ 592 0091 13       		.uleb128 0x13
+ 593 0092 00       		.byte	0
+ 594 0093 00       		.byte	0
+ 595 0094 0C       		.uleb128 0xc
+ 596 0095 898201   		.uleb128 0x4109
+ 597 0098 00       		.byte	0
+ 598 0099 11       		.uleb128 0x11
+ 599 009a 01       		.uleb128 0x1
+ 600 009b 9542     		.uleb128 0x2115
+ 601 009d 19       		.uleb128 0x19
+ 602 009e 31       		.uleb128 0x31
+ 603 009f 13       		.uleb128 0x13
+ 604 00a0 00       		.byte	0
+ 605 00a1 00       		.byte	0
+ 606 00a2 0D       		.uleb128 0xd
+ 607 00a3 2E       		.uleb128 0x2e
+ 608 00a4 01       		.byte	0x1
+ 609 00a5 3F       		.uleb128 0x3f
+ 610 00a6 19       		.uleb128 0x19
+ 611 00a7 03       		.uleb128 0x3
+ 612 00a8 0E       		.uleb128 0xe
+ 613 00a9 3A       		.uleb128 0x3a
+ 614 00aa 0B       		.uleb128 0xb
+ 615 00ab 3B       		.uleb128 0x3b
+ 616 00ac 0B       		.uleb128 0xb
+ 617 00ad 27       		.uleb128 0x27
+ 618 00ae 19       		.uleb128 0x19
+ 619 00af 11       		.uleb128 0x11
+ 620 00b0 01       		.uleb128 0x1
+ 621 00b1 12       		.uleb128 0x12
+ 622 00b2 06       		.uleb128 0x6
+ 623 00b3 40       		.uleb128 0x40
+ 624 00b4 18       		.uleb128 0x18
+ 625 00b5 9742     		.uleb128 0x2117
+ 626 00b7 19       		.uleb128 0x19
+ 627 00b8 01       		.uleb128 0x1
+ 628 00b9 13       		.uleb128 0x13
+ 629 00ba 00       		.byte	0
+ 630 00bb 00       		.byte	0
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccwdPxt9.s 			page 15
+
+
+ 631 00bc 0E       		.uleb128 0xe
+ 632 00bd 1D       		.uleb128 0x1d
+ 633 00be 01       		.byte	0x1
+ 634 00bf 31       		.uleb128 0x31
+ 635 00c0 13       		.uleb128 0x13
+ 636 00c1 11       		.uleb128 0x11
+ 637 00c2 01       		.uleb128 0x1
+ 638 00c3 12       		.uleb128 0x12
+ 639 00c4 06       		.uleb128 0x6
+ 640 00c5 58       		.uleb128 0x58
+ 641 00c6 0B       		.uleb128 0xb
+ 642 00c7 59       		.uleb128 0x59
+ 643 00c8 0B       		.uleb128 0xb
+ 644 00c9 01       		.uleb128 0x1
+ 645 00ca 13       		.uleb128 0x13
+ 646 00cb 00       		.byte	0
+ 647 00cc 00       		.byte	0
+ 648 00cd 0F       		.uleb128 0xf
+ 649 00ce 34       		.uleb128 0x34
+ 650 00cf 00       		.byte	0
+ 651 00d0 03       		.uleb128 0x3
+ 652 00d1 0E       		.uleb128 0xe
+ 653 00d2 3A       		.uleb128 0x3a
+ 654 00d3 0B       		.uleb128 0xb
+ 655 00d4 3B       		.uleb128 0x3b
+ 656 00d5 0B       		.uleb128 0xb
+ 657 00d6 49       		.uleb128 0x49
+ 658 00d7 13       		.uleb128 0x13
+ 659 00d8 02       		.uleb128 0x2
+ 660 00d9 18       		.uleb128 0x18
+ 661 00da 00       		.byte	0
+ 662 00db 00       		.byte	0
+ 663 00dc 10       		.uleb128 0x10
+ 664 00dd 2E       		.uleb128 0x2e
+ 665 00de 00       		.byte	0
+ 666 00df 3F       		.uleb128 0x3f
+ 667 00e0 19       		.uleb128 0x19
+ 668 00e1 03       		.uleb128 0x3
+ 669 00e2 0E       		.uleb128 0xe
+ 670 00e3 3A       		.uleb128 0x3a
+ 671 00e4 0B       		.uleb128 0xb
+ 672 00e5 3B       		.uleb128 0x3b
+ 673 00e6 0B       		.uleb128 0xb
+ 674 00e7 27       		.uleb128 0x27
+ 675 00e8 19       		.uleb128 0x19
+ 676 00e9 49       		.uleb128 0x49
+ 677 00ea 13       		.uleb128 0x13
+ 678 00eb 3C       		.uleb128 0x3c
+ 679 00ec 19       		.uleb128 0x19
+ 680 00ed 00       		.byte	0
+ 681 00ee 00       		.byte	0
+ 682 00ef 11       		.uleb128 0x11
+ 683 00f0 2E       		.uleb128 0x2e
+ 684 00f1 01       		.byte	0x1
+ 685 00f2 3F       		.uleb128 0x3f
+ 686 00f3 19       		.uleb128 0x19
+ 687 00f4 03       		.uleb128 0x3
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccwdPxt9.s 			page 16
+
+
+ 688 00f5 0E       		.uleb128 0xe
+ 689 00f6 3A       		.uleb128 0x3a
+ 690 00f7 0B       		.uleb128 0xb
+ 691 00f8 3B       		.uleb128 0x3b
+ 692 00f9 0B       		.uleb128 0xb
+ 693 00fa 27       		.uleb128 0x27
+ 694 00fb 19       		.uleb128 0x19
+ 695 00fc 3C       		.uleb128 0x3c
+ 696 00fd 19       		.uleb128 0x19
+ 697 00fe 01       		.uleb128 0x1
+ 698 00ff 13       		.uleb128 0x13
+ 699 0100 00       		.byte	0
+ 700 0101 00       		.byte	0
+ 701 0102 12       		.uleb128 0x12
+ 702 0103 05       		.uleb128 0x5
+ 703 0104 00       		.byte	0
+ 704 0105 49       		.uleb128 0x49
+ 705 0106 13       		.uleb128 0x13
+ 706 0107 00       		.byte	0
+ 707 0108 00       		.byte	0
+ 708 0109 13       		.uleb128 0x13
+ 709 010a 2E       		.uleb128 0x2e
+ 710 010b 00       		.byte	0
+ 711 010c 3F       		.uleb128 0x3f
+ 712 010d 19       		.uleb128 0x19
+ 713 010e 03       		.uleb128 0x3
+ 714 010f 0E       		.uleb128 0xe
+ 715 0110 3A       		.uleb128 0x3a
+ 716 0111 0B       		.uleb128 0xb
+ 717 0112 3B       		.uleb128 0x3b
+ 718 0113 0B       		.uleb128 0xb
+ 719 0114 27       		.uleb128 0x27
+ 720 0115 19       		.uleb128 0x19
+ 721 0116 3C       		.uleb128 0x3c
+ 722 0117 19       		.uleb128 0x19
+ 723 0118 00       		.byte	0
+ 724 0119 00       		.byte	0
+ 725 011a 00       		.byte	0
+ 726              		.section	.debug_aranges,"",%progbits
+ 727 0000 34000000 		.4byte	0x34
+ 728 0004 0200     		.2byte	0x2
+ 729 0006 00000000 		.4byte	.Ldebug_info0
+ 730 000a 04       		.byte	0x4
+ 731 000b 00       		.byte	0
+ 732 000c 0000     		.2byte	0
+ 733 000e 0000     		.2byte	0
+ 734 0010 00000000 		.4byte	.LFB0
+ 735 0014 18000000 		.4byte	.LFE0-.LFB0
+ 736 0018 00000000 		.4byte	.LFB1
+ 737 001c 18000000 		.4byte	.LFE1-.LFB1
+ 738 0020 00000000 		.4byte	.LFB2
+ 739 0024 28000000 		.4byte	.LFE2-.LFB2
+ 740 0028 00000000 		.4byte	.LFB3
+ 741 002c 24000000 		.4byte	.LFE3-.LFB3
+ 742 0030 00000000 		.4byte	0
+ 743 0034 00000000 		.4byte	0
+ 744              		.section	.debug_ranges,"",%progbits
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccwdPxt9.s 			page 17
+
+
+ 745              	.Ldebug_ranges0:
+ 746 0000 00000000 		.4byte	.LFB0
+ 747 0004 18000000 		.4byte	.LFE0
+ 748 0008 00000000 		.4byte	.LFB1
+ 749 000c 18000000 		.4byte	.LFE1
+ 750 0010 00000000 		.4byte	.LFB2
+ 751 0014 28000000 		.4byte	.LFE2
+ 752 0018 00000000 		.4byte	.LFB3
+ 753 001c 24000000 		.4byte	.LFE3
+ 754 0020 00000000 		.4byte	0
+ 755 0024 00000000 		.4byte	0
+ 756              		.section	.debug_line,"",%progbits
+ 757              	.Ldebug_line0:
+ 758 0000 BD000000 		.section	.debug_str,"MS",%progbits,1
+ 758      02005E00 
+ 758      00000201 
+ 758      FB0E0D00 
+ 758      01010101 
+ 759              	.LASF29:
+ 760 0000 456E636F 		.ascii	"Encoder_Cnt_Enable\000"
+ 760      6465725F 
+ 760      436E745F 
+ 760      456E6162 
+ 760      6C6500
+ 761              	.LASF32:
+ 762 0013 433A5C55 		.ascii	"C:\\Users\\Patrick\\Desktop\\cy8ckit-059\\CE95277 A"
+ 762      73657273 
+ 762      5C506174 
+ 762      7269636B 
+ 762      5C446573 
+ 763 0041 44432061 		.ascii	"DC and UART\\CE95277 ADC and UART.cydsn\000"
+ 763      6E642055 
+ 763      4152545C 
+ 763      43453935 
+ 763      32373720 
+ 764              	.LASF31:
+ 765 0068 2E5C4765 		.ascii	".\\Generated_Source\\PSoC5\\Encoder_Cnt_PM.c\000"
+ 765      6E657261 
+ 765      7465645F 
+ 765      536F7572 
+ 765      63655C50 
+ 766              	.LASF21:
+ 767 0092 456E636F 		.ascii	"Encoder_Cnt_RestoreConfig\000"
+ 767      6465725F 
+ 767      436E745F 
+ 767      52657374 
+ 767      6F726543 
+ 768              	.LASF3:
+ 769 00ac 73686F72 		.ascii	"short unsigned int\000"
+ 769      7420756E 
+ 769      7369676E 
+ 769      65642069 
+ 769      6E7400
+ 770              	.LASF17:
+ 771 00bf 436F756E 		.ascii	"CounterUdb\000"
+ 771      74657255 
+ 771      646200
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccwdPxt9.s 			page 18
+
+
+ 772              	.LASF18:
+ 773 00ca 436F756E 		.ascii	"CounterControlRegister\000"
+ 773      74657243 
+ 773      6F6E7472 
+ 773      6F6C5265 
+ 773      67697374 
+ 774              	.LASF19:
+ 775 00e1 456E636F 		.ascii	"Encoder_Cnt_backupStruct\000"
+ 775      6465725F 
+ 775      436E745F 
+ 775      6261636B 
+ 775      75705374 
+ 776              	.LASF11:
+ 777 00fa 666C6F61 		.ascii	"float\000"
+ 777      7400
+ 778              	.LASF1:
+ 779 0100 756E7369 		.ascii	"unsigned char\000"
+ 779      676E6564 
+ 779      20636861 
+ 779      7200
+ 780              	.LASF30:
+ 781 010e 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
+ 781      4320342E 
+ 781      392E3320 
+ 781      32303135 
+ 781      30333033 
+ 782 0141 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m3 -mthumb -g -O"
+ 782      20726576 
+ 782      6973696F 
+ 782      6E203232 
+ 782      31323230 
+ 783 0174 33202D66 		.ascii	"3 -ffunction-sections -ffat-lto-objects\000"
+ 783      66756E63 
+ 783      74696F6E 
+ 783      2D736563 
+ 783      74696F6E 
+ 784              	.LASF28:
+ 785 019c 456E636F 		.ascii	"Encoder_Cnt_Stop\000"
+ 785      6465725F 
+ 785      436E745F 
+ 785      53746F70 
+ 785      00
+ 786              	.LASF14:
+ 787 01ad 72656738 		.ascii	"reg8\000"
+ 787      00
+ 788              	.LASF5:
+ 789 01b2 6C6F6E67 		.ascii	"long unsigned int\000"
+ 789      20756E73 
+ 789      69676E65 
+ 789      6420696E 
+ 789      7400
+ 790              	.LASF9:
+ 791 01c4 75696E74 		.ascii	"uint8\000"
+ 791      3800
+ 792              	.LASF20:
+ 793 01ca 456E636F 		.ascii	"Encoder_Cnt_SaveConfig\000"
+ 793      6465725F 
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccwdPxt9.s 			page 19
+
+
+ 793      436E745F 
+ 793      53617665 
+ 793      436F6E66 
+ 794              	.LASF33:
+ 795 01e1 456E636F 		.ascii	"Encoder_Cnt_backup\000"
+ 795      6465725F 
+ 795      436E745F 
+ 795      6261636B 
+ 795      757000
+ 796              	.LASF12:
+ 797 01f4 646F7562 		.ascii	"double\000"
+ 797      6C6500
+ 798              	.LASF23:
+ 799 01fb 456E636F 		.ascii	"Encoder_Cnt_Wakeup\000"
+ 799      6465725F 
+ 799      436E745F 
+ 799      57616B65 
+ 799      757000
+ 800              	.LASF10:
+ 801 020e 75696E74 		.ascii	"uint16\000"
+ 801      313600
+ 802              	.LASF27:
+ 803 0215 456E636F 		.ascii	"Encoder_Cnt_WriteControlRegister\000"
+ 803      6465725F 
+ 803      436E745F 
+ 803      57726974 
+ 803      65436F6E 
+ 804              	.LASF8:
+ 805 0236 756E7369 		.ascii	"unsigned int\000"
+ 805      676E6564 
+ 805      20696E74 
+ 805      00
+ 806              	.LASF7:
+ 807 0243 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 807      206C6F6E 
+ 807      6720756E 
+ 807      7369676E 
+ 807      65642069 
+ 808              	.LASF15:
+ 809 025a 73697A65 		.ascii	"sizetype\000"
+ 809      74797065 
+ 809      00
+ 810              	.LASF16:
+ 811 0263 436F756E 		.ascii	"CounterEnableState\000"
+ 811      74657245 
+ 811      6E61626C 
+ 811      65537461 
+ 811      746500
+ 812              	.LASF6:
+ 813 0276 6C6F6E67 		.ascii	"long long int\000"
+ 813      206C6F6E 
+ 813      6720696E 
+ 813      7400
+ 814              	.LASF22:
+ 815 0284 456E636F 		.ascii	"Encoder_Cnt_Sleep\000"
+ 815      6465725F 
+ 815      436E745F 
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccwdPxt9.s 			page 20
+
+
+ 815      536C6565 
+ 815      7000
+ 816              	.LASF13:
+ 817 0296 63686172 		.ascii	"char\000"
+ 817      00
+ 818              	.LASF2:
+ 819 029b 73686F72 		.ascii	"short int\000"
+ 819      7420696E 
+ 819      7400
+ 820              	.LASF25:
+ 821 02a5 456E636F 		.ascii	"Encoder_Cnt_ReadControlRegister\000"
+ 821      6465725F 
+ 821      436E745F 
+ 821      52656164 
+ 821      436F6E74 
+ 822              	.LASF24:
+ 823 02c5 456E636F 		.ascii	"Encoder_Cnt_ReadCounter\000"
+ 823      6465725F 
+ 823      436E745F 
+ 823      52656164 
+ 823      436F756E 
+ 824              	.LASF4:
+ 825 02dd 6C6F6E67 		.ascii	"long int\000"
+ 825      20696E74 
+ 825      00
+ 826              	.LASF26:
+ 827 02e6 456E636F 		.ascii	"Encoder_Cnt_WriteCounter\000"
+ 827      6465725F 
+ 827      436E745F 
+ 827      57726974 
+ 827      65436F75 
+ 828              	.LASF0:
+ 829 02ff 7369676E 		.ascii	"signed char\000"
+ 829      65642063 
+ 829      68617200 
+ 830              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.9.3 20150303 (release) [ARM/embedded-4_9-br

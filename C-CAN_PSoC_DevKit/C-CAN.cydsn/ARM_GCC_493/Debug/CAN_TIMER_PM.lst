@@ -1,0 +1,1228 @@
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccV35WJg.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m3
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 2
+  11              		.eabi_attribute 34, 1
+  12              		.eabi_attribute 18, 4
+  13              		.thumb
+  14              		.file	"CAN_TIMER_PM.c"
+  15              		.text
+  16              	.Ltext0:
+  17              		.cfi_sections	.debug_frame
+  18              		.section	.text.CAN_TIMER_SaveConfig,"ax",%progbits
+  19              		.align	2
+  20              		.global	CAN_TIMER_SaveConfig
+  21              		.thumb
+  22              		.thumb_func
+  23              		.type	CAN_TIMER_SaveConfig, %function
+  24              	CAN_TIMER_SaveConfig:
+  25              	.LFB0:
+  26              		.file 1 ".\\Generated_Source\\PSoC5\\CAN_TIMER_PM.c"
+   1:.\Generated_Source\PSoC5/CAN_TIMER_PM.c **** /*******************************************************************************
+   2:.\Generated_Source\PSoC5/CAN_TIMER_PM.c **** * File Name: CAN_TIMER_PM.c
+   3:.\Generated_Source\PSoC5/CAN_TIMER_PM.c **** * Version 2.70
+   4:.\Generated_Source\PSoC5/CAN_TIMER_PM.c **** *
+   5:.\Generated_Source\PSoC5/CAN_TIMER_PM.c **** *  Description:
+   6:.\Generated_Source\PSoC5/CAN_TIMER_PM.c **** *     This file provides the power management source code to API for the
+   7:.\Generated_Source\PSoC5/CAN_TIMER_PM.c **** *     Timer.
+   8:.\Generated_Source\PSoC5/CAN_TIMER_PM.c **** *
+   9:.\Generated_Source\PSoC5/CAN_TIMER_PM.c **** *   Note:
+  10:.\Generated_Source\PSoC5/CAN_TIMER_PM.c **** *     None
+  11:.\Generated_Source\PSoC5/CAN_TIMER_PM.c **** *
+  12:.\Generated_Source\PSoC5/CAN_TIMER_PM.c **** *******************************************************************************
+  13:.\Generated_Source\PSoC5/CAN_TIMER_PM.c **** * Copyright 2008-2014, Cypress Semiconductor Corporation.  All rights reserved.
+  14:.\Generated_Source\PSoC5/CAN_TIMER_PM.c **** * You may use this file only in accordance with the license, terms, conditions,
+  15:.\Generated_Source\PSoC5/CAN_TIMER_PM.c **** * disclaimers, and limitations in the end user license agreement accompanying
+  16:.\Generated_Source\PSoC5/CAN_TIMER_PM.c **** * the software package with which this file was provided.
+  17:.\Generated_Source\PSoC5/CAN_TIMER_PM.c **** ********************************************************************************/
+  18:.\Generated_Source\PSoC5/CAN_TIMER_PM.c **** 
+  19:.\Generated_Source\PSoC5/CAN_TIMER_PM.c **** #include "CAN_TIMER.h"
+  20:.\Generated_Source\PSoC5/CAN_TIMER_PM.c **** 
+  21:.\Generated_Source\PSoC5/CAN_TIMER_PM.c **** static CAN_TIMER_backupStruct CAN_TIMER_backup;
+  22:.\Generated_Source\PSoC5/CAN_TIMER_PM.c **** 
+  23:.\Generated_Source\PSoC5/CAN_TIMER_PM.c **** 
+  24:.\Generated_Source\PSoC5/CAN_TIMER_PM.c **** /*******************************************************************************
+  25:.\Generated_Source\PSoC5/CAN_TIMER_PM.c **** * Function Name: CAN_TIMER_SaveConfig
+  26:.\Generated_Source\PSoC5/CAN_TIMER_PM.c **** ********************************************************************************
+  27:.\Generated_Source\PSoC5/CAN_TIMER_PM.c **** *
+  28:.\Generated_Source\PSoC5/CAN_TIMER_PM.c **** * Summary:
+  29:.\Generated_Source\PSoC5/CAN_TIMER_PM.c **** *     Save the current user configuration
+  30:.\Generated_Source\PSoC5/CAN_TIMER_PM.c **** *
+  31:.\Generated_Source\PSoC5/CAN_TIMER_PM.c **** * Parameters:
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccV35WJg.s 			page 2
+
+
+  32:.\Generated_Source\PSoC5/CAN_TIMER_PM.c **** *  void
+  33:.\Generated_Source\PSoC5/CAN_TIMER_PM.c **** *
+  34:.\Generated_Source\PSoC5/CAN_TIMER_PM.c **** * Return:
+  35:.\Generated_Source\PSoC5/CAN_TIMER_PM.c **** *  void
+  36:.\Generated_Source\PSoC5/CAN_TIMER_PM.c **** *
+  37:.\Generated_Source\PSoC5/CAN_TIMER_PM.c **** * Global variables:
+  38:.\Generated_Source\PSoC5/CAN_TIMER_PM.c **** *  CAN_TIMER_backup:  Variables of this global structure are modified to
+  39:.\Generated_Source\PSoC5/CAN_TIMER_PM.c **** *  store the values of non retention configuration registers when Sleep() API is
+  40:.\Generated_Source\PSoC5/CAN_TIMER_PM.c **** *  called.
+  41:.\Generated_Source\PSoC5/CAN_TIMER_PM.c **** *
+  42:.\Generated_Source\PSoC5/CAN_TIMER_PM.c **** *******************************************************************************/
+  43:.\Generated_Source\PSoC5/CAN_TIMER_PM.c **** void CAN_TIMER_SaveConfig(void) 
+  44:.\Generated_Source\PSoC5/CAN_TIMER_PM.c **** {
+  27              		.loc 1 44 0
+  28              		.cfi_startproc
+  29              		@ args = 0, pretend = 0, frame = 0
+  30              		@ frame_needed = 0, uses_anonymous_args = 0
+  31 0000 10B5     		push	{r4, lr}
+  32              		.cfi_def_cfa_offset 8
+  33              		.cfi_offset 4, -8
+  34              		.cfi_offset 14, -4
+  45:.\Generated_Source\PSoC5/CAN_TIMER_PM.c ****     #if (!CAN_TIMER_UsingFixedFunction)
+  46:.\Generated_Source\PSoC5/CAN_TIMER_PM.c ****         CAN_TIMER_backup.TimerUdb = CAN_TIMER_ReadCounter();
+  35              		.loc 1 46 0
+  36 0002 FFF7FEFF 		bl	CAN_TIMER_ReadCounter
+  37              	.LVL0:
+  47:.\Generated_Source\PSoC5/CAN_TIMER_PM.c ****         CAN_TIMER_backup.InterruptMaskValue = CAN_TIMER_STATUS_MASK;
+  38              		.loc 1 47 0
+  39 0006 044B     		ldr	r3, .L3
+  46:.\Generated_Source\PSoC5/CAN_TIMER_PM.c ****         CAN_TIMER_backup.InterruptMaskValue = CAN_TIMER_STATUS_MASK;
+  40              		.loc 1 46 0
+  41 0008 044C     		ldr	r4, .L3+4
+  42              		.loc 1 47 0
+  43 000a 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
+  46:.\Generated_Source\PSoC5/CAN_TIMER_PM.c ****         CAN_TIMER_backup.InterruptMaskValue = CAN_TIMER_STATUS_MASK;
+  44              		.loc 1 46 0
+  45 000c 6080     		strh	r0, [r4, #2]	@ movhi
+  46              		.loc 1 47 0
+  47 000e 2371     		strb	r3, [r4, #4]
+  48:.\Generated_Source\PSoC5/CAN_TIMER_PM.c ****         #if (CAN_TIMER_UsingHWCaptureCounter)
+  49:.\Generated_Source\PSoC5/CAN_TIMER_PM.c ****             CAN_TIMER_backup.TimerCaptureCounter = CAN_TIMER_ReadCaptureCount();
+  50:.\Generated_Source\PSoC5/CAN_TIMER_PM.c ****         #endif /* Back Up capture counter register  */
+  51:.\Generated_Source\PSoC5/CAN_TIMER_PM.c **** 
+  52:.\Generated_Source\PSoC5/CAN_TIMER_PM.c ****         #if(!CAN_TIMER_UDB_CONTROL_REG_REMOVED)
+  53:.\Generated_Source\PSoC5/CAN_TIMER_PM.c ****             CAN_TIMER_backup.TimerControlRegister = CAN_TIMER_ReadControlRegister();
+  48              		.loc 1 53 0
+  49 0010 FFF7FEFF 		bl	CAN_TIMER_ReadControlRegister
+  50              	.LVL1:
+  51 0014 6071     		strb	r0, [r4, #5]
+  52 0016 10BD     		pop	{r4, pc}
+  53              	.L4:
+  54              		.align	2
+  55              	.L3:
+  56 0018 83640040 		.word	1073767555
+  57 001c 00000000 		.word	.LANCHOR0
+  58              		.cfi_endproc
+  59              	.LFE0:
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccV35WJg.s 			page 3
+
+
+  60              		.size	CAN_TIMER_SaveConfig, .-CAN_TIMER_SaveConfig
+  61              		.section	.text.CAN_TIMER_RestoreConfig,"ax",%progbits
+  62              		.align	2
+  63              		.global	CAN_TIMER_RestoreConfig
+  64              		.thumb
+  65              		.thumb_func
+  66              		.type	CAN_TIMER_RestoreConfig, %function
+  67              	CAN_TIMER_RestoreConfig:
+  68              	.LFB1:
+  54:.\Generated_Source\PSoC5/CAN_TIMER_PM.c ****         #endif /* Backup the enable state of the Timer component */
+  55:.\Generated_Source\PSoC5/CAN_TIMER_PM.c ****     #endif /* Backup non retention registers in UDB implementation. All fixed function registers ar
+  56:.\Generated_Source\PSoC5/CAN_TIMER_PM.c **** }
+  57:.\Generated_Source\PSoC5/CAN_TIMER_PM.c **** 
+  58:.\Generated_Source\PSoC5/CAN_TIMER_PM.c **** 
+  59:.\Generated_Source\PSoC5/CAN_TIMER_PM.c **** /*******************************************************************************
+  60:.\Generated_Source\PSoC5/CAN_TIMER_PM.c **** * Function Name: CAN_TIMER_RestoreConfig
+  61:.\Generated_Source\PSoC5/CAN_TIMER_PM.c **** ********************************************************************************
+  62:.\Generated_Source\PSoC5/CAN_TIMER_PM.c **** *
+  63:.\Generated_Source\PSoC5/CAN_TIMER_PM.c **** * Summary:
+  64:.\Generated_Source\PSoC5/CAN_TIMER_PM.c **** *  Restores the current user configuration.
+  65:.\Generated_Source\PSoC5/CAN_TIMER_PM.c **** *
+  66:.\Generated_Source\PSoC5/CAN_TIMER_PM.c **** * Parameters:
+  67:.\Generated_Source\PSoC5/CAN_TIMER_PM.c **** *  void
+  68:.\Generated_Source\PSoC5/CAN_TIMER_PM.c **** *
+  69:.\Generated_Source\PSoC5/CAN_TIMER_PM.c **** * Return:
+  70:.\Generated_Source\PSoC5/CAN_TIMER_PM.c **** *  void
+  71:.\Generated_Source\PSoC5/CAN_TIMER_PM.c **** *
+  72:.\Generated_Source\PSoC5/CAN_TIMER_PM.c **** * Global variables:
+  73:.\Generated_Source\PSoC5/CAN_TIMER_PM.c **** *  CAN_TIMER_backup:  Variables of this global structure are used to
+  74:.\Generated_Source\PSoC5/CAN_TIMER_PM.c **** *  restore the values of non retention registers on wakeup from sleep mode.
+  75:.\Generated_Source\PSoC5/CAN_TIMER_PM.c **** *
+  76:.\Generated_Source\PSoC5/CAN_TIMER_PM.c **** *******************************************************************************/
+  77:.\Generated_Source\PSoC5/CAN_TIMER_PM.c **** void CAN_TIMER_RestoreConfig(void) 
+  78:.\Generated_Source\PSoC5/CAN_TIMER_PM.c **** {   
+  69              		.loc 1 78 0
+  70              		.cfi_startproc
+  71              		@ args = 0, pretend = 0, frame = 0
+  72              		@ frame_needed = 0, uses_anonymous_args = 0
+  73 0000 10B5     		push	{r4, lr}
+  74              		.cfi_def_cfa_offset 8
+  75              		.cfi_offset 4, -8
+  76              		.cfi_offset 14, -4
+  79:.\Generated_Source\PSoC5/CAN_TIMER_PM.c ****     #if (!CAN_TIMER_UsingFixedFunction)
+  80:.\Generated_Source\PSoC5/CAN_TIMER_PM.c **** 
+  81:.\Generated_Source\PSoC5/CAN_TIMER_PM.c ****         CAN_TIMER_WriteCounter(CAN_TIMER_backup.TimerUdb);
+  77              		.loc 1 81 0
+  78 0002 064C     		ldr	r4, .L7
+  79 0004 6088     		ldrh	r0, [r4, #2]
+  80 0006 FFF7FEFF 		bl	CAN_TIMER_WriteCounter
+  81              	.LVL2:
+  82:.\Generated_Source\PSoC5/CAN_TIMER_PM.c ****         CAN_TIMER_STATUS_MASK =CAN_TIMER_backup.InterruptMaskValue;
+  82              		.loc 1 82 0
+  83 000a 2279     		ldrb	r2, [r4, #4]	@ zero_extendqisi2
+  84 000c 044B     		ldr	r3, .L7+4
+  83:.\Generated_Source\PSoC5/CAN_TIMER_PM.c ****         #if (CAN_TIMER_UsingHWCaptureCounter)
+  84:.\Generated_Source\PSoC5/CAN_TIMER_PM.c ****             CAN_TIMER_SetCaptureCount(CAN_TIMER_backup.TimerCaptureCounter);
+  85:.\Generated_Source\PSoC5/CAN_TIMER_PM.c ****         #endif /* Restore Capture counter register*/
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccV35WJg.s 			page 4
+
+
+  86:.\Generated_Source\PSoC5/CAN_TIMER_PM.c **** 
+  87:.\Generated_Source\PSoC5/CAN_TIMER_PM.c ****         #if(!CAN_TIMER_UDB_CONTROL_REG_REMOVED)
+  88:.\Generated_Source\PSoC5/CAN_TIMER_PM.c ****             CAN_TIMER_WriteControlRegister(CAN_TIMER_backup.TimerControlRegister);
+  85              		.loc 1 88 0
+  86 000e 6079     		ldrb	r0, [r4, #5]	@ zero_extendqisi2
+  82:.\Generated_Source\PSoC5/CAN_TIMER_PM.c ****         CAN_TIMER_STATUS_MASK =CAN_TIMER_backup.InterruptMaskValue;
+  87              		.loc 1 82 0
+  88 0010 1A70     		strb	r2, [r3]
+  89:.\Generated_Source\PSoC5/CAN_TIMER_PM.c ****         #endif /* Restore the enable state of the Timer component */
+  90:.\Generated_Source\PSoC5/CAN_TIMER_PM.c ****     #endif /* Restore non retention registers in the UDB implementation only */
+  91:.\Generated_Source\PSoC5/CAN_TIMER_PM.c **** }
+  89              		.loc 1 91 0
+  90 0012 BDE81040 		pop	{r4, lr}
+  91              		.cfi_restore 14
+  92              		.cfi_restore 4
+  93              		.cfi_def_cfa_offset 0
+  88:.\Generated_Source\PSoC5/CAN_TIMER_PM.c ****         #endif /* Restore the enable state of the Timer component */
+  94              		.loc 1 88 0
+  95 0016 FFF7FEBF 		b	CAN_TIMER_WriteControlRegister
+  96              	.LVL3:
+  97              	.L8:
+  98 001a 00BF     		.align	2
+  99              	.L7:
+ 100 001c 00000000 		.word	.LANCHOR0
+ 101 0020 83640040 		.word	1073767555
+ 102              		.cfi_endproc
+ 103              	.LFE1:
+ 104              		.size	CAN_TIMER_RestoreConfig, .-CAN_TIMER_RestoreConfig
+ 105              		.section	.text.CAN_TIMER_Sleep,"ax",%progbits
+ 106              		.align	2
+ 107              		.global	CAN_TIMER_Sleep
+ 108              		.thumb
+ 109              		.thumb_func
+ 110              		.type	CAN_TIMER_Sleep, %function
+ 111              	CAN_TIMER_Sleep:
+ 112              	.LFB2:
+  92:.\Generated_Source\PSoC5/CAN_TIMER_PM.c **** 
+  93:.\Generated_Source\PSoC5/CAN_TIMER_PM.c **** 
+  94:.\Generated_Source\PSoC5/CAN_TIMER_PM.c **** /*******************************************************************************
+  95:.\Generated_Source\PSoC5/CAN_TIMER_PM.c **** * Function Name: CAN_TIMER_Sleep
+  96:.\Generated_Source\PSoC5/CAN_TIMER_PM.c **** ********************************************************************************
+  97:.\Generated_Source\PSoC5/CAN_TIMER_PM.c **** *
+  98:.\Generated_Source\PSoC5/CAN_TIMER_PM.c **** * Summary:
+  99:.\Generated_Source\PSoC5/CAN_TIMER_PM.c **** *     Stop and Save the user configuration
+ 100:.\Generated_Source\PSoC5/CAN_TIMER_PM.c **** *
+ 101:.\Generated_Source\PSoC5/CAN_TIMER_PM.c **** * Parameters:
+ 102:.\Generated_Source\PSoC5/CAN_TIMER_PM.c **** *  void
+ 103:.\Generated_Source\PSoC5/CAN_TIMER_PM.c **** *
+ 104:.\Generated_Source\PSoC5/CAN_TIMER_PM.c **** * Return:
+ 105:.\Generated_Source\PSoC5/CAN_TIMER_PM.c **** *  void
+ 106:.\Generated_Source\PSoC5/CAN_TIMER_PM.c **** *
+ 107:.\Generated_Source\PSoC5/CAN_TIMER_PM.c **** * Global variables:
+ 108:.\Generated_Source\PSoC5/CAN_TIMER_PM.c **** *  CAN_TIMER_backup.TimerEnableState:  Is modified depending on the
+ 109:.\Generated_Source\PSoC5/CAN_TIMER_PM.c **** *  enable state of the block before entering sleep mode.
+ 110:.\Generated_Source\PSoC5/CAN_TIMER_PM.c **** *
+ 111:.\Generated_Source\PSoC5/CAN_TIMER_PM.c **** *******************************************************************************/
+ 112:.\Generated_Source\PSoC5/CAN_TIMER_PM.c **** void CAN_TIMER_Sleep(void) 
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccV35WJg.s 			page 5
+
+
+ 113:.\Generated_Source\PSoC5/CAN_TIMER_PM.c **** {
+ 113              		.loc 1 113 0
+ 114              		.cfi_startproc
+ 115              		@ args = 0, pretend = 0, frame = 0
+ 116              		@ frame_needed = 0, uses_anonymous_args = 0
+ 117 0000 10B5     		push	{r4, lr}
+ 118              		.cfi_def_cfa_offset 8
+ 119              		.cfi_offset 4, -8
+ 120              		.cfi_offset 14, -4
+ 114:.\Generated_Source\PSoC5/CAN_TIMER_PM.c ****     #if(!CAN_TIMER_UDB_CONTROL_REG_REMOVED)
+ 115:.\Generated_Source\PSoC5/CAN_TIMER_PM.c ****         /* Save Counter's enable state */
+ 116:.\Generated_Source\PSoC5/CAN_TIMER_PM.c ****         if(CAN_TIMER_CTRL_ENABLE == (CAN_TIMER_CONTROL & CAN_TIMER_CTRL_ENABLE))
+ 121              		.loc 1 116 0
+ 122 0002 084B     		ldr	r3, .L11
+ 123 0004 084C     		ldr	r4, .L11+4
+ 124 0006 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
+ 125 0008 DB09     		lsrs	r3, r3, #7
+ 126 000a 2370     		strb	r3, [r4]
+ 117:.\Generated_Source\PSoC5/CAN_TIMER_PM.c ****         {
+ 118:.\Generated_Source\PSoC5/CAN_TIMER_PM.c ****             /* Timer is enabled */
+ 119:.\Generated_Source\PSoC5/CAN_TIMER_PM.c ****             CAN_TIMER_backup.TimerEnableState = 1u;
+ 120:.\Generated_Source\PSoC5/CAN_TIMER_PM.c ****         }
+ 121:.\Generated_Source\PSoC5/CAN_TIMER_PM.c ****         else
+ 122:.\Generated_Source\PSoC5/CAN_TIMER_PM.c ****         {
+ 123:.\Generated_Source\PSoC5/CAN_TIMER_PM.c ****             /* Timer is disabled */
+ 124:.\Generated_Source\PSoC5/CAN_TIMER_PM.c ****             CAN_TIMER_backup.TimerEnableState = 0u;
+ 125:.\Generated_Source\PSoC5/CAN_TIMER_PM.c ****         }
+ 126:.\Generated_Source\PSoC5/CAN_TIMER_PM.c ****     #endif /* Back up enable state from the Timer control register */
+ 127:.\Generated_Source\PSoC5/CAN_TIMER_PM.c ****     CAN_TIMER_Stop();
+ 127              		.loc 1 127 0
+ 128 000c FFF7FEFF 		bl	CAN_TIMER_Stop
+ 129              	.LVL4:
+ 130              	.LBB4:
+ 131              	.LBB5:
+  46:.\Generated_Source\PSoC5/CAN_TIMER_PM.c ****         CAN_TIMER_backup.InterruptMaskValue = CAN_TIMER_STATUS_MASK;
+ 132              		.loc 1 46 0
+ 133 0010 FFF7FEFF 		bl	CAN_TIMER_ReadCounter
+ 134              	.LVL5:
+  47:.\Generated_Source\PSoC5/CAN_TIMER_PM.c ****         #if (CAN_TIMER_UsingHWCaptureCounter)
+ 135              		.loc 1 47 0
+ 136 0014 054B     		ldr	r3, .L11+8
+  46:.\Generated_Source\PSoC5/CAN_TIMER_PM.c ****         CAN_TIMER_backup.InterruptMaskValue = CAN_TIMER_STATUS_MASK;
+ 137              		.loc 1 46 0
+ 138 0016 6080     		strh	r0, [r4, #2]	@ movhi
+  47:.\Generated_Source\PSoC5/CAN_TIMER_PM.c ****         #if (CAN_TIMER_UsingHWCaptureCounter)
+ 139              		.loc 1 47 0
+ 140 0018 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
+ 141 001a 2371     		strb	r3, [r4, #4]
+  53:.\Generated_Source\PSoC5/CAN_TIMER_PM.c ****         #endif /* Backup the enable state of the Timer component */
+ 142              		.loc 1 53 0
+ 143 001c FFF7FEFF 		bl	CAN_TIMER_ReadControlRegister
+ 144              	.LVL6:
+ 145 0020 6071     		strb	r0, [r4, #5]
+ 146 0022 10BD     		pop	{r4, pc}
+ 147              	.L12:
+ 148              		.align	2
+ 149              	.L11:
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccV35WJg.s 			page 6
+
+
+ 150 0024 73640040 		.word	1073767539
+ 151 0028 00000000 		.word	.LANCHOR0
+ 152 002c 83640040 		.word	1073767555
+ 153              	.LBE5:
+ 154              	.LBE4:
+ 155              		.cfi_endproc
+ 156              	.LFE2:
+ 157              		.size	CAN_TIMER_Sleep, .-CAN_TIMER_Sleep
+ 158              		.section	.text.CAN_TIMER_Wakeup,"ax",%progbits
+ 159              		.align	2
+ 160              		.global	CAN_TIMER_Wakeup
+ 161              		.thumb
+ 162              		.thumb_func
+ 163              		.type	CAN_TIMER_Wakeup, %function
+ 164              	CAN_TIMER_Wakeup:
+ 165              	.LFB3:
+ 128:.\Generated_Source\PSoC5/CAN_TIMER_PM.c ****     CAN_TIMER_SaveConfig();
+ 129:.\Generated_Source\PSoC5/CAN_TIMER_PM.c **** }
+ 130:.\Generated_Source\PSoC5/CAN_TIMER_PM.c **** 
+ 131:.\Generated_Source\PSoC5/CAN_TIMER_PM.c **** 
+ 132:.\Generated_Source\PSoC5/CAN_TIMER_PM.c **** /*******************************************************************************
+ 133:.\Generated_Source\PSoC5/CAN_TIMER_PM.c **** * Function Name: CAN_TIMER_Wakeup
+ 134:.\Generated_Source\PSoC5/CAN_TIMER_PM.c **** ********************************************************************************
+ 135:.\Generated_Source\PSoC5/CAN_TIMER_PM.c **** *
+ 136:.\Generated_Source\PSoC5/CAN_TIMER_PM.c **** * Summary:
+ 137:.\Generated_Source\PSoC5/CAN_TIMER_PM.c **** *  Restores and enables the user configuration
+ 138:.\Generated_Source\PSoC5/CAN_TIMER_PM.c **** *
+ 139:.\Generated_Source\PSoC5/CAN_TIMER_PM.c **** * Parameters:
+ 140:.\Generated_Source\PSoC5/CAN_TIMER_PM.c **** *  void
+ 141:.\Generated_Source\PSoC5/CAN_TIMER_PM.c **** *
+ 142:.\Generated_Source\PSoC5/CAN_TIMER_PM.c **** * Return:
+ 143:.\Generated_Source\PSoC5/CAN_TIMER_PM.c **** *  void
+ 144:.\Generated_Source\PSoC5/CAN_TIMER_PM.c **** *
+ 145:.\Generated_Source\PSoC5/CAN_TIMER_PM.c **** * Global variables:
+ 146:.\Generated_Source\PSoC5/CAN_TIMER_PM.c **** *  CAN_TIMER_backup.enableState:  Is used to restore the enable state of
+ 147:.\Generated_Source\PSoC5/CAN_TIMER_PM.c **** *  block on wakeup from sleep mode.
+ 148:.\Generated_Source\PSoC5/CAN_TIMER_PM.c **** *
+ 149:.\Generated_Source\PSoC5/CAN_TIMER_PM.c **** *******************************************************************************/
+ 150:.\Generated_Source\PSoC5/CAN_TIMER_PM.c **** void CAN_TIMER_Wakeup(void) 
+ 151:.\Generated_Source\PSoC5/CAN_TIMER_PM.c **** {
+ 166              		.loc 1 151 0
+ 167              		.cfi_startproc
+ 168              		@ args = 0, pretend = 0, frame = 0
+ 169              		@ frame_needed = 0, uses_anonymous_args = 0
+ 170 0000 10B5     		push	{r4, lr}
+ 171              		.cfi_def_cfa_offset 8
+ 172              		.cfi_offset 4, -8
+ 173              		.cfi_offset 14, -4
+ 174              	.LBB8:
+ 175              	.LBB9:
+  81:.\Generated_Source\PSoC5/CAN_TIMER_PM.c ****         CAN_TIMER_STATUS_MASK =CAN_TIMER_backup.InterruptMaskValue;
+ 176              		.loc 1 81 0
+ 177 0002 094C     		ldr	r4, .L18
+ 178 0004 6088     		ldrh	r0, [r4, #2]
+ 179 0006 FFF7FEFF 		bl	CAN_TIMER_WriteCounter
+ 180              	.LVL7:
+  82:.\Generated_Source\PSoC5/CAN_TIMER_PM.c ****         #if (CAN_TIMER_UsingHWCaptureCounter)
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccV35WJg.s 			page 7
+
+
+ 181              		.loc 1 82 0
+ 182 000a 084B     		ldr	r3, .L18+4
+ 183 000c 2279     		ldrb	r2, [r4, #4]	@ zero_extendqisi2
+  88:.\Generated_Source\PSoC5/CAN_TIMER_PM.c ****         #endif /* Restore the enable state of the Timer component */
+ 184              		.loc 1 88 0
+ 185 000e 6079     		ldrb	r0, [r4, #5]	@ zero_extendqisi2
+  82:.\Generated_Source\PSoC5/CAN_TIMER_PM.c ****         #if (CAN_TIMER_UsingHWCaptureCounter)
+ 186              		.loc 1 82 0
+ 187 0010 1A70     		strb	r2, [r3]
+  88:.\Generated_Source\PSoC5/CAN_TIMER_PM.c ****         #endif /* Restore the enable state of the Timer component */
+ 188              		.loc 1 88 0
+ 189 0012 FFF7FEFF 		bl	CAN_TIMER_WriteControlRegister
+ 190              	.LVL8:
+ 191              	.LBE9:
+ 192              	.LBE8:
+ 152:.\Generated_Source\PSoC5/CAN_TIMER_PM.c ****     CAN_TIMER_RestoreConfig();
+ 153:.\Generated_Source\PSoC5/CAN_TIMER_PM.c ****     #if(!CAN_TIMER_UDB_CONTROL_REG_REMOVED)
+ 154:.\Generated_Source\PSoC5/CAN_TIMER_PM.c ****         if(CAN_TIMER_backup.TimerEnableState == 1u)
+ 193              		.loc 1 154 0
+ 194 0016 2378     		ldrb	r3, [r4]	@ zero_extendqisi2
+ 195 0018 012B     		cmp	r3, #1
+ 196 001a 00D0     		beq	.L17
+ 197 001c 10BD     		pop	{r4, pc}
+ 198              	.L17:
+ 155:.\Generated_Source\PSoC5/CAN_TIMER_PM.c ****         {     /* Enable Timer's operation */
+ 156:.\Generated_Source\PSoC5/CAN_TIMER_PM.c ****                 CAN_TIMER_Enable();
+ 157:.\Generated_Source\PSoC5/CAN_TIMER_PM.c ****         } /* Do nothing if Timer was disabled before */
+ 158:.\Generated_Source\PSoC5/CAN_TIMER_PM.c ****     #endif /* Remove this code section if Control register is removed */
+ 159:.\Generated_Source\PSoC5/CAN_TIMER_PM.c **** }
+ 199              		.loc 1 159 0
+ 200 001e BDE81040 		pop	{r4, lr}
+ 201              		.cfi_restore 14
+ 202              		.cfi_restore 4
+ 203              		.cfi_def_cfa_offset 0
+ 156:.\Generated_Source\PSoC5/CAN_TIMER_PM.c ****         } /* Do nothing if Timer was disabled before */
+ 204              		.loc 1 156 0
+ 205 0022 FFF7FEBF 		b	CAN_TIMER_Enable
+ 206              	.LVL9:
+ 207              	.L19:
+ 208 0026 00BF     		.align	2
+ 209              	.L18:
+ 210 0028 00000000 		.word	.LANCHOR0
+ 211 002c 83640040 		.word	1073767555
+ 212              		.cfi_endproc
+ 213              	.LFE3:
+ 214              		.size	CAN_TIMER_Wakeup, .-CAN_TIMER_Wakeup
+ 215              		.bss
+ 216              		.align	2
+ 217              		.set	.LANCHOR0,. + 0
+ 218              		.type	CAN_TIMER_backup, %object
+ 219              		.size	CAN_TIMER_backup, 6
+ 220              	CAN_TIMER_backup:
+ 221 0000 00000000 		.space	6
+ 221      0000
+ 222 0006 0000     		.text
+ 223              	.Letext0:
+ 224              		.file 2 ".\\Generated_Source\\PSoC5\\cytypes.h"
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccV35WJg.s 			page 8
+
+
+ 225              		.file 3 ".\\Generated_Source\\PSoC5\\CAN_TIMER.h"
+ 226              		.section	.debug_info,"",%progbits
+ 227              	.Ldebug_info0:
+ 228 0000 2E020000 		.4byte	0x22e
+ 229 0004 0400     		.2byte	0x4
+ 230 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 231 000a 04       		.byte	0x4
+ 232 000b 01       		.uleb128 0x1
+ 233 000c A7000000 		.4byte	.LASF31
+ 234 0010 01       		.byte	0x1
+ 235 0011 DC010000 		.4byte	.LASF32
+ 236 0015 11000000 		.4byte	.LASF33
+ 237 0019 00000000 		.4byte	.Ldebug_ranges0+0
+ 238 001d 00000000 		.4byte	0
+ 239 0021 00000000 		.4byte	.Ldebug_line0
+ 240 0025 02       		.uleb128 0x2
+ 241 0026 01       		.byte	0x1
+ 242 0027 06       		.byte	0x6
+ 243 0028 A7020000 		.4byte	.LASF0
+ 244 002c 02       		.uleb128 0x2
+ 245 002d 01       		.byte	0x1
+ 246 002e 08       		.byte	0x8
+ 247 002f 99000000 		.4byte	.LASF1
+ 248 0033 02       		.uleb128 0x2
+ 249 0034 02       		.byte	0x2
+ 250 0035 05       		.byte	0x5
+ 251 0036 61020000 		.4byte	.LASF2
+ 252 003a 02       		.uleb128 0x2
+ 253 003b 02       		.byte	0x2
+ 254 003c 07       		.byte	0x7
+ 255 003d 66000000 		.4byte	.LASF3
+ 256 0041 02       		.uleb128 0x2
+ 257 0042 04       		.byte	0x4
+ 258 0043 05       		.byte	0x5
+ 259 0044 89020000 		.4byte	.LASF4
+ 260 0048 02       		.uleb128 0x2
+ 261 0049 04       		.byte	0x4
+ 262 004a 07       		.byte	0x7
+ 263 004b 54010000 		.4byte	.LASF5
+ 264 004f 02       		.uleb128 0x2
+ 265 0050 08       		.byte	0x8
+ 266 0051 05       		.byte	0x5
+ 267 0052 3F020000 		.4byte	.LASF6
+ 268 0056 02       		.uleb128 0x2
+ 269 0057 08       		.byte	0x8
+ 270 0058 07       		.byte	0x7
+ 271 0059 04020000 		.4byte	.LASF7
+ 272 005d 03       		.uleb128 0x3
+ 273 005e 04       		.byte	0x4
+ 274 005f 05       		.byte	0x5
+ 275 0060 696E7400 		.ascii	"int\000"
+ 276 0064 02       		.uleb128 0x2
+ 277 0065 04       		.byte	0x4
+ 278 0066 07       		.byte	0x7
+ 279 0067 CF010000 		.4byte	.LASF8
+ 280 006b 04       		.uleb128 0x4
+ 281 006c 66010000 		.4byte	.LASF9
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccV35WJg.s 			page 9
+
+
+ 282 0070 02       		.byte	0x2
+ 283 0071 9201     		.2byte	0x192
+ 284 0073 2C000000 		.4byte	0x2c
+ 285 0077 04       		.uleb128 0x4
+ 286 0078 C8010000 		.4byte	.LASF10
+ 287 007c 02       		.byte	0x2
+ 288 007d 9301     		.2byte	0x193
+ 289 007f 3A000000 		.4byte	0x3a
+ 290 0083 02       		.uleb128 0x2
+ 291 0084 04       		.byte	0x4
+ 292 0085 04       		.byte	0x4
+ 293 0086 93000000 		.4byte	.LASF11
+ 294 008a 02       		.uleb128 0x2
+ 295 008b 08       		.byte	0x8
+ 296 008c 04       		.byte	0x4
+ 297 008d C1010000 		.4byte	.LASF12
+ 298 0091 02       		.uleb128 0x2
+ 299 0092 01       		.byte	0x1
+ 300 0093 08       		.byte	0x8
+ 301 0094 4D020000 		.4byte	.LASF13
+ 302 0098 04       		.uleb128 0x4
+ 303 0099 31020000 		.4byte	.LASF14
+ 304 009d 02       		.byte	0x2
+ 305 009e 3C02     		.2byte	0x23c
+ 306 00a0 A4000000 		.4byte	0xa4
+ 307 00a4 05       		.uleb128 0x5
+ 308 00a5 6B000000 		.4byte	0x6b
+ 309 00a9 02       		.uleb128 0x2
+ 310 00aa 04       		.byte	0x4
+ 311 00ab 07       		.byte	0x7
+ 312 00ac 36020000 		.4byte	.LASF15
+ 313 00b0 06       		.uleb128 0x6
+ 314 00b1 06       		.byte	0x6
+ 315 00b2 03       		.byte	0x3
+ 316 00b3 43       		.byte	0x43
+ 317 00b4 E9000000 		.4byte	0xe9
+ 318 00b8 07       		.uleb128 0x7
+ 319 00b9 00000000 		.4byte	.LASF16
+ 320 00bd 03       		.byte	0x3
+ 321 00be 45       		.byte	0x45
+ 322 00bf 6B000000 		.4byte	0x6b
+ 323 00c3 00       		.byte	0
+ 324 00c4 07       		.uleb128 0x7
+ 325 00c5 8A000000 		.4byte	.LASF17
+ 326 00c9 03       		.byte	0x3
+ 327 00ca 48       		.byte	0x48
+ 328 00cb 77000000 		.4byte	0x77
+ 329 00cf 02       		.byte	0x2
+ 330 00d0 07       		.uleb128 0x7
+ 331 00d1 DB020000 		.4byte	.LASF18
+ 332 00d5 03       		.byte	0x3
+ 333 00d6 49       		.byte	0x49
+ 334 00d7 6B000000 		.4byte	0x6b
+ 335 00db 04       		.byte	0x4
+ 336 00dc 07       		.uleb128 0x7
+ 337 00dd AC010000 		.4byte	.LASF19
+ 338 00e1 03       		.byte	0x3
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccV35WJg.s 			page 10
+
+
+ 339 00e2 4F       		.byte	0x4f
+ 340 00e3 6B000000 		.4byte	0x6b
+ 341 00e7 05       		.byte	0x5
+ 342 00e8 00       		.byte	0
+ 343 00e9 08       		.uleb128 0x8
+ 344 00ea 6C010000 		.4byte	.LASF20
+ 345 00ee 03       		.byte	0x3
+ 346 00ef 53       		.byte	0x53
+ 347 00f0 B0000000 		.4byte	0xb0
+ 348 00f4 09       		.uleb128 0x9
+ 349 00f5 92020000 		.4byte	.LASF21
+ 350 00f9 01       		.byte	0x1
+ 351 00fa 2B       		.byte	0x2b
+ 352 00fb 01       		.byte	0x1
+ 353 00fc 0A       		.uleb128 0xa
+ 354 00fd F4000000 		.4byte	0xf4
+ 355 0101 00000000 		.4byte	.LFB0
+ 356 0105 20000000 		.4byte	.LFE0-.LFB0
+ 357 0109 01       		.uleb128 0x1
+ 358 010a 9C       		.byte	0x9c
+ 359 010b 22010000 		.4byte	0x122
+ 360 010f 0B       		.uleb128 0xb
+ 361 0110 06000000 		.4byte	.LVL0
+ 362 0114 EB010000 		.4byte	0x1eb
+ 363 0118 0B       		.uleb128 0xb
+ 364 0119 14000000 		.4byte	.LVL1
+ 365 011d F6010000 		.4byte	0x1f6
+ 366 0121 00       		.byte	0
+ 367 0122 09       		.uleb128 0x9
+ 368 0123 94010000 		.4byte	.LASF22
+ 369 0127 01       		.byte	0x1
+ 370 0128 4D       		.byte	0x4d
+ 371 0129 01       		.byte	0x1
+ 372 012a 0A       		.uleb128 0xa
+ 373 012b 22010000 		.4byte	0x122
+ 374 012f 00000000 		.4byte	.LFB1
+ 375 0133 24000000 		.4byte	.LFE1-.LFB1
+ 376 0137 01       		.uleb128 0x1
+ 377 0138 9C       		.byte	0x9c
+ 378 0139 50010000 		.4byte	0x150
+ 379 013d 0B       		.uleb128 0xb
+ 380 013e 0A000000 		.4byte	.LVL2
+ 381 0142 01020000 		.4byte	0x201
+ 382 0146 0C       		.uleb128 0xc
+ 383 0147 1A000000 		.4byte	.LVL3
+ 384 014b 12020000 		.4byte	0x212
+ 385 014f 00       		.byte	0
+ 386 0150 0D       		.uleb128 0xd
+ 387 0151 EE020000 		.4byte	.LASF23
+ 388 0155 01       		.byte	0x1
+ 389 0156 70       		.byte	0x70
+ 390 0157 00000000 		.4byte	.LFB2
+ 391 015b 30000000 		.4byte	.LFE2-.LFB2
+ 392 015f 01       		.uleb128 0x1
+ 393 0160 9C       		.byte	0x9c
+ 394 0161 95010000 		.4byte	0x195
+ 395 0165 0E       		.uleb128 0xe
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccV35WJg.s 			page 11
+
+
+ 396 0166 F4000000 		.4byte	0xf4
+ 397 016a 10000000 		.4byte	.LBB4
+ 398 016e 20000000 		.4byte	.LBE4-.LBB4
+ 399 0172 01       		.byte	0x1
+ 400 0173 80       		.byte	0x80
+ 401 0174 8B010000 		.4byte	0x18b
+ 402 0178 0B       		.uleb128 0xb
+ 403 0179 14000000 		.4byte	.LVL5
+ 404 017d EB010000 		.4byte	0x1eb
+ 405 0181 0B       		.uleb128 0xb
+ 406 0182 20000000 		.4byte	.LVL6
+ 407 0186 F6010000 		.4byte	0x1f6
+ 408 018a 00       		.byte	0
+ 409 018b 0B       		.uleb128 0xb
+ 410 018c 10000000 		.4byte	.LVL4
+ 411 0190 23020000 		.4byte	0x223
+ 412 0194 00       		.byte	0
+ 413 0195 0D       		.uleb128 0xd
+ 414 0196 83010000 		.4byte	.LASF24
+ 415 019a 01       		.byte	0x1
+ 416 019b 96       		.byte	0x96
+ 417 019c 00000000 		.4byte	.LFB3
+ 418 01a0 30000000 		.4byte	.LFE3-.LFB3
+ 419 01a4 01       		.uleb128 0x1
+ 420 01a5 9C       		.byte	0x9c
+ 421 01a6 DA010000 		.4byte	0x1da
+ 422 01aa 0E       		.uleb128 0xe
+ 423 01ab 22010000 		.4byte	0x122
+ 424 01af 02000000 		.4byte	.LBB8
+ 425 01b3 14000000 		.4byte	.LBE8-.LBB8
+ 426 01b7 01       		.byte	0x1
+ 427 01b8 98       		.byte	0x98
+ 428 01b9 D0010000 		.4byte	0x1d0
+ 429 01bd 0B       		.uleb128 0xb
+ 430 01be 0A000000 		.4byte	.LVL7
+ 431 01c2 01020000 		.4byte	0x201
+ 432 01c6 0B       		.uleb128 0xb
+ 433 01c7 16000000 		.4byte	.LVL8
+ 434 01cb 12020000 		.4byte	0x212
+ 435 01cf 00       		.byte	0
+ 436 01d0 0C       		.uleb128 0xc
+ 437 01d1 26000000 		.4byte	.LVL9
+ 438 01d5 2A020000 		.4byte	0x22a
+ 439 01d9 00       		.byte	0
+ 440 01da 0F       		.uleb128 0xf
+ 441 01db 79000000 		.4byte	.LASF34
+ 442 01df 01       		.byte	0x1
+ 443 01e0 15       		.byte	0x15
+ 444 01e1 E9000000 		.4byte	0xe9
+ 445 01e5 05       		.uleb128 0x5
+ 446 01e6 03       		.byte	0x3
+ 447 01e7 00000000 		.4byte	CAN_TIMER_backup
+ 448 01eb 10       		.uleb128 0x10
+ 449 01ec 1B020000 		.4byte	.LASF25
+ 450 01f0 03       		.byte	0x3
+ 451 01f1 69       		.byte	0x69
+ 452 01f2 77000000 		.4byte	0x77
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccV35WJg.s 			page 12
+
+
+ 453 01f6 10       		.uleb128 0x10
+ 454 01f7 6B020000 		.4byte	.LASF26
+ 455 01fb 03       		.byte	0x3
+ 456 01fc 63       		.byte	0x63
+ 457 01fd 6B000000 		.4byte	0x6b
+ 458 0201 11       		.uleb128 0x11
+ 459 0202 B3020000 		.4byte	.LASF27
+ 460 0206 03       		.byte	0x3
+ 461 0207 6A       		.byte	0x6a
+ 462 0208 12020000 		.4byte	0x212
+ 463 020c 12       		.uleb128 0x12
+ 464 020d 77000000 		.4byte	0x77
+ 465 0211 00       		.byte	0
+ 466 0212 11       		.uleb128 0x11
+ 467 0213 35010000 		.4byte	.LASF28
+ 468 0217 03       		.byte	0x3
+ 469 0218 64       		.byte	0x64
+ 470 0219 23020000 		.4byte	0x223
+ 471 021d 12       		.uleb128 0x12
+ 472 021e 6B000000 		.4byte	0x6b
+ 473 0222 00       		.byte	0
+ 474 0223 13       		.uleb128 0x13
+ 475 0224 52020000 		.4byte	.LASF29
+ 476 0228 03       		.byte	0x3
+ 477 0229 5B       		.byte	0x5b
+ 478 022a 13       		.uleb128 0x13
+ 479 022b CA020000 		.4byte	.LASF30
+ 480 022f 03       		.byte	0x3
+ 481 0230 8B       		.byte	0x8b
+ 482 0231 00       		.byte	0
+ 483              		.section	.debug_abbrev,"",%progbits
+ 484              	.Ldebug_abbrev0:
+ 485 0000 01       		.uleb128 0x1
+ 486 0001 11       		.uleb128 0x11
+ 487 0002 01       		.byte	0x1
+ 488 0003 25       		.uleb128 0x25
+ 489 0004 0E       		.uleb128 0xe
+ 490 0005 13       		.uleb128 0x13
+ 491 0006 0B       		.uleb128 0xb
+ 492 0007 03       		.uleb128 0x3
+ 493 0008 0E       		.uleb128 0xe
+ 494 0009 1B       		.uleb128 0x1b
+ 495 000a 0E       		.uleb128 0xe
+ 496 000b 55       		.uleb128 0x55
+ 497 000c 17       		.uleb128 0x17
+ 498 000d 11       		.uleb128 0x11
+ 499 000e 01       		.uleb128 0x1
+ 500 000f 10       		.uleb128 0x10
+ 501 0010 17       		.uleb128 0x17
+ 502 0011 00       		.byte	0
+ 503 0012 00       		.byte	0
+ 504 0013 02       		.uleb128 0x2
+ 505 0014 24       		.uleb128 0x24
+ 506 0015 00       		.byte	0
+ 507 0016 0B       		.uleb128 0xb
+ 508 0017 0B       		.uleb128 0xb
+ 509 0018 3E       		.uleb128 0x3e
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccV35WJg.s 			page 13
+
+
+ 510 0019 0B       		.uleb128 0xb
+ 511 001a 03       		.uleb128 0x3
+ 512 001b 0E       		.uleb128 0xe
+ 513 001c 00       		.byte	0
+ 514 001d 00       		.byte	0
+ 515 001e 03       		.uleb128 0x3
+ 516 001f 24       		.uleb128 0x24
+ 517 0020 00       		.byte	0
+ 518 0021 0B       		.uleb128 0xb
+ 519 0022 0B       		.uleb128 0xb
+ 520 0023 3E       		.uleb128 0x3e
+ 521 0024 0B       		.uleb128 0xb
+ 522 0025 03       		.uleb128 0x3
+ 523 0026 08       		.uleb128 0x8
+ 524 0027 00       		.byte	0
+ 525 0028 00       		.byte	0
+ 526 0029 04       		.uleb128 0x4
+ 527 002a 16       		.uleb128 0x16
+ 528 002b 00       		.byte	0
+ 529 002c 03       		.uleb128 0x3
+ 530 002d 0E       		.uleb128 0xe
+ 531 002e 3A       		.uleb128 0x3a
+ 532 002f 0B       		.uleb128 0xb
+ 533 0030 3B       		.uleb128 0x3b
+ 534 0031 05       		.uleb128 0x5
+ 535 0032 49       		.uleb128 0x49
+ 536 0033 13       		.uleb128 0x13
+ 537 0034 00       		.byte	0
+ 538 0035 00       		.byte	0
+ 539 0036 05       		.uleb128 0x5
+ 540 0037 35       		.uleb128 0x35
+ 541 0038 00       		.byte	0
+ 542 0039 49       		.uleb128 0x49
+ 543 003a 13       		.uleb128 0x13
+ 544 003b 00       		.byte	0
+ 545 003c 00       		.byte	0
+ 546 003d 06       		.uleb128 0x6
+ 547 003e 13       		.uleb128 0x13
+ 548 003f 01       		.byte	0x1
+ 549 0040 0B       		.uleb128 0xb
+ 550 0041 0B       		.uleb128 0xb
+ 551 0042 3A       		.uleb128 0x3a
+ 552 0043 0B       		.uleb128 0xb
+ 553 0044 3B       		.uleb128 0x3b
+ 554 0045 0B       		.uleb128 0xb
+ 555 0046 01       		.uleb128 0x1
+ 556 0047 13       		.uleb128 0x13
+ 557 0048 00       		.byte	0
+ 558 0049 00       		.byte	0
+ 559 004a 07       		.uleb128 0x7
+ 560 004b 0D       		.uleb128 0xd
+ 561 004c 00       		.byte	0
+ 562 004d 03       		.uleb128 0x3
+ 563 004e 0E       		.uleb128 0xe
+ 564 004f 3A       		.uleb128 0x3a
+ 565 0050 0B       		.uleb128 0xb
+ 566 0051 3B       		.uleb128 0x3b
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccV35WJg.s 			page 14
+
+
+ 567 0052 0B       		.uleb128 0xb
+ 568 0053 49       		.uleb128 0x49
+ 569 0054 13       		.uleb128 0x13
+ 570 0055 38       		.uleb128 0x38
+ 571 0056 0B       		.uleb128 0xb
+ 572 0057 00       		.byte	0
+ 573 0058 00       		.byte	0
+ 574 0059 08       		.uleb128 0x8
+ 575 005a 16       		.uleb128 0x16
+ 576 005b 00       		.byte	0
+ 577 005c 03       		.uleb128 0x3
+ 578 005d 0E       		.uleb128 0xe
+ 579 005e 3A       		.uleb128 0x3a
+ 580 005f 0B       		.uleb128 0xb
+ 581 0060 3B       		.uleb128 0x3b
+ 582 0061 0B       		.uleb128 0xb
+ 583 0062 49       		.uleb128 0x49
+ 584 0063 13       		.uleb128 0x13
+ 585 0064 00       		.byte	0
+ 586 0065 00       		.byte	0
+ 587 0066 09       		.uleb128 0x9
+ 588 0067 2E       		.uleb128 0x2e
+ 589 0068 00       		.byte	0
+ 590 0069 3F       		.uleb128 0x3f
+ 591 006a 19       		.uleb128 0x19
+ 592 006b 03       		.uleb128 0x3
+ 593 006c 0E       		.uleb128 0xe
+ 594 006d 3A       		.uleb128 0x3a
+ 595 006e 0B       		.uleb128 0xb
+ 596 006f 3B       		.uleb128 0x3b
+ 597 0070 0B       		.uleb128 0xb
+ 598 0071 27       		.uleb128 0x27
+ 599 0072 19       		.uleb128 0x19
+ 600 0073 20       		.uleb128 0x20
+ 601 0074 0B       		.uleb128 0xb
+ 602 0075 00       		.byte	0
+ 603 0076 00       		.byte	0
+ 604 0077 0A       		.uleb128 0xa
+ 605 0078 2E       		.uleb128 0x2e
+ 606 0079 01       		.byte	0x1
+ 607 007a 31       		.uleb128 0x31
+ 608 007b 13       		.uleb128 0x13
+ 609 007c 11       		.uleb128 0x11
+ 610 007d 01       		.uleb128 0x1
+ 611 007e 12       		.uleb128 0x12
+ 612 007f 06       		.uleb128 0x6
+ 613 0080 40       		.uleb128 0x40
+ 614 0081 18       		.uleb128 0x18
+ 615 0082 9742     		.uleb128 0x2117
+ 616 0084 19       		.uleb128 0x19
+ 617 0085 01       		.uleb128 0x1
+ 618 0086 13       		.uleb128 0x13
+ 619 0087 00       		.byte	0
+ 620 0088 00       		.byte	0
+ 621 0089 0B       		.uleb128 0xb
+ 622 008a 898201   		.uleb128 0x4109
+ 623 008d 00       		.byte	0
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccV35WJg.s 			page 15
+
+
+ 624 008e 11       		.uleb128 0x11
+ 625 008f 01       		.uleb128 0x1
+ 626 0090 31       		.uleb128 0x31
+ 627 0091 13       		.uleb128 0x13
+ 628 0092 00       		.byte	0
+ 629 0093 00       		.byte	0
+ 630 0094 0C       		.uleb128 0xc
+ 631 0095 898201   		.uleb128 0x4109
+ 632 0098 00       		.byte	0
+ 633 0099 11       		.uleb128 0x11
+ 634 009a 01       		.uleb128 0x1
+ 635 009b 9542     		.uleb128 0x2115
+ 636 009d 19       		.uleb128 0x19
+ 637 009e 31       		.uleb128 0x31
+ 638 009f 13       		.uleb128 0x13
+ 639 00a0 00       		.byte	0
+ 640 00a1 00       		.byte	0
+ 641 00a2 0D       		.uleb128 0xd
+ 642 00a3 2E       		.uleb128 0x2e
+ 643 00a4 01       		.byte	0x1
+ 644 00a5 3F       		.uleb128 0x3f
+ 645 00a6 19       		.uleb128 0x19
+ 646 00a7 03       		.uleb128 0x3
+ 647 00a8 0E       		.uleb128 0xe
+ 648 00a9 3A       		.uleb128 0x3a
+ 649 00aa 0B       		.uleb128 0xb
+ 650 00ab 3B       		.uleb128 0x3b
+ 651 00ac 0B       		.uleb128 0xb
+ 652 00ad 27       		.uleb128 0x27
+ 653 00ae 19       		.uleb128 0x19
+ 654 00af 11       		.uleb128 0x11
+ 655 00b0 01       		.uleb128 0x1
+ 656 00b1 12       		.uleb128 0x12
+ 657 00b2 06       		.uleb128 0x6
+ 658 00b3 40       		.uleb128 0x40
+ 659 00b4 18       		.uleb128 0x18
+ 660 00b5 9742     		.uleb128 0x2117
+ 661 00b7 19       		.uleb128 0x19
+ 662 00b8 01       		.uleb128 0x1
+ 663 00b9 13       		.uleb128 0x13
+ 664 00ba 00       		.byte	0
+ 665 00bb 00       		.byte	0
+ 666 00bc 0E       		.uleb128 0xe
+ 667 00bd 1D       		.uleb128 0x1d
+ 668 00be 01       		.byte	0x1
+ 669 00bf 31       		.uleb128 0x31
+ 670 00c0 13       		.uleb128 0x13
+ 671 00c1 11       		.uleb128 0x11
+ 672 00c2 01       		.uleb128 0x1
+ 673 00c3 12       		.uleb128 0x12
+ 674 00c4 06       		.uleb128 0x6
+ 675 00c5 58       		.uleb128 0x58
+ 676 00c6 0B       		.uleb128 0xb
+ 677 00c7 59       		.uleb128 0x59
+ 678 00c8 0B       		.uleb128 0xb
+ 679 00c9 01       		.uleb128 0x1
+ 680 00ca 13       		.uleb128 0x13
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccV35WJg.s 			page 16
+
+
+ 681 00cb 00       		.byte	0
+ 682 00cc 00       		.byte	0
+ 683 00cd 0F       		.uleb128 0xf
+ 684 00ce 34       		.uleb128 0x34
+ 685 00cf 00       		.byte	0
+ 686 00d0 03       		.uleb128 0x3
+ 687 00d1 0E       		.uleb128 0xe
+ 688 00d2 3A       		.uleb128 0x3a
+ 689 00d3 0B       		.uleb128 0xb
+ 690 00d4 3B       		.uleb128 0x3b
+ 691 00d5 0B       		.uleb128 0xb
+ 692 00d6 49       		.uleb128 0x49
+ 693 00d7 13       		.uleb128 0x13
+ 694 00d8 02       		.uleb128 0x2
+ 695 00d9 18       		.uleb128 0x18
+ 696 00da 00       		.byte	0
+ 697 00db 00       		.byte	0
+ 698 00dc 10       		.uleb128 0x10
+ 699 00dd 2E       		.uleb128 0x2e
+ 700 00de 00       		.byte	0
+ 701 00df 3F       		.uleb128 0x3f
+ 702 00e0 19       		.uleb128 0x19
+ 703 00e1 03       		.uleb128 0x3
+ 704 00e2 0E       		.uleb128 0xe
+ 705 00e3 3A       		.uleb128 0x3a
+ 706 00e4 0B       		.uleb128 0xb
+ 707 00e5 3B       		.uleb128 0x3b
+ 708 00e6 0B       		.uleb128 0xb
+ 709 00e7 27       		.uleb128 0x27
+ 710 00e8 19       		.uleb128 0x19
+ 711 00e9 49       		.uleb128 0x49
+ 712 00ea 13       		.uleb128 0x13
+ 713 00eb 3C       		.uleb128 0x3c
+ 714 00ec 19       		.uleb128 0x19
+ 715 00ed 00       		.byte	0
+ 716 00ee 00       		.byte	0
+ 717 00ef 11       		.uleb128 0x11
+ 718 00f0 2E       		.uleb128 0x2e
+ 719 00f1 01       		.byte	0x1
+ 720 00f2 3F       		.uleb128 0x3f
+ 721 00f3 19       		.uleb128 0x19
+ 722 00f4 03       		.uleb128 0x3
+ 723 00f5 0E       		.uleb128 0xe
+ 724 00f6 3A       		.uleb128 0x3a
+ 725 00f7 0B       		.uleb128 0xb
+ 726 00f8 3B       		.uleb128 0x3b
+ 727 00f9 0B       		.uleb128 0xb
+ 728 00fa 27       		.uleb128 0x27
+ 729 00fb 19       		.uleb128 0x19
+ 730 00fc 3C       		.uleb128 0x3c
+ 731 00fd 19       		.uleb128 0x19
+ 732 00fe 01       		.uleb128 0x1
+ 733 00ff 13       		.uleb128 0x13
+ 734 0100 00       		.byte	0
+ 735 0101 00       		.byte	0
+ 736 0102 12       		.uleb128 0x12
+ 737 0103 05       		.uleb128 0x5
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccV35WJg.s 			page 17
+
+
+ 738 0104 00       		.byte	0
+ 739 0105 49       		.uleb128 0x49
+ 740 0106 13       		.uleb128 0x13
+ 741 0107 00       		.byte	0
+ 742 0108 00       		.byte	0
+ 743 0109 13       		.uleb128 0x13
+ 744 010a 2E       		.uleb128 0x2e
+ 745 010b 00       		.byte	0
+ 746 010c 3F       		.uleb128 0x3f
+ 747 010d 19       		.uleb128 0x19
+ 748 010e 03       		.uleb128 0x3
+ 749 010f 0E       		.uleb128 0xe
+ 750 0110 3A       		.uleb128 0x3a
+ 751 0111 0B       		.uleb128 0xb
+ 752 0112 3B       		.uleb128 0x3b
+ 753 0113 0B       		.uleb128 0xb
+ 754 0114 27       		.uleb128 0x27
+ 755 0115 19       		.uleb128 0x19
+ 756 0116 3C       		.uleb128 0x3c
+ 757 0117 19       		.uleb128 0x19
+ 758 0118 00       		.byte	0
+ 759 0119 00       		.byte	0
+ 760 011a 00       		.byte	0
+ 761              		.section	.debug_aranges,"",%progbits
+ 762 0000 34000000 		.4byte	0x34
+ 763 0004 0200     		.2byte	0x2
+ 764 0006 00000000 		.4byte	.Ldebug_info0
+ 765 000a 04       		.byte	0x4
+ 766 000b 00       		.byte	0
+ 767 000c 0000     		.2byte	0
+ 768 000e 0000     		.2byte	0
+ 769 0010 00000000 		.4byte	.LFB0
+ 770 0014 20000000 		.4byte	.LFE0-.LFB0
+ 771 0018 00000000 		.4byte	.LFB1
+ 772 001c 24000000 		.4byte	.LFE1-.LFB1
+ 773 0020 00000000 		.4byte	.LFB2
+ 774 0024 30000000 		.4byte	.LFE2-.LFB2
+ 775 0028 00000000 		.4byte	.LFB3
+ 776 002c 30000000 		.4byte	.LFE3-.LFB3
+ 777 0030 00000000 		.4byte	0
+ 778 0034 00000000 		.4byte	0
+ 779              		.section	.debug_ranges,"",%progbits
+ 780              	.Ldebug_ranges0:
+ 781 0000 00000000 		.4byte	.LFB0
+ 782 0004 20000000 		.4byte	.LFE0
+ 783 0008 00000000 		.4byte	.LFB1
+ 784 000c 24000000 		.4byte	.LFE1
+ 785 0010 00000000 		.4byte	.LFB2
+ 786 0014 30000000 		.4byte	.LFE2
+ 787 0018 00000000 		.4byte	.LFB3
+ 788 001c 30000000 		.4byte	.LFE3
+ 789 0020 00000000 		.4byte	0
+ 790 0024 00000000 		.4byte	0
+ 791              		.section	.debug_line,"",%progbits
+ 792              	.Ldebug_line0:
+ 793 0000 CC000000 		.section	.debug_str,"MS",%progbits,1
+ 793      02005A00 
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccV35WJg.s 			page 18
+
+
+ 793      00000201 
+ 793      FB0E0D00 
+ 793      01010101 
+ 794              	.LASF16:
+ 795 0000 54696D65 		.ascii	"TimerEnableState\000"
+ 795      72456E61 
+ 795      626C6553 
+ 795      74617465 
+ 795      00
+ 796              	.LASF33:
+ 797 0011 433A5C55 		.ascii	"C:\\Users\\Patrick\\Desktop\\cy8ckit-059\\CE95277 A"
+ 797      73657273 
+ 797      5C506174 
+ 797      7269636B 
+ 797      5C446573 
+ 798 003f 44432061 		.ascii	"DC and UART\\CE95277 ADC and UART.cydsn\000"
+ 798      6E642055 
+ 798      4152545C 
+ 798      43453935 
+ 798      32373720 
+ 799              	.LASF3:
+ 800 0066 73686F72 		.ascii	"short unsigned int\000"
+ 800      7420756E 
+ 800      7369676E 
+ 800      65642069 
+ 800      6E7400
+ 801              	.LASF34:
+ 802 0079 43414E5F 		.ascii	"CAN_TIMER_backup\000"
+ 802      54494D45 
+ 802      525F6261 
+ 802      636B7570 
+ 802      00
+ 803              	.LASF17:
+ 804 008a 54696D65 		.ascii	"TimerUdb\000"
+ 804      72556462 
+ 804      00
+ 805              	.LASF11:
+ 806 0093 666C6F61 		.ascii	"float\000"
+ 806      7400
+ 807              	.LASF1:
+ 808 0099 756E7369 		.ascii	"unsigned char\000"
+ 808      676E6564 
+ 808      20636861 
+ 808      7200
+ 809              	.LASF31:
+ 810 00a7 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
+ 810      4320342E 
+ 810      392E3320 
+ 810      32303135 
+ 810      30333033 
+ 811 00da 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m3 -mthumb -g -O"
+ 811      20726576 
+ 811      6973696F 
+ 811      6E203232 
+ 811      31323230 
+ 812 010d 33202D66 		.ascii	"3 -ffunction-sections -ffat-lto-objects\000"
+ 812      66756E63 
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccV35WJg.s 			page 19
+
+
+ 812      74696F6E 
+ 812      2D736563 
+ 812      74696F6E 
+ 813              	.LASF28:
+ 814 0135 43414E5F 		.ascii	"CAN_TIMER_WriteControlRegister\000"
+ 814      54494D45 
+ 814      525F5772 
+ 814      69746543 
+ 814      6F6E7472 
+ 815              	.LASF5:
+ 816 0154 6C6F6E67 		.ascii	"long unsigned int\000"
+ 816      20756E73 
+ 816      69676E65 
+ 816      6420696E 
+ 816      7400
+ 817              	.LASF9:
+ 818 0166 75696E74 		.ascii	"uint8\000"
+ 818      3800
+ 819              	.LASF20:
+ 820 016c 43414E5F 		.ascii	"CAN_TIMER_backupStruct\000"
+ 820      54494D45 
+ 820      525F6261 
+ 820      636B7570 
+ 820      53747275 
+ 821              	.LASF24:
+ 822 0183 43414E5F 		.ascii	"CAN_TIMER_Wakeup\000"
+ 822      54494D45 
+ 822      525F5761 
+ 822      6B657570 
+ 822      00
+ 823              	.LASF22:
+ 824 0194 43414E5F 		.ascii	"CAN_TIMER_RestoreConfig\000"
+ 824      54494D45 
+ 824      525F5265 
+ 824      73746F72 
+ 824      65436F6E 
+ 825              	.LASF19:
+ 826 01ac 54696D65 		.ascii	"TimerControlRegister\000"
+ 826      72436F6E 
+ 826      74726F6C 
+ 826      52656769 
+ 826      73746572 
+ 827              	.LASF12:
+ 828 01c1 646F7562 		.ascii	"double\000"
+ 828      6C6500
+ 829              	.LASF10:
+ 830 01c8 75696E74 		.ascii	"uint16\000"
+ 830      313600
+ 831              	.LASF8:
+ 832 01cf 756E7369 		.ascii	"unsigned int\000"
+ 832      676E6564 
+ 832      20696E74 
+ 832      00
+ 833              	.LASF32:
+ 834 01dc 2E5C4765 		.ascii	".\\Generated_Source\\PSoC5\\CAN_TIMER_PM.c\000"
+ 834      6E657261 
+ 834      7465645F 
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccV35WJg.s 			page 20
+
+
+ 834      536F7572 
+ 834      63655C50 
+ 835              	.LASF7:
+ 836 0204 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 836      206C6F6E 
+ 836      6720756E 
+ 836      7369676E 
+ 836      65642069 
+ 837              	.LASF25:
+ 838 021b 43414E5F 		.ascii	"CAN_TIMER_ReadCounter\000"
+ 838      54494D45 
+ 838      525F5265 
+ 838      6164436F 
+ 838      756E7465 
+ 839              	.LASF14:
+ 840 0231 72656738 		.ascii	"reg8\000"
+ 840      00
+ 841              	.LASF15:
+ 842 0236 73697A65 		.ascii	"sizetype\000"
+ 842      74797065 
+ 842      00
+ 843              	.LASF6:
+ 844 023f 6C6F6E67 		.ascii	"long long int\000"
+ 844      206C6F6E 
+ 844      6720696E 
+ 844      7400
+ 845              	.LASF13:
+ 846 024d 63686172 		.ascii	"char\000"
+ 846      00
+ 847              	.LASF29:
+ 848 0252 43414E5F 		.ascii	"CAN_TIMER_Stop\000"
+ 848      54494D45 
+ 848      525F5374 
+ 848      6F7000
+ 849              	.LASF2:
+ 850 0261 73686F72 		.ascii	"short int\000"
+ 850      7420696E 
+ 850      7400
+ 851              	.LASF26:
+ 852 026b 43414E5F 		.ascii	"CAN_TIMER_ReadControlRegister\000"
+ 852      54494D45 
+ 852      525F5265 
+ 852      6164436F 
+ 852      6E74726F 
+ 853              	.LASF4:
+ 854 0289 6C6F6E67 		.ascii	"long int\000"
+ 854      20696E74 
+ 854      00
+ 855              	.LASF21:
+ 856 0292 43414E5F 		.ascii	"CAN_TIMER_SaveConfig\000"
+ 856      54494D45 
+ 856      525F5361 
+ 856      7665436F 
+ 856      6E666967 
+ 857              	.LASF0:
+ 858 02a7 7369676E 		.ascii	"signed char\000"
+ 858      65642063 
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccV35WJg.s 			page 21
+
+
+ 858      68617200 
+ 859              	.LASF27:
+ 860 02b3 43414E5F 		.ascii	"CAN_TIMER_WriteCounter\000"
+ 860      54494D45 
+ 860      525F5772 
+ 860      69746543 
+ 860      6F756E74 
+ 861              	.LASF30:
+ 862 02ca 43414E5F 		.ascii	"CAN_TIMER_Enable\000"
+ 862      54494D45 
+ 862      525F456E 
+ 862      61626C65 
+ 862      00
+ 863              	.LASF18:
+ 864 02db 496E7465 		.ascii	"InterruptMaskValue\000"
+ 864      72727570 
+ 864      744D6173 
+ 864      6B56616C 
+ 864      756500
+ 865              	.LASF23:
+ 866 02ee 43414E5F 		.ascii	"CAN_TIMER_Sleep\000"
+ 866      54494D45 
+ 866      525F536C 
+ 866      65657000 
+ 867              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.9.3 20150303 (release) [ARM/embedded-4_9-br

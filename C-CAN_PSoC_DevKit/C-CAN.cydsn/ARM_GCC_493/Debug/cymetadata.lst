@@ -1,0 +1,2253 @@
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjHbADF.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m3
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 2
+  11              		.eabi_attribute 34, 1
+  12              		.eabi_attribute 18, 4
+  13              		.thumb
+  14              		.file	"cymetadata.c"
+  15              		.text
+  16              	.Ltext0:
+  17              		.cfi_sections	.debug_frame
+  18              		.global	cy_metadata
+  19              		.global	cy_meta_flashprotect
+  20              		.global	cy_meta_wonvl
+  21              		.global	cy_meta_custnvl
+  22              		.global	cy_meta_configecc
+  23              		.section	.cyconfigecc,"a",%progbits
+  24              		.align	2
+  25              		.type	cy_meta_configecc, %object
+  26              		.size	cy_meta_configecc, 1652
+  27              	cy_meta_configecc:
+  28 0000 06       		.byte	6
+  29 0001 52       		.byte	82
+  30 0002 00       		.byte	0
+  31 0003 40       		.byte	64
+  32 0004 01       		.byte	1
+  33 0005 5B       		.byte	91
+  34 0006 00       		.byte	0
+  35 0007 40       		.byte	64
+  36 0008 04       		.byte	4
+  37 0009 64       		.byte	100
+  38 000a 00       		.byte	0
+  39 000b 40       		.byte	64
+  40 000c 02       		.byte	2
+  41 000d 65       		.byte	101
+  42 000e 00       		.byte	0
+  43 000f 40       		.byte	64
+  44 0010 35       		.byte	53
+  45 0011 02       		.byte	2
+  46 0012 01       		.byte	1
+  47 0013 40       		.byte	64
+  48 0014 1C       		.byte	28
+  49 0015 03       		.byte	3
+  50 0016 01       		.byte	1
+  51 0017 40       		.byte	64
+  52 0018 4B       		.byte	75
+  53 0019 04       		.byte	4
+  54 001a 01       		.byte	1
+  55 001b 40       		.byte	64
+  56 001c 2A       		.byte	42
+  57 001d 05       		.byte	5
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjHbADF.s 			page 2
+
+
+  58 001e 01       		.byte	1
+  59 001f 40       		.byte	64
+  60 0020 03       		.byte	3
+  61 0021 07       		.byte	7
+  62 0022 01       		.byte	1
+  63 0023 40       		.byte	64
+  64 0024 5F       		.byte	95
+  65 0025 08       		.byte	8
+  66 0026 01       		.byte	1
+  67 0027 40       		.byte	64
+  68 0028 37       		.byte	55
+  69 0029 09       		.byte	9
+  70 002a 01       		.byte	1
+  71 002b 40       		.byte	64
+  72 002c 01       		.byte	1
+  73 002d 0D       		.byte	13
+  74 002e 01       		.byte	1
+  75 002f 40       		.byte	64
+  76 0030 04       		.byte	4
+  77 0031 15       		.byte	21
+  78 0032 01       		.byte	1
+  79 0033 40       		.byte	64
+  80 0034 03       		.byte	3
+  81 0035 17       		.byte	23
+  82 0036 01       		.byte	1
+  83 0037 40       		.byte	64
+  84 0038 68       		.byte	104
+  85 0039 18       		.byte	24
+  86 003a 01       		.byte	1
+  87 003b 40       		.byte	64
+  88 003c 40       		.byte	64
+  89 003d 19       		.byte	25
+  90 003e 01       		.byte	1
+  91 003f 40       		.byte	64
+  92 0040 10       		.byte	16
+  93 0041 1A       		.byte	26
+  94 0042 01       		.byte	1
+  95 0043 40       		.byte	64
+  96 0044 3B       		.byte	59
+  97 0045 1B       		.byte	27
+  98 0046 01       		.byte	1
+  99 0047 40       		.byte	64
+ 100 0048 03       		.byte	3
+ 101 0049 40       		.byte	64
+ 102 004a 01       		.byte	1
+ 103 004b 40       		.byte	64
+ 104 004c 07       		.byte	7
+ 105 004d 41       		.byte	65
+ 106 004e 01       		.byte	1
+ 107 004f 40       		.byte	64
+ 108 0050 02       		.byte	2
+ 109 0051 42       		.byte	66
+ 110 0052 01       		.byte	1
+ 111 0053 40       		.byte	64
+ 112 0054 03       		.byte	3
+ 113 0055 43       		.byte	67
+ 114 0056 01       		.byte	1
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjHbADF.s 			page 3
+
+
+ 115 0057 40       		.byte	64
+ 116 0058 04       		.byte	4
+ 117 0059 45       		.byte	69
+ 118 005a 01       		.byte	1
+ 119 005b 40       		.byte	64
+ 120 005c 02       		.byte	2
+ 121 005d 46       		.byte	70
+ 122 005e 01       		.byte	1
+ 123 005f 40       		.byte	64
+ 124 0060 03       		.byte	3
+ 125 0061 47       		.byte	71
+ 126 0062 01       		.byte	1
+ 127 0063 40       		.byte	64
+ 128 0064 06       		.byte	6
+ 129 0065 48       		.byte	72
+ 130 0066 01       		.byte	1
+ 131 0067 40       		.byte	64
+ 132 0068 04       		.byte	4
+ 133 0069 49       		.byte	73
+ 134 006a 01       		.byte	1
+ 135 006b 40       		.byte	64
+ 136 006c 06       		.byte	6
+ 137 006d 4C       		.byte	76
+ 138 006e 01       		.byte	1
+ 139 006f 40       		.byte	64
+ 140 0070 0F       		.byte	15
+ 141 0071 4D       		.byte	77
+ 142 0072 01       		.byte	1
+ 143 0073 40       		.byte	64
+ 144 0074 0A       		.byte	10
+ 145 0075 50       		.byte	80
+ 146 0076 01       		.byte	1
+ 147 0077 40       		.byte	64
+ 148 0078 01       		.byte	1
+ 149 0079 51       		.byte	81
+ 150 007a 01       		.byte	1
+ 151 007b 40       		.byte	64
+ 152 007c 00       		.byte	0
+ 153 007d 01       		.byte	1
+ 154 007e 01       		.byte	1
+ 155 007f 01       		.byte	1
+ 156 0080 10       		.byte	16
+ 157 0081 02       		.byte	2
+ 158 0082 11       		.byte	17
+ 159 0083 02       		.byte	2
+ 160 0084 60       		.byte	96
+ 161 0085 80       		.byte	-128
+ 162 0086 61       		.byte	97
+ 163 0087 80       		.byte	-128
+ 164 0088 27       		.byte	39
+ 165 0089 84       		.byte	-124
+ 166 008a 83       		.byte	-125
+ 167 008b 0D       		.byte	13
+ 168 008c 85       		.byte	-123
+ 169 008d 67       		.byte	103
+ 170 008e 88       		.byte	-120
+ 171 008f 0F       		.byte	15
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjHbADF.s 			page 4
+
+
+ 172 0090 89       		.byte	-119
+ 173 0091 67       		.byte	103
+ 174 0092 88       		.byte	-120
+ 175 0093 72       		.byte	114
+ 176 0094 8A       		.byte	-118
+ 177 0095 38       		.byte	56
+ 178 0096 39       		.byte	57
+ 179 0097 20       		.byte	32
+ 180 0098 3F       		.byte	63
+ 181 0099 10       		.byte	16
+ 182 009a 40       		.byte	64
+ 183 009b 14       		.byte	20
+ 184 009c 49       		.byte	73
+ 185 009d FF       		.byte	-1
+ 186 009e 4A       		.byte	74
+ 187 009f FF       		.byte	-1
+ 188 00a0 4B       		.byte	75
+ 189 00a1 FF       		.byte	-1
+ 190 00a2 4F       		.byte	79
+ 191 00a3 01       		.byte	1
+ 192 00a4 50       		.byte	80
+ 193 00a5 18       		.byte	24
+ 194 00a6 56       		.byte	86
+ 195 00a7 08       		.byte	8
+ 196 00a8 59       		.byte	89
+ 197 00a9 04       		.byte	4
+ 198 00aa 5A       		.byte	90
+ 199 00ab 08       		.byte	8
+ 200 00ac 5B       		.byte	91
+ 201 00ad 04       		.byte	4
+ 202 00ae 5F       		.byte	95
+ 203 00af 01       		.byte	1
+ 204 00b0 60       		.byte	96
+ 205 00b1 40       		.byte	64
+ 206 00b2 62       		.byte	98
+ 207 00b3 40       		.byte	64
+ 208 00b4 64       		.byte	100
+ 209 00b5 40       		.byte	64
+ 210 00b6 65       		.byte	101
+ 211 00b7 40       		.byte	64
+ 212 00b8 66       		.byte	102
+ 213 00b9 80       		.byte	-128
+ 214 00ba 68       		.byte	104
+ 215 00bb 80       		.byte	-128
+ 216 00bc 6A       		.byte	106
+ 217 00bd 80       		.byte	-128
+ 218 00be 6C       		.byte	108
+ 219 00bf 80       		.byte	-128
+ 220 00c0 6E       		.byte	110
+ 221 00c1 80       		.byte	-128
+ 222 00c2 92       		.byte	-110
+ 223 00c3 01       		.byte	1
+ 224 00c4 AE       		.byte	-82
+ 225 00c5 01       		.byte	1
+ 226 00c6 B6       		.byte	-74
+ 227 00c7 01       		.byte	1
+ 228 00c8 BE       		.byte	-66
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjHbADF.s 			page 5
+
+
+ 229 00c9 40       		.byte	64
+ 230 00ca C0       		.byte	-64
+ 231 00cb 54       		.byte	84
+ 232 00cc C5       		.byte	-59
+ 233 00cd EC       		.byte	-20
+ 234 00ce C7       		.byte	-57
+ 235 00cf 20       		.byte	32
+ 236 00d0 C8       		.byte	-56
+ 237 00d1 23       		.byte	35
+ 238 00d2 C9       		.byte	-55
+ 239 00d3 FF       		.byte	-1
+ 240 00d4 CA       		.byte	-54
+ 241 00d5 FF       		.byte	-1
+ 242 00d6 CB       		.byte	-53
+ 243 00d7 FF       		.byte	-1
+ 244 00d8 CD       		.byte	-51
+ 245 00d9 83       		.byte	-125
+ 246 00da CE       		.byte	-50
+ 247 00db 03       		.byte	3
+ 248 00dc CF       		.byte	-49
+ 249 00dd 01       		.byte	1
+ 250 00de D0       		.byte	-48
+ 251 00df 18       		.byte	24
+ 252 00e0 D2       		.byte	-46
+ 253 00e1 80       		.byte	-128
+ 254 00e2 D4       		.byte	-44
+ 255 00e3 01       		.byte	1
+ 256 00e4 D6       		.byte	-42
+ 257 00e5 04       		.byte	4
+ 258 00e6 D8       		.byte	-40
+ 259 00e7 04       		.byte	4
+ 260 00e8 DA       		.byte	-38
+ 261 00e9 0B       		.byte	11
+ 262 00ea DB       		.byte	-37
+ 263 00eb 0B       		.byte	11
+ 264 00ec DF       		.byte	-33
+ 265 00ed 01       		.byte	1
+ 266 00ee E0       		.byte	-32
+ 267 00ef 40       		.byte	64
+ 268 00f0 E2       		.byte	-30
+ 269 00f1 40       		.byte	64
+ 270 00f2 E4       		.byte	-28
+ 271 00f3 40       		.byte	64
+ 272 00f4 E5       		.byte	-27
+ 273 00f5 40       		.byte	64
+ 274 00f6 E6       		.byte	-26
+ 275 00f7 80       		.byte	-128
+ 276 00f8 E8       		.byte	-24
+ 277 00f9 80       		.byte	-128
+ 278 00fa EA       		.byte	-22
+ 279 00fb 80       		.byte	-128
+ 280 00fc EC       		.byte	-20
+ 281 00fd 80       		.byte	-128
+ 282 00fe EE       		.byte	-18
+ 283 00ff 80       		.byte	-128
+ 284 0100 09       		.byte	9
+ 285 0101 02       		.byte	2
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjHbADF.s 			page 6
+
+
+ 286 0102 13       		.byte	19
+ 287 0103 80       		.byte	-128
+ 288 0104 19       		.byte	25
+ 289 0105 40       		.byte	64
+ 290 0106 26       		.byte	38
+ 291 0107 10       		.byte	16
+ 292 0108 41       		.byte	65
+ 293 0109 02       		.byte	2
+ 294 010a 45       		.byte	69
+ 295 010b 02       		.byte	2
+ 296 010c 47       		.byte	71
+ 297 010d 80       		.byte	-128
+ 298 010e 49       		.byte	73
+ 299 010f 05       		.byte	5
+ 300 0110 4B       		.byte	75
+ 301 0111 40       		.byte	64
+ 302 0112 51       		.byte	81
+ 303 0113 02       		.byte	2
+ 304 0114 59       		.byte	89
+ 305 0115 45       		.byte	69
+ 306 0116 5D       		.byte	93
+ 307 0117 40       		.byte	64
+ 308 0118 60       		.byte	96
+ 309 0119 40       		.byte	64
+ 310 011a 63       		.byte	99
+ 311 011b 80       		.byte	-128
+ 312 011c 64       		.byte	100
+ 313 011d 01       		.byte	1
+ 314 011e 67       		.byte	103
+ 315 011f 02       		.byte	2
+ 316 0120 73       		.byte	115
+ 317 0121 C0       		.byte	-64
+ 318 0122 78       		.byte	120
+ 319 0123 01       		.byte	1
+ 320 0124 7F       		.byte	127
+ 321 0125 01       		.byte	1
+ 322 0126 83       		.byte	-125
+ 323 0127 40       		.byte	64
+ 324 0128 8C       		.byte	-116
+ 325 0129 40       		.byte	64
+ 326 012a C2       		.byte	-62
+ 327 012b 08       		.byte	8
+ 328 012c C4       		.byte	-60
+ 329 012d 01       		.byte	1
+ 330 012e D0       		.byte	-48
+ 331 012f 91       		.byte	-111
+ 332 0130 D2       		.byte	-46
+ 333 0131 08       		.byte	8
+ 334 0132 D6       		.byte	-42
+ 335 0133 1B       		.byte	27
+ 336 0134 D8       		.byte	-40
+ 337 0135 11       		.byte	17
+ 338 0136 DE       		.byte	-34
+ 339 0137 11       		.byte	17
+ 340 0138 12       		.byte	18
+ 341 0139 01       		.byte	1
+ 342 013a 13       		.byte	19
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjHbADF.s 			page 7
+
+
+ 343 013b 01       		.byte	1
+ 344 013c 1C       		.byte	28
+ 345 013d 01       		.byte	1
+ 346 013e 2E       		.byte	46
+ 347 013f 01       		.byte	1
+ 348 0140 34       		.byte	52
+ 349 0141 01       		.byte	1
+ 350 0142 37       		.byte	55
+ 351 0143 01       		.byte	1
+ 352 0144 3E       		.byte	62
+ 353 0145 10       		.byte	16
+ 354 0146 40       		.byte	64
+ 355 0147 20       		.byte	32
+ 356 0148 41       		.byte	65
+ 357 0149 06       		.byte	6
+ 358 014a 49       		.byte	73
+ 359 014b FF       		.byte	-1
+ 360 014c 4A       		.byte	74
+ 361 014d FF       		.byte	-1
+ 362 014e 4B       		.byte	75
+ 363 014f FF       		.byte	-1
+ 364 0150 4D       		.byte	77
+ 365 0151 A0       		.byte	-96
+ 366 0152 4F       		.byte	79
+ 367 0153 01       		.byte	1
+ 368 0154 50       		.byte	80
+ 369 0155 18       		.byte	24
+ 370 0156 52       		.byte	82
+ 371 0157 80       		.byte	-128
+ 372 0158 58       		.byte	88
+ 373 0159 04       		.byte	4
+ 374 015a 59       		.byte	89
+ 375 015b 04       		.byte	4
+ 376 015c 5A       		.byte	90
+ 377 015d 04       		.byte	4
+ 378 015e 5B       		.byte	91
+ 379 015f 04       		.byte	4
+ 380 0160 5F       		.byte	95
+ 381 0161 01       		.byte	1
+ 382 0162 60       		.byte	96
+ 383 0163 40       		.byte	64
+ 384 0164 62       		.byte	98
+ 385 0165 80       		.byte	-128
+ 386 0166 64       		.byte	100
+ 387 0167 40       		.byte	64
+ 388 0168 65       		.byte	101
+ 389 0169 40       		.byte	64
+ 390 016a 66       		.byte	102
+ 391 016b 80       		.byte	-128
+ 392 016c 68       		.byte	104
+ 393 016d 40       		.byte	64
+ 394 016e 6A       		.byte	106
+ 395 016f 50       		.byte	80
+ 396 0170 6B       		.byte	107
+ 397 0171 A8       		.byte	-88
+ 398 0172 6C       		.byte	108
+ 399 0173 40       		.byte	64
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjHbADF.s 			page 8
+
+
+ 400 0174 6D       		.byte	109
+ 401 0175 20       		.byte	32
+ 402 0176 6E       		.byte	110
+ 403 0177 50       		.byte	80
+ 404 0178 6F       		.byte	111
+ 405 0179 A8       		.byte	-88
+ 406 017a 83       		.byte	-125
+ 407 017b 02       		.byte	2
+ 408 017c 84       		.byte	-124
+ 409 017d 02       		.byte	2
+ 410 017e 8E       		.byte	-114
+ 411 017f 02       		.byte	2
+ 412 0180 9E       		.byte	-98
+ 413 0181 01       		.byte	1
+ 414 0182 A0       		.byte	-96
+ 415 0183 01       		.byte	1
+ 416 0184 A3       		.byte	-93
+ 417 0185 01       		.byte	1
+ 418 0186 B0       		.byte	-80
+ 419 0187 01       		.byte	1
+ 420 0188 B3       		.byte	-77
+ 421 0189 01       		.byte	1
+ 422 018a B4       		.byte	-76
+ 423 018b 02       		.byte	2
+ 424 018c B7       		.byte	-73
+ 425 018d 02       		.byte	2
+ 426 018e BE       		.byte	-66
+ 427 018f 11       		.byte	17
+ 428 0190 C0       		.byte	-64
+ 429 0191 60       		.byte	96
+ 430 0192 C1       		.byte	-63
+ 431 0193 03       		.byte	3
+ 432 0194 C5       		.byte	-59
+ 433 0195 5C       		.byte	92
+ 434 0196 C6       		.byte	-58
+ 435 0197 20       		.byte	32
+ 436 0198 C7       		.byte	-57
+ 437 0199 0E       		.byte	14
+ 438 019a C8       		.byte	-56
+ 439 019b 3B       		.byte	59
+ 440 019c C9       		.byte	-55
+ 441 019d FF       		.byte	-1
+ 442 019e CA       		.byte	-54
+ 443 019f FF       		.byte	-1
+ 444 01a0 CB       		.byte	-53
+ 445 01a1 FF       		.byte	-1
+ 446 01a2 CD       		.byte	-51
+ 447 01a3 AF       		.byte	-81
+ 448 01a4 CE       		.byte	-50
+ 449 01a5 07       		.byte	7
+ 450 01a6 CF       		.byte	-49
+ 451 01a7 01       		.byte	1
+ 452 01a8 D0       		.byte	-48
+ 453 01a9 18       		.byte	24
+ 454 01aa D4       		.byte	-44
+ 455 01ab 07       		.byte	7
+ 456 01ac D8       		.byte	-40
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjHbADF.s 			page 9
+
+
+ 457 01ad 04       		.byte	4
+ 458 01ae D9       		.byte	-39
+ 459 01af 04       		.byte	4
+ 460 01b0 DA       		.byte	-38
+ 461 01b1 04       		.byte	4
+ 462 01b2 DB       		.byte	-37
+ 463 01b3 04       		.byte	4
+ 464 01b4 DF       		.byte	-33
+ 465 01b5 01       		.byte	1
+ 466 01b6 E0       		.byte	-32
+ 467 01b7 40       		.byte	64
+ 468 01b8 E2       		.byte	-30
+ 469 01b9 80       		.byte	-128
+ 470 01ba E4       		.byte	-28
+ 471 01bb 40       		.byte	64
+ 472 01bc E5       		.byte	-27
+ 473 01bd 40       		.byte	64
+ 474 01be E6       		.byte	-26
+ 475 01bf 80       		.byte	-128
+ 476 01c0 E8       		.byte	-24
+ 477 01c1 40       		.byte	64
+ 478 01c2 EA       		.byte	-22
+ 479 01c3 50       		.byte	80
+ 480 01c4 EB       		.byte	-21
+ 481 01c5 A8       		.byte	-88
+ 482 01c6 EC       		.byte	-20
+ 483 01c7 40       		.byte	64
+ 484 01c8 ED       		.byte	-19
+ 485 01c9 20       		.byte	32
+ 486 01ca EE       		.byte	-18
+ 487 01cb 50       		.byte	80
+ 488 01cc EF       		.byte	-17
+ 489 01cd A8       		.byte	-88
+ 490 01ce 06       		.byte	6
+ 491 01cf 02       		.byte	2
+ 492 01d0 07       		.byte	7
+ 493 01d1 20       		.byte	32
+ 494 01d2 08       		.byte	8
+ 495 01d3 01       		.byte	1
+ 496 01d4 09       		.byte	9
+ 497 01d5 80       		.byte	-128
+ 498 01d6 0F       		.byte	15
+ 499 01d7 02       		.byte	2
+ 500 01d8 10       		.byte	16
+ 501 01d9 02       		.byte	2
+ 502 01da 17       		.byte	23
+ 503 01db 02       		.byte	2
+ 504 01dc 18       		.byte	24
+ 505 01dd 04       		.byte	4
+ 506 01de 1A       		.byte	26
+ 507 01df 08       		.byte	8
+ 508 01e0 1E       		.byte	30
+ 509 01e1 44       		.byte	68
+ 510 01e2 21       		.byte	33
+ 511 01e3 80       		.byte	-128
+ 512 01e4 27       		.byte	39
+ 513 01e5 22       		.byte	34
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjHbADF.s 			page 10
+
+
+ 514 01e6 2E       		.byte	46
+ 515 01e7 02       		.byte	2
+ 516 01e8 30       		.byte	48
+ 517 01e9 01       		.byte	1
+ 518 01ea 34       		.byte	52
+ 519 01eb 10       		.byte	16
+ 520 01ec 35       		.byte	53
+ 521 01ed 10       		.byte	16
+ 522 01ee 36       		.byte	54
+ 523 01ef 10       		.byte	16
+ 524 01f0 3F       		.byte	63
+ 525 01f1 02       		.byte	2
+ 526 01f2 40       		.byte	64
+ 527 01f3 04       		.byte	4
+ 528 01f4 42       		.byte	66
+ 529 01f5 30       		.byte	48
+ 530 01f6 44       		.byte	68
+ 531 01f7 10       		.byte	16
+ 532 01f8 49       		.byte	73
+ 533 01f9 10       		.byte	16
+ 534 01fa 4E       		.byte	78
+ 535 01fb 04       		.byte	4
+ 536 01fc 4F       		.byte	79
+ 537 01fd 06       		.byte	6
+ 538 01fe 56       		.byte	86
+ 539 01ff 2A       		.byte	42
+ 540 0200 5E       		.byte	94
+ 541 0201 54       		.byte	84
+ 542 0202 66       		.byte	102
+ 543 0203 08       		.byte	8
+ 544 0204 67       		.byte	103
+ 545 0205 04       		.byte	4
+ 546 0206 70       		.byte	112
+ 547 0207 02       		.byte	2
+ 548 0208 95       		.byte	-107
+ 549 0209 40       		.byte	64
+ 550 020a 98       		.byte	-104
+ 551 020b 01       		.byte	1
+ 552 020c A2       		.byte	-94
+ 553 020d 10       		.byte	16
+ 554 020e C0       		.byte	-64
+ 555 020f A0       		.byte	-96
+ 556 0210 C2       		.byte	-62
+ 557 0211 89       		.byte	-119
+ 558 0212 C4       		.byte	-60
+ 559 0213 11       		.byte	17
+ 560 0214 CA       		.byte	-54
+ 561 0215 80       		.byte	-128
+ 562 0216 CC       		.byte	-52
+ 563 0217 01       		.byte	1
+ 564 0218 CE       		.byte	-50
+ 565 0219 80       		.byte	-128
+ 566 021a D0       		.byte	-48
+ 567 021b 44       		.byte	68
+ 568 021c D2       		.byte	-46
+ 569 021d 24       		.byte	36
+ 570 021e D6       		.byte	-42
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjHbADF.s 			page 11
+
+
+ 571 021f 70       		.byte	112
+ 572 0220 D8       		.byte	-40
+ 573 0221 60       		.byte	96
+ 574 0222 95       		.byte	-107
+ 575 0223 40       		.byte	64
+ 576 0224 A2       		.byte	-94
+ 577 0225 10       		.byte	16
+ 578 0226 EE       		.byte	-18
+ 579 0227 01       		.byte	1
+ 580 0228 00       		.byte	0
+ 581 0229 09       		.byte	9
+ 582 022a 02       		.byte	2
+ 583 022b D0       		.byte	-48
+ 584 022c 03       		.byte	3
+ 585 022d 08       		.byte	8
+ 586 022e 06       		.byte	6
+ 587 022f 20       		.byte	32
+ 588 0230 09       		.byte	9
+ 589 0231 03       		.byte	3
+ 590 0232 0A       		.byte	10
+ 591 0233 03       		.byte	3
+ 592 0234 0B       		.byte	11
+ 593 0235 44       		.byte	68
+ 594 0236 0C       		.byte	12
+ 595 0237 0C       		.byte	12
+ 596 0238 0E       		.byte	14
+ 597 0239 71       		.byte	113
+ 598 023a 11       		.byte	17
+ 599 023b 0A       		.byte	10
+ 600 023c 13       		.byte	19
+ 601 023d 54       		.byte	84
+ 602 023e 14       		.byte	20
+ 603 023f 10       		.byte	16
+ 604 0240 15       		.byte	21
+ 605 0241 53       		.byte	83
+ 606 0242 16       		.byte	22
+ 607 0243 AC       		.byte	-84
+ 608 0244 17       		.byte	23
+ 609 0245 0C       		.byte	12
+ 610 0246 18       		.byte	24
+ 611 0247 14       		.byte	20
+ 612 0248 1C       		.byte	28
+ 613 0249 10       		.byte	16
+ 614 024a 1E       		.byte	30
+ 615 024b 40       		.byte	64
+ 616 024c 20       		.byte	32
+ 617 024d DC       		.byte	-36
+ 618 024e 21       		.byte	33
+ 619 024f 53       		.byte	83
+ 620 0250 22       		.byte	34
+ 621 0251 22       		.byte	34
+ 622 0252 23       		.byte	35
+ 623 0253 04       		.byte	4
+ 624 0254 29       		.byte	41
+ 625 0255 20       		.byte	32
+ 626 0256 2B       		.byte	43
+ 627 0257 45       		.byte	69
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjHbADF.s 			page 12
+
+
+ 628 0258 33       		.byte	51
+ 629 0259 0F       		.byte	15
+ 630 025a 34       		.byte	52
+ 631 025b 1F       		.byte	31
+ 632 025c 35       		.byte	53
+ 633 025d 40       		.byte	64
+ 634 025e 36       		.byte	54
+ 635 025f E0       		.byte	-32
+ 636 0260 37       		.byte	55
+ 637 0261 30       		.byte	48
+ 638 0262 39       		.byte	57
+ 639 0263 80       		.byte	-128
+ 640 0264 3A       		.byte	58
+ 641 0265 80       		.byte	-128
+ 642 0266 3B       		.byte	59
+ 643 0267 08       		.byte	8
+ 644 0268 3F       		.byte	63
+ 645 0269 10       		.byte	16
+ 646 026a 40       		.byte	64
+ 647 026b 36       		.byte	54
+ 648 026c 41       		.byte	65
+ 649 026d 04       		.byte	4
+ 650 026e 45       		.byte	69
+ 651 026f 0B       		.byte	11
+ 652 0270 46       		.byte	70
+ 653 0271 CE       		.byte	-50
+ 654 0272 48       		.byte	72
+ 655 0273 0D       		.byte	13
+ 656 0274 49       		.byte	73
+ 657 0275 FF       		.byte	-1
+ 658 0276 4A       		.byte	74
+ 659 0277 FF       		.byte	-1
+ 660 0278 4B       		.byte	75
+ 661 0279 FF       		.byte	-1
+ 662 027a 4E       		.byte	78
+ 663 027b F0       		.byte	-16
+ 664 027c 4F       		.byte	79
+ 665 027d 44       		.byte	68
+ 666 027e 50       		.byte	80
+ 667 027f 0C       		.byte	12
+ 668 0280 54       		.byte	84
+ 669 0281 01       		.byte	1
+ 670 0282 58       		.byte	88
+ 671 0283 04       		.byte	4
+ 672 0284 59       		.byte	89
+ 673 0285 04       		.byte	4
+ 674 0286 5A       		.byte	90
+ 675 0287 04       		.byte	4
+ 676 0288 5B       		.byte	91
+ 677 0289 04       		.byte	4
+ 678 028a 5C       		.byte	92
+ 679 028b 44       		.byte	68
+ 680 028c 5D       		.byte	93
+ 681 028d 44       		.byte	68
+ 682 028e 5F       		.byte	95
+ 683 028f 01       		.byte	1
+ 684 0290 66       		.byte	102
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjHbADF.s 			page 13
+
+
+ 685 0291 C0       		.byte	-64
+ 686 0292 6A       		.byte	106
+ 687 0293 40       		.byte	64
+ 688 0294 6B       		.byte	107
+ 689 0295 02       		.byte	2
+ 690 0296 87       		.byte	-121
+ 691 0297 0D       		.byte	13
+ 692 0298 88       		.byte	-120
+ 693 0299 01       		.byte	1
+ 694 029a 8E       		.byte	-114
+ 695 029b 01       		.byte	1
+ 696 029c 91       		.byte	-111
+ 697 029d 32       		.byte	50
+ 698 029e 93       		.byte	-109
+ 699 029f 0C       		.byte	12
+ 700 02a0 95       		.byte	-107
+ 701 02a1 07       		.byte	7
+ 702 02a2 97       		.byte	-105
+ 703 02a3 18       		.byte	24
+ 704 02a4 9F       		.byte	-97
+ 705 02a5 20       		.byte	32
+ 706 02a6 A3       		.byte	-93
+ 707 02a7 30       		.byte	48
+ 708 02a8 AD       		.byte	-83
+ 709 02a9 07       		.byte	7
+ 710 02aa AF       		.byte	-81
+ 711 02ab 38       		.byte	56
+ 712 02ac B1       		.byte	-79
+ 713 02ad 3C       		.byte	60
+ 714 02ae B2       		.byte	-78
+ 715 02af 01       		.byte	1
+ 716 02b0 B3       		.byte	-77
+ 717 02b1 03       		.byte	3
+ 718 02b2 B9       		.byte	-71
+ 719 02b3 08       		.byte	8
+ 720 02b4 BB       		.byte	-69
+ 721 02b5 02       		.byte	2
+ 722 02b6 BE       		.byte	-66
+ 723 02b7 04       		.byte	4
+ 724 02b8 BF       		.byte	-65
+ 725 02b9 04       		.byte	4
+ 726 02ba C0       		.byte	-64
+ 727 02bb 03       		.byte	3
+ 728 02bc C5       		.byte	-59
+ 729 02bd 40       		.byte	64
+ 730 02be C9       		.byte	-55
+ 731 02bf FF       		.byte	-1
+ 732 02c0 CA       		.byte	-54
+ 733 02c1 07       		.byte	7
+ 734 02c2 CB       		.byte	-53
+ 735 02c3 FF       		.byte	-1
+ 736 02c4 CC       		.byte	-52
+ 737 02c5 40       		.byte	64
+ 738 02c6 CD       		.byte	-51
+ 739 02c7 20       		.byte	32
+ 740 02c8 CE       		.byte	-50
+ 741 02c9 F0       		.byte	-16
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjHbADF.s 			page 14
+
+
+ 742 02ca CF       		.byte	-49
+ 743 02cb 05       		.byte	5
+ 744 02cc D0       		.byte	-48
+ 745 02cd 08       		.byte	8
+ 746 02ce D4       		.byte	-44
+ 747 02cf 07       		.byte	7
+ 748 02d0 D8       		.byte	-40
+ 749 02d1 04       		.byte	4
+ 750 02d2 D9       		.byte	-39
+ 751 02d3 04       		.byte	4
+ 752 02d4 DA       		.byte	-38
+ 753 02d5 04       		.byte	4
+ 754 02d6 DB       		.byte	-37
+ 755 02d7 04       		.byte	4
+ 756 02d8 DC       		.byte	-36
+ 757 02d9 40       		.byte	64
+ 758 02da DD       		.byte	-35
+ 759 02db 04       		.byte	4
+ 760 02dc DF       		.byte	-33
+ 761 02dd 01       		.byte	1
+ 762 02de E0       		.byte	-32
+ 763 02df 40       		.byte	64
+ 764 02e0 E1       		.byte	-31
+ 765 02e1 A8       		.byte	-88
+ 766 02e2 E2       		.byte	-30
+ 767 02e3 40       		.byte	64
+ 768 02e4 E3       		.byte	-29
+ 769 02e5 20       		.byte	32
+ 770 02e6 00       		.byte	0
+ 771 02e7 A0       		.byte	-96
+ 772 02e8 04       		.byte	4
+ 773 02e9 09       		.byte	9
+ 774 02ea 05       		.byte	5
+ 775 02eb 50       		.byte	80
+ 776 02ec 09       		.byte	9
+ 777 02ed 40       		.byte	64
+ 778 02ee 0A       		.byte	10
+ 779 02ef 01       		.byte	1
+ 780 02f0 0C       		.byte	12
+ 781 02f1 80       		.byte	-128
+ 782 02f2 0D       		.byte	13
+ 783 02f3 08       		.byte	8
+ 784 02f4 0F       		.byte	15
+ 785 02f5 08       		.byte	8
+ 786 02f6 17       		.byte	23
+ 787 02f7 01       		.byte	1
+ 788 02f8 19       		.byte	25
+ 789 02f9 08       		.byte	8
+ 790 02fa 1D       		.byte	29
+ 791 02fb 50       		.byte	80
+ 792 02fc 1F       		.byte	31
+ 793 02fd 40       		.byte	64
+ 794 02fe 20       		.byte	32
+ 795 02ff 10       		.byte	16
+ 796 0300 21       		.byte	33
+ 797 0301 02       		.byte	2
+ 798 0302 24       		.byte	36
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjHbADF.s 			page 15
+
+
+ 799 0303 05       		.byte	5
+ 800 0304 25       		.byte	37
+ 801 0305 08       		.byte	8
+ 802 0306 26       		.byte	38
+ 803 0307 04       		.byte	4
+ 804 0308 29       		.byte	41
+ 805 0309 40       		.byte	64
+ 806 030a 2A       		.byte	42
+ 807 030b 42       		.byte	66
+ 808 030c 2F       		.byte	47
+ 809 030d 48       		.byte	72
+ 810 030e 30       		.byte	48
+ 811 030f 80       		.byte	-128
+ 812 0310 31       		.byte	49
+ 813 0311 0A       		.byte	10
+ 814 0312 33       		.byte	51
+ 815 0313 01       		.byte	1
+ 816 0314 36       		.byte	54
+ 817 0315 04       		.byte	4
+ 818 0316 37       		.byte	55
+ 819 0317 01       		.byte	1
+ 820 0318 38       		.byte	56
+ 821 0319 08       		.byte	8
+ 822 031a 3C       		.byte	60
+ 823 031b 01       		.byte	1
+ 824 031c 3E       		.byte	62
+ 825 031d 12       		.byte	18
+ 826 031e 3F       		.byte	63
+ 827 031f 20       		.byte	32
+ 828 0320 40       		.byte	64
+ 829 0321 10       		.byte	16
+ 830 0322 45       		.byte	69
+ 831 0323 08       		.byte	8
+ 832 0324 46       		.byte	70
+ 833 0325 40       		.byte	64
+ 834 0326 48       		.byte	72
+ 835 0327 80       		.byte	-128
+ 836 0328 4C       		.byte	76
+ 837 0329 04       		.byte	4
+ 838 032a 4F       		.byte	79
+ 839 032b 08       		.byte	8
+ 840 032c 50       		.byte	80
+ 841 032d 04       		.byte	4
+ 842 032e 53       		.byte	83
+ 843 032f 08       		.byte	8
+ 844 0330 55       		.byte	85
+ 845 0331 40       		.byte	64
+ 846 0332 57       		.byte	87
+ 847 0333 10       		.byte	16
+ 848 0334 58       		.byte	88
+ 849 0335 80       		.byte	-128
+ 850 0336 59       		.byte	89
+ 851 0337 28       		.byte	40
+ 852 0338 5E       		.byte	94
+ 853 0339 51       		.byte	81
+ 854 033a 5F       		.byte	95
+ 855 033b 08       		.byte	8
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjHbADF.s 			page 16
+
+
+ 856 033c 61       		.byte	97
+ 857 033d 24       		.byte	36
+ 858 033e C0       		.byte	-64
+ 859 033f F3       		.byte	-13
+ 860 0340 C2       		.byte	-62
+ 861 0341 E0       		.byte	-32
+ 862 0342 C4       		.byte	-60
+ 863 0343 10       		.byte	16
+ 864 0344 CA       		.byte	-54
+ 865 0345 A9       		.byte	-87
+ 866 0346 CC       		.byte	-52
+ 867 0347 CB       		.byte	-53
+ 868 0348 CE       		.byte	-50
+ 869 0349 A2       		.byte	-94
+ 870 034a D0       		.byte	-48
+ 871 034b C2       		.byte	-62
+ 872 034c D2       		.byte	-46
+ 873 034d 20       		.byte	32
+ 874 034e D6       		.byte	-42
+ 875 034f FE       		.byte	-2
+ 876 0350 D8       		.byte	-40
+ 877 0351 06       		.byte	6
+ 878 0352 EE       		.byte	-18
+ 879 0353 01       		.byte	1
+ 880 0354 E0       		.byte	-32
+ 881 0355 40       		.byte	64
+ 882 0356 81       		.byte	-127
+ 883 0357 40       		.byte	64
+ 884 0358 95       		.byte	-107
+ 885 0359 40       		.byte	64
+ 886 035a AE       		.byte	-82
+ 887 035b 10       		.byte	16
+ 888 035c EC       		.byte	-20
+ 889 035d 08       		.byte	8
+ 890 035e 95       		.byte	-107
+ 891 035f 40       		.byte	64
+ 892 0360 A2       		.byte	-94
+ 893 0361 10       		.byte	16
+ 894 0362 E0       		.byte	-32
+ 895 0363 01       		.byte	1
+ 896 0364 00       		.byte	0
+ 897 0365 14       		.byte	20
+ 898 0366 01       		.byte	1
+ 899 0367 10       		.byte	16
+ 900 0368 02       		.byte	2
+ 901 0369 09       		.byte	9
+ 902 036a 05       		.byte	5
+ 903 036b 02       		.byte	2
+ 904 036c 09       		.byte	9
+ 905 036d 02       		.byte	2
+ 906 036e 0D       		.byte	13
+ 907 036f 01       		.byte	1
+ 908 0370 10       		.byte	16
+ 909 0371 01       		.byte	1
+ 910 0372 11       		.byte	17
+ 911 0373 02       		.byte	2
+ 912 0374 12       		.byte	18
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjHbADF.s 			page 17
+
+
+ 913 0375 06       		.byte	6
+ 914 0376 14       		.byte	20
+ 915 0377 1F       		.byte	31
+ 916 0378 15       		.byte	21
+ 917 0379 08       		.byte	8
+ 918 037a 18       		.byte	24
+ 919 037b 0A       		.byte	10
+ 920 037c 19       		.byte	25
+ 921 037d 18       		.byte	24
+ 922 037e 1A       		.byte	26
+ 923 037f 11       		.byte	17
+ 924 0380 1F       		.byte	31
+ 925 0381 04       		.byte	4
+ 926 0382 21       		.byte	33
+ 927 0383 38       		.byte	56
+ 928 0384 23       		.byte	35
+ 929 0385 04       		.byte	4
+ 930 0386 24       		.byte	36
+ 931 0387 1F       		.byte	31
+ 932 0388 25       		.byte	37
+ 933 0389 24       		.byte	36
+ 934 038a 27       		.byte	39
+ 935 038b 18       		.byte	24
+ 936 038c 29       		.byte	41
+ 937 038d 3C       		.byte	60
+ 938 038e 2D       		.byte	45
+ 939 038f 38       		.byte	56
+ 940 0390 2F       		.byte	47
+ 941 0391 04       		.byte	4
+ 942 0392 30       		.byte	48
+ 943 0393 07       		.byte	7
+ 944 0394 31       		.byte	49
+ 945 0395 20       		.byte	32
+ 946 0396 33       		.byte	51
+ 947 0397 1C       		.byte	28
+ 948 0398 34       		.byte	52
+ 949 0399 18       		.byte	24
+ 950 039a 35       		.byte	53
+ 951 039b 01       		.byte	1
+ 952 039c 37       		.byte	55
+ 953 039d 02       		.byte	2
+ 954 039e 3B       		.byte	59
+ 955 039f 08       		.byte	8
+ 956 03a0 3F       		.byte	63
+ 957 03a1 11       		.byte	17
+ 958 03a2 40       		.byte	64
+ 959 03a3 60       		.byte	96
+ 960 03a4 41       		.byte	65
+ 961 03a5 02       		.byte	2
+ 962 03a6 49       		.byte	73
+ 963 03a7 FF       		.byte	-1
+ 964 03a8 4A       		.byte	74
+ 965 03a9 FF       		.byte	-1
+ 966 03aa 4B       		.byte	75
+ 967 03ab FF       		.byte	-1
+ 968 03ac 4D       		.byte	77
+ 969 03ad A0       		.byte	-96
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjHbADF.s 			page 18
+
+
+ 970 03ae 4F       		.byte	79
+ 971 03af 01       		.byte	1
+ 972 03b0 50       		.byte	80
+ 973 03b1 18       		.byte	24
+ 974 03b2 56       		.byte	86
+ 975 03b3 02       		.byte	2
+ 976 03b4 57       		.byte	87
+ 977 03b5 13       		.byte	19
+ 978 03b6 58       		.byte	88
+ 979 03b7 04       		.byte	4
+ 980 03b8 59       		.byte	89
+ 981 03b9 04       		.byte	4
+ 982 03ba 5A       		.byte	90
+ 983 03bb 04       		.byte	4
+ 984 03bc 5B       		.byte	91
+ 985 03bd 04       		.byte	4
+ 986 03be 5C       		.byte	92
+ 987 03bf 44       		.byte	68
+ 988 03c0 5D       		.byte	93
+ 989 03c1 40       		.byte	64
+ 990 03c2 5F       		.byte	95
+ 991 03c3 01       		.byte	1
+ 992 03c4 60       		.byte	96
+ 993 03c5 40       		.byte	64
+ 994 03c6 62       		.byte	98
+ 995 03c7 80       		.byte	-128
+ 996 03c8 64       		.byte	100
+ 997 03c9 40       		.byte	64
+ 998 03ca 65       		.byte	101
+ 999 03cb 40       		.byte	64
+ 1000 03cc 66       		.byte	102
+ 1001 03cd 80       		.byte	-128
+ 1002 03ce 68       		.byte	104
+ 1003 03cf 40       		.byte	64
+ 1004 03d0 6A       		.byte	106
+ 1005 03d1 50       		.byte	80
+ 1006 03d2 6B       		.byte	107
+ 1007 03d3 A8       		.byte	-88
+ 1008 03d4 6C       		.byte	108
+ 1009 03d5 40       		.byte	64
+ 1010 03d6 6D       		.byte	109
+ 1011 03d7 20       		.byte	32
+ 1012 03d8 6E       		.byte	110
+ 1013 03d9 50       		.byte	80
+ 1014 03da 6F       		.byte	111
+ 1015 03db A8       		.byte	-88
+ 1016 03dc 82       		.byte	-126
+ 1017 03dd 03       		.byte	3
+ 1018 03de 88       		.byte	-120
+ 1019 03df 01       		.byte	1
+ 1020 03e0 8F       		.byte	-113
+ 1021 03e1 03       		.byte	3
+ 1022 03e2 91       		.byte	-111
+ 1023 03e3 02       		.byte	2
+ 1024 03e4 9F       		.byte	-97
+ 1025 03e5 04       		.byte	4
+ 1026 03e6 AE       		.byte	-82
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjHbADF.s 			page 19
+
+
+ 1027 03e7 01       		.byte	1
+ 1028 03e8 B1       		.byte	-79
+ 1029 03e9 01       		.byte	1
+ 1030 03ea B2       		.byte	-78
+ 1031 03eb 02       		.byte	2
+ 1032 03ec B3       		.byte	-77
+ 1033 03ed 04       		.byte	4
+ 1034 03ee B4       		.byte	-76
+ 1035 03ef 01       		.byte	1
+ 1036 03f0 B5       		.byte	-75
+ 1037 03f1 02       		.byte	2
+ 1038 03f2 BE       		.byte	-66
+ 1039 03f3 10       		.byte	16
+ 1040 03f4 BF       		.byte	-65
+ 1041 03f5 10       		.byte	16
+ 1042 03f6 C0       		.byte	-64
+ 1043 03f7 30       		.byte	48
+ 1044 03f8 C1       		.byte	-63
+ 1045 03f9 02       		.byte	2
+ 1046 03fa C5       		.byte	-59
+ 1047 03fb 0E       		.byte	14
+ 1048 03fc C6       		.byte	-58
+ 1049 03fd C5       		.byte	-59
+ 1050 03fe C7       		.byte	-57
+ 1051 03ff 02       		.byte	2
+ 1052 0400 C8       		.byte	-56
+ 1053 0401 1F       		.byte	31
+ 1054 0402 C9       		.byte	-55
+ 1055 0403 FF       		.byte	-1
+ 1056 0404 CA       		.byte	-54
+ 1057 0405 FF       		.byte	-1
+ 1058 0406 CB       		.byte	-53
+ 1059 0407 FF       		.byte	-1
+ 1060 0408 CD       		.byte	-51
+ 1061 0409 AF       		.byte	-81
+ 1062 040a CE       		.byte	-50
+ 1063 040b 07       		.byte	7
+ 1064 040c CF       		.byte	-49
+ 1065 040d 01       		.byte	1
+ 1066 040e D0       		.byte	-48
+ 1067 040f 18       		.byte	24
+ 1068 0410 D2       		.byte	-46
+ 1069 0411 80       		.byte	-128
+ 1070 0412 D8       		.byte	-40
+ 1071 0413 04       		.byte	4
+ 1072 0414 D9       		.byte	-39
+ 1073 0415 04       		.byte	4
+ 1074 0416 DA       		.byte	-38
+ 1075 0417 04       		.byte	4
+ 1076 0418 DB       		.byte	-37
+ 1077 0419 04       		.byte	4
+ 1078 041a DF       		.byte	-33
+ 1079 041b 01       		.byte	1
+ 1080 041c E0       		.byte	-32
+ 1081 041d 40       		.byte	64
+ 1082 041e E2       		.byte	-30
+ 1083 041f 80       		.byte	-128
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjHbADF.s 			page 20
+
+
+ 1084 0420 E4       		.byte	-28
+ 1085 0421 40       		.byte	64
+ 1086 0422 E5       		.byte	-27
+ 1087 0423 40       		.byte	64
+ 1088 0424 E6       		.byte	-26
+ 1089 0425 80       		.byte	-128
+ 1090 0426 E8       		.byte	-24
+ 1091 0427 40       		.byte	64
+ 1092 0428 EA       		.byte	-22
+ 1093 0429 50       		.byte	80
+ 1094 042a EB       		.byte	-21
+ 1095 042b A8       		.byte	-88
+ 1096 042c EC       		.byte	-20
+ 1097 042d 40       		.byte	64
+ 1098 042e ED       		.byte	-19
+ 1099 042f 20       		.byte	32
+ 1100 0430 EE       		.byte	-18
+ 1101 0431 50       		.byte	80
+ 1102 0432 EF       		.byte	-17
+ 1103 0433 A8       		.byte	-88
+ 1104 0434 00       		.byte	0
+ 1105 0435 12       		.byte	18
+ 1106 0436 06       		.byte	6
+ 1107 0437 80       		.byte	-128
+ 1108 0438 0E       		.byte	14
+ 1109 0439 64       		.byte	100
+ 1110 043a 10       		.byte	16
+ 1111 043b 02       		.byte	2
+ 1112 043c 15       		.byte	21
+ 1113 043d 04       		.byte	4
+ 1114 043e 18       		.byte	24
+ 1115 043f 10       		.byte	16
+ 1116 0440 1B       		.byte	27
+ 1117 0441 10       		.byte	16
+ 1118 0442 1E       		.byte	30
+ 1119 0443 44       		.byte	68
+ 1120 0444 20       		.byte	32
+ 1121 0445 28       		.byte	40
+ 1122 0446 21       		.byte	33
+ 1123 0447 02       		.byte	2
+ 1124 0448 26       		.byte	38
+ 1125 0449 85       		.byte	-123
+ 1126 044a 27       		.byte	39
+ 1127 044b 0A       		.byte	10
+ 1128 044c 29       		.byte	41
+ 1129 044d 02       		.byte	2
+ 1130 044e 2A       		.byte	42
+ 1131 044f 01       		.byte	1
+ 1132 0450 2D       		.byte	45
+ 1133 0451 02       		.byte	2
+ 1134 0452 2F       		.byte	47
+ 1135 0453 19       		.byte	25
+ 1136 0454 30       		.byte	48
+ 1137 0455 80       		.byte	-128
+ 1138 0456 31       		.byte	49
+ 1139 0457 02       		.byte	2
+ 1140 0458 36       		.byte	54
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjHbADF.s 			page 21
+
+
+ 1141 0459 80       		.byte	-128
+ 1142 045a 37       		.byte	55
+ 1143 045b 15       		.byte	21
+ 1144 045c 38       		.byte	56
+ 1145 045d 80       		.byte	-128
+ 1146 045e 3D       		.byte	61
+ 1147 045f 94       		.byte	-108
+ 1148 0460 3E       		.byte	62
+ 1149 0461 02       		.byte	2
+ 1150 0462 40       		.byte	64
+ 1151 0463 08       		.byte	8
+ 1152 0464 41       		.byte	65
+ 1153 0465 08       		.byte	8
+ 1154 0466 44       		.byte	68
+ 1155 0467 08       		.byte	8
+ 1156 0468 48       		.byte	72
+ 1157 0469 C0       		.byte	-64
+ 1158 046a 49       		.byte	73
+ 1159 046b 04       		.byte	4
+ 1160 046c 4F       		.byte	79
+ 1161 046d 20       		.byte	32
+ 1162 046e 50       		.byte	80
+ 1163 046f 40       		.byte	64
+ 1164 0470 51       		.byte	81
+ 1165 0471 20       		.byte	32
+ 1166 0472 53       		.byte	83
+ 1167 0473 04       		.byte	4
+ 1168 0474 5E       		.byte	94
+ 1169 0475 02       		.byte	2
+ 1170 0476 61       		.byte	97
+ 1171 0477 08       		.byte	8
+ 1172 0478 63       		.byte	99
+ 1173 0479 20       		.byte	32
+ 1174 047a 65       		.byte	101
+ 1175 047b 20       		.byte	32
+ 1176 047c 67       		.byte	103
+ 1177 047d 08       		.byte	8
+ 1178 047e 6D       		.byte	109
+ 1179 047f 14       		.byte	20
+ 1180 0480 6E       		.byte	110
+ 1181 0481 20       		.byte	32
+ 1182 0482 6F       		.byte	111
+ 1183 0483 01       		.byte	1
+ 1184 0484 70       		.byte	112
+ 1185 0485 02       		.byte	2
+ 1186 0486 76       		.byte	118
+ 1187 0487 06       		.byte	6
+ 1188 0488 77       		.byte	119
+ 1189 0489 14       		.byte	20
+ 1190 048a 8D       		.byte	-115
+ 1191 048b 02       		.byte	2
+ 1192 048c 8E       		.byte	-114
+ 1193 048d 04       		.byte	4
+ 1194 048e 99       		.byte	-103
+ 1195 048f 10       		.byte	16
+ 1196 0490 9C       		.byte	-100
+ 1197 0491 80       		.byte	-128
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjHbADF.s 			page 22
+
+
+ 1198 0492 9D       		.byte	-99
+ 1199 0493 24       		.byte	36
+ 1200 0494 9F       		.byte	-97
+ 1201 0495 08       		.byte	8
+ 1202 0496 A1       		.byte	-95
+ 1203 0497 40       		.byte	64
+ 1204 0498 A4       		.byte	-92
+ 1205 0499 50       		.byte	80
+ 1206 049a A5       		.byte	-91
+ 1207 049b 20       		.byte	32
+ 1208 049c B4       		.byte	-76
+ 1209 049d 04       		.byte	4
+ 1210 049e B6       		.byte	-74
+ 1211 049f 40       		.byte	64
+ 1212 04a0 C0       		.byte	-64
+ 1213 04a1 1A       		.byte	26
+ 1214 04a2 C2       		.byte	-62
+ 1215 04a3 70       		.byte	112
+ 1216 04a4 C4       		.byte	-60
+ 1217 04a5 21       		.byte	33
+ 1218 04a6 CA       		.byte	-54
+ 1219 04a7 F0       		.byte	-16
+ 1220 04a8 CC       		.byte	-52
+ 1221 04a9 F9       		.byte	-7
+ 1222 04aa CE       		.byte	-50
+ 1223 04ab F8       		.byte	-8
+ 1224 04ac D0       		.byte	-48
+ 1225 04ad 26       		.byte	38
+ 1226 04ae D2       		.byte	-46
+ 1227 04af 20       		.byte	32
+ 1228 04b0 D6       		.byte	-42
+ 1229 04b1 80       		.byte	-128
+ 1230 04b2 E0       		.byte	-32
+ 1231 04b3 01       		.byte	1
+ 1232 04b4 0E       		.byte	14
+ 1233 04b5 01       		.byte	1
+ 1234 04b6 19       		.byte	25
+ 1235 04b7 01       		.byte	1
+ 1236 04b8 1E       		.byte	30
+ 1237 04b9 02       		.byte	2
+ 1238 04ba 26       		.byte	38
+ 1239 04bb 02       		.byte	2
+ 1240 04bc 2A       		.byte	42
+ 1241 04bd 01       		.byte	1
+ 1242 04be 34       		.byte	52
+ 1243 04bf 01       		.byte	1
+ 1244 04c0 36       		.byte	54
+ 1245 04c1 02       		.byte	2
+ 1246 04c2 37       		.byte	55
+ 1247 04c3 01       		.byte	1
+ 1248 04c4 3E       		.byte	62
+ 1249 04c5 50       		.byte	80
+ 1250 04c6 3F       		.byte	63
+ 1251 04c7 40       		.byte	64
+ 1252 04c8 54       		.byte	84
+ 1253 04c9 18       		.byte	24
+ 1254 04ca 58       		.byte	88
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjHbADF.s 			page 23
+
+
+ 1255 04cb 04       		.byte	4
+ 1256 04cc 59       		.byte	89
+ 1257 04cd 04       		.byte	4
+ 1258 04ce 5B       		.byte	91
+ 1259 04cf 04       		.byte	4
+ 1260 04d0 5D       		.byte	93
+ 1261 04d1 40       		.byte	64
+ 1262 04d2 5F       		.byte	95
+ 1263 04d3 01       		.byte	1
+ 1264 04d4 03       		.byte	3
+ 1265 04d5 02       		.byte	2
+ 1266 04d6 05       		.byte	5
+ 1267 04d7 01       		.byte	1
+ 1268 04d8 06       		.byte	6
+ 1269 04d9 06       		.byte	6
+ 1270 04da 07       		.byte	7
+ 1271 04db 10       		.byte	16
+ 1272 04dc 0A       		.byte	10
+ 1273 04dd 03       		.byte	3
+ 1274 04de 0C       		.byte	12
+ 1275 04df 40       		.byte	64
+ 1276 04e0 0D       		.byte	13
+ 1277 04e1 08       		.byte	8
+ 1278 04e2 0E       		.byte	14
+ 1279 04e3 44       		.byte	68
+ 1280 04e4 10       		.byte	16
+ 1281 04e5 20       		.byte	32
+ 1282 04e6 12       		.byte	18
+ 1283 04e7 08       		.byte	8
+ 1284 04e8 16       		.byte	22
+ 1285 04e9 89       		.byte	-119
+ 1286 04ea 17       		.byte	23
+ 1287 04eb 04       		.byte	4
+ 1288 04ec 18       		.byte	24
+ 1289 04ed 05       		.byte	5
+ 1290 04ee 1D       		.byte	29
+ 1291 04ef 29       		.byte	41
+ 1292 04f0 1E       		.byte	30
+ 1293 04f1 01       		.byte	1
+ 1294 04f2 1F       		.byte	31
+ 1295 04f3 19       		.byte	25
+ 1296 04f4 20       		.byte	32
+ 1297 04f5 02       		.byte	2
+ 1298 04f6 26       		.byte	38
+ 1299 04f7 08       		.byte	8
+ 1300 04f8 27       		.byte	39
+ 1301 04f9 45       		.byte	69
+ 1302 04fa 2F       		.byte	47
+ 1303 04fb 19       		.byte	25
+ 1304 04fc 31       		.byte	49
+ 1305 04fd 10       		.byte	16
+ 1306 04fe 36       		.byte	54
+ 1307 04ff 04       		.byte	4
+ 1308 0500 37       		.byte	55
+ 1309 0501 02       		.byte	2
+ 1310 0502 3E       		.byte	62
+ 1311 0503 44       		.byte	68
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjHbADF.s 			page 24
+
+
+ 1312 0504 3F       		.byte	63
+ 1313 0505 01       		.byte	1
+ 1314 0506 44       		.byte	68
+ 1315 0507 40       		.byte	64
+ 1316 0508 45       		.byte	69
+ 1317 0509 28       		.byte	40
+ 1318 050a 46       		.byte	70
+ 1319 050b 08       		.byte	8
+ 1320 050c 47       		.byte	71
+ 1321 050d 42       		.byte	66
+ 1322 050e 4C       		.byte	76
+ 1323 050f 20       		.byte	32
+ 1324 0510 4E       		.byte	78
+ 1325 0511 01       		.byte	1
+ 1326 0512 57       		.byte	87
+ 1327 0513 02       		.byte	2
+ 1328 0514 5B       		.byte	91
+ 1329 0515 01       		.byte	1
+ 1330 0516 5C       		.byte	92
+ 1331 0517 80       		.byte	-128
+ 1332 0518 60       		.byte	96
+ 1333 0519 05       		.byte	5
+ 1334 051a 66       		.byte	102
+ 1335 051b 80       		.byte	-128
+ 1336 051c 67       		.byte	103
+ 1337 051d 01       		.byte	1
+ 1338 051e 88       		.byte	-120
+ 1339 051f 01       		.byte	1
+ 1340 0520 8C       		.byte	-116
+ 1341 0521 80       		.byte	-128
+ 1342 0522 92       		.byte	-110
+ 1343 0523 44       		.byte	68
+ 1344 0524 97       		.byte	-105
+ 1345 0525 22       		.byte	34
+ 1346 0526 99       		.byte	-103
+ 1347 0527 10       		.byte	16
+ 1348 0528 9A       		.byte	-102
+ 1349 0529 07       		.byte	7
+ 1350 052a 9B       		.byte	-101
+ 1351 052b 12       		.byte	18
+ 1352 052c 9E       		.byte	-98
+ 1353 052d 80       		.byte	-128
+ 1354 052e A2       		.byte	-94
+ 1355 052f 04       		.byte	4
+ 1356 0530 A7       		.byte	-89
+ 1357 0531 08       		.byte	8
+ 1358 0532 AC       		.byte	-84
+ 1359 0533 08       		.byte	8
+ 1360 0534 B0       		.byte	-80
+ 1361 0535 85       		.byte	-123
+ 1362 0536 C0       		.byte	-64
+ 1363 0537 F1       		.byte	-15
+ 1364 0538 C2       		.byte	-62
+ 1365 0539 F1       		.byte	-15
+ 1366 053a C4       		.byte	-60
+ 1367 053b F6       		.byte	-10
+ 1368 053c CA       		.byte	-54
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjHbADF.s 			page 25
+
+
+ 1369 053d 70       		.byte	112
+ 1370 053e CC       		.byte	-52
+ 1371 053f C4       		.byte	-60
+ 1372 0540 CE       		.byte	-50
+ 1373 0541 D0       		.byte	-48
+ 1374 0542 D0       		.byte	-48
+ 1375 0543 F0       		.byte	-16
+ 1376 0544 D2       		.byte	-46
+ 1377 0545 10       		.byte	16
+ 1378 0546 D6       		.byte	-42
+ 1379 0547 11       		.byte	17
+ 1380 0548 D8       		.byte	-40
+ 1381 0549 1C       		.byte	28
+ 1382 054a 33       		.byte	51
+ 1383 054b 10       		.byte	16
+ 1384 054c 37       		.byte	55
+ 1385 054d 40       		.byte	64
+ 1386 054e CC       		.byte	-52
+ 1387 054f 30       		.byte	48
+ 1388 0550 52       		.byte	82
+ 1389 0551 08       		.byte	8
+ 1390 0552 57       		.byte	87
+ 1391 0553 02       		.byte	2
+ 1392 0554 83       		.byte	-125
+ 1393 0555 12       		.byte	18
+ 1394 0556 9F       		.byte	-97
+ 1395 0557 50       		.byte	80
+ 1396 0558 D4       		.byte	-44
+ 1397 0559 20       		.byte	32
+ 1398 055a D6       		.byte	-42
+ 1399 055b 20       		.byte	32
+ 1400 055c E2       		.byte	-30
+ 1401 055d 20       		.byte	32
+ 1402 055e 9F       		.byte	-97
+ 1403 055f 40       		.byte	64
+ 1404 0560 A6       		.byte	-90
+ 1405 0561 08       		.byte	8
+ 1406 0562 A6       		.byte	-90
+ 1407 0563 08       		.byte	8
+ 1408 0564 AB       		.byte	-85
+ 1409 0565 40       		.byte	64
+ 1410 0566 EE       		.byte	-18
+ 1411 0567 80       		.byte	-128
+ 1412 0568 5C       		.byte	92
+ 1413 0569 40       		.byte	64
+ 1414 056a 8C       		.byte	-116
+ 1415 056b 40       		.byte	64
+ 1416 056c D6       		.byte	-42
+ 1417 056d 04       		.byte	4
+ 1418 056e E0       		.byte	-32
+ 1419 056f 02       		.byte	2
+ 1420 0570 1A       		.byte	26
+ 1421 0571 80       		.byte	-128
+ 1422 0572 C6       		.byte	-58
+ 1423 0573 08       		.byte	8
+ 1424 0574 47       		.byte	71
+ 1425 0575 80       		.byte	-128
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjHbADF.s 			page 26
+
+
+ 1426 0576 AA       		.byte	-86
+ 1427 0577 40       		.byte	64
+ 1428 0578 D0       		.byte	-48
+ 1429 0579 04       		.byte	4
+ 1430 057a 23       		.byte	35
+ 1431 057b 20       		.byte	32
+ 1432 057c 26       		.byte	38
+ 1433 057d 08       		.byte	8
+ 1434 057e 83       		.byte	-125
+ 1435 057f 20       		.byte	32
+ 1436 0580 A6       		.byte	-90
+ 1437 0581 08       		.byte	8
+ 1438 0582 C8       		.byte	-56
+ 1439 0583 C0       		.byte	-64
+ 1440 0584 E0       		.byte	-32
+ 1441 0585 80       		.byte	-128
+ 1442 0586 1B       		.byte	27
+ 1443 0587 20       		.byte	32
+ 1444 0588 83       		.byte	-125
+ 1445 0589 20       		.byte	32
+ 1446 058a C6       		.byte	-58
+ 1447 058b 40       		.byte	64
+ 1448 058c E4       		.byte	-28
+ 1449 058d 20       		.byte	32
+ 1450 058e 08       		.byte	8
+ 1451 058f 44       		.byte	68
+ 1452 0590 59       		.byte	89
+ 1453 0591 01       		.byte	1
+ 1454 0592 83       		.byte	-125
+ 1455 0593 80       		.byte	-128
+ 1456 0594 9F       		.byte	-97
+ 1457 0595 80       		.byte	-128
+ 1458 0596 C2       		.byte	-62
+ 1459 0597 0A       		.byte	10
+ 1460 0598 D6       		.byte	-42
+ 1461 0599 02       		.byte	2
+ 1462 059a 12       		.byte	18
+ 1463 059b 20       		.byte	32
+ 1464 059c 19       		.byte	25
+ 1465 059d 01       		.byte	1
+ 1466 059e 75       		.byte	117
+ 1467 059f 02       		.byte	2
+ 1468 05a0 78       		.byte	120
+ 1469 05a1 04       		.byte	4
+ 1470 05a2 89       		.byte	-119
+ 1471 05a3 02       		.byte	2
+ 1472 05a4 8E       		.byte	-114
+ 1473 05a5 20       		.byte	32
+ 1474 05a6 98       		.byte	-104
+ 1475 05a7 04       		.byte	4
+ 1476 05a8 9D       		.byte	-99
+ 1477 05a9 01       		.byte	1
+ 1478 05aa B0       		.byte	-80
+ 1479 05ab 40       		.byte	64
+ 1480 05ac C4       		.byte	-60
+ 1481 05ad 08       		.byte	8
+ 1482 05ae C6       		.byte	-58
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjHbADF.s 			page 27
+
+
+ 1483 05af 08       		.byte	8
+ 1484 05b0 DE       		.byte	-34
+ 1485 05b1 06       		.byte	6
+ 1486 05b2 E0       		.byte	-32
+ 1487 05b3 01       		.byte	1
+ 1488 05b4 E2       		.byte	-30
+ 1489 05b5 08       		.byte	8
+ 1490 05b6 EA       		.byte	-22
+ 1491 05b7 01       		.byte	1
+ 1492 05b8 00       		.byte	0
+ 1493 05b9 11       		.byte	17
+ 1494 05ba 02       		.byte	2
+ 1495 05bb 14       		.byte	20
+ 1496 05bc 08       		.byte	8
+ 1497 05bd 01       		.byte	1
+ 1498 05be 0A       		.byte	10
+ 1499 05bf 01       		.byte	1
+ 1500 05c0 0C       		.byte	12
+ 1501 05c1 11       		.byte	17
+ 1502 05c2 10       		.byte	16
+ 1503 05c3 11       		.byte	17
+ 1504 05c4 11       		.byte	17
+ 1505 05c5 01       		.byte	1
+ 1506 05c6 12       		.byte	18
+ 1507 05c7 14       		.byte	20
+ 1508 05c8 1C       		.byte	28
+ 1509 05c9 11       		.byte	17
+ 1510 05ca 1D       		.byte	29
+ 1511 05cb 01       		.byte	1
+ 1512 05cc 00       		.byte	0
+ 1513 05cd 0E       		.byte	14
+ 1514 05ce 00       		.byte	0
+ 1515 05cf 00       		.byte	0
+ 1516 05d0 CC       		.byte	-52
+ 1517 05d1 20       		.byte	32
+ 1518 05d2 23       		.byte	35
+ 1519 05d3 0C       		.byte	12
+ 1520 05d4 0C       		.byte	12
+ 1521 05d5 10       		.byte	16
+ 1522 05d6 00       		.byte	0
+ 1523 05d7 04       		.byte	4
+ 1524 05d8 04       		.byte	4
+ 1525 05d9 00       		.byte	0
+ 1526 05da 00       		.byte	0
+ 1527 05db 00       		.byte	0
+ 1528 05dc 08       		.byte	8
+ 1529 05dd 30       		.byte	48
+ 1530 05de 00       		.byte	0
+ 1531 05df 02       		.byte	2
+ 1532 05e0 03       		.byte	3
+ 1533 05e1 00       		.byte	0
+ 1534 05e2 00       		.byte	0
+ 1535 05e3 30       		.byte	48
+ 1536 05e4 FF       		.byte	-1
+ 1537 05e5 00       		.byte	0
+ 1538 05e6 00       		.byte	0
+ 1539 05e7 31       		.byte	49
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjHbADF.s 			page 28
+
+
+ 1540 05e8 01       		.byte	1
+ 1541 05e9 00       		.byte	0
+ 1542 05ea 00       		.byte	0
+ 1543 05eb 00       		.byte	0
+ 1544 05ec 00       		.byte	0
+ 1545 05ed 00       		.byte	0
+ 1546 05ee B3       		.byte	-77
+ 1547 05ef 00       		.byte	0
+ 1548 05f0 42       		.byte	66
+ 1549 05f1 00       		.byte	0
+ 1550 05f2 00       		.byte	0
+ 1551 05f3 00       		.byte	0
+ 1552 05f4 00       		.byte	0
+ 1553 05f5 31       		.byte	49
+ 1554 05f6 40       		.byte	64
+ 1555 05f7 00       		.byte	0
+ 1556 05f8 F3       		.byte	-13
+ 1557 05f9 31       		.byte	49
+ 1558 05fa 0C       		.byte	12
+ 1559 05fb 00       		.byte	0
+ 1560 05fc 4F       		.byte	79
+ 1561 05fd 00       		.byte	0
+ 1562 05fe 90       		.byte	-112
+ 1563 05ff 31       		.byte	49
+ 1564 0600 7C       		.byte	124
+ 1565 0601 06       		.byte	6
+ 1566 0602 00       		.byte	0
+ 1567 0603 01       		.byte	1
+ 1568 0604 0F       		.byte	15
+ 1569 0605 08       		.byte	8
+ 1570 0606 8C       		.byte	-116
+ 1571 0607 30       		.byte	48
+ 1572 0608 00       		.byte	0
+ 1573 0609 08       		.byte	8
+ 1574 060a 2A       		.byte	42
+ 1575 060b 00       		.byte	0
+ 1576 060c 00       		.byte	0
+ 1577 060d 00       		.byte	0
+ 1578 060e 00       		.byte	0
+ 1579 060f 01       		.byte	1
+ 1580 0610 24       		.byte	36
+ 1581 0611 03       		.byte	3
+ 1582 0612 05       		.byte	5
+ 1583 0613 00       		.byte	0
+ 1584 0614 01       		.byte	1
+ 1585 0615 0C       		.byte	12
+ 1586 0616 00       		.byte	0
+ 1587 0617 E0       		.byte	-32
+ 1588 0618 21       		.byte	33
+ 1589 0619 FF       		.byte	-1
+ 1590 061a FF       		.byte	-1
+ 1591 061b FF       		.byte	-1
+ 1592 061c 62       		.byte	98
+ 1593 061d A0       		.byte	-96
+ 1594 061e F0       		.byte	-16
+ 1595 061f 41       		.byte	65
+ 1596 0620 0C       		.byte	12
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjHbADF.s 			page 29
+
+
+ 1597 0621 00       		.byte	0
+ 1598 0622 00       		.byte	0
+ 1599 0623 00       		.byte	0
+ 1600 0624 00       		.byte	0
+ 1601 0625 00       		.byte	0
+ 1602 0626 08       		.byte	8
+ 1603 0627 00       		.byte	0
+ 1604 0628 04       		.byte	4
+ 1605 0629 04       		.byte	4
+ 1606 062a 04       		.byte	4
+ 1607 062b 04       		.byte	4
+ 1608 062c 44       		.byte	68
+ 1609 062d 94       		.byte	-108
+ 1610 062e 00       		.byte	0
+ 1611 062f 01       		.byte	1
+ 1612 0630 00       		.byte	0
+ 1613 0631 00       		.byte	0
+ 1614 0632 00       		.byte	0
+ 1615 0633 00       		.byte	0
+ 1616 0634 00       		.byte	0
+ 1617 0635 00       		.byte	0
+ 1618 0636 40       		.byte	64
+ 1619 0637 02       		.byte	2
+ 1620 0638 00       		.byte	0
+ 1621 0639 10       		.byte	16
+ 1622 063a 30       		.byte	48
+ 1623 063b 10       		.byte	16
+ 1624 063c 00       		.byte	0
+ 1625 063d 10       		.byte	16
+ 1626 063e 10       		.byte	16
+ 1627 063f 12       		.byte	18
+ 1628 0640 00       		.byte	0
+ 1629 0641 00       		.byte	0
+ 1630 0642 00       		.byte	0
+ 1631 0643 00       		.byte	0
+ 1632 0644 00       		.byte	0
+ 1633 0645 00       		.byte	0
+ 1634 0646 00       		.byte	0
+ 1635 0647 00       		.byte	0
+ 1636 0648 00       		.byte	0
+ 1637 0649 00       		.byte	0
+ 1638 064a 00       		.byte	0
+ 1639 064b 00       		.byte	0
+ 1640 064c 00       		.byte	0
+ 1641 064d 00       		.byte	0
+ 1642 064e 00       		.byte	0
+ 1643 064f 00       		.byte	0
+ 1644 0650 00       		.byte	0
+ 1645 0651 03       		.byte	3
+ 1646 0652 03       		.byte	3
+ 1647 0653 00       		.byte	0
+ 1648 0654 03       		.byte	3
+ 1649 0655 00       		.byte	0
+ 1650 0656 74       		.byte	116
+ 1651 0657 00       		.byte	0
+ 1652 0658 80       		.byte	-128
+ 1653 0659 00       		.byte	0
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjHbADF.s 			page 30
+
+
+ 1654 065a 40       		.byte	64
+ 1655 065b 80       		.byte	-128
+ 1656 065c 80       		.byte	-128
+ 1657 065d 00       		.byte	0
+ 1658 065e 80       		.byte	-128
+ 1659 065f 00       		.byte	0
+ 1660 0660 00       		.byte	0
+ 1661 0661 00       		.byte	0
+ 1662 0662 00       		.byte	0
+ 1663 0663 00       		.byte	0
+ 1664 0664 50       		.byte	80
+ 1665 0665 20       		.byte	32
+ 1666 0666 20       		.byte	32
+ 1667 0667 00       		.byte	0
+ 1668 0668 20       		.byte	32
+ 1669 0669 00       		.byte	0
+ 1670 066a 00       		.byte	0
+ 1671 066b 00       		.byte	0
+ 1672 066c 00       		.byte	0
+ 1673 066d 02       		.byte	2
+ 1674 066e 02       		.byte	2
+ 1675 066f 00       		.byte	0
+ 1676 0670 02       		.byte	2
+ 1677 0671 00       		.byte	0
+ 1678 0672 00       		.byte	0
+ 1679 0673 00       		.byte	0
+ 1680              		.section	.cywolatch,"a",%progbits
+ 1681              		.align	2
+ 1682              		.type	cy_meta_wonvl, %object
+ 1683              		.size	cy_meta_wonvl, 4
+ 1684              	cy_meta_wonvl:
+ 1685 0000 BC       		.byte	-68
+ 1686 0001 90       		.byte	-112
+ 1687 0002 AC       		.byte	-84
+ 1688 0003 AF       		.byte	-81
+ 1689              		.section	.cycustnvl,"a",%progbits
+ 1690              		.align	2
+ 1691              		.type	cy_meta_custnvl, %object
+ 1692              		.size	cy_meta_custnvl, 4
+ 1693              	cy_meta_custnvl:
+ 1694 0000 00       		.byte	0
+ 1695 0001 00       		.byte	0
+ 1696 0002 40       		.byte	64
+ 1697 0003 05       		.byte	5
+ 1698              		.section	.cymeta,"a",%progbits
+ 1699              		.align	2
+ 1700              		.type	cy_metadata, %object
+ 1701              		.size	cy_metadata, 12
+ 1702              	cy_metadata:
+ 1703 0000 00       		.byte	0
+ 1704 0001 01       		.byte	1
+ 1705 0002 2E       		.byte	46
+ 1706 0003 16       		.byte	22
+ 1707 0004 10       		.byte	16
+ 1708 0005 69       		.byte	105
+ 1709 0006 00       		.byte	0
+ 1710 0007 01       		.byte	1
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjHbADF.s 			page 31
+
+
+ 1711 0008 00       		.byte	0
+ 1712 0009 00       		.byte	0
+ 1713 000a 00       		.byte	0
+ 1714 000b 00       		.byte	0
+ 1715              		.section	.cyflashprotect,"a",%progbits
+ 1716              		.align	2
+ 1717              		.type	cy_meta_flashprotect, %object
+ 1718              		.size	cy_meta_flashprotect, 256
+ 1719              	cy_meta_flashprotect:
+ 1720 0000 00000000 		.space	256
+ 1720      00000000 
+ 1720      00000000 
+ 1720      00000000 
+ 1720      00000000 
+ 1721              		.text
+ 1722              	.Letext0:
+ 1723              		.file 1 ".\\Generated_Source\\PSoC5\\cymetadata.c"
+ 1724              		.file 2 ".\\Generated_Source\\PSoC5\\cytypes.h"
+ 1725              		.section	.debug_info,"",%progbits
+ 1726              	.Ldebug_info0:
+ 1727 0000 3A010000 		.4byte	0x13a
+ 1728 0004 0400     		.2byte	0x4
+ 1729 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 1730 000a 04       		.byte	0x4
+ 1731 000b 01       		.uleb128 0x1
+ 1732 000c 9B000000 		.4byte	.LASF18
+ 1733 0010 01       		.byte	0x1
+ 1734 0011 55000000 		.4byte	.LASF19
+ 1735 0015 00000000 		.4byte	.LASF20
+ 1736 0019 00000000 		.4byte	.Ldebug_line0
+ 1737 001d 02       		.uleb128 0x2
+ 1738 001e 01       		.byte	0x1
+ 1739 001f 06       		.byte	0x6
+ 1740 0020 F3010000 		.4byte	.LASF0
+ 1741 0024 02       		.uleb128 0x2
+ 1742 0025 01       		.byte	0x1
+ 1743 0026 08       		.byte	0x8
+ 1744 0027 8D000000 		.4byte	.LASF1
+ 1745 002b 02       		.uleb128 0x2
+ 1746 002c 02       		.byte	0x2
+ 1747 002d 05       		.byte	0x5
+ 1748 002e DA010000 		.4byte	.LASF2
+ 1749 0032 02       		.uleb128 0x2
+ 1750 0033 02       		.byte	0x2
+ 1751 0034 07       		.byte	0x7
+ 1752 0035 3B010000 		.4byte	.LASF3
+ 1753 0039 02       		.uleb128 0x2
+ 1754 003a 04       		.byte	0x4
+ 1755 003b 05       		.byte	0x5
+ 1756 003c EA010000 		.4byte	.LASF4
+ 1757 0040 02       		.uleb128 0x2
+ 1758 0041 04       		.byte	0x4
+ 1759 0042 07       		.byte	0x7
+ 1760 0043 29010000 		.4byte	.LASF5
+ 1761 0047 02       		.uleb128 0x2
+ 1762 0048 08       		.byte	0x8
+ 1763 0049 05       		.byte	0x5
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjHbADF.s 			page 32
+
+
+ 1764 004a C7010000 		.4byte	.LASF6
+ 1765 004e 02       		.uleb128 0x2
+ 1766 004f 08       		.byte	0x8
+ 1767 0050 07       		.byte	0x7
+ 1768 0051 84010000 		.4byte	.LASF7
+ 1769 0055 03       		.uleb128 0x3
+ 1770 0056 04       		.byte	0x4
+ 1771 0057 05       		.byte	0x5
+ 1772 0058 696E7400 		.ascii	"int\000"
+ 1773 005c 02       		.uleb128 0x2
+ 1774 005d 04       		.byte	0x4
+ 1775 005e 07       		.byte	0x7
+ 1776 005f 77010000 		.4byte	.LASF8
+ 1777 0063 04       		.uleb128 0x4
+ 1778 0064 E4010000 		.4byte	.LASF21
+ 1779 0068 02       		.byte	0x2
+ 1780 0069 9201     		.2byte	0x192
+ 1781 006b 24000000 		.4byte	0x24
+ 1782 006f 02       		.uleb128 0x2
+ 1783 0070 04       		.byte	0x4
+ 1784 0071 04       		.byte	0x4
+ 1785 0072 87000000 		.4byte	.LASF9
+ 1786 0076 02       		.uleb128 0x2
+ 1787 0077 08       		.byte	0x8
+ 1788 0078 04       		.byte	0x4
+ 1789 0079 4E010000 		.4byte	.LASF10
+ 1790 007d 02       		.uleb128 0x2
+ 1791 007e 01       		.byte	0x1
+ 1792 007f 08       		.byte	0x8
+ 1793 0080 D5010000 		.4byte	.LASF11
+ 1794 0084 05       		.uleb128 0x5
+ 1795 0085 63000000 		.4byte	0x63
+ 1796 0089 95000000 		.4byte	0x95
+ 1797 008d 06       		.uleb128 0x6
+ 1798 008e 95000000 		.4byte	0x95
+ 1799 0092 7306     		.2byte	0x673
+ 1800 0094 00       		.byte	0
+ 1801 0095 02       		.uleb128 0x2
+ 1802 0096 04       		.byte	0x4
+ 1803 0097 07       		.byte	0x7
+ 1804 0098 BE010000 		.4byte	.LASF12
+ 1805 009c 07       		.uleb128 0x7
+ 1806 009d 65010000 		.4byte	.LASF13
+ 1807 00a1 01       		.byte	0x1
+ 1808 00a2 1F       		.byte	0x1f
+ 1809 00a3 AD000000 		.4byte	0xad
+ 1810 00a7 05       		.uleb128 0x5
+ 1811 00a8 03       		.byte	0x3
+ 1812 00a9 00000000 		.4byte	cy_meta_configecc
+ 1813 00ad 08       		.uleb128 0x8
+ 1814 00ae 84000000 		.4byte	0x84
+ 1815 00b2 05       		.uleb128 0x5
+ 1816 00b3 63000000 		.4byte	0x63
+ 1817 00b7 C2000000 		.4byte	0xc2
+ 1818 00bb 09       		.uleb128 0x9
+ 1819 00bc 95000000 		.4byte	0x95
+ 1820 00c0 03       		.byte	0x3
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjHbADF.s 			page 33
+
+
+ 1821 00c1 00       		.byte	0
+ 1822 00c2 07       		.uleb128 0x7
+ 1823 00c3 55010000 		.4byte	.LASF14
+ 1824 00c7 01       		.byte	0x1
+ 1825 00c8 FB       		.byte	0xfb
+ 1826 00c9 D3000000 		.4byte	0xd3
+ 1827 00cd 05       		.uleb128 0x5
+ 1828 00ce 03       		.byte	0x3
+ 1829 00cf 00000000 		.4byte	cy_meta_custnvl
+ 1830 00d3 08       		.uleb128 0x8
+ 1831 00d4 B2000000 		.4byte	0xb2
+ 1832 00d8 0A       		.uleb128 0xa
+ 1833 00d9 B0010000 		.4byte	.LASF15
+ 1834 00dd 01       		.byte	0x1
+ 1835 00de 0901     		.2byte	0x109
+ 1836 00e0 EA000000 		.4byte	0xea
+ 1837 00e4 05       		.uleb128 0x5
+ 1838 00e5 03       		.byte	0x3
+ 1839 00e6 00000000 		.4byte	cy_meta_wonvl
+ 1840 00ea 08       		.uleb128 0x8
+ 1841 00eb B2000000 		.4byte	0xb2
+ 1842 00ef 05       		.uleb128 0x5
+ 1843 00f0 63000000 		.4byte	0x63
+ 1844 00f4 FF000000 		.4byte	0xff
+ 1845 00f8 09       		.uleb128 0x9
+ 1846 00f9 95000000 		.4byte	0x95
+ 1847 00fd FF       		.byte	0xff
+ 1848 00fe 00       		.byte	0
+ 1849 00ff 0A       		.uleb128 0xa
+ 1850 0100 9B010000 		.4byte	.LASF16
+ 1851 0104 01       		.byte	0x1
+ 1852 0105 1701     		.2byte	0x117
+ 1853 0107 11010000 		.4byte	0x111
+ 1854 010b 05       		.uleb128 0x5
+ 1855 010c 03       		.byte	0x3
+ 1856 010d 00000000 		.4byte	cy_meta_flashprotect
+ 1857 0111 08       		.uleb128 0x8
+ 1858 0112 EF000000 		.4byte	0xef
+ 1859 0116 05       		.uleb128 0x5
+ 1860 0117 63000000 		.4byte	0x63
+ 1861 011b 26010000 		.4byte	0x126
+ 1862 011f 09       		.uleb128 0x9
+ 1863 0120 95000000 		.4byte	0x95
+ 1864 0124 0B       		.byte	0xb
+ 1865 0125 00       		.byte	0
+ 1866 0126 0A       		.uleb128 0xa
+ 1867 0127 7B000000 		.4byte	.LASF17
+ 1868 012b 01       		.byte	0x1
+ 1869 012c 4401     		.2byte	0x144
+ 1870 012e 38010000 		.4byte	0x138
+ 1871 0132 05       		.uleb128 0x5
+ 1872 0133 03       		.byte	0x3
+ 1873 0134 00000000 		.4byte	cy_metadata
+ 1874 0138 08       		.uleb128 0x8
+ 1875 0139 16010000 		.4byte	0x116
+ 1876 013d 00       		.byte	0
+ 1877              		.section	.debug_abbrev,"",%progbits
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjHbADF.s 			page 34
+
+
+ 1878              	.Ldebug_abbrev0:
+ 1879 0000 01       		.uleb128 0x1
+ 1880 0001 11       		.uleb128 0x11
+ 1881 0002 01       		.byte	0x1
+ 1882 0003 25       		.uleb128 0x25
+ 1883 0004 0E       		.uleb128 0xe
+ 1884 0005 13       		.uleb128 0x13
+ 1885 0006 0B       		.uleb128 0xb
+ 1886 0007 03       		.uleb128 0x3
+ 1887 0008 0E       		.uleb128 0xe
+ 1888 0009 1B       		.uleb128 0x1b
+ 1889 000a 0E       		.uleb128 0xe
+ 1890 000b 10       		.uleb128 0x10
+ 1891 000c 17       		.uleb128 0x17
+ 1892 000d 00       		.byte	0
+ 1893 000e 00       		.byte	0
+ 1894 000f 02       		.uleb128 0x2
+ 1895 0010 24       		.uleb128 0x24
+ 1896 0011 00       		.byte	0
+ 1897 0012 0B       		.uleb128 0xb
+ 1898 0013 0B       		.uleb128 0xb
+ 1899 0014 3E       		.uleb128 0x3e
+ 1900 0015 0B       		.uleb128 0xb
+ 1901 0016 03       		.uleb128 0x3
+ 1902 0017 0E       		.uleb128 0xe
+ 1903 0018 00       		.byte	0
+ 1904 0019 00       		.byte	0
+ 1905 001a 03       		.uleb128 0x3
+ 1906 001b 24       		.uleb128 0x24
+ 1907 001c 00       		.byte	0
+ 1908 001d 0B       		.uleb128 0xb
+ 1909 001e 0B       		.uleb128 0xb
+ 1910 001f 3E       		.uleb128 0x3e
+ 1911 0020 0B       		.uleb128 0xb
+ 1912 0021 03       		.uleb128 0x3
+ 1913 0022 08       		.uleb128 0x8
+ 1914 0023 00       		.byte	0
+ 1915 0024 00       		.byte	0
+ 1916 0025 04       		.uleb128 0x4
+ 1917 0026 16       		.uleb128 0x16
+ 1918 0027 00       		.byte	0
+ 1919 0028 03       		.uleb128 0x3
+ 1920 0029 0E       		.uleb128 0xe
+ 1921 002a 3A       		.uleb128 0x3a
+ 1922 002b 0B       		.uleb128 0xb
+ 1923 002c 3B       		.uleb128 0x3b
+ 1924 002d 05       		.uleb128 0x5
+ 1925 002e 49       		.uleb128 0x49
+ 1926 002f 13       		.uleb128 0x13
+ 1927 0030 00       		.byte	0
+ 1928 0031 00       		.byte	0
+ 1929 0032 05       		.uleb128 0x5
+ 1930 0033 01       		.uleb128 0x1
+ 1931 0034 01       		.byte	0x1
+ 1932 0035 49       		.uleb128 0x49
+ 1933 0036 13       		.uleb128 0x13
+ 1934 0037 01       		.uleb128 0x1
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjHbADF.s 			page 35
+
+
+ 1935 0038 13       		.uleb128 0x13
+ 1936 0039 00       		.byte	0
+ 1937 003a 00       		.byte	0
+ 1938 003b 06       		.uleb128 0x6
+ 1939 003c 21       		.uleb128 0x21
+ 1940 003d 00       		.byte	0
+ 1941 003e 49       		.uleb128 0x49
+ 1942 003f 13       		.uleb128 0x13
+ 1943 0040 2F       		.uleb128 0x2f
+ 1944 0041 05       		.uleb128 0x5
+ 1945 0042 00       		.byte	0
+ 1946 0043 00       		.byte	0
+ 1947 0044 07       		.uleb128 0x7
+ 1948 0045 34       		.uleb128 0x34
+ 1949 0046 00       		.byte	0
+ 1950 0047 03       		.uleb128 0x3
+ 1951 0048 0E       		.uleb128 0xe
+ 1952 0049 3A       		.uleb128 0x3a
+ 1953 004a 0B       		.uleb128 0xb
+ 1954 004b 3B       		.uleb128 0x3b
+ 1955 004c 0B       		.uleb128 0xb
+ 1956 004d 49       		.uleb128 0x49
+ 1957 004e 13       		.uleb128 0x13
+ 1958 004f 3F       		.uleb128 0x3f
+ 1959 0050 19       		.uleb128 0x19
+ 1960 0051 02       		.uleb128 0x2
+ 1961 0052 18       		.uleb128 0x18
+ 1962 0053 00       		.byte	0
+ 1963 0054 00       		.byte	0
+ 1964 0055 08       		.uleb128 0x8
+ 1965 0056 26       		.uleb128 0x26
+ 1966 0057 00       		.byte	0
+ 1967 0058 49       		.uleb128 0x49
+ 1968 0059 13       		.uleb128 0x13
+ 1969 005a 00       		.byte	0
+ 1970 005b 00       		.byte	0
+ 1971 005c 09       		.uleb128 0x9
+ 1972 005d 21       		.uleb128 0x21
+ 1973 005e 00       		.byte	0
+ 1974 005f 49       		.uleb128 0x49
+ 1975 0060 13       		.uleb128 0x13
+ 1976 0061 2F       		.uleb128 0x2f
+ 1977 0062 0B       		.uleb128 0xb
+ 1978 0063 00       		.byte	0
+ 1979 0064 00       		.byte	0
+ 1980 0065 0A       		.uleb128 0xa
+ 1981 0066 34       		.uleb128 0x34
+ 1982 0067 00       		.byte	0
+ 1983 0068 03       		.uleb128 0x3
+ 1984 0069 0E       		.uleb128 0xe
+ 1985 006a 3A       		.uleb128 0x3a
+ 1986 006b 0B       		.uleb128 0xb
+ 1987 006c 3B       		.uleb128 0x3b
+ 1988 006d 05       		.uleb128 0x5
+ 1989 006e 49       		.uleb128 0x49
+ 1990 006f 13       		.uleb128 0x13
+ 1991 0070 3F       		.uleb128 0x3f
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjHbADF.s 			page 36
+
+
+ 1992 0071 19       		.uleb128 0x19
+ 1993 0072 02       		.uleb128 0x2
+ 1994 0073 18       		.uleb128 0x18
+ 1995 0074 00       		.byte	0
+ 1996 0075 00       		.byte	0
+ 1997 0076 00       		.byte	0
+ 1998              		.section	.debug_aranges,"",%progbits
+ 1999 0000 14000000 		.4byte	0x14
+ 2000 0004 0200     		.2byte	0x2
+ 2001 0006 00000000 		.4byte	.Ldebug_info0
+ 2002 000a 04       		.byte	0x4
+ 2003 000b 00       		.byte	0
+ 2004 000c 0000     		.2byte	0
+ 2005 000e 0000     		.2byte	0
+ 2006 0010 00000000 		.4byte	0
+ 2007 0014 00000000 		.4byte	0
+ 2008              		.section	.debug_line,"",%progbits
+ 2009              	.Ldebug_line0:
+ 2010 0000 4F000000 		.section	.debug_str,"MS",%progbits,1
+ 2010      02004900 
+ 2010      00000201 
+ 2010      FB0E0D00 
+ 2010      01010101 
+ 2011              	.LASF20:
+ 2012 0000 433A5C55 		.ascii	"C:\\Users\\Patrick\\Desktop\\cy8ckit-059\\CE95277 A"
+ 2012      73657273 
+ 2012      5C506174 
+ 2012      7269636B 
+ 2012      5C446573 
+ 2013 002e 44432061 		.ascii	"DC and UART\\CE95277 ADC and UART.cydsn\000"
+ 2013      6E642055 
+ 2013      4152545C 
+ 2013      43453935 
+ 2013      32373720 
+ 2014              	.LASF19:
+ 2015 0055 2E5C4765 		.ascii	".\\Generated_Source\\PSoC5\\cymetadata.c\000"
+ 2015      6E657261 
+ 2015      7465645F 
+ 2015      536F7572 
+ 2015      63655C50 
+ 2016              	.LASF17:
+ 2017 007b 63795F6D 		.ascii	"cy_metadata\000"
+ 2017      65746164 
+ 2017      61746100 
+ 2018              	.LASF9:
+ 2019 0087 666C6F61 		.ascii	"float\000"
+ 2019      7400
+ 2020              	.LASF1:
+ 2021 008d 756E7369 		.ascii	"unsigned char\000"
+ 2021      676E6564 
+ 2021      20636861 
+ 2021      7200
+ 2022              	.LASF18:
+ 2023 009b 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
+ 2023      4320342E 
+ 2023      392E3320 
+ 2023      32303135 
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjHbADF.s 			page 37
+
+
+ 2023      30333033 
+ 2024 00ce 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m3 -mthumb -g -O"
+ 2024      20726576 
+ 2024      6973696F 
+ 2024      6E203232 
+ 2024      31323230 
+ 2025 0101 33202D66 		.ascii	"3 -ffunction-sections -ffat-lto-objects\000"
+ 2025      66756E63 
+ 2025      74696F6E 
+ 2025      2D736563 
+ 2025      74696F6E 
+ 2026              	.LASF5:
+ 2027 0129 6C6F6E67 		.ascii	"long unsigned int\000"
+ 2027      20756E73 
+ 2027      69676E65 
+ 2027      6420696E 
+ 2027      7400
+ 2028              	.LASF3:
+ 2029 013b 73686F72 		.ascii	"short unsigned int\000"
+ 2029      7420756E 
+ 2029      7369676E 
+ 2029      65642069 
+ 2029      6E7400
+ 2030              	.LASF10:
+ 2031 014e 646F7562 		.ascii	"double\000"
+ 2031      6C6500
+ 2032              	.LASF14:
+ 2033 0155 63795F6D 		.ascii	"cy_meta_custnvl\000"
+ 2033      6574615F 
+ 2033      63757374 
+ 2033      6E766C00 
+ 2034              	.LASF13:
+ 2035 0165 63795F6D 		.ascii	"cy_meta_configecc\000"
+ 2035      6574615F 
+ 2035      636F6E66 
+ 2035      69676563 
+ 2035      6300
+ 2036              	.LASF8:
+ 2037 0177 756E7369 		.ascii	"unsigned int\000"
+ 2037      676E6564 
+ 2037      20696E74 
+ 2037      00
+ 2038              	.LASF7:
+ 2039 0184 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 2039      206C6F6E 
+ 2039      6720756E 
+ 2039      7369676E 
+ 2039      65642069 
+ 2040              	.LASF16:
+ 2041 019b 63795F6D 		.ascii	"cy_meta_flashprotect\000"
+ 2041      6574615F 
+ 2041      666C6173 
+ 2041      6870726F 
+ 2041      74656374 
+ 2042              	.LASF15:
+ 2043 01b0 63795F6D 		.ascii	"cy_meta_wonvl\000"
+ 2043      6574615F 
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjHbADF.s 			page 38
+
+
+ 2043      776F6E76 
+ 2043      6C00
+ 2044              	.LASF12:
+ 2045 01be 73697A65 		.ascii	"sizetype\000"
+ 2045      74797065 
+ 2045      00
+ 2046              	.LASF6:
+ 2047 01c7 6C6F6E67 		.ascii	"long long int\000"
+ 2047      206C6F6E 
+ 2047      6720696E 
+ 2047      7400
+ 2048              	.LASF11:
+ 2049 01d5 63686172 		.ascii	"char\000"
+ 2049      00
+ 2050              	.LASF2:
+ 2051 01da 73686F72 		.ascii	"short int\000"
+ 2051      7420696E 
+ 2051      7400
+ 2052              	.LASF21:
+ 2053 01e4 75696E74 		.ascii	"uint8\000"
+ 2053      3800
+ 2054              	.LASF4:
+ 2055 01ea 6C6F6E67 		.ascii	"long int\000"
+ 2055      20696E74 
+ 2055      00
+ 2056              	.LASF0:
+ 2057 01f3 7369676E 		.ascii	"signed char\000"
+ 2057      65642063 
+ 2057      68617200 
+ 2058              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.9.3 20150303 (release) [ARM/embedded-4_9-br

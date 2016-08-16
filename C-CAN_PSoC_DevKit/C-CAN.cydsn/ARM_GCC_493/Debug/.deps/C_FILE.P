@@ -1,0 +1,114 @@
+C:/Users/Patrick/Desktop/cy8ckit-059/CE95277\ ADC\ and\ UART/CE95277\ ADC\ and\ UART.cydsn/ARM_GCC_493/Debug/main.o : C:/Users/Patrick/Desktop/cy8ckit-059/CE95277\ ADC\ and\ UART/CE95277\ ADC\ and\ UART.cydsn/Generated_Source/PSoC5/ADC_SAR_1.h C:/Users/Patrick/Desktop/cy8ckit-059/CE95277\ ADC\ and\ UART/CE95277\ ADC\ and\ UART.cydsn/Generated_Source/PSoC5/ADC_SAR_1_Bypass.h C:/Users/Patrick/Desktop/cy8ckit-059/CE95277\ ADC\ and\ UART/CE95277\ ADC\ and\ UART.cydsn/Generated_Source/PSoC5/ADC_SAR_1_Bypass_aliases.h C:/Users/Patrick/Desktop/cy8ckit-059/CE95277\ ADC\ and\ UART/CE95277\ ADC\ and\ UART.cydsn/Generated_Source/PSoC5/ADC_SAR_1_IRQ.h C:/Users/Patrick/Desktop/cy8ckit-059/CE95277\ ADC\ and\ UART/CE95277\ ADC\ and\ UART.cydsn/Generated_Source/PSoC5/ADC_SAR_1_theACLK.h C:/Users/Patrick/Desktop/cy8ckit-059/CE95277\ ADC\ and\ UART/CE95277\ ADC\ and\ UART.cydsn/Generated_Source/PSoC5/AMux_1.h C:/Users/Patrick/Desktop/cy8ckit-059/CE95277\ ADC\ and\ UART/CE95277\ ADC\ and\ UART.cydsn/Generated_Source/PSoC5/CAN_1.h C:/Users/Patrick/Desktop/cy8ckit-059/CE95277\ ADC\ and\ UART/CE95277\ ADC\ and\ UART.cydsn/Generated_Source/PSoC5/CAN_1_TX_RX_func.c C:/Users/Patrick/Desktop/cy8ckit-059/CE95277\ ADC\ and\ UART/CE95277\ ADC\ and\ UART.cydsn/Generated_Source/PSoC5/CAN_ISR.h C:/Users/Patrick/Desktop/cy8ckit-059/CE95277\ ADC\ and\ UART/CE95277\ ADC\ and\ UART.cydsn/Generated_Source/PSoC5/CAN_TIMER.h C:/Users/Patrick/Desktop/cy8ckit-059/CE95277\ ADC\ and\ UART/CE95277\ ADC\ and\ UART.cydsn/Generated_Source/PSoC5/Clock_1.h C:/Users/Patrick/Desktop/cy8ckit-059/CE95277\ ADC\ and\ UART/CE95277\ ADC\ and\ UART.cydsn/Generated_Source/PSoC5/Clock_2.h C:/Users/Patrick/Desktop/cy8ckit-059/CE95277\ ADC\ and\ UART/CE95277\ ADC\ and\ UART.cydsn/Generated_Source/PSoC5/Clock_3.h C:/Users/Patrick/Desktop/cy8ckit-059/CE95277\ ADC\ and\ UART/CE95277\ ADC\ and\ UART.cydsn/Generated_Source/PSoC5/CyDmac.h C:/Users/Patrick/Desktop/cy8ckit-059/CE95277\ ADC\ and\ UART/CE95277\ ADC\ and\ UART.cydsn/Generated_Source/PSoC5/CyFlash.h C:/Users/Patrick/Desktop/cy8ckit-059/CE95277\ ADC\ and\ UART/CE95277\ ADC\ and\ UART.cydsn/Generated_Source/PSoC5/CyLib.h C:/Users/Patrick/Desktop/cy8ckit-059/CE95277\ ADC\ and\ UART/CE95277\ ADC\ and\ UART.cydsn/Generated_Source/PSoC5/CySpc.h C:/Users/Patrick/Desktop/cy8ckit-059/CE95277\ ADC\ and\ UART/CE95277\ ADC\ and\ UART.cydsn/Generated_Source/PSoC5/Enc_A.h C:/Users/Patrick/Desktop/cy8ckit-059/CE95277\ ADC\ and\ UART/CE95277\ ADC\ and\ UART.cydsn/Generated_Source/PSoC5/Enc_A_aliases.h C:/Users/Patrick/Desktop/cy8ckit-059/CE95277\ ADC\ and\ UART/CE95277\ ADC\ and\ UART.cydsn/Generated_Source/PSoC5/Encoder_Count.h C:/Users/Patrick/Desktop/cy8ckit-059/CE95277\ ADC\ and\ UART/CE95277\ ADC\ and\ UART.cydsn/Generated_Source/PSoC5/ISR_PIN.h C:/Users/Patrick/Desktop/cy8ckit-059/CE95277\ ADC\ and\ UART/CE95277\ ADC\ and\ UART.cydsn/Generated_Source/PSoC5/ISR_PIN_aliases.h C:/Users/Patrick/Desktop/cy8ckit-059/CE95277\ ADC\ and\ UART/CE95277\ ADC\ and\ UART.cydsn/Generated_Source/PSoC5/RX_2.h C:/Users/Patrick/Desktop/cy8ckit-059/CE95277\ ADC\ and\ UART/CE95277\ ADC\ and\ UART.cydsn/Generated_Source/PSoC5/RX_2_aliases.h C:/Users/Patrick/Desktop/cy8ckit-059/CE95277\ ADC\ and\ UART/CE95277\ ADC\ and\ UART.cydsn/Generated_Source/PSoC5/TX_2.h C:/Users/Patrick/Desktop/cy8ckit-059/CE95277\ ADC\ and\ UART/CE95277\ ADC\ and\ UART.cydsn/Generated_Source/PSoC5/TX_2_aliases.h C:/Users/Patrick/Desktop/cy8ckit-059/CE95277\ ADC\ and\ UART/CE95277\ ADC\ and\ UART.cydsn/Generated_Source/PSoC5/Test_Pin.h C:/Users/Patrick/Desktop/cy8ckit-059/CE95277\ ADC\ and\ UART/CE95277\ ADC\ and\ UART.cydsn/Generated_Source/PSoC5/Test_Pin_aliases.h C:/Users/Patrick/Desktop/cy8ckit-059/CE95277\ ADC\ and\ UART/CE95277\ ADC\ and\ UART.cydsn/Generated_Source/PSoC5/Time_Count.h C:/Users/Patrick/Desktop/cy8ckit-059/CE95277\ ADC\ and\ UART/CE95277\ ADC\ and\ UART.cydsn/Generated_Source/PSoC5/UART_1.h C:/Users/Patrick/Desktop/cy8ckit-059/CE95277\ ADC\ and\ UART/CE95277\ ADC\ and\ UART.cydsn/Generated_Source/PSoC5/UART_1_IntClock.h C:/Users/Patrick/Desktop/cy8ckit-059/CE95277\ ADC\ and\ UART/CE95277\ ADC\ and\ UART.cydsn/Generated_Source/PSoC5/Vin_180.h C:/Users/Patrick/Desktop/cy8ckit-059/CE95277\ ADC\ and\ UART/CE95277\ ADC\ and\ UART.cydsn/Generated_Source/PSoC5/Vin_180_aliases.h C:/Users/Patrick/Desktop/cy8ckit-059/CE95277\ ADC\ and\ UART/CE95277\ ADC\ and\ UART.cydsn/Generated_Source/PSoC5/Vin_90.h C:/Users/Patrick/Desktop/cy8ckit-059/CE95277\ ADC\ and\ UART/CE95277\ ADC\ and\ UART.cydsn/Generated_Source/PSoC5/Vin_90_aliases.h C:/Users/Patrick/Desktop/cy8ckit-059/CE95277\ ADC\ and\ UART/CE95277\ ADC\ and\ UART.cydsn/Generated_Source/PSoC5/Vin_Pot.h C:/Users/Patrick/Desktop/cy8ckit-059/CE95277\ ADC\ and\ UART/CE95277\ ADC\ and\ UART.cydsn/Generated_Source/PSoC5/Vin_Pot_aliases.h C:/Users/Patrick/Desktop/cy8ckit-059/CE95277\ ADC\ and\ UART/CE95277\ ADC\ and\ UART.cydsn/Generated_Source/PSoC5/cmsis_armcc.h C:/Users/Patrick/Desktop/cy8ckit-059/CE95277\ ADC\ and\ UART/CE95277\ ADC\ and\ UART.cydsn/Generated_Source/PSoC5/cmsis_gcc.h C:/Users/Patrick/Desktop/cy8ckit-059/CE95277\ ADC\ and\ UART/CE95277\ ADC\ and\ UART.cydsn/Generated_Source/PSoC5/core_cm3.h C:/Users/Patrick/Desktop/cy8ckit-059/CE95277\ ADC\ and\ UART/CE95277\ ADC\ and\ UART.cydsn/Generated_Source/PSoC5/core_cm3_psoc5.h C:/Users/Patrick/Desktop/cy8ckit-059/CE95277\ ADC\ and\ UART/CE95277\ ADC\ and\ UART.cydsn/Generated_Source/PSoC5/core_cmFunc.h C:/Users/Patrick/Desktop/cy8ckit-059/CE95277\ ADC\ and\ UART/CE95277\ ADC\ and\ UART.cydsn/Generated_Source/PSoC5/core_cmInstr.h C:/Users/Patrick/Desktop/cy8ckit-059/CE95277\ ADC\ and\ UART/CE95277\ ADC\ and\ UART.cydsn/Generated_Source/PSoC5/cyPm.h C:/Users/Patrick/Desktop/cy8ckit-059/CE95277\ ADC\ and\ UART/CE95277\ ADC\ and\ UART.cydsn/Generated_Source/PSoC5/cydevice.h C:/Users/Patrick/Desktop/cy8ckit-059/CE95277\ ADC\ and\ UART/CE95277\ ADC\ and\ UART.cydsn/Generated_Source/PSoC5/cydevice_trm.h C:/Users/Patrick/Desktop/cy8ckit-059/CE95277\ ADC\ and\ UART/CE95277\ ADC\ and\ UART.cydsn/Generated_Source/PSoC5/cydisabledsheets.h C:/Users/Patrick/Desktop/cy8ckit-059/CE95277\ ADC\ and\ UART/CE95277\ ADC\ and\ UART.cydsn/Generated_Source/PSoC5/cyfitter.h C:/Users/Patrick/Desktop/cy8ckit-059/CE95277\ ADC\ and\ UART/CE95277\ ADC\ and\ UART.cydsn/Generated_Source/PSoC5/cyfitter_cfg.h C:/Users/Patrick/Desktop/cy8ckit-059/CE95277\ ADC\ and\ UART/CE95277\ ADC\ and\ UART.cydsn/Generated_Source/PSoC5/cypins.h C:/Users/Patrick/Desktop/cy8ckit-059/CE95277\ ADC\ and\ UART/CE95277\ ADC\ and\ UART.cydsn/Generated_Source/PSoC5/cytypes.h C:/Users/Patrick/Desktop/cy8ckit-059/CE95277\ ADC\ and\ UART/CE95277\ ADC\ and\ UART.cydsn/Generated_Source/PSoC5/mcp2515_clk.h C:/Users/Patrick/Desktop/cy8ckit-059/CE95277\ ADC\ and\ UART/CE95277\ ADC\ and\ UART.cydsn/Generated_Source/PSoC5/mcp2515_clk_aliases.h C:/Users/Patrick/Desktop/cy8ckit-059/CE95277\ ADC\ and\ UART/CE95277\ ADC\ and\ UART.cydsn/Generated_Source/PSoC5/project.h C:/Users/Patrick/Desktop/cy8ckit-059/CE95277\ ADC\ and\ UART/CE95277\ ADC\ and\ UART.cydsn/device.h C:/Users/Patrick/Desktop/cy8ckit-059/CE95277\ ADC\ and\ UART/CE95277\ ADC\ and\ UART.cydsn/main.c 
+
+C:/Users/Patrick/Desktop/cy8ckit-059/CE95277\ ADC\ and\ UART/CE95277\ ADC\ and\ UART.cydsn/Generated_Source/PSoC5/ADC_SAR_1.h : 
+
+C:/Users/Patrick/Desktop/cy8ckit-059/CE95277\ ADC\ and\ UART/CE95277\ ADC\ and\ UART.cydsn/Generated_Source/PSoC5/ADC_SAR_1_Bypass.h : 
+
+C:/Users/Patrick/Desktop/cy8ckit-059/CE95277\ ADC\ and\ UART/CE95277\ ADC\ and\ UART.cydsn/Generated_Source/PSoC5/ADC_SAR_1_Bypass_aliases.h : 
+
+C:/Users/Patrick/Desktop/cy8ckit-059/CE95277\ ADC\ and\ UART/CE95277\ ADC\ and\ UART.cydsn/Generated_Source/PSoC5/ADC_SAR_1_IRQ.h : 
+
+C:/Users/Patrick/Desktop/cy8ckit-059/CE95277\ ADC\ and\ UART/CE95277\ ADC\ and\ UART.cydsn/Generated_Source/PSoC5/ADC_SAR_1_theACLK.h : 
+
+C:/Users/Patrick/Desktop/cy8ckit-059/CE95277\ ADC\ and\ UART/CE95277\ ADC\ and\ UART.cydsn/Generated_Source/PSoC5/AMux_1.h : 
+
+C:/Users/Patrick/Desktop/cy8ckit-059/CE95277\ ADC\ and\ UART/CE95277\ ADC\ and\ UART.cydsn/Generated_Source/PSoC5/CAN_1.h : 
+
+C:/Users/Patrick/Desktop/cy8ckit-059/CE95277\ ADC\ and\ UART/CE95277\ ADC\ and\ UART.cydsn/Generated_Source/PSoC5/CAN_1_TX_RX_func.c : 
+
+C:/Users/Patrick/Desktop/cy8ckit-059/CE95277\ ADC\ and\ UART/CE95277\ ADC\ and\ UART.cydsn/Generated_Source/PSoC5/CAN_ISR.h : 
+
+C:/Users/Patrick/Desktop/cy8ckit-059/CE95277\ ADC\ and\ UART/CE95277\ ADC\ and\ UART.cydsn/Generated_Source/PSoC5/CAN_TIMER.h : 
+
+C:/Users/Patrick/Desktop/cy8ckit-059/CE95277\ ADC\ and\ UART/CE95277\ ADC\ and\ UART.cydsn/Generated_Source/PSoC5/Clock_1.h : 
+
+C:/Users/Patrick/Desktop/cy8ckit-059/CE95277\ ADC\ and\ UART/CE95277\ ADC\ and\ UART.cydsn/Generated_Source/PSoC5/Clock_2.h : 
+
+C:/Users/Patrick/Desktop/cy8ckit-059/CE95277\ ADC\ and\ UART/CE95277\ ADC\ and\ UART.cydsn/Generated_Source/PSoC5/Clock_3.h : 
+
+C:/Users/Patrick/Desktop/cy8ckit-059/CE95277\ ADC\ and\ UART/CE95277\ ADC\ and\ UART.cydsn/Generated_Source/PSoC5/CyDmac.h : 
+
+C:/Users/Patrick/Desktop/cy8ckit-059/CE95277\ ADC\ and\ UART/CE95277\ ADC\ and\ UART.cydsn/Generated_Source/PSoC5/CyFlash.h : 
+
+C:/Users/Patrick/Desktop/cy8ckit-059/CE95277\ ADC\ and\ UART/CE95277\ ADC\ and\ UART.cydsn/Generated_Source/PSoC5/CyLib.h : 
+
+C:/Users/Patrick/Desktop/cy8ckit-059/CE95277\ ADC\ and\ UART/CE95277\ ADC\ and\ UART.cydsn/Generated_Source/PSoC5/CySpc.h : 
+
+C:/Users/Patrick/Desktop/cy8ckit-059/CE95277\ ADC\ and\ UART/CE95277\ ADC\ and\ UART.cydsn/Generated_Source/PSoC5/Enc_A.h : 
+
+C:/Users/Patrick/Desktop/cy8ckit-059/CE95277\ ADC\ and\ UART/CE95277\ ADC\ and\ UART.cydsn/Generated_Source/PSoC5/Enc_A_aliases.h : 
+
+C:/Users/Patrick/Desktop/cy8ckit-059/CE95277\ ADC\ and\ UART/CE95277\ ADC\ and\ UART.cydsn/Generated_Source/PSoC5/Encoder_Count.h : 
+
+C:/Users/Patrick/Desktop/cy8ckit-059/CE95277\ ADC\ and\ UART/CE95277\ ADC\ and\ UART.cydsn/Generated_Source/PSoC5/ISR_PIN.h : 
+
+C:/Users/Patrick/Desktop/cy8ckit-059/CE95277\ ADC\ and\ UART/CE95277\ ADC\ and\ UART.cydsn/Generated_Source/PSoC5/ISR_PIN_aliases.h : 
+
+C:/Users/Patrick/Desktop/cy8ckit-059/CE95277\ ADC\ and\ UART/CE95277\ ADC\ and\ UART.cydsn/Generated_Source/PSoC5/RX_2.h : 
+
+C:/Users/Patrick/Desktop/cy8ckit-059/CE95277\ ADC\ and\ UART/CE95277\ ADC\ and\ UART.cydsn/Generated_Source/PSoC5/RX_2_aliases.h : 
+
+C:/Users/Patrick/Desktop/cy8ckit-059/CE95277\ ADC\ and\ UART/CE95277\ ADC\ and\ UART.cydsn/Generated_Source/PSoC5/TX_2.h : 
+
+C:/Users/Patrick/Desktop/cy8ckit-059/CE95277\ ADC\ and\ UART/CE95277\ ADC\ and\ UART.cydsn/Generated_Source/PSoC5/TX_2_aliases.h : 
+
+C:/Users/Patrick/Desktop/cy8ckit-059/CE95277\ ADC\ and\ UART/CE95277\ ADC\ and\ UART.cydsn/Generated_Source/PSoC5/Test_Pin.h : 
+
+C:/Users/Patrick/Desktop/cy8ckit-059/CE95277\ ADC\ and\ UART/CE95277\ ADC\ and\ UART.cydsn/Generated_Source/PSoC5/Test_Pin_aliases.h : 
+
+C:/Users/Patrick/Desktop/cy8ckit-059/CE95277\ ADC\ and\ UART/CE95277\ ADC\ and\ UART.cydsn/Generated_Source/PSoC5/Time_Count.h : 
+
+C:/Users/Patrick/Desktop/cy8ckit-059/CE95277\ ADC\ and\ UART/CE95277\ ADC\ and\ UART.cydsn/Generated_Source/PSoC5/UART_1.h : 
+
+C:/Users/Patrick/Desktop/cy8ckit-059/CE95277\ ADC\ and\ UART/CE95277\ ADC\ and\ UART.cydsn/Generated_Source/PSoC5/UART_1_IntClock.h : 
+
+C:/Users/Patrick/Desktop/cy8ckit-059/CE95277\ ADC\ and\ UART/CE95277\ ADC\ and\ UART.cydsn/Generated_Source/PSoC5/Vin_180.h : 
+
+C:/Users/Patrick/Desktop/cy8ckit-059/CE95277\ ADC\ and\ UART/CE95277\ ADC\ and\ UART.cydsn/Generated_Source/PSoC5/Vin_180_aliases.h : 
+
+C:/Users/Patrick/Desktop/cy8ckit-059/CE95277\ ADC\ and\ UART/CE95277\ ADC\ and\ UART.cydsn/Generated_Source/PSoC5/Vin_90.h : 
+
+C:/Users/Patrick/Desktop/cy8ckit-059/CE95277\ ADC\ and\ UART/CE95277\ ADC\ and\ UART.cydsn/Generated_Source/PSoC5/Vin_90_aliases.h : 
+
+C:/Users/Patrick/Desktop/cy8ckit-059/CE95277\ ADC\ and\ UART/CE95277\ ADC\ and\ UART.cydsn/Generated_Source/PSoC5/Vin_Pot.h : 
+
+C:/Users/Patrick/Desktop/cy8ckit-059/CE95277\ ADC\ and\ UART/CE95277\ ADC\ and\ UART.cydsn/Generated_Source/PSoC5/Vin_Pot_aliases.h : 
+
+C:/Users/Patrick/Desktop/cy8ckit-059/CE95277\ ADC\ and\ UART/CE95277\ ADC\ and\ UART.cydsn/Generated_Source/PSoC5/cmsis_armcc.h : 
+
+C:/Users/Patrick/Desktop/cy8ckit-059/CE95277\ ADC\ and\ UART/CE95277\ ADC\ and\ UART.cydsn/Generated_Source/PSoC5/cmsis_gcc.h : 
+
+C:/Users/Patrick/Desktop/cy8ckit-059/CE95277\ ADC\ and\ UART/CE95277\ ADC\ and\ UART.cydsn/Generated_Source/PSoC5/core_cm3.h : 
+
+C:/Users/Patrick/Desktop/cy8ckit-059/CE95277\ ADC\ and\ UART/CE95277\ ADC\ and\ UART.cydsn/Generated_Source/PSoC5/core_cm3_psoc5.h : 
+
+C:/Users/Patrick/Desktop/cy8ckit-059/CE95277\ ADC\ and\ UART/CE95277\ ADC\ and\ UART.cydsn/Generated_Source/PSoC5/core_cmFunc.h : 
+
+C:/Users/Patrick/Desktop/cy8ckit-059/CE95277\ ADC\ and\ UART/CE95277\ ADC\ and\ UART.cydsn/Generated_Source/PSoC5/core_cmInstr.h : 
+
+C:/Users/Patrick/Desktop/cy8ckit-059/CE95277\ ADC\ and\ UART/CE95277\ ADC\ and\ UART.cydsn/Generated_Source/PSoC5/cyPm.h : 
+
+C:/Users/Patrick/Desktop/cy8ckit-059/CE95277\ ADC\ and\ UART/CE95277\ ADC\ and\ UART.cydsn/Generated_Source/PSoC5/cydevice.h : 
+
+C:/Users/Patrick/Desktop/cy8ckit-059/CE95277\ ADC\ and\ UART/CE95277\ ADC\ and\ UART.cydsn/Generated_Source/PSoC5/cydevice_trm.h : 
+
+C:/Users/Patrick/Desktop/cy8ckit-059/CE95277\ ADC\ and\ UART/CE95277\ ADC\ and\ UART.cydsn/Generated_Source/PSoC5/cydisabledsheets.h : 
+
+C:/Users/Patrick/Desktop/cy8ckit-059/CE95277\ ADC\ and\ UART/CE95277\ ADC\ and\ UART.cydsn/Generated_Source/PSoC5/cyfitter.h : 
+
+C:/Users/Patrick/Desktop/cy8ckit-059/CE95277\ ADC\ and\ UART/CE95277\ ADC\ and\ UART.cydsn/Generated_Source/PSoC5/cyfitter_cfg.h : 
+
+C:/Users/Patrick/Desktop/cy8ckit-059/CE95277\ ADC\ and\ UART/CE95277\ ADC\ and\ UART.cydsn/Generated_Source/PSoC5/cypins.h : 
+
+C:/Users/Patrick/Desktop/cy8ckit-059/CE95277\ ADC\ and\ UART/CE95277\ ADC\ and\ UART.cydsn/Generated_Source/PSoC5/cytypes.h : 
+
+C:/Users/Patrick/Desktop/cy8ckit-059/CE95277\ ADC\ and\ UART/CE95277\ ADC\ and\ UART.cydsn/Generated_Source/PSoC5/mcp2515_clk.h : 
+
+C:/Users/Patrick/Desktop/cy8ckit-059/CE95277\ ADC\ and\ UART/CE95277\ ADC\ and\ UART.cydsn/Generated_Source/PSoC5/mcp2515_clk_aliases.h : 
+
+C:/Users/Patrick/Desktop/cy8ckit-059/CE95277\ ADC\ and\ UART/CE95277\ ADC\ and\ UART.cydsn/Generated_Source/PSoC5/project.h : 
+
+C:/Users/Patrick/Desktop/cy8ckit-059/CE95277\ ADC\ and\ UART/CE95277\ ADC\ and\ UART.cydsn/device.h : 
+
+C:/Users/Patrick/Desktop/cy8ckit-059/CE95277\ ADC\ and\ UART/CE95277\ ADC\ and\ UART.cydsn/main.c : 
+
