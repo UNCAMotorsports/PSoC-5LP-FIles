@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cceVUmnq.s 			page 1
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccMluM8W.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cceVUmnq.s 			page 1
   29:.\Generated_Source\PSoC5/Test_Pin.c **** * \brief Writes the value to the physical port (data output register), masking
   30:.\Generated_Source\PSoC5/Test_Pin.c **** *  and shifting the bits appropriately. 
   31:.\Generated_Source\PSoC5/Test_Pin.c **** *
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cceVUmnq.s 			page 2
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccMluM8W.s 			page 2
 
 
   32:.\Generated_Source\PSoC5/Test_Pin.c **** * The data output register controls the signal applied to the physical pin in 
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cceVUmnq.s 			page 1
   51              		.cfi_endproc
   52              	.LFE0:
   53              		.size	Test_Pin_Write, .-Test_Pin_Write
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cceVUmnq.s 			page 3
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccMluM8W.s 			page 3
 
 
   54              		.section	.text.Test_Pin_SetDriveMode,"ax",%progbits
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cceVUmnq.s 			page 1
   76 0010 7047     		bx	lr
   77              	.L6:
   78 0012 00BF     		.align	2
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cceVUmnq.s 			page 4
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccMluM8W.s 			page 4
 
 
   79              	.L5:
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cceVUmnq.s 			page 1
  109              		.size	Test_Pin_Read, .-Test_Pin_Read
  110              		.section	.text.Test_Pin_ReadDataReg,"ax",%progbits
  111              		.align	2
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cceVUmnq.s 			page 5
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccMluM8W.s 			page 5
 
 
  112              		.global	Test_Pin_ReadDataReg
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cceVUmnq.s 			page 1
  138              		.file 2 ".\\Generated_Source\\PSoC5\\cytypes.h"
  139              		.section	.debug_info,"",%progbits
  140              	.Ldebug_info0:
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cceVUmnq.s 			page 6
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccMluM8W.s 			page 6
 
 
  141 0000 1D010000 		.4byte	0x11d
@@ -306,45 +306,45 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cceVUmnq.s 			page 1
  143 0006 00000000 		.4byte	.Ldebug_abbrev0
  144 000a 04       		.byte	0x4
  145 000b 01       		.uleb128 0x1
- 146 000c 9F000000 		.4byte	.LASF20
+ 146 000c 99000000 		.4byte	.LASF20
  147 0010 01       		.byte	0x1
- 148 0011 6B010000 		.4byte	.LASF21
- 149 0015 0F000000 		.4byte	.LASF22
+ 148 0011 65010000 		.4byte	.LASF21
+ 149 0015 00000000 		.4byte	.LASF22
  150 0019 00000000 		.4byte	.Ldebug_ranges0+0
  151 001d 00000000 		.4byte	0
  152 0021 00000000 		.4byte	.Ldebug_line0
  153 0025 02       		.uleb128 0x2
  154 0026 01       		.byte	0x1
  155 0027 06       		.byte	0x6
- 156 0028 FA010000 		.4byte	.LASF0
+ 156 0028 F4010000 		.4byte	.LASF0
  157 002c 02       		.uleb128 0x2
  158 002d 01       		.byte	0x1
  159 002e 08       		.byte	0x8
- 160 002f 91000000 		.4byte	.LASF1
+ 160 002f 8B000000 		.4byte	.LASF1
  161 0033 02       		.uleb128 0x2
  162 0034 02       		.byte	0x2
  163 0035 05       		.byte	0x5
- 164 0036 D3010000 		.4byte	.LASF2
+ 164 0036 CD010000 		.4byte	.LASF2
  165 003a 02       		.uleb128 0x2
  166 003b 02       		.byte	0x2
  167 003c 07       		.byte	0x7
- 168 003d 44010000 		.4byte	.LASF3
+ 168 003d 3E010000 		.4byte	.LASF3
  169 0041 02       		.uleb128 0x2
  170 0042 04       		.byte	0x4
  171 0043 05       		.byte	0x5
- 172 0044 E3010000 		.4byte	.LASF4
+ 172 0044 DD010000 		.4byte	.LASF4
  173 0048 02       		.uleb128 0x2
  174 0049 04       		.byte	0x4
  175 004a 07       		.byte	0x7
- 176 004b 32010000 		.4byte	.LASF5
+ 176 004b 2C010000 		.4byte	.LASF5
  177 004f 02       		.uleb128 0x2
  178 0050 08       		.byte	0x8
  179 0051 05       		.byte	0x5
- 180 0052 C0010000 		.4byte	.LASF6
+ 180 0052 BA010000 		.4byte	.LASF6
  181 0056 02       		.uleb128 0x2
  182 0057 08       		.byte	0x8
  183 0058 07       		.byte	0x7
- 184 0059 8F010000 		.4byte	.LASF7
+ 184 0059 89010000 		.4byte	.LASF7
  185 005d 03       		.uleb128 0x3
  186 005e 04       		.byte	0x4
  187 005f 05       		.byte	0x5
@@ -352,36 +352,36 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cceVUmnq.s 			page 1
  189 0064 02       		.uleb128 0x2
  190 0065 04       		.byte	0x4
  191 0066 07       		.byte	0x7
- 192 0067 5E010000 		.4byte	.LASF8
+ 192 0067 58010000 		.4byte	.LASF8
  193 006b 04       		.uleb128 0x4
- 194 006c DD010000 		.4byte	.LASF12
+ 194 006c D7010000 		.4byte	.LASF12
  195 0070 02       		.byte	0x2
  196 0071 9201     		.2byte	0x192
  197 0073 2C000000 		.4byte	0x2c
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cceVUmnq.s 			page 7
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccMluM8W.s 			page 7
 
 
  198 0077 02       		.uleb128 0x2
  199 0078 04       		.byte	0x4
  200 0079 04       		.byte	0x4
- 201 007a 8B000000 		.4byte	.LASF9
+ 201 007a 85000000 		.4byte	.LASF9
  202 007e 02       		.uleb128 0x2
  203 007f 08       		.byte	0x8
  204 0080 04       		.byte	0x4
- 205 0081 57010000 		.4byte	.LASF10
+ 205 0081 51010000 		.4byte	.LASF10
  206 0085 02       		.uleb128 0x2
  207 0086 01       		.byte	0x1
  208 0087 08       		.byte	0x8
- 209 0088 CE010000 		.4byte	.LASF11
+ 209 0088 C8010000 		.4byte	.LASF11
  210 008c 04       		.uleb128 0x4
- 211 008d 2D010000 		.4byte	.LASF13
+ 211 008d 27010000 		.4byte	.LASF13
  212 0091 02       		.byte	0x2
  213 0092 3C02     		.2byte	0x23c
  214 0094 98000000 		.4byte	0x98
  215 0098 05       		.uleb128 0x5
  216 0099 6B000000 		.4byte	0x6b
  217 009d 06       		.uleb128 0x6
- 218 009e 00000000 		.4byte	.LASF14
+ 218 009e 4F000000 		.4byte	.LASF14
  219 00a2 01       		.byte	0x1
  220 00a3 39       		.byte	0x39
  221 00a4 00000000 		.4byte	.LFB0
@@ -390,20 +390,20 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cceVUmnq.s 			page 1
  224 00ad 9C       		.byte	0x9c
  225 00ae D1000000 		.4byte	0xd1
  226 00b2 07       		.uleb128 0x7
- 227 00b3 64000000 		.4byte	.LASF16
+ 227 00b3 5E000000 		.4byte	.LASF16
  228 00b7 01       		.byte	0x1
  229 00b8 39       		.byte	0x39
  230 00b9 6B000000 		.4byte	0x6b
  231 00bd 00000000 		.4byte	.LLST0
  232 00c1 08       		.uleb128 0x8
- 233 00c2 6A000000 		.4byte	.LASF23
+ 233 00c2 64000000 		.4byte	.LASF23
  234 00c6 01       		.byte	0x1
  235 00c7 3B       		.byte	0x3b
  236 00c8 6B000000 		.4byte	0x6b
  237 00cc 21000000 		.4byte	.LLST1
  238 00d0 00       		.byte	0
  239 00d1 06       		.uleb128 0x6
- 240 00d2 75000000 		.4byte	.LASF15
+ 240 00d2 6F000000 		.4byte	.LASF15
  241 00d6 01       		.byte	0x1
  242 00d7 5A       		.byte	0x5a
  243 00d8 00000000 		.4byte	.LFB1
@@ -412,17 +412,17 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cceVUmnq.s 			page 1
  246 00e1 9C       		.byte	0x9c
  247 00e2 F6000000 		.4byte	0xf6
  248 00e6 07       		.uleb128 0x7
- 249 00e7 BB010000 		.4byte	.LASF17
+ 249 00e7 B5010000 		.4byte	.LASF17
  250 00eb 01       		.byte	0x1
  251 00ec 5A       		.byte	0x5a
  252 00ed 6B000000 		.4byte	0x6b
  253 00f1 39000000 		.4byte	.LLST2
  254 00f5 00       		.byte	0
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cceVUmnq.s 			page 8
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccMluM8W.s 			page 8
 
 
  255 00f6 09       		.uleb128 0x9
- 256 00f7 EC010000 		.4byte	.LASF18
+ 256 00f7 E6010000 		.4byte	.LASF18
  257 00fb 01       		.byte	0x1
  258 00fc 71       		.byte	0x71
  259 00fd 6B000000 		.4byte	0x6b
@@ -431,7 +431,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cceVUmnq.s 			page 1
  262 0109 01       		.uleb128 0x1
  263 010a 9C       		.byte	0x9c
  264 010b 09       		.uleb128 0x9
- 265 010c A6010000 		.4byte	.LASF19
+ 265 010c A0010000 		.4byte	.LASF19
  266 0110 01       		.byte	0x1
  267 0111 8D       		.byte	0x8d
  268 0112 6B000000 		.4byte	0x6b
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cceVUmnq.s 			page 1
  309 0021 0B       		.uleb128 0xb
  310 0022 0B       		.uleb128 0xb
  311 0023 3E       		.uleb128 0x3e
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cceVUmnq.s 			page 9
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccMluM8W.s 			page 9
 
 
  312 0024 0B       		.uleb128 0xb
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cceVUmnq.s 			page 1
  366 005b 0E       		.uleb128 0xe
  367 005c 3A       		.uleb128 0x3a
  368 005d 0B       		.uleb128 0xb
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cceVUmnq.s 			page 10
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccMluM8W.s 			page 10
 
 
  369 005e 3B       		.uleb128 0x3b
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cceVUmnq.s 			page 1
  423 0008 0100     		.2byte	0x1
  424 000a 50       		.byte	0x50
  425 000b 06000000 		.4byte	.LVL1
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cceVUmnq.s 			page 11
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccMluM8W.s 			page 11
 
 
  426 000f 18000000 		.4byte	.LFE0
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cceVUmnq.s 			page 1
  480 0000 00000000 		.4byte	.LFB0
  481 0004 18000000 		.4byte	.LFE0
  482 0008 00000000 		.4byte	.LFB1
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cceVUmnq.s 			page 12
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccMluM8W.s 			page 12
 
 
  483 000c 18000000 		.4byte	.LFE1
@@ -675,135 +675,135 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cceVUmnq.s 			page 1
  492      00000201 
  492      FB0E0D00 
  492      01010101 
- 493              	.LASF14:
- 494 0000 54657374 		.ascii	"Test_Pin_Write\000"
- 494      5F50696E 
- 494      5F577269 
- 494      746500
- 495              	.LASF22:
- 496 000f 433A5C55 		.ascii	"C:\\Users\\Patrick\\Desktop\\cy8ckit-059\\CE95277 A"
- 496      73657273 
- 496      5C506174 
- 496      7269636B 
- 496      5C446573 
- 497 003d 44432061 		.ascii	"DC and UART\\CE95277 ADC and UART.cydsn\000"
- 497      6E642055 
- 497      4152545C 
- 497      43453935 
- 497      32373720 
+ 493              	.LASF22:
+ 494 0000 433A5C55 		.ascii	"C:\\Users\\Patrick\\Documents\\GitHub\\PSoC 5LP FIl"
+ 494      73657273 
+ 494      5C506174 
+ 494      7269636B 
+ 494      5C446F63 
+ 495 002e 65735C43 		.ascii	"es\\C-CAN_PSoC_DevKit\\C-CAN.cydsn\000"
+ 495      2D43414E 
+ 495      5F50536F 
+ 495      435F4465 
+ 495      764B6974 
+ 496              	.LASF14:
+ 497 004f 54657374 		.ascii	"Test_Pin_Write\000"
+ 497      5F50696E 
+ 497      5F577269 
+ 497      746500
  498              	.LASF16:
- 499 0064 76616C75 		.ascii	"value\000"
+ 499 005e 76616C75 		.ascii	"value\000"
  499      6500
  500              	.LASF23:
- 501 006a 73746174 		.ascii	"staticBits\000"
+ 501 0064 73746174 		.ascii	"staticBits\000"
  501      69634269 
  501      747300
  502              	.LASF15:
- 503 0075 54657374 		.ascii	"Test_Pin_SetDriveMode\000"
+ 503 006f 54657374 		.ascii	"Test_Pin_SetDriveMode\000"
  503      5F50696E 
  503      5F536574 
  503      44726976 
  503      654D6F64 
  504              	.LASF9:
- 505 008b 666C6F61 		.ascii	"float\000"
+ 505 0085 666C6F61 		.ascii	"float\000"
  505      7400
  506              	.LASF1:
- 507 0091 756E7369 		.ascii	"unsigned char\000"
+ 507 008b 756E7369 		.ascii	"unsigned char\000"
  507      676E6564 
  507      20636861 
  507      7200
  508              	.LASF20:
- 509 009f 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
+ 509 0099 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
  509      4320342E 
  509      392E3320 
  509      32303135 
  509      30333033 
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cceVUmnq.s 			page 13
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccMluM8W.s 			page 13
 
 
- 510 00d2 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m3 -mthumb -g -O"
+ 510 00cc 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m3 -mthumb -g -O"
  510      20726576 
  510      6973696F 
  510      6E203232 
  510      31323230 
- 511 0105 33202D66 		.ascii	"3 -ffunction-sections -ffat-lto-objects\000"
+ 511 00ff 33202D66 		.ascii	"3 -ffunction-sections -ffat-lto-objects\000"
  511      66756E63 
  511      74696F6E 
  511      2D736563 
  511      74696F6E 
  512              	.LASF13:
- 513 012d 72656738 		.ascii	"reg8\000"
+ 513 0127 72656738 		.ascii	"reg8\000"
  513      00
  514              	.LASF5:
- 515 0132 6C6F6E67 		.ascii	"long unsigned int\000"
+ 515 012c 6C6F6E67 		.ascii	"long unsigned int\000"
  515      20756E73 
  515      69676E65 
  515      6420696E 
  515      7400
  516              	.LASF3:
- 517 0144 73686F72 		.ascii	"short unsigned int\000"
+ 517 013e 73686F72 		.ascii	"short unsigned int\000"
  517      7420756E 
  517      7369676E 
  517      65642069 
  517      6E7400
  518              	.LASF10:
- 519 0157 646F7562 		.ascii	"double\000"
+ 519 0151 646F7562 		.ascii	"double\000"
  519      6C6500
  520              	.LASF8:
- 521 015e 756E7369 		.ascii	"unsigned int\000"
+ 521 0158 756E7369 		.ascii	"unsigned int\000"
  521      676E6564 
  521      20696E74 
  521      00
  522              	.LASF21:
- 523 016b 2E5C4765 		.ascii	".\\Generated_Source\\PSoC5\\Test_Pin.c\000"
+ 523 0165 2E5C4765 		.ascii	".\\Generated_Source\\PSoC5\\Test_Pin.c\000"
  523      6E657261 
  523      7465645F 
  523      536F7572 
  523      63655C50 
  524              	.LASF7:
- 525 018f 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 525 0189 6C6F6E67 		.ascii	"long long unsigned int\000"
  525      206C6F6E 
  525      6720756E 
  525      7369676E 
  525      65642069 
  526              	.LASF19:
- 527 01a6 54657374 		.ascii	"Test_Pin_ReadDataReg\000"
+ 527 01a0 54657374 		.ascii	"Test_Pin_ReadDataReg\000"
  527      5F50696E 
  527      5F526561 
  527      64446174 
  527      61526567 
  528              	.LASF17:
- 529 01bb 6D6F6465 		.ascii	"mode\000"
+ 529 01b5 6D6F6465 		.ascii	"mode\000"
  529      00
  530              	.LASF6:
- 531 01c0 6C6F6E67 		.ascii	"long long int\000"
+ 531 01ba 6C6F6E67 		.ascii	"long long int\000"
  531      206C6F6E 
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cceVUmnq.s 			page 14
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccMluM8W.s 			page 14
 
 
  531      6720696E 
  531      7400
  532              	.LASF11:
- 533 01ce 63686172 		.ascii	"char\000"
+ 533 01c8 63686172 		.ascii	"char\000"
  533      00
  534              	.LASF2:
- 535 01d3 73686F72 		.ascii	"short int\000"
+ 535 01cd 73686F72 		.ascii	"short int\000"
  535      7420696E 
  535      7400
  536              	.LASF12:
- 537 01dd 75696E74 		.ascii	"uint8\000"
+ 537 01d7 75696E74 		.ascii	"uint8\000"
  537      3800
  538              	.LASF4:
- 539 01e3 6C6F6E67 		.ascii	"long int\000"
+ 539 01dd 6C6F6E67 		.ascii	"long int\000"
  539      20696E74 
  539      00
  540              	.LASF18:
- 541 01ec 54657374 		.ascii	"Test_Pin_Read\000"
+ 541 01e6 54657374 		.ascii	"Test_Pin_Read\000"
  541      5F50696E 
  541      5F526561 
  541      6400
  542              	.LASF0:
- 543 01fa 7369676E 		.ascii	"signed char\000"
+ 543 01f4 7369676E 		.ascii	"signed char\000"
  543      65642063 
  543      68617200 
  544              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.9.3 20150303 (release) [ARM/embedded-4_9-br

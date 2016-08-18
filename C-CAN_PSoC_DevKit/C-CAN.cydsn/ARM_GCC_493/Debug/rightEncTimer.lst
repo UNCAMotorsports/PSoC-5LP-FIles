@@ -1,0 +1,3188 @@
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc5CyCm4.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m3
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 2
+  11              		.eabi_attribute 34, 1
+  12              		.eabi_attribute 18, 4
+  13              		.thumb
+  14              		.file	"rightEncTimer.c"
+  15              		.text
+  16              	.Ltext0:
+  17              		.cfi_sections	.debug_frame
+  18              		.section	.text.rightEncTimer_Init,"ax",%progbits
+  19              		.align	2
+  20              		.global	rightEncTimer_Init
+  21              		.thumb
+  22              		.thumb_func
+  23              		.type	rightEncTimer_Init, %function
+  24              	rightEncTimer_Init:
+  25              	.LFB0:
+  26              		.file 1 ".\\Generated_Source\\PSoC5\\rightEncTimer.c"
+   1:.\Generated_Source\PSoC5/rightEncTimer.c **** /*******************************************************************************
+   2:.\Generated_Source\PSoC5/rightEncTimer.c **** * File Name: rightEncTimer.c  
+   3:.\Generated_Source\PSoC5/rightEncTimer.c **** * Version 3.0
+   4:.\Generated_Source\PSoC5/rightEncTimer.c **** *
+   5:.\Generated_Source\PSoC5/rightEncTimer.c **** *  Description:
+   6:.\Generated_Source\PSoC5/rightEncTimer.c **** *     The Counter component consists of a 8, 16, 24 or 32-bit counter with
+   7:.\Generated_Source\PSoC5/rightEncTimer.c **** *     a selectable period between 2 and 2^Width - 1.  
+   8:.\Generated_Source\PSoC5/rightEncTimer.c **** *
+   9:.\Generated_Source\PSoC5/rightEncTimer.c **** *   Note:
+  10:.\Generated_Source\PSoC5/rightEncTimer.c **** *     None
+  11:.\Generated_Source\PSoC5/rightEncTimer.c **** *
+  12:.\Generated_Source\PSoC5/rightEncTimer.c **** ********************************************************************************
+  13:.\Generated_Source\PSoC5/rightEncTimer.c **** * Copyright 2008-2012, Cypress Semiconductor Corporation.  All rights reserved.
+  14:.\Generated_Source\PSoC5/rightEncTimer.c **** * You may use this file only in accordance with the license, terms, conditions, 
+  15:.\Generated_Source\PSoC5/rightEncTimer.c **** * disclaimers, and limitations in the end user license agreement accompanying 
+  16:.\Generated_Source\PSoC5/rightEncTimer.c **** * the software package with which this file was provided.
+  17:.\Generated_Source\PSoC5/rightEncTimer.c **** *******************************************************************************/
+  18:.\Generated_Source\PSoC5/rightEncTimer.c **** 
+  19:.\Generated_Source\PSoC5/rightEncTimer.c **** #include "rightEncTimer.h"
+  20:.\Generated_Source\PSoC5/rightEncTimer.c **** 
+  21:.\Generated_Source\PSoC5/rightEncTimer.c **** uint8 rightEncTimer_initVar = 0u;
+  22:.\Generated_Source\PSoC5/rightEncTimer.c **** 
+  23:.\Generated_Source\PSoC5/rightEncTimer.c **** 
+  24:.\Generated_Source\PSoC5/rightEncTimer.c **** /*******************************************************************************
+  25:.\Generated_Source\PSoC5/rightEncTimer.c **** * Function Name: rightEncTimer_Init
+  26:.\Generated_Source\PSoC5/rightEncTimer.c **** ********************************************************************************
+  27:.\Generated_Source\PSoC5/rightEncTimer.c **** * Summary:
+  28:.\Generated_Source\PSoC5/rightEncTimer.c **** *     Initialize to the schematic state
+  29:.\Generated_Source\PSoC5/rightEncTimer.c **** * 
+  30:.\Generated_Source\PSoC5/rightEncTimer.c **** * Parameters:  
+  31:.\Generated_Source\PSoC5/rightEncTimer.c **** *  void  
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc5CyCm4.s 			page 2
+
+
+  32:.\Generated_Source\PSoC5/rightEncTimer.c **** *
+  33:.\Generated_Source\PSoC5/rightEncTimer.c **** * Return: 
+  34:.\Generated_Source\PSoC5/rightEncTimer.c **** *  void
+  35:.\Generated_Source\PSoC5/rightEncTimer.c **** *
+  36:.\Generated_Source\PSoC5/rightEncTimer.c **** *******************************************************************************/
+  37:.\Generated_Source\PSoC5/rightEncTimer.c **** void rightEncTimer_Init(void) 
+  38:.\Generated_Source\PSoC5/rightEncTimer.c **** {
+  27              		.loc 1 38 0
+  28              		.cfi_startproc
+  29              		@ args = 0, pretend = 0, frame = 0
+  30              		@ frame_needed = 0, uses_anonymous_args = 0
+  31 0000 38B5     		push	{r3, r4, r5, lr}
+  32              		.cfi_def_cfa_offset 16
+  33              		.cfi_offset 3, -16
+  34              		.cfi_offset 4, -12
+  35              		.cfi_offset 5, -8
+  36              		.cfi_offset 14, -4
+  39:.\Generated_Source\PSoC5/rightEncTimer.c ****         #if (!rightEncTimer_UsingFixedFunction && !rightEncTimer_ControlRegRemoved)
+  40:.\Generated_Source\PSoC5/rightEncTimer.c ****             uint8 ctrl;
+  41:.\Generated_Source\PSoC5/rightEncTimer.c ****         #endif /* (!rightEncTimer_UsingFixedFunction && !rightEncTimer_ControlRegRemoved) */
+  42:.\Generated_Source\PSoC5/rightEncTimer.c ****         
+  43:.\Generated_Source\PSoC5/rightEncTimer.c ****         #if(!rightEncTimer_UsingFixedFunction) 
+  44:.\Generated_Source\PSoC5/rightEncTimer.c ****             /* Interrupt State Backup for Critical Region*/
+  45:.\Generated_Source\PSoC5/rightEncTimer.c ****             uint8 rightEncTimer_interruptState;
+  46:.\Generated_Source\PSoC5/rightEncTimer.c ****         #endif /* (!rightEncTimer_UsingFixedFunction) */
+  47:.\Generated_Source\PSoC5/rightEncTimer.c ****         
+  48:.\Generated_Source\PSoC5/rightEncTimer.c ****         #if (rightEncTimer_UsingFixedFunction)
+  49:.\Generated_Source\PSoC5/rightEncTimer.c ****             /* Clear all bits but the enable bit (if it's already set for Timer operation */
+  50:.\Generated_Source\PSoC5/rightEncTimer.c ****             rightEncTimer_CONTROL &= rightEncTimer_CTRL_ENABLE;
+  51:.\Generated_Source\PSoC5/rightEncTimer.c ****             
+  52:.\Generated_Source\PSoC5/rightEncTimer.c ****             /* Clear the mode bits for continuous run mode */
+  53:.\Generated_Source\PSoC5/rightEncTimer.c ****             #if (CY_PSOC5A)
+  54:.\Generated_Source\PSoC5/rightEncTimer.c ****                 rightEncTimer_CONTROL2 &= ((uint8)(~rightEncTimer_CTRL_MODE_MASK));
+  55:.\Generated_Source\PSoC5/rightEncTimer.c ****             #endif /* (CY_PSOC5A) */
+  56:.\Generated_Source\PSoC5/rightEncTimer.c ****             #if (CY_PSOC3 || CY_PSOC5LP)
+  57:.\Generated_Source\PSoC5/rightEncTimer.c ****                 rightEncTimer_CONTROL3 &= ((uint8)(~rightEncTimer_CTRL_MODE_MASK));                
+  58:.\Generated_Source\PSoC5/rightEncTimer.c ****             #endif /* (CY_PSOC3 || CY_PSOC5LP) */
+  59:.\Generated_Source\PSoC5/rightEncTimer.c ****             /* Check if One Shot mode is enabled i.e. RunMode !=0*/
+  60:.\Generated_Source\PSoC5/rightEncTimer.c ****             #if (rightEncTimer_RunModeUsed != 0x0u)
+  61:.\Generated_Source\PSoC5/rightEncTimer.c ****                 /* Set 3rd bit of Control register to enable one shot mode */
+  62:.\Generated_Source\PSoC5/rightEncTimer.c ****                 rightEncTimer_CONTROL |= rightEncTimer_ONESHOT;
+  63:.\Generated_Source\PSoC5/rightEncTimer.c ****             #endif /* (rightEncTimer_RunModeUsed != 0x0u) */
+  64:.\Generated_Source\PSoC5/rightEncTimer.c ****             
+  65:.\Generated_Source\PSoC5/rightEncTimer.c ****             /* Set the IRQ to use the status register interrupts */
+  66:.\Generated_Source\PSoC5/rightEncTimer.c ****             rightEncTimer_CONTROL2 |= rightEncTimer_CTRL2_IRQ_SEL;
+  67:.\Generated_Source\PSoC5/rightEncTimer.c ****             
+  68:.\Generated_Source\PSoC5/rightEncTimer.c ****             /* Clear and Set SYNCTC and SYNCCMP bits of RT1 register */
+  69:.\Generated_Source\PSoC5/rightEncTimer.c ****             rightEncTimer_RT1 &= ((uint8)(~rightEncTimer_RT1_MASK));
+  70:.\Generated_Source\PSoC5/rightEncTimer.c ****             rightEncTimer_RT1 |= rightEncTimer_SYNC;     
+  71:.\Generated_Source\PSoC5/rightEncTimer.c ****                     
+  72:.\Generated_Source\PSoC5/rightEncTimer.c ****             /*Enable DSI Sync all all inputs of the Timer*/
+  73:.\Generated_Source\PSoC5/rightEncTimer.c ****             rightEncTimer_RT1 &= ((uint8)(~rightEncTimer_SYNCDSI_MASK));
+  74:.\Generated_Source\PSoC5/rightEncTimer.c ****             rightEncTimer_RT1 |= rightEncTimer_SYNCDSI_EN;
+  75:.\Generated_Source\PSoC5/rightEncTimer.c **** 
+  76:.\Generated_Source\PSoC5/rightEncTimer.c ****         #else
+  77:.\Generated_Source\PSoC5/rightEncTimer.c ****             #if(!rightEncTimer_ControlRegRemoved)
+  78:.\Generated_Source\PSoC5/rightEncTimer.c ****             /* Set the default compare mode defined in the parameter */
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc5CyCm4.s 			page 3
+
+
+  79:.\Generated_Source\PSoC5/rightEncTimer.c ****             ctrl = rightEncTimer_CONTROL & ((uint8)(~rightEncTimer_CTRL_CMPMODE_MASK));
+  37              		.loc 1 79 0
+  38 0002 1549     		ldr	r1, .L11
+  39              	.LBB40:
+  40              	.LBB41:
+  41              	.LBB42:
+  42              	.LBB43:
+  80:.\Generated_Source\PSoC5/rightEncTimer.c ****             rightEncTimer_CONTROL = ctrl | rightEncTimer_DEFAULT_COMPARE_MODE;
+  81:.\Generated_Source\PSoC5/rightEncTimer.c ****             
+  82:.\Generated_Source\PSoC5/rightEncTimer.c ****             /* Set the default capture mode defined in the parameter */
+  83:.\Generated_Source\PSoC5/rightEncTimer.c ****             ctrl = rightEncTimer_CONTROL & ((uint8)(~rightEncTimer_CTRL_CAPMODE_MASK));
+  84:.\Generated_Source\PSoC5/rightEncTimer.c ****             
+  85:.\Generated_Source\PSoC5/rightEncTimer.c ****             #if( 0 != rightEncTimer_CAPTURE_MODE_CONF)
+  86:.\Generated_Source\PSoC5/rightEncTimer.c ****                 rightEncTimer_CONTROL = ctrl | rightEncTimer_DEFAULT_CAPTURE_MODE;
+  87:.\Generated_Source\PSoC5/rightEncTimer.c ****             #else
+  88:.\Generated_Source\PSoC5/rightEncTimer.c ****                 rightEncTimer_CONTROL = ctrl;
+  89:.\Generated_Source\PSoC5/rightEncTimer.c ****             #endif /* 0 != rightEncTimer_CAPTURE_MODE */ 
+  90:.\Generated_Source\PSoC5/rightEncTimer.c ****             
+  91:.\Generated_Source\PSoC5/rightEncTimer.c ****             #endif /* (!rightEncTimer_ControlRegRemoved) */
+  92:.\Generated_Source\PSoC5/rightEncTimer.c ****         #endif /* (rightEncTimer_UsingFixedFunction) */
+  93:.\Generated_Source\PSoC5/rightEncTimer.c ****         
+  94:.\Generated_Source\PSoC5/rightEncTimer.c ****         /* Clear all data in the FIFO's */
+  95:.\Generated_Source\PSoC5/rightEncTimer.c ****         #if (!rightEncTimer_UsingFixedFunction)
+  96:.\Generated_Source\PSoC5/rightEncTimer.c ****             rightEncTimer_ClearFIFO();
+  97:.\Generated_Source\PSoC5/rightEncTimer.c ****         #endif /* (!rightEncTimer_UsingFixedFunction) */
+  98:.\Generated_Source\PSoC5/rightEncTimer.c ****         
+  99:.\Generated_Source\PSoC5/rightEncTimer.c ****         /* Set Initial values from Configuration */
+ 100:.\Generated_Source\PSoC5/rightEncTimer.c ****         rightEncTimer_WritePeriod(rightEncTimer_INIT_PERIOD_VALUE);
+ 101:.\Generated_Source\PSoC5/rightEncTimer.c ****         #if (!(rightEncTimer_UsingFixedFunction && (CY_PSOC5A)))
+ 102:.\Generated_Source\PSoC5/rightEncTimer.c ****             rightEncTimer_WriteCounter(rightEncTimer_INIT_COUNTER_VALUE);
+ 103:.\Generated_Source\PSoC5/rightEncTimer.c ****         #endif /* (!(rightEncTimer_UsingFixedFunction && (CY_PSOC5A))) */
+ 104:.\Generated_Source\PSoC5/rightEncTimer.c ****         rightEncTimer_SetInterruptMode(rightEncTimer_INIT_INTERRUPTS_MASK);
+ 105:.\Generated_Source\PSoC5/rightEncTimer.c ****         
+ 106:.\Generated_Source\PSoC5/rightEncTimer.c ****         #if (!rightEncTimer_UsingFixedFunction)
+ 107:.\Generated_Source\PSoC5/rightEncTimer.c ****             /* Read the status register to clear the unwanted interrupts */
+ 108:.\Generated_Source\PSoC5/rightEncTimer.c ****             (void)rightEncTimer_ReadStatusRegister();
+ 109:.\Generated_Source\PSoC5/rightEncTimer.c ****             /* Set the compare value (only available to non-fixed function implementation */
+ 110:.\Generated_Source\PSoC5/rightEncTimer.c ****             rightEncTimer_WriteCompare(rightEncTimer_INIT_COMPARE_VALUE);
+ 111:.\Generated_Source\PSoC5/rightEncTimer.c ****             /* Use the interrupt output of the status register for IRQ output */
+ 112:.\Generated_Source\PSoC5/rightEncTimer.c ****             
+ 113:.\Generated_Source\PSoC5/rightEncTimer.c ****             /* CyEnterCriticalRegion and CyExitCriticalRegion are used to mark following region cri
+ 114:.\Generated_Source\PSoC5/rightEncTimer.c ****             /* Enter Critical Region*/
+ 115:.\Generated_Source\PSoC5/rightEncTimer.c ****             rightEncTimer_interruptState = CyEnterCriticalSection();
+ 116:.\Generated_Source\PSoC5/rightEncTimer.c ****             
+ 117:.\Generated_Source\PSoC5/rightEncTimer.c ****             rightEncTimer_STATUS_AUX_CTRL |= rightEncTimer_STATUS_ACTL_INT_EN_MASK;
+ 118:.\Generated_Source\PSoC5/rightEncTimer.c ****             
+ 119:.\Generated_Source\PSoC5/rightEncTimer.c ****             /* Exit Critical Region*/
+ 120:.\Generated_Source\PSoC5/rightEncTimer.c ****             CyExitCriticalSection(rightEncTimer_interruptState);
+ 121:.\Generated_Source\PSoC5/rightEncTimer.c ****             
+ 122:.\Generated_Source\PSoC5/rightEncTimer.c ****         #endif /* (!rightEncTimer_UsingFixedFunction) */
+ 123:.\Generated_Source\PSoC5/rightEncTimer.c **** }
+ 124:.\Generated_Source\PSoC5/rightEncTimer.c **** 
+ 125:.\Generated_Source\PSoC5/rightEncTimer.c **** 
+ 126:.\Generated_Source\PSoC5/rightEncTimer.c **** /*******************************************************************************
+ 127:.\Generated_Source\PSoC5/rightEncTimer.c **** * Function Name: rightEncTimer_Enable
+ 128:.\Generated_Source\PSoC5/rightEncTimer.c **** ********************************************************************************
+ 129:.\Generated_Source\PSoC5/rightEncTimer.c **** * Summary:
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc5CyCm4.s 			page 4
+
+
+ 130:.\Generated_Source\PSoC5/rightEncTimer.c **** *     Enable the Counter
+ 131:.\Generated_Source\PSoC5/rightEncTimer.c **** * 
+ 132:.\Generated_Source\PSoC5/rightEncTimer.c **** * Parameters:  
+ 133:.\Generated_Source\PSoC5/rightEncTimer.c **** *  void  
+ 134:.\Generated_Source\PSoC5/rightEncTimer.c **** *
+ 135:.\Generated_Source\PSoC5/rightEncTimer.c **** * Return: 
+ 136:.\Generated_Source\PSoC5/rightEncTimer.c **** *  void
+ 137:.\Generated_Source\PSoC5/rightEncTimer.c **** *
+ 138:.\Generated_Source\PSoC5/rightEncTimer.c **** * Side Effects: 
+ 139:.\Generated_Source\PSoC5/rightEncTimer.c **** *   If the Enable mode is set to Hardware only then this function has no effect 
+ 140:.\Generated_Source\PSoC5/rightEncTimer.c **** *   on the operation of the counter.
+ 141:.\Generated_Source\PSoC5/rightEncTimer.c **** *
+ 142:.\Generated_Source\PSoC5/rightEncTimer.c **** *******************************************************************************/
+ 143:.\Generated_Source\PSoC5/rightEncTimer.c **** void rightEncTimer_Enable(void) 
+ 144:.\Generated_Source\PSoC5/rightEncTimer.c **** {
+ 145:.\Generated_Source\PSoC5/rightEncTimer.c ****     /* Globally Enable the Fixed Function Block chosen */
+ 146:.\Generated_Source\PSoC5/rightEncTimer.c ****     #if (rightEncTimer_UsingFixedFunction)
+ 147:.\Generated_Source\PSoC5/rightEncTimer.c ****         rightEncTimer_GLOBAL_ENABLE |= rightEncTimer_BLOCK_EN_MASK;
+ 148:.\Generated_Source\PSoC5/rightEncTimer.c ****         rightEncTimer_GLOBAL_STBY_ENABLE |= rightEncTimer_BLOCK_STBY_EN_MASK;
+ 149:.\Generated_Source\PSoC5/rightEncTimer.c ****     #endif /* (rightEncTimer_UsingFixedFunction) */  
+ 150:.\Generated_Source\PSoC5/rightEncTimer.c ****         
+ 151:.\Generated_Source\PSoC5/rightEncTimer.c ****     /* Enable the counter from the control register  */
+ 152:.\Generated_Source\PSoC5/rightEncTimer.c ****     /* If Fixed Function then make sure Mode is set correctly */
+ 153:.\Generated_Source\PSoC5/rightEncTimer.c ****     /* else make sure reset is clear */
+ 154:.\Generated_Source\PSoC5/rightEncTimer.c ****     #if(!rightEncTimer_ControlRegRemoved || rightEncTimer_UsingFixedFunction)
+ 155:.\Generated_Source\PSoC5/rightEncTimer.c ****         rightEncTimer_CONTROL |= rightEncTimer_CTRL_ENABLE;                
+ 156:.\Generated_Source\PSoC5/rightEncTimer.c ****     #endif /* (!rightEncTimer_ControlRegRemoved || rightEncTimer_UsingFixedFunction) */
+ 157:.\Generated_Source\PSoC5/rightEncTimer.c ****     
+ 158:.\Generated_Source\PSoC5/rightEncTimer.c **** }
+ 159:.\Generated_Source\PSoC5/rightEncTimer.c **** 
+ 160:.\Generated_Source\PSoC5/rightEncTimer.c **** 
+ 161:.\Generated_Source\PSoC5/rightEncTimer.c **** /*******************************************************************************
+ 162:.\Generated_Source\PSoC5/rightEncTimer.c **** * Function Name: rightEncTimer_Start
+ 163:.\Generated_Source\PSoC5/rightEncTimer.c **** ********************************************************************************
+ 164:.\Generated_Source\PSoC5/rightEncTimer.c **** * Summary:
+ 165:.\Generated_Source\PSoC5/rightEncTimer.c **** *  Enables the counter for operation 
+ 166:.\Generated_Source\PSoC5/rightEncTimer.c **** *
+ 167:.\Generated_Source\PSoC5/rightEncTimer.c **** * Parameters:  
+ 168:.\Generated_Source\PSoC5/rightEncTimer.c **** *  void  
+ 169:.\Generated_Source\PSoC5/rightEncTimer.c **** *
+ 170:.\Generated_Source\PSoC5/rightEncTimer.c **** * Return: 
+ 171:.\Generated_Source\PSoC5/rightEncTimer.c **** *  void
+ 172:.\Generated_Source\PSoC5/rightEncTimer.c **** *
+ 173:.\Generated_Source\PSoC5/rightEncTimer.c **** * Global variables:
+ 174:.\Generated_Source\PSoC5/rightEncTimer.c **** *  rightEncTimer_initVar: Is modified when this function is called for the  
+ 175:.\Generated_Source\PSoC5/rightEncTimer.c **** *   first time. Is used to ensure that initialization happens only once.
+ 176:.\Generated_Source\PSoC5/rightEncTimer.c **** *
+ 177:.\Generated_Source\PSoC5/rightEncTimer.c **** *******************************************************************************/
+ 178:.\Generated_Source\PSoC5/rightEncTimer.c **** void rightEncTimer_Start(void) 
+ 179:.\Generated_Source\PSoC5/rightEncTimer.c **** {
+ 180:.\Generated_Source\PSoC5/rightEncTimer.c ****     if(rightEncTimer_initVar == 0u)
+ 181:.\Generated_Source\PSoC5/rightEncTimer.c ****     {
+ 182:.\Generated_Source\PSoC5/rightEncTimer.c ****         rightEncTimer_Init();
+ 183:.\Generated_Source\PSoC5/rightEncTimer.c ****         
+ 184:.\Generated_Source\PSoC5/rightEncTimer.c ****         rightEncTimer_initVar = 1u; /* Clear this bit for Initialization */        
+ 185:.\Generated_Source\PSoC5/rightEncTimer.c ****     }
+ 186:.\Generated_Source\PSoC5/rightEncTimer.c ****     
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc5CyCm4.s 			page 5
+
+
+ 187:.\Generated_Source\PSoC5/rightEncTimer.c ****     /* Enable the Counter */
+ 188:.\Generated_Source\PSoC5/rightEncTimer.c ****     rightEncTimer_Enable();        
+ 189:.\Generated_Source\PSoC5/rightEncTimer.c **** }
+ 190:.\Generated_Source\PSoC5/rightEncTimer.c **** 
+ 191:.\Generated_Source\PSoC5/rightEncTimer.c **** 
+ 192:.\Generated_Source\PSoC5/rightEncTimer.c **** /*******************************************************************************
+ 193:.\Generated_Source\PSoC5/rightEncTimer.c **** * Function Name: rightEncTimer_Stop
+ 194:.\Generated_Source\PSoC5/rightEncTimer.c **** ********************************************************************************
+ 195:.\Generated_Source\PSoC5/rightEncTimer.c **** * Summary:
+ 196:.\Generated_Source\PSoC5/rightEncTimer.c **** * Halts the counter, but does not change any modes or disable interrupts.
+ 197:.\Generated_Source\PSoC5/rightEncTimer.c **** *
+ 198:.\Generated_Source\PSoC5/rightEncTimer.c **** * Parameters:  
+ 199:.\Generated_Source\PSoC5/rightEncTimer.c **** *  void  
+ 200:.\Generated_Source\PSoC5/rightEncTimer.c **** *
+ 201:.\Generated_Source\PSoC5/rightEncTimer.c **** * Return: 
+ 202:.\Generated_Source\PSoC5/rightEncTimer.c **** *  void
+ 203:.\Generated_Source\PSoC5/rightEncTimer.c **** *
+ 204:.\Generated_Source\PSoC5/rightEncTimer.c **** * Side Effects: If the Enable mode is set to Hardware only then this function
+ 205:.\Generated_Source\PSoC5/rightEncTimer.c **** *               has no effect on the operation of the counter.
+ 206:.\Generated_Source\PSoC5/rightEncTimer.c **** *
+ 207:.\Generated_Source\PSoC5/rightEncTimer.c **** *******************************************************************************/
+ 208:.\Generated_Source\PSoC5/rightEncTimer.c **** void rightEncTimer_Stop(void) 
+ 209:.\Generated_Source\PSoC5/rightEncTimer.c **** {
+ 210:.\Generated_Source\PSoC5/rightEncTimer.c ****     /* Disable Counter */
+ 211:.\Generated_Source\PSoC5/rightEncTimer.c ****     #if(!rightEncTimer_ControlRegRemoved || rightEncTimer_UsingFixedFunction)
+ 212:.\Generated_Source\PSoC5/rightEncTimer.c ****         rightEncTimer_CONTROL &= ((uint8)(~rightEncTimer_CTRL_ENABLE));        
+ 213:.\Generated_Source\PSoC5/rightEncTimer.c ****     #endif /* (!rightEncTimer_ControlRegRemoved || rightEncTimer_UsingFixedFunction) */
+ 214:.\Generated_Source\PSoC5/rightEncTimer.c ****     
+ 215:.\Generated_Source\PSoC5/rightEncTimer.c ****     /* Globally disable the Fixed Function Block chosen */
+ 216:.\Generated_Source\PSoC5/rightEncTimer.c ****     #if (rightEncTimer_UsingFixedFunction)
+ 217:.\Generated_Source\PSoC5/rightEncTimer.c ****         rightEncTimer_GLOBAL_ENABLE &= ((uint8)(~rightEncTimer_BLOCK_EN_MASK));
+ 218:.\Generated_Source\PSoC5/rightEncTimer.c ****         rightEncTimer_GLOBAL_STBY_ENABLE &= ((uint8)(~rightEncTimer_BLOCK_STBY_EN_MASK));
+ 219:.\Generated_Source\PSoC5/rightEncTimer.c ****     #endif /* (rightEncTimer_UsingFixedFunction) */
+ 220:.\Generated_Source\PSoC5/rightEncTimer.c **** }
+ 221:.\Generated_Source\PSoC5/rightEncTimer.c **** 
+ 222:.\Generated_Source\PSoC5/rightEncTimer.c **** 
+ 223:.\Generated_Source\PSoC5/rightEncTimer.c **** /*******************************************************************************
+ 224:.\Generated_Source\PSoC5/rightEncTimer.c **** * Function Name: rightEncTimer_SetInterruptMode
+ 225:.\Generated_Source\PSoC5/rightEncTimer.c **** ********************************************************************************
+ 226:.\Generated_Source\PSoC5/rightEncTimer.c **** * Summary:
+ 227:.\Generated_Source\PSoC5/rightEncTimer.c **** * Configures which interrupt sources are enabled to generate the final interrupt
+ 228:.\Generated_Source\PSoC5/rightEncTimer.c **** *
+ 229:.\Generated_Source\PSoC5/rightEncTimer.c **** * Parameters:  
+ 230:.\Generated_Source\PSoC5/rightEncTimer.c **** *  InterruptsMask: This parameter is an or'd collection of the status bits
+ 231:.\Generated_Source\PSoC5/rightEncTimer.c **** *                   which will be allowed to generate the counters interrupt.   
+ 232:.\Generated_Source\PSoC5/rightEncTimer.c **** *
+ 233:.\Generated_Source\PSoC5/rightEncTimer.c **** * Return: 
+ 234:.\Generated_Source\PSoC5/rightEncTimer.c **** *  void
+ 235:.\Generated_Source\PSoC5/rightEncTimer.c **** *
+ 236:.\Generated_Source\PSoC5/rightEncTimer.c **** *******************************************************************************/
+ 237:.\Generated_Source\PSoC5/rightEncTimer.c **** void rightEncTimer_SetInterruptMode(uint8 interruptsMask) 
+ 238:.\Generated_Source\PSoC5/rightEncTimer.c **** {
+ 239:.\Generated_Source\PSoC5/rightEncTimer.c ****     rightEncTimer_STATUS_MASK = interruptsMask;
+ 240:.\Generated_Source\PSoC5/rightEncTimer.c **** }
+ 241:.\Generated_Source\PSoC5/rightEncTimer.c **** 
+ 242:.\Generated_Source\PSoC5/rightEncTimer.c **** 
+ 243:.\Generated_Source\PSoC5/rightEncTimer.c **** /*******************************************************************************
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc5CyCm4.s 			page 6
+
+
+ 244:.\Generated_Source\PSoC5/rightEncTimer.c **** * Function Name: rightEncTimer_ReadStatusRegister
+ 245:.\Generated_Source\PSoC5/rightEncTimer.c **** ********************************************************************************
+ 246:.\Generated_Source\PSoC5/rightEncTimer.c **** * Summary:
+ 247:.\Generated_Source\PSoC5/rightEncTimer.c **** *   Reads the status register and returns it's state. This function should use
+ 248:.\Generated_Source\PSoC5/rightEncTimer.c **** *       defined types for the bit-field information as the bits in this
+ 249:.\Generated_Source\PSoC5/rightEncTimer.c **** *       register may be permuteable.
+ 250:.\Generated_Source\PSoC5/rightEncTimer.c **** *
+ 251:.\Generated_Source\PSoC5/rightEncTimer.c **** * Parameters:  
+ 252:.\Generated_Source\PSoC5/rightEncTimer.c **** *  void
+ 253:.\Generated_Source\PSoC5/rightEncTimer.c **** *
+ 254:.\Generated_Source\PSoC5/rightEncTimer.c **** * Return: 
+ 255:.\Generated_Source\PSoC5/rightEncTimer.c **** *  (uint8) The contents of the status register
+ 256:.\Generated_Source\PSoC5/rightEncTimer.c **** *
+ 257:.\Generated_Source\PSoC5/rightEncTimer.c **** * Side Effects:
+ 258:.\Generated_Source\PSoC5/rightEncTimer.c **** *   Status register bits may be clear on read. 
+ 259:.\Generated_Source\PSoC5/rightEncTimer.c **** *
+ 260:.\Generated_Source\PSoC5/rightEncTimer.c **** *******************************************************************************/
+ 261:.\Generated_Source\PSoC5/rightEncTimer.c **** uint8   rightEncTimer_ReadStatusRegister(void) 
+ 262:.\Generated_Source\PSoC5/rightEncTimer.c **** {
+ 263:.\Generated_Source\PSoC5/rightEncTimer.c ****     return rightEncTimer_STATUS;
+  43              		.loc 1 263 0
+  44 0004 154A     		ldr	r2, .L11+4
+  45              	.LBE43:
+  46              	.LBE42:
+  47              	.LBE41:
+  48              	.LBE40:
+  79:.\Generated_Source\PSoC5/rightEncTimer.c ****             rightEncTimer_CONTROL = ctrl | rightEncTimer_DEFAULT_COMPARE_MODE;
+  49              		.loc 1 79 0
+  50 0006 0B78     		ldrb	r3, [r1]	@ zero_extendqisi2
+  51              	.LVL0:
+  52 0008 03F0F803 		and	r3, r3, #248
+  53              	.LVL1:
+  80:.\Generated_Source\PSoC5/rightEncTimer.c ****             rightEncTimer_CONTROL = ctrl | rightEncTimer_DEFAULT_COMPARE_MODE;
+  54              		.loc 1 80 0
+  55 000c 43F00103 		orr	r3, r3, #1
+  56 0010 0B70     		strb	r3, [r1]
+  83:.\Generated_Source\PSoC5/rightEncTimer.c ****             
+  57              		.loc 1 83 0
+  58 0012 0B78     		ldrb	r3, [r1]	@ zero_extendqisi2
+  59 0014 03F0FC03 		and	r3, r3, #252
+  60              	.LVL2:
+  88:.\Generated_Source\PSoC5/rightEncTimer.c ****             #endif /* 0 != rightEncTimer_CAPTURE_MODE */ 
+  61              		.loc 1 88 0
+  62 0018 0B70     		strb	r3, [r1]
+  63              	.LBB51:
+  64              	.LBB50:
+  65              	.LBB46:
+  66              	.LBB44:
+  67              		.loc 1 263 0
+  68 001a 1378     		ldrb	r3, [r2]	@ zero_extendqisi2
+  69              	.LVL3:
+  70              	.LBE44:
+  71              	.LBE46:
+ 264:.\Generated_Source\PSoC5/rightEncTimer.c **** }
+ 265:.\Generated_Source\PSoC5/rightEncTimer.c **** 
+ 266:.\Generated_Source\PSoC5/rightEncTimer.c **** 
+ 267:.\Generated_Source\PSoC5/rightEncTimer.c **** #if(!rightEncTimer_ControlRegRemoved)
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc5CyCm4.s 			page 7
+
+
+ 268:.\Generated_Source\PSoC5/rightEncTimer.c **** /*******************************************************************************
+ 269:.\Generated_Source\PSoC5/rightEncTimer.c **** * Function Name: rightEncTimer_ReadControlRegister
+ 270:.\Generated_Source\PSoC5/rightEncTimer.c **** ********************************************************************************
+ 271:.\Generated_Source\PSoC5/rightEncTimer.c **** * Summary:
+ 272:.\Generated_Source\PSoC5/rightEncTimer.c **** *   Reads the control register and returns it's state. This function should use
+ 273:.\Generated_Source\PSoC5/rightEncTimer.c **** *       defined types for the bit-field information as the bits in this
+ 274:.\Generated_Source\PSoC5/rightEncTimer.c **** *       register may be permuteable.
+ 275:.\Generated_Source\PSoC5/rightEncTimer.c **** *
+ 276:.\Generated_Source\PSoC5/rightEncTimer.c **** * Parameters:  
+ 277:.\Generated_Source\PSoC5/rightEncTimer.c **** *  void
+ 278:.\Generated_Source\PSoC5/rightEncTimer.c **** *
+ 279:.\Generated_Source\PSoC5/rightEncTimer.c **** * Return: 
+ 280:.\Generated_Source\PSoC5/rightEncTimer.c **** *  (uint8) The contents of the control register
+ 281:.\Generated_Source\PSoC5/rightEncTimer.c **** *
+ 282:.\Generated_Source\PSoC5/rightEncTimer.c **** *******************************************************************************/
+ 283:.\Generated_Source\PSoC5/rightEncTimer.c **** uint8   rightEncTimer_ReadControlRegister(void) 
+ 284:.\Generated_Source\PSoC5/rightEncTimer.c **** {
+ 285:.\Generated_Source\PSoC5/rightEncTimer.c ****     return rightEncTimer_CONTROL;
+ 286:.\Generated_Source\PSoC5/rightEncTimer.c **** }
+ 287:.\Generated_Source\PSoC5/rightEncTimer.c **** 
+ 288:.\Generated_Source\PSoC5/rightEncTimer.c **** 
+ 289:.\Generated_Source\PSoC5/rightEncTimer.c **** /*******************************************************************************
+ 290:.\Generated_Source\PSoC5/rightEncTimer.c **** * Function Name: rightEncTimer_WriteControlRegister
+ 291:.\Generated_Source\PSoC5/rightEncTimer.c **** ********************************************************************************
+ 292:.\Generated_Source\PSoC5/rightEncTimer.c **** * Summary:
+ 293:.\Generated_Source\PSoC5/rightEncTimer.c **** *   Sets the bit-field of the control register.  This function should use
+ 294:.\Generated_Source\PSoC5/rightEncTimer.c **** *       defined types for the bit-field information as the bits in this
+ 295:.\Generated_Source\PSoC5/rightEncTimer.c **** *       register may be permuteable.
+ 296:.\Generated_Source\PSoC5/rightEncTimer.c **** *
+ 297:.\Generated_Source\PSoC5/rightEncTimer.c **** * Parameters:  
+ 298:.\Generated_Source\PSoC5/rightEncTimer.c **** *  void
+ 299:.\Generated_Source\PSoC5/rightEncTimer.c **** *
+ 300:.\Generated_Source\PSoC5/rightEncTimer.c **** * Return: 
+ 301:.\Generated_Source\PSoC5/rightEncTimer.c **** *  (uint8) The contents of the control register
+ 302:.\Generated_Source\PSoC5/rightEncTimer.c **** *
+ 303:.\Generated_Source\PSoC5/rightEncTimer.c **** *******************************************************************************/
+ 304:.\Generated_Source\PSoC5/rightEncTimer.c **** void    rightEncTimer_WriteControlRegister(uint8 control) 
+ 305:.\Generated_Source\PSoC5/rightEncTimer.c **** {
+ 306:.\Generated_Source\PSoC5/rightEncTimer.c ****     rightEncTimer_CONTROL = control;
+ 307:.\Generated_Source\PSoC5/rightEncTimer.c **** }
+ 308:.\Generated_Source\PSoC5/rightEncTimer.c **** 
+ 309:.\Generated_Source\PSoC5/rightEncTimer.c **** #endif  /* (!rightEncTimer_ControlRegRemoved) */
+ 310:.\Generated_Source\PSoC5/rightEncTimer.c **** 
+ 311:.\Generated_Source\PSoC5/rightEncTimer.c **** 
+ 312:.\Generated_Source\PSoC5/rightEncTimer.c **** #if (!(rightEncTimer_UsingFixedFunction && (CY_PSOC5A)))
+ 313:.\Generated_Source\PSoC5/rightEncTimer.c **** /*******************************************************************************
+ 314:.\Generated_Source\PSoC5/rightEncTimer.c **** * Function Name: rightEncTimer_WriteCounter
+ 315:.\Generated_Source\PSoC5/rightEncTimer.c **** ********************************************************************************
+ 316:.\Generated_Source\PSoC5/rightEncTimer.c **** * Summary:
+ 317:.\Generated_Source\PSoC5/rightEncTimer.c **** *   This funtion is used to set the counter to a specific value
+ 318:.\Generated_Source\PSoC5/rightEncTimer.c **** *
+ 319:.\Generated_Source\PSoC5/rightEncTimer.c **** * Parameters:  
+ 320:.\Generated_Source\PSoC5/rightEncTimer.c **** *  counter:  New counter value. 
+ 321:.\Generated_Source\PSoC5/rightEncTimer.c **** *
+ 322:.\Generated_Source\PSoC5/rightEncTimer.c **** * Return: 
+ 323:.\Generated_Source\PSoC5/rightEncTimer.c **** *  void 
+ 324:.\Generated_Source\PSoC5/rightEncTimer.c **** *
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc5CyCm4.s 			page 8
+
+
+ 325:.\Generated_Source\PSoC5/rightEncTimer.c **** *******************************************************************************/
+ 326:.\Generated_Source\PSoC5/rightEncTimer.c **** void rightEncTimer_WriteCounter(uint16 counter) \
+ 327:.\Generated_Source\PSoC5/rightEncTimer.c ****                                    
+ 328:.\Generated_Source\PSoC5/rightEncTimer.c **** {
+ 329:.\Generated_Source\PSoC5/rightEncTimer.c ****     #if(rightEncTimer_UsingFixedFunction)
+ 330:.\Generated_Source\PSoC5/rightEncTimer.c ****         /* assert if block is already enabled */
+ 331:.\Generated_Source\PSoC5/rightEncTimer.c ****         CYASSERT (0u == (rightEncTimer_GLOBAL_ENABLE & rightEncTimer_BLOCK_EN_MASK));
+ 332:.\Generated_Source\PSoC5/rightEncTimer.c ****         /* If block is disabled, enable it and then write the counter */
+ 333:.\Generated_Source\PSoC5/rightEncTimer.c ****         rightEncTimer_GLOBAL_ENABLE |= rightEncTimer_BLOCK_EN_MASK;
+ 334:.\Generated_Source\PSoC5/rightEncTimer.c ****         CY_SET_REG16(rightEncTimer_COUNTER_LSB_PTR, (uint16)counter);
+ 335:.\Generated_Source\PSoC5/rightEncTimer.c ****         rightEncTimer_GLOBAL_ENABLE &= ((uint8)(~rightEncTimer_BLOCK_EN_MASK));
+ 336:.\Generated_Source\PSoC5/rightEncTimer.c ****     #else
+ 337:.\Generated_Source\PSoC5/rightEncTimer.c ****         CY_SET_REG16(rightEncTimer_COUNTER_LSB_PTR, counter);
+ 338:.\Generated_Source\PSoC5/rightEncTimer.c ****     #endif /* (rightEncTimer_UsingFixedFunction) */
+ 339:.\Generated_Source\PSoC5/rightEncTimer.c **** }
+ 340:.\Generated_Source\PSoC5/rightEncTimer.c **** #endif /* (!(rightEncTimer_UsingFixedFunction && (CY_PSOC5A))) */
+ 341:.\Generated_Source\PSoC5/rightEncTimer.c **** 
+ 342:.\Generated_Source\PSoC5/rightEncTimer.c **** 
+ 343:.\Generated_Source\PSoC5/rightEncTimer.c **** /*******************************************************************************
+ 344:.\Generated_Source\PSoC5/rightEncTimer.c **** * Function Name: rightEncTimer_ReadCounter
+ 345:.\Generated_Source\PSoC5/rightEncTimer.c **** ********************************************************************************
+ 346:.\Generated_Source\PSoC5/rightEncTimer.c **** * Summary:
+ 347:.\Generated_Source\PSoC5/rightEncTimer.c **** * Returns the current value of the counter.  It doesn't matter
+ 348:.\Generated_Source\PSoC5/rightEncTimer.c **** * if the counter is enabled or running.
+ 349:.\Generated_Source\PSoC5/rightEncTimer.c **** *
+ 350:.\Generated_Source\PSoC5/rightEncTimer.c **** * Parameters:  
+ 351:.\Generated_Source\PSoC5/rightEncTimer.c **** *  void:  
+ 352:.\Generated_Source\PSoC5/rightEncTimer.c **** *
+ 353:.\Generated_Source\PSoC5/rightEncTimer.c **** * Return: 
+ 354:.\Generated_Source\PSoC5/rightEncTimer.c **** *  (uint16) The present value of the counter.
+ 355:.\Generated_Source\PSoC5/rightEncTimer.c **** *
+ 356:.\Generated_Source\PSoC5/rightEncTimer.c **** *******************************************************************************/
+ 357:.\Generated_Source\PSoC5/rightEncTimer.c **** uint16 rightEncTimer_ReadCounter(void) 
+ 358:.\Generated_Source\PSoC5/rightEncTimer.c **** {
+ 359:.\Generated_Source\PSoC5/rightEncTimer.c ****     /* Force capture by reading Accumulator */
+ 360:.\Generated_Source\PSoC5/rightEncTimer.c ****     /* Must first do a software capture to be able to read the counter */
+ 361:.\Generated_Source\PSoC5/rightEncTimer.c ****     /* It is up to the user code to make sure there isn't already captured data in the FIFO */
+ 362:.\Generated_Source\PSoC5/rightEncTimer.c ****     #if(rightEncTimer_UsingFixedFunction)
+ 363:.\Generated_Source\PSoC5/rightEncTimer.c **** 		(void)CY_GET_REG16(rightEncTimer_COUNTER_LSB_PTR);
+ 364:.\Generated_Source\PSoC5/rightEncTimer.c **** 	#else
+ 365:.\Generated_Source\PSoC5/rightEncTimer.c **** 		(void)CY_GET_REG8(rightEncTimer_COUNTER_LSB_PTR_8BIT);
+ 366:.\Generated_Source\PSoC5/rightEncTimer.c **** 	#endif/* (rightEncTimer_UsingFixedFunction) */
+ 367:.\Generated_Source\PSoC5/rightEncTimer.c ****     
+ 368:.\Generated_Source\PSoC5/rightEncTimer.c ****     /* Read the data from the FIFO (or capture register for Fixed Function)*/
+ 369:.\Generated_Source\PSoC5/rightEncTimer.c ****     #if(rightEncTimer_UsingFixedFunction)
+ 370:.\Generated_Source\PSoC5/rightEncTimer.c ****         return ((uint16)CY_GET_REG16(rightEncTimer_STATICCOUNT_LSB_PTR));
+ 371:.\Generated_Source\PSoC5/rightEncTimer.c ****     #else
+ 372:.\Generated_Source\PSoC5/rightEncTimer.c ****         return (CY_GET_REG16(rightEncTimer_STATICCOUNT_LSB_PTR));
+ 373:.\Generated_Source\PSoC5/rightEncTimer.c ****     #endif /* (rightEncTimer_UsingFixedFunction) */
+ 374:.\Generated_Source\PSoC5/rightEncTimer.c **** }
+ 375:.\Generated_Source\PSoC5/rightEncTimer.c **** 
+ 376:.\Generated_Source\PSoC5/rightEncTimer.c **** 
+ 377:.\Generated_Source\PSoC5/rightEncTimer.c **** /*******************************************************************************
+ 378:.\Generated_Source\PSoC5/rightEncTimer.c **** * Function Name: rightEncTimer_ReadCapture
+ 379:.\Generated_Source\PSoC5/rightEncTimer.c **** ********************************************************************************
+ 380:.\Generated_Source\PSoC5/rightEncTimer.c **** * Summary:
+ 381:.\Generated_Source\PSoC5/rightEncTimer.c **** *   This function returns the last value captured.
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc5CyCm4.s 			page 9
+
+
+ 382:.\Generated_Source\PSoC5/rightEncTimer.c **** *
+ 383:.\Generated_Source\PSoC5/rightEncTimer.c **** * Parameters:  
+ 384:.\Generated_Source\PSoC5/rightEncTimer.c **** *  void
+ 385:.\Generated_Source\PSoC5/rightEncTimer.c **** *
+ 386:.\Generated_Source\PSoC5/rightEncTimer.c **** * Return: 
+ 387:.\Generated_Source\PSoC5/rightEncTimer.c **** *  (uint16) Present Capture value.
+ 388:.\Generated_Source\PSoC5/rightEncTimer.c **** *
+ 389:.\Generated_Source\PSoC5/rightEncTimer.c **** *******************************************************************************/
+ 390:.\Generated_Source\PSoC5/rightEncTimer.c **** uint16 rightEncTimer_ReadCapture(void) 
+ 391:.\Generated_Source\PSoC5/rightEncTimer.c **** {
+ 392:.\Generated_Source\PSoC5/rightEncTimer.c ****     #if(rightEncTimer_UsingFixedFunction)
+ 393:.\Generated_Source\PSoC5/rightEncTimer.c ****         return ((uint16)CY_GET_REG16(rightEncTimer_STATICCOUNT_LSB_PTR));
+ 394:.\Generated_Source\PSoC5/rightEncTimer.c ****     #else
+ 395:.\Generated_Source\PSoC5/rightEncTimer.c ****         return (CY_GET_REG16(rightEncTimer_STATICCOUNT_LSB_PTR));
+ 396:.\Generated_Source\PSoC5/rightEncTimer.c ****     #endif /* (rightEncTimer_UsingFixedFunction) */
+ 397:.\Generated_Source\PSoC5/rightEncTimer.c **** }
+ 398:.\Generated_Source\PSoC5/rightEncTimer.c **** 
+ 399:.\Generated_Source\PSoC5/rightEncTimer.c **** 
+ 400:.\Generated_Source\PSoC5/rightEncTimer.c **** /*******************************************************************************
+ 401:.\Generated_Source\PSoC5/rightEncTimer.c **** * Function Name: rightEncTimer_WritePeriod
+ 402:.\Generated_Source\PSoC5/rightEncTimer.c **** ********************************************************************************
+ 403:.\Generated_Source\PSoC5/rightEncTimer.c **** * Summary:
+ 404:.\Generated_Source\PSoC5/rightEncTimer.c **** * Changes the period of the counter.  The new period 
+ 405:.\Generated_Source\PSoC5/rightEncTimer.c **** * will be loaded the next time terminal count is detected.
+ 406:.\Generated_Source\PSoC5/rightEncTimer.c **** *
+ 407:.\Generated_Source\PSoC5/rightEncTimer.c **** * Parameters:  
+ 408:.\Generated_Source\PSoC5/rightEncTimer.c **** *  period: (uint16) A value of 0 will result in
+ 409:.\Generated_Source\PSoC5/rightEncTimer.c **** *         the counter remaining at zero.  
+ 410:.\Generated_Source\PSoC5/rightEncTimer.c **** *
+ 411:.\Generated_Source\PSoC5/rightEncTimer.c **** * Return: 
+ 412:.\Generated_Source\PSoC5/rightEncTimer.c **** *  void
+ 413:.\Generated_Source\PSoC5/rightEncTimer.c **** *
+ 414:.\Generated_Source\PSoC5/rightEncTimer.c **** *******************************************************************************/
+ 415:.\Generated_Source\PSoC5/rightEncTimer.c **** void rightEncTimer_WritePeriod(uint16 period) 
+ 416:.\Generated_Source\PSoC5/rightEncTimer.c **** {
+ 417:.\Generated_Source\PSoC5/rightEncTimer.c ****     #if(rightEncTimer_UsingFixedFunction)
+ 418:.\Generated_Source\PSoC5/rightEncTimer.c ****         CY_SET_REG16(rightEncTimer_PERIOD_LSB_PTR,(uint16)period);
+ 419:.\Generated_Source\PSoC5/rightEncTimer.c ****     #else
+ 420:.\Generated_Source\PSoC5/rightEncTimer.c ****         CY_SET_REG16(rightEncTimer_PERIOD_LSB_PTR, period);
+ 421:.\Generated_Source\PSoC5/rightEncTimer.c ****     #endif /* (rightEncTimer_UsingFixedFunction) */
+ 422:.\Generated_Source\PSoC5/rightEncTimer.c **** }
+ 423:.\Generated_Source\PSoC5/rightEncTimer.c **** 
+ 424:.\Generated_Source\PSoC5/rightEncTimer.c **** 
+ 425:.\Generated_Source\PSoC5/rightEncTimer.c **** /*******************************************************************************
+ 426:.\Generated_Source\PSoC5/rightEncTimer.c **** * Function Name: rightEncTimer_ReadPeriod
+ 427:.\Generated_Source\PSoC5/rightEncTimer.c **** ********************************************************************************
+ 428:.\Generated_Source\PSoC5/rightEncTimer.c **** * Summary:
+ 429:.\Generated_Source\PSoC5/rightEncTimer.c **** * Reads the current period value without affecting counter operation.
+ 430:.\Generated_Source\PSoC5/rightEncTimer.c **** *
+ 431:.\Generated_Source\PSoC5/rightEncTimer.c **** * Parameters:  
+ 432:.\Generated_Source\PSoC5/rightEncTimer.c **** *  void:  
+ 433:.\Generated_Source\PSoC5/rightEncTimer.c **** *
+ 434:.\Generated_Source\PSoC5/rightEncTimer.c **** * Return: 
+ 435:.\Generated_Source\PSoC5/rightEncTimer.c **** *  (uint16) Present period value.
+ 436:.\Generated_Source\PSoC5/rightEncTimer.c **** *
+ 437:.\Generated_Source\PSoC5/rightEncTimer.c **** *******************************************************************************/
+ 438:.\Generated_Source\PSoC5/rightEncTimer.c **** uint16 rightEncTimer_ReadPeriod(void) 
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc5CyCm4.s 			page 10
+
+
+ 439:.\Generated_Source\PSoC5/rightEncTimer.c **** {
+ 440:.\Generated_Source\PSoC5/rightEncTimer.c ****     #if(rightEncTimer_UsingFixedFunction)
+ 441:.\Generated_Source\PSoC5/rightEncTimer.c ****         return ((uint16)CY_GET_REG16(rightEncTimer_PERIOD_LSB_PTR));
+ 442:.\Generated_Source\PSoC5/rightEncTimer.c ****     #else
+ 443:.\Generated_Source\PSoC5/rightEncTimer.c ****         return (CY_GET_REG16(rightEncTimer_PERIOD_LSB_PTR));
+ 444:.\Generated_Source\PSoC5/rightEncTimer.c ****     #endif /* (rightEncTimer_UsingFixedFunction) */
+ 445:.\Generated_Source\PSoC5/rightEncTimer.c **** }
+ 446:.\Generated_Source\PSoC5/rightEncTimer.c **** 
+ 447:.\Generated_Source\PSoC5/rightEncTimer.c **** 
+ 448:.\Generated_Source\PSoC5/rightEncTimer.c **** #if (!rightEncTimer_UsingFixedFunction)
+ 449:.\Generated_Source\PSoC5/rightEncTimer.c **** /*******************************************************************************
+ 450:.\Generated_Source\PSoC5/rightEncTimer.c **** * Function Name: rightEncTimer_WriteCompare
+ 451:.\Generated_Source\PSoC5/rightEncTimer.c **** ********************************************************************************
+ 452:.\Generated_Source\PSoC5/rightEncTimer.c **** * Summary:
+ 453:.\Generated_Source\PSoC5/rightEncTimer.c **** * Changes the compare value.  The compare output will 
+ 454:.\Generated_Source\PSoC5/rightEncTimer.c **** * reflect the new value on the next UDB clock.  The compare output will be 
+ 455:.\Generated_Source\PSoC5/rightEncTimer.c **** * driven high when the present counter value compares true based on the 
+ 456:.\Generated_Source\PSoC5/rightEncTimer.c **** * configured compare mode setting. 
+ 457:.\Generated_Source\PSoC5/rightEncTimer.c **** *
+ 458:.\Generated_Source\PSoC5/rightEncTimer.c **** * Parameters:  
+ 459:.\Generated_Source\PSoC5/rightEncTimer.c **** *  Compare:  New compare value. 
+ 460:.\Generated_Source\PSoC5/rightEncTimer.c **** *
+ 461:.\Generated_Source\PSoC5/rightEncTimer.c **** * Return: 
+ 462:.\Generated_Source\PSoC5/rightEncTimer.c **** *  void
+ 463:.\Generated_Source\PSoC5/rightEncTimer.c **** *
+ 464:.\Generated_Source\PSoC5/rightEncTimer.c **** *******************************************************************************/
+ 465:.\Generated_Source\PSoC5/rightEncTimer.c **** void rightEncTimer_WriteCompare(uint16 compare) \
+ 466:.\Generated_Source\PSoC5/rightEncTimer.c ****                                    
+ 467:.\Generated_Source\PSoC5/rightEncTimer.c **** {
+ 468:.\Generated_Source\PSoC5/rightEncTimer.c ****     #if(rightEncTimer_UsingFixedFunction)
+ 469:.\Generated_Source\PSoC5/rightEncTimer.c ****         CY_SET_REG16(rightEncTimer_COMPARE_LSB_PTR, (uint16)compare);
+ 470:.\Generated_Source\PSoC5/rightEncTimer.c ****     #else
+ 471:.\Generated_Source\PSoC5/rightEncTimer.c ****         CY_SET_REG16(rightEncTimer_COMPARE_LSB_PTR, compare);
+ 472:.\Generated_Source\PSoC5/rightEncTimer.c ****     #endif /* (rightEncTimer_UsingFixedFunction) */
+ 473:.\Generated_Source\PSoC5/rightEncTimer.c **** }
+ 474:.\Generated_Source\PSoC5/rightEncTimer.c **** 
+ 475:.\Generated_Source\PSoC5/rightEncTimer.c **** 
+ 476:.\Generated_Source\PSoC5/rightEncTimer.c **** /*******************************************************************************
+ 477:.\Generated_Source\PSoC5/rightEncTimer.c **** * Function Name: rightEncTimer_ReadCompare
+ 478:.\Generated_Source\PSoC5/rightEncTimer.c **** ********************************************************************************
+ 479:.\Generated_Source\PSoC5/rightEncTimer.c **** * Summary:
+ 480:.\Generated_Source\PSoC5/rightEncTimer.c **** * Returns the compare value.
+ 481:.\Generated_Source\PSoC5/rightEncTimer.c **** *
+ 482:.\Generated_Source\PSoC5/rightEncTimer.c **** * Parameters:  
+ 483:.\Generated_Source\PSoC5/rightEncTimer.c **** *  void:
+ 484:.\Generated_Source\PSoC5/rightEncTimer.c **** *
+ 485:.\Generated_Source\PSoC5/rightEncTimer.c **** * Return: 
+ 486:.\Generated_Source\PSoC5/rightEncTimer.c **** *  (uint16) Present compare value.
+ 487:.\Generated_Source\PSoC5/rightEncTimer.c **** *
+ 488:.\Generated_Source\PSoC5/rightEncTimer.c **** *******************************************************************************/
+ 489:.\Generated_Source\PSoC5/rightEncTimer.c **** uint16 rightEncTimer_ReadCompare(void) 
+ 490:.\Generated_Source\PSoC5/rightEncTimer.c **** {
+ 491:.\Generated_Source\PSoC5/rightEncTimer.c ****     return (CY_GET_REG16(rightEncTimer_COMPARE_LSB_PTR));
+ 492:.\Generated_Source\PSoC5/rightEncTimer.c **** }
+ 493:.\Generated_Source\PSoC5/rightEncTimer.c **** 
+ 494:.\Generated_Source\PSoC5/rightEncTimer.c **** 
+ 495:.\Generated_Source\PSoC5/rightEncTimer.c **** #if (rightEncTimer_COMPARE_MODE_SOFTWARE)
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc5CyCm4.s 			page 11
+
+
+ 496:.\Generated_Source\PSoC5/rightEncTimer.c **** /*******************************************************************************
+ 497:.\Generated_Source\PSoC5/rightEncTimer.c **** * Function Name: rightEncTimer_SetCompareMode
+ 498:.\Generated_Source\PSoC5/rightEncTimer.c **** ********************************************************************************
+ 499:.\Generated_Source\PSoC5/rightEncTimer.c **** * Summary:
+ 500:.\Generated_Source\PSoC5/rightEncTimer.c **** *  Sets the software controlled Compare Mode.
+ 501:.\Generated_Source\PSoC5/rightEncTimer.c **** *
+ 502:.\Generated_Source\PSoC5/rightEncTimer.c **** * Parameters:
+ 503:.\Generated_Source\PSoC5/rightEncTimer.c **** *  compareMode:  Compare Mode Enumerated Type.
+ 504:.\Generated_Source\PSoC5/rightEncTimer.c **** *
+ 505:.\Generated_Source\PSoC5/rightEncTimer.c **** * Return:
+ 506:.\Generated_Source\PSoC5/rightEncTimer.c **** *  void
+ 507:.\Generated_Source\PSoC5/rightEncTimer.c **** *
+ 508:.\Generated_Source\PSoC5/rightEncTimer.c **** *******************************************************************************/
+ 509:.\Generated_Source\PSoC5/rightEncTimer.c **** void rightEncTimer_SetCompareMode(uint8 compareMode) 
+ 510:.\Generated_Source\PSoC5/rightEncTimer.c **** {
+ 511:.\Generated_Source\PSoC5/rightEncTimer.c ****     /* Clear the compare mode bits in the control register */
+ 512:.\Generated_Source\PSoC5/rightEncTimer.c ****     rightEncTimer_CONTROL &= ((uint8)(~rightEncTimer_CTRL_CMPMODE_MASK));
+ 513:.\Generated_Source\PSoC5/rightEncTimer.c ****     
+ 514:.\Generated_Source\PSoC5/rightEncTimer.c ****     /* Write the new setting */
+ 515:.\Generated_Source\PSoC5/rightEncTimer.c ****     rightEncTimer_CONTROL |= compareMode;
+ 516:.\Generated_Source\PSoC5/rightEncTimer.c **** }
+ 517:.\Generated_Source\PSoC5/rightEncTimer.c **** #endif  /* (rightEncTimer_COMPARE_MODE_SOFTWARE) */
+ 518:.\Generated_Source\PSoC5/rightEncTimer.c **** 
+ 519:.\Generated_Source\PSoC5/rightEncTimer.c **** 
+ 520:.\Generated_Source\PSoC5/rightEncTimer.c **** #if (rightEncTimer_CAPTURE_MODE_SOFTWARE)
+ 521:.\Generated_Source\PSoC5/rightEncTimer.c **** /*******************************************************************************
+ 522:.\Generated_Source\PSoC5/rightEncTimer.c **** * Function Name: rightEncTimer_SetCaptureMode
+ 523:.\Generated_Source\PSoC5/rightEncTimer.c **** ********************************************************************************
+ 524:.\Generated_Source\PSoC5/rightEncTimer.c **** * Summary:
+ 525:.\Generated_Source\PSoC5/rightEncTimer.c **** *  Sets the software controlled Capture Mode.
+ 526:.\Generated_Source\PSoC5/rightEncTimer.c **** *
+ 527:.\Generated_Source\PSoC5/rightEncTimer.c **** * Parameters:
+ 528:.\Generated_Source\PSoC5/rightEncTimer.c **** *  captureMode:  Capture Mode Enumerated Type.
+ 529:.\Generated_Source\PSoC5/rightEncTimer.c **** *
+ 530:.\Generated_Source\PSoC5/rightEncTimer.c **** * Return:
+ 531:.\Generated_Source\PSoC5/rightEncTimer.c **** *  void
+ 532:.\Generated_Source\PSoC5/rightEncTimer.c **** *
+ 533:.\Generated_Source\PSoC5/rightEncTimer.c **** *******************************************************************************/
+ 534:.\Generated_Source\PSoC5/rightEncTimer.c **** void rightEncTimer_SetCaptureMode(uint8 captureMode) 
+ 535:.\Generated_Source\PSoC5/rightEncTimer.c **** {
+ 536:.\Generated_Source\PSoC5/rightEncTimer.c ****     /* Clear the capture mode bits in the control register */
+ 537:.\Generated_Source\PSoC5/rightEncTimer.c ****     rightEncTimer_CONTROL &= ((uint8)(~rightEncTimer_CTRL_CAPMODE_MASK));
+ 538:.\Generated_Source\PSoC5/rightEncTimer.c ****     
+ 539:.\Generated_Source\PSoC5/rightEncTimer.c ****     /* Write the new setting */
+ 540:.\Generated_Source\PSoC5/rightEncTimer.c ****     rightEncTimer_CONTROL |= ((uint8)((uint8)captureMode << rightEncTimer_CTRL_CAPMODE0_SHIFT));
+ 541:.\Generated_Source\PSoC5/rightEncTimer.c **** }
+ 542:.\Generated_Source\PSoC5/rightEncTimer.c **** #endif  /* (rightEncTimer_CAPTURE_MODE_SOFTWARE) */
+ 543:.\Generated_Source\PSoC5/rightEncTimer.c **** 
+ 544:.\Generated_Source\PSoC5/rightEncTimer.c **** 
+ 545:.\Generated_Source\PSoC5/rightEncTimer.c **** /*******************************************************************************
+ 546:.\Generated_Source\PSoC5/rightEncTimer.c **** * Function Name: rightEncTimer_ClearFIFO
+ 547:.\Generated_Source\PSoC5/rightEncTimer.c **** ********************************************************************************
+ 548:.\Generated_Source\PSoC5/rightEncTimer.c **** * Summary:
+ 549:.\Generated_Source\PSoC5/rightEncTimer.c **** *   This function clears all capture data from the capture FIFO
+ 550:.\Generated_Source\PSoC5/rightEncTimer.c **** *
+ 551:.\Generated_Source\PSoC5/rightEncTimer.c **** * Parameters:  
+ 552:.\Generated_Source\PSoC5/rightEncTimer.c **** *  void:
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc5CyCm4.s 			page 12
+
+
+ 553:.\Generated_Source\PSoC5/rightEncTimer.c **** *
+ 554:.\Generated_Source\PSoC5/rightEncTimer.c **** * Return: 
+ 555:.\Generated_Source\PSoC5/rightEncTimer.c **** *  None
+ 556:.\Generated_Source\PSoC5/rightEncTimer.c **** *
+ 557:.\Generated_Source\PSoC5/rightEncTimer.c **** *******************************************************************************/
+ 558:.\Generated_Source\PSoC5/rightEncTimer.c **** void rightEncTimer_ClearFIFO(void) 
+ 559:.\Generated_Source\PSoC5/rightEncTimer.c **** {
+ 560:.\Generated_Source\PSoC5/rightEncTimer.c **** 
+ 561:.\Generated_Source\PSoC5/rightEncTimer.c ****     while(0u != (rightEncTimer_ReadStatusRegister() & rightEncTimer_STATUS_FIFONEMP))
+  72              		.loc 1 561 0
+  73 001c 5806     		lsls	r0, r3, #25
+  74 001e 05D5     		bpl	.L2
+  75              	.LBB47:
+  76              	.LBB48:
+ 395:.\Generated_Source\PSoC5/rightEncTimer.c ****     #endif /* (rightEncTimer_UsingFixedFunction) */
+  77              		.loc 1 395 0
+  78 0020 01F21441 		addw	r1, r1, #1044
+  79              	.LVL4:
+  80              	.L6:
+  81 0024 0B88     		ldrh	r3, [r1]
+  82              	.LBE48:
+  83              	.LBE47:
+  84              	.LBB49:
+  85              	.LBB45:
+ 263:.\Generated_Source\PSoC5/rightEncTimer.c **** }
+  86              		.loc 1 263 0
+  87 0026 1378     		ldrb	r3, [r2]	@ zero_extendqisi2
+  88              	.LBE45:
+  89              	.LBE49:
+  90              		.loc 1 561 0
+  91 0028 5B06     		lsls	r3, r3, #25
+  92 002a FBD4     		bmi	.L6
+  93              	.L2:
+  94              	.LVL5:
+  95              	.LBE50:
+  96              	.LBE51:
+  97              	.LBB52:
+  98              	.LBB53:
+ 420:.\Generated_Source\PSoC5/rightEncTimer.c ****     #endif /* (rightEncTimer_UsingFixedFunction) */
+  99              		.loc 1 420 0
+ 100 002c 0C4D     		ldr	r5, .L11+8
+ 101              	.LBE53:
+ 102              	.LBE52:
+ 103              	.LBB56:
+ 104              	.LBB57:
+ 337:.\Generated_Source\PSoC5/rightEncTimer.c ****     #endif /* (rightEncTimer_UsingFixedFunction) */
+ 105              		.loc 1 337 0
+ 106 002e 0D4C     		ldr	r4, .L11+12
+ 107              	.LBE57:
+ 108              	.LBE56:
+ 109              	.LBB59:
+ 110              	.LBB60:
+ 239:.\Generated_Source\PSoC5/rightEncTimer.c **** }
+ 111              		.loc 1 239 0
+ 112 0030 0D48     		ldr	r0, .L11+16
+ 113              	.LBE60:
+ 114              	.LBE59:
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc5CyCm4.s 			page 13
+
+
+ 115              	.LBB62:
+ 116              	.LBB54:
+ 420:.\Generated_Source\PSoC5/rightEncTimer.c ****     #endif /* (rightEncTimer_UsingFixedFunction) */
+ 117              		.loc 1 420 0
+ 118 0032 0023     		movs	r3, #0
+ 119              	.LBE54:
+ 120              	.LBE62:
+ 121              	.LBB63:
+ 122              	.LBB64:
+ 471:.\Generated_Source\PSoC5/rightEncTimer.c ****     #endif /* (rightEncTimer_UsingFixedFunction) */
+ 123              		.loc 1 471 0
+ 124 0034 0D4A     		ldr	r2, .L11+20
+ 125              	.LBE64:
+ 126              	.LBE63:
+ 127              	.LBB66:
+ 128              	.LBB67:
+ 263:.\Generated_Source\PSoC5/rightEncTimer.c **** }
+ 129              		.loc 1 263 0
+ 130 0036 0949     		ldr	r1, .L11+4
+ 131              	.LBE67:
+ 132              	.LBE66:
+ 133              	.LBB69:
+ 134              	.LBB55:
+ 420:.\Generated_Source\PSoC5/rightEncTimer.c ****     #endif /* (rightEncTimer_UsingFixedFunction) */
+ 135              		.loc 1 420 0
+ 136 0038 2B80     		strh	r3, [r5]	@ movhi
+ 137              	.LVL6:
+ 138              	.LBE55:
+ 139              	.LBE69:
+ 140              	.LBB70:
+ 141              	.LBB58:
+ 337:.\Generated_Source\PSoC5/rightEncTimer.c ****     #endif /* (rightEncTimer_UsingFixedFunction) */
+ 142              		.loc 1 337 0
+ 143 003a 2380     		strh	r3, [r4]	@ movhi
+ 144              	.LVL7:
+ 145              	.LBE58:
+ 146              	.LBE70:
+ 147              	.LBB71:
+ 148              	.LBB61:
+ 239:.\Generated_Source\PSoC5/rightEncTimer.c **** }
+ 149              		.loc 1 239 0
+ 150 003c 0370     		strb	r3, [r0]
+ 151              	.LBE61:
+ 152              	.LBE71:
+ 153              	.LBB72:
+ 154              	.LBB68:
+ 263:.\Generated_Source\PSoC5/rightEncTimer.c **** }
+ 155              		.loc 1 263 0
+ 156 003e 0978     		ldrb	r1, [r1]	@ zero_extendqisi2
+ 157              	.LVL8:
+ 158              	.LBE68:
+ 159              	.LBE72:
+ 160              	.LBB73:
+ 161              	.LBB65:
+ 471:.\Generated_Source\PSoC5/rightEncTimer.c ****     #endif /* (rightEncTimer_UsingFixedFunction) */
+ 162              		.loc 1 471 0
+ 163 0040 1380     		strh	r3, [r2]	@ movhi
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc5CyCm4.s 			page 14
+
+
+ 164              	.LBE65:
+ 165              	.LBE73:
+ 115:.\Generated_Source\PSoC5/rightEncTimer.c ****             
+ 166              		.loc 1 115 0
+ 167 0042 FFF7FEFF 		bl	CyEnterCriticalSection
+ 168              	.LVL9:
+ 117:.\Generated_Source\PSoC5/rightEncTimer.c ****             
+ 169              		.loc 1 117 0
+ 170 0046 0A4A     		ldr	r2, .L11+24
+ 171 0048 1378     		ldrb	r3, [r2]	@ zero_extendqisi2
+ 172 004a 43F01003 		orr	r3, r3, #16
+ 173 004e 1370     		strb	r3, [r2]
+ 123:.\Generated_Source\PSoC5/rightEncTimer.c **** 
+ 174              		.loc 1 123 0
+ 175 0050 BDE83840 		pop	{r3, r4, r5, lr}
+ 176              		.cfi_restore 14
+ 177              		.cfi_restore 5
+ 178              		.cfi_restore 4
+ 179              		.cfi_restore 3
+ 180              		.cfi_def_cfa_offset 0
+ 120:.\Generated_Source\PSoC5/rightEncTimer.c ****             
+ 181              		.loc 1 120 0
+ 182 0054 FFF7FEBF 		b	CyExitCriticalSection
+ 183              	.LVL10:
+ 184              	.L12:
+ 185              		.align	2
+ 186              	.L11:
+ 187 0058 74640040 		.word	1073767540
+ 188 005c 65640040 		.word	1073767525
+ 189 0060 48680040 		.word	1073768520
+ 190 0064 08680040 		.word	1073768456
+ 191 0068 85640040 		.word	1073767557
+ 192 006c 68680040 		.word	1073768552
+ 193 0070 95640040 		.word	1073767573
+ 194              		.cfi_endproc
+ 195              	.LFE0:
+ 196              		.size	rightEncTimer_Init, .-rightEncTimer_Init
+ 197              		.section	.text.rightEncTimer_Enable,"ax",%progbits
+ 198              		.align	2
+ 199              		.global	rightEncTimer_Enable
+ 200              		.thumb
+ 201              		.thumb_func
+ 202              		.type	rightEncTimer_Enable, %function
+ 203              	rightEncTimer_Enable:
+ 204              	.LFB1:
+ 144:.\Generated_Source\PSoC5/rightEncTimer.c ****     /* Globally Enable the Fixed Function Block chosen */
+ 205              		.loc 1 144 0
+ 206              		.cfi_startproc
+ 207              		@ args = 0, pretend = 0, frame = 0
+ 208              		@ frame_needed = 0, uses_anonymous_args = 0
+ 209              		@ link register save eliminated.
+ 155:.\Generated_Source\PSoC5/rightEncTimer.c ****     #endif /* (!rightEncTimer_ControlRegRemoved || rightEncTimer_UsingFixedFunction) */
+ 210              		.loc 1 155 0
+ 211 0000 024A     		ldr	r2, .L14
+ 212 0002 1378     		ldrb	r3, [r2]	@ zero_extendqisi2
+ 213 0004 43F08003 		orr	r3, r3, #128
+ 214 0008 1370     		strb	r3, [r2]
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc5CyCm4.s 			page 15
+
+
+ 215 000a 7047     		bx	lr
+ 216              	.L15:
+ 217              		.align	2
+ 218              	.L14:
+ 219 000c 74640040 		.word	1073767540
+ 220              		.cfi_endproc
+ 221              	.LFE1:
+ 222              		.size	rightEncTimer_Enable, .-rightEncTimer_Enable
+ 223              		.section	.text.rightEncTimer_Start,"ax",%progbits
+ 224              		.align	2
+ 225              		.global	rightEncTimer_Start
+ 226              		.thumb
+ 227              		.thumb_func
+ 228              		.type	rightEncTimer_Start, %function
+ 229              	rightEncTimer_Start:
+ 230              	.LFB2:
+ 179:.\Generated_Source\PSoC5/rightEncTimer.c ****     if(rightEncTimer_initVar == 0u)
+ 231              		.loc 1 179 0
+ 232              		.cfi_startproc
+ 233              		@ args = 0, pretend = 0, frame = 0
+ 234              		@ frame_needed = 0, uses_anonymous_args = 0
+ 235 0000 70B5     		push	{r4, r5, r6, lr}
+ 236              		.cfi_def_cfa_offset 16
+ 237              		.cfi_offset 4, -16
+ 238              		.cfi_offset 5, -12
+ 239              		.cfi_offset 6, -8
+ 240              		.cfi_offset 14, -4
+ 180:.\Generated_Source\PSoC5/rightEncTimer.c ****     {
+ 241              		.loc 1 180 0
+ 242 0002 1A4C     		ldr	r4, .L27
+ 243 0004 2378     		ldrb	r3, [r4]	@ zero_extendqisi2
+ 244 0006 2BB1     		cbz	r3, .L26
+ 245              	.L17:
+ 246              	.LBB94:
+ 247              	.LBB95:
+ 155:.\Generated_Source\PSoC5/rightEncTimer.c ****     #endif /* (!rightEncTimer_ControlRegRemoved || rightEncTimer_UsingFixedFunction) */
+ 248              		.loc 1 155 0
+ 249 0008 194A     		ldr	r2, .L27+4
+ 250 000a 1378     		ldrb	r3, [r2]	@ zero_extendqisi2
+ 251 000c 43F08003 		orr	r3, r3, #128
+ 252 0010 1370     		strb	r3, [r2]
+ 253 0012 70BD     		pop	{r4, r5, r6, pc}
+ 254              	.L26:
+ 255              	.LBE95:
+ 256              	.LBE94:
+ 257              	.LBB96:
+ 258              	.LBB97:
+  79:.\Generated_Source\PSoC5/rightEncTimer.c ****             rightEncTimer_CONTROL = ctrl | rightEncTimer_DEFAULT_COMPARE_MODE;
+ 259              		.loc 1 79 0
+ 260 0014 1649     		ldr	r1, .L27+4
+ 261              	.LBB98:
+ 262              	.LBB99:
+ 263              	.LBB100:
+ 264              	.LBB101:
+ 263:.\Generated_Source\PSoC5/rightEncTimer.c **** }
+ 265              		.loc 1 263 0
+ 266 0016 174A     		ldr	r2, .L27+8
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc5CyCm4.s 			page 16
+
+
+ 267              	.LBE101:
+ 268              	.LBE100:
+ 269              	.LBE99:
+ 270              	.LBE98:
+  79:.\Generated_Source\PSoC5/rightEncTimer.c ****             rightEncTimer_CONTROL = ctrl | rightEncTimer_DEFAULT_COMPARE_MODE;
+ 271              		.loc 1 79 0
+ 272 0018 0B78     		ldrb	r3, [r1]	@ zero_extendqisi2
+ 273              	.LVL11:
+ 274 001a 03F0F803 		and	r3, r3, #248
+ 275              	.LVL12:
+  80:.\Generated_Source\PSoC5/rightEncTimer.c ****             
+ 276              		.loc 1 80 0
+ 277 001e 43F00103 		orr	r3, r3, #1
+ 278 0022 0B70     		strb	r3, [r1]
+  83:.\Generated_Source\PSoC5/rightEncTimer.c ****             
+ 279              		.loc 1 83 0
+ 280 0024 0B78     		ldrb	r3, [r1]	@ zero_extendqisi2
+ 281 0026 03F0FC03 		and	r3, r3, #252
+ 282              	.LVL13:
+  88:.\Generated_Source\PSoC5/rightEncTimer.c ****             #endif /* 0 != rightEncTimer_CAPTURE_MODE */ 
+ 283              		.loc 1 88 0
+ 284 002a 0B70     		strb	r3, [r1]
+ 285              	.LBB109:
+ 286              	.LBB108:
+ 287              	.LBB104:
+ 288              	.LBB102:
+ 263:.\Generated_Source\PSoC5/rightEncTimer.c **** }
+ 289              		.loc 1 263 0
+ 290 002c 1378     		ldrb	r3, [r2]	@ zero_extendqisi2
+ 291              	.LVL14:
+ 292              	.LBE102:
+ 293              	.LBE104:
+ 294              		.loc 1 561 0
+ 295 002e 5806     		lsls	r0, r3, #25
+ 296 0030 05D5     		bpl	.L18
+ 297              	.LBB105:
+ 298              	.LBB106:
+ 395:.\Generated_Source\PSoC5/rightEncTimer.c ****     #endif /* (rightEncTimer_UsingFixedFunction) */
+ 299              		.loc 1 395 0
+ 300 0032 01F21441 		addw	r1, r1, #1044
+ 301              	.LVL15:
+ 302              	.L22:
+ 303 0036 0B88     		ldrh	r3, [r1]
+ 304              	.LBE106:
+ 305              	.LBE105:
+ 306              	.LBB107:
+ 307              	.LBB103:
+ 263:.\Generated_Source\PSoC5/rightEncTimer.c **** }
+ 308              		.loc 1 263 0
+ 309 0038 1378     		ldrb	r3, [r2]	@ zero_extendqisi2
+ 310              	.LBE103:
+ 311              	.LBE107:
+ 312              		.loc 1 561 0
+ 313 003a 5B06     		lsls	r3, r3, #25
+ 314 003c FBD4     		bmi	.L22
+ 315              	.L18:
+ 316              	.LVL16:
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc5CyCm4.s 			page 17
+
+
+ 317              	.LBE108:
+ 318              	.LBE109:
+ 319              	.LBB110:
+ 320              	.LBB111:
+ 239:.\Generated_Source\PSoC5/rightEncTimer.c **** }
+ 321              		.loc 1 239 0
+ 322 003e 0E48     		ldr	r0, .L27+12
+ 323              	.LBE111:
+ 324              	.LBE110:
+ 325              	.LBB113:
+ 326              	.LBB114:
+ 420:.\Generated_Source\PSoC5/rightEncTimer.c ****     #endif /* (rightEncTimer_UsingFixedFunction) */
+ 327              		.loc 1 420 0
+ 328 0040 0E4E     		ldr	r6, .L27+16
+ 329              	.LBE114:
+ 330              	.LBE113:
+ 331              	.LBB117:
+ 332              	.LBB118:
+ 337:.\Generated_Source\PSoC5/rightEncTimer.c ****     #endif /* (rightEncTimer_UsingFixedFunction) */
+ 333              		.loc 1 337 0
+ 334 0042 0F4D     		ldr	r5, .L27+20
+ 335              	.LBE118:
+ 336              	.LBE117:
+ 337              	.LBB120:
+ 338              	.LBB115:
+ 420:.\Generated_Source\PSoC5/rightEncTimer.c ****     #endif /* (rightEncTimer_UsingFixedFunction) */
+ 339              		.loc 1 420 0
+ 340 0044 0023     		movs	r3, #0
+ 341              	.LBE115:
+ 342              	.LBE120:
+ 343              	.LBB121:
+ 344              	.LBB122:
+ 471:.\Generated_Source\PSoC5/rightEncTimer.c ****     #endif /* (rightEncTimer_UsingFixedFunction) */
+ 345              		.loc 1 471 0
+ 346 0046 0F4A     		ldr	r2, .L27+24
+ 347              	.LBE122:
+ 348              	.LBE121:
+ 349              	.LBB124:
+ 350              	.LBB125:
+ 263:.\Generated_Source\PSoC5/rightEncTimer.c **** }
+ 351              		.loc 1 263 0
+ 352 0048 0A49     		ldr	r1, .L27+8
+ 353              	.LBE125:
+ 354              	.LBE124:
+ 355              	.LBB127:
+ 356              	.LBB116:
+ 420:.\Generated_Source\PSoC5/rightEncTimer.c ****     #endif /* (rightEncTimer_UsingFixedFunction) */
+ 357              		.loc 1 420 0
+ 358 004a 3380     		strh	r3, [r6]	@ movhi
+ 359              	.LVL17:
+ 360              	.LBE116:
+ 361              	.LBE127:
+ 362              	.LBB128:
+ 363              	.LBB119:
+ 337:.\Generated_Source\PSoC5/rightEncTimer.c ****     #endif /* (rightEncTimer_UsingFixedFunction) */
+ 364              		.loc 1 337 0
+ 365 004c 2B80     		strh	r3, [r5]	@ movhi
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc5CyCm4.s 			page 18
+
+
+ 366              	.LVL18:
+ 367              	.LBE119:
+ 368              	.LBE128:
+ 369              	.LBB129:
+ 370              	.LBB112:
+ 239:.\Generated_Source\PSoC5/rightEncTimer.c **** }
+ 371              		.loc 1 239 0
+ 372 004e 0370     		strb	r3, [r0]
+ 373              	.LBE112:
+ 374              	.LBE129:
+ 375              	.LBB130:
+ 376              	.LBB126:
+ 263:.\Generated_Source\PSoC5/rightEncTimer.c **** }
+ 377              		.loc 1 263 0
+ 378 0050 0978     		ldrb	r1, [r1]	@ zero_extendqisi2
+ 379              	.LVL19:
+ 380              	.LBE126:
+ 381              	.LBE130:
+ 382              	.LBB131:
+ 383              	.LBB123:
+ 471:.\Generated_Source\PSoC5/rightEncTimer.c ****     #endif /* (rightEncTimer_UsingFixedFunction) */
+ 384              		.loc 1 471 0
+ 385 0052 1380     		strh	r3, [r2]	@ movhi
+ 386              	.LBE123:
+ 387              	.LBE131:
+ 115:.\Generated_Source\PSoC5/rightEncTimer.c ****             
+ 388              		.loc 1 115 0
+ 389 0054 FFF7FEFF 		bl	CyEnterCriticalSection
+ 390              	.LVL20:
+ 117:.\Generated_Source\PSoC5/rightEncTimer.c ****             
+ 391              		.loc 1 117 0
+ 392 0058 0B4A     		ldr	r2, .L27+28
+ 393 005a 1378     		ldrb	r3, [r2]	@ zero_extendqisi2
+ 394 005c 43F01003 		orr	r3, r3, #16
+ 395 0060 1370     		strb	r3, [r2]
+ 120:.\Generated_Source\PSoC5/rightEncTimer.c ****             
+ 396              		.loc 1 120 0
+ 397 0062 FFF7FEFF 		bl	CyExitCriticalSection
+ 398              	.LVL21:
+ 399              	.LBE97:
+ 400              	.LBE96:
+ 184:.\Generated_Source\PSoC5/rightEncTimer.c ****     }
+ 401              		.loc 1 184 0
+ 402 0066 0123     		movs	r3, #1
+ 403 0068 2370     		strb	r3, [r4]
+ 404 006a CDE7     		b	.L17
+ 405              	.L28:
+ 406              		.align	2
+ 407              	.L27:
+ 408 006c 00000000 		.word	.LANCHOR0
+ 409 0070 74640040 		.word	1073767540
+ 410 0074 65640040 		.word	1073767525
+ 411 0078 85640040 		.word	1073767557
+ 412 007c 48680040 		.word	1073768520
+ 413 0080 08680040 		.word	1073768456
+ 414 0084 68680040 		.word	1073768552
+ 415 0088 95640040 		.word	1073767573
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc5CyCm4.s 			page 19
+
+
+ 416              		.cfi_endproc
+ 417              	.LFE2:
+ 418              		.size	rightEncTimer_Start, .-rightEncTimer_Start
+ 419              		.section	.text.rightEncTimer_Stop,"ax",%progbits
+ 420              		.align	2
+ 421              		.global	rightEncTimer_Stop
+ 422              		.thumb
+ 423              		.thumb_func
+ 424              		.type	rightEncTimer_Stop, %function
+ 425              	rightEncTimer_Stop:
+ 426              	.LFB3:
+ 209:.\Generated_Source\PSoC5/rightEncTimer.c ****     /* Disable Counter */
+ 427              		.loc 1 209 0
+ 428              		.cfi_startproc
+ 429              		@ args = 0, pretend = 0, frame = 0
+ 430              		@ frame_needed = 0, uses_anonymous_args = 0
+ 431              		@ link register save eliminated.
+ 212:.\Generated_Source\PSoC5/rightEncTimer.c ****     #endif /* (!rightEncTimer_ControlRegRemoved || rightEncTimer_UsingFixedFunction) */
+ 432              		.loc 1 212 0
+ 433 0000 024A     		ldr	r2, .L30
+ 434 0002 1378     		ldrb	r3, [r2]	@ zero_extendqisi2
+ 435 0004 03F07F03 		and	r3, r3, #127
+ 436 0008 1370     		strb	r3, [r2]
+ 437 000a 7047     		bx	lr
+ 438              	.L31:
+ 439              		.align	2
+ 440              	.L30:
+ 441 000c 74640040 		.word	1073767540
+ 442              		.cfi_endproc
+ 443              	.LFE3:
+ 444              		.size	rightEncTimer_Stop, .-rightEncTimer_Stop
+ 445              		.section	.text.rightEncTimer_SetInterruptMode,"ax",%progbits
+ 446              		.align	2
+ 447              		.global	rightEncTimer_SetInterruptMode
+ 448              		.thumb
+ 449              		.thumb_func
+ 450              		.type	rightEncTimer_SetInterruptMode, %function
+ 451              	rightEncTimer_SetInterruptMode:
+ 452              	.LFB4:
+ 238:.\Generated_Source\PSoC5/rightEncTimer.c ****     rightEncTimer_STATUS_MASK = interruptsMask;
+ 453              		.loc 1 238 0
+ 454              		.cfi_startproc
+ 455              		@ args = 0, pretend = 0, frame = 0
+ 456              		@ frame_needed = 0, uses_anonymous_args = 0
+ 457              		@ link register save eliminated.
+ 458              	.LVL22:
+ 239:.\Generated_Source\PSoC5/rightEncTimer.c **** }
+ 459              		.loc 1 239 0
+ 460 0000 014B     		ldr	r3, .L33
+ 461 0002 1870     		strb	r0, [r3]
+ 462 0004 7047     		bx	lr
+ 463              	.L34:
+ 464 0006 00BF     		.align	2
+ 465              	.L33:
+ 466 0008 85640040 		.word	1073767557
+ 467              		.cfi_endproc
+ 468              	.LFE4:
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc5CyCm4.s 			page 20
+
+
+ 469              		.size	rightEncTimer_SetInterruptMode, .-rightEncTimer_SetInterruptMode
+ 470              		.section	.text.rightEncTimer_ReadStatusRegister,"ax",%progbits
+ 471              		.align	2
+ 472              		.global	rightEncTimer_ReadStatusRegister
+ 473              		.thumb
+ 474              		.thumb_func
+ 475              		.type	rightEncTimer_ReadStatusRegister, %function
+ 476              	rightEncTimer_ReadStatusRegister:
+ 477              	.LFB5:
+ 262:.\Generated_Source\PSoC5/rightEncTimer.c ****     return rightEncTimer_STATUS;
+ 478              		.loc 1 262 0
+ 479              		.cfi_startproc
+ 480              		@ args = 0, pretend = 0, frame = 0
+ 481              		@ frame_needed = 0, uses_anonymous_args = 0
+ 482              		@ link register save eliminated.
+ 263:.\Generated_Source\PSoC5/rightEncTimer.c **** }
+ 483              		.loc 1 263 0
+ 484 0000 014B     		ldr	r3, .L36
+ 485 0002 1878     		ldrb	r0, [r3]	@ zero_extendqisi2
+ 264:.\Generated_Source\PSoC5/rightEncTimer.c **** 
+ 486              		.loc 1 264 0
+ 487 0004 7047     		bx	lr
+ 488              	.L37:
+ 489 0006 00BF     		.align	2
+ 490              	.L36:
+ 491 0008 65640040 		.word	1073767525
+ 492              		.cfi_endproc
+ 493              	.LFE5:
+ 494              		.size	rightEncTimer_ReadStatusRegister, .-rightEncTimer_ReadStatusRegister
+ 495              		.section	.text.rightEncTimer_ReadControlRegister,"ax",%progbits
+ 496              		.align	2
+ 497              		.global	rightEncTimer_ReadControlRegister
+ 498              		.thumb
+ 499              		.thumb_func
+ 500              		.type	rightEncTimer_ReadControlRegister, %function
+ 501              	rightEncTimer_ReadControlRegister:
+ 502              	.LFB6:
+ 284:.\Generated_Source\PSoC5/rightEncTimer.c ****     return rightEncTimer_CONTROL;
+ 503              		.loc 1 284 0
+ 504              		.cfi_startproc
+ 505              		@ args = 0, pretend = 0, frame = 0
+ 506              		@ frame_needed = 0, uses_anonymous_args = 0
+ 507              		@ link register save eliminated.
+ 285:.\Generated_Source\PSoC5/rightEncTimer.c **** }
+ 508              		.loc 1 285 0
+ 509 0000 014B     		ldr	r3, .L39
+ 510 0002 1878     		ldrb	r0, [r3]	@ zero_extendqisi2
+ 286:.\Generated_Source\PSoC5/rightEncTimer.c **** 
+ 511              		.loc 1 286 0
+ 512 0004 7047     		bx	lr
+ 513              	.L40:
+ 514 0006 00BF     		.align	2
+ 515              	.L39:
+ 516 0008 74640040 		.word	1073767540
+ 517              		.cfi_endproc
+ 518              	.LFE6:
+ 519              		.size	rightEncTimer_ReadControlRegister, .-rightEncTimer_ReadControlRegister
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc5CyCm4.s 			page 21
+
+
+ 520              		.section	.text.rightEncTimer_WriteControlRegister,"ax",%progbits
+ 521              		.align	2
+ 522              		.global	rightEncTimer_WriteControlRegister
+ 523              		.thumb
+ 524              		.thumb_func
+ 525              		.type	rightEncTimer_WriteControlRegister, %function
+ 526              	rightEncTimer_WriteControlRegister:
+ 527              	.LFB7:
+ 305:.\Generated_Source\PSoC5/rightEncTimer.c ****     rightEncTimer_CONTROL = control;
+ 528              		.loc 1 305 0
+ 529              		.cfi_startproc
+ 530              		@ args = 0, pretend = 0, frame = 0
+ 531              		@ frame_needed = 0, uses_anonymous_args = 0
+ 532              		@ link register save eliminated.
+ 533              	.LVL23:
+ 306:.\Generated_Source\PSoC5/rightEncTimer.c **** }
+ 534              		.loc 1 306 0
+ 535 0000 014B     		ldr	r3, .L42
+ 536 0002 1870     		strb	r0, [r3]
+ 537 0004 7047     		bx	lr
+ 538              	.L43:
+ 539 0006 00BF     		.align	2
+ 540              	.L42:
+ 541 0008 74640040 		.word	1073767540
+ 542              		.cfi_endproc
+ 543              	.LFE7:
+ 544              		.size	rightEncTimer_WriteControlRegister, .-rightEncTimer_WriteControlRegister
+ 545              		.section	.text.rightEncTimer_WriteCounter,"ax",%progbits
+ 546              		.align	2
+ 547              		.global	rightEncTimer_WriteCounter
+ 548              		.thumb
+ 549              		.thumb_func
+ 550              		.type	rightEncTimer_WriteCounter, %function
+ 551              	rightEncTimer_WriteCounter:
+ 552              	.LFB8:
+ 328:.\Generated_Source\PSoC5/rightEncTimer.c ****     #if(rightEncTimer_UsingFixedFunction)
+ 553              		.loc 1 328 0
+ 554              		.cfi_startproc
+ 555              		@ args = 0, pretend = 0, frame = 0
+ 556              		@ frame_needed = 0, uses_anonymous_args = 0
+ 557              		@ link register save eliminated.
+ 558              	.LVL24:
+ 337:.\Generated_Source\PSoC5/rightEncTimer.c ****     #endif /* (rightEncTimer_UsingFixedFunction) */
+ 559              		.loc 1 337 0
+ 560 0000 014B     		ldr	r3, .L45
+ 561 0002 1880     		strh	r0, [r3]	@ movhi
+ 562 0004 7047     		bx	lr
+ 563              	.L46:
+ 564 0006 00BF     		.align	2
+ 565              	.L45:
+ 566 0008 08680040 		.word	1073768456
+ 567              		.cfi_endproc
+ 568              	.LFE8:
+ 569              		.size	rightEncTimer_WriteCounter, .-rightEncTimer_WriteCounter
+ 570              		.section	.text.rightEncTimer_ReadCounter,"ax",%progbits
+ 571              		.align	2
+ 572              		.global	rightEncTimer_ReadCounter
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc5CyCm4.s 			page 22
+
+
+ 573              		.thumb
+ 574              		.thumb_func
+ 575              		.type	rightEncTimer_ReadCounter, %function
+ 576              	rightEncTimer_ReadCounter:
+ 577              	.LFB9:
+ 358:.\Generated_Source\PSoC5/rightEncTimer.c ****     /* Force capture by reading Accumulator */
+ 578              		.loc 1 358 0
+ 579              		.cfi_startproc
+ 580              		@ args = 0, pretend = 0, frame = 0
+ 581              		@ frame_needed = 0, uses_anonymous_args = 0
+ 582              		@ link register save eliminated.
+ 372:.\Generated_Source\PSoC5/rightEncTimer.c ****     #endif /* (rightEncTimer_UsingFixedFunction) */
+ 583              		.loc 1 372 0
+ 584 0000 024B     		ldr	r3, .L48
+ 365:.\Generated_Source\PSoC5/rightEncTimer.c **** 	#endif/* (rightEncTimer_UsingFixedFunction) */
+ 585              		.loc 1 365 0
+ 586 0002 034A     		ldr	r2, .L48+4
+ 587 0004 1278     		ldrb	r2, [r2]	@ zero_extendqisi2
+ 372:.\Generated_Source\PSoC5/rightEncTimer.c ****     #endif /* (rightEncTimer_UsingFixedFunction) */
+ 588              		.loc 1 372 0
+ 589 0006 1888     		ldrh	r0, [r3]
+ 374:.\Generated_Source\PSoC5/rightEncTimer.c **** 
+ 590              		.loc 1 374 0
+ 591 0008 80B2     		uxth	r0, r0
+ 592 000a 7047     		bx	lr
+ 593              	.L49:
+ 594              		.align	2
+ 595              	.L48:
+ 596 000c 88680040 		.word	1073768584
+ 597 0010 04640040 		.word	1073767428
+ 598              		.cfi_endproc
+ 599              	.LFE9:
+ 600              		.size	rightEncTimer_ReadCounter, .-rightEncTimer_ReadCounter
+ 601              		.section	.text.rightEncTimer_ReadCapture,"ax",%progbits
+ 602              		.align	2
+ 603              		.global	rightEncTimer_ReadCapture
+ 604              		.thumb
+ 605              		.thumb_func
+ 606              		.type	rightEncTimer_ReadCapture, %function
+ 607              	rightEncTimer_ReadCapture:
+ 608              	.LFB10:
+ 391:.\Generated_Source\PSoC5/rightEncTimer.c ****     #if(rightEncTimer_UsingFixedFunction)
+ 609              		.loc 1 391 0
+ 610              		.cfi_startproc
+ 611              		@ args = 0, pretend = 0, frame = 0
+ 612              		@ frame_needed = 0, uses_anonymous_args = 0
+ 613              		@ link register save eliminated.
+ 395:.\Generated_Source\PSoC5/rightEncTimer.c ****     #endif /* (rightEncTimer_UsingFixedFunction) */
+ 614              		.loc 1 395 0
+ 615 0000 014B     		ldr	r3, .L51
+ 616 0002 1888     		ldrh	r0, [r3]
+ 397:.\Generated_Source\PSoC5/rightEncTimer.c **** 
+ 617              		.loc 1 397 0
+ 618 0004 80B2     		uxth	r0, r0
+ 619 0006 7047     		bx	lr
+ 620              	.L52:
+ 621              		.align	2
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc5CyCm4.s 			page 23
+
+
+ 622              	.L51:
+ 623 0008 88680040 		.word	1073768584
+ 624              		.cfi_endproc
+ 625              	.LFE10:
+ 626              		.size	rightEncTimer_ReadCapture, .-rightEncTimer_ReadCapture
+ 627              		.section	.text.rightEncTimer_WritePeriod,"ax",%progbits
+ 628              		.align	2
+ 629              		.global	rightEncTimer_WritePeriod
+ 630              		.thumb
+ 631              		.thumb_func
+ 632              		.type	rightEncTimer_WritePeriod, %function
+ 633              	rightEncTimer_WritePeriod:
+ 634              	.LFB11:
+ 416:.\Generated_Source\PSoC5/rightEncTimer.c ****     #if(rightEncTimer_UsingFixedFunction)
+ 635              		.loc 1 416 0
+ 636              		.cfi_startproc
+ 637              		@ args = 0, pretend = 0, frame = 0
+ 638              		@ frame_needed = 0, uses_anonymous_args = 0
+ 639              		@ link register save eliminated.
+ 640              	.LVL25:
+ 420:.\Generated_Source\PSoC5/rightEncTimer.c ****     #endif /* (rightEncTimer_UsingFixedFunction) */
+ 641              		.loc 1 420 0
+ 642 0000 014B     		ldr	r3, .L54
+ 643 0002 1880     		strh	r0, [r3]	@ movhi
+ 644 0004 7047     		bx	lr
+ 645              	.L55:
+ 646 0006 00BF     		.align	2
+ 647              	.L54:
+ 648 0008 48680040 		.word	1073768520
+ 649              		.cfi_endproc
+ 650              	.LFE11:
+ 651              		.size	rightEncTimer_WritePeriod, .-rightEncTimer_WritePeriod
+ 652              		.section	.text.rightEncTimer_ReadPeriod,"ax",%progbits
+ 653              		.align	2
+ 654              		.global	rightEncTimer_ReadPeriod
+ 655              		.thumb
+ 656              		.thumb_func
+ 657              		.type	rightEncTimer_ReadPeriod, %function
+ 658              	rightEncTimer_ReadPeriod:
+ 659              	.LFB12:
+ 439:.\Generated_Source\PSoC5/rightEncTimer.c ****     #if(rightEncTimer_UsingFixedFunction)
+ 660              		.loc 1 439 0
+ 661              		.cfi_startproc
+ 662              		@ args = 0, pretend = 0, frame = 0
+ 663              		@ frame_needed = 0, uses_anonymous_args = 0
+ 664              		@ link register save eliminated.
+ 443:.\Generated_Source\PSoC5/rightEncTimer.c ****     #endif /* (rightEncTimer_UsingFixedFunction) */
+ 665              		.loc 1 443 0
+ 666 0000 014B     		ldr	r3, .L57
+ 667 0002 1888     		ldrh	r0, [r3]
+ 445:.\Generated_Source\PSoC5/rightEncTimer.c **** 
+ 668              		.loc 1 445 0
+ 669 0004 80B2     		uxth	r0, r0
+ 670 0006 7047     		bx	lr
+ 671              	.L58:
+ 672              		.align	2
+ 673              	.L57:
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc5CyCm4.s 			page 24
+
+
+ 674 0008 48680040 		.word	1073768520
+ 675              		.cfi_endproc
+ 676              	.LFE12:
+ 677              		.size	rightEncTimer_ReadPeriod, .-rightEncTimer_ReadPeriod
+ 678              		.section	.text.rightEncTimer_WriteCompare,"ax",%progbits
+ 679              		.align	2
+ 680              		.global	rightEncTimer_WriteCompare
+ 681              		.thumb
+ 682              		.thumb_func
+ 683              		.type	rightEncTimer_WriteCompare, %function
+ 684              	rightEncTimer_WriteCompare:
+ 685              	.LFB13:
+ 467:.\Generated_Source\PSoC5/rightEncTimer.c ****     #if(rightEncTimer_UsingFixedFunction)
+ 686              		.loc 1 467 0
+ 687              		.cfi_startproc
+ 688              		@ args = 0, pretend = 0, frame = 0
+ 689              		@ frame_needed = 0, uses_anonymous_args = 0
+ 690              		@ link register save eliminated.
+ 691              	.LVL26:
+ 471:.\Generated_Source\PSoC5/rightEncTimer.c ****     #endif /* (rightEncTimer_UsingFixedFunction) */
+ 692              		.loc 1 471 0
+ 693 0000 014B     		ldr	r3, .L60
+ 694 0002 1880     		strh	r0, [r3]	@ movhi
+ 695 0004 7047     		bx	lr
+ 696              	.L61:
+ 697 0006 00BF     		.align	2
+ 698              	.L60:
+ 699 0008 68680040 		.word	1073768552
+ 700              		.cfi_endproc
+ 701              	.LFE13:
+ 702              		.size	rightEncTimer_WriteCompare, .-rightEncTimer_WriteCompare
+ 703              		.section	.text.rightEncTimer_ReadCompare,"ax",%progbits
+ 704              		.align	2
+ 705              		.global	rightEncTimer_ReadCompare
+ 706              		.thumb
+ 707              		.thumb_func
+ 708              		.type	rightEncTimer_ReadCompare, %function
+ 709              	rightEncTimer_ReadCompare:
+ 710              	.LFB14:
+ 490:.\Generated_Source\PSoC5/rightEncTimer.c ****     return (CY_GET_REG16(rightEncTimer_COMPARE_LSB_PTR));
+ 711              		.loc 1 490 0
+ 712              		.cfi_startproc
+ 713              		@ args = 0, pretend = 0, frame = 0
+ 714              		@ frame_needed = 0, uses_anonymous_args = 0
+ 715              		@ link register save eliminated.
+ 491:.\Generated_Source\PSoC5/rightEncTimer.c **** }
+ 716              		.loc 1 491 0
+ 717 0000 014B     		ldr	r3, .L63
+ 718 0002 1888     		ldrh	r0, [r3]
+ 492:.\Generated_Source\PSoC5/rightEncTimer.c **** 
+ 719              		.loc 1 492 0
+ 720 0004 80B2     		uxth	r0, r0
+ 721 0006 7047     		bx	lr
+ 722              	.L64:
+ 723              		.align	2
+ 724              	.L63:
+ 725 0008 68680040 		.word	1073768552
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc5CyCm4.s 			page 25
+
+
+ 726              		.cfi_endproc
+ 727              	.LFE14:
+ 728              		.size	rightEncTimer_ReadCompare, .-rightEncTimer_ReadCompare
+ 729              		.section	.text.rightEncTimer_ClearFIFO,"ax",%progbits
+ 730              		.align	2
+ 731              		.global	rightEncTimer_ClearFIFO
+ 732              		.thumb
+ 733              		.thumb_func
+ 734              		.type	rightEncTimer_ClearFIFO, %function
+ 735              	rightEncTimer_ClearFIFO:
+ 736              	.LFB15:
+ 559:.\Generated_Source\PSoC5/rightEncTimer.c **** 
+ 737              		.loc 1 559 0
+ 738              		.cfi_startproc
+ 739              		@ args = 0, pretend = 0, frame = 0
+ 740              		@ frame_needed = 0, uses_anonymous_args = 0
+ 741              		@ link register save eliminated.
+ 742              	.LBB132:
+ 743              	.LBB133:
+ 263:.\Generated_Source\PSoC5/rightEncTimer.c **** }
+ 744              		.loc 1 263 0
+ 745 0000 044A     		ldr	r2, .L73
+ 746 0002 1378     		ldrb	r3, [r2]	@ zero_extendqisi2
+ 747              	.LBE133:
+ 748              	.LBE132:
+ 749              		.loc 1 561 0
+ 750 0004 5906     		lsls	r1, r3, #25
+ 751 0006 04D5     		bpl	.L65
+ 752              	.LBB135:
+ 753              	.LBB136:
+ 395:.\Generated_Source\PSoC5/rightEncTimer.c ****     #endif /* (rightEncTimer_UsingFixedFunction) */
+ 754              		.loc 1 395 0
+ 755 0008 0349     		ldr	r1, .L73+4
+ 756              	.L70:
+ 757 000a 0B88     		ldrh	r3, [r1]
+ 758              	.LBE136:
+ 759              	.LBE135:
+ 760              	.LBB137:
+ 761              	.LBB134:
+ 263:.\Generated_Source\PSoC5/rightEncTimer.c **** }
+ 762              		.loc 1 263 0
+ 763 000c 1378     		ldrb	r3, [r2]	@ zero_extendqisi2
+ 764              	.LBE134:
+ 765              	.LBE137:
+ 766              		.loc 1 561 0
+ 767 000e 5B06     		lsls	r3, r3, #25
+ 768 0010 FBD4     		bmi	.L70
+ 769              	.L65:
+ 770 0012 7047     		bx	lr
+ 771              	.L74:
+ 772              		.align	2
+ 773              	.L73:
+ 774 0014 65640040 		.word	1073767525
+ 775 0018 88680040 		.word	1073768584
+ 776              		.cfi_endproc
+ 777              	.LFE15:
+ 778              		.size	rightEncTimer_ClearFIFO, .-rightEncTimer_ClearFIFO
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc5CyCm4.s 			page 26
+
+
+ 779              		.global	rightEncTimer_initVar
+ 780              		.bss
+ 781              		.set	.LANCHOR0,. + 0
+ 782              		.type	rightEncTimer_initVar, %object
+ 783              		.size	rightEncTimer_initVar, 1
+ 784              	rightEncTimer_initVar:
+ 785 0000 00       		.space	1
+ 786              		.text
+ 787              	.Letext0:
+ 788              		.file 2 ".\\Generated_Source\\PSoC5\\cytypes.h"
+ 789              		.file 3 ".\\Generated_Source\\PSoC5\\CyLib.h"
+ 790              		.section	.debug_info,"",%progbits
+ 791              	.Ldebug_info0:
+ 792 0000 E7040000 		.4byte	0x4e7
+ 793 0004 0400     		.2byte	0x4
+ 794 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 795 000a 04       		.byte	0x4
+ 796 000b 01       		.uleb128 0x1
+ 797 000c 65030000 		.4byte	.LASF39
+ 798 0010 01       		.byte	0x1
+ 799 0011 EF020000 		.4byte	.LASF40
+ 800 0015 1B000000 		.4byte	.LASF41
+ 801 0019 88010000 		.4byte	.Ldebug_ranges0+0x188
+ 802 001d 00000000 		.4byte	0
+ 803 0021 00000000 		.4byte	.Ldebug_line0
+ 804 0025 02       		.uleb128 0x2
+ 805 0026 01       		.byte	0x1
+ 806 0027 06       		.byte	0x6
+ 807 0028 37030000 		.4byte	.LASF0
+ 808 002c 02       		.uleb128 0x2
+ 809 002d 01       		.byte	0x1
+ 810 002e 08       		.byte	0x8
+ 811 002f 76010000 		.4byte	.LASF1
+ 812 0033 02       		.uleb128 0x2
+ 813 0034 02       		.byte	0x2
+ 814 0035 05       		.byte	0x5
+ 815 0036 CD020000 		.4byte	.LASF2
+ 816 003a 02       		.uleb128 0x2
+ 817 003b 02       		.byte	0x2
+ 818 003c 07       		.byte	0x7
+ 819 003d A6000000 		.4byte	.LASF3
+ 820 0041 02       		.uleb128 0x2
+ 821 0042 04       		.byte	0x4
+ 822 0043 05       		.byte	0x5
+ 823 0044 18030000 		.4byte	.LASF4
+ 824 0048 02       		.uleb128 0x2
+ 825 0049 04       		.byte	0x4
+ 826 004a 07       		.byte	0x7
+ 827 004b 47010000 		.4byte	.LASF5
+ 828 004f 02       		.uleb128 0x2
+ 829 0050 08       		.byte	0x8
+ 830 0051 05       		.byte	0x5
+ 831 0052 A0020000 		.4byte	.LASF6
+ 832 0056 02       		.uleb128 0x2
+ 833 0057 08       		.byte	0x8
+ 834 0058 07       		.byte	0x7
+ 835 0059 FE000000 		.4byte	.LASF7
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc5CyCm4.s 			page 27
+
+
+ 836 005d 03       		.uleb128 0x3
+ 837 005e 04       		.byte	0x4
+ 838 005f 05       		.byte	0x5
+ 839 0060 696E7400 		.ascii	"int\000"
+ 840 0064 02       		.uleb128 0x2
+ 841 0065 04       		.byte	0x4
+ 842 0066 07       		.byte	0x7
+ 843 0067 1D020000 		.4byte	.LASF8
+ 844 006b 04       		.uleb128 0x4
+ 845 006c 59010000 		.4byte	.LASF9
+ 846 0070 02       		.byte	0x2
+ 847 0071 9201     		.2byte	0x192
+ 848 0073 2C000000 		.4byte	0x2c
+ 849 0077 04       		.uleb128 0x4
+ 850 0078 E0010000 		.4byte	.LASF10
+ 851 007c 02       		.byte	0x2
+ 852 007d 9301     		.2byte	0x193
+ 853 007f 3A000000 		.4byte	0x3a
+ 854 0083 02       		.uleb128 0x2
+ 855 0084 04       		.byte	0x4
+ 856 0085 04       		.byte	0x4
+ 857 0086 F0000000 		.4byte	.LASF11
+ 858 008a 02       		.uleb128 0x2
+ 859 008b 08       		.byte	0x8
+ 860 008c 04       		.byte	0x4
+ 861 008d C0010000 		.4byte	.LASF12
+ 862 0091 02       		.uleb128 0x2
+ 863 0092 01       		.byte	0x1
+ 864 0093 08       		.byte	0x8
+ 865 0094 AE020000 		.4byte	.LASF13
+ 866 0098 04       		.uleb128 0x4
+ 867 0099 42010000 		.4byte	.LASF14
+ 868 009d 02       		.byte	0x2
+ 869 009e 3C02     		.2byte	0x23c
+ 870 00a0 A4000000 		.4byte	0xa4
+ 871 00a4 05       		.uleb128 0x5
+ 872 00a5 6B000000 		.4byte	0x6b
+ 873 00a9 04       		.uleb128 0x4
+ 874 00aa 00000000 		.4byte	.LASF15
+ 875 00ae 02       		.byte	0x2
+ 876 00af 3D02     		.2byte	0x23d
+ 877 00b1 B5000000 		.4byte	0xb5
+ 878 00b5 05       		.uleb128 0x5
+ 879 00b6 77000000 		.4byte	0x77
+ 880 00ba 02       		.uleb128 0x2
+ 881 00bb 04       		.byte	0x4
+ 882 00bc 07       		.byte	0x7
+ 883 00bd 7A020000 		.4byte	.LASF16
+ 884 00c1 06       		.uleb128 0x6
+ 885 00c2 4B030000 		.4byte	.LASF17
+ 886 00c6 01       		.byte	0x1
+ 887 00c7 8601     		.2byte	0x186
+ 888 00c9 77000000 		.4byte	0x77
+ 889 00cd 01       		.byte	0x1
+ 890 00ce 06       		.uleb128 0x6
+ 891 00cf 84010000 		.4byte	.LASF18
+ 892 00d3 01       		.byte	0x1
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc5CyCm4.s 			page 28
+
+
+ 893 00d4 0501     		.2byte	0x105
+ 894 00d6 6B000000 		.4byte	0x6b
+ 895 00da 01       		.byte	0x1
+ 896 00db 07       		.uleb128 0x7
+ 897 00dc D7020000 		.4byte	.LASF27
+ 898 00e0 01       		.byte	0x1
+ 899 00e1 2E02     		.2byte	0x22e
+ 900 00e3 01       		.byte	0x1
+ 901 00e4 08       		.uleb128 0x8
+ 902 00e5 15010000 		.4byte	.LASF19
+ 903 00e9 01       		.byte	0x1
+ 904 00ea 9F01     		.2byte	0x19f
+ 905 00ec 01       		.byte	0x1
+ 906 00ed FE000000 		.4byte	0xfe
+ 907 00f1 09       		.uleb128 0x9
+ 908 00f2 9F000000 		.4byte	.LASF21
+ 909 00f6 01       		.byte	0x1
+ 910 00f7 9F01     		.2byte	0x19f
+ 911 00f9 77000000 		.4byte	0x77
+ 912 00fd 00       		.byte	0
+ 913 00fe 08       		.uleb128 0x8
+ 914 00ff A5010000 		.4byte	.LASF20
+ 915 0103 01       		.byte	0x1
+ 916 0104 4601     		.2byte	0x146
+ 917 0106 01       		.byte	0x1
+ 918 0107 18010000 		.4byte	0x118
+ 919 010b 09       		.uleb128 0x9
+ 920 010c F6000000 		.4byte	.LASF22
+ 921 0110 01       		.byte	0x1
+ 922 0111 4601     		.2byte	0x146
+ 923 0113 77000000 		.4byte	0x77
+ 924 0117 00       		.byte	0
+ 925 0118 0A       		.uleb128 0xa
+ 926 0119 E7010000 		.4byte	.LASF23
+ 927 011d 01       		.byte	0x1
+ 928 011e ED       		.byte	0xed
+ 929 011f 01       		.byte	0x1
+ 930 0120 30010000 		.4byte	0x130
+ 931 0124 0B       		.uleb128 0xb
+ 932 0125 67010000 		.4byte	.LASF24
+ 933 0129 01       		.byte	0x1
+ 934 012a ED       		.byte	0xed
+ 935 012b 6B000000 		.4byte	0x6b
+ 936 012f 00       		.byte	0
+ 937 0130 08       		.uleb128 0x8
+ 938 0131 6A000000 		.4byte	.LASF25
+ 939 0135 01       		.byte	0x1
+ 940 0136 D101     		.2byte	0x1d1
+ 941 0138 01       		.byte	0x1
+ 942 0139 4A010000 		.4byte	0x14a
+ 943 013d 09       		.uleb128 0x9
+ 944 013e 43030000 		.4byte	.LASF26
+ 945 0142 01       		.byte	0x1
+ 946 0143 D101     		.2byte	0x1d1
+ 947 0145 77000000 		.4byte	0x77
+ 948 0149 00       		.byte	0
+ 949 014a 0C       		.uleb128 0xc
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc5CyCm4.s 			page 29
+
+
+ 950 014b 06000000 		.4byte	.LASF28
+ 951 014f 01       		.byte	0x1
+ 952 0150 8F       		.byte	0x8f
+ 953 0151 01       		.byte	0x1
+ 954 0152 0A       		.uleb128 0xa
+ 955 0153 2F010000 		.4byte	.LASF29
+ 956 0157 01       		.byte	0x1
+ 957 0158 25       		.byte	0x25
+ 958 0159 01       		.byte	0x1
+ 959 015a 75010000 		.4byte	0x175
+ 960 015e 0D       		.uleb128 0xd
+ 961 015f 75020000 		.4byte	.LASF30
+ 962 0163 01       		.byte	0x1
+ 963 0164 28       		.byte	0x28
+ 964 0165 6B000000 		.4byte	0x6b
+ 965 0169 0D       		.uleb128 0xd
+ 966 016a 83020000 		.4byte	.LASF31
+ 967 016e 01       		.byte	0x1
+ 968 016f 2D       		.byte	0x2d
+ 969 0170 6B000000 		.4byte	0x6b
+ 970 0174 00       		.byte	0
+ 971 0175 0E       		.uleb128 0xe
+ 972 0176 52010000 		.4byte	0x152
+ 973 017a 00000000 		.4byte	.LFB0
+ 974 017e 74000000 		.4byte	.LFE0-.LFB0
+ 975 0182 01       		.uleb128 0x1
+ 976 0183 9C       		.byte	0x9c
+ 977 0184 58020000 		.4byte	0x258
+ 978 0188 0F       		.uleb128 0xf
+ 979 0189 5E010000 		.4byte	0x15e
+ 980 018d 00000000 		.4byte	.LLST0
+ 981 0191 0F       		.uleb128 0xf
+ 982 0192 69010000 		.4byte	0x169
+ 983 0196 3E000000 		.4byte	.LLST1
+ 984 019a 10       		.uleb128 0x10
+ 985 019b DB000000 		.4byte	0xdb
+ 986 019f 04000000 		.4byte	.LBB40
+ 987 01a3 00000000 		.4byte	.Ldebug_ranges0+0
+ 988 01a7 01       		.byte	0x1
+ 989 01a8 60       		.byte	0x60
+ 990 01a9 CE010000 		.4byte	0x1ce
+ 991 01ad 11       		.uleb128 0x11
+ 992 01ae CE000000 		.4byte	0xce
+ 993 01b2 04000000 		.4byte	.LBB42
+ 994 01b6 18000000 		.4byte	.Ldebug_ranges0+0x18
+ 995 01ba 01       		.byte	0x1
+ 996 01bb 3102     		.2byte	0x231
+ 997 01bd 12       		.uleb128 0x12
+ 998 01be C1000000 		.4byte	0xc1
+ 999 01c2 20000000 		.4byte	.LBB47
+ 1000 01c6 06000000 		.4byte	.LBE47-.LBB47
+ 1001 01ca 01       		.byte	0x1
+ 1002 01cb 3302     		.2byte	0x233
+ 1003 01cd 00       		.byte	0
+ 1004 01ce 10       		.uleb128 0x10
+ 1005 01cf E4000000 		.4byte	0xe4
+ 1006 01d3 2C000000 		.4byte	.LBB52
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc5CyCm4.s 			page 30
+
+
+ 1007 01d7 38000000 		.4byte	.Ldebug_ranges0+0x38
+ 1008 01db 01       		.byte	0x1
+ 1009 01dc 64       		.byte	0x64
+ 1010 01dd E8010000 		.4byte	0x1e8
+ 1011 01e1 13       		.uleb128 0x13
+ 1012 01e2 F1000000 		.4byte	0xf1
+ 1013 01e6 00       		.byte	0
+ 1014 01e7 00       		.byte	0
+ 1015 01e8 10       		.uleb128 0x10
+ 1016 01e9 FE000000 		.4byte	0xfe
+ 1017 01ed 2E000000 		.4byte	.LBB56
+ 1018 01f1 58000000 		.4byte	.Ldebug_ranges0+0x58
+ 1019 01f5 01       		.byte	0x1
+ 1020 01f6 66       		.byte	0x66
+ 1021 01f7 02020000 		.4byte	0x202
+ 1022 01fb 13       		.uleb128 0x13
+ 1023 01fc 0B010000 		.4byte	0x10b
+ 1024 0200 00       		.byte	0
+ 1025 0201 00       		.byte	0
+ 1026 0202 10       		.uleb128 0x10
+ 1027 0203 18010000 		.4byte	0x118
+ 1028 0207 30000000 		.4byte	.LBB59
+ 1029 020b 70000000 		.4byte	.Ldebug_ranges0+0x70
+ 1030 020f 01       		.byte	0x1
+ 1031 0210 68       		.byte	0x68
+ 1032 0211 1C020000 		.4byte	0x21c
+ 1033 0215 13       		.uleb128 0x13
+ 1034 0216 24010000 		.4byte	0x124
+ 1035 021a 00       		.byte	0
+ 1036 021b 00       		.byte	0
+ 1037 021c 10       		.uleb128 0x10
+ 1038 021d 30010000 		.4byte	0x130
+ 1039 0221 34000000 		.4byte	.LBB63
+ 1040 0225 88000000 		.4byte	.Ldebug_ranges0+0x88
+ 1041 0229 01       		.byte	0x1
+ 1042 022a 6E       		.byte	0x6e
+ 1043 022b 36020000 		.4byte	0x236
+ 1044 022f 13       		.uleb128 0x13
+ 1045 0230 3D010000 		.4byte	0x13d
+ 1046 0234 00       		.byte	0
+ 1047 0235 00       		.byte	0
+ 1048 0236 14       		.uleb128 0x14
+ 1049 0237 CE000000 		.4byte	0xce
+ 1050 023b 36000000 		.4byte	.LBB66
+ 1051 023f A0000000 		.4byte	.Ldebug_ranges0+0xa0
+ 1052 0243 01       		.byte	0x1
+ 1053 0244 6C       		.byte	0x6c
+ 1054 0245 15       		.uleb128 0x15
+ 1055 0246 46000000 		.4byte	.LVL9
+ 1056 024a D2040000 		.4byte	0x4d2
+ 1057 024e 16       		.uleb128 0x16
+ 1058 024f 58000000 		.4byte	.LVL10
+ 1059 0253 DD040000 		.4byte	0x4dd
+ 1060 0257 00       		.byte	0
+ 1061 0258 17       		.uleb128 0x17
+ 1062 0259 4A010000 		.4byte	0x14a
+ 1063 025d 00000000 		.4byte	.LFB1
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc5CyCm4.s 			page 31
+
+
+ 1064 0261 10000000 		.4byte	.LFE1-.LFB1
+ 1065 0265 01       		.uleb128 0x1
+ 1066 0266 9C       		.byte	0x9c
+ 1067 0267 18       		.uleb128 0x18
+ 1068 0268 DC000000 		.4byte	.LASF32
+ 1069 026c 01       		.byte	0x1
+ 1070 026d B2       		.byte	0xb2
+ 1071 026e 00000000 		.4byte	.LFB2
+ 1072 0272 8C000000 		.4byte	.LFE2-.LFB2
+ 1073 0276 01       		.uleb128 0x1
+ 1074 0277 9C       		.byte	0x9c
+ 1075 0278 75030000 		.4byte	0x375
+ 1076 027c 19       		.uleb128 0x19
+ 1077 027d 4A010000 		.4byte	0x14a
+ 1078 0281 08000000 		.4byte	.LBB94
+ 1079 0285 0C000000 		.4byte	.LBE94-.LBB94
+ 1080 0289 01       		.byte	0x1
+ 1081 028a BC       		.byte	0xbc
+ 1082 028b 1A       		.uleb128 0x1a
+ 1083 028c 52010000 		.4byte	0x152
+ 1084 0290 14000000 		.4byte	.LBB96
+ 1085 0294 52000000 		.4byte	.LBE96-.LBB96
+ 1086 0298 01       		.byte	0x1
+ 1087 0299 B6       		.byte	0xb6
+ 1088 029a 1B       		.uleb128 0x1b
+ 1089 029b 14000000 		.4byte	.LBB97
+ 1090 029f 52000000 		.4byte	.LBE97-.LBB97
+ 1091 02a3 0F       		.uleb128 0xf
+ 1092 02a4 5E010000 		.4byte	0x15e
+ 1093 02a8 51000000 		.4byte	.LLST2
+ 1094 02ac 0F       		.uleb128 0xf
+ 1095 02ad 69010000 		.4byte	0x169
+ 1096 02b1 8F000000 		.4byte	.LLST3
+ 1097 02b5 10       		.uleb128 0x10
+ 1098 02b6 DB000000 		.4byte	0xdb
+ 1099 02ba 16000000 		.4byte	.LBB98
+ 1100 02be B8000000 		.4byte	.Ldebug_ranges0+0xb8
+ 1101 02c2 01       		.byte	0x1
+ 1102 02c3 60       		.byte	0x60
+ 1103 02c4 E9020000 		.4byte	0x2e9
+ 1104 02c8 11       		.uleb128 0x11
+ 1105 02c9 CE000000 		.4byte	0xce
+ 1106 02cd 16000000 		.4byte	.LBB100
+ 1107 02d1 D0000000 		.4byte	.Ldebug_ranges0+0xd0
+ 1108 02d5 01       		.byte	0x1
+ 1109 02d6 3102     		.2byte	0x231
+ 1110 02d8 12       		.uleb128 0x12
+ 1111 02d9 C1000000 		.4byte	0xc1
+ 1112 02dd 32000000 		.4byte	.LBB105
+ 1113 02e1 06000000 		.4byte	.LBE105-.LBB105
+ 1114 02e5 01       		.byte	0x1
+ 1115 02e6 3302     		.2byte	0x233
+ 1116 02e8 00       		.byte	0
+ 1117 02e9 10       		.uleb128 0x10
+ 1118 02ea 18010000 		.4byte	0x118
+ 1119 02ee 3E000000 		.4byte	.LBB110
+ 1120 02f2 F0000000 		.4byte	.Ldebug_ranges0+0xf0
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc5CyCm4.s 			page 32
+
+
+ 1121 02f6 01       		.byte	0x1
+ 1122 02f7 68       		.byte	0x68
+ 1123 02f8 03030000 		.4byte	0x303
+ 1124 02fc 13       		.uleb128 0x13
+ 1125 02fd 24010000 		.4byte	0x124
+ 1126 0301 00       		.byte	0
+ 1127 0302 00       		.byte	0
+ 1128 0303 10       		.uleb128 0x10
+ 1129 0304 E4000000 		.4byte	0xe4
+ 1130 0308 40000000 		.4byte	.LBB113
+ 1131 030c 08010000 		.4byte	.Ldebug_ranges0+0x108
+ 1132 0310 01       		.byte	0x1
+ 1133 0311 64       		.byte	0x64
+ 1134 0312 1D030000 		.4byte	0x31d
+ 1135 0316 13       		.uleb128 0x13
+ 1136 0317 F1000000 		.4byte	0xf1
+ 1137 031b 00       		.byte	0
+ 1138 031c 00       		.byte	0
+ 1139 031d 10       		.uleb128 0x10
+ 1140 031e FE000000 		.4byte	0xfe
+ 1141 0322 42000000 		.4byte	.LBB117
+ 1142 0326 28010000 		.4byte	.Ldebug_ranges0+0x128
+ 1143 032a 01       		.byte	0x1
+ 1144 032b 66       		.byte	0x66
+ 1145 032c 37030000 		.4byte	0x337
+ 1146 0330 13       		.uleb128 0x13
+ 1147 0331 0B010000 		.4byte	0x10b
+ 1148 0335 00       		.byte	0
+ 1149 0336 00       		.byte	0
+ 1150 0337 10       		.uleb128 0x10
+ 1151 0338 30010000 		.4byte	0x130
+ 1152 033c 46000000 		.4byte	.LBB121
+ 1153 0340 40010000 		.4byte	.Ldebug_ranges0+0x140
+ 1154 0344 01       		.byte	0x1
+ 1155 0345 6E       		.byte	0x6e
+ 1156 0346 51030000 		.4byte	0x351
+ 1157 034a 13       		.uleb128 0x13
+ 1158 034b 3D010000 		.4byte	0x13d
+ 1159 034f 00       		.byte	0
+ 1160 0350 00       		.byte	0
+ 1161 0351 14       		.uleb128 0x14
+ 1162 0352 CE000000 		.4byte	0xce
+ 1163 0356 48000000 		.4byte	.LBB124
+ 1164 035a 58010000 		.4byte	.Ldebug_ranges0+0x158
+ 1165 035e 01       		.byte	0x1
+ 1166 035f 6C       		.byte	0x6c
+ 1167 0360 15       		.uleb128 0x15
+ 1168 0361 58000000 		.4byte	.LVL20
+ 1169 0365 D2040000 		.4byte	0x4d2
+ 1170 0369 15       		.uleb128 0x15
+ 1171 036a 66000000 		.4byte	.LVL21
+ 1172 036e DD040000 		.4byte	0x4dd
+ 1173 0372 00       		.byte	0
+ 1174 0373 00       		.byte	0
+ 1175 0374 00       		.byte	0
+ 1176 0375 1C       		.uleb128 0x1c
+ 1177 0376 62020000 		.4byte	.LASF42
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc5CyCm4.s 			page 33
+
+
+ 1178 037a 01       		.byte	0x1
+ 1179 037b D0       		.byte	0xd0
+ 1180 037c 00000000 		.4byte	.LFB3
+ 1181 0380 10000000 		.4byte	.LFE3-.LFB3
+ 1182 0384 01       		.uleb128 0x1
+ 1183 0385 9C       		.byte	0x9c
+ 1184 0386 0E       		.uleb128 0xe
+ 1185 0387 18010000 		.4byte	0x118
+ 1186 038b 00000000 		.4byte	.LFB4
+ 1187 038f 0C000000 		.4byte	.LFE4-.LFB4
+ 1188 0393 01       		.uleb128 0x1
+ 1189 0394 9C       		.byte	0x9c
+ 1190 0395 A1030000 		.4byte	0x3a1
+ 1191 0399 1D       		.uleb128 0x1d
+ 1192 039a 24010000 		.4byte	0x124
+ 1193 039e 01       		.uleb128 0x1
+ 1194 039f 50       		.byte	0x50
+ 1195 03a0 00       		.byte	0
+ 1196 03a1 17       		.uleb128 0x17
+ 1197 03a2 CE000000 		.4byte	0xce
+ 1198 03a6 00000000 		.4byte	.LFB5
+ 1199 03aa 0C000000 		.4byte	.LFE5-.LFB5
+ 1200 03ae 01       		.uleb128 0x1
+ 1201 03af 9C       		.byte	0x9c
+ 1202 03b0 1E       		.uleb128 0x1e
+ 1203 03b1 40020000 		.4byte	.LASF34
+ 1204 03b5 01       		.byte	0x1
+ 1205 03b6 1B01     		.2byte	0x11b
+ 1206 03b8 6B000000 		.4byte	0x6b
+ 1207 03bc 00000000 		.4byte	.LFB6
+ 1208 03c0 0C000000 		.4byte	.LFE6-.LFB6
+ 1209 03c4 01       		.uleb128 0x1
+ 1210 03c5 9C       		.byte	0x9c
+ 1211 03c6 1F       		.uleb128 0x1f
+ 1212 03c7 B9000000 		.4byte	.LASF33
+ 1213 03cb 01       		.byte	0x1
+ 1214 03cc 3001     		.2byte	0x130
+ 1215 03ce 00000000 		.4byte	.LFB7
+ 1216 03d2 0C000000 		.4byte	.LFE7-.LFB7
+ 1217 03d6 01       		.uleb128 0x1
+ 1218 03d7 9C       		.byte	0x9c
+ 1219 03d8 EB030000 		.4byte	0x3eb
+ 1220 03dc 20       		.uleb128 0x20
+ 1221 03dd 5F010000 		.4byte	.LASF43
+ 1222 03e1 01       		.byte	0x1
+ 1223 03e2 3001     		.2byte	0x130
+ 1224 03e4 6B000000 		.4byte	0x6b
+ 1225 03e8 01       		.uleb128 0x1
+ 1226 03e9 50       		.byte	0x50
+ 1227 03ea 00       		.byte	0
+ 1228 03eb 0E       		.uleb128 0xe
+ 1229 03ec FE000000 		.4byte	0xfe
+ 1230 03f0 00000000 		.4byte	.LFB8
+ 1231 03f4 0C000000 		.4byte	.LFE8-.LFB8
+ 1232 03f8 01       		.uleb128 0x1
+ 1233 03f9 9C       		.byte	0x9c
+ 1234 03fa 06040000 		.4byte	0x406
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc5CyCm4.s 			page 34
+
+
+ 1235 03fe 1D       		.uleb128 0x1d
+ 1236 03ff 0B010000 		.4byte	0x10b
+ 1237 0403 01       		.uleb128 0x1
+ 1238 0404 50       		.byte	0x50
+ 1239 0405 00       		.byte	0
+ 1240 0406 1E       		.uleb128 0x1e
+ 1241 0407 85000000 		.4byte	.LASF35
+ 1242 040b 01       		.byte	0x1
+ 1243 040c 6501     		.2byte	0x165
+ 1244 040e 77000000 		.4byte	0x77
+ 1245 0412 00000000 		.4byte	.LFB9
+ 1246 0416 14000000 		.4byte	.LFE9-.LFB9
+ 1247 041a 01       		.uleb128 0x1
+ 1248 041b 9C       		.byte	0x9c
+ 1249 041c 17       		.uleb128 0x17
+ 1250 041d C1000000 		.4byte	0xc1
+ 1251 0421 00000000 		.4byte	.LFB10
+ 1252 0425 0C000000 		.4byte	.LFE10-.LFB10
+ 1253 0429 01       		.uleb128 0x1
+ 1254 042a 9C       		.byte	0x9c
+ 1255 042b 0E       		.uleb128 0xe
+ 1256 042c E4000000 		.4byte	0xe4
+ 1257 0430 00000000 		.4byte	.LFB11
+ 1258 0434 0C000000 		.4byte	.LFE11-.LFB11
+ 1259 0438 01       		.uleb128 0x1
+ 1260 0439 9C       		.byte	0x9c
+ 1261 043a 46040000 		.4byte	0x446
+ 1262 043e 1D       		.uleb128 0x1d
+ 1263 043f F1000000 		.4byte	0xf1
+ 1264 0443 01       		.uleb128 0x1
+ 1265 0444 50       		.byte	0x50
+ 1266 0445 00       		.byte	0
+ 1267 0446 1E       		.uleb128 0x1e
+ 1268 0447 C7010000 		.4byte	.LASF36
+ 1269 044b 01       		.byte	0x1
+ 1270 044c B601     		.2byte	0x1b6
+ 1271 044e 77000000 		.4byte	0x77
+ 1272 0452 00000000 		.4byte	.LFB12
+ 1273 0456 0C000000 		.4byte	.LFE12-.LFB12
+ 1274 045a 01       		.uleb128 0x1
+ 1275 045b 9C       		.byte	0x9c
+ 1276 045c 0E       		.uleb128 0xe
+ 1277 045d 30010000 		.4byte	0x130
+ 1278 0461 00000000 		.4byte	.LFB13
+ 1279 0465 0C000000 		.4byte	.LFE13-.LFB13
+ 1280 0469 01       		.uleb128 0x1
+ 1281 046a 9C       		.byte	0x9c
+ 1282 046b 77040000 		.4byte	0x477
+ 1283 046f 1D       		.uleb128 0x1d
+ 1284 0470 3D010000 		.4byte	0x13d
+ 1285 0474 01       		.uleb128 0x1
+ 1286 0475 50       		.byte	0x50
+ 1287 0476 00       		.byte	0
+ 1288 0477 1E       		.uleb128 0x1e
+ 1289 0478 B3020000 		.4byte	.LASF37
+ 1290 047c 01       		.byte	0x1
+ 1291 047d E901     		.2byte	0x1e9
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc5CyCm4.s 			page 35
+
+
+ 1292 047f 77000000 		.4byte	0x77
+ 1293 0483 00000000 		.4byte	.LFB14
+ 1294 0487 0C000000 		.4byte	.LFE14-.LFB14
+ 1295 048b 01       		.uleb128 0x1
+ 1296 048c 9C       		.byte	0x9c
+ 1297 048d 0E       		.uleb128 0xe
+ 1298 048e DB000000 		.4byte	0xdb
+ 1299 0492 00000000 		.4byte	.LFB15
+ 1300 0496 1C000000 		.4byte	.LFE15-.LFB15
+ 1301 049a 01       		.uleb128 0x1
+ 1302 049b 9C       		.byte	0x9c
+ 1303 049c C1040000 		.4byte	0x4c1
+ 1304 04a0 11       		.uleb128 0x11
+ 1305 04a1 CE000000 		.4byte	0xce
+ 1306 04a5 00000000 		.4byte	.LBB132
+ 1307 04a9 70010000 		.4byte	.Ldebug_ranges0+0x170
+ 1308 04ad 01       		.byte	0x1
+ 1309 04ae 3102     		.2byte	0x231
+ 1310 04b0 12       		.uleb128 0x12
+ 1311 04b1 C1000000 		.4byte	0xc1
+ 1312 04b5 08000000 		.4byte	.LBB135
+ 1313 04b9 04000000 		.4byte	.LBE135-.LBB135
+ 1314 04bd 01       		.byte	0x1
+ 1315 04be 3302     		.2byte	0x233
+ 1316 04c0 00       		.byte	0
+ 1317 04c1 21       		.uleb128 0x21
+ 1318 04c2 21030000 		.4byte	.LASF44
+ 1319 04c6 01       		.byte	0x1
+ 1320 04c7 15       		.byte	0x15
+ 1321 04c8 6B000000 		.4byte	0x6b
+ 1322 04cc 05       		.uleb128 0x5
+ 1323 04cd 03       		.byte	0x3
+ 1324 04ce 00000000 		.4byte	rightEncTimer_initVar
+ 1325 04d2 22       		.uleb128 0x22
+ 1326 04d3 06020000 		.4byte	.LASF38
+ 1327 04d7 03       		.byte	0x3
+ 1328 04d8 7D       		.byte	0x7d
+ 1329 04d9 6B000000 		.4byte	0x6b
+ 1330 04dd 23       		.uleb128 0x23
+ 1331 04de 2A020000 		.4byte	.LASF45
+ 1332 04e2 03       		.byte	0x3
+ 1333 04e3 7E       		.byte	0x7e
+ 1334 04e4 24       		.uleb128 0x24
+ 1335 04e5 6B000000 		.4byte	0x6b
+ 1336 04e9 00       		.byte	0
+ 1337 04ea 00       		.byte	0
+ 1338              		.section	.debug_abbrev,"",%progbits
+ 1339              	.Ldebug_abbrev0:
+ 1340 0000 01       		.uleb128 0x1
+ 1341 0001 11       		.uleb128 0x11
+ 1342 0002 01       		.byte	0x1
+ 1343 0003 25       		.uleb128 0x25
+ 1344 0004 0E       		.uleb128 0xe
+ 1345 0005 13       		.uleb128 0x13
+ 1346 0006 0B       		.uleb128 0xb
+ 1347 0007 03       		.uleb128 0x3
+ 1348 0008 0E       		.uleb128 0xe
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc5CyCm4.s 			page 36
+
+
+ 1349 0009 1B       		.uleb128 0x1b
+ 1350 000a 0E       		.uleb128 0xe
+ 1351 000b 55       		.uleb128 0x55
+ 1352 000c 17       		.uleb128 0x17
+ 1353 000d 11       		.uleb128 0x11
+ 1354 000e 01       		.uleb128 0x1
+ 1355 000f 10       		.uleb128 0x10
+ 1356 0010 17       		.uleb128 0x17
+ 1357 0011 00       		.byte	0
+ 1358 0012 00       		.byte	0
+ 1359 0013 02       		.uleb128 0x2
+ 1360 0014 24       		.uleb128 0x24
+ 1361 0015 00       		.byte	0
+ 1362 0016 0B       		.uleb128 0xb
+ 1363 0017 0B       		.uleb128 0xb
+ 1364 0018 3E       		.uleb128 0x3e
+ 1365 0019 0B       		.uleb128 0xb
+ 1366 001a 03       		.uleb128 0x3
+ 1367 001b 0E       		.uleb128 0xe
+ 1368 001c 00       		.byte	0
+ 1369 001d 00       		.byte	0
+ 1370 001e 03       		.uleb128 0x3
+ 1371 001f 24       		.uleb128 0x24
+ 1372 0020 00       		.byte	0
+ 1373 0021 0B       		.uleb128 0xb
+ 1374 0022 0B       		.uleb128 0xb
+ 1375 0023 3E       		.uleb128 0x3e
+ 1376 0024 0B       		.uleb128 0xb
+ 1377 0025 03       		.uleb128 0x3
+ 1378 0026 08       		.uleb128 0x8
+ 1379 0027 00       		.byte	0
+ 1380 0028 00       		.byte	0
+ 1381 0029 04       		.uleb128 0x4
+ 1382 002a 16       		.uleb128 0x16
+ 1383 002b 00       		.byte	0
+ 1384 002c 03       		.uleb128 0x3
+ 1385 002d 0E       		.uleb128 0xe
+ 1386 002e 3A       		.uleb128 0x3a
+ 1387 002f 0B       		.uleb128 0xb
+ 1388 0030 3B       		.uleb128 0x3b
+ 1389 0031 05       		.uleb128 0x5
+ 1390 0032 49       		.uleb128 0x49
+ 1391 0033 13       		.uleb128 0x13
+ 1392 0034 00       		.byte	0
+ 1393 0035 00       		.byte	0
+ 1394 0036 05       		.uleb128 0x5
+ 1395 0037 35       		.uleb128 0x35
+ 1396 0038 00       		.byte	0
+ 1397 0039 49       		.uleb128 0x49
+ 1398 003a 13       		.uleb128 0x13
+ 1399 003b 00       		.byte	0
+ 1400 003c 00       		.byte	0
+ 1401 003d 06       		.uleb128 0x6
+ 1402 003e 2E       		.uleb128 0x2e
+ 1403 003f 00       		.byte	0
+ 1404 0040 3F       		.uleb128 0x3f
+ 1405 0041 19       		.uleb128 0x19
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc5CyCm4.s 			page 37
+
+
+ 1406 0042 03       		.uleb128 0x3
+ 1407 0043 0E       		.uleb128 0xe
+ 1408 0044 3A       		.uleb128 0x3a
+ 1409 0045 0B       		.uleb128 0xb
+ 1410 0046 3B       		.uleb128 0x3b
+ 1411 0047 05       		.uleb128 0x5
+ 1412 0048 27       		.uleb128 0x27
+ 1413 0049 19       		.uleb128 0x19
+ 1414 004a 49       		.uleb128 0x49
+ 1415 004b 13       		.uleb128 0x13
+ 1416 004c 20       		.uleb128 0x20
+ 1417 004d 0B       		.uleb128 0xb
+ 1418 004e 00       		.byte	0
+ 1419 004f 00       		.byte	0
+ 1420 0050 07       		.uleb128 0x7
+ 1421 0051 2E       		.uleb128 0x2e
+ 1422 0052 00       		.byte	0
+ 1423 0053 3F       		.uleb128 0x3f
+ 1424 0054 19       		.uleb128 0x19
+ 1425 0055 03       		.uleb128 0x3
+ 1426 0056 0E       		.uleb128 0xe
+ 1427 0057 3A       		.uleb128 0x3a
+ 1428 0058 0B       		.uleb128 0xb
+ 1429 0059 3B       		.uleb128 0x3b
+ 1430 005a 05       		.uleb128 0x5
+ 1431 005b 27       		.uleb128 0x27
+ 1432 005c 19       		.uleb128 0x19
+ 1433 005d 20       		.uleb128 0x20
+ 1434 005e 0B       		.uleb128 0xb
+ 1435 005f 00       		.byte	0
+ 1436 0060 00       		.byte	0
+ 1437 0061 08       		.uleb128 0x8
+ 1438 0062 2E       		.uleb128 0x2e
+ 1439 0063 01       		.byte	0x1
+ 1440 0064 3F       		.uleb128 0x3f
+ 1441 0065 19       		.uleb128 0x19
+ 1442 0066 03       		.uleb128 0x3
+ 1443 0067 0E       		.uleb128 0xe
+ 1444 0068 3A       		.uleb128 0x3a
+ 1445 0069 0B       		.uleb128 0xb
+ 1446 006a 3B       		.uleb128 0x3b
+ 1447 006b 05       		.uleb128 0x5
+ 1448 006c 27       		.uleb128 0x27
+ 1449 006d 19       		.uleb128 0x19
+ 1450 006e 20       		.uleb128 0x20
+ 1451 006f 0B       		.uleb128 0xb
+ 1452 0070 01       		.uleb128 0x1
+ 1453 0071 13       		.uleb128 0x13
+ 1454 0072 00       		.byte	0
+ 1455 0073 00       		.byte	0
+ 1456 0074 09       		.uleb128 0x9
+ 1457 0075 05       		.uleb128 0x5
+ 1458 0076 00       		.byte	0
+ 1459 0077 03       		.uleb128 0x3
+ 1460 0078 0E       		.uleb128 0xe
+ 1461 0079 3A       		.uleb128 0x3a
+ 1462 007a 0B       		.uleb128 0xb
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc5CyCm4.s 			page 38
+
+
+ 1463 007b 3B       		.uleb128 0x3b
+ 1464 007c 05       		.uleb128 0x5
+ 1465 007d 49       		.uleb128 0x49
+ 1466 007e 13       		.uleb128 0x13
+ 1467 007f 00       		.byte	0
+ 1468 0080 00       		.byte	0
+ 1469 0081 0A       		.uleb128 0xa
+ 1470 0082 2E       		.uleb128 0x2e
+ 1471 0083 01       		.byte	0x1
+ 1472 0084 3F       		.uleb128 0x3f
+ 1473 0085 19       		.uleb128 0x19
+ 1474 0086 03       		.uleb128 0x3
+ 1475 0087 0E       		.uleb128 0xe
+ 1476 0088 3A       		.uleb128 0x3a
+ 1477 0089 0B       		.uleb128 0xb
+ 1478 008a 3B       		.uleb128 0x3b
+ 1479 008b 0B       		.uleb128 0xb
+ 1480 008c 27       		.uleb128 0x27
+ 1481 008d 19       		.uleb128 0x19
+ 1482 008e 20       		.uleb128 0x20
+ 1483 008f 0B       		.uleb128 0xb
+ 1484 0090 01       		.uleb128 0x1
+ 1485 0091 13       		.uleb128 0x13
+ 1486 0092 00       		.byte	0
+ 1487 0093 00       		.byte	0
+ 1488 0094 0B       		.uleb128 0xb
+ 1489 0095 05       		.uleb128 0x5
+ 1490 0096 00       		.byte	0
+ 1491 0097 03       		.uleb128 0x3
+ 1492 0098 0E       		.uleb128 0xe
+ 1493 0099 3A       		.uleb128 0x3a
+ 1494 009a 0B       		.uleb128 0xb
+ 1495 009b 3B       		.uleb128 0x3b
+ 1496 009c 0B       		.uleb128 0xb
+ 1497 009d 49       		.uleb128 0x49
+ 1498 009e 13       		.uleb128 0x13
+ 1499 009f 00       		.byte	0
+ 1500 00a0 00       		.byte	0
+ 1501 00a1 0C       		.uleb128 0xc
+ 1502 00a2 2E       		.uleb128 0x2e
+ 1503 00a3 00       		.byte	0
+ 1504 00a4 3F       		.uleb128 0x3f
+ 1505 00a5 19       		.uleb128 0x19
+ 1506 00a6 03       		.uleb128 0x3
+ 1507 00a7 0E       		.uleb128 0xe
+ 1508 00a8 3A       		.uleb128 0x3a
+ 1509 00a9 0B       		.uleb128 0xb
+ 1510 00aa 3B       		.uleb128 0x3b
+ 1511 00ab 0B       		.uleb128 0xb
+ 1512 00ac 27       		.uleb128 0x27
+ 1513 00ad 19       		.uleb128 0x19
+ 1514 00ae 20       		.uleb128 0x20
+ 1515 00af 0B       		.uleb128 0xb
+ 1516 00b0 00       		.byte	0
+ 1517 00b1 00       		.byte	0
+ 1518 00b2 0D       		.uleb128 0xd
+ 1519 00b3 34       		.uleb128 0x34
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc5CyCm4.s 			page 39
+
+
+ 1520 00b4 00       		.byte	0
+ 1521 00b5 03       		.uleb128 0x3
+ 1522 00b6 0E       		.uleb128 0xe
+ 1523 00b7 3A       		.uleb128 0x3a
+ 1524 00b8 0B       		.uleb128 0xb
+ 1525 00b9 3B       		.uleb128 0x3b
+ 1526 00ba 0B       		.uleb128 0xb
+ 1527 00bb 49       		.uleb128 0x49
+ 1528 00bc 13       		.uleb128 0x13
+ 1529 00bd 00       		.byte	0
+ 1530 00be 00       		.byte	0
+ 1531 00bf 0E       		.uleb128 0xe
+ 1532 00c0 2E       		.uleb128 0x2e
+ 1533 00c1 01       		.byte	0x1
+ 1534 00c2 31       		.uleb128 0x31
+ 1535 00c3 13       		.uleb128 0x13
+ 1536 00c4 11       		.uleb128 0x11
+ 1537 00c5 01       		.uleb128 0x1
+ 1538 00c6 12       		.uleb128 0x12
+ 1539 00c7 06       		.uleb128 0x6
+ 1540 00c8 40       		.uleb128 0x40
+ 1541 00c9 18       		.uleb128 0x18
+ 1542 00ca 9742     		.uleb128 0x2117
+ 1543 00cc 19       		.uleb128 0x19
+ 1544 00cd 01       		.uleb128 0x1
+ 1545 00ce 13       		.uleb128 0x13
+ 1546 00cf 00       		.byte	0
+ 1547 00d0 00       		.byte	0
+ 1548 00d1 0F       		.uleb128 0xf
+ 1549 00d2 34       		.uleb128 0x34
+ 1550 00d3 00       		.byte	0
+ 1551 00d4 31       		.uleb128 0x31
+ 1552 00d5 13       		.uleb128 0x13
+ 1553 00d6 02       		.uleb128 0x2
+ 1554 00d7 17       		.uleb128 0x17
+ 1555 00d8 00       		.byte	0
+ 1556 00d9 00       		.byte	0
+ 1557 00da 10       		.uleb128 0x10
+ 1558 00db 1D       		.uleb128 0x1d
+ 1559 00dc 01       		.byte	0x1
+ 1560 00dd 31       		.uleb128 0x31
+ 1561 00de 13       		.uleb128 0x13
+ 1562 00df 52       		.uleb128 0x52
+ 1563 00e0 01       		.uleb128 0x1
+ 1564 00e1 55       		.uleb128 0x55
+ 1565 00e2 17       		.uleb128 0x17
+ 1566 00e3 58       		.uleb128 0x58
+ 1567 00e4 0B       		.uleb128 0xb
+ 1568 00e5 59       		.uleb128 0x59
+ 1569 00e6 0B       		.uleb128 0xb
+ 1570 00e7 01       		.uleb128 0x1
+ 1571 00e8 13       		.uleb128 0x13
+ 1572 00e9 00       		.byte	0
+ 1573 00ea 00       		.byte	0
+ 1574 00eb 11       		.uleb128 0x11
+ 1575 00ec 1D       		.uleb128 0x1d
+ 1576 00ed 00       		.byte	0
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc5CyCm4.s 			page 40
+
+
+ 1577 00ee 31       		.uleb128 0x31
+ 1578 00ef 13       		.uleb128 0x13
+ 1579 00f0 52       		.uleb128 0x52
+ 1580 00f1 01       		.uleb128 0x1
+ 1581 00f2 55       		.uleb128 0x55
+ 1582 00f3 17       		.uleb128 0x17
+ 1583 00f4 58       		.uleb128 0x58
+ 1584 00f5 0B       		.uleb128 0xb
+ 1585 00f6 59       		.uleb128 0x59
+ 1586 00f7 05       		.uleb128 0x5
+ 1587 00f8 00       		.byte	0
+ 1588 00f9 00       		.byte	0
+ 1589 00fa 12       		.uleb128 0x12
+ 1590 00fb 1D       		.uleb128 0x1d
+ 1591 00fc 00       		.byte	0
+ 1592 00fd 31       		.uleb128 0x31
+ 1593 00fe 13       		.uleb128 0x13
+ 1594 00ff 11       		.uleb128 0x11
+ 1595 0100 01       		.uleb128 0x1
+ 1596 0101 12       		.uleb128 0x12
+ 1597 0102 06       		.uleb128 0x6
+ 1598 0103 58       		.uleb128 0x58
+ 1599 0104 0B       		.uleb128 0xb
+ 1600 0105 59       		.uleb128 0x59
+ 1601 0106 05       		.uleb128 0x5
+ 1602 0107 00       		.byte	0
+ 1603 0108 00       		.byte	0
+ 1604 0109 13       		.uleb128 0x13
+ 1605 010a 05       		.uleb128 0x5
+ 1606 010b 00       		.byte	0
+ 1607 010c 31       		.uleb128 0x31
+ 1608 010d 13       		.uleb128 0x13
+ 1609 010e 1C       		.uleb128 0x1c
+ 1610 010f 0B       		.uleb128 0xb
+ 1611 0110 00       		.byte	0
+ 1612 0111 00       		.byte	0
+ 1613 0112 14       		.uleb128 0x14
+ 1614 0113 1D       		.uleb128 0x1d
+ 1615 0114 00       		.byte	0
+ 1616 0115 31       		.uleb128 0x31
+ 1617 0116 13       		.uleb128 0x13
+ 1618 0117 52       		.uleb128 0x52
+ 1619 0118 01       		.uleb128 0x1
+ 1620 0119 55       		.uleb128 0x55
+ 1621 011a 17       		.uleb128 0x17
+ 1622 011b 58       		.uleb128 0x58
+ 1623 011c 0B       		.uleb128 0xb
+ 1624 011d 59       		.uleb128 0x59
+ 1625 011e 0B       		.uleb128 0xb
+ 1626 011f 00       		.byte	0
+ 1627 0120 00       		.byte	0
+ 1628 0121 15       		.uleb128 0x15
+ 1629 0122 898201   		.uleb128 0x4109
+ 1630 0125 00       		.byte	0
+ 1631 0126 11       		.uleb128 0x11
+ 1632 0127 01       		.uleb128 0x1
+ 1633 0128 31       		.uleb128 0x31
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc5CyCm4.s 			page 41
+
+
+ 1634 0129 13       		.uleb128 0x13
+ 1635 012a 00       		.byte	0
+ 1636 012b 00       		.byte	0
+ 1637 012c 16       		.uleb128 0x16
+ 1638 012d 898201   		.uleb128 0x4109
+ 1639 0130 00       		.byte	0
+ 1640 0131 11       		.uleb128 0x11
+ 1641 0132 01       		.uleb128 0x1
+ 1642 0133 9542     		.uleb128 0x2115
+ 1643 0135 19       		.uleb128 0x19
+ 1644 0136 31       		.uleb128 0x31
+ 1645 0137 13       		.uleb128 0x13
+ 1646 0138 00       		.byte	0
+ 1647 0139 00       		.byte	0
+ 1648 013a 17       		.uleb128 0x17
+ 1649 013b 2E       		.uleb128 0x2e
+ 1650 013c 00       		.byte	0
+ 1651 013d 31       		.uleb128 0x31
+ 1652 013e 13       		.uleb128 0x13
+ 1653 013f 11       		.uleb128 0x11
+ 1654 0140 01       		.uleb128 0x1
+ 1655 0141 12       		.uleb128 0x12
+ 1656 0142 06       		.uleb128 0x6
+ 1657 0143 40       		.uleb128 0x40
+ 1658 0144 18       		.uleb128 0x18
+ 1659 0145 9742     		.uleb128 0x2117
+ 1660 0147 19       		.uleb128 0x19
+ 1661 0148 00       		.byte	0
+ 1662 0149 00       		.byte	0
+ 1663 014a 18       		.uleb128 0x18
+ 1664 014b 2E       		.uleb128 0x2e
+ 1665 014c 01       		.byte	0x1
+ 1666 014d 3F       		.uleb128 0x3f
+ 1667 014e 19       		.uleb128 0x19
+ 1668 014f 03       		.uleb128 0x3
+ 1669 0150 0E       		.uleb128 0xe
+ 1670 0151 3A       		.uleb128 0x3a
+ 1671 0152 0B       		.uleb128 0xb
+ 1672 0153 3B       		.uleb128 0x3b
+ 1673 0154 0B       		.uleb128 0xb
+ 1674 0155 27       		.uleb128 0x27
+ 1675 0156 19       		.uleb128 0x19
+ 1676 0157 11       		.uleb128 0x11
+ 1677 0158 01       		.uleb128 0x1
+ 1678 0159 12       		.uleb128 0x12
+ 1679 015a 06       		.uleb128 0x6
+ 1680 015b 40       		.uleb128 0x40
+ 1681 015c 18       		.uleb128 0x18
+ 1682 015d 9742     		.uleb128 0x2117
+ 1683 015f 19       		.uleb128 0x19
+ 1684 0160 01       		.uleb128 0x1
+ 1685 0161 13       		.uleb128 0x13
+ 1686 0162 00       		.byte	0
+ 1687 0163 00       		.byte	0
+ 1688 0164 19       		.uleb128 0x19
+ 1689 0165 1D       		.uleb128 0x1d
+ 1690 0166 00       		.byte	0
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc5CyCm4.s 			page 42
+
+
+ 1691 0167 31       		.uleb128 0x31
+ 1692 0168 13       		.uleb128 0x13
+ 1693 0169 11       		.uleb128 0x11
+ 1694 016a 01       		.uleb128 0x1
+ 1695 016b 12       		.uleb128 0x12
+ 1696 016c 06       		.uleb128 0x6
+ 1697 016d 58       		.uleb128 0x58
+ 1698 016e 0B       		.uleb128 0xb
+ 1699 016f 59       		.uleb128 0x59
+ 1700 0170 0B       		.uleb128 0xb
+ 1701 0171 00       		.byte	0
+ 1702 0172 00       		.byte	0
+ 1703 0173 1A       		.uleb128 0x1a
+ 1704 0174 1D       		.uleb128 0x1d
+ 1705 0175 01       		.byte	0x1
+ 1706 0176 31       		.uleb128 0x31
+ 1707 0177 13       		.uleb128 0x13
+ 1708 0178 11       		.uleb128 0x11
+ 1709 0179 01       		.uleb128 0x1
+ 1710 017a 12       		.uleb128 0x12
+ 1711 017b 06       		.uleb128 0x6
+ 1712 017c 58       		.uleb128 0x58
+ 1713 017d 0B       		.uleb128 0xb
+ 1714 017e 59       		.uleb128 0x59
+ 1715 017f 0B       		.uleb128 0xb
+ 1716 0180 00       		.byte	0
+ 1717 0181 00       		.byte	0
+ 1718 0182 1B       		.uleb128 0x1b
+ 1719 0183 0B       		.uleb128 0xb
+ 1720 0184 01       		.byte	0x1
+ 1721 0185 11       		.uleb128 0x11
+ 1722 0186 01       		.uleb128 0x1
+ 1723 0187 12       		.uleb128 0x12
+ 1724 0188 06       		.uleb128 0x6
+ 1725 0189 00       		.byte	0
+ 1726 018a 00       		.byte	0
+ 1727 018b 1C       		.uleb128 0x1c
+ 1728 018c 2E       		.uleb128 0x2e
+ 1729 018d 00       		.byte	0
+ 1730 018e 3F       		.uleb128 0x3f
+ 1731 018f 19       		.uleb128 0x19
+ 1732 0190 03       		.uleb128 0x3
+ 1733 0191 0E       		.uleb128 0xe
+ 1734 0192 3A       		.uleb128 0x3a
+ 1735 0193 0B       		.uleb128 0xb
+ 1736 0194 3B       		.uleb128 0x3b
+ 1737 0195 0B       		.uleb128 0xb
+ 1738 0196 27       		.uleb128 0x27
+ 1739 0197 19       		.uleb128 0x19
+ 1740 0198 11       		.uleb128 0x11
+ 1741 0199 01       		.uleb128 0x1
+ 1742 019a 12       		.uleb128 0x12
+ 1743 019b 06       		.uleb128 0x6
+ 1744 019c 40       		.uleb128 0x40
+ 1745 019d 18       		.uleb128 0x18
+ 1746 019e 9742     		.uleb128 0x2117
+ 1747 01a0 19       		.uleb128 0x19
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc5CyCm4.s 			page 43
+
+
+ 1748 01a1 00       		.byte	0
+ 1749 01a2 00       		.byte	0
+ 1750 01a3 1D       		.uleb128 0x1d
+ 1751 01a4 05       		.uleb128 0x5
+ 1752 01a5 00       		.byte	0
+ 1753 01a6 31       		.uleb128 0x31
+ 1754 01a7 13       		.uleb128 0x13
+ 1755 01a8 02       		.uleb128 0x2
+ 1756 01a9 18       		.uleb128 0x18
+ 1757 01aa 00       		.byte	0
+ 1758 01ab 00       		.byte	0
+ 1759 01ac 1E       		.uleb128 0x1e
+ 1760 01ad 2E       		.uleb128 0x2e
+ 1761 01ae 00       		.byte	0
+ 1762 01af 3F       		.uleb128 0x3f
+ 1763 01b0 19       		.uleb128 0x19
+ 1764 01b1 03       		.uleb128 0x3
+ 1765 01b2 0E       		.uleb128 0xe
+ 1766 01b3 3A       		.uleb128 0x3a
+ 1767 01b4 0B       		.uleb128 0xb
+ 1768 01b5 3B       		.uleb128 0x3b
+ 1769 01b6 05       		.uleb128 0x5
+ 1770 01b7 27       		.uleb128 0x27
+ 1771 01b8 19       		.uleb128 0x19
+ 1772 01b9 49       		.uleb128 0x49
+ 1773 01ba 13       		.uleb128 0x13
+ 1774 01bb 11       		.uleb128 0x11
+ 1775 01bc 01       		.uleb128 0x1
+ 1776 01bd 12       		.uleb128 0x12
+ 1777 01be 06       		.uleb128 0x6
+ 1778 01bf 40       		.uleb128 0x40
+ 1779 01c0 18       		.uleb128 0x18
+ 1780 01c1 9742     		.uleb128 0x2117
+ 1781 01c3 19       		.uleb128 0x19
+ 1782 01c4 00       		.byte	0
+ 1783 01c5 00       		.byte	0
+ 1784 01c6 1F       		.uleb128 0x1f
+ 1785 01c7 2E       		.uleb128 0x2e
+ 1786 01c8 01       		.byte	0x1
+ 1787 01c9 3F       		.uleb128 0x3f
+ 1788 01ca 19       		.uleb128 0x19
+ 1789 01cb 03       		.uleb128 0x3
+ 1790 01cc 0E       		.uleb128 0xe
+ 1791 01cd 3A       		.uleb128 0x3a
+ 1792 01ce 0B       		.uleb128 0xb
+ 1793 01cf 3B       		.uleb128 0x3b
+ 1794 01d0 05       		.uleb128 0x5
+ 1795 01d1 27       		.uleb128 0x27
+ 1796 01d2 19       		.uleb128 0x19
+ 1797 01d3 11       		.uleb128 0x11
+ 1798 01d4 01       		.uleb128 0x1
+ 1799 01d5 12       		.uleb128 0x12
+ 1800 01d6 06       		.uleb128 0x6
+ 1801 01d7 40       		.uleb128 0x40
+ 1802 01d8 18       		.uleb128 0x18
+ 1803 01d9 9742     		.uleb128 0x2117
+ 1804 01db 19       		.uleb128 0x19
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc5CyCm4.s 			page 44
+
+
+ 1805 01dc 01       		.uleb128 0x1
+ 1806 01dd 13       		.uleb128 0x13
+ 1807 01de 00       		.byte	0
+ 1808 01df 00       		.byte	0
+ 1809 01e0 20       		.uleb128 0x20
+ 1810 01e1 05       		.uleb128 0x5
+ 1811 01e2 00       		.byte	0
+ 1812 01e3 03       		.uleb128 0x3
+ 1813 01e4 0E       		.uleb128 0xe
+ 1814 01e5 3A       		.uleb128 0x3a
+ 1815 01e6 0B       		.uleb128 0xb
+ 1816 01e7 3B       		.uleb128 0x3b
+ 1817 01e8 05       		.uleb128 0x5
+ 1818 01e9 49       		.uleb128 0x49
+ 1819 01ea 13       		.uleb128 0x13
+ 1820 01eb 02       		.uleb128 0x2
+ 1821 01ec 18       		.uleb128 0x18
+ 1822 01ed 00       		.byte	0
+ 1823 01ee 00       		.byte	0
+ 1824 01ef 21       		.uleb128 0x21
+ 1825 01f0 34       		.uleb128 0x34
+ 1826 01f1 00       		.byte	0
+ 1827 01f2 03       		.uleb128 0x3
+ 1828 01f3 0E       		.uleb128 0xe
+ 1829 01f4 3A       		.uleb128 0x3a
+ 1830 01f5 0B       		.uleb128 0xb
+ 1831 01f6 3B       		.uleb128 0x3b
+ 1832 01f7 0B       		.uleb128 0xb
+ 1833 01f8 49       		.uleb128 0x49
+ 1834 01f9 13       		.uleb128 0x13
+ 1835 01fa 3F       		.uleb128 0x3f
+ 1836 01fb 19       		.uleb128 0x19
+ 1837 01fc 02       		.uleb128 0x2
+ 1838 01fd 18       		.uleb128 0x18
+ 1839 01fe 00       		.byte	0
+ 1840 01ff 00       		.byte	0
+ 1841 0200 22       		.uleb128 0x22
+ 1842 0201 2E       		.uleb128 0x2e
+ 1843 0202 00       		.byte	0
+ 1844 0203 3F       		.uleb128 0x3f
+ 1845 0204 19       		.uleb128 0x19
+ 1846 0205 03       		.uleb128 0x3
+ 1847 0206 0E       		.uleb128 0xe
+ 1848 0207 3A       		.uleb128 0x3a
+ 1849 0208 0B       		.uleb128 0xb
+ 1850 0209 3B       		.uleb128 0x3b
+ 1851 020a 0B       		.uleb128 0xb
+ 1852 020b 27       		.uleb128 0x27
+ 1853 020c 19       		.uleb128 0x19
+ 1854 020d 49       		.uleb128 0x49
+ 1855 020e 13       		.uleb128 0x13
+ 1856 020f 3C       		.uleb128 0x3c
+ 1857 0210 19       		.uleb128 0x19
+ 1858 0211 00       		.byte	0
+ 1859 0212 00       		.byte	0
+ 1860 0213 23       		.uleb128 0x23
+ 1861 0214 2E       		.uleb128 0x2e
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc5CyCm4.s 			page 45
+
+
+ 1862 0215 01       		.byte	0x1
+ 1863 0216 3F       		.uleb128 0x3f
+ 1864 0217 19       		.uleb128 0x19
+ 1865 0218 03       		.uleb128 0x3
+ 1866 0219 0E       		.uleb128 0xe
+ 1867 021a 3A       		.uleb128 0x3a
+ 1868 021b 0B       		.uleb128 0xb
+ 1869 021c 3B       		.uleb128 0x3b
+ 1870 021d 0B       		.uleb128 0xb
+ 1871 021e 27       		.uleb128 0x27
+ 1872 021f 19       		.uleb128 0x19
+ 1873 0220 3C       		.uleb128 0x3c
+ 1874 0221 19       		.uleb128 0x19
+ 1875 0222 00       		.byte	0
+ 1876 0223 00       		.byte	0
+ 1877 0224 24       		.uleb128 0x24
+ 1878 0225 05       		.uleb128 0x5
+ 1879 0226 00       		.byte	0
+ 1880 0227 49       		.uleb128 0x49
+ 1881 0228 13       		.uleb128 0x13
+ 1882 0229 00       		.byte	0
+ 1883 022a 00       		.byte	0
+ 1884 022b 00       		.byte	0
+ 1885              		.section	.debug_loc,"",%progbits
+ 1886              	.Ldebug_loc0:
+ 1887              	.LLST0:
+ 1888 0000 08000000 		.4byte	.LVL0
+ 1889 0004 0C000000 		.4byte	.LVL1
+ 1890 0008 0600     		.2byte	0x6
+ 1891 000a 73       		.byte	0x73
+ 1892 000b 00       		.sleb128 0
+ 1893 000c 09       		.byte	0x9
+ 1894 000d F8       		.byte	0xf8
+ 1895 000e 1A       		.byte	0x1a
+ 1896 000f 9F       		.byte	0x9f
+ 1897 0010 18000000 		.4byte	.LVL2
+ 1898 0014 1C000000 		.4byte	.LVL3
+ 1899 0018 0100     		.2byte	0x1
+ 1900 001a 53       		.byte	0x53
+ 1901 001b 1C000000 		.4byte	.LVL3
+ 1902 001f 24000000 		.4byte	.LVL4
+ 1903 0023 0200     		.2byte	0x2
+ 1904 0025 71       		.byte	0x71
+ 1905 0026 00       		.sleb128 0
+ 1906 0027 24000000 		.4byte	.LVL4
+ 1907 002b 3A000000 		.4byte	.LVL6
+ 1908 002f 0500     		.2byte	0x5
+ 1909 0031 0C       		.byte	0xc
+ 1910 0032 74640040 		.4byte	0x40006474
+ 1911 0036 00000000 		.4byte	0
+ 1912 003a 00000000 		.4byte	0
+ 1913              	.LLST1:
+ 1914 003e 46000000 		.4byte	.LVL9
+ 1915 0042 57000000 		.4byte	.LVL10-1
+ 1916 0046 0100     		.2byte	0x1
+ 1917 0048 50       		.byte	0x50
+ 1918 0049 00000000 		.4byte	0
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc5CyCm4.s 			page 46
+
+
+ 1919 004d 00000000 		.4byte	0
+ 1920              	.LLST2:
+ 1921 0051 1A000000 		.4byte	.LVL11
+ 1922 0055 1E000000 		.4byte	.LVL12
+ 1923 0059 0600     		.2byte	0x6
+ 1924 005b 73       		.byte	0x73
+ 1925 005c 00       		.sleb128 0
+ 1926 005d 09       		.byte	0x9
+ 1927 005e F8       		.byte	0xf8
+ 1928 005f 1A       		.byte	0x1a
+ 1929 0060 9F       		.byte	0x9f
+ 1930 0061 2A000000 		.4byte	.LVL13
+ 1931 0065 2E000000 		.4byte	.LVL14
+ 1932 0069 0100     		.2byte	0x1
+ 1933 006b 53       		.byte	0x53
+ 1934 006c 2E000000 		.4byte	.LVL14
+ 1935 0070 36000000 		.4byte	.LVL15
+ 1936 0074 0200     		.2byte	0x2
+ 1937 0076 71       		.byte	0x71
+ 1938 0077 00       		.sleb128 0
+ 1939 0078 36000000 		.4byte	.LVL15
+ 1940 007c 4C000000 		.4byte	.LVL17
+ 1941 0080 0500     		.2byte	0x5
+ 1942 0082 0C       		.byte	0xc
+ 1943 0083 74640040 		.4byte	0x40006474
+ 1944 0087 00000000 		.4byte	0
+ 1945 008b 00000000 		.4byte	0
+ 1946              	.LLST3:
+ 1947 008f 58000000 		.4byte	.LVL20
+ 1948 0093 65000000 		.4byte	.LVL21-1
+ 1949 0097 0100     		.2byte	0x1
+ 1950 0099 50       		.byte	0x50
+ 1951 009a 00000000 		.4byte	0
+ 1952 009e 00000000 		.4byte	0
+ 1953              		.section	.debug_aranges,"",%progbits
+ 1954 0000 94000000 		.4byte	0x94
+ 1955 0004 0200     		.2byte	0x2
+ 1956 0006 00000000 		.4byte	.Ldebug_info0
+ 1957 000a 04       		.byte	0x4
+ 1958 000b 00       		.byte	0
+ 1959 000c 0000     		.2byte	0
+ 1960 000e 0000     		.2byte	0
+ 1961 0010 00000000 		.4byte	.LFB0
+ 1962 0014 74000000 		.4byte	.LFE0-.LFB0
+ 1963 0018 00000000 		.4byte	.LFB1
+ 1964 001c 10000000 		.4byte	.LFE1-.LFB1
+ 1965 0020 00000000 		.4byte	.LFB2
+ 1966 0024 8C000000 		.4byte	.LFE2-.LFB2
+ 1967 0028 00000000 		.4byte	.LFB3
+ 1968 002c 10000000 		.4byte	.LFE3-.LFB3
+ 1969 0030 00000000 		.4byte	.LFB4
+ 1970 0034 0C000000 		.4byte	.LFE4-.LFB4
+ 1971 0038 00000000 		.4byte	.LFB5
+ 1972 003c 0C000000 		.4byte	.LFE5-.LFB5
+ 1973 0040 00000000 		.4byte	.LFB6
+ 1974 0044 0C000000 		.4byte	.LFE6-.LFB6
+ 1975 0048 00000000 		.4byte	.LFB7
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc5CyCm4.s 			page 47
+
+
+ 1976 004c 0C000000 		.4byte	.LFE7-.LFB7
+ 1977 0050 00000000 		.4byte	.LFB8
+ 1978 0054 0C000000 		.4byte	.LFE8-.LFB8
+ 1979 0058 00000000 		.4byte	.LFB9
+ 1980 005c 14000000 		.4byte	.LFE9-.LFB9
+ 1981 0060 00000000 		.4byte	.LFB10
+ 1982 0064 0C000000 		.4byte	.LFE10-.LFB10
+ 1983 0068 00000000 		.4byte	.LFB11
+ 1984 006c 0C000000 		.4byte	.LFE11-.LFB11
+ 1985 0070 00000000 		.4byte	.LFB12
+ 1986 0074 0C000000 		.4byte	.LFE12-.LFB12
+ 1987 0078 00000000 		.4byte	.LFB13
+ 1988 007c 0C000000 		.4byte	.LFE13-.LFB13
+ 1989 0080 00000000 		.4byte	.LFB14
+ 1990 0084 0C000000 		.4byte	.LFE14-.LFB14
+ 1991 0088 00000000 		.4byte	.LFB15
+ 1992 008c 1C000000 		.4byte	.LFE15-.LFB15
+ 1993 0090 00000000 		.4byte	0
+ 1994 0094 00000000 		.4byte	0
+ 1995              		.section	.debug_ranges,"",%progbits
+ 1996              	.Ldebug_ranges0:
+ 1997 0000 04000000 		.4byte	.LBB40
+ 1998 0004 06000000 		.4byte	.LBE40
+ 1999 0008 1A000000 		.4byte	.LBB51
+ 2000 000c 2C000000 		.4byte	.LBE51
+ 2001 0010 00000000 		.4byte	0
+ 2002 0014 00000000 		.4byte	0
+ 2003 0018 04000000 		.4byte	.LBB42
+ 2004 001c 06000000 		.4byte	.LBE42
+ 2005 0020 1A000000 		.4byte	.LBB46
+ 2006 0024 1C000000 		.4byte	.LBE46
+ 2007 0028 26000000 		.4byte	.LBB49
+ 2008 002c 28000000 		.4byte	.LBE49
+ 2009 0030 00000000 		.4byte	0
+ 2010 0034 00000000 		.4byte	0
+ 2011 0038 2C000000 		.4byte	.LBB52
+ 2012 003c 2E000000 		.4byte	.LBE52
+ 2013 0040 32000000 		.4byte	.LBB62
+ 2014 0044 34000000 		.4byte	.LBE62
+ 2015 0048 38000000 		.4byte	.LBB69
+ 2016 004c 3A000000 		.4byte	.LBE69
+ 2017 0050 00000000 		.4byte	0
+ 2018 0054 00000000 		.4byte	0
+ 2019 0058 2E000000 		.4byte	.LBB56
+ 2020 005c 30000000 		.4byte	.LBE56
+ 2021 0060 3A000000 		.4byte	.LBB70
+ 2022 0064 3C000000 		.4byte	.LBE70
+ 2023 0068 00000000 		.4byte	0
+ 2024 006c 00000000 		.4byte	0
+ 2025 0070 30000000 		.4byte	.LBB59
+ 2026 0074 32000000 		.4byte	.LBE59
+ 2027 0078 3C000000 		.4byte	.LBB71
+ 2028 007c 3E000000 		.4byte	.LBE71
+ 2029 0080 00000000 		.4byte	0
+ 2030 0084 00000000 		.4byte	0
+ 2031 0088 34000000 		.4byte	.LBB63
+ 2032 008c 36000000 		.4byte	.LBE63
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc5CyCm4.s 			page 48
+
+
+ 2033 0090 40000000 		.4byte	.LBB73
+ 2034 0094 42000000 		.4byte	.LBE73
+ 2035 0098 00000000 		.4byte	0
+ 2036 009c 00000000 		.4byte	0
+ 2037 00a0 36000000 		.4byte	.LBB66
+ 2038 00a4 38000000 		.4byte	.LBE66
+ 2039 00a8 3E000000 		.4byte	.LBB72
+ 2040 00ac 40000000 		.4byte	.LBE72
+ 2041 00b0 00000000 		.4byte	0
+ 2042 00b4 00000000 		.4byte	0
+ 2043 00b8 16000000 		.4byte	.LBB98
+ 2044 00bc 18000000 		.4byte	.LBE98
+ 2045 00c0 2C000000 		.4byte	.LBB109
+ 2046 00c4 3E000000 		.4byte	.LBE109
+ 2047 00c8 00000000 		.4byte	0
+ 2048 00cc 00000000 		.4byte	0
+ 2049 00d0 16000000 		.4byte	.LBB100
+ 2050 00d4 18000000 		.4byte	.LBE100
+ 2051 00d8 2C000000 		.4byte	.LBB104
+ 2052 00dc 2E000000 		.4byte	.LBE104
+ 2053 00e0 38000000 		.4byte	.LBB107
+ 2054 00e4 3A000000 		.4byte	.LBE107
+ 2055 00e8 00000000 		.4byte	0
+ 2056 00ec 00000000 		.4byte	0
+ 2057 00f0 3E000000 		.4byte	.LBB110
+ 2058 00f4 40000000 		.4byte	.LBE110
+ 2059 00f8 4E000000 		.4byte	.LBB129
+ 2060 00fc 50000000 		.4byte	.LBE129
+ 2061 0100 00000000 		.4byte	0
+ 2062 0104 00000000 		.4byte	0
+ 2063 0108 40000000 		.4byte	.LBB113
+ 2064 010c 42000000 		.4byte	.LBE113
+ 2065 0110 44000000 		.4byte	.LBB120
+ 2066 0114 46000000 		.4byte	.LBE120
+ 2067 0118 4A000000 		.4byte	.LBB127
+ 2068 011c 4C000000 		.4byte	.LBE127
+ 2069 0120 00000000 		.4byte	0
+ 2070 0124 00000000 		.4byte	0
+ 2071 0128 42000000 		.4byte	.LBB117
+ 2072 012c 44000000 		.4byte	.LBE117
+ 2073 0130 4C000000 		.4byte	.LBB128
+ 2074 0134 4E000000 		.4byte	.LBE128
+ 2075 0138 00000000 		.4byte	0
+ 2076 013c 00000000 		.4byte	0
+ 2077 0140 46000000 		.4byte	.LBB121
+ 2078 0144 48000000 		.4byte	.LBE121
+ 2079 0148 52000000 		.4byte	.LBB131
+ 2080 014c 54000000 		.4byte	.LBE131
+ 2081 0150 00000000 		.4byte	0
+ 2082 0154 00000000 		.4byte	0
+ 2083 0158 48000000 		.4byte	.LBB124
+ 2084 015c 4A000000 		.4byte	.LBE124
+ 2085 0160 50000000 		.4byte	.LBB130
+ 2086 0164 52000000 		.4byte	.LBE130
+ 2087 0168 00000000 		.4byte	0
+ 2088 016c 00000000 		.4byte	0
+ 2089 0170 00000000 		.4byte	.LBB132
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc5CyCm4.s 			page 49
+
+
+ 2090 0174 04000000 		.4byte	.LBE132
+ 2091 0178 0C000000 		.4byte	.LBB137
+ 2092 017c 0E000000 		.4byte	.LBE137
+ 2093 0180 00000000 		.4byte	0
+ 2094 0184 00000000 		.4byte	0
+ 2095 0188 00000000 		.4byte	.LFB0
+ 2096 018c 74000000 		.4byte	.LFE0
+ 2097 0190 00000000 		.4byte	.LFB1
+ 2098 0194 10000000 		.4byte	.LFE1
+ 2099 0198 00000000 		.4byte	.LFB2
+ 2100 019c 8C000000 		.4byte	.LFE2
+ 2101 01a0 00000000 		.4byte	.LFB3
+ 2102 01a4 10000000 		.4byte	.LFE3
+ 2103 01a8 00000000 		.4byte	.LFB4
+ 2104 01ac 0C000000 		.4byte	.LFE4
+ 2105 01b0 00000000 		.4byte	.LFB5
+ 2106 01b4 0C000000 		.4byte	.LFE5
+ 2107 01b8 00000000 		.4byte	.LFB6
+ 2108 01bc 0C000000 		.4byte	.LFE6
+ 2109 01c0 00000000 		.4byte	.LFB7
+ 2110 01c4 0C000000 		.4byte	.LFE7
+ 2111 01c8 00000000 		.4byte	.LFB8
+ 2112 01cc 0C000000 		.4byte	.LFE8
+ 2113 01d0 00000000 		.4byte	.LFB9
+ 2114 01d4 14000000 		.4byte	.LFE9
+ 2115 01d8 00000000 		.4byte	.LFB10
+ 2116 01dc 0C000000 		.4byte	.LFE10
+ 2117 01e0 00000000 		.4byte	.LFB11
+ 2118 01e4 0C000000 		.4byte	.LFE11
+ 2119 01e8 00000000 		.4byte	.LFB12
+ 2120 01ec 0C000000 		.4byte	.LFE12
+ 2121 01f0 00000000 		.4byte	.LFB13
+ 2122 01f4 0C000000 		.4byte	.LFE13
+ 2123 01f8 00000000 		.4byte	.LFB14
+ 2124 01fc 0C000000 		.4byte	.LFE14
+ 2125 0200 00000000 		.4byte	.LFB15
+ 2126 0204 1C000000 		.4byte	.LFE15
+ 2127 0208 00000000 		.4byte	0
+ 2128 020c 00000000 		.4byte	0
+ 2129              		.section	.debug_line,"",%progbits
+ 2130              	.Ldebug_line0:
+ 2131 0000 3B020000 		.section	.debug_str,"MS",%progbits,1
+ 2131      02005700 
+ 2131      00000201 
+ 2131      FB0E0D00 
+ 2131      01010101 
+ 2132              	.LASF15:
+ 2133 0000 72656731 		.ascii	"reg16\000"
+ 2133      3600
+ 2134              	.LASF28:
+ 2135 0006 72696768 		.ascii	"rightEncTimer_Enable\000"
+ 2135      74456E63 
+ 2135      54696D65 
+ 2135      725F456E 
+ 2135      61626C65 
+ 2136              	.LASF41:
+ 2137 001b 433A5C55 		.ascii	"C:\\Users\\Patrick\\Documents\\GitHub\\PSoC 5LP FIl"
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc5CyCm4.s 			page 50
+
+
+ 2137      73657273 
+ 2137      5C506174 
+ 2137      7269636B 
+ 2137      5C446F63 
+ 2138 0049 65735C43 		.ascii	"es\\C-CAN_PSoC_DevKit\\C-CAN.cydsn\000"
+ 2138      2D43414E 
+ 2138      5F50536F 
+ 2138      435F4465 
+ 2138      764B6974 
+ 2139              	.LASF25:
+ 2140 006a 72696768 		.ascii	"rightEncTimer_WriteCompare\000"
+ 2140      74456E63 
+ 2140      54696D65 
+ 2140      725F5772 
+ 2140      69746543 
+ 2141              	.LASF35:
+ 2142 0085 72696768 		.ascii	"rightEncTimer_ReadCounter\000"
+ 2142      74456E63 
+ 2142      54696D65 
+ 2142      725F5265 
+ 2142      6164436F 
+ 2143              	.LASF21:
+ 2144 009f 70657269 		.ascii	"period\000"
+ 2144      6F6400
+ 2145              	.LASF3:
+ 2146 00a6 73686F72 		.ascii	"short unsigned int\000"
+ 2146      7420756E 
+ 2146      7369676E 
+ 2146      65642069 
+ 2146      6E7400
+ 2147              	.LASF33:
+ 2148 00b9 72696768 		.ascii	"rightEncTimer_WriteControlRegister\000"
+ 2148      74456E63 
+ 2148      54696D65 
+ 2148      725F5772 
+ 2148      69746543 
+ 2149              	.LASF32:
+ 2150 00dc 72696768 		.ascii	"rightEncTimer_Start\000"
+ 2150      74456E63 
+ 2150      54696D65 
+ 2150      725F5374 
+ 2150      61727400 
+ 2151              	.LASF11:
+ 2152 00f0 666C6F61 		.ascii	"float\000"
+ 2152      7400
+ 2153              	.LASF22:
+ 2154 00f6 636F756E 		.ascii	"counter\000"
+ 2154      74657200 
+ 2155              	.LASF7:
+ 2156 00fe 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 2156      206C6F6E 
+ 2156      6720756E 
+ 2156      7369676E 
+ 2156      65642069 
+ 2157              	.LASF19:
+ 2158 0115 72696768 		.ascii	"rightEncTimer_WritePeriod\000"
+ 2158      74456E63 
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc5CyCm4.s 			page 51
+
+
+ 2158      54696D65 
+ 2158      725F5772 
+ 2158      69746550 
+ 2159              	.LASF29:
+ 2160 012f 72696768 		.ascii	"rightEncTimer_Init\000"
+ 2160      74456E63 
+ 2160      54696D65 
+ 2160      725F496E 
+ 2160      697400
+ 2161              	.LASF14:
+ 2162 0142 72656738 		.ascii	"reg8\000"
+ 2162      00
+ 2163              	.LASF5:
+ 2164 0147 6C6F6E67 		.ascii	"long unsigned int\000"
+ 2164      20756E73 
+ 2164      69676E65 
+ 2164      6420696E 
+ 2164      7400
+ 2165              	.LASF9:
+ 2166 0159 75696E74 		.ascii	"uint8\000"
+ 2166      3800
+ 2167              	.LASF43:
+ 2168 015f 636F6E74 		.ascii	"control\000"
+ 2168      726F6C00 
+ 2169              	.LASF24:
+ 2170 0167 696E7465 		.ascii	"interruptsMask\000"
+ 2170      72727570 
+ 2170      74734D61 
+ 2170      736B00
+ 2171              	.LASF1:
+ 2172 0176 756E7369 		.ascii	"unsigned char\000"
+ 2172      676E6564 
+ 2172      20636861 
+ 2172      7200
+ 2173              	.LASF18:
+ 2174 0184 72696768 		.ascii	"rightEncTimer_ReadStatusRegister\000"
+ 2174      74456E63 
+ 2174      54696D65 
+ 2174      725F5265 
+ 2174      61645374 
+ 2175              	.LASF20:
+ 2176 01a5 72696768 		.ascii	"rightEncTimer_WriteCounter\000"
+ 2176      74456E63 
+ 2176      54696D65 
+ 2176      725F5772 
+ 2176      69746543 
+ 2177              	.LASF12:
+ 2178 01c0 646F7562 		.ascii	"double\000"
+ 2178      6C6500
+ 2179              	.LASF36:
+ 2180 01c7 72696768 		.ascii	"rightEncTimer_ReadPeriod\000"
+ 2180      74456E63 
+ 2180      54696D65 
+ 2180      725F5265 
+ 2180      61645065 
+ 2181              	.LASF10:
+ 2182 01e0 75696E74 		.ascii	"uint16\000"
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc5CyCm4.s 			page 52
+
+
+ 2182      313600
+ 2183              	.LASF23:
+ 2184 01e7 72696768 		.ascii	"rightEncTimer_SetInterruptMode\000"
+ 2184      74456E63 
+ 2184      54696D65 
+ 2184      725F5365 
+ 2184      74496E74 
+ 2185              	.LASF38:
+ 2186 0206 4379456E 		.ascii	"CyEnterCriticalSection\000"
+ 2186      74657243 
+ 2186      72697469 
+ 2186      63616C53 
+ 2186      65637469 
+ 2187              	.LASF8:
+ 2188 021d 756E7369 		.ascii	"unsigned int\000"
+ 2188      676E6564 
+ 2188      20696E74 
+ 2188      00
+ 2189              	.LASF45:
+ 2190 022a 43794578 		.ascii	"CyExitCriticalSection\000"
+ 2190      69744372 
+ 2190      69746963 
+ 2190      616C5365 
+ 2190      6374696F 
+ 2191              	.LASF34:
+ 2192 0240 72696768 		.ascii	"rightEncTimer_ReadControlRegister\000"
+ 2192      74456E63 
+ 2192      54696D65 
+ 2192      725F5265 
+ 2192      6164436F 
+ 2193              	.LASF42:
+ 2194 0262 72696768 		.ascii	"rightEncTimer_Stop\000"
+ 2194      74456E63 
+ 2194      54696D65 
+ 2194      725F5374 
+ 2194      6F7000
+ 2195              	.LASF30:
+ 2196 0275 6374726C 		.ascii	"ctrl\000"
+ 2196      00
+ 2197              	.LASF16:
+ 2198 027a 73697A65 		.ascii	"sizetype\000"
+ 2198      74797065 
+ 2198      00
+ 2199              	.LASF31:
+ 2200 0283 72696768 		.ascii	"rightEncTimer_interruptState\000"
+ 2200      74456E63 
+ 2200      54696D65 
+ 2200      725F696E 
+ 2200      74657272 
+ 2201              	.LASF6:
+ 2202 02a0 6C6F6E67 		.ascii	"long long int\000"
+ 2202      206C6F6E 
+ 2202      6720696E 
+ 2202      7400
+ 2203              	.LASF13:
+ 2204 02ae 63686172 		.ascii	"char\000"
+ 2204      00
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc5CyCm4.s 			page 53
+
+
+ 2205              	.LASF37:
+ 2206 02b3 72696768 		.ascii	"rightEncTimer_ReadCompare\000"
+ 2206      74456E63 
+ 2206      54696D65 
+ 2206      725F5265 
+ 2206      6164436F 
+ 2207              	.LASF2:
+ 2208 02cd 73686F72 		.ascii	"short int\000"
+ 2208      7420696E 
+ 2208      7400
+ 2209              	.LASF27:
+ 2210 02d7 72696768 		.ascii	"rightEncTimer_ClearFIFO\000"
+ 2210      74456E63 
+ 2210      54696D65 
+ 2210      725F436C 
+ 2210      65617246 
+ 2211              	.LASF40:
+ 2212 02ef 2E5C4765 		.ascii	".\\Generated_Source\\PSoC5\\rightEncTimer.c\000"
+ 2212      6E657261 
+ 2212      7465645F 
+ 2212      536F7572 
+ 2212      63655C50 
+ 2213              	.LASF4:
+ 2214 0318 6C6F6E67 		.ascii	"long int\000"
+ 2214      20696E74 
+ 2214      00
+ 2215              	.LASF44:
+ 2216 0321 72696768 		.ascii	"rightEncTimer_initVar\000"
+ 2216      74456E63 
+ 2216      54696D65 
+ 2216      725F696E 
+ 2216      69745661 
+ 2217              	.LASF0:
+ 2218 0337 7369676E 		.ascii	"signed char\000"
+ 2218      65642063 
+ 2218      68617200 
+ 2219              	.LASF26:
+ 2220 0343 636F6D70 		.ascii	"compare\000"
+ 2220      61726500 
+ 2221              	.LASF17:
+ 2222 034b 72696768 		.ascii	"rightEncTimer_ReadCapture\000"
+ 2222      74456E63 
+ 2222      54696D65 
+ 2222      725F5265 
+ 2222      61644361 
+ 2223              	.LASF39:
+ 2224 0365 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
+ 2224      4320342E 
+ 2224      392E3320 
+ 2224      32303135 
+ 2224      30333033 
+ 2225 0398 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m3 -mthumb -g -O"
+ 2225      20726576 
+ 2225      6973696F 
+ 2225      6E203232 
+ 2225      31323230 
+ 2226 03cb 33202D66 		.ascii	"3 -ffunction-sections -ffat-lto-objects\000"
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc5CyCm4.s 			page 54
+
+
+ 2226      66756E63 
+ 2226      74696F6E 
+ 2226      2D736563 
+ 2226      74696F6E 
+ 2227              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.9.3 20150303 (release) [ARM/embedded-4_9-br

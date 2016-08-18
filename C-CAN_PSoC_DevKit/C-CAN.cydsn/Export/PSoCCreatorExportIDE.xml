@@ -25,8 +25,8 @@
       <Tool Name="postbuild" Command="" Options="" />
     </Toolchain>
   </Toolchains>
-  <Project Name="CE95277 ADC and UART" Path="C:\Users\Patrick\Desktop\cy8ckit-059\CE95277 ADC and UART\CE95277 ADC and UART.cydsn" Version="5.40" Type="Normal">
-    <CMSIS_SVD_File>CE95277 ADC and UART.svd</CMSIS_SVD_File>
+  <Project Name="C-CAN" Path="C:\Users\Patrick\Documents\GitHub\PSoC 5LP FIles\C-CAN_PSoC_DevKit\C-CAN.cydsn" Version="5.40" Type="Normal">
+    <CMSIS_SVD_File>C-CAN.svd</CMSIS_SVD_File>
     <Datasheet />
     <LinkerFiles>
       <LinkerFile Toolchain="ARM GCC Generic">.\Generated_Source\PSoC5\cm3gcc.ld</LinkerFile>
@@ -34,14 +34,14 @@
       <LinkerFile Toolchain="ARM IAR Generic">.\Generated_Source\PSoC5\Cm3Iar.icf</LinkerFile>
     </LinkerFiles>
     <Folders>
-      <Folder BuildType="BUILD" Path="C:\Users\Patrick\Desktop\cy8ckit-059\CE95277 ADC and UART\CE95277 ADC and UART.cydsn">
-        <Files Root="C:\Users\Patrick\Desktop\cy8ckit-059\CE95277 ADC and UART\CE95277 ADC and UART.cydsn">
+      <Folder BuildType="BUILD" Path="C:\Users\Patrick\Documents\GitHub\PSoC 5LP FIles\C-CAN_PSoC_DevKit\C-CAN.cydsn">
+        <Files Root="C:\Users\Patrick\Documents\GitHub\PSoC 5LP FIles\C-CAN_PSoC_DevKit\C-CAN.cydsn">
           <File BuildType="BUILD" Toolchain="">.\device.h</File>
           <File BuildType="BUILD" Toolchain="">.\main.c</File>
         </Files>
       </Folder>
-      <Folder BuildType="STRICT" Path="C:\Users\Patrick\Desktop\cy8ckit-059\CE95277 ADC and UART\CE95277 ADC and UART.cydsn\Generated_Source\PSoC5">
-        <Files Root="C:\Users\Patrick\Desktop\cy8ckit-059\CE95277 ADC and UART\CE95277 ADC and UART.cydsn">
+      <Folder BuildType="STRICT" Path="C:\Users\Patrick\Documents\GitHub\PSoC 5LP FIles\C-CAN_PSoC_DevKit\C-CAN.cydsn\Generated_Source\PSoC5">
+        <Files Root="C:\Users\Patrick\Documents\GitHub\PSoC 5LP FIles\C-CAN_PSoC_DevKit\C-CAN.cydsn">
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\cyfitter_cfg.h</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\cyfitter_cfg.c</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\cymetadata.c</File>
@@ -135,17 +135,8 @@
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\CAN_1_TX_RX_func.c</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\Clock_2.c</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\Clock_2.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\Enc_A_aliases.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\Enc_A.c</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\Enc_A.h</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\Clock_3.c</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\Clock_3.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\Encoder_Count.c</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\Encoder_Count.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\Encoder_Count_PM.c</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\Time_Count.c</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\Time_Count.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\Time_Count_PM.c</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\CAN_TIMER.c</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\CAN_TIMER.h</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\CAN_TIMER_PM.c</File>
@@ -157,58 +148,76 @@
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\ISR_PIN_aliases.h</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\ISR_PIN.c</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\ISR_PIN.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\Encoder_Left.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\Encoder_Left.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\Encoder_Left_PM.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\Enc_L_aliases.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\Enc_L.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\Enc_L.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\Encoder_Right.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\Encoder_Right.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\Encoder_Right_PM.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\Enc_R_aliases.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\Enc_R.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\Enc_R.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\leftEncTimer.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\leftEncTimer.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\leftEncTimer_PM.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\rightEncTimer.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\rightEncTimer.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\rightEncTimer_PM.c</File>
         </Files>
       </Folder>
-      <Folder BuildType="STRICT" Path="C:\Users\Patrick\Desktop\cy8ckit-059\CE95277 ADC and UART\CE95277 ADC and UART.cydsn\Export\ARM_GCC_Generic">
-        <Files Root="C:\Users\Patrick\Desktop\cy8ckit-059\CE95277 ADC and UART\CE95277 ADC and UART.cydsn">
+      <Folder BuildType="STRICT" Path="C:\Users\Patrick\Documents\GitHub\PSoC 5LP FIles\C-CAN_PSoC_DevKit\C-CAN.cydsn\Export\ARM_GCC_Generic">
+        <Files Root="C:\Users\Patrick\Documents\GitHub\PSoC 5LP FIles\C-CAN_PSoC_DevKit\C-CAN.cydsn">
           <File BuildType="BUILD" Toolchain="ARM GCC Generic">.\Export\ARM_GCC_Generic\CyComponentLibrary.a</File>
         </Files>
       </Folder>
-      <Folder BuildType="STRICT" Path="C:\Users\Patrick\Desktop\cy8ckit-059\CE95277 ADC and UART\CE95277 ADC and UART.cydsn\Export\ARM_MDK_Generic">
-        <Files Root="C:\Users\Patrick\Desktop\cy8ckit-059\CE95277 ADC and UART\CE95277 ADC and UART.cydsn">
+      <Folder BuildType="STRICT" Path="C:\Users\Patrick\Documents\GitHub\PSoC 5LP FIles\C-CAN_PSoC_DevKit\C-CAN.cydsn\Export\ARM_MDK_Generic">
+        <Files Root="C:\Users\Patrick\Documents\GitHub\PSoC 5LP FIles\C-CAN_PSoC_DevKit\C-CAN.cydsn">
           <File BuildType="BUILD" Toolchain="ARM MDK Generic">.\Export\ARM_MDK_Generic\CyComponentLibrary.a</File>
         </Files>
       </Folder>
-      <Folder BuildType="STRICT" Path="C:\Users\Patrick\Desktop\cy8ckit-059\CE95277 ADC and UART\CE95277 ADC and UART.cydsn\Export\ARM_IAR_Generic">
-        <Files Root="C:\Users\Patrick\Desktop\cy8ckit-059\CE95277 ADC and UART\CE95277 ADC and UART.cydsn">
+      <Folder BuildType="STRICT" Path="C:\Users\Patrick\Documents\GitHub\PSoC 5LP FIles\C-CAN_PSoC_DevKit\C-CAN.cydsn\Export\ARM_IAR_Generic">
+        <Files Root="C:\Users\Patrick\Documents\GitHub\PSoC 5LP FIles\C-CAN_PSoC_DevKit\C-CAN.cydsn">
           <File BuildType="BUILD" Toolchain="ARM IAR Generic">.\Export\ARM_IAR_Generic\CyComponentLibrary.a</File>
         </Files>
       </Folder>
       <Folder BuildType="EXCLUDE" Path=".\codegentemp">
-        <Files Root="C:\Users\Patrick\Desktop\cy8ckit-059\CE95277 ADC and UART\CE95277 ADC and UART.cydsn" />
+        <Files Root="C:\Users\Patrick\Documents\GitHub\PSoC 5LP FIles\C-CAN_PSoC_DevKit\C-CAN.cydsn" />
       </Folder>
       <Folder BuildType="EXCLUDE" Path=".\ARM_GCC_441">
-        <Files Root="C:\Users\Patrick\Desktop\cy8ckit-059\CE95277 ADC and UART\CE95277 ADC and UART.cydsn" />
+        <Files Root="C:\Users\Patrick\Documents\GitHub\PSoC 5LP FIles\C-CAN_PSoC_DevKit\C-CAN.cydsn" />
       </Folder>
       <Folder BuildType="EXCLUDE" Path=".\ARM_GCC_473">
-        <Files Root="C:\Users\Patrick\Desktop\cy8ckit-059\CE95277 ADC and UART\CE95277 ADC and UART.cydsn" />
+        <Files Root="C:\Users\Patrick\Documents\GitHub\PSoC 5LP FIles\C-CAN_PSoC_DevKit\C-CAN.cydsn" />
       </Folder>
       <Folder BuildType="EXCLUDE" Path=".\DP8051_Keil_952">
-        <Files Root="C:\Users\Patrick\Desktop\cy8ckit-059\CE95277 ADC and UART\CE95277 ADC and UART.cydsn" />
+        <Files Root="C:\Users\Patrick\Documents\GitHub\PSoC 5LP FIles\C-CAN_PSoC_DevKit\C-CAN.cydsn" />
       </Folder>
       <Folder BuildType="EXCLUDE" Path=".\DP8051">
-        <Files Root="C:\Users\Patrick\Desktop\cy8ckit-059\CE95277 ADC and UART\CE95277 ADC and UART.cydsn" />
+        <Files Root="C:\Users\Patrick\Documents\GitHub\PSoC 5LP FIles\C-CAN_PSoC_DevKit\C-CAN.cydsn" />
       </Folder>
       <Folder BuildType="EXCLUDE" Path=".\CortexM0">
-        <Files Root="C:\Users\Patrick\Desktop\cy8ckit-059\CE95277 ADC and UART\CE95277 ADC and UART.cydsn" />
+        <Files Root="C:\Users\Patrick\Documents\GitHub\PSoC 5LP FIles\C-CAN_PSoC_DevKit\C-CAN.cydsn" />
       </Folder>
       <Folder BuildType="EXCLUDE" Path=".\CortexM0p">
-        <Files Root="C:\Users\Patrick\Desktop\cy8ckit-059\CE95277 ADC and UART\CE95277 ADC and UART.cydsn" />
+        <Files Root="C:\Users\Patrick\Documents\GitHub\PSoC 5LP FIles\C-CAN_PSoC_DevKit\C-CAN.cydsn" />
       </Folder>
       <Folder BuildType="EXCLUDE" Path=".\CortexM3">
-        <Files Root="C:\Users\Patrick\Desktop\cy8ckit-059\CE95277 ADC and UART\CE95277 ADC and UART.cydsn" />
+        <Files Root="C:\Users\Patrick\Documents\GitHub\PSoC 5LP FIles\C-CAN_PSoC_DevKit\C-CAN.cydsn" />
       </Folder>
       <Folder BuildType="EXCLUDE" Path=".\CortexM4">
-        <Files Root="C:\Users\Patrick\Desktop\cy8ckit-059\CE95277 ADC and UART\CE95277 ADC and UART.cydsn" />
+        <Files Root="C:\Users\Patrick\Documents\GitHub\PSoC 5LP FIles\C-CAN_PSoC_DevKit\C-CAN.cydsn" />
       </Folder>
       <Folder BuildType="EXCLUDE" Path=".\CortexM7">
-        <Files Root="C:\Users\Patrick\Desktop\cy8ckit-059\CE95277 ADC and UART\CE95277 ADC and UART.cydsn" />
+        <Files Root="C:\Users\Patrick\Documents\GitHub\PSoC 5LP FIles\C-CAN_PSoC_DevKit\C-CAN.cydsn" />
       </Folder>
       <Folder BuildType="EXCLUDE" Path=".\Generated_Source\PSoC3">
-        <Files Root="C:\Users\Patrick\Desktop\cy8ckit-059\CE95277 ADC and UART\CE95277 ADC and UART.cydsn" />
+        <Files Root="C:\Users\Patrick\Documents\GitHub\PSoC 5LP FIles\C-CAN_PSoC_DevKit\C-CAN.cydsn" />
       </Folder>
       <Folder BuildType="EXCLUDE" Path=".\Generated_Source\PSoC4">
-        <Files Root="C:\Users\Patrick\Desktop\cy8ckit-059\CE95277 ADC and UART\CE95277 ADC and UART.cydsn" />
+        <Files Root="C:\Users\Patrick\Documents\GitHub\PSoC 5LP FIles\C-CAN_PSoC_DevKit\C-CAN.cydsn" />
       </Folder>
     </Folders>
   </Project>

@@ -46,8 +46,8 @@
 /* Project Defines */
 #define FALSE  0
 #define TRUE   1
-#define TRANSMIT_BUFFER_SIZE  26
-#define BUFF 32
+#define TRANSMIT_BUFFER_SIZE  50
+#define BUFF 64
     uint8 TxMessage1[8];
     uint8 RxMessage1[8];
     uint8 RXDLC1;
@@ -59,9 +59,23 @@ typedef struct Sensors {
     int16 mV;
     uint8 number;
     uint8 index;
+    uint8 window;
 }Sensor;
+
+typedef struct Encoders {
+    uint16 data[BUFF];
+    float sample;
+    float rpm;
+    uint8 number;
+    uint8 index;
+    uint8 window;
+    uint32 time;
+}Encoder;
     
+uint32 time = 0;
+
 void GetSample(Sensor * sensor);
+void GetRPM(Encoder * encoder);
 
 
 /*******************************************************************************
@@ -100,12 +114,18 @@ void main()
     uint8 j=0;
     uint16 sampleCount = 0;
     uint32 counter = 0;
-    uint32 time = 0;
+    
     uint32 rpm = 0;
     
     Sensor hrs180;
     Sensor hrs090;
     Sensor pot;
+    
+    Encoder left;
+    Encoder right;
+    
+    left.number = 1;
+    right.number = 2;
     
     hrs180.number = 0;
     hrs090.number = 1;
@@ -115,8 +135,10 @@ void main()
     ADC_SAR_1_Start();
     UART_1_Start();
     AMux_1_Start();
-    Encoder_Count_Start();
-    Time_Count_Start();
+    Encoder_Left_Start();
+    Encoder_Right_Start();
+    leftEncTimer_Start();
+    rightEncTimer_Start();
     AMux_1_FastSelect(0);
     CAN_1_Start();
     CAN_ISR_Start();
@@ -133,6 +155,8 @@ void main()
         hrs180.data[i] = 0;
         hrs090.data[i] = 0;
         pot.data[i] = 0;
+        left.data[i] = 0;
+        right.data[i] = 0;
     }
     
     hrs180.mV = 0;
@@ -141,14 +165,31 @@ void main()
     hrs090.mV = 0;
     hrs090.sample = 0;
     hrs090.index = 0;
+    
     pot.mV = 0;
     pot.sample = 0;
     pot.index = 0;
+    
+    left.sample = 0.0;
+    left.rpm = 0.0;
+    left.index = 0;
+    
+    right.sample = 0.0;
+    right.rpm = 0.0;
+    right.index = 0;
+    
+    hrs180.window = 50;
+    hrs090.window = 50;
+    pot.window = 50;
+    left.window = 10;
+    right.window = 10;
+    
+    float test = 123.123;
         
     
     
     /* Send message to verify COM port is connected properly */
-    UART_1_PutString("COM Port Open");
+    UART_1_PutString("\n\rCOM Port Open\n\r");
     
     for(;;)
     {        
@@ -179,9 +220,14 @@ void main()
         }
         
         
-        GetSample(&hrs180);
-        GetSample(&hrs090);
-        GetSample(&pot);
+        //GetSample(&hrs180);
+        //GetSample(&hrs090);
+        //GetSample(&pot);
+        GetRPM(&left);
+        GetRPM(&right);
+        
+        
+      
         
             
         
@@ -194,31 +240,24 @@ void main()
         TxMessage1[6] = 0x00;
         TxMessage1[7] = 0x11;        
         
-        //CyDelay(50);
-        counter = Encoder_Count_ReadCounter();
-        time = Time_Count_ReadCounter();
-        Encoder_Count_WriteCounter(0);
-            
-        rpm = (counter * 100000 / time);
-            
+        CyDelay(5);            
         //Time_Cnt_WriteCounter(0);
             
             
-        time = Time_Count_ReadCounter();
             
         /* Send data based on last UART command */
         if(SendSingleByte || ContinuouslySendData)
         {
-        
+            
             /* Format ADC result for transmition */
-            sprintf(TransmitBuffer, "%lu, %d, %d\n\r", time, hrs090.mV, pot.mV);
+            sprintf(TransmitBuffer, "%d, %d, %d\n\r", (int)test, (int)left.rpm, (int)right.rpm);
             /* Send out the data */
             UART_1_PutString(TransmitBuffer);
             /* Reset the send once flag */
             SendSingleByte = FALSE;        
             
         }
-        Time_Count_WriteCounter(0);
+        
     }
 }
 
@@ -232,12 +271,44 @@ void GetSample( Sensor * sensor){
         sensor->sample = sensor->sample + sensor->data[sensor->index];
     }
     sensor->index++;
-    if(sensor->index==BUFF){
+    if(sensor->index==sensor->window){
         sensor->index = 0;
     }
     
     sensor->mV = ADC_SAR_1_CountsTo_mVolts((sensor->sample)/BUFF);
     
 }
+
+void GetRPM(Encoder * encoder){
+    //uint32 time;
+    if(encoder->number == 1){ //calculate left rpm
+        encoder->sample -= encoder->data[encoder->index];
+        encoder->data[encoder->index] = Encoder_Left_ReadCounter();
+        Encoder_Left_WriteCounter(0);
+        encoder->sample += encoder->data[encoder->index];
+        
+        encoder->rpm = (encoder->sample/encoder->window) * 100000 / (leftEncTimer_ReadCounter());
+        leftEncTimer_WriteCounter(0);
+    }
+    
+    if(encoder->number == 2){ //calculate right rpm
+        encoder->sample -= encoder->data[encoder->index];
+        encoder->data[encoder->index] = Encoder_Right_ReadCounter();
+        Encoder_Right_WriteCounter(0);
+        encoder->sample += encoder->data[encoder->index];
+        
+        encoder->rpm = (encoder->sample/encoder->window) * 100000 / (rightEncTimer_ReadCounter());
+        rightEncTimer_WriteCounter(0);
+    }
+    
+    encoder->index++;
+    if(encoder->index >= encoder->window){
+        encoder->index = 0;
+    }
+
+}
+        
+
+    
 
 /* [] END OF FILE */

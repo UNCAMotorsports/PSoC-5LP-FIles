@@ -13,7 +13,7 @@
 <v>Output</v>
 </TreeKeys>
 <TreeStates>
-<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="C-CAN">
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="C-CAN\C-CAN\Generated_Source\PSoC5\CAN_ISR\CAN_ISR.c">
 <ExpandedNodeIds>
 <v>C-CAN</v>
 <v>C-CAN\C-CAN</v>
@@ -93,22 +93,38 @@
 <v>C-CAN\C-CAN\Generated_Source\PSoC5\cy_boot\CySpc.h</v>
 <v>C-CAN\C-CAN\Generated_Source\PSoC5\cy_boot\cytypes.h</v>
 <v>C-CAN\C-CAN\Generated_Source\PSoC5\cy_boot\cyutils.c</v>
-<v>C-CAN\C-CAN\Generated_Source\PSoC5\Enc_A</v>
-<v>C-CAN\C-CAN\Generated_Source\PSoC5\Enc_A\Enc_A.c</v>
-<v>C-CAN\C-CAN\Generated_Source\PSoC5\Enc_A\Enc_A.h</v>
-<v>C-CAN\C-CAN\Generated_Source\PSoC5\Enc_A\Enc_A_aliases.h</v>
-<v>C-CAN\C-CAN\Generated_Source\PSoC5\Encoder_Count</v>
-<v>C-CAN\C-CAN\Generated_Source\PSoC5\Encoder_Count\Encoder_Count.c</v>
-<v>C-CAN\C-CAN\Generated_Source\PSoC5\Encoder_Count\Encoder_Count.h</v>
-<v>C-CAN\C-CAN\Generated_Source\PSoC5\Encoder_Count\Encoder_Count_PM.c</v>
+<v>C-CAN\C-CAN\Generated_Source\PSoC5\Enc_L</v>
+<v>C-CAN\C-CAN\Generated_Source\PSoC5\Enc_L\Enc_L.c</v>
+<v>C-CAN\C-CAN\Generated_Source\PSoC5\Enc_L\Enc_L.h</v>
+<v>C-CAN\C-CAN\Generated_Source\PSoC5\Enc_L\Enc_L_aliases.h</v>
+<v>C-CAN\C-CAN\Generated_Source\PSoC5\Enc_R</v>
+<v>C-CAN\C-CAN\Generated_Source\PSoC5\Enc_R\Enc_R.c</v>
+<v>C-CAN\C-CAN\Generated_Source\PSoC5\Enc_R\Enc_R.h</v>
+<v>C-CAN\C-CAN\Generated_Source\PSoC5\Enc_R\Enc_R_aliases.h</v>
+<v>C-CAN\C-CAN\Generated_Source\PSoC5\Encoder_Left</v>
+<v>C-CAN\C-CAN\Generated_Source\PSoC5\Encoder_Left\Encoder_Left.c</v>
+<v>C-CAN\C-CAN\Generated_Source\PSoC5\Encoder_Left\Encoder_Left.h</v>
+<v>C-CAN\C-CAN\Generated_Source\PSoC5\Encoder_Left\Encoder_Left_PM.c</v>
+<v>C-CAN\C-CAN\Generated_Source\PSoC5\Encoder_Right</v>
+<v>C-CAN\C-CAN\Generated_Source\PSoC5\Encoder_Right\Encoder_Right.c</v>
+<v>C-CAN\C-CAN\Generated_Source\PSoC5\Encoder_Right\Encoder_Right.h</v>
+<v>C-CAN\C-CAN\Generated_Source\PSoC5\Encoder_Right\Encoder_Right_PM.c</v>
 <v>C-CAN\C-CAN\Generated_Source\PSoC5\ISR_PIN</v>
 <v>C-CAN\C-CAN\Generated_Source\PSoC5\ISR_PIN\ISR_PIN.c</v>
 <v>C-CAN\C-CAN\Generated_Source\PSoC5\ISR_PIN\ISR_PIN.h</v>
 <v>C-CAN\C-CAN\Generated_Source\PSoC5\ISR_PIN\ISR_PIN_aliases.h</v>
+<v>C-CAN\C-CAN\Generated_Source\PSoC5\leftEncTimer</v>
+<v>C-CAN\C-CAN\Generated_Source\PSoC5\leftEncTimer\leftEncTimer.c</v>
+<v>C-CAN\C-CAN\Generated_Source\PSoC5\leftEncTimer\leftEncTimer.h</v>
+<v>C-CAN\C-CAN\Generated_Source\PSoC5\leftEncTimer\leftEncTimer_PM.c</v>
 <v>C-CAN\C-CAN\Generated_Source\PSoC5\mcp2515_clk</v>
 <v>C-CAN\C-CAN\Generated_Source\PSoC5\mcp2515_clk\mcp2515_clk.c</v>
 <v>C-CAN\C-CAN\Generated_Source\PSoC5\mcp2515_clk\mcp2515_clk.h</v>
 <v>C-CAN\C-CAN\Generated_Source\PSoC5\mcp2515_clk\mcp2515_clk_aliases.h</v>
+<v>C-CAN\C-CAN\Generated_Source\PSoC5\rightEncTimer</v>
+<v>C-CAN\C-CAN\Generated_Source\PSoC5\rightEncTimer\rightEncTimer.c</v>
+<v>C-CAN\C-CAN\Generated_Source\PSoC5\rightEncTimer\rightEncTimer.h</v>
+<v>C-CAN\C-CAN\Generated_Source\PSoC5\rightEncTimer\rightEncTimer_PM.c</v>
 <v>C-CAN\C-CAN\Generated_Source\PSoC5\RX_2</v>
 <v>C-CAN\C-CAN\Generated_Source\PSoC5\RX_2\RX_2.c</v>
 <v>C-CAN\C-CAN\Generated_Source\PSoC5\RX_2\RX_2.h</v>
@@ -117,10 +133,6 @@
 <v>C-CAN\C-CAN\Generated_Source\PSoC5\Test_Pin\Test_Pin.c</v>
 <v>C-CAN\C-CAN\Generated_Source\PSoC5\Test_Pin\Test_Pin.h</v>
 <v>C-CAN\C-CAN\Generated_Source\PSoC5\Test_Pin\Test_Pin_aliases.h</v>
-<v>C-CAN\C-CAN\Generated_Source\PSoC5\Time_Count</v>
-<v>C-CAN\C-CAN\Generated_Source\PSoC5\Time_Count\Time_Count.c</v>
-<v>C-CAN\C-CAN\Generated_Source\PSoC5\Time_Count\Time_Count.h</v>
-<v>C-CAN\C-CAN\Generated_Source\PSoC5\Time_Count\Time_Count_PM.c</v>
 <v>C-CAN\C-CAN\Generated_Source\PSoC5\TX_2</v>
 <v>C-CAN\C-CAN\Generated_Source\PSoC5\TX_2\TX_2.c</v>
 <v>C-CAN\C-CAN\Generated_Source\PSoC5\TX_2\TX_2.h</v>
@@ -168,31 +180,6 @@
 <v>C-CAN\C-CAN\Generated_Source\PSoC5\project.h</v>
 </ExpandedNodeIds>
 <VisibleNodeIds>
-<v>C-CAN</v>
-<v>C-CAN\C-CAN</v>
-<v>C-CAN\C-CAN\TopDesign</v>
-<v>C-CAN\C-CAN\C-CAN.cydwr</v>
-<v>C-CAN\C-CAN\Header Files</v>
-<v>C-CAN\C-CAN\Header Files\device.h</v>
-<v>C-CAN\C-CAN\Source Files</v>
-<v>C-CAN\C-CAN\Source Files\main.c</v>
-<v>C-CAN\C-CAN\CE95277 ADC and UART.pdf</v>
-<v>C-CAN\C-CAN\Generated_Source</v>
-<v>C-CAN\C-CAN\Generated_Source\PSoC5</v>
-<v>C-CAN\C-CAN\Generated_Source\PSoC5\ADC_SAR_1</v>
-<v>C-CAN\C-CAN\Generated_Source\PSoC5\ADC_SAR_1\ADC_SAR_1.c</v>
-<v>C-CAN\C-CAN\Generated_Source\PSoC5\ADC_SAR_1\ADC_SAR_1.h</v>
-<v>C-CAN\C-CAN\Generated_Source\PSoC5\ADC_SAR_1\ADC_SAR_1_INT.c</v>
-<v>C-CAN\C-CAN\Generated_Source\PSoC5\ADC_SAR_1\ADC_SAR_1_PM.c</v>
-<v>C-CAN\C-CAN\Generated_Source\PSoC5\ADC_SAR_1_Bypass</v>
-<v>C-CAN\C-CAN\Generated_Source\PSoC5\ADC_SAR_1_Bypass\ADC_SAR_1_Bypass.c</v>
-<v>C-CAN\C-CAN\Generated_Source\PSoC5\ADC_SAR_1_Bypass\ADC_SAR_1_Bypass.h</v>
-<v>C-CAN\C-CAN\Generated_Source\PSoC5\ADC_SAR_1_Bypass\ADC_SAR_1_Bypass_aliases.h</v>
-<v>C-CAN\C-CAN\Generated_Source\PSoC5\ADC_SAR_1_IRQ</v>
-<v>C-CAN\C-CAN\Generated_Source\PSoC5\ADC_SAR_1_IRQ\ADC_SAR_1_IRQ.c</v>
-<v>C-CAN\C-CAN\Generated_Source\PSoC5\ADC_SAR_1_IRQ\ADC_SAR_1_IRQ.h</v>
-<v>C-CAN\C-CAN\Generated_Source\PSoC5\ADC_SAR_1_theACLK</v>
-<v>C-CAN\C-CAN\Generated_Source\PSoC5\ADC_SAR_1_theACLK\ADC_SAR_1_theACLK.c</v>
 <v>C-CAN\C-CAN\Generated_Source\PSoC5\ADC_SAR_1_theACLK\ADC_SAR_1_theACLK.h</v>
 <v>C-CAN\C-CAN\Generated_Source\PSoC5\AMux_1</v>
 <v>C-CAN\C-CAN\Generated_Source\PSoC5\AMux_1\AMux_1.c</v>
@@ -205,6 +192,31 @@
 <v>C-CAN\C-CAN\Generated_Source\PSoC5\CAN_1\CAN_1_TX_RX_func.c</v>
 <v>C-CAN\C-CAN\Generated_Source\PSoC5\CAN_ISR</v>
 <v>C-CAN\C-CAN\Generated_Source\PSoC5\CAN_ISR\CAN_ISR.c</v>
+<v>C-CAN\C-CAN\Generated_Source\PSoC5\CAN_ISR\CAN_ISR.h</v>
+<v>C-CAN\C-CAN\Generated_Source\PSoC5\CAN_TIMER</v>
+<v>C-CAN\C-CAN\Generated_Source\PSoC5\CAN_TIMER\CAN_TIMER.c</v>
+<v>C-CAN\C-CAN\Generated_Source\PSoC5\CAN_TIMER\CAN_TIMER.h</v>
+<v>C-CAN\C-CAN\Generated_Source\PSoC5\CAN_TIMER\CAN_TIMER_PM.c</v>
+<v>C-CAN\C-CAN\Generated_Source\PSoC5\Clock_1</v>
+<v>C-CAN\C-CAN\Generated_Source\PSoC5\Clock_1\Clock_1.c</v>
+<v>C-CAN\C-CAN\Generated_Source\PSoC5\Clock_1\Clock_1.h</v>
+<v>C-CAN\C-CAN\Generated_Source\PSoC5\Clock_2</v>
+<v>C-CAN\C-CAN\Generated_Source\PSoC5\Clock_2\Clock_2.c</v>
+<v>C-CAN\C-CAN\Generated_Source\PSoC5\Clock_2\Clock_2.h</v>
+<v>C-CAN\C-CAN\Generated_Source\PSoC5\Clock_3</v>
+<v>C-CAN\C-CAN\Generated_Source\PSoC5\Clock_3\Clock_3.c</v>
+<v>C-CAN\C-CAN\Generated_Source\PSoC5\Clock_3\Clock_3.h</v>
+<v>C-CAN\C-CAN\Generated_Source\PSoC5\cy_boot</v>
+<v>C-CAN\C-CAN\Generated_Source\PSoC5\cy_boot\cm3gcc.ld</v>
+<v>C-CAN\C-CAN\Generated_Source\PSoC5\cy_boot\Cm3Iar.icf</v>
+<v>C-CAN\C-CAN\Generated_Source\PSoC5\cy_boot\Cm3RealView.scat</v>
+<v>C-CAN\C-CAN\Generated_Source\PSoC5\cy_boot\Cm3Start.c</v>
+<v>C-CAN\C-CAN\Generated_Source\PSoC5\cy_boot\cmsis_armcc.h</v>
+<v>C-CAN\C-CAN\Generated_Source\PSoC5\cy_boot\cmsis_gcc.h</v>
+<v>C-CAN\C-CAN\Generated_Source\PSoC5\cy_boot\core_cm3.h</v>
+<v>C-CAN\C-CAN\Generated_Source\PSoC5\cy_boot\core_cm3_psoc5.h</v>
+<v>C-CAN\C-CAN\Generated_Source\PSoC5\cy_boot\core_cmFunc.h</v>
+<v>C-CAN\C-CAN\Generated_Source\PSoC5\cy_boot\core_cmInstr.h</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 <CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="C-CAN\C-CAN">
@@ -252,16 +264,21 @@
 <v>C-CAN\C-CAN\CortexM3\ARM_GCC_493\Debug\Listing Files\cyPm.lst</v>
 <v>C-CAN\C-CAN\CortexM3\ARM_GCC_493\Debug\Listing Files\CySpc.lst</v>
 <v>C-CAN\C-CAN\CortexM3\ARM_GCC_493\Debug\Listing Files\cyutils.lst</v>
-<v>C-CAN\C-CAN\CortexM3\ARM_GCC_493\Debug\Listing Files\Enc_A.lst</v>
-<v>C-CAN\C-CAN\CortexM3\ARM_GCC_493\Debug\Listing Files\Encoder_Count.lst</v>
-<v>C-CAN\C-CAN\CortexM3\ARM_GCC_493\Debug\Listing Files\Encoder_Count_PM.lst</v>
+<v>C-CAN\C-CAN\CortexM3\ARM_GCC_493\Debug\Listing Files\Enc_L.lst</v>
+<v>C-CAN\C-CAN\CortexM3\ARM_GCC_493\Debug\Listing Files\Enc_R.lst</v>
+<v>C-CAN\C-CAN\CortexM3\ARM_GCC_493\Debug\Listing Files\Encoder_Left.lst</v>
+<v>C-CAN\C-CAN\CortexM3\ARM_GCC_493\Debug\Listing Files\Encoder_Left_PM.lst</v>
+<v>C-CAN\C-CAN\CortexM3\ARM_GCC_493\Debug\Listing Files\Encoder_Right.lst</v>
+<v>C-CAN\C-CAN\CortexM3\ARM_GCC_493\Debug\Listing Files\Encoder_Right_PM.lst</v>
 <v>C-CAN\C-CAN\CortexM3\ARM_GCC_493\Debug\Listing Files\ISR_PIN.lst</v>
+<v>C-CAN\C-CAN\CortexM3\ARM_GCC_493\Debug\Listing Files\leftEncTimer.lst</v>
+<v>C-CAN\C-CAN\CortexM3\ARM_GCC_493\Debug\Listing Files\leftEncTimer_PM.lst</v>
 <v>C-CAN\C-CAN\CortexM3\ARM_GCC_493\Debug\Listing Files\main.lst</v>
 <v>C-CAN\C-CAN\CortexM3\ARM_GCC_493\Debug\Listing Files\mcp2515_clk.lst</v>
+<v>C-CAN\C-CAN\CortexM3\ARM_GCC_493\Debug\Listing Files\rightEncTimer.lst</v>
+<v>C-CAN\C-CAN\CortexM3\ARM_GCC_493\Debug\Listing Files\rightEncTimer_PM.lst</v>
 <v>C-CAN\C-CAN\CortexM3\ARM_GCC_493\Debug\Listing Files\RX_2.lst</v>
 <v>C-CAN\C-CAN\CortexM3\ARM_GCC_493\Debug\Listing Files\Test_Pin.lst</v>
-<v>C-CAN\C-CAN\CortexM3\ARM_GCC_493\Debug\Listing Files\Time_Count.lst</v>
-<v>C-CAN\C-CAN\CortexM3\ARM_GCC_493\Debug\Listing Files\Time_Count_PM.lst</v>
 <v>C-CAN\C-CAN\CortexM3\ARM_GCC_493\Debug\Listing Files\TX_2.lst</v>
 <v>C-CAN\C-CAN\CortexM3\ARM_GCC_493\Debug\Listing Files\UART_1.lst</v>
 <v>C-CAN\C-CAN\CortexM3\ARM_GCC_493\Debug\Listing Files\UART_1_BOOT.lst</v>
@@ -281,41 +298,6 @@
 <VisibleNodeIds>
 <v>C-CAN</v>
 <v>C-CAN\C-CAN</v>
-<v>C-CAN\C-CAN\CortexM3</v>
-<v>C-CAN\C-CAN\CortexM3\ARM_GCC_493</v>
-<v>C-CAN\C-CAN\CortexM3\ARM_GCC_493\Debug</v>
-<v>C-CAN\C-CAN\CortexM3\ARM_GCC_493\Debug\Listing Files</v>
-<v>C-CAN\C-CAN\CortexM3\ARM_GCC_493\Debug\Listing Files\ADC_SAR_1.lst</v>
-<v>C-CAN\C-CAN\CortexM3\ARM_GCC_493\Debug\Listing Files\ADC_SAR_1_Bypass.lst</v>
-<v>C-CAN\C-CAN\CortexM3\ARM_GCC_493\Debug\Listing Files\ADC_SAR_1_INT.lst</v>
-<v>C-CAN\C-CAN\CortexM3\ARM_GCC_493\Debug\Listing Files\ADC_SAR_1_IRQ.lst</v>
-<v>C-CAN\C-CAN\CortexM3\ARM_GCC_493\Debug\Listing Files\ADC_SAR_1_PM.lst</v>
-<v>C-CAN\C-CAN\CortexM3\ARM_GCC_493\Debug\Listing Files\ADC_SAR_1_theACLK.lst</v>
-<v>C-CAN\C-CAN\CortexM3\ARM_GCC_493\Debug\Listing Files\AMux_1.lst</v>
-<v>C-CAN\C-CAN\CortexM3\ARM_GCC_493\Debug\Listing Files\CAN_1.lst</v>
-<v>C-CAN\C-CAN\CortexM3\ARM_GCC_493\Debug\Listing Files\CAN_1_INT.lst</v>
-<v>C-CAN\C-CAN\CortexM3\ARM_GCC_493\Debug\Listing Files\CAN_1_PM.lst</v>
-<v>C-CAN\C-CAN\CortexM3\ARM_GCC_493\Debug\Listing Files\CAN_1_TX_RX_func.lst</v>
-<v>C-CAN\C-CAN\CortexM3\ARM_GCC_493\Debug\Listing Files\CAN_ISR.lst</v>
-<v>C-CAN\C-CAN\CortexM3\ARM_GCC_493\Debug\Listing Files\CAN_TIMER.lst</v>
-<v>C-CAN\C-CAN\CortexM3\ARM_GCC_493\Debug\Listing Files\CAN_TIMER_PM.lst</v>
-<v>C-CAN\C-CAN\CortexM3\ARM_GCC_493\Debug\Listing Files\Clock_2.lst</v>
-<v>C-CAN\C-CAN\CortexM3\ARM_GCC_493\Debug\Listing Files\Clock_3.lst</v>
-<v>C-CAN\C-CAN\CortexM3\ARM_GCC_493\Debug\Listing Files\Cm3Start.lst</v>
-<v>C-CAN\C-CAN\CortexM3\ARM_GCC_493\Debug\Listing Files\CyBootAsmGnu.lst</v>
-<v>C-CAN\C-CAN\CortexM3\ARM_GCC_493\Debug\Listing Files\CyDmac.lst</v>
-<v>C-CAN\C-CAN\CortexM3\ARM_GCC_493\Debug\Listing Files\cyfitter_cfg.lst</v>
-<v>C-CAN\C-CAN\CortexM3\ARM_GCC_493\Debug\Listing Files\CyFlash.lst</v>
-<v>C-CAN\C-CAN\CortexM3\ARM_GCC_493\Debug\Listing Files\CyLib.lst</v>
-<v>C-CAN\C-CAN\CortexM3\ARM_GCC_493\Debug\Listing Files\cymetadata.lst</v>
-<v>C-CAN\C-CAN\CortexM3\ARM_GCC_493\Debug\Listing Files\cyPm.lst</v>
-<v>C-CAN\C-CAN\CortexM3\ARM_GCC_493\Debug\Listing Files\CySpc.lst</v>
-<v>C-CAN\C-CAN\CortexM3\ARM_GCC_493\Debug\Listing Files\cyutils.lst</v>
-<v>C-CAN\C-CAN\CortexM3\ARM_GCC_493\Debug\Listing Files\Enc_A.lst</v>
-<v>C-CAN\C-CAN\CortexM3\ARM_GCC_493\Debug\Listing Files\Encoder_Count.lst</v>
-<v>C-CAN\C-CAN\CortexM3\ARM_GCC_493\Debug\Listing Files\Encoder_Count_PM.lst</v>
-<v>C-CAN\C-CAN\CortexM3\ARM_GCC_493\Debug\Listing Files\ISR_PIN.lst</v>
-<v>C-CAN\C-CAN\CortexM3\ARM_GCC_493\Debug\Listing Files\main.lst</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 </TreeStates>
@@ -384,12 +366,6 @@
 <name v=".\C-CAN.cydsn\main.c" />
 <name v=".\C-CAN.cydsn\TopDesign\TopDesign.cysch" />
 <name v=".\C-CAN.cydsn\C-CAN.cydwr" />
-<name v=".\C-CAN.cydsn\Generated_Source\PSoC5\ADC_SAR_1.c" />
-<name v=".\C-CAN.cydsn\Generated_Source\PSoC5\CAN_TIMER.c" />
-<name v=".\C-CAN.cydsn\Generated_Source\PSoC5\CAN_ISR.c" />
-<name v=".\C-CAN.cydsn\Generated_Source\PSoC5\CAN_1_TX_RX_func.c" />
-<name v=".\C-CAN.cydsn\Generated_Source\PSoC5\CAN_1.c" />
-<name v=".\C-CAN.cydsn\Generated_Source\PSoC5\CAN_1.h" />
 </OpenDocs>
 <config v="" />
 <AutoUpdate v="true" />

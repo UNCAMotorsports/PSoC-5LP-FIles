@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjuyusm.s 			page 1
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccWE2BTj.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjuyusm.s 			page 1
   29:.\Generated_Source\PSoC5/Clock_3.c **** 
   30:.\Generated_Source\PSoC5/Clock_3.c **** /*******************************************************************************
   31:.\Generated_Source\PSoC5/Clock_3.c **** * Function Name: Clock_3_Start
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjuyusm.s 			page 2
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccWE2BTj.s 			page 2
 
 
   32:.\Generated_Source\PSoC5/Clock_3.c **** ********************************************************************************
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjuyusm.s 			page 1
   51:.\Generated_Source\PSoC5/Clock_3.c **** 
   52:.\Generated_Source\PSoC5/Clock_3.c **** 
   53:.\Generated_Source\PSoC5/Clock_3.c **** /*******************************************************************************
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjuyusm.s 			page 3
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccWE2BTj.s 			page 3
 
 
   54:.\Generated_Source\PSoC5/Clock_3.c **** * Function Name: Clock_3_Stop
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjuyusm.s 			page 1
   92              		.type	Clock_3_StopBlock, %function
   93              	Clock_3_StopBlock:
   94              	.LFB2:
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjuyusm.s 			page 4
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccWE2BTj.s 			page 4
 
 
   76:.\Generated_Source\PSoC5/Clock_3.c **** }
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjuyusm.s 			page 1
  108:.\Generated_Source\PSoC5/Clock_3.c **** 
  109:.\Generated_Source\PSoC5/Clock_3.c ****         /* Clear all the mask bits except ours. */
  110:.\Generated_Source\PSoC5/Clock_3.c **** #if defined(Clock_3__CFG3)
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjuyusm.s 			page 5
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccWE2BTj.s 			page 5
 
 
  111:.\Generated_Source\PSoC5/Clock_3.c ****         CLK_DIST_AMASK = Clock_3_CLKEN_MASK;
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjuyusm.s 			page 1
  142              		.loc 1 121 0
  143 002c 80B2     		uxth	r0, r0
  144              	.LVL0:
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjuyusm.s 			page 6
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccWE2BTj.s 			page 6
 
 
  122:.\Generated_Source\PSoC5/Clock_3.c ****         CLK_DIST_LD = CYCLK_LD_DISABLE | CYCLK_LD_SYNC_EN | CYCLK_LD_LOAD;
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjuyusm.s 			page 1
  180              		.cfi_def_cfa_offset 0
  181              	.LVL1:
  182              	.L16:
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjuyusm.s 			page 7
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccWE2BTj.s 			page 7
 
 
  183 005a 7047     		bx	lr
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjuyusm.s 			page 1
  214              		.loc 1 159 0
  215 0004 18B1     		cbz	r0, .L23
  162:.\Generated_Source\PSoC5/Clock_3.c ****     }
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjuyusm.s 			page 8
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccWE2BTj.s 			page 8
 
 
  163:.\Generated_Source\PSoC5/Clock_3.c ****     else
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjuyusm.s 			page 1
  192:.\Generated_Source\PSoC5/Clock_3.c **** *******************************************************************************/
  193:.\Generated_Source\PSoC5/Clock_3.c **** void Clock_3_SetDividerRegister(uint16 clkDivider, uint8 restart)
  194:.\Generated_Source\PSoC5/Clock_3.c ****                                 
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjuyusm.s 			page 9
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccWE2BTj.s 			page 9
 
 
  195:.\Generated_Source\PSoC5/Clock_3.c **** {
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjuyusm.s 			page 1
  235:.\Generated_Source\PSoC5/Clock_3.c **** #else
  236:.\Generated_Source\PSoC5/Clock_3.c ****                 CLK_DIST_DMASK = Clock_3_CLKEN_MASK;
  237:.\Generated_Source\PSoC5/Clock_3.c ****                 CLK_DIST_AMASK = 0x00u;
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjuyusm.s 			page 10
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccWE2BTj.s 			page 10
 
 
  238:.\Generated_Source\PSoC5/Clock_3.c **** #endif /* Clock_3__CFG3 */
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjuyusm.s 			page 1
  292:.\Generated_Source\PSoC5/Clock_3.c **** * Returns:
  293:.\Generated_Source\PSoC5/Clock_3.c **** *  Divide value of the clock minus 1. For example, if the clock is set to
  294:.\Generated_Source\PSoC5/Clock_3.c **** *  divide by 2, the return value will be 1.
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjuyusm.s 			page 11
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccWE2BTj.s 			page 11
 
 
  295:.\Generated_Source\PSoC5/Clock_3.c **** *
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjuyusm.s 			page 1
  349:.\Generated_Source\PSoC5/Clock_3.c **** *  clkMode: Bit mask containing the bits to clear. For PSoC 3 and PSoC 5,
  350:.\Generated_Source\PSoC5/Clock_3.c **** *   clkMode should be a set of the following optional bits or'ed together.
  351:.\Generated_Source\PSoC5/Clock_3.c **** *   - CYCLK_EARLY Enable early phase mode. Rising edge of output clock will
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjuyusm.s 			page 12
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccWE2BTj.s 			page 12
 
 
  352:.\Generated_Source\PSoC5/Clock_3.c **** *                 occur when the divider count reaches half of the divide
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjuyusm.s 			page 1
  406:.\Generated_Source\PSoC5/Clock_3.c **** *   - CYCLK_SRC_SEL_IMO
  407:.\Generated_Source\PSoC5/Clock_3.c **** *   - CYCLK_SRC_SEL_XTALM
  408:.\Generated_Source\PSoC5/Clock_3.c **** *   - CYCLK_SRC_SEL_ILO
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjuyusm.s 			page 13
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccWE2BTj.s 			page 13
 
 
  409:.\Generated_Source\PSoC5/Clock_3.c **** *   - CYCLK_SRC_SEL_PLL
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjuyusm.s 			page 1
  463:.\Generated_Source\PSoC5/Clock_3.c **** *******************************************************************************/
  464:.\Generated_Source\PSoC5/Clock_3.c **** uint8 Clock_3_GetSourceRegister(void) 
  465:.\Generated_Source\PSoC5/Clock_3.c **** {
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjuyusm.s 			page 14
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccWE2BTj.s 			page 14
 
 
  466:.\Generated_Source\PSoC5/Clock_3.c ****     return Clock_3_MOD_SRC & Clock_3_SRC_SEL_MSK;
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjuyusm.s 			page 1
  213:.\Generated_Source\PSoC5/Clock_3.c ****                 Clock_3_MOD_SRC &= (uint8)(~CYCLK_SSS);
  300              		.loc 1 213 0 is_stmt 1
  301 001e 3080     		strh	r0, [r6]	@ movhi
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjuyusm.s 			page 15
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccWE2BTj.s 			page 15
 
 
  214:.\Generated_Source\PSoC5/Clock_3.c ****             }
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjuyusm.s 			page 1
  341 005a 96F87A20 		ldrb	r2, [r6, #122]	@ zero_extendqisi2
  342 005e 1607     		lsls	r6, r2, #28
  343 0060 29D4     		bmi	.L49
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjuyusm.s 			page 16
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccWE2BTj.s 			page 16
 
 
  344              	.L34:
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjuyusm.s 			page 1
  384 0096 134C     		ldr	r4, .L50+28
  268:.\Generated_Source\PSoC5/Clock_3.c ****                 while ((CLK_DIST_LD & CYCLK_LD_LOAD) != 0u) { }
  385              		.loc 1 268 0
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjuyusm.s 			page 17
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccWE2BTj.s 			page 17
 
 
  386 0098 14BF     		ite	ne
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjuyusm.s 			page 1
  432 00d8 10400040 		.word	1073758224
  433 00dc 08400040 		.word	1073758216
  434 00e0 01400040 		.word	1073758209
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjuyusm.s 			page 18
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccWE2BTj.s 			page 18
 
 
  435 00e4 02400040 		.word	1073758210
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjuyusm.s 			page 1
  484 0008 1843     		orrs	r0, r0, r3
  485 000a 1070     		strb	r0, [r2]
  486 000c 7047     		bx	lr
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjuyusm.s 			page 19
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccWE2BTj.s 			page 19
 
 
  487              	.L57:
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjuyusm.s 			page 1
  537              		.loc 1 390 0
  538 0000 024B     		ldr	r3, .L62
  539 0002 1878     		ldrb	r0, [r3]	@ zero_extendqisi2
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjuyusm.s 			page 20
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccWE2BTj.s 			page 20
 
 
  391:.\Generated_Source\PSoC5/Clock_3.c **** 
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjuyusm.s 			page 1
  299:.\Generated_Source\PSoC5/Clock_3.c **** }
  590              		.loc 1 299 0
  591 0008 9BB2     		uxth	r3, r3
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjuyusm.s 			page 21
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccWE2BTj.s 			page 21
 
 
  592              	.LBE27:
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjuyusm.s 			page 1
  635 003e 43F04003 		orr	r3, r3, #64
  636 0042 1370     		strb	r3, [r2]
  431:.\Generated_Source\PSoC5/Clock_3.c ****     }
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjuyusm.s 			page 22
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccWE2BTj.s 			page 22
 
 
  637              		.loc 1 431 0
@@ -1316,9 +1316,9 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjuyusm.s 			page 1
  686 000b 01       		.uleb128 0x1
  687 000c 41000000 		.4byte	.LASF36
  688 0010 01       		.byte	0x1
- 689 0011 8A010000 		.4byte	.LASF37
- 690 0015 FB000000 		.4byte	.LASF38
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjuyusm.s 			page 23
+ 689 0011 35010000 		.4byte	.LASF37
+ 690 0015 AE020000 		.4byte	.LASF38
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccWE2BTj.s 			page 23
 
 
  691 0019 90000000 		.4byte	.Ldebug_ranges0+0x90
@@ -1327,11 +1327,11 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjuyusm.s 			page 1
  694 0025 02       		.uleb128 0x2
  695 0026 01       		.byte	0x1
  696 0027 06       		.byte	0x6
- 697 0028 46020000 		.4byte	.LASF0
+ 697 0028 F1010000 		.4byte	.LASF0
  698 002c 02       		.uleb128 0x2
  699 002d 01       		.byte	0x1
  700 002e 08       		.byte	0x8
- 701 002f 17020000 		.4byte	.LASF1
+ 701 002f C2010000 		.4byte	.LASF1
  702 0033 02       		.uleb128 0x2
  703 0034 02       		.byte	0x2
  704 0035 05       		.byte	0x5
@@ -1339,23 +1339,23 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjuyusm.s 			page 1
  706 003a 02       		.uleb128 0x2
  707 003b 02       		.byte	0x2
  708 003c 07       		.byte	0x7
- 709 003d 76020000 		.4byte	.LASF3
+ 709 003d 21020000 		.4byte	.LASF3
  710 0041 02       		.uleb128 0x2
  711 0042 04       		.byte	0x4
  712 0043 05       		.byte	0x5
- 713 0044 D3010000 		.4byte	.LASF4
+ 713 0044 7E010000 		.4byte	.LASF4
  714 0048 02       		.uleb128 0x2
  715 0049 04       		.byte	0x4
  716 004a 07       		.byte	0x7
- 717 004b CA020000 		.4byte	.LASF5
+ 717 004b 75020000 		.4byte	.LASF5
  718 004f 02       		.uleb128 0x2
  719 0050 08       		.byte	0x8
  720 0051 05       		.byte	0x5
- 721 0052 AD010000 		.4byte	.LASF6
+ 721 0052 58010000 		.4byte	.LASF6
  722 0056 02       		.uleb128 0x2
  723 0057 08       		.byte	0x8
  724 0058 07       		.byte	0x7
- 725 0059 52020000 		.4byte	.LASF7
+ 725 0059 FD010000 		.4byte	.LASF7
  726 005d 03       		.uleb128 0x3
  727 005e 04       		.byte	0x4
  728 005f 05       		.byte	0x5
@@ -1363,34 +1363,34 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjuyusm.s 			page 1
  730 0064 02       		.uleb128 0x2
  731 0065 04       		.byte	0x4
  732 0066 07       		.byte	0x7
- 733 0067 69020000 		.4byte	.LASF8
+ 733 0067 14020000 		.4byte	.LASF8
  734 006b 04       		.uleb128 0x4
- 735 006c 73010000 		.4byte	.LASF9
+ 735 006c 1E010000 		.4byte	.LASF9
  736 0070 02       		.byte	0x2
  737 0071 9201     		.2byte	0x192
  738 0073 2C000000 		.4byte	0x2c
  739 0077 04       		.uleb128 0x4
- 740 0078 50010000 		.4byte	.LASF10
+ 740 0078 FB000000 		.4byte	.LASF10
  741 007c 02       		.byte	0x2
  742 007d 9301     		.2byte	0x193
  743 007f 3A000000 		.4byte	0x3a
  744 0083 02       		.uleb128 0x2
  745 0084 04       		.byte	0x4
  746 0085 04       		.byte	0x4
- 747 0086 84010000 		.4byte	.LASF11
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjuyusm.s 			page 24
+ 747 0086 2F010000 		.4byte	.LASF11
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccWE2BTj.s 			page 24
 
 
  748 008a 02       		.uleb128 0x2
  749 008b 08       		.byte	0x8
  750 008c 04       		.byte	0x4
- 751 008d DC020000 		.4byte	.LASF12
+ 751 008d 87020000 		.4byte	.LASF12
  752 0091 02       		.uleb128 0x2
  753 0092 01       		.byte	0x1
  754 0093 08       		.byte	0x8
- 755 0094 89020000 		.4byte	.LASF13
+ 755 0094 34020000 		.4byte	.LASF13
  756 0098 04       		.uleb128 0x4
- 757 0099 C5020000 		.4byte	.LASF14
+ 757 0099 70020000 		.4byte	.LASF14
  758 009d 02       		.byte	0x2
  759 009e 3C02     		.2byte	0x23c
  760 00a0 A4000000 		.4byte	0xa4
@@ -1424,7 +1424,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjuyusm.s 			page 1
  788 00e3 01       		.uleb128 0x1
  789 00e4 9C       		.byte	0x9c
  790 00e5 07       		.uleb128 0x7
- 791 00e6 66010000 		.4byte	.LASF19
+ 791 00e6 11010000 		.4byte	.LASF19
  792 00ea 01       		.byte	0x1
  793 00eb 47       		.byte	0x47
  794 00ec 00000000 		.4byte	.LFB1
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjuyusm.s 			page 1
  802 00fd 00000000 		.4byte	.LFB2
  803 0101 78000000 		.4byte	.LFE2-.LFB2
  804 0105 01       		.uleb128 0x1
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjuyusm.s 			page 25
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccWE2BTj.s 			page 25
 
 
  805 0106 9C       		.byte	0x9c
@@ -1446,7 +1446,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjuyusm.s 			page 1
  807 010b 09       		.uleb128 0x9
  808 010c 00000000 		.4byte	.Ldebug_ranges0+0
  809 0110 0A       		.uleb128 0xa
- 810 0111 A0020000 		.4byte	.LASF26
+ 810 0111 4B020000 		.4byte	.LASF26
  811 0115 01       		.byte	0x1
  812 0116 69       		.byte	0x69
  813 0117 77000000 		.4byte	0x77
@@ -1454,7 +1454,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjuyusm.s 			page 1
  815 011f 00       		.byte	0
  816 0120 00       		.byte	0
  817 0121 08       		.uleb128 0x8
- 818 0122 31020000 		.4byte	.LASF21
+ 818 0122 DC010000 		.4byte	.LASF21
  819 0126 01       		.byte	0x1
  820 0127 9D       		.byte	0x9d
  821 0128 00000000 		.4byte	.LFB3
@@ -1463,7 +1463,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjuyusm.s 			page 1
  824 0131 9C       		.byte	0x9c
  825 0132 44010000 		.4byte	0x144
  826 0136 0B       		.uleb128 0xb
- 827 0137 11020000 		.4byte	.LASF23
+ 827 0137 BC010000 		.4byte	.LASF23
  828 013b 01       		.byte	0x1
  829 013c 9D       		.byte	0x9d
  830 013d 6B000000 		.4byte	0x6b
@@ -1471,7 +1471,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjuyusm.s 			page 1
  832 0142 50       		.byte	0x50
  833 0143 00       		.byte	0
  834 0144 08       		.uleb128 0x8
- 835 0145 F6010000 		.4byte	.LASF22
+ 835 0145 A1010000 		.4byte	.LASF22
  836 0149 01       		.byte	0x1
  837 014a C1       		.byte	0xc1
  838 014b 00000000 		.4byte	.LFB4
@@ -1480,34 +1480,34 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjuyusm.s 			page 1
  841 0154 9C       		.byte	0x9c
  842 0155 B9010000 		.4byte	0x1b9
  843 0159 0B       		.uleb128 0xb
- 844 015a 79010000 		.4byte	.LASF24
+ 844 015a 24010000 		.4byte	.LASF24
  845 015e 01       		.byte	0x1
  846 015f C1       		.byte	0xc1
  847 0160 77000000 		.4byte	0x77
  848 0164 01       		.uleb128 0x1
  849 0165 50       		.byte	0x50
  850 0166 0C       		.uleb128 0xc
- 851 0167 57010000 		.4byte	.LASF25
+ 851 0167 02010000 		.4byte	.LASF25
  852 016b 01       		.byte	0x1
  853 016c C1       		.byte	0xc1
  854 016d 6B000000 		.4byte	0x6b
  855 0171 13000000 		.4byte	.LLST1
  856 0175 0A       		.uleb128 0xa
- 857 0176 FB020000 		.4byte	.LASF27
+ 857 0176 A6020000 		.4byte	.LASF27
  858 017a 01       		.byte	0x1
  859 017b C4       		.byte	0xc4
  860 017c 6B000000 		.4byte	0x6b
  861 0180 3F000000 		.4byte	.LLST2
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjuyusm.s 			page 26
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccWE2BTj.s 			page 26
 
 
  862 0184 0D       		.uleb128 0xd
- 863 0185 98020000 		.4byte	.LASF28
+ 863 0185 43020000 		.4byte	.LASF28
  864 0189 01       		.byte	0x1
  865 018a C6       		.byte	0xc6
  866 018b 6B000000 		.4byte	0x6b
  867 018f 0D       		.uleb128 0xd
- 868 0190 A0020000 		.4byte	.LASF26
+ 868 0190 4B020000 		.4byte	.LASF26
  869 0194 01       		.byte	0x1
  870 0195 C7       		.byte	0xc7
  871 0196 77000000 		.4byte	0x77
@@ -1531,7 +1531,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjuyusm.s 			page 1
  889 01c6 01       		.uleb128 0x1
  890 01c7 9C       		.byte	0x9c
  891 01c8 10       		.uleb128 0x10
- 892 01c9 BB010000 		.4byte	.LASF29
+ 892 01c9 66010000 		.4byte	.LASF29
  893 01cd 01       		.byte	0x1
  894 01ce 4C01     		.2byte	0x14c
  895 01d0 00000000 		.4byte	.LFB6
@@ -1540,14 +1540,14 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjuyusm.s 			page 1
  898 01d9 9C       		.byte	0x9c
  899 01da EF010000 		.4byte	0x1ef
  900 01de 11       		.uleb128 0x11
- 901 01df 25020000 		.4byte	.LASF30
+ 901 01df D0010000 		.4byte	.LASF30
  902 01e3 01       		.byte	0x1
  903 01e4 4C01     		.2byte	0x14c
  904 01e6 6B000000 		.4byte	0x6b
  905 01ea 65000000 		.4byte	.LLST3
  906 01ee 00       		.byte	0
  907 01ef 10       		.uleb128 0x10
- 908 01f0 DC010000 		.4byte	.LASF31
+ 908 01f0 87010000 		.4byte	.LASF31
  909 01f4 01       		.byte	0x1
  910 01f5 6F01     		.2byte	0x16f
  911 01f7 00000000 		.4byte	.LFB7
@@ -1556,9 +1556,9 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjuyusm.s 			page 1
  914 0200 9C       		.byte	0x9c
  915 0201 16020000 		.4byte	0x216
  916 0205 11       		.uleb128 0x11
- 917 0206 25020000 		.4byte	.LASF30
+ 917 0206 D0010000 		.4byte	.LASF30
  918 020a 01       		.byte	0x1
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjuyusm.s 			page 27
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccWE2BTj.s 			page 27
 
 
  919 020b 6F01     		.2byte	0x16f
@@ -1566,7 +1566,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjuyusm.s 			page 1
  921 0211 86000000 		.4byte	.LLST4
  922 0215 00       		.byte	0
  923 0216 12       		.uleb128 0x12
- 924 0217 E3020000 		.4byte	.LASF39
+ 924 0217 8E020000 		.4byte	.LASF39
  925 021b 01       		.byte	0x1
  926 021c 8401     		.2byte	0x184
  927 021e 6B000000 		.4byte	0x6b
@@ -1575,7 +1575,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjuyusm.s 			page 1
  930 022a 01       		.uleb128 0x1
  931 022b 9C       		.byte	0x9c
  932 022c 10       		.uleb128 0x10
- 933 022d AB020000 		.4byte	.LASF32
+ 933 022d 56020000 		.4byte	.LASF32
  934 0231 01       		.byte	0x1
  935 0232 A301     		.2byte	0x1a3
  936 0234 00000000 		.4byte	.LFB9
@@ -1584,7 +1584,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjuyusm.s 			page 1
  939 023d 9C       		.byte	0x9c
  940 023e 8B020000 		.4byte	0x28b
  941 0242 11       		.uleb128 0x11
- 942 0243 8E020000 		.4byte	.LASF33
+ 942 0243 39020000 		.4byte	.LASF33
  943 0247 01       		.byte	0x1
  944 0248 A301     		.2byte	0x1a3
  945 024a 6B000000 		.4byte	0x6b
@@ -1595,7 +1595,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjuyusm.s 			page 1
  950 0258 A501     		.2byte	0x1a5
  951 025a 77000000 		.4byte	0x77
  952 025e 13       		.uleb128 0x13
- 953 025f 5F010000 		.4byte	.LASF35
+ 953 025f 0A010000 		.4byte	.LASF35
  954 0263 01       		.byte	0x1
  955 0264 A601     		.2byte	0x1a6
  956 0266 6B000000 		.4byte	0x6b
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjuyusm.s 			page 1
  973 0294 10000000 		.4byte	.LFE10-.LFB10
  974 0298 01       		.uleb128 0x1
  975 0299 9C       		.byte	0x9c
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjuyusm.s 			page 28
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccWE2BTj.s 			page 28
 
 
  976 029a 00       		.byte	0
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjuyusm.s 			page 1
  1030 0033 13       		.uleb128 0x13
  1031 0034 00       		.byte	0
  1032 0035 00       		.byte	0
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjuyusm.s 			page 29
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccWE2BTj.s 			page 29
 
 
  1033 0036 05       		.uleb128 0x5
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjuyusm.s 			page 1
  1087 006d 03       		.uleb128 0x3
  1088 006e 0E       		.uleb128 0xe
  1089 006f 3A       		.uleb128 0x3a
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjuyusm.s 			page 30
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccWE2BTj.s 			page 30
 
 
  1090 0070 0B       		.uleb128 0xb
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjuyusm.s 			page 1
  1144 00a7 0C       		.uleb128 0xc
  1145 00a8 05       		.uleb128 0x5
  1146 00a9 00       		.byte	0
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjuyusm.s 			page 31
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccWE2BTj.s 			page 31
 
 
  1147 00aa 03       		.uleb128 0x3
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjuyusm.s 			page 1
  1201 00e1 00       		.byte	0
  1202 00e2 10       		.uleb128 0x10
  1203 00e3 2E       		.uleb128 0x2e
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjuyusm.s 			page 32
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccWE2BTj.s 			page 32
 
 
  1204 00e4 01       		.byte	0x1
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjuyusm.s 			page 1
  1258 011b 01       		.uleb128 0x1
  1259 011c 12       		.uleb128 0x12
  1260 011d 06       		.uleb128 0x6
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjuyusm.s 			page 33
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccWE2BTj.s 			page 33
 
 
  1261 011e 40       		.uleb128 0x40
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjuyusm.s 			page 1
  1315 002a 51       		.byte	0x51
  1316 002b 9F       		.byte	0x9f
  1317 002c AA000000 		.4byte	.LVL7
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjuyusm.s 			page 34
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccWE2BTj.s 			page 34
 
 
  1318 0030 E8000000 		.4byte	.LFE4
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjuyusm.s 			page 1
  1372 00ab 1C000000 		.4byte	.LVL14
  1373 00af 0100     		.2byte	0x1
  1374 00b1 50       		.byte	0x50
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjuyusm.s 			page 35
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccWE2BTj.s 			page 35
 
 
  1375 00b2 1C000000 		.4byte	.LVL14
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjuyusm.s 			page 1
  1429 0068 00000000 		.4byte	0
  1430 006c 00000000 		.4byte	0
  1431              		.section	.debug_ranges,"",%progbits
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjuyusm.s 			page 36
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccWE2BTj.s 			page 36
 
 
  1432              	.Ldebug_ranges0:
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjuyusm.s 			page 1
  1486 00d4 10000000 		.4byte	.LFE8
  1487 00d8 00000000 		.4byte	.LFB9
  1488 00dc 58000000 		.4byte	.LFE9
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjuyusm.s 			page 37
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccWE2BTj.s 			page 37
 
 
  1489 00e0 00000000 		.4byte	.LFB10
@@ -2218,164 +2218,164 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjuyusm.s 			page 1
  1512              	.LASF16:
  1513 00e1 436C6F63 		.ascii	"Clock_3_GetSourceRegister\000"
  1513      6B5F335F 
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjuyusm.s 			page 38
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccWE2BTj.s 			page 38
 
 
  1513      47657453 
  1513      6F757263 
  1513      65526567 
- 1514              	.LASF38:
- 1515 00fb 433A5C55 		.ascii	"C:\\Users\\Patrick\\Desktop\\cy8ckit-059\\CE95277 A"
- 1515      73657273 
- 1515      5C506174 
- 1515      7269636B 
- 1515      5C446573 
- 1516 0129 44432061 		.ascii	"DC and UART\\CE95277 ADC and UART.cydsn\000"
- 1516      6E642055 
- 1516      4152545C 
- 1516      43453935 
- 1516      32373720 
- 1517              	.LASF10:
- 1518 0150 75696E74 		.ascii	"uint16\000"
- 1518      313600
- 1519              	.LASF25:
- 1520 0157 72657374 		.ascii	"restart\000"
- 1520      61727400 
- 1521              	.LASF35:
- 1522 015f 6F6C6453 		.ascii	"oldSrc\000"
- 1522      726300
- 1523              	.LASF19:
- 1524 0166 436C6F63 		.ascii	"Clock_3_Stop\000"
- 1524      6B5F335F 
- 1524      53746F70 
- 1524      00
- 1525              	.LASF9:
- 1526 0173 75696E74 		.ascii	"uint8\000"
- 1526      3800
- 1527              	.LASF24:
- 1528 0179 636C6B44 		.ascii	"clkDivider\000"
- 1528      69766964 
- 1528      657200
- 1529              	.LASF11:
- 1530 0184 666C6F61 		.ascii	"float\000"
- 1530      7400
- 1531              	.LASF37:
- 1532 018a 2E5C4765 		.ascii	".\\Generated_Source\\PSoC5\\Clock_3.c\000"
- 1532      6E657261 
- 1532      7465645F 
- 1532      536F7572 
- 1532      63655C50 
- 1533              	.LASF6:
- 1534 01ad 6C6F6E67 		.ascii	"long long int\000"
- 1534      206C6F6E 
- 1534      6720696E 
- 1534      7400
- 1535              	.LASF29:
- 1536 01bb 436C6F63 		.ascii	"Clock_3_SetModeRegister\000"
- 1536      6B5F335F 
- 1536      5365744D 
- 1536      6F646552 
- 1536      65676973 
- 1537              	.LASF4:
- 1538 01d3 6C6F6E67 		.ascii	"long int\000"
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjuyusm.s 			page 39
+ 1514              	.LASF10:
+ 1515 00fb 75696E74 		.ascii	"uint16\000"
+ 1515      313600
+ 1516              	.LASF25:
+ 1517 0102 72657374 		.ascii	"restart\000"
+ 1517      61727400 
+ 1518              	.LASF35:
+ 1519 010a 6F6C6453 		.ascii	"oldSrc\000"
+ 1519      726300
+ 1520              	.LASF19:
+ 1521 0111 436C6F63 		.ascii	"Clock_3_Stop\000"
+ 1521      6B5F335F 
+ 1521      53746F70 
+ 1521      00
+ 1522              	.LASF9:
+ 1523 011e 75696E74 		.ascii	"uint8\000"
+ 1523      3800
+ 1524              	.LASF24:
+ 1525 0124 636C6B44 		.ascii	"clkDivider\000"
+ 1525      69766964 
+ 1525      657200
+ 1526              	.LASF11:
+ 1527 012f 666C6F61 		.ascii	"float\000"
+ 1527      7400
+ 1528              	.LASF37:
+ 1529 0135 2E5C4765 		.ascii	".\\Generated_Source\\PSoC5\\Clock_3.c\000"
+ 1529      6E657261 
+ 1529      7465645F 
+ 1529      536F7572 
+ 1529      63655C50 
+ 1530              	.LASF6:
+ 1531 0158 6C6F6E67 		.ascii	"long long int\000"
+ 1531      206C6F6E 
+ 1531      6720696E 
+ 1531      7400
+ 1532              	.LASF29:
+ 1533 0166 436C6F63 		.ascii	"Clock_3_SetModeRegister\000"
+ 1533      6B5F335F 
+ 1533      5365744D 
+ 1533      6F646552 
+ 1533      65676973 
+ 1534              	.LASF4:
+ 1535 017e 6C6F6E67 		.ascii	"long int\000"
+ 1535      20696E74 
+ 1535      00
+ 1536              	.LASF31:
+ 1537 0187 436C6F63 		.ascii	"Clock_3_ClearModeRegister\000"
+ 1537      6B5F335F 
+ 1537      436C6561 
+ 1537      724D6F64 
+ 1537      65526567 
+ 1538              	.LASF22:
+ 1539 01a1 436C6F63 		.ascii	"Clock_3_SetDividerRegister\000"
+ 1539      6B5F335F 
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccWE2BTj.s 			page 39
 
 
- 1538      20696E74 
- 1538      00
- 1539              	.LASF31:
- 1540 01dc 436C6F63 		.ascii	"Clock_3_ClearModeRegister\000"
- 1540      6B5F335F 
- 1540      436C6561 
- 1540      724D6F64 
- 1540      65526567 
- 1541              	.LASF22:
- 1542 01f6 436C6F63 		.ascii	"Clock_3_SetDividerRegister\000"
- 1542      6B5F335F 
- 1542      53657444 
- 1542      69766964 
- 1542      65725265 
- 1543              	.LASF23:
- 1544 0211 73746174 		.ascii	"state\000"
- 1544      6500
- 1545              	.LASF1:
- 1546 0217 756E7369 		.ascii	"unsigned char\000"
- 1546      676E6564 
- 1546      20636861 
- 1546      7200
- 1547              	.LASF30:
- 1548 0225 6D6F6465 		.ascii	"modeBitMask\000"
- 1548      4269744D 
- 1548      61736B00 
- 1549              	.LASF21:
- 1550 0231 436C6F63 		.ascii	"Clock_3_StandbyPower\000"
- 1550      6B5F335F 
- 1550      5374616E 
- 1550      64627950 
- 1550      6F776572 
- 1551              	.LASF0:
- 1552 0246 7369676E 		.ascii	"signed char\000"
- 1552      65642063 
- 1552      68617200 
- 1553              	.LASF7:
- 1554 0252 6C6F6E67 		.ascii	"long long unsigned int\000"
- 1554      206C6F6E 
- 1554      6720756E 
- 1554      7369676E 
- 1554      65642069 
- 1555              	.LASF8:
- 1556 0269 756E7369 		.ascii	"unsigned int\000"
- 1556      676E6564 
- 1556      20696E74 
- 1556      00
- 1557              	.LASF3:
- 1558 0276 73686F72 		.ascii	"short unsigned int\000"
- 1558      7420756E 
- 1558      7369676E 
- 1558      65642069 
- 1558      6E7400
- 1559              	.LASF13:
- 1560 0289 63686172 		.ascii	"char\000"
- 1560      00
- 1561              	.LASF33:
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjuyusm.s 			page 40
+ 1539      53657444 
+ 1539      69766964 
+ 1539      65725265 
+ 1540              	.LASF23:
+ 1541 01bc 73746174 		.ascii	"state\000"
+ 1541      6500
+ 1542              	.LASF1:
+ 1543 01c2 756E7369 		.ascii	"unsigned char\000"
+ 1543      676E6564 
+ 1543      20636861 
+ 1543      7200
+ 1544              	.LASF30:
+ 1545 01d0 6D6F6465 		.ascii	"modeBitMask\000"
+ 1545      4269744D 
+ 1545      61736B00 
+ 1546              	.LASF21:
+ 1547 01dc 436C6F63 		.ascii	"Clock_3_StandbyPower\000"
+ 1547      6B5F335F 
+ 1547      5374616E 
+ 1547      64627950 
+ 1547      6F776572 
+ 1548              	.LASF0:
+ 1549 01f1 7369676E 		.ascii	"signed char\000"
+ 1549      65642063 
+ 1549      68617200 
+ 1550              	.LASF7:
+ 1551 01fd 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 1551      206C6F6E 
+ 1551      6720756E 
+ 1551      7369676E 
+ 1551      65642069 
+ 1552              	.LASF8:
+ 1553 0214 756E7369 		.ascii	"unsigned int\000"
+ 1553      676E6564 
+ 1553      20696E74 
+ 1553      00
+ 1554              	.LASF3:
+ 1555 0221 73686F72 		.ascii	"short unsigned int\000"
+ 1555      7420756E 
+ 1555      7369676E 
+ 1555      65642069 
+ 1555      6E7400
+ 1556              	.LASF13:
+ 1557 0234 63686172 		.ascii	"char\000"
+ 1557      00
+ 1558              	.LASF33:
+ 1559 0239 636C6B53 		.ascii	"clkSource\000"
+ 1559      6F757263 
+ 1559      6500
+ 1560              	.LASF28:
+ 1561 0243 63757272 		.ascii	"currSrc\000"
+ 1561      53726300 
+ 1562              	.LASF26:
+ 1563 024b 6F6C6444 		.ascii	"oldDivider\000"
+ 1563      69766964 
+ 1563      657200
+ 1564              	.LASF32:
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccWE2BTj.s 			page 40
 
 
- 1562 028e 636C6B53 		.ascii	"clkSource\000"
- 1562      6F757263 
- 1562      6500
- 1563              	.LASF28:
- 1564 0298 63757272 		.ascii	"currSrc\000"
- 1564      53726300 
- 1565              	.LASF26:
- 1566 02a0 6F6C6444 		.ascii	"oldDivider\000"
- 1566      69766964 
- 1566      657200
- 1567              	.LASF32:
- 1568 02ab 436C6F63 		.ascii	"Clock_3_SetSourceRegister\000"
- 1568      6B5F335F 
- 1568      53657453 
- 1568      6F757263 
- 1568      65526567 
- 1569              	.LASF14:
- 1570 02c5 72656738 		.ascii	"reg8\000"
- 1570      00
- 1571              	.LASF5:
- 1572 02ca 6C6F6E67 		.ascii	"long unsigned int\000"
- 1572      20756E73 
- 1572      69676E65 
- 1572      6420696E 
- 1572      7400
- 1573              	.LASF12:
- 1574 02dc 646F7562 		.ascii	"double\000"
- 1574      6C6500
- 1575              	.LASF39:
- 1576 02e3 436C6F63 		.ascii	"Clock_3_GetModeRegister\000"
- 1576      6B5F335F 
- 1576      4765744D 
- 1576      6F646552 
- 1576      65676973 
- 1577              	.LASF27:
- 1578 02fb 656E6162 		.ascii	"enabled\000"
- 1578      6C656400 
+ 1565 0256 436C6F63 		.ascii	"Clock_3_SetSourceRegister\000"
+ 1565      6B5F335F 
+ 1565      53657453 
+ 1565      6F757263 
+ 1565      65526567 
+ 1566              	.LASF14:
+ 1567 0270 72656738 		.ascii	"reg8\000"
+ 1567      00
+ 1568              	.LASF5:
+ 1569 0275 6C6F6E67 		.ascii	"long unsigned int\000"
+ 1569      20756E73 
+ 1569      69676E65 
+ 1569      6420696E 
+ 1569      7400
+ 1570              	.LASF12:
+ 1571 0287 646F7562 		.ascii	"double\000"
+ 1571      6C6500
+ 1572              	.LASF39:
+ 1573 028e 436C6F63 		.ascii	"Clock_3_GetModeRegister\000"
+ 1573      6B5F335F 
+ 1573      4765744D 
+ 1573      6F646552 
+ 1573      65676973 
+ 1574              	.LASF27:
+ 1575 02a6 656E6162 		.ascii	"enabled\000"
+ 1575      6C656400 
+ 1576              	.LASF38:
+ 1577 02ae 433A5C55 		.ascii	"C:\\Users\\Patrick\\Documents\\GitHub\\PSoC 5LP FIl"
+ 1577      73657273 
+ 1577      5C506174 
+ 1577      7269636B 
+ 1577      5C446F63 
+ 1578 02dc 65735C43 		.ascii	"es\\C-CAN_PSoC_DevKit\\C-CAN.cydsn\000"
+ 1578      2D43414E 
+ 1578      5F50536F 
+ 1578      435F4465 
+ 1578      764B6974 
  1579              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.9.3 20150303 (release) [ARM/embedded-4_9-br

@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccrpCUKL.s 			page 1
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cceT1p2O.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccrpCUKL.s 			page 1
   29:.\Generated_Source\PSoC5/ADC_SAR_1_Bypass.c **** * Summary:
   30:.\Generated_Source\PSoC5/ADC_SAR_1_Bypass.c **** *  Assign a new value to the digital port's data output register.  
   31:.\Generated_Source\PSoC5/ADC_SAR_1_Bypass.c **** *
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccrpCUKL.s 			page 2
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cceT1p2O.s 			page 2
 
 
   32:.\Generated_Source\PSoC5/ADC_SAR_1_Bypass.c **** * Parameters:  
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccrpCUKL.s 			page 1
   46:.\Generated_Source\PSoC5/ADC_SAR_1_Bypass.c **** /*******************************************************************************
   47:.\Generated_Source\PSoC5/ADC_SAR_1_Bypass.c **** * Function Name: ADC_SAR_1_Bypass_SetDriveMode
   48:.\Generated_Source\PSoC5/ADC_SAR_1_Bypass.c **** ********************************************************************************
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccrpCUKL.s 			page 3
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cceT1p2O.s 			page 3
 
 
   49:.\Generated_Source\PSoC5/ADC_SAR_1_Bypass.c **** *
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccrpCUKL.s 			page 1
   73:.\Generated_Source\PSoC5/ADC_SAR_1_Bypass.c **** *
   74:.\Generated_Source\PSoC5/ADC_SAR_1_Bypass.c **** * Parameters:  
   75:.\Generated_Source\PSoC5/ADC_SAR_1_Bypass.c **** *  None
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccrpCUKL.s 			page 4
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cceT1p2O.s 			page 4
 
 
   76:.\Generated_Source\PSoC5/ADC_SAR_1_Bypass.c **** *
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccrpCUKL.s 			page 1
  104:.\Generated_Source\PSoC5/ADC_SAR_1_Bypass.c **** uint8 ADC_SAR_1_Bypass_ReadDataReg(void) 
  105:.\Generated_Source\PSoC5/ADC_SAR_1_Bypass.c **** {
  121              		.loc 1 105 0
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccrpCUKL.s 			page 5
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cceT1p2O.s 			page 5
 
 
  122              		.cfi_startproc
@@ -270,48 +270,48 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccrpCUKL.s 			page 1
  146 0006 00000000 		.4byte	.Ldebug_abbrev0
  147 000a 04       		.byte	0x4
  148 000b 01       		.uleb128 0x1
- 149 000c C3000000 		.4byte	.LASF20
+ 149 000c BD000000 		.4byte	.LASF20
  150 0010 01       		.byte	0x1
- 151 0011 83000000 		.4byte	.LASF21
- 152 0015 1D000000 		.4byte	.LASF22
+ 151 0011 7D000000 		.4byte	.LASF21
+ 152 0015 00000000 		.4byte	.LASF22
  153 0019 00000000 		.4byte	.Ldebug_ranges0+0
  154 001d 00000000 		.4byte	0
  155 0021 00000000 		.4byte	.Ldebug_line0
  156 0025 02       		.uleb128 0x2
  157 0026 01       		.byte	0x1
  158 0027 06       		.byte	0x6
- 159 0028 0C020000 		.4byte	.LASF0
+ 159 0028 06020000 		.4byte	.LASF0
  160 002c 02       		.uleb128 0x2
  161 002d 01       		.byte	0x1
  162 002e 08       		.byte	0x8
- 163 002f B5000000 		.4byte	.LASF1
+ 163 002f AF000000 		.4byte	.LASF1
  164 0033 02       		.uleb128 0x2
  165 0034 02       		.byte	0x2
  166 0035 05       		.byte	0x5
- 167 0036 D5010000 		.4byte	.LASF2
+ 167 0036 CF010000 		.4byte	.LASF2
  168 003a 02       		.uleb128 0x2
  169 003b 02       		.byte	0x2
  170 003c 07       		.byte	0x7
- 171 003d 68010000 		.4byte	.LASF3
+ 171 003d 62010000 		.4byte	.LASF3
  172 0041 02       		.uleb128 0x2
  173 0042 04       		.byte	0x4
  174 0043 05       		.byte	0x5
- 175 0044 E5010000 		.4byte	.LASF4
+ 175 0044 DF010000 		.4byte	.LASF4
  176 0048 02       		.uleb128 0x2
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccrpCUKL.s 			page 6
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cceT1p2O.s 			page 6
 
 
  177 0049 04       		.byte	0x4
  178 004a 07       		.byte	0x7
- 179 004b 56010000 		.4byte	.LASF5
+ 179 004b 50010000 		.4byte	.LASF5
  180 004f 02       		.uleb128 0x2
  181 0050 08       		.byte	0x8
  182 0051 05       		.byte	0x5
- 183 0052 AB010000 		.4byte	.LASF6
+ 183 0052 A5010000 		.4byte	.LASF6
  184 0056 02       		.uleb128 0x2
  185 0057 08       		.byte	0x8
  186 0058 07       		.byte	0x7
- 187 0059 8F010000 		.4byte	.LASF7
+ 187 0059 89010000 		.4byte	.LASF7
  188 005d 03       		.uleb128 0x3
  189 005e 04       		.byte	0x4
  190 005f 05       		.byte	0x5
@@ -319,33 +319,33 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccrpCUKL.s 			page 1
  192 0064 02       		.uleb128 0x2
  193 0065 04       		.byte	0x4
  194 0066 07       		.byte	0x7
- 195 0067 82010000 		.4byte	.LASF8
+ 195 0067 7C010000 		.4byte	.LASF8
  196 006b 04       		.uleb128 0x4
- 197 006c DF010000 		.4byte	.LASF12
+ 197 006c D9010000 		.4byte	.LASF12
  198 0070 02       		.byte	0x2
  199 0071 9201     		.2byte	0x192
  200 0073 2C000000 		.4byte	0x2c
  201 0077 02       		.uleb128 0x2
  202 0078 04       		.byte	0x4
  203 0079 04       		.byte	0x4
- 204 007a AF000000 		.4byte	.LASF9
+ 204 007a A9000000 		.4byte	.LASF9
  205 007e 02       		.uleb128 0x2
  206 007f 08       		.byte	0x8
  207 0080 04       		.byte	0x4
- 208 0081 7B010000 		.4byte	.LASF10
+ 208 0081 75010000 		.4byte	.LASF10
  209 0085 02       		.uleb128 0x2
  210 0086 01       		.byte	0x1
  211 0087 08       		.byte	0x8
- 212 0088 B9010000 		.4byte	.LASF11
+ 212 0088 B3010000 		.4byte	.LASF11
  213 008c 04       		.uleb128 0x4
- 214 008d 51010000 		.4byte	.LASF13
+ 214 008d 4B010000 		.4byte	.LASF13
  215 0091 02       		.byte	0x2
  216 0092 3C02     		.2byte	0x23c
  217 0094 98000000 		.4byte	0x98
  218 0098 05       		.uleb128 0x5
  219 0099 6B000000 		.4byte	0x6b
  220 009d 06       		.uleb128 0x6
- 221 009e BE010000 		.4byte	.LASF14
+ 221 009e B8010000 		.4byte	.LASF14
  222 00a2 01       		.byte	0x1
  223 00a3 27       		.byte	0x27
  224 00a4 00000000 		.4byte	.LFB0
@@ -354,23 +354,23 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccrpCUKL.s 			page 1
  227 00ad 9C       		.byte	0x9c
  228 00ae D1000000 		.4byte	0xd1
  229 00b2 07       		.uleb128 0x7
- 230 00b3 72000000 		.4byte	.LASF16
+ 230 00b3 6C000000 		.4byte	.LASF16
  231 00b7 01       		.byte	0x1
  232 00b8 27       		.byte	0x27
  233 00b9 6B000000 		.4byte	0x6b
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccrpCUKL.s 			page 7
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cceT1p2O.s 			page 7
 
 
  234 00bd 00000000 		.4byte	.LLST0
  235 00c1 08       		.uleb128 0x8
- 236 00c2 78000000 		.4byte	.LASF23
+ 236 00c2 72000000 		.4byte	.LASF23
  237 00c6 01       		.byte	0x1
  238 00c7 29       		.byte	0x29
  239 00c8 6B000000 		.4byte	0x6b
  240 00cc 21000000 		.4byte	.LLST1
  241 00d0 00       		.byte	0
  242 00d1 06       		.uleb128 0x6
- 243 00d2 EE010000 		.4byte	.LASF15
+ 243 00d2 E8010000 		.4byte	.LASF15
  244 00d6 01       		.byte	0x1
  245 00d7 3C       		.byte	0x3c
  246 00d8 00000000 		.4byte	.LFB1
@@ -379,14 +379,14 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccrpCUKL.s 			page 1
  249 00e1 9C       		.byte	0x9c
  250 00e2 F6000000 		.4byte	0xf6
  251 00e6 07       		.uleb128 0x7
- 252 00e7 A6010000 		.4byte	.LASF17
+ 252 00e7 A0010000 		.4byte	.LASF17
  253 00eb 01       		.byte	0x1
  254 00ec 3C       		.byte	0x3c
  255 00ed 6B000000 		.4byte	0x6b
  256 00f1 39000000 		.4byte	.LLST2
  257 00f5 00       		.byte	0
  258 00f6 09       		.uleb128 0x9
- 259 00f7 18020000 		.4byte	.LASF18
+ 259 00f7 12020000 		.4byte	.LASF18
  260 00fb 01       		.byte	0x1
  261 00fc 54       		.byte	0x54
  262 00fd 6B000000 		.4byte	0x6b
@@ -395,7 +395,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccrpCUKL.s 			page 1
  265 0109 01       		.uleb128 0x1
  266 010a 9C       		.byte	0x9c
  267 010b 09       		.uleb128 0x9
- 268 010c 00000000 		.4byte	.LASF19
+ 268 010c 4F000000 		.4byte	.LASF19
  269 0110 01       		.byte	0x1
  270 0111 68       		.byte	0x68
  271 0112 6B000000 		.4byte	0x6b
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccrpCUKL.s 			page 1
  288 0009 1B       		.uleb128 0x1b
  289 000a 0E       		.uleb128 0xe
  290 000b 55       		.uleb128 0x55
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccrpCUKL.s 			page 8
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cceT1p2O.s 			page 8
 
 
  291 000c 17       		.uleb128 0x17
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccrpCUKL.s 			page 1
  345 0042 03       		.uleb128 0x3
  346 0043 0E       		.uleb128 0xe
  347 0044 3A       		.uleb128 0x3a
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccrpCUKL.s 			page 9
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cceT1p2O.s 			page 9
 
 
  348 0045 0B       		.uleb128 0xb
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccrpCUKL.s 			page 1
  402 007c 3A       		.uleb128 0x3a
  403 007d 0B       		.uleb128 0xb
  404 007e 3B       		.uleb128 0x3b
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccrpCUKL.s 			page 10
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cceT1p2O.s 			page 10
 
 
  405 007f 0B       		.uleb128 0xb
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccrpCUKL.s 			page 1
  459 0050 50       		.byte	0x50
  460 0051 9F       		.byte	0x9f
  461 0052 00000000 		.4byte	0
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccrpCUKL.s 			page 11
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cceT1p2O.s 			page 11
 
 
  462 0056 00000000 		.4byte	0
@@ -639,135 +639,135 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccrpCUKL.s 			page 1
  495      00000201 
  495      FB0E0D00 
  495      01010101 
- 496              	.LASF19:
- 497 0000 4144435F 		.ascii	"ADC_SAR_1_Bypass_ReadDataReg\000"
- 497      5341525F 
- 497      315F4279 
- 497      70617373 
- 497      5F526561 
- 498              	.LASF22:
- 499 001d 433A5C55 		.ascii	"C:\\Users\\Patrick\\Desktop\\cy8ckit-059\\CE95277 A"
- 499      73657273 
- 499      5C506174 
- 499      7269636B 
- 499      5C446573 
- 500 004b 44432061 		.ascii	"DC and UART\\CE95277 ADC and UART.cydsn\000"
- 500      6E642055 
- 500      4152545C 
- 500      43453935 
- 500      32373720 
+ 496              	.LASF22:
+ 497 0000 433A5C55 		.ascii	"C:\\Users\\Patrick\\Documents\\GitHub\\PSoC 5LP FIl"
+ 497      73657273 
+ 497      5C506174 
+ 497      7269636B 
+ 497      5C446F63 
+ 498 002e 65735C43 		.ascii	"es\\C-CAN_PSoC_DevKit\\C-CAN.cydsn\000"
+ 498      2D43414E 
+ 498      5F50536F 
+ 498      435F4465 
+ 498      764B6974 
+ 499              	.LASF19:
+ 500 004f 4144435F 		.ascii	"ADC_SAR_1_Bypass_ReadDataReg\000"
+ 500      5341525F 
+ 500      315F4279 
+ 500      70617373 
+ 500      5F526561 
  501              	.LASF16:
- 502 0072 76616C75 		.ascii	"value\000"
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccrpCUKL.s 			page 12
+ 502 006c 76616C75 		.ascii	"value\000"
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cceT1p2O.s 			page 12
 
 
  502      6500
  503              	.LASF23:
- 504 0078 73746174 		.ascii	"staticBits\000"
+ 504 0072 73746174 		.ascii	"staticBits\000"
  504      69634269 
  504      747300
  505              	.LASF21:
- 506 0083 2E5C4765 		.ascii	".\\Generated_Source\\PSoC5\\ADC_SAR_1_Bypass.c\000"
+ 506 007d 2E5C4765 		.ascii	".\\Generated_Source\\PSoC5\\ADC_SAR_1_Bypass.c\000"
  506      6E657261 
  506      7465645F 
  506      536F7572 
  506      63655C50 
  507              	.LASF9:
- 508 00af 666C6F61 		.ascii	"float\000"
+ 508 00a9 666C6F61 		.ascii	"float\000"
  508      7400
  509              	.LASF1:
- 510 00b5 756E7369 		.ascii	"unsigned char\000"
+ 510 00af 756E7369 		.ascii	"unsigned char\000"
  510      676E6564 
  510      20636861 
  510      7200
  511              	.LASF20:
- 512 00c3 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
+ 512 00bd 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
  512      4320342E 
  512      392E3320 
  512      32303135 
  512      30333033 
- 513 00f6 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m3 -mthumb -g -O"
+ 513 00f0 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m3 -mthumb -g -O"
  513      20726576 
  513      6973696F 
  513      6E203232 
  513      31323230 
- 514 0129 33202D66 		.ascii	"3 -ffunction-sections -ffat-lto-objects\000"
+ 514 0123 33202D66 		.ascii	"3 -ffunction-sections -ffat-lto-objects\000"
  514      66756E63 
  514      74696F6E 
  514      2D736563 
  514      74696F6E 
  515              	.LASF13:
- 516 0151 72656738 		.ascii	"reg8\000"
+ 516 014b 72656738 		.ascii	"reg8\000"
  516      00
  517              	.LASF5:
- 518 0156 6C6F6E67 		.ascii	"long unsigned int\000"
+ 518 0150 6C6F6E67 		.ascii	"long unsigned int\000"
  518      20756E73 
  518      69676E65 
  518      6420696E 
  518      7400
  519              	.LASF3:
- 520 0168 73686F72 		.ascii	"short unsigned int\000"
+ 520 0162 73686F72 		.ascii	"short unsigned int\000"
  520      7420756E 
  520      7369676E 
  520      65642069 
  520      6E7400
  521              	.LASF10:
- 522 017b 646F7562 		.ascii	"double\000"
+ 522 0175 646F7562 		.ascii	"double\000"
  522      6C6500
  523              	.LASF8:
- 524 0182 756E7369 		.ascii	"unsigned int\000"
+ 524 017c 756E7369 		.ascii	"unsigned int\000"
  524      676E6564 
  524      20696E74 
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccrpCUKL.s 			page 13
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cceT1p2O.s 			page 13
 
 
  524      00
  525              	.LASF7:
- 526 018f 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 526 0189 6C6F6E67 		.ascii	"long long unsigned int\000"
  526      206C6F6E 
  526      6720756E 
  526      7369676E 
  526      65642069 
  527              	.LASF17:
- 528 01a6 6D6F6465 		.ascii	"mode\000"
+ 528 01a0 6D6F6465 		.ascii	"mode\000"
  528      00
  529              	.LASF6:
- 530 01ab 6C6F6E67 		.ascii	"long long int\000"
+ 530 01a5 6C6F6E67 		.ascii	"long long int\000"
  530      206C6F6E 
  530      6720696E 
  530      7400
  531              	.LASF11:
- 532 01b9 63686172 		.ascii	"char\000"
+ 532 01b3 63686172 		.ascii	"char\000"
  532      00
  533              	.LASF14:
- 534 01be 4144435F 		.ascii	"ADC_SAR_1_Bypass_Write\000"
+ 534 01b8 4144435F 		.ascii	"ADC_SAR_1_Bypass_Write\000"
  534      5341525F 
  534      315F4279 
  534      70617373 
  534      5F577269 
  535              	.LASF2:
- 536 01d5 73686F72 		.ascii	"short int\000"
+ 536 01cf 73686F72 		.ascii	"short int\000"
  536      7420696E 
  536      7400
  537              	.LASF12:
- 538 01df 75696E74 		.ascii	"uint8\000"
+ 538 01d9 75696E74 		.ascii	"uint8\000"
  538      3800
  539              	.LASF4:
- 540 01e5 6C6F6E67 		.ascii	"long int\000"
+ 540 01df 6C6F6E67 		.ascii	"long int\000"
  540      20696E74 
  540      00
  541              	.LASF15:
- 542 01ee 4144435F 		.ascii	"ADC_SAR_1_Bypass_SetDriveMode\000"
+ 542 01e8 4144435F 		.ascii	"ADC_SAR_1_Bypass_SetDriveMode\000"
  542      5341525F 
  542      315F4279 
  542      70617373 
  542      5F536574 
  543              	.LASF0:
- 544 020c 7369676E 		.ascii	"signed char\000"
+ 544 0206 7369676E 		.ascii	"signed char\000"
  544      65642063 
  544      68617200 
  545              	.LASF18:
- 546 0218 4144435F 		.ascii	"ADC_SAR_1_Bypass_Read\000"
+ 546 0212 4144435F 		.ascii	"ADC_SAR_1_Bypass_Read\000"
  546      5341525F 
  546      315F4279 
  546      70617373 

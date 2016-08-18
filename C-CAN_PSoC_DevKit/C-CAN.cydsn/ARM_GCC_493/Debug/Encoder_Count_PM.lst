@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccTCwe6G.s 			page 1
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccGqUmTB.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccTCwe6G.s 			page 1
   29:.\Generated_Source\PSoC5/Encoder_Count_PM.c **** *
   30:.\Generated_Source\PSoC5/Encoder_Count_PM.c **** * Parameters:  
   31:.\Generated_Source\PSoC5/Encoder_Count_PM.c **** *  void
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccTCwe6G.s 			page 2
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccGqUmTB.s 			page 2
 
 
   32:.\Generated_Source\PSoC5/Encoder_Count_PM.c **** *
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccTCwe6G.s 			page 1
   53:.\Generated_Source\PSoC5/Encoder_Count_PM.c **** }
   54:.\Generated_Source\PSoC5/Encoder_Count_PM.c **** 
   55:.\Generated_Source\PSoC5/Encoder_Count_PM.c **** 
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccTCwe6G.s 			page 3
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccGqUmTB.s 			page 3
 
 
   56:.\Generated_Source\PSoC5/Encoder_Count_PM.c **** /*******************************************************************************
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccTCwe6G.s 			page 1
   83              	.L8:
   84              		.align	2
   85              	.L7:
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccTCwe6G.s 			page 4
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccGqUmTB.s 			page 4
 
 
   86 0014 00000000 		.word	.LANCHOR0
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccTCwe6G.s 			page 1
  114:.\Generated_Source\PSoC5/Encoder_Count_PM.c ****         else
  115:.\Generated_Source\PSoC5/Encoder_Count_PM.c ****         {
  116:.\Generated_Source\PSoC5/Encoder_Count_PM.c ****             /* Counter is disabled */
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccTCwe6G.s 			page 5
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccGqUmTB.s 			page 5
 
 
  117:.\Generated_Source\PSoC5/Encoder_Count_PM.c ****             Encoder_Count_backup.CounterEnableState = 0u;
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccTCwe6G.s 			page 1
  137:.\Generated_Source\PSoC5/Encoder_Count_PM.c **** *  Restores and enables the user configuration
  138:.\Generated_Source\PSoC5/Encoder_Count_PM.c **** *  
  139:.\Generated_Source\PSoC5/Encoder_Count_PM.c **** * Parameters:  
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccTCwe6G.s 			page 6
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccGqUmTB.s 			page 6
 
 
  140:.\Generated_Source\PSoC5/Encoder_Count_PM.c **** *  void
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccTCwe6G.s 			page 1
  174              		.cfi_restore 4
  175              		.cfi_def_cfa_offset 0
  157:.\Generated_Source\PSoC5/Encoder_Count_PM.c ****         } /* Do nothing if Counter was disabled before */    
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccTCwe6G.s 			page 7
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccGqUmTB.s 			page 7
 
 
  176              		.loc 1 157 0
@@ -390,48 +390,48 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccTCwe6G.s 			page 1
  201 0006 00000000 		.4byte	.Ldebug_abbrev0
  202 000a 04       		.byte	0x4
  203 000b 01       		.uleb128 0x1
- 204 000c 1D010000 		.4byte	.LASF30
+ 204 000c C8000000 		.4byte	.LASF30
  205 0010 01       		.byte	0x1
  206 0011 00000000 		.4byte	.LASF31
- 207 0015 41000000 		.4byte	.LASF32
+ 207 0015 73010000 		.4byte	.LASF32
  208 0019 00000000 		.4byte	.Ldebug_ranges0+0
  209 001d 00000000 		.4byte	0
  210 0021 00000000 		.4byte	.Ldebug_line0
  211 0025 02       		.uleb128 0x2
  212 0026 01       		.byte	0x1
  213 0027 06       		.byte	0x6
- 214 0028 19030000 		.4byte	.LASF0
+ 214 0028 13030000 		.4byte	.LASF0
  215 002c 02       		.uleb128 0x2
  216 002d 01       		.byte	0x1
  217 002e 08       		.byte	0x8
- 218 002f 0F010000 		.4byte	.LASF1
+ 218 002f BA000000 		.4byte	.LASF1
  219 0033 02       		.uleb128 0x2
  220 0034 02       		.byte	0x2
  221 0035 05       		.byte	0x5
- 222 0036 D5020000 		.4byte	.LASF2
+ 222 0036 CF020000 		.4byte	.LASF2
  223 003a 02       		.uleb128 0x2
  224 003b 02       		.byte	0x2
  225 003c 07       		.byte	0x7
- 226 003d B1000000 		.4byte	.LASF3
+ 226 003d 5C000000 		.4byte	.LASF3
  227 0041 02       		.uleb128 0x2
  228 0042 04       		.byte	0x4
  229 0043 05       		.byte	0x5
- 230 0044 10030000 		.4byte	.LASF4
+ 230 0044 0A030000 		.4byte	.LASF4
  231 0048 02       		.uleb128 0x2
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccTCwe6G.s 			page 8
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccGqUmTB.s 			page 8
 
 
  232 0049 04       		.byte	0x4
  233 004a 07       		.byte	0x7
- 234 004b B0010000 		.4byte	.LASF5
+ 234 004b 5B010000 		.4byte	.LASF5
  235 004f 02       		.uleb128 0x2
  236 0050 08       		.byte	0x8
  237 0051 05       		.byte	0x5
- 238 0052 AE020000 		.4byte	.LASF6
+ 238 0052 A8020000 		.4byte	.LASF6
  239 0056 02       		.uleb128 0x2
  240 0057 08       		.byte	0x8
  241 0058 07       		.byte	0x7
- 242 0059 3E020000 		.4byte	.LASF7
+ 242 0059 38020000 		.4byte	.LASF7
  243 005d 03       		.uleb128 0x3
  244 005e 04       		.byte	0x4
  245 005f 05       		.byte	0x5
@@ -439,31 +439,31 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccTCwe6G.s 			page 1
  247 0064 02       		.uleb128 0x2
  248 0065 04       		.byte	0x4
  249 0066 07       		.byte	0x7
- 250 0067 04020000 		.4byte	.LASF8
+ 250 0067 FE010000 		.4byte	.LASF8
  251 006b 04       		.uleb128 0x4
- 252 006c C2010000 		.4byte	.LASF9
+ 252 006c 6D010000 		.4byte	.LASF9
  253 0070 02       		.byte	0x2
  254 0071 9201     		.2byte	0x192
  255 0073 2C000000 		.4byte	0x2c
  256 0077 04       		.uleb128 0x4
- 257 0078 E4010000 		.4byte	.LASF10
+ 257 0078 DE010000 		.4byte	.LASF10
  258 007c 02       		.byte	0x2
  259 007d 9301     		.2byte	0x193
  260 007f 3A000000 		.4byte	0x3a
  261 0083 02       		.uleb128 0x2
  262 0084 04       		.byte	0x4
  263 0085 04       		.byte	0x4
- 264 0086 09010000 		.4byte	.LASF11
+ 264 0086 B4000000 		.4byte	.LASF11
  265 008a 02       		.uleb128 0x2
  266 008b 08       		.byte	0x8
  267 008c 04       		.byte	0x4
- 268 008d C8010000 		.4byte	.LASF12
+ 268 008d C2010000 		.4byte	.LASF12
  269 0091 02       		.uleb128 0x2
  270 0092 01       		.byte	0x1
  271 0093 08       		.byte	0x8
- 272 0094 BC020000 		.4byte	.LASF13
+ 272 0094 B6020000 		.4byte	.LASF13
  273 0098 04       		.uleb128 0x4
- 274 0099 AB010000 		.4byte	.LASF14
+ 274 0099 56010000 		.4byte	.LASF14
  275 009d 02       		.byte	0x2
  276 009e 3C02     		.2byte	0x23c
  277 00a0 A4000000 		.4byte	0xa4
@@ -472,41 +472,41 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccTCwe6G.s 			page 1
  280 00a9 02       		.uleb128 0x2
  281 00aa 04       		.byte	0x4
  282 00ab 07       		.byte	0x7
- 283 00ac 77020000 		.4byte	.LASF15
+ 283 00ac 71020000 		.4byte	.LASF15
  284 00b0 06       		.uleb128 0x6
  285 00b1 06       		.byte	0x6
  286 00b2 03       		.byte	0x3
  287 00b3 40       		.byte	0x40
  288 00b4 DD000000 		.4byte	0xdd
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccTCwe6G.s 			page 9
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccGqUmTB.s 			page 9
 
 
  289 00b8 07       		.uleb128 0x7
- 290 00b9 9B020000 		.4byte	.LASF16
+ 290 00b9 95020000 		.4byte	.LASF16
  291 00bd 03       		.byte	0x3
  292 00be 42       		.byte	0x42
  293 00bf 6B000000 		.4byte	0x6b
  294 00c3 00       		.byte	0
  295 00c4 07       		.uleb128 0x7
- 296 00c5 C4000000 		.4byte	.LASF17
+ 296 00c5 6F000000 		.4byte	.LASF17
  297 00c9 03       		.byte	0x3
  298 00ca 43       		.byte	0x43
  299 00cb 77000000 		.4byte	0x77
  300 00cf 02       		.byte	0x2
  301 00d0 07       		.uleb128 0x7
- 302 00d1 CF000000 		.4byte	.LASF18
+ 302 00d1 7A000000 		.4byte	.LASF18
  303 00d5 03       		.byte	0x3
  304 00d6 46       		.byte	0x46
  305 00d7 6B000000 		.4byte	0x6b
  306 00db 04       		.byte	0x4
  307 00dc 00       		.byte	0
  308 00dd 08       		.uleb128 0x8
- 309 00de 96000000 		.4byte	.LASF19
+ 309 00de 41000000 		.4byte	.LASF19
  310 00e2 03       		.byte	0x3
  311 00e3 49       		.byte	0x49
  312 00e4 B0000000 		.4byte	0xb0
  313 00e8 09       		.uleb128 0x9
- 314 00e9 EB010000 		.4byte	.LASF20
+ 314 00e9 E5010000 		.4byte	.LASF20
  315 00ed 01       		.byte	0x1
  316 00ee 2A       		.byte	0x2a
  317 00ef 01       		.byte	0x1
@@ -525,7 +525,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccTCwe6G.s 			page 1
  330 0111 EA010000 		.4byte	0x1ea
  331 0115 00       		.byte	0
  332 0116 09       		.uleb128 0x9
- 333 0117 F4020000 		.4byte	.LASF21
+ 333 0117 EE020000 		.4byte	.LASF21
  334 011b 01       		.byte	0x1
  335 011c 4A       		.byte	0x4a
  336 011d 01       		.byte	0x1
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccTCwe6G.s 			page 1
  343 012d 44010000 		.4byte	0x144
  344 0131 0B       		.uleb128 0xb
  345 0132 0A000000 		.4byte	.LVL2
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccTCwe6G.s 			page 10
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccGqUmTB.s 			page 10
 
 
  346 0136 F5010000 		.4byte	0x1f5
@@ -547,7 +547,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccTCwe6G.s 			page 1
  349 013f 06020000 		.4byte	0x206
  350 0143 00       		.byte	0
  351 0144 0D       		.uleb128 0xd
- 352 0145 C1020000 		.4byte	.LASF22
+ 352 0145 BB020000 		.4byte	.LASF22
  353 0149 01       		.byte	0x1
  354 014a 69       		.byte	0x69
  355 014b 00000000 		.4byte	.LFB2
@@ -598,13 +598,13 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccTCwe6G.s 			page 1
  400 01c3 00       		.byte	0
  401 01c4 0C       		.uleb128 0xc
  402 01c5 20000000 		.4byte	.LVL9
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccTCwe6G.s 			page 11
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccGqUmTB.s 			page 11
 
 
  403 01c9 1E020000 		.4byte	0x21e
  404 01cd 00       		.byte	0
  405 01ce 0F       		.uleb128 0xf
- 406 01cf DF020000 		.4byte	.LASF33
+ 406 01cf D9020000 		.4byte	.LASF33
  407 01d3 01       		.byte	0x1
  408 01d4 15       		.byte	0x15
  409 01d5 DD000000 		.4byte	0xdd
@@ -612,17 +612,17 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccTCwe6G.s 			page 1
  411 01da 03       		.byte	0x3
  412 01db 00000000 		.4byte	Encoder_Count_backup
  413 01df 10       		.uleb128 0x10
- 414 01e0 11020000 		.4byte	.LASF24
+ 414 01e0 0B020000 		.4byte	.LASF24
  415 01e4 03       		.byte	0x3
  416 01e5 5D       		.byte	0x5d
  417 01e6 77000000 		.4byte	0x77
  418 01ea 10       		.uleb128 0x10
- 419 01eb 55020000 		.4byte	.LASF25
+ 419 01eb 4F020000 		.4byte	.LASF25
  420 01ef 03       		.byte	0x3
  421 01f0 55       		.byte	0x55
  422 01f1 6B000000 		.4byte	0x6b
  423 01f5 11       		.uleb128 0x11
- 424 01f6 80020000 		.4byte	.LASF26
+ 424 01f6 7A020000 		.4byte	.LASF26
  425 01fa 03       		.byte	0x3
  426 01fb 5A       		.byte	0x5a
  427 01fc 06020000 		.4byte	0x206
@@ -630,7 +630,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccTCwe6G.s 			page 1
  429 0201 77000000 		.4byte	0x77
  430 0205 00       		.byte	0
  431 0206 11       		.uleb128 0x11
- 432 0207 E6000000 		.4byte	.LASF27
+ 432 0207 91000000 		.4byte	.LASF27
  433 020b 03       		.byte	0x3
  434 020c 56       		.byte	0x56
  435 020d 17020000 		.4byte	0x217
@@ -638,11 +638,11 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccTCwe6G.s 			page 1
  437 0212 6B000000 		.4byte	0x6b
  438 0216 00       		.byte	0
  439 0217 13       		.uleb128 0x13
- 440 0218 2B020000 		.4byte	.LASF28
+ 440 0218 25020000 		.4byte	.LASF28
  441 021c 03       		.byte	0x3
  442 021d 50       		.byte	0x50
  443 021e 13       		.uleb128 0x13
- 444 021f CF010000 		.4byte	.LASF29
+ 444 021f C9010000 		.4byte	.LASF29
  445 0223 03       		.byte	0x3
  446 0224 71       		.byte	0x71
  447 0225 00       		.byte	0
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccTCwe6G.s 			page 1
  457 0007 03       		.uleb128 0x3
  458 0008 0E       		.uleb128 0xe
  459 0009 1B       		.uleb128 0x1b
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccTCwe6G.s 			page 12
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccGqUmTB.s 			page 12
 
 
  460 000a 0E       		.uleb128 0xe
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccTCwe6G.s 			page 1
  514 0040 0B       		.uleb128 0xb
  515 0041 0B       		.uleb128 0xb
  516 0042 3A       		.uleb128 0x3a
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccTCwe6G.s 			page 13
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccGqUmTB.s 			page 13
 
 
  517 0043 0B       		.uleb128 0xb
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccTCwe6G.s 			page 1
  571 0079 01       		.byte	0x1
  572 007a 31       		.uleb128 0x31
  573 007b 13       		.uleb128 0x13
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccTCwe6G.s 			page 14
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccGqUmTB.s 			page 14
 
 
  574 007c 11       		.uleb128 0x11
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccTCwe6G.s 			page 1
  628 00b9 13       		.uleb128 0x13
  629 00ba 00       		.byte	0
  630 00bb 00       		.byte	0
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccTCwe6G.s 			page 15
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccGqUmTB.s 			page 15
 
 
  631 00bc 0E       		.uleb128 0xe
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccTCwe6G.s 			page 1
  685 00f2 3F       		.uleb128 0x3f
  686 00f3 19       		.uleb128 0x19
  687 00f4 03       		.uleb128 0x3
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccTCwe6G.s 			page 16
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccGqUmTB.s 			page 16
 
 
  688 00f5 0E       		.uleb128 0xe
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccTCwe6G.s 			page 1
  742 0030 00000000 		.4byte	0
  743 0034 00000000 		.4byte	0
  744              		.section	.debug_ranges,"",%progbits
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccTCwe6G.s 			page 17
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccGqUmTB.s 			page 17
 
 
  745              	.Ldebug_ranges0:
@@ -991,189 +991,189 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccTCwe6G.s 			page 1
  762      436F756E 
  762      745F5761 
  762      6B657570 
- 763              	.LASF32:
- 764 0041 433A5C55 		.ascii	"C:\\Users\\Patrick\\Desktop\\cy8ckit-059\\CE95277 A"
- 764      73657273 
- 764      5C506174 
- 764      7269636B 
- 764      5C446573 
- 765 006f 44432061 		.ascii	"DC and UART\\CE95277 ADC and UART.cydsn\000"
- 765      6E642055 
- 765      4152545C 
- 765      43453935 
- 765      32373720 
- 766              	.LASF19:
- 767 0096 456E636F 		.ascii	"Encoder_Count_backupStruct\000"
- 767      6465725F 
- 767      436F756E 
- 767      745F6261 
- 767      636B7570 
- 768              	.LASF3:
- 769 00b1 73686F72 		.ascii	"short unsigned int\000"
- 769      7420756E 
- 769      7369676E 
- 769      65642069 
- 769      6E7400
- 770              	.LASF17:
- 771 00c4 436F756E 		.ascii	"CounterUdb\000"
- 771      74657255 
- 771      646200
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccTCwe6G.s 			page 18
+ 763              	.LASF19:
+ 764 0041 456E636F 		.ascii	"Encoder_Count_backupStruct\000"
+ 764      6465725F 
+ 764      436F756E 
+ 764      745F6261 
+ 764      636B7570 
+ 765              	.LASF3:
+ 766 005c 73686F72 		.ascii	"short unsigned int\000"
+ 766      7420756E 
+ 766      7369676E 
+ 766      65642069 
+ 766      6E7400
+ 767              	.LASF17:
+ 768 006f 436F756E 		.ascii	"CounterUdb\000"
+ 768      74657255 
+ 768      646200
+ 769              	.LASF18:
+ 770 007a 436F756E 		.ascii	"CounterControlRegister\000"
+ 770      74657243 
+ 770      6F6E7472 
+ 770      6F6C5265 
+ 770      67697374 
+ 771              	.LASF27:
+ 772 0091 456E636F 		.ascii	"Encoder_Count_WriteControlRegister\000"
+ 772      6465725F 
+ 772      436F756E 
+ 772      745F5772 
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccGqUmTB.s 			page 18
 
 
- 772              	.LASF18:
- 773 00cf 436F756E 		.ascii	"CounterControlRegister\000"
- 773      74657243 
- 773      6F6E7472 
- 773      6F6C5265 
- 773      67697374 
- 774              	.LASF27:
- 775 00e6 456E636F 		.ascii	"Encoder_Count_WriteControlRegister\000"
- 775      6465725F 
- 775      436F756E 
- 775      745F5772 
- 775      69746543 
- 776              	.LASF11:
- 777 0109 666C6F61 		.ascii	"float\000"
- 777      7400
- 778              	.LASF1:
- 779 010f 756E7369 		.ascii	"unsigned char\000"
- 779      676E6564 
- 779      20636861 
- 779      7200
- 780              	.LASF30:
- 781 011d 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
- 781      4320342E 
- 781      392E3320 
- 781      32303135 
- 781      30333033 
- 782 0150 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m3 -mthumb -g -O"
- 782      20726576 
- 782      6973696F 
- 782      6E203232 
- 782      31323230 
- 783 0183 33202D66 		.ascii	"3 -ffunction-sections -ffat-lto-objects\000"
- 783      66756E63 
- 783      74696F6E 
- 783      2D736563 
- 783      74696F6E 
- 784              	.LASF14:
- 785 01ab 72656738 		.ascii	"reg8\000"
- 785      00
- 786              	.LASF5:
- 787 01b0 6C6F6E67 		.ascii	"long unsigned int\000"
- 787      20756E73 
- 787      69676E65 
- 787      6420696E 
- 787      7400
- 788              	.LASF9:
- 789 01c2 75696E74 		.ascii	"uint8\000"
- 789      3800
+ 772      69746543 
+ 773              	.LASF11:
+ 774 00b4 666C6F61 		.ascii	"float\000"
+ 774      7400
+ 775              	.LASF1:
+ 776 00ba 756E7369 		.ascii	"unsigned char\000"
+ 776      676E6564 
+ 776      20636861 
+ 776      7200
+ 777              	.LASF30:
+ 778 00c8 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
+ 778      4320342E 
+ 778      392E3320 
+ 778      32303135 
+ 778      30333033 
+ 779 00fb 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m3 -mthumb -g -O"
+ 779      20726576 
+ 779      6973696F 
+ 779      6E203232 
+ 779      31323230 
+ 780 012e 33202D66 		.ascii	"3 -ffunction-sections -ffat-lto-objects\000"
+ 780      66756E63 
+ 780      74696F6E 
+ 780      2D736563 
+ 780      74696F6E 
+ 781              	.LASF14:
+ 782 0156 72656738 		.ascii	"reg8\000"
+ 782      00
+ 783              	.LASF5:
+ 784 015b 6C6F6E67 		.ascii	"long unsigned int\000"
+ 784      20756E73 
+ 784      69676E65 
+ 784      6420696E 
+ 784      7400
+ 785              	.LASF9:
+ 786 016d 75696E74 		.ascii	"uint8\000"
+ 786      3800
+ 787              	.LASF32:
+ 788 0173 433A5C55 		.ascii	"C:\\Users\\Patrick\\Documents\\GitHub\\PSoC 5LP FIl"
+ 788      73657273 
+ 788      5C506174 
+ 788      7269636B 
+ 788      5C446F63 
+ 789 01a1 65735C43 		.ascii	"es\\C-CAN_PSoC_DevKit\\C-CAN.cydsn\000"
+ 789      2D43414E 
+ 789      5F50536F 
+ 789      435F4465 
+ 789      764B6974 
  790              	.LASF12:
- 791 01c8 646F7562 		.ascii	"double\000"
+ 791 01c2 646F7562 		.ascii	"double\000"
  791      6C6500
  792              	.LASF29:
- 793 01cf 456E636F 		.ascii	"Encoder_Count_Enable\000"
+ 793 01c9 456E636F 		.ascii	"Encoder_Count_Enable\000"
  793      6465725F 
  793      436F756E 
  793      745F456E 
  793      61626C65 
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccTCwe6G.s 			page 19
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccGqUmTB.s 			page 19
 
 
  794              	.LASF10:
- 795 01e4 75696E74 		.ascii	"uint16\000"
+ 795 01de 75696E74 		.ascii	"uint16\000"
  795      313600
  796              	.LASF20:
- 797 01eb 456E636F 		.ascii	"Encoder_Count_SaveConfig\000"
+ 797 01e5 456E636F 		.ascii	"Encoder_Count_SaveConfig\000"
  797      6465725F 
  797      436F756E 
  797      745F5361 
  797      7665436F 
  798              	.LASF8:
- 799 0204 756E7369 		.ascii	"unsigned int\000"
+ 799 01fe 756E7369 		.ascii	"unsigned int\000"
  799      676E6564 
  799      20696E74 
  799      00
  800              	.LASF24:
- 801 0211 456E636F 		.ascii	"Encoder_Count_ReadCounter\000"
+ 801 020b 456E636F 		.ascii	"Encoder_Count_ReadCounter\000"
  801      6465725F 
  801      436F756E 
  801      745F5265 
  801      6164436F 
  802              	.LASF28:
- 803 022b 456E636F 		.ascii	"Encoder_Count_Stop\000"
+ 803 0225 456E636F 		.ascii	"Encoder_Count_Stop\000"
  803      6465725F 
  803      436F756E 
  803      745F5374 
  803      6F7000
  804              	.LASF7:
- 805 023e 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 805 0238 6C6F6E67 		.ascii	"long long unsigned int\000"
  805      206C6F6E 
  805      6720756E 
  805      7369676E 
  805      65642069 
  806              	.LASF25:
- 807 0255 456E636F 		.ascii	"Encoder_Count_ReadControlRegister\000"
+ 807 024f 456E636F 		.ascii	"Encoder_Count_ReadControlRegister\000"
  807      6465725F 
  807      436F756E 
  807      745F5265 
  807      6164436F 
  808              	.LASF15:
- 809 0277 73697A65 		.ascii	"sizetype\000"
+ 809 0271 73697A65 		.ascii	"sizetype\000"
  809      74797065 
  809      00
  810              	.LASF26:
- 811 0280 456E636F 		.ascii	"Encoder_Count_WriteCounter\000"
+ 811 027a 456E636F 		.ascii	"Encoder_Count_WriteCounter\000"
  811      6465725F 
  811      436F756E 
  811      745F5772 
  811      69746543 
  812              	.LASF16:
- 813 029b 436F756E 		.ascii	"CounterEnableState\000"
+ 813 0295 436F756E 		.ascii	"CounterEnableState\000"
  813      74657245 
  813      6E61626C 
  813      65537461 
  813      746500
  814              	.LASF6:
- 815 02ae 6C6F6E67 		.ascii	"long long int\000"
+ 815 02a8 6C6F6E67 		.ascii	"long long int\000"
  815      206C6F6E 
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccTCwe6G.s 			page 20
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccGqUmTB.s 			page 20
 
 
  815      6720696E 
  815      7400
  816              	.LASF13:
- 817 02bc 63686172 		.ascii	"char\000"
+ 817 02b6 63686172 		.ascii	"char\000"
  817      00
  818              	.LASF22:
- 819 02c1 456E636F 		.ascii	"Encoder_Count_Sleep\000"
+ 819 02bb 456E636F 		.ascii	"Encoder_Count_Sleep\000"
  819      6465725F 
  819      436F756E 
  819      745F536C 
  819      65657000 
  820              	.LASF2:
- 821 02d5 73686F72 		.ascii	"short int\000"
+ 821 02cf 73686F72 		.ascii	"short int\000"
  821      7420696E 
  821      7400
  822              	.LASF33:
- 823 02df 456E636F 		.ascii	"Encoder_Count_backup\000"
+ 823 02d9 456E636F 		.ascii	"Encoder_Count_backup\000"
  823      6465725F 
  823      436F756E 
  823      745F6261 
  823      636B7570 
  824              	.LASF21:
- 825 02f4 456E636F 		.ascii	"Encoder_Count_RestoreConfig\000"
+ 825 02ee 456E636F 		.ascii	"Encoder_Count_RestoreConfig\000"
  825      6465725F 
  825      436F756E 
  825      745F5265 
  825      73746F72 
  826              	.LASF4:
- 827 0310 6C6F6E67 		.ascii	"long int\000"
+ 827 030a 6C6F6E67 		.ascii	"long int\000"
  827      20696E74 
  827      00
  828              	.LASF0:
- 829 0319 7369676E 		.ascii	"signed char\000"
+ 829 0313 7369676E 		.ascii	"signed char\000"
  829      65642063 
  829      68617200 
  830              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.9.3 20150303 (release) [ARM/embedded-4_9-br

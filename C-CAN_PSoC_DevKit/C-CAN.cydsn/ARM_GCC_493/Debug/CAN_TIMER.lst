@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccp1OWI8.s 			page 1
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccWEiTWt.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccp1OWI8.s 			page 1
   29:.\Generated_Source\PSoC5/CAN_TIMER.c **** /*******************************************************************************
   30:.\Generated_Source\PSoC5/CAN_TIMER.c **** * Function Name: CAN_TIMER_Init
   31:.\Generated_Source\PSoC5/CAN_TIMER.c **** ********************************************************************************
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccp1OWI8.s 			page 2
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccWEiTWt.s 			page 2
 
 
   32:.\Generated_Source\PSoC5/CAN_TIMER.c **** *
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccp1OWI8.s 			page 1
   75:.\Generated_Source\PSoC5/CAN_TIMER.c **** 
   76:.\Generated_Source\PSoC5/CAN_TIMER.c ****             #if (CY_PSOC3 || CY_PSOC5LP)
   77:.\Generated_Source\PSoC5/CAN_TIMER.c ****                 /* Set last 2 bits of control3 register if one shot(halt on
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccp1OWI8.s 			page 3
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccWEiTWt.s 			page 3
 
 
   78:.\Generated_Source\PSoC5/CAN_TIMER.c ****                 interrupt) is enabled*/
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccp1OWI8.s 			page 1
  132:.\Generated_Source\PSoC5/CAN_TIMER.c ****             #if (!CAN_TIMER_UDB_CONTROL_REG_REMOVED)
  133:.\Generated_Source\PSoC5/CAN_TIMER.c ****                 if (0u == (CAN_TIMER_CONTROL & CAN_TIMER__B_TIMER__TM_SOFTWARE))
  134:.\Generated_Source\PSoC5/CAN_TIMER.c ****                 {
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccp1OWI8.s 			page 4
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccWEiTWt.s 			page 4
 
 
  135:.\Generated_Source\PSoC5/CAN_TIMER.c ****                     CAN_TIMER_SetTriggerMode(CAN_TIMER_INIT_TRIGGER_MODE);
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccp1OWI8.s 			page 1
  189:.\Generated_Source\PSoC5/CAN_TIMER.c ****     #if (!CAN_TIMER_UDB_CONTROL_REG_REMOVED || CAN_TIMER_UsingFixedFunction)
  190:.\Generated_Source\PSoC5/CAN_TIMER.c ****         CAN_TIMER_CONTROL |= CAN_TIMER_CTRL_ENABLE;
  191:.\Generated_Source\PSoC5/CAN_TIMER.c ****     #endif /* Remove assignment if control register is removed */
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccp1OWI8.s 			page 5
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccWEiTWt.s 			page 5
 
 
  192:.\Generated_Source\PSoC5/CAN_TIMER.c **** }
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccp1OWI8.s 			page 1
  246:.\Generated_Source\PSoC5/CAN_TIMER.c **** *******************************************************************************/
  247:.\Generated_Source\PSoC5/CAN_TIMER.c **** void CAN_TIMER_Stop(void) 
  248:.\Generated_Source\PSoC5/CAN_TIMER.c **** {
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccp1OWI8.s 			page 6
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccWEiTWt.s 			page 6
 
 
  249:.\Generated_Source\PSoC5/CAN_TIMER.c ****     /* Disable Timer */
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccp1OWI8.s 			page 1
  303:.\Generated_Source\PSoC5/CAN_TIMER.c **** {
  304:.\Generated_Source\PSoC5/CAN_TIMER.c ****     /* Generate a software capture by reading the counter register */
  305:.\Generated_Source\PSoC5/CAN_TIMER.c ****     #if(CAN_TIMER_UsingFixedFunction)
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccp1OWI8.s 			page 7
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccWEiTWt.s 			page 7
 
 
  306:.\Generated_Source\PSoC5/CAN_TIMER.c ****         (void)CY_GET_REG16(CAN_TIMER_COUNTER_LSB_PTR);
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccp1OWI8.s 			page 1
  360:.\Generated_Source\PSoC5/CAN_TIMER.c ****     #else
  361:.\Generated_Source\PSoC5/CAN_TIMER.c ****         return (0);
  362:.\Generated_Source\PSoC5/CAN_TIMER.c ****     #endif /* (!CAN_TIMER_UDB_CONTROL_REG_REMOVED) */
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccp1OWI8.s 			page 8
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccWEiTWt.s 			page 8
 
 
  363:.\Generated_Source\PSoC5/CAN_TIMER.c **** }
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccp1OWI8.s 			page 1
  417:.\Generated_Source\PSoC5/CAN_TIMER.c **** ********************************************************************************
  418:.\Generated_Source\PSoC5/CAN_TIMER.c **** *
  419:.\Generated_Source\PSoC5/CAN_TIMER.c **** * Summary:
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccp1OWI8.s 			page 9
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccWEiTWt.s 			page 9
 
 
  420:.\Generated_Source\PSoC5/CAN_TIMER.c **** *  This function is used to change the period of the counter.  The new period
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccp1OWI8.s 			page 1
  467:.\Generated_Source\PSoC5/CAN_TIMER.c **** * Function Name: CAN_TIMER_WriteCounter
  468:.\Generated_Source\PSoC5/CAN_TIMER.c **** ********************************************************************************
  469:.\Generated_Source\PSoC5/CAN_TIMER.c **** *
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccp1OWI8.s 			page 10
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccWEiTWt.s 			page 10
 
 
  470:.\Generated_Source\PSoC5/CAN_TIMER.c **** * Summary:
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccp1OWI8.s 			page 1
   75              	.LBB42:
   76              	.LBB43:
  335:.\Generated_Source\PSoC5/CAN_TIMER.c **** }
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccp1OWI8.s 			page 11
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccWEiTWt.s 			page 11
 
 
   77              		.loc 1 335 0
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccp1OWI8.s 			page 1
  539:.\Generated_Source\PSoC5/CAN_TIMER.c **** 
  540:.\Generated_Source\PSoC5/CAN_TIMER.c **** /*******************************************************************************
  541:.\Generated_Source\PSoC5/CAN_TIMER.c **** * Function Name: CAN_TIMER_SetCaptureMode
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccp1OWI8.s 			page 12
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccWEiTWt.s 			page 12
 
 
  542:.\Generated_Source\PSoC5/CAN_TIMER.c **** ********************************************************************************
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccp1OWI8.s 			page 1
  596:.\Generated_Source\PSoC5/CAN_TIMER.c ****     #define CAN_TIMER__B_TIMER__TM_RISINGEDGE 0x04u
  597:.\Generated_Source\PSoC5/CAN_TIMER.c ****     #define CAN_TIMER__B_TIMER__TM_FALLINGEDGE 0x08u
  598:.\Generated_Source\PSoC5/CAN_TIMER.c ****     #define CAN_TIMER__B_TIMER__TM_EITHEREDGE 0x0Cu
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccp1OWI8.s 			page 13
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccWEiTWt.s 			page 13
 
 
  599:.\Generated_Source\PSoC5/CAN_TIMER.c ****     #define CAN_TIMER__B_TIMER__TM_SOFTWARE 0x10u
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccp1OWI8.s 			page 1
  653:.\Generated_Source\PSoC5/CAN_TIMER.c **** * Parameters:
  654:.\Generated_Source\PSoC5/CAN_TIMER.c **** *  void
  655:.\Generated_Source\PSoC5/CAN_TIMER.c **** *
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccp1OWI8.s 			page 14
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccWEiTWt.s 			page 14
 
 
  656:.\Generated_Source\PSoC5/CAN_TIMER.c **** * Return:
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccp1OWI8.s 			page 1
  710:.\Generated_Source\PSoC5/CAN_TIMER.c **** * Summary:
  711:.\Generated_Source\PSoC5/CAN_TIMER.c **** *  This function sets the capture count
  712:.\Generated_Source\PSoC5/CAN_TIMER.c **** *
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccp1OWI8.s 			page 15
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccWEiTWt.s 			page 15
 
 
  713:.\Generated_Source\PSoC5/CAN_TIMER.c **** * Parameters:
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccp1OWI8.s 			page 1
   83 0024 1907     		lsls	r1, r3, #28
   84 0026 04D5     		bpl	.L2
   85              	.LBB45:
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccp1OWI8.s 			page 16
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccWEiTWt.s 			page 16
 
 
   86              	.LBB46:
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccp1OWI8.s 			page 1
  136              		.cfi_startproc
  137              		@ args = 0, pretend = 0, frame = 0
  138              		@ frame_needed = 0, uses_anonymous_args = 0
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccp1OWI8.s 			page 17
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccWEiTWt.s 			page 17
 
 
  139              		@ link register save eliminated.
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccp1OWI8.s 			page 1
  189              	.LBB71:
  437:.\Generated_Source\PSoC5/CAN_TIMER.c ****     #endif /*Write Period value with appropriate resolution suffix depending on UDB or fixed functi
  190              		.loc 1 437 0
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccp1OWI8.s 			page 18
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccWEiTWt.s 			page 18
 
 
  191 0014 42F20F73 		movw	r3, #9999
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccp1OWI8.s 			page 1
  238              	.LBB84:
  461:.\Generated_Source\PSoC5/CAN_TIMER.c ****    #endif /* (CAN_TIMER_UsingFixedFunction) */
  239              		.loc 1 461 0
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccp1OWI8.s 			page 19
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccWEiTWt.s 			page 19
 
 
  240 003a 0B49     		ldr	r1, .L27+24
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccp1OWI8.s 			page 1
  291              	CAN_TIMER_Stop:
  292              	.LFB3:
  248:.\Generated_Source\PSoC5/CAN_TIMER.c ****     /* Disable Timer */
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccp1OWI8.s 			page 20
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccWEiTWt.s 			page 20
 
 
  293              		.loc 1 248 0
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccp1OWI8.s 			page 1
  303:.\Generated_Source\PSoC5/CAN_TIMER.c ****     /* Generate a software capture by reading the counter register */
  344              		.loc 1 303 0
  345              		.cfi_startproc
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccp1OWI8.s 			page 21
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccWEiTWt.s 			page 21
 
 
  346              		@ args = 0, pretend = 0, frame = 0
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccp1OWI8.s 			page 1
  395              		@ args = 0, pretend = 0, frame = 0
  396              		@ frame_needed = 0, uses_anonymous_args = 0
  397              		@ link register save eliminated.
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccp1OWI8.s 			page 22
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccWEiTWt.s 			page 22
 
 
  359:.\Generated_Source\PSoC5/CAN_TIMER.c ****     #else
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccp1OWI8.s 			page 1
  447              		@ link register save eliminated.
  410:.\Generated_Source\PSoC5/CAN_TIMER.c ****    #endif /* (CAN_TIMER_UsingFixedFunction) */
  448              		.loc 1 410 0
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccp1OWI8.s 			page 23
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccWEiTWt.s 			page 23
 
 
  449 0000 014B     		ldr	r3, .L48
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccp1OWI8.s 			page 1
  461:.\Generated_Source\PSoC5/CAN_TIMER.c ****    #endif /* (CAN_TIMER_UsingFixedFunction) */
  499              		.loc 1 461 0
  500 0000 014B     		ldr	r3, .L54
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccp1OWI8.s 			page 24
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccWEiTWt.s 			page 24
 
 
  501 0002 1888     		ldrh	r0, [r3]
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccp1OWI8.s 			page 1
  550              		.loc 1 523 0
  551 0000 024B     		ldr	r3, .L60
  516:.\Generated_Source\PSoC5/CAN_TIMER.c ****     #endif/* (CAN_TIMER_UsingFixedFunction) */
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccp1OWI8.s 			page 25
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccWEiTWt.s 			page 25
 
 
  552              		.loc 1 516 0
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccp1OWI8.s 			page 1
  335:.\Generated_Source\PSoC5/CAN_TIMER.c **** }
  601              		.loc 1 335 0
  602 000c 1378     		ldrb	r3, [r2]	@ zero_extendqisi2
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccp1OWI8.s 			page 26
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccWEiTWt.s 			page 26
 
 
  603              	.LBE90:
@@ -1534,48 +1534,48 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccp1OWI8.s 			page 1
  633 0006 00000000 		.4byte	.Ldebug_abbrev0
  634 000a 04       		.byte	0x4
  635 000b 01       		.uleb128 0x1
- 636 000c 41010000 		.4byte	.LASF36
+ 636 000c 3B010000 		.4byte	.LASF36
  637 0010 01       		.byte	0x1
  638 0011 06000000 		.4byte	.LASF37
- 639 0015 52000000 		.4byte	.LASF38
+ 639 0015 3D000000 		.4byte	.LASF38
  640 0019 A8000000 		.4byte	.Ldebug_ranges0+0xa8
  641 001d 00000000 		.4byte	0
  642 0021 00000000 		.4byte	.Ldebug_line0
  643 0025 02       		.uleb128 0x2
  644 0026 01       		.byte	0x1
  645 0027 06       		.byte	0x6
- 646 0028 54030000 		.4byte	.LASF0
+ 646 0028 4E030000 		.4byte	.LASF0
  647 002c 02       		.uleb128 0x2
  648 002d 01       		.byte	0x1
  649 002e 08       		.byte	0x8
- 650 002f 33010000 		.4byte	.LASF1
+ 650 002f 2D010000 		.4byte	.LASF1
  651 0033 02       		.uleb128 0x2
  652 0034 02       		.byte	0x2
  653 0035 05       		.byte	0x5
- 654 0036 08030000 		.4byte	.LASF2
+ 654 0036 02030000 		.4byte	.LASF2
  655 003a 02       		.uleb128 0x2
  656 003b 02       		.byte	0x2
  657 003c 07       		.byte	0x7
- 658 003d AE000000 		.4byte	.LASF3
+ 658 003d A8000000 		.4byte	.LASF3
  659 0041 02       		.uleb128 0x2
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccp1OWI8.s 			page 27
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccWEiTWt.s 			page 27
 
 
  660 0042 04       		.byte	0x4
  661 0043 05       		.byte	0x5
- 662 0044 46030000 		.4byte	.LASF4
+ 662 0044 40030000 		.4byte	.LASF4
  663 0048 02       		.uleb128 0x2
  664 0049 04       		.byte	0x4
  665 004a 07       		.byte	0x7
- 666 004b 04020000 		.4byte	.LASF5
+ 666 004b FE010000 		.4byte	.LASF5
  667 004f 02       		.uleb128 0x2
  668 0050 08       		.byte	0x8
  669 0051 05       		.byte	0x5
- 670 0052 DD020000 		.4byte	.LASF6
+ 670 0052 D7020000 		.4byte	.LASF6
  671 0056 02       		.uleb128 0x2
  672 0057 08       		.byte	0x8
  673 0058 07       		.byte	0x7
- 674 0059 1C010000 		.4byte	.LASF7
+ 674 0059 16010000 		.4byte	.LASF7
  675 005d 03       		.uleb128 0x3
  676 005e 04       		.byte	0x4
  677 005f 05       		.byte	0x5
@@ -1583,31 +1583,31 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccp1OWI8.s 			page 1
  679 0064 02       		.uleb128 0x2
  680 0065 04       		.byte	0x4
  681 0066 07       		.byte	0x7
- 682 0067 79020000 		.4byte	.LASF8
+ 682 0067 73020000 		.4byte	.LASF8
  683 006b 04       		.uleb128 0x4
- 684 006c 16020000 		.4byte	.LASF9
+ 684 006c 10020000 		.4byte	.LASF9
  685 0070 02       		.byte	0x2
  686 0071 9201     		.2byte	0x192
  687 0073 2C000000 		.4byte	0x2c
  688 0077 04       		.uleb128 0x4
- 689 0078 42020000 		.4byte	.LASF10
+ 689 0078 3C020000 		.4byte	.LASF10
  690 007c 02       		.byte	0x2
  691 007d 9301     		.2byte	0x193
  692 007f 3A000000 		.4byte	0x3a
  693 0083 02       		.uleb128 0x2
  694 0084 04       		.byte	0x4
  695 0085 04       		.byte	0x4
- 696 0086 FC000000 		.4byte	.LASF11
+ 696 0086 F6000000 		.4byte	.LASF11
  697 008a 02       		.uleb128 0x2
  698 008b 08       		.byte	0x8
  699 008c 04       		.byte	0x4
- 700 008d 3B020000 		.4byte	.LASF12
+ 700 008d 35020000 		.4byte	.LASF12
  701 0091 02       		.uleb128 0x2
  702 0092 01       		.byte	0x1
  703 0093 08       		.byte	0x8
- 704 0094 4F030000 		.4byte	.LASF13
+ 704 0094 49030000 		.4byte	.LASF13
  705 0098 04       		.uleb128 0x4
- 706 0099 CF020000 		.4byte	.LASF14
+ 706 0099 C9020000 		.4byte	.LASF14
  707 009d 02       		.byte	0x2
  708 009e 3C02     		.2byte	0x23c
  709 00a0 A4000000 		.4byte	0xa4
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccp1OWI8.s 			page 1
  714 00ae 02       		.byte	0x2
  715 00af 3D02     		.2byte	0x23d
  716 00b1 B5000000 		.4byte	0xb5
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccp1OWI8.s 			page 28
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccWEiTWt.s 			page 28
 
 
  717 00b5 05       		.uleb128 0x5
@@ -1626,76 +1626,76 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccp1OWI8.s 			page 1
  719 00ba 02       		.uleb128 0x2
  720 00bb 04       		.byte	0x4
  721 00bc 07       		.byte	0x7
- 722 00bd D4020000 		.4byte	.LASF16
+ 722 00bd CE020000 		.4byte	.LASF16
  723 00c1 06       		.uleb128 0x6
- 724 00c2 CF010000 		.4byte	.LASF17
+ 724 00c2 C9010000 		.4byte	.LASF17
  725 00c6 01       		.byte	0x1
  726 00c7 C801     		.2byte	0x1c8
  727 00c9 77000000 		.4byte	0x77
  728 00cd 01       		.byte	0x1
  729 00ce 06       		.uleb128 0x6
- 730 00cf 86020000 		.4byte	.LASF18
+ 730 00cf 80020000 		.4byte	.LASF18
  731 00d3 01       		.byte	0x1
  732 00d4 4D01     		.2byte	0x14d
  733 00d6 6B000000 		.4byte	0x6b
  734 00da 01       		.byte	0x1
  735 00db 07       		.uleb128 0x7
- 736 00dc 12030000 		.4byte	.LASF19
+ 736 00dc 0C030000 		.4byte	.LASF19
  737 00e0 01       		.byte	0x1
  738 00e1 AF01     		.2byte	0x1af
  739 00e3 01       		.byte	0x1
  740 00e4 F5000000 		.4byte	0xf5
  741 00e8 08       		.uleb128 0x8
- 742 00e9 A7000000 		.4byte	.LASF21
+ 742 00e9 A1000000 		.4byte	.LASF21
  743 00ed 01       		.byte	0x1
  744 00ee AF01     		.2byte	0x1af
  745 00f0 77000000 		.4byte	0x77
  746 00f4 00       		.byte	0
  747 00f5 07       		.uleb128 0x7
- 748 00f6 D1000000 		.4byte	.LASF20
+ 748 00f6 CB000000 		.4byte	.LASF20
  749 00fa 01       		.byte	0x1
  750 00fb E001     		.2byte	0x1e0
  751 00fd 01       		.byte	0x1
  752 00fe 0F010000 		.4byte	0x10f
  753 0102 08       		.uleb128 0x8
- 754 0103 33020000 		.4byte	.LASF22
+ 754 0103 2D020000 		.4byte	.LASF22
  755 0107 01       		.byte	0x1
  756 0108 E001     		.2byte	0x1e0
  757 010a 77000000 		.4byte	0x77
  758 010e 00       		.byte	0
  759 010f 09       		.uleb128 0x9
- 760 0110 E8000000 		.4byte	.LASF25
+ 760 0110 E2000000 		.4byte	.LASF25
  761 0114 01       		.byte	0x1
  762 0115 FB02     		.2byte	0x2fb
  763 0117 01       		.byte	0x1
  764 0118 07       		.uleb128 0x7
- 765 0119 60030000 		.4byte	.LASF23
+ 765 0119 5A030000 		.4byte	.LASF23
  766 011d 01       		.byte	0x1
  767 011e 1701     		.2byte	0x117
  768 0120 01       		.byte	0x1
  769 0121 32010000 		.4byte	0x132
  770 0125 08       		.uleb128 0x8
- 771 0126 EB020000 		.4byte	.LASF24
+ 771 0126 E5020000 		.4byte	.LASF24
  772 012a 01       		.byte	0x1
  773 012b 1701     		.2byte	0x117
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccp1OWI8.s 			page 29
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccWEiTWt.s 			page 29
 
 
  774 012d 6B000000 		.4byte	0x6b
  775 0131 00       		.byte	0
  776 0132 0A       		.uleb128 0xa
- 777 0133 7B030000 		.4byte	.LASF26
+ 777 0133 75030000 		.4byte	.LASF26
  778 0137 01       		.byte	0x1
  779 0138 B4       		.byte	0xb4
  780 0139 01       		.byte	0x1
  781 013a 0B       		.uleb128 0xb
- 782 013b 24020000 		.4byte	.LASF27
+ 782 013b 1E020000 		.4byte	.LASF27
  783 013f 01       		.byte	0x1
  784 0140 2B       		.byte	0x2b
  785 0141 01       		.byte	0x1
  786 0142 52010000 		.4byte	0x152
  787 0146 0C       		.uleb128 0xc
- 788 0147 49020000 		.4byte	.LASF39
+ 788 0147 43020000 		.4byte	.LASF39
  789 014b 01       		.byte	0x1
  790 014c 2F       		.byte	0x2f
  791 014d 6B000000 		.4byte	0x6b
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccp1OWI8.s 			page 1
  828 01ad 12000000 		.4byte	.LBE40-.LBB40
  829 01b1 01       		.byte	0x1
  830 01b2 9F       		.byte	0x9f
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccp1OWI8.s 			page 30
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccWEiTWt.s 			page 30
 
 
  831 01b3 D8010000 		.4byte	0x1d8
@@ -1780,7 +1780,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccp1OWI8.s 			page 1
  867 0212 01       		.uleb128 0x1
  868 0213 9C       		.byte	0x9c
  869 0214 17       		.uleb128 0x17
- 870 0215 C1000000 		.4byte	.LASF30
+ 870 0215 BB000000 		.4byte	.LASF30
  871 0219 01       		.byte	0x1
  872 021a D7       		.byte	0xd7
  873 021b 00000000 		.4byte	.LFB2
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccp1OWI8.s 			page 1
  885 0239 3A010000 		.4byte	0x13a
  886 023d 14000000 		.4byte	.LBB68
  887 0241 36000000 		.4byte	.LBE68-.LBB68
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccp1OWI8.s 			page 31
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccWEiTWt.s 			page 31
 
 
  888 0245 01       		.byte	0x1
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccp1OWI8.s 			page 1
  942 02d0 01       		.byte	0x1
  943 02d1 A2       		.byte	0xa2
  944 02d2 DD020000 		.4byte	0x2dd
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccp1OWI8.s 			page 32
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccWEiTWt.s 			page 32
 
 
  945 02d6 14       		.uleb128 0x14
@@ -1875,7 +1875,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccp1OWI8.s 			page 1
  956 02f0 00       		.byte	0
  957 02f1 00       		.byte	0
  958 02f2 1B       		.uleb128 0x1b
- 959 02f3 F9020000 		.4byte	.LASF28
+ 959 02f3 F3020000 		.4byte	.LASF28
  960 02f7 01       		.byte	0x1
  961 02f8 F7       		.byte	0xf7
  962 02f9 00000000 		.4byte	.LFB3
@@ -1895,7 +1895,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccp1OWI8.s 			page 1
  976 031c 50       		.byte	0x50
  977 031d 00       		.byte	0
  978 031e 1D       		.uleb128 0x1d
- 979 031f 02010000 		.4byte	.LASF29
+ 979 031f FC000000 		.4byte	.LASF29
  980 0323 01       		.byte	0x1
  981 0324 2E01     		.2byte	0x12e
  982 0326 00000000 		.4byte	.LFB5
@@ -1909,7 +1909,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccp1OWI8.s 			page 1
  990 033d 01       		.uleb128 0x1
  991 033e 9C       		.byte	0x9c
  992 033f 1E       		.uleb128 0x1e
- 993 0340 28030000 		.4byte	.LASF32
+ 993 0340 22030000 		.4byte	.LASF32
  994 0344 01       		.byte	0x1
  995 0345 6401     		.2byte	0x164
  996 0347 6B000000 		.4byte	0x6b
@@ -1918,10 +1918,10 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccp1OWI8.s 			page 1
  999 0353 01       		.uleb128 0x1
  1000 0354 9C       		.byte	0x9c
  1001 0355 1F       		.uleb128 0x1f
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccp1OWI8.s 			page 33
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccWEiTWt.s 			page 33
 
 
- 1002 0356 E5010000 		.4byte	.LASF31
+ 1002 0356 DF010000 		.4byte	.LASF31
  1003 035a 01       		.byte	0x1
  1004 035b 7B01     		.2byte	0x17b
  1005 035d 00000000 		.4byte	.LFB8
@@ -1930,7 +1930,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccp1OWI8.s 			page 1
  1008 0366 9C       		.byte	0x9c
  1009 0367 7A030000 		.4byte	0x37a
  1010 036b 20       		.uleb128 0x20
- 1011 036c 1C020000 		.4byte	.LASF40
+ 1011 036c 16020000 		.4byte	.LASF40
  1012 0370 01       		.byte	0x1
  1013 0371 7B01     		.2byte	0x17b
  1014 0373 6B000000 		.4byte	0x6b
@@ -1938,7 +1938,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccp1OWI8.s 			page 1
  1016 0378 50       		.byte	0x50
  1017 0379 00       		.byte	0
  1018 037a 1E       		.uleb128 0x1e
- 1019 037b 3D000000 		.4byte	.LASF33
+ 1019 037b 8C000000 		.4byte	.LASF33
  1020 037f 01       		.byte	0x1
  1021 0380 9501     		.2byte	0x195
  1022 0382 77000000 		.4byte	0x77
@@ -1977,8 +1977,8 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccp1OWI8.s 			page 1
  1055 03d3 50       		.byte	0x50
  1056 03d4 00       		.byte	0
  1057 03d5 1E       		.uleb128 0x1e
- 1058 03d6 B9020000 		.4byte	.LASF34
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccp1OWI8.s 			page 34
+ 1058 03d6 B3020000 		.4byte	.LASF34
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccWEiTWt.s 			page 34
 
 
  1059 03da 01       		.byte	0x1
@@ -2017,12 +2017,12 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccp1OWI8.s 			page 1
  1092 042b 03       		.byte	0x3
  1093 042c 00000000 		.4byte	CAN_TIMER_initVar
  1094 0430 22       		.uleb128 0x22
- 1095 0431 62020000 		.4byte	.LASF35
+ 1095 0431 5C020000 		.4byte	.LASF35
  1096 0435 03       		.byte	0x3
  1097 0436 7D       		.byte	0x7d
  1098 0437 6B000000 		.4byte	0x6b
  1099 043b 23       		.uleb128 0x23
- 1100 043c A3020000 		.4byte	.LASF42
+ 1100 043c 9D020000 		.4byte	.LASF42
  1101 0440 03       		.byte	0x3
  1102 0441 7E       		.byte	0x7e
  1103 0442 24       		.uleb128 0x24
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccp1OWI8.s 			page 1
  1113 0004 0E       		.uleb128 0xe
  1114 0005 13       		.uleb128 0x13
  1115 0006 0B       		.uleb128 0xb
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccp1OWI8.s 			page 35
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccWEiTWt.s 			page 35
 
 
  1116 0007 03       		.uleb128 0x3
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccp1OWI8.s 			page 1
  1170 003d 06       		.uleb128 0x6
  1171 003e 2E       		.uleb128 0x2e
  1172 003f 00       		.byte	0
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccp1OWI8.s 			page 36
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccWEiTWt.s 			page 36
 
 
  1173 0040 3F       		.uleb128 0x3f
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccp1OWI8.s 			page 1
  1227 0076 0E       		.uleb128 0xe
  1228 0077 3A       		.uleb128 0x3a
  1229 0078 0B       		.uleb128 0xb
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccp1OWI8.s 			page 37
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccWEiTWt.s 			page 37
 
 
  1230 0079 3B       		.uleb128 0x3b
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccp1OWI8.s 			page 1
  1284 00af 13       		.uleb128 0x13
  1285 00b0 00       		.byte	0
  1286 00b1 00       		.byte	0
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccp1OWI8.s 			page 38
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccWEiTWt.s 			page 38
 
 
  1287 00b2 0D       		.uleb128 0xd
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccp1OWI8.s 			page 1
  1341 00e9 01       		.byte	0x1
  1342 00ea 31       		.uleb128 0x31
  1343 00eb 13       		.uleb128 0x13
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccp1OWI8.s 			page 39
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccWEiTWt.s 			page 39
 
 
  1344 00ec 11       		.uleb128 0x11
@@ -2338,7 +2338,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccp1OWI8.s 			page 1
  1398 0124 11       		.uleb128 0x11
  1399 0125 01       		.uleb128 0x1
  1400 0126 31       		.uleb128 0x31
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccp1OWI8.s 			page 40
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccWEiTWt.s 			page 40
 
 
  1401 0127 13       		.uleb128 0x13
@@ -2398,7 +2398,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccp1OWI8.s 			page 1
  1455 015f 59       		.uleb128 0x59
  1456 0160 0B       		.uleb128 0xb
  1457 0161 00       		.byte	0
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccp1OWI8.s 			page 41
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccWEiTWt.s 			page 41
 
 
  1458 0162 00       		.byte	0
@@ -2458,7 +2458,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccp1OWI8.s 			page 1
  1512 0199 18       		.uleb128 0x18
  1513 019a 00       		.byte	0
  1514 019b 00       		.byte	0
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccp1OWI8.s 			page 42
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccWEiTWt.s 			page 42
 
 
  1515 019c 1D       		.uleb128 0x1d
@@ -2518,7 +2518,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccp1OWI8.s 			page 1
  1569 01d4 0E       		.uleb128 0xe
  1570 01d5 3A       		.uleb128 0x3a
  1571 01d6 0B       		.uleb128 0xb
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccp1OWI8.s 			page 43
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccWEiTWt.s 			page 43
 
 
  1572 01d7 3B       		.uleb128 0x3b
@@ -2578,7 +2578,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccp1OWI8.s 			page 1
  1626 020e 0E       		.uleb128 0xe
  1627 020f 3A       		.uleb128 0x3a
  1628 0210 0B       		.uleb128 0xb
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccp1OWI8.s 			page 44
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccWEiTWt.s 			page 44
 
 
  1629 0211 3B       		.uleb128 0x3b
@@ -2638,7 +2638,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccp1OWI8.s 			page 1
  1683 0006 00000000 		.4byte	.Ldebug_info0
  1684 000a 04       		.byte	0x4
  1685 000b 00       		.byte	0
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccp1OWI8.s 			page 45
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccWEiTWt.s 			page 45
 
 
  1686 000c 0000     		.2byte	0
@@ -2698,7 +2698,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccp1OWI8.s 			page 1
  1740 0048 14000000 		.4byte	.LBB70
  1741 004c 1A000000 		.4byte	.LBE70
  1742 0050 1C000000 		.4byte	.LBB76
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccp1OWI8.s 			page 46
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccWEiTWt.s 			page 46
 
 
  1743 0054 1E000000 		.4byte	.LBE76
@@ -2758,7 +2758,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccp1OWI8.s 			page 1
  1797              	.Ldebug_line0:
  1798 0000 D1010000 		.section	.debug_str,"MS",%progbits,1
  1798      02005300 
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccp1OWI8.s 			page 47
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccWEiTWt.s 			page 47
 
 
  1798      00000201 
@@ -2779,46 +2779,46 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccp1OWI8.s 			page 1
  1804      525F696E 
  1804      69745661 
  1804      7200
- 1805              	.LASF33:
- 1806 003d 43414E5F 		.ascii	"CAN_TIMER_ReadPeriod\000"
- 1806      54494D45 
- 1806      525F5265 
- 1806      61645065 
- 1806      72696F64 
- 1807              	.LASF38:
- 1808 0052 433A5C55 		.ascii	"C:\\Users\\Patrick\\Desktop\\cy8ckit-059\\CE95277 A"
- 1808      73657273 
- 1808      5C506174 
- 1808      7269636B 
- 1808      5C446573 
- 1809 0080 44432061 		.ascii	"DC and UART\\CE95277 ADC and UART.cydsn\000"
- 1809      6E642055 
- 1809      4152545C 
- 1809      43453935 
- 1809      32373720 
+ 1805              	.LASF38:
+ 1806 003d 433A5C55 		.ascii	"C:\\Users\\Patrick\\Documents\\GitHub\\PSoC 5LP FIl"
+ 1806      73657273 
+ 1806      5C506174 
+ 1806      7269636B 
+ 1806      5C446F63 
+ 1807 006b 65735C43 		.ascii	"es\\C-CAN_PSoC_DevKit\\C-CAN.cydsn\000"
+ 1807      2D43414E 
+ 1807      5F50536F 
+ 1807      435F4465 
+ 1807      764B6974 
+ 1808              	.LASF33:
+ 1809 008c 43414E5F 		.ascii	"CAN_TIMER_ReadPeriod\000"
+ 1809      54494D45 
+ 1809      525F5265 
+ 1809      61645065 
+ 1809      72696F64 
  1810              	.LASF21:
- 1811 00a7 70657269 		.ascii	"period\000"
+ 1811 00a1 70657269 		.ascii	"period\000"
  1811      6F6400
  1812              	.LASF3:
- 1813 00ae 73686F72 		.ascii	"short unsigned int\000"
+ 1813 00a8 73686F72 		.ascii	"short unsigned int\000"
  1813      7420756E 
  1813      7369676E 
  1813      65642069 
  1813      6E7400
  1814              	.LASF30:
- 1815 00c1 43414E5F 		.ascii	"CAN_TIMER_Start\000"
+ 1815 00bb 43414E5F 		.ascii	"CAN_TIMER_Start\000"
  1815      54494D45 
  1815      525F5374 
  1815      61727400 
  1816              	.LASF20:
- 1817 00d1 43414E5F 		.ascii	"CAN_TIMER_WriteCounter\000"
+ 1817 00cb 43414E5F 		.ascii	"CAN_TIMER_WriteCounter\000"
  1817      54494D45 
  1817      525F5772 
  1817      69746543 
  1817      6F756E74 
  1818              	.LASF25:
- 1819 00e8 43414E5F 		.ascii	"CAN_TIMER_ClearFIFO\000"
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccp1OWI8.s 			page 48
+ 1819 00e2 43414E5F 		.ascii	"CAN_TIMER_ClearFIFO\000"
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccWEiTWt.s 			page 48
 
 
  1819      54494D45 
@@ -2826,179 +2826,179 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccp1OWI8.s 			page 1
  1819      65617246 
  1819      49464F00 
  1820              	.LASF11:
- 1821 00fc 666C6F61 		.ascii	"float\000"
+ 1821 00f6 666C6F61 		.ascii	"float\000"
  1821      7400
  1822              	.LASF29:
- 1823 0102 43414E5F 		.ascii	"CAN_TIMER_SoftwareCapture\000"
+ 1823 00fc 43414E5F 		.ascii	"CAN_TIMER_SoftwareCapture\000"
  1823      54494D45 
  1823      525F536F 
  1823      66747761 
  1823      72654361 
  1824              	.LASF7:
- 1825 011c 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 1825 0116 6C6F6E67 		.ascii	"long long unsigned int\000"
  1825      206C6F6E 
  1825      6720756E 
  1825      7369676E 
  1825      65642069 
  1826              	.LASF1:
- 1827 0133 756E7369 		.ascii	"unsigned char\000"
+ 1827 012d 756E7369 		.ascii	"unsigned char\000"
  1827      676E6564 
  1827      20636861 
  1827      7200
  1828              	.LASF36:
- 1829 0141 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
+ 1829 013b 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
  1829      4320342E 
  1829      392E3320 
  1829      32303135 
  1829      30333033 
- 1830 0174 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m3 -mthumb -g -O"
+ 1830 016e 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m3 -mthumb -g -O"
  1830      20726576 
  1830      6973696F 
  1830      6E203232 
  1830      31323230 
- 1831 01a7 33202D66 		.ascii	"3 -ffunction-sections -ffat-lto-objects\000"
+ 1831 01a1 33202D66 		.ascii	"3 -ffunction-sections -ffat-lto-objects\000"
  1831      66756E63 
  1831      74696F6E 
  1831      2D736563 
  1831      74696F6E 
  1832              	.LASF17:
- 1833 01cf 43414E5F 		.ascii	"CAN_TIMER_ReadCapture\000"
+ 1833 01c9 43414E5F 		.ascii	"CAN_TIMER_ReadCapture\000"
  1833      54494D45 
  1833      525F5265 
  1833      61644361 
  1833      70747572 
  1834              	.LASF31:
- 1835 01e5 43414E5F 		.ascii	"CAN_TIMER_WriteControlRegister\000"
+ 1835 01df 43414E5F 		.ascii	"CAN_TIMER_WriteControlRegister\000"
  1835      54494D45 
  1835      525F5772 
  1835      69746543 
  1835      6F6E7472 
  1836              	.LASF5:
- 1837 0204 6C6F6E67 		.ascii	"long unsigned int\000"
+ 1837 01fe 6C6F6E67 		.ascii	"long unsigned int\000"
  1837      20756E73 
  1837      69676E65 
  1837      6420696E 
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccp1OWI8.s 			page 49
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccWEiTWt.s 			page 49
 
 
  1837      7400
  1838              	.LASF9:
- 1839 0216 75696E74 		.ascii	"uint8\000"
+ 1839 0210 75696E74 		.ascii	"uint8\000"
  1839      3800
  1840              	.LASF40:
- 1841 021c 636F6E74 		.ascii	"control\000"
+ 1841 0216 636F6E74 		.ascii	"control\000"
  1841      726F6C00 
  1842              	.LASF27:
- 1843 0224 43414E5F 		.ascii	"CAN_TIMER_Init\000"
+ 1843 021e 43414E5F 		.ascii	"CAN_TIMER_Init\000"
  1843      54494D45 
  1843      525F496E 
  1843      697400
  1844              	.LASF22:
- 1845 0233 636F756E 		.ascii	"counter\000"
+ 1845 022d 636F756E 		.ascii	"counter\000"
  1845      74657200 
  1846              	.LASF12:
- 1847 023b 646F7562 		.ascii	"double\000"
+ 1847 0235 646F7562 		.ascii	"double\000"
  1847      6C6500
  1848              	.LASF10:
- 1849 0242 75696E74 		.ascii	"uint16\000"
+ 1849 023c 75696E74 		.ascii	"uint16\000"
  1849      313600
  1850              	.LASF39:
- 1851 0249 43414E5F 		.ascii	"CAN_TIMER_interruptState\000"
+ 1851 0243 43414E5F 		.ascii	"CAN_TIMER_interruptState\000"
  1851      54494D45 
  1851      525F696E 
  1851      74657272 
  1851      75707453 
  1852              	.LASF35:
- 1853 0262 4379456E 		.ascii	"CyEnterCriticalSection\000"
+ 1853 025c 4379456E 		.ascii	"CyEnterCriticalSection\000"
  1853      74657243 
  1853      72697469 
  1853      63616C53 
  1853      65637469 
  1854              	.LASF8:
- 1855 0279 756E7369 		.ascii	"unsigned int\000"
+ 1855 0273 756E7369 		.ascii	"unsigned int\000"
  1855      676E6564 
  1855      20696E74 
  1855      00
  1856              	.LASF18:
- 1857 0286 43414E5F 		.ascii	"CAN_TIMER_ReadStatusRegister\000"
+ 1857 0280 43414E5F 		.ascii	"CAN_TIMER_ReadStatusRegister\000"
  1857      54494D45 
  1857      525F5265 
  1857      61645374 
  1857      61747573 
  1858              	.LASF42:
- 1859 02a3 43794578 		.ascii	"CyExitCriticalSection\000"
+ 1859 029d 43794578 		.ascii	"CyExitCriticalSection\000"
  1859      69744372 
  1859      69746963 
  1859      616C5365 
  1859      6374696F 
  1860              	.LASF34:
- 1861 02b9 43414E5F 		.ascii	"CAN_TIMER_ReadCounter\000"
+ 1861 02b3 43414E5F 		.ascii	"CAN_TIMER_ReadCounter\000"
  1861      54494D45 
  1861      525F5265 
  1861      6164436F 
  1861      756E7465 
  1862              	.LASF14:
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccp1OWI8.s 			page 50
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccWEiTWt.s 			page 50
 
 
- 1863 02cf 72656738 		.ascii	"reg8\000"
+ 1863 02c9 72656738 		.ascii	"reg8\000"
  1863      00
  1864              	.LASF16:
- 1865 02d4 73697A65 		.ascii	"sizetype\000"
+ 1865 02ce 73697A65 		.ascii	"sizetype\000"
  1865      74797065 
  1865      00
  1866              	.LASF6:
- 1867 02dd 6C6F6E67 		.ascii	"long long int\000"
+ 1867 02d7 6C6F6E67 		.ascii	"long long int\000"
  1867      206C6F6E 
  1867      6720696E 
  1867      7400
  1868              	.LASF24:
- 1869 02eb 696E7465 		.ascii	"interruptMode\000"
+ 1869 02e5 696E7465 		.ascii	"interruptMode\000"
  1869      72727570 
  1869      744D6F64 
  1869      6500
  1870              	.LASF28:
- 1871 02f9 43414E5F 		.ascii	"CAN_TIMER_Stop\000"
+ 1871 02f3 43414E5F 		.ascii	"CAN_TIMER_Stop\000"
  1871      54494D45 
  1871      525F5374 
  1871      6F7000
  1872              	.LASF2:
- 1873 0308 73686F72 		.ascii	"short int\000"
+ 1873 0302 73686F72 		.ascii	"short int\000"
  1873      7420696E 
  1873      7400
  1874              	.LASF19:
- 1875 0312 43414E5F 		.ascii	"CAN_TIMER_WritePeriod\000"
+ 1875 030c 43414E5F 		.ascii	"CAN_TIMER_WritePeriod\000"
  1875      54494D45 
  1875      525F5772 
  1875      69746550 
  1875      6572696F 
  1876              	.LASF32:
- 1877 0328 43414E5F 		.ascii	"CAN_TIMER_ReadControlRegister\000"
+ 1877 0322 43414E5F 		.ascii	"CAN_TIMER_ReadControlRegister\000"
  1877      54494D45 
  1877      525F5265 
  1877      6164436F 
  1877      6E74726F 
  1878              	.LASF4:
- 1879 0346 6C6F6E67 		.ascii	"long int\000"
+ 1879 0340 6C6F6E67 		.ascii	"long int\000"
  1879      20696E74 
  1879      00
  1880              	.LASF13:
- 1881 034f 63686172 		.ascii	"char\000"
+ 1881 0349 63686172 		.ascii	"char\000"
  1881      00
  1882              	.LASF0:
- 1883 0354 7369676E 		.ascii	"signed char\000"
+ 1883 034e 7369676E 		.ascii	"signed char\000"
  1883      65642063 
  1883      68617200 
  1884              	.LASF23:
- 1885 0360 43414E5F 		.ascii	"CAN_TIMER_SetInterruptMode\000"
+ 1885 035a 43414E5F 		.ascii	"CAN_TIMER_SetInterruptMode\000"
  1885      54494D45 
  1885      525F5365 
  1885      74496E74 
  1885      65727275 
  1886              	.LASF26:
- 1887 037b 43414E5F 		.ascii	"CAN_TIMER_Enable\000"
+ 1887 0375 43414E5F 		.ascii	"CAN_TIMER_Enable\000"
  1887      54494D45 
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccp1OWI8.s 			page 51
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccWEiTWt.s 			page 51
 
 
  1887      525F456E 
