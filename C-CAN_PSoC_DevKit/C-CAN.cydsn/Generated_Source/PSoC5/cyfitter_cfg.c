@@ -55,6 +55,15 @@
     #error Unsupported toolchain
 #endif
 
+#if defined(__ARMCC_VERSION)
+    extern unsigned int Load$$LR$$CYCONFIGECC$$Base;
+    #pragma diag_suppress 170,1296
+    #define CYDEV_ECC_VIRT_BASE 0x80000000
+    #define CYAPP_ECC_OFFSET ((uint32)&Load$$LR$$CYCONFIGECC$$Base - CYDEV_ECC_VIRT_BASE)
+#elif defined (__GNUC__) || defined (__ICCARM__)
+    extern int CY_ECC_OFFSET;
+    #define CYAPP_ECC_OFFSET ((uint32)&CY_ECC_OFFSET)
+#endif
 
 CY_CFG_UNUSED
 static void CYMEMZERO(void *s, size_t n);
@@ -131,23 +140,23 @@ CYPACKED typedef struct
 	uint8 value;
 } CYPACKED_ATTR cy_cfg_addrvalue_t;
 
-#define cy_cfg_addr_table ((const uint32 CYFAR *)0x48000000u)
-#define cy_cfg_data_table ((const cy_cfg_addrvalue_t CYFAR *)0x4800008Cu)
+#define cy_cfg_addr_table ((const uint32 CYFAR *)(0x48000000u + CYAPP_ECC_OFFSET))
+#define cy_cfg_data_table ((const cy_cfg_addrvalue_t CYFAR *)(0x4800008Cu + CYAPP_ECC_OFFSET))
 
 /* UDB_0_1_0_CONFIG Address: CYDEV_UCFG_B1_P4_U1_BASE Size (bytes): 128 */
-#define BS_UDB_0_1_0_CONFIG_VAL ((const uint8 CYFAR *)0x480007FCu)
+#define BS_UDB_0_1_0_CONFIG_VAL ((const uint8 CYFAR *)(0x480007FCu + CYAPP_ECC_OFFSET))
 
 /* IOPINS0_0 Address: CYREG_PRT0_DM0 Size (bytes): 8 */
-#define BS_IOPINS0_0_VAL ((const uint8 CYFAR *)0x4800087Cu)
+#define BS_IOPINS0_0_VAL ((const uint8 CYFAR *)(0x4800087Cu + CYAPP_ECC_OFFSET))
 
 /* IOPINS0_7 Address: CYREG_PRT12_DR Size (bytes): 10 */
-#define BS_IOPINS0_7_VAL ((const uint8 CYFAR *)0x48000884u)
+#define BS_IOPINS0_7_VAL ((const uint8 CYFAR *)(0x48000884u + CYAPP_ECC_OFFSET))
 
 /* IOPINS0_1 Address: CYREG_PRT1_DR Size (bytes): 10 */
-#define BS_IOPINS0_1_VAL ((const uint8 CYFAR *)0x48000890u)
+#define BS_IOPINS0_1_VAL ((const uint8 CYFAR *)(0x48000890u + CYAPP_ECC_OFFSET))
 
 /* IOPINS0_2 Address: CYREG_PRT2_DM0 Size (bytes): 8 */
-#define BS_IOPINS0_2_VAL ((const uint8 CYFAR *)0x4800089Cu)
+#define BS_IOPINS0_2_VAL ((const uint8 CYFAR *)(0x4800089Cu + CYAPP_ECC_OFFSET))
 
 
 /*******************************************************************************

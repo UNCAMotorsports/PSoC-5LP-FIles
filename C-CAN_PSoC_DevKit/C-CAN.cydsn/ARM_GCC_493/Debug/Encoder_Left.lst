@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccEXCMH8.s 			page 1
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccqRmvUe.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccEXCMH8.s 			page 1
   29:.\Generated_Source\PSoC5/Encoder_Left.c **** * 
   30:.\Generated_Source\PSoC5/Encoder_Left.c **** * Parameters:  
   31:.\Generated_Source\PSoC5/Encoder_Left.c **** *  void  
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccEXCMH8.s 			page 2
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccqRmvUe.s 			page 2
 
 
   32:.\Generated_Source\PSoC5/Encoder_Left.c **** *
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccEXCMH8.s 			page 1
   76:.\Generated_Source\PSoC5/Encoder_Left.c ****         #else
   77:.\Generated_Source\PSoC5/Encoder_Left.c ****             #if(!Encoder_Left_ControlRegRemoved)
   78:.\Generated_Source\PSoC5/Encoder_Left.c ****             /* Set the default compare mode defined in the parameter */
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccEXCMH8.s 			page 3
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccqRmvUe.s 			page 3
 
 
   79:.\Generated_Source\PSoC5/Encoder_Left.c ****             ctrl = Encoder_Left_CONTROL & ((uint8)(~Encoder_Left_CTRL_CMPMODE_MASK));
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccEXCMH8.s 			page 1
  127:.\Generated_Source\PSoC5/Encoder_Left.c **** * Function Name: Encoder_Left_Enable
  128:.\Generated_Source\PSoC5/Encoder_Left.c **** ********************************************************************************
  129:.\Generated_Source\PSoC5/Encoder_Left.c **** * Summary:
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccEXCMH8.s 			page 4
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccqRmvUe.s 			page 4
 
 
  130:.\Generated_Source\PSoC5/Encoder_Left.c **** *     Enable the Counter
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccEXCMH8.s 			page 1
  184:.\Generated_Source\PSoC5/Encoder_Left.c ****         Encoder_Left_initVar = 1u; /* Clear this bit for Initialization */        
  185:.\Generated_Source\PSoC5/Encoder_Left.c ****     }
  186:.\Generated_Source\PSoC5/Encoder_Left.c ****     
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccEXCMH8.s 			page 5
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccqRmvUe.s 			page 5
 
 
  187:.\Generated_Source\PSoC5/Encoder_Left.c ****     /* Enable the Counter */
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccEXCMH8.s 			page 1
  241:.\Generated_Source\PSoC5/Encoder_Left.c **** 
  242:.\Generated_Source\PSoC5/Encoder_Left.c **** 
  243:.\Generated_Source\PSoC5/Encoder_Left.c **** /*******************************************************************************
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccEXCMH8.s 			page 6
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccqRmvUe.s 			page 6
 
 
  244:.\Generated_Source\PSoC5/Encoder_Left.c **** * Function Name: Encoder_Left_ReadStatusRegister
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccEXCMH8.s 			page 1
  265:.\Generated_Source\PSoC5/Encoder_Left.c **** 
  266:.\Generated_Source\PSoC5/Encoder_Left.c **** 
  267:.\Generated_Source\PSoC5/Encoder_Left.c **** #if(!Encoder_Left_ControlRegRemoved)
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccEXCMH8.s 			page 7
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccqRmvUe.s 			page 7
 
 
  268:.\Generated_Source\PSoC5/Encoder_Left.c **** /*******************************************************************************
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccEXCMH8.s 			page 1
  322:.\Generated_Source\PSoC5/Encoder_Left.c **** * Return: 
  323:.\Generated_Source\PSoC5/Encoder_Left.c **** *  void 
  324:.\Generated_Source\PSoC5/Encoder_Left.c **** *
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccEXCMH8.s 			page 8
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccqRmvUe.s 			page 8
 
 
  325:.\Generated_Source\PSoC5/Encoder_Left.c **** *******************************************************************************/
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccEXCMH8.s 			page 1
  379:.\Generated_Source\PSoC5/Encoder_Left.c **** ********************************************************************************
  380:.\Generated_Source\PSoC5/Encoder_Left.c **** * Summary:
  381:.\Generated_Source\PSoC5/Encoder_Left.c **** *   This function returns the last value captured.
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccEXCMH8.s 			page 9
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccqRmvUe.s 			page 9
 
 
  382:.\Generated_Source\PSoC5/Encoder_Left.c **** *
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccEXCMH8.s 			page 1
  436:.\Generated_Source\PSoC5/Encoder_Left.c **** *
  437:.\Generated_Source\PSoC5/Encoder_Left.c **** *******************************************************************************/
  438:.\Generated_Source\PSoC5/Encoder_Left.c **** uint16 Encoder_Left_ReadPeriod(void) 
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccEXCMH8.s 			page 10
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccqRmvUe.s 			page 10
 
 
  439:.\Generated_Source\PSoC5/Encoder_Left.c **** {
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccEXCMH8.s 			page 1
  493:.\Generated_Source\PSoC5/Encoder_Left.c **** 
  494:.\Generated_Source\PSoC5/Encoder_Left.c **** 
  495:.\Generated_Source\PSoC5/Encoder_Left.c **** #if (Encoder_Left_COMPARE_MODE_SOFTWARE)
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccEXCMH8.s 			page 11
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccqRmvUe.s 			page 11
 
 
  496:.\Generated_Source\PSoC5/Encoder_Left.c **** /*******************************************************************************
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccEXCMH8.s 			page 1
  550:.\Generated_Source\PSoC5/Encoder_Left.c **** *
  551:.\Generated_Source\PSoC5/Encoder_Left.c **** * Parameters:  
  552:.\Generated_Source\PSoC5/Encoder_Left.c **** *  void:
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccEXCMH8.s 			page 12
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccqRmvUe.s 			page 12
 
 
  553:.\Generated_Source\PSoC5/Encoder_Left.c **** *
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccEXCMH8.s 			page 1
  112 0030 0D48     		ldr	r0, .L11+16
  113              	.LBE60:
  114              	.LBE59:
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccEXCMH8.s 			page 13
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccqRmvUe.s 			page 13
 
 
  115              	.LBB62:
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccEXCMH8.s 			page 1
  471:.\Generated_Source\PSoC5/Encoder_Left.c ****     #endif /* (Encoder_Left_UsingFixedFunction) */
  162              		.loc 1 471 0
  163 0040 1380     		strh	r3, [r2]	@ movhi
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccEXCMH8.s 			page 14
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccqRmvUe.s 			page 14
 
 
  164              	.LBE65:
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccEXCMH8.s 			page 1
  212 0002 1378     		ldrb	r3, [r2]	@ zero_extendqisi2
  213 0004 43F08003 		orr	r3, r3, #128
  214 0008 1370     		strb	r3, [r2]
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccEXCMH8.s 			page 15
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccqRmvUe.s 			page 15
 
 
  215 000a 7047     		bx	lr
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccEXCMH8.s 			page 1
  263:.\Generated_Source\PSoC5/Encoder_Left.c **** }
  265              		.loc 1 263 0
  266 0016 174A     		ldr	r2, .L27+8
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccEXCMH8.s 			page 16
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccqRmvUe.s 			page 16
 
 
  267              	.LBE101:
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccEXCMH8.s 			page 1
  314 003c FBD4     		bmi	.L22
  315              	.L18:
  316              	.LVL16:
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccEXCMH8.s 			page 17
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccqRmvUe.s 			page 17
 
 
  317              	.LBE108:
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccEXCMH8.s 			page 1
  337:.\Generated_Source\PSoC5/Encoder_Left.c ****     #endif /* (Encoder_Left_UsingFixedFunction) */
  364              		.loc 1 337 0
  365 004c 2B80     		strh	r3, [r5]	@ movhi
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccEXCMH8.s 			page 18
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccqRmvUe.s 			page 18
 
 
  366              	.LVL18:
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccEXCMH8.s 			page 1
  413 0080 10680040 		.word	1073768464
  414 0084 70680040 		.word	1073768560
  415 0088 9A640040 		.word	1073767578
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccEXCMH8.s 			page 19
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccqRmvUe.s 			page 19
 
 
  416              		.cfi_endproc
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccEXCMH8.s 			page 1
  466 0008 8A640040 		.word	1073767562
  467              		.cfi_endproc
  468              	.LFE4:
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccEXCMH8.s 			page 20
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccqRmvUe.s 			page 20
 
 
  469              		.size	Encoder_Left_SetInterruptMode, .-Encoder_Left_SetInterruptMode
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccEXCMH8.s 			page 1
  517              		.cfi_endproc
  518              	.LFE6:
  519              		.size	Encoder_Left_ReadControlRegister, .-Encoder_Left_ReadControlRegister
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccEXCMH8.s 			page 21
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccqRmvUe.s 			page 21
 
 
  520              		.section	.text.Encoder_Left_WriteControlRegister,"ax",%progbits
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccEXCMH8.s 			page 1
  570              		.section	.text.Encoder_Left_ReadCounter,"ax",%progbits
  571              		.align	2
  572              		.global	Encoder_Left_ReadCounter
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccEXCMH8.s 			page 22
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccqRmvUe.s 			page 22
 
 
  573              		.thumb
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccEXCMH8.s 			page 1
  619 0006 7047     		bx	lr
  620              	.L52:
  621              		.align	2
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccEXCMH8.s 			page 23
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccqRmvUe.s 			page 23
 
 
  622              	.L51:
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccEXCMH8.s 			page 1
  671              	.L58:
  672              		.align	2
  673              	.L57:
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccEXCMH8.s 			page 24
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccqRmvUe.s 			page 24
 
 
  674 0008 50680040 		.word	1073768528
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccEXCMH8.s 			page 1
  723              		.align	2
  724              	.L63:
  725 0008 70680040 		.word	1073768560
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccEXCMH8.s 			page 25
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccqRmvUe.s 			page 25
 
 
  726              		.cfi_endproc
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccEXCMH8.s 			page 1
  776              		.cfi_endproc
  777              	.LFE15:
  778              		.size	Encoder_Left_ClearFIFO, .-Encoder_Left_ClearFIFO
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccEXCMH8.s 			page 26
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccqRmvUe.s 			page 26
 
 
  779              		.global	Encoder_Left_initVar
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccEXCMH8.s 			page 1
  833 0057 08       		.byte	0x8
  834 0058 07       		.byte	0x7
  835 0059 C0000000 		.4byte	.LASF7
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccEXCMH8.s 			page 27
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccqRmvUe.s 			page 27
 
 
  836 005d 03       		.uleb128 0x3
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccEXCMH8.s 			page 1
  890 00ce 06       		.uleb128 0x6
  891 00cf 9A030000 		.4byte	.LASF18
  892 00d3 01       		.byte	0x1
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccEXCMH8.s 			page 28
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccqRmvUe.s 			page 28
 
 
  893 00d4 0501     		.2byte	0x105
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccEXCMH8.s 			page 1
  947 0145 77000000 		.4byte	0x77
  948 0149 00       		.byte	0
  949 014a 0C       		.uleb128 0xc
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccEXCMH8.s 			page 29
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccqRmvUe.s 			page 29
 
 
  950 014b BA030000 		.4byte	.LASF28
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccEXCMH8.s 			page 1
  1004 01ce 10       		.uleb128 0x10
  1005 01cf E4000000 		.4byte	0xe4
  1006 01d3 2C000000 		.4byte	.LBB52
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccEXCMH8.s 			page 30
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccqRmvUe.s 			page 30
 
 
  1007 01d7 38000000 		.4byte	.Ldebug_ranges0+0x38
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccEXCMH8.s 			page 1
  1061 0258 17       		.uleb128 0x17
  1062 0259 4A010000 		.4byte	0x14a
  1063 025d 00000000 		.4byte	.LFB1
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccEXCMH8.s 			page 31
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccqRmvUe.s 			page 31
 
 
  1064 0261 10000000 		.4byte	.LFE1-.LFB1
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccEXCMH8.s 			page 1
  1118 02ea 18010000 		.4byte	0x118
  1119 02ee 3E000000 		.4byte	.LBB110
  1120 02f2 F0000000 		.4byte	.Ldebug_ranges0+0xf0
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccEXCMH8.s 			page 32
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccqRmvUe.s 			page 32
 
 
  1121 02f6 01       		.byte	0x1
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccEXCMH8.s 			page 1
  1175 0374 00       		.byte	0
  1176 0375 1C       		.uleb128 0x1c
  1177 0376 06000000 		.4byte	.LASF42
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccEXCMH8.s 			page 33
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccqRmvUe.s 			page 33
 
 
  1178 037a 01       		.byte	0x1
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccEXCMH8.s 			page 1
  1232 03f8 01       		.uleb128 0x1
  1233 03f9 9C       		.byte	0x9c
  1234 03fa 06040000 		.4byte	0x406
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccEXCMH8.s 			page 34
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccqRmvUe.s 			page 34
 
 
  1235 03fe 1D       		.uleb128 0x1d
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccEXCMH8.s 			page 1
  1289 0478 2E020000 		.4byte	.LASF37
  1290 047c 01       		.byte	0x1
  1291 047d E901     		.2byte	0x1e9
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccEXCMH8.s 			page 35
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccqRmvUe.s 			page 35
 
 
  1292 047f 77000000 		.4byte	0x77
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccEXCMH8.s 			page 1
  1346 0006 0B       		.uleb128 0xb
  1347 0007 03       		.uleb128 0x3
  1348 0008 0E       		.uleb128 0xe
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccEXCMH8.s 			page 36
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccqRmvUe.s 			page 36
 
 
  1349 0009 1B       		.uleb128 0x1b
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccEXCMH8.s 			page 1
  1403 003f 00       		.byte	0
  1404 0040 3F       		.uleb128 0x3f
  1405 0041 19       		.uleb128 0x19
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccEXCMH8.s 			page 37
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccqRmvUe.s 			page 37
 
 
  1406 0042 03       		.uleb128 0x3
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccEXCMH8.s 			page 1
  1460 0078 0E       		.uleb128 0xe
  1461 0079 3A       		.uleb128 0x3a
  1462 007a 0B       		.uleb128 0xb
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccEXCMH8.s 			page 38
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccqRmvUe.s 			page 38
 
 
  1463 007b 3B       		.uleb128 0x3b
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccEXCMH8.s 			page 1
  1517 00b1 00       		.byte	0
  1518 00b2 0D       		.uleb128 0xd
  1519 00b3 34       		.uleb128 0x34
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccEXCMH8.s 			page 39
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccqRmvUe.s 			page 39
 
 
  1520 00b4 00       		.byte	0
@@ -2338,7 +2338,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccEXCMH8.s 			page 1
  1574 00eb 11       		.uleb128 0x11
  1575 00ec 1D       		.uleb128 0x1d
  1576 00ed 00       		.byte	0
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccEXCMH8.s 			page 40
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccqRmvUe.s 			page 40
 
 
  1577 00ee 31       		.uleb128 0x31
@@ -2398,7 +2398,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccEXCMH8.s 			page 1
  1631 0126 11       		.uleb128 0x11
  1632 0127 01       		.uleb128 0x1
  1633 0128 31       		.uleb128 0x31
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccEXCMH8.s 			page 41
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccqRmvUe.s 			page 41
 
 
  1634 0129 13       		.uleb128 0x13
@@ -2458,7 +2458,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccEXCMH8.s 			page 1
  1688 0164 19       		.uleb128 0x19
  1689 0165 1D       		.uleb128 0x1d
  1690 0166 00       		.byte	0
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccEXCMH8.s 			page 42
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccqRmvUe.s 			page 42
 
 
  1691 0167 31       		.uleb128 0x31
@@ -2518,7 +2518,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccEXCMH8.s 			page 1
  1745 019d 18       		.uleb128 0x18
  1746 019e 9742     		.uleb128 0x2117
  1747 01a0 19       		.uleb128 0x19
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccEXCMH8.s 			page 43
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccqRmvUe.s 			page 43
 
 
  1748 01a1 00       		.byte	0
@@ -2578,7 +2578,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccEXCMH8.s 			page 1
  1802 01d8 18       		.uleb128 0x18
  1803 01d9 9742     		.uleb128 0x2117
  1804 01db 19       		.uleb128 0x19
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccEXCMH8.s 			page 44
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccqRmvUe.s 			page 44
 
 
  1805 01dc 01       		.uleb128 0x1
@@ -2638,7 +2638,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccEXCMH8.s 			page 1
  1859 0212 00       		.byte	0
  1860 0213 23       		.uleb128 0x23
  1861 0214 2E       		.uleb128 0x2e
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccEXCMH8.s 			page 45
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccqRmvUe.s 			page 45
 
 
  1862 0215 01       		.byte	0x1
@@ -2698,7 +2698,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccEXCMH8.s 			page 1
  1916 0046 0100     		.2byte	0x1
  1917 0048 50       		.byte	0x50
  1918 0049 00000000 		.4byte	0
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccEXCMH8.s 			page 46
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccqRmvUe.s 			page 46
 
 
  1919 004d 00000000 		.4byte	0
@@ -2758,7 +2758,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccEXCMH8.s 			page 1
  1973 0040 00000000 		.4byte	.LFB6
  1974 0044 0C000000 		.4byte	.LFE6-.LFB6
  1975 0048 00000000 		.4byte	.LFB7
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccEXCMH8.s 			page 47
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccqRmvUe.s 			page 47
 
 
  1976 004c 0C000000 		.4byte	.LFE7-.LFB7
@@ -2818,7 +2818,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccEXCMH8.s 			page 1
  2030 0084 00000000 		.4byte	0
  2031 0088 34000000 		.4byte	.LBB63
  2032 008c 36000000 		.4byte	.LBE63
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccEXCMH8.s 			page 48
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccqRmvUe.s 			page 48
 
 
  2033 0090 40000000 		.4byte	.LBB73
@@ -2878,7 +2878,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccEXCMH8.s 			page 1
  2087 0168 00000000 		.4byte	0
  2088 016c 00000000 		.4byte	0
  2089 0170 00000000 		.4byte	.LBB132
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccEXCMH8.s 			page 49
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccqRmvUe.s 			page 49
 
 
  2090 0174 04000000 		.4byte	.LBE132
@@ -2938,7 +2938,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccEXCMH8.s 			page 1
  2135      7000
  2136              	.LASF41:
  2137 0018 433A5C55 		.ascii	"C:\\Users\\Patrick\\Documents\\GitHub\\PSoC 5LP FIl"
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccEXCMH8.s 			page 50
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccqRmvUe.s 			page 50
 
 
  2137      73657273 
@@ -2998,7 +2998,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccEXCMH8.s 			page 1
  2157      20726576 
  2157      6973696F 
  2157      6E203232 
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccEXCMH8.s 			page 51
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccqRmvUe.s 			page 51
 
 
  2157      31323230 
@@ -3058,7 +3058,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccEXCMH8.s 			page 1
  2178      536F7572 
  2178      63655C50 
  2179              	.LASF37:
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccEXCMH8.s 			page 52
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccqRmvUe.s 			page 52
 
 
  2180 022e 456E636F 		.ascii	"Encoder_Left_ReadCompare\000"
@@ -3118,7 +3118,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccEXCMH8.s 			page 1
  2200      5F536574 
  2200      496E7465 
  2201              	.LASF6:
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccEXCMH8.s 			page 53
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccqRmvUe.s 			page 53
 
 
  2202 02fe 6C6F6E67 		.ascii	"long long int\000"
@@ -3178,7 +3178,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccEXCMH8.s 			page 1
  2224      626C6500 
  2225              	.LASF29:
  2226 03ce 456E636F 		.ascii	"Encoder_Left_Init\000"
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccEXCMH8.s 			page 54
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccqRmvUe.s 			page 54
 
 
  2226      6465725F 

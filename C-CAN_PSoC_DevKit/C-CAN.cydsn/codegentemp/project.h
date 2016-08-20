@@ -52,6 +52,7 @@
 #include "Enc_R_aliases.h"
 #include "Enc_R.h"
 #include "rightEncTimer.h"
+#include "Bootloadable_1.h"
 #include "UART_1_IntClock.h"
 #include "ADC_SAR_1_IRQ.h"
 #include "ADC_SAR_1_theACLK.h"
