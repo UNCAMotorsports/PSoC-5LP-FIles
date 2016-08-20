@@ -55,7 +55,7 @@
     
 typedef struct Sensors {
     uint16 data[BUFF];
-    uint32 sample;
+    uint32 accumulator;
     int16 mV;
     uint8 number;
     uint8 index;
@@ -64,7 +64,7 @@ typedef struct Sensors {
 
 typedef struct Encoders {
     uint16 data[BUFF];
-    float sample;
+    float accumulator;
     float rpm;
     uint8 number;
     uint8 index;
@@ -124,8 +124,8 @@ void main()
     Encoder left;
     Encoder right;
     
-    left.number = 1;
-    right.number = 2;
+    left.number = 0;
+    right.number = 1;
     
     hrs180.number = 0;
     hrs090.number = 1;
@@ -160,21 +160,22 @@ void main()
     }
     
     hrs180.mV = 0;
-    hrs180.sample = 0;
+    hrs180.accumulator = 0;
     hrs180.index = 0;
+    
     hrs090.mV = 0;
-    hrs090.sample = 0;
+    hrs090.accumulator = 0;
     hrs090.index = 0;
     
     pot.mV = 0;
-    pot.sample = 0;
+    pot.accumulator = 0;
     pot.index = 0;
     
-    left.sample = 0.0;
+    left.accumulator = 0.0;
     left.rpm = 0.0;
     left.index = 0;
     
-    right.sample = 0.0;
+    right.accumulator = 0.0;
     right.rpm = 0.0;
     right.index = 0;
     
@@ -183,9 +184,7 @@ void main()
     pot.window = 50;
     left.window = 10;
     right.window = 10;
-    
-    float test = 123.123;
-        
+            
     
     
     /* Send message to verify COM port is connected properly */
@@ -220,9 +219,9 @@ void main()
         }
         
         
-        //GetSample(&hrs180);
-        //GetSample(&hrs090);
-        //GetSample(&pot);
+        GetSample(&hrs180);
+        GetSample(&hrs090);
+        GetSample(&pot);
         GetRPM(&left);
         GetRPM(&right);
         
@@ -250,7 +249,7 @@ void main()
         {
             
             /* Format ADC result for transmition */
-            sprintf(TransmitBuffer, "%d, %d, %d\n\r", (int)test, (int)left.rpm, (int)right.rpm);
+            sprintf(TransmitBuffer, "%d, %d, %d\n\r", hrs180.mV, (int)left.rpm, (int)right.rpm);
             /* Send out the data */
             UART_1_PutString(TransmitBuffer);
             /* Reset the send once flag */
@@ -262,43 +261,75 @@ void main()
 }
 
 void GetSample( Sensor * sensor){
+    
+    /*This function applies a moving average filter to the data read by the ADC. Each sensor
+    *has an associated sensor struct that contains all necessary variables. The multiplexer
+    *is switched such that the intended sensor is read by the ADC. The if loop waits for the
+    *ADC to sample and then applies the circular buffer-based moving average.
+    *
+    *For serial debugging purposes, this function also converts the averaged sensor reading
+    *to a millivolt value.
+    *
+    */
     AMux_1_FastSelect(sensor->number);
     ADC_SAR_1_StartConvert();
     if(ADC_SAR_1_IsEndConversion(ADC_SAR_1_WAIT_FOR_RESULT))
     {
-        sensor->sample = sensor->sample - sensor->data[sensor->index];
+        sensor->accumulator -= sensor->data[sensor->index];
         sensor->data[sensor->index] = ADC_SAR_1_GetResult16();
-        sensor->sample = sensor->sample + sensor->data[sensor->index];
+        sensor->accumulator += sensor->data[sensor->index];
     }
     sensor->index++;
     if(sensor->index==sensor->window){
         sensor->index = 0;
     }
     
-    sensor->mV = ADC_SAR_1_CountsTo_mVolts((sensor->sample)/BUFF);
+    sensor->mV = ADC_SAR_1_CountsTo_mVolts((sensor->accumulator)/sensor->window);
     
 }
 
 void GetRPM(Encoder * encoder){
-    //uint32 time;
-    if(encoder->number == 1){ //calculate left rpm
-        encoder->sample -= encoder->data[encoder->index];
+
+    /*This function applies a moving average filter to the number of encoder pulses
+    *counted by an encoder counter. Each encoder has an encoder struct that contains
+    *all of the relevant variables for an encoder. 
+    *
+    *The moving average filter implemented is the "shortcut" version, making use of a circular
+    *buffer to keep things speeds. 
+    *
+    *Each encoder has an associated hardware pulse counter and time counter. As of 8/19/16
+    *the time counter counts microseconds and the encoders are 600ppr. 
+    
+    *RPM is calculated as follows:
+    *(pulses)*(1 rev/600 pulses)*(1/microseconds)*(10^6 microseconds/second)*(60 seconds/minute)=rpm
+    *
+    *This simplifies to (pulses * 100000) / (microseconds elapsed)
+    *
+    *With the current setup, the time counter does not reset and can only handle ~65milliseconds.
+    *
+    */
+    
+    
+    if(encoder->number == 0){ //calculate left rpm
+        encoder->accumulator -= encoder->data[encoder->index];
         encoder->data[encoder->index] = Encoder_Left_ReadCounter();
-        Encoder_Left_WriteCounter(0);
-        encoder->sample += encoder->data[encoder->index];
+        Encoder_Left_WriteCounter(0); //clear the pulse counter
+        encoder->accumulator += encoder->data[encoder->index];
         
-        encoder->rpm = (encoder->sample/encoder->window) * 100000 / (leftEncTimer_ReadCounter());
-        leftEncTimer_WriteCounter(0);
+        
+        
+        encoder->rpm = (encoder->accumulator/encoder->window) * 100000 / (leftEncTimer_ReadCounter());
+        leftEncTimer_WriteCounter(0); //clear the microsecond counter
     }
     
-    if(encoder->number == 2){ //calculate right rpm
-        encoder->sample -= encoder->data[encoder->index];
+    if(encoder->number == 1){ //calculate right rpm
+        encoder->accumulator -= encoder->data[encoder->index];
         encoder->data[encoder->index] = Encoder_Right_ReadCounter();
-        Encoder_Right_WriteCounter(0);
-        encoder->sample += encoder->data[encoder->index];
+        Encoder_Right_WriteCounter(0); //clear the pulse counter
+        encoder->accumulator += encoder->data[encoder->index];
         
-        encoder->rpm = (encoder->sample/encoder->window) * 100000 / (rightEncTimer_ReadCounter());
-        rightEncTimer_WriteCounter(0);
+        encoder->rpm = (encoder->accumulator/encoder->window) * 100000 / (rightEncTimer_ReadCounter());
+        rightEncTimer_WriteCounter(0); //clear the microsecond counter
     }
     
     encoder->index++;
