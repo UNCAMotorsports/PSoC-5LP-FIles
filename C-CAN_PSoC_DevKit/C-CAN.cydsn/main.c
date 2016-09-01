@@ -62,7 +62,6 @@ typedef unsigned char bool;
 typedef struct Sensors {
     uint16 data[BUFF];
     uint32 accumulator;
-    int16 mV;
     uint8 number;
     uint8 index;
     uint8 window;
@@ -70,44 +69,40 @@ typedef struct Sensors {
     uint16 rate;
 }Sensor;
 
+typedef struct Pots {
+    Sensor sensor;
+    int16 mV;
+}Pot;
+
 typedef struct Encoders {
-    uint16 data[BUFF];
+    Sensor sensor;
     float accumulator;
     float rpm;
-    uint8 number;
-    uint8 index;
-    uint8 window;
-    uint32 time;
-    bool flag;
-    uint16 rate;
 }Encoder;
     
-void GetSample(Sensor * sensor);
+void GetSample(Pot * pot);
 void GetRPM(Encoder * encoder);
 void SensorSet(Sensor * sensor, uint8 number_set, uint8 window_set, uint16 rate_set);
-void EncoderSet(Encoder * encoder, uint8 number_set, uint8 window_set, uint16 rate_set);
-void SensorInit(Sensor * sensor);
+void PotInit(Pot * pot);
 void EncoderInit(Encoder * encoder);
 void CAN_Send(uint8 zero, uint8 one, uint8 two, uint8 three, uint8 four, uint8 five, uint8 six, uint8 seven);
-void SetEncoderFlag(Encoder * encoder, bool flag_set);
-void SetSensorFlag(Sensor * sensor, bool flag_set);
-uint16 GetEncoderRate(Encoder * encoder);
-uint16 GetSensorRate(Sensor * sensor);
+void SetFlag(Sensor * sensor, bool flag_set);
+uint16 GetRate(Sensor * sensor);
 
 uint32 timer=0;
 
-Sensor steering;
-Sensor throttle;
+Pot steering;
+Pot throttle;
 Encoder left;
 Encoder right;
 
 CY_ISR(SysTick_ISR)
 {
     timer++;
-    if (timer     % GetSensorRate(&throttle) == 0) { SetSensorFlag(&throttle, TRUE); }
-    if ((timer+1) % GetSensorRate(&steering) == 0) { SetSensorFlag(&steering, TRUE); }
-    if ((timer+2) % GetEncoderRate(&left)    == 0) { SetEncoderFlag(&left, TRUE); }
-    if ((timer+3) % GetEncoderRate(&right)   == 0) { SetEncoderFlag(&right, TRUE); }
+    if (timer     % GetRate(&throttle.sensor) == 0) { SetFlag(&throttle.sensor, TRUE); }
+    if ((timer+1) % GetRate(&steering.sensor) == 0) { SetFlag(&steering.sensor, TRUE); }
+    if ((timer+2) % GetRate(&left.sensor)    == 0) { SetFlag(&left.sensor, TRUE); }
+    if ((timer+3) % GetRate(&right.sensor)   == 0) { SetFlag(&right.sensor, TRUE); }
     if (timer >= TIMER_RATE)        { timer = 0; }
     /* no need to clear interrupt source */
 }
@@ -157,8 +152,8 @@ void main()
     CAN_ISR_Start();
     CAN_TIMER_Start();
     
-    SensorInit(&steering);
-    SensorInit(&throttle);
+    PotInit(&steering);
+    PotInit(&throttle);
     EncoderInit(&left);
     EncoderInit(&right);
     
@@ -178,11 +173,10 @@ void main()
     ContinuouslySendData = FALSE;
     SendSingleByte = FALSE;
 
-    SensorSet(&steering, 0, 50, 200);
-    SensorSet(&throttle, 1, 50, 200);
-    
-    EncoderSet(&left, 0, 10, 200);
-    EncoderSet(&right, 1, 10, 200);
+    SensorSet(&steering.sensor, 0, 50, 200);
+    SensorSet(&throttle.sensor, 1, 50, 200);
+    SensorSet(&left.sensor, 0, 10, 200);
+    SensorSet(&right.sensor, 1, 10, 200);
             
     
     
@@ -217,16 +211,16 @@ void main()
                 break;    
         }
         
-        if(steering.flag==TRUE){
+        if(steering.sensor.flag==TRUE){
             GetSample(&steering);
         }
-        else if(throttle.flag==TRUE){
+        else if(throttle.sensor.flag==TRUE){
             GetSample(&throttle);
         }
-        else if(left.flag==TRUE){
+        else if(left.sensor.flag==TRUE){
             GetRPM(&left);
         }
-        else if(right.flag==TRUE){
+        else if(right.sensor.flag==TRUE){
             GetRPM(&right);
         }
         
@@ -246,7 +240,7 @@ void main()
     }
 }
 
-void GetSample( Sensor * sensor){
+void GetSample( Pot * pot){
     
     /*This function applies a moving average filter to the data read by the ADC. Each sensor
     *has an associated sensor struct that contains all necessary variables. The multiplexer
@@ -257,22 +251,22 @@ void GetSample( Sensor * sensor){
     *to a millivolt value.
     *
     */
-    AMux_1_FastSelect(sensor->number);
+    AMux_1_FastSelect(pot->sensor.number);
     ADC_SAR_1_StartConvert();
     if(ADC_SAR_1_IsEndConversion(ADC_SAR_1_WAIT_FOR_RESULT))
     {
-        sensor->accumulator -= sensor->data[sensor->index];
-        sensor->data[sensor->index] = ADC_SAR_1_GetResult16();
-        sensor->accumulator += sensor->data[sensor->index];
+        pot->sensor.accumulator -= pot->sensor.data[pot->sensor.index];
+        pot->sensor.data[pot->sensor.index] = ADC_SAR_1_GetResult16();
+        pot->sensor.accumulator += pot->sensor.data[pot->sensor.index];
     }
-    sensor->index++;
-    if(sensor->index==sensor->window){
-        sensor->index = 0;
+    pot->sensor.index++;
+    if(pot->sensor.index==pot->sensor.window){
+        pot->sensor.index = 0;
     }
     
-    sensor->mV = ADC_SAR_1_CountsTo_mVolts((sensor->accumulator)/sensor->window);
+    pot->mV = ADC_SAR_1_CountsTo_mVolts((pot->sensor.accumulator)/pot->sensor.window);
     
-    sensor->rate = FALSE;
+    pot->sensor.rate = FALSE;
     
 }
 
@@ -298,34 +292,34 @@ void GetRPM(Encoder * encoder){
     */
     
     
-    if(encoder->number == 0){ //calculate left rpm
-        encoder->accumulator -= encoder->data[encoder->index];
-        encoder->data[encoder->index] = Encoder_Left_ReadCounter();
+    if(encoder->sensor.number == 0){ //calculate left rpm
+        encoder->sensor.accumulator -= encoder->sensor.data[encoder->sensor.index];
+        encoder->sensor.data[encoder->sensor.index] = Encoder_Left_ReadCounter();
         Encoder_Left_WriteCounter(0); //clear the pulse counter
-        encoder->accumulator += encoder->data[encoder->index];
+        encoder->accumulator += encoder->sensor.data[encoder->sensor.index];
         
         
         
-        encoder->rpm = (encoder->accumulator/encoder->window) * 100000 / (leftEncTimer_ReadCounter());
+        encoder->rpm = (encoder->accumulator/encoder->sensor.window) * 100000 / (leftEncTimer_ReadCounter());
         leftEncTimer_WriteCounter(0); //clear the microsecond counter
     }
     
-    if(encoder->number == 1){ //calculate right rpm
-        encoder->accumulator -= encoder->data[encoder->index];
-        encoder->data[encoder->index] = Encoder_Right_ReadCounter();
+    if(encoder->sensor.number == 1){ //calculate right rpm
+        encoder->sensor.accumulator -= encoder->sensor.data[encoder->sensor.index];
+        encoder->sensor.data[encoder->sensor.index] = Encoder_Right_ReadCounter();
         Encoder_Right_WriteCounter(0); //clear the pulse counter
-        encoder->accumulator += encoder->data[encoder->index];
+        encoder->accumulator += encoder->sensor.data[encoder->sensor.index];
         
-        encoder->rpm = (encoder->accumulator/encoder->window) * 100000 / (rightEncTimer_ReadCounter());
+        encoder->rpm = (encoder->accumulator/encoder->sensor.window) * 100000 / (rightEncTimer_ReadCounter());
         rightEncTimer_WriteCounter(0); //clear the microsecond counter
     }
     
-    encoder->index++;
-    if(encoder->index >= encoder->window){
-        encoder->index = 0;
+    encoder->sensor.index++;
+    if(encoder->sensor.index >= encoder->sensor.window){
+        encoder->sensor.index = 0;
     }
     
-    encoder->flag = FALSE;
+    encoder->sensor.flag = FALSE;
 
 }
 
@@ -338,23 +332,14 @@ void SensorSet(Sensor * sensor, uint8 number_set, uint8 window_set, uint16 rate_
     }
 }
 
-void EncoderSet(Encoder * encoder, uint8 number_set, uint8 window_set, uint16 rate_set){
-    encoder->number = number_set;
-    encoder->window = window_set;
-    encoder->rate = rate_set;
-    if(window_set>=BUFF){
-        encoder->window = BUFF;
-    }
-}
-
-void SensorInit(Sensor * sensor){
+void PotInit(Pot * pot){
     int i = 0;
-    sensor->accumulator = 0;
-    sensor->mV = 0;
-    sensor->index = 0;
-    sensor->flag = 0;
+    pot->sensor.accumulator = 0;
+    pot->mV = 0;
+    pot->sensor.index = 0;
+    pot->sensor.flag = 0;
     for(i=0;i<BUFF;i++){
-        sensor->data[i]=0;
+        pot->sensor.data[i]=0;
     }
 }
 
@@ -362,10 +347,10 @@ void EncoderInit(Encoder * encoder){
     int i = 0;
     encoder->accumulator = 0;
     encoder->rpm = 0;
-    encoder->index = 0;
-    encoder->flag = 0;
+    encoder->sensor.index = 0;
+    encoder->sensor.flag = 0;
     for(i=0;i<BUFF;i++){
-        encoder->data[i]=0;
+        encoder->sensor.data[i]=0;
     }
 }
 
@@ -380,19 +365,11 @@ void CAN_Send(uint8 zero, uint8 one, uint8 two, uint8 three, uint8 four, uint8 f
     TxMessage1[7] = seven;
 }
     
-void SetEncoderFlag(Encoder * encoder, bool flag_set){
-    encoder->flag = flag_set; 
-}
-
-void SetSensorFlag(Sensor * sensor, bool flag_set){
+void SetFlag(Sensor * sensor, bool flag_set){
     sensor->flag = flag_set;
 }
 
-uint16 GetEncoderRate(Encoder * encoder){
-    return INTERRUPT_FREQ/(encoder->rate);
-}
-
-uint16 GetSensorRate(Sensor * sensor){
+uint16 GetRate(Sensor * sensor){
     return INTERRUPT_FREQ/(sensor->rate);
 }
 
