@@ -173,10 +173,10 @@ void main()
     ContinuouslySendData = FALSE;
     SendSingleByte = FALSE;
 
-    SensorSet(&steering.sensor, 0, 50, 200);
-    SensorSet(&throttle.sensor, 1, 50, 200);
-    SensorSet(&left.sensor, 0, 10, 200);
-    SensorSet(&right.sensor, 1, 10, 200);
+    SensorSet(&steering.sensor, 0, 50, 5000);
+    SensorSet(&throttle.sensor, 1, 50, 5000);
+    SensorSet(&left.sensor, 0, 10, 5000);
+    SensorSet(&right.sensor, 1, 10, 5000);
             
     
     
