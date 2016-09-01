@@ -6,7 +6,7 @@
 
 #Build Date:         Apr 25 2016 12:55:34
 
-#File Generated:     Aug 19 2016 23:15:47
+#File Generated:     Sep 1 2016 00:47:00
 
 #Purpose:            
 
@@ -99,7 +99,7 @@ Clock: UART_1_IntClock      | Frequency:  63.8 MHz | Target:   0.9 MHz
                      End of Clock Summary
 ######################################################################
 
-D2088: Phase 6, elapsed time : 0.1 (sec)
+D2088: Phase 6, elapsed time : 0.0 (sec)
 
 Phase 7
 ######################################################################

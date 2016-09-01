@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 1
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc3FvsEL.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 1
   29:.\Generated_Source\PSoC5/USBFS_std.c ****     * Function Name: USBFS_SerialNumString
   30:.\Generated_Source\PSoC5/USBFS_std.c ****     ************************************************************************//**
   31:.\Generated_Source\PSoC5/USBFS_std.c ****     *
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 2
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc3FvsEL.s 			page 2
 
 
   32:.\Generated_Source\PSoC5/USBFS_std.c ****     *  This function is available only when the User Call Back option in the 
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 1
   86:.\Generated_Source\PSoC5/USBFS_std.c ****     uint8 requestHandled = USBFS_FALSE;
   87:.\Generated_Source\PSoC5/USBFS_std.c ****     uint8 interfaceNumber;
   88:.\Generated_Source\PSoC5/USBFS_std.c ****     uint8 configurationN;
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 3
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc3FvsEL.s 			page 3
 
 
   89:.\Generated_Source\PSoC5/USBFS_std.c ****     uint8 bmRequestType = USBFS_bmRequestTypeReg;
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 1
  143:.\Generated_Source\PSoC5/USBFS_std.c ****                         requestHandled  = USBFS_InitControlRead();
  144:.\Generated_Source\PSoC5/USBFS_std.c ****                     }
  145:.\Generated_Source\PSoC5/USBFS_std.c ****                 }
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 4
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc3FvsEL.s 			page 4
 
 
  146:.\Generated_Source\PSoC5/USBFS_std.c ****             #endif /*(USBFS_BOS_ENABLE)*/
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 1
  200:.\Generated_Source\PSoC5/USBFS_std.c ****                     {
  201:.\Generated_Source\PSoC5/USBFS_std.c ****                         USBFS_currentTD.count = *pStr;
  202:.\Generated_Source\PSoC5/USBFS_std.c ****                         USBFS_currentTD.pData = pStr;
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 5
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc3FvsEL.s 			page 5
 
 
  203:.\Generated_Source\PSoC5/USBFS_std.c ****                         requestHandled  = USBFS_InitControlRead();
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 1
  257:.\Generated_Source\PSoC5/USBFS_std.c ****         {
  258:.\Generated_Source\PSoC5/USBFS_std.c ****             case USBFS_SET_ADDRESS:
  259:.\Generated_Source\PSoC5/USBFS_std.c ****                 /* Store address to be set in USBFS_NoDataControlStatusStage(). */
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 6
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc3FvsEL.s 			page 6
 
 
  260:.\Generated_Source\PSoC5/USBFS_std.c ****                 USBFS_deviceAddress = (uint8) USBFS_wValueLoReg;
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 1
  314:.\Generated_Source\PSoC5/USBFS_std.c ****                     case USBFS_RQST_RCPT_EP:
  315:.\Generated_Source\PSoC5/USBFS_std.c ****                         if (USBFS_wValueLoReg == USBFS_ENDPOINT_HALT)
  316:.\Generated_Source\PSoC5/USBFS_std.c ****                         {
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 7
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc3FvsEL.s 			page 7
 
 
  317:.\Generated_Source\PSoC5/USBFS_std.c ****                             requestHandled = USBFS_ClearEndpointHalt();
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 1
  371:.\Generated_Source\PSoC5/USBFS_std.c ****                 }
  372:.\Generated_Source\PSoC5/USBFS_std.c ****                 break;
  373:.\Generated_Source\PSoC5/USBFS_std.c ****                 
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 8
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc3FvsEL.s 			page 8
 
 
  374:.\Generated_Source\PSoC5/USBFS_std.c ****             default:    /* requestHandled is initialized as FALSE by default */
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 1
  428:.\Generated_Source\PSoC5/USBFS_std.c **** /*******************************************************************************
  429:.\Generated_Source\PSoC5/USBFS_std.c **** * Function Name: USBFS_ConfigReg
  430:.\Generated_Source\PSoC5/USBFS_std.c **** ****************************************************************************//**
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 9
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc3FvsEL.s 			page 9
 
 
  431:.\Generated_Source\PSoC5/USBFS_std.c **** *
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 1
  457:.\Generated_Source\PSoC5/USBFS_std.c ****             if (0u != (USBFS_EP[ep].addr & USBFS_DIR_IN))
   55              		.loc 1 457 0
   56 0022 02EB4203 		add	r3, r2, r2, lsl #1
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 10
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc3FvsEL.s 			page 10
 
 
   57 0026 9B00     		lsls	r3, r3, #2
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 1
  485:.\Generated_Source\PSoC5/USBFS_std.c ****             USBFS_ARB_EP16_BASE.arbEp[ep].rwRa16  = (uint32) USBFS_EP[ep].buffOffset;
  486:.\Generated_Source\PSoC5/USBFS_std.c ****             USBFS_ARB_EP16_BASE.arbEp[ep].rwWa16  = (uint32) USBFS_EP[ep].buffOffset;
  487:.\Generated_Source\PSoC5/USBFS_std.c ****         #else
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 11
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc3FvsEL.s 			page 11
 
 
  488:.\Generated_Source\PSoC5/USBFS_std.c ****             USBFS_ARB_EP_BASE.arbEp[ep].rwRa    = LO8(USBFS_EP[ep].buffOffset);
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 1
  507:.\Generated_Source\PSoC5/USBFS_std.c ****     USBFS_EP_ACTIVE_REG = USBFS_DEFAULT_ARB_INT_EN;
  508:.\Generated_Source\PSoC5/USBFS_std.c ****     USBFS_EP_TYPE_REG   = epType;
  509:.\Generated_Source\PSoC5/USBFS_std.c ****     
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 12
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc3FvsEL.s 			page 12
 
 
  510:.\Generated_Source\PSoC5/USBFS_std.c ****     /* Cfg_cmp bit set to 1 once configuration is complete. */
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 1
  147              		@ args = 0, pretend = 0, frame = 0
  148              		@ frame_needed = 0, uses_anonymous_args = 0
  149              		@ link register save eliminated.
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 13
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc3FvsEL.s 			page 13
 
 
  150              	.LVL5:
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 1
  547:.\Generated_Source\PSoC5/USBFS_std.c ****         }
  548:.\Generated_Source\PSoC5/USBFS_std.c ****     }
  549:.\Generated_Source\PSoC5/USBFS_std.c ****                     
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 14
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc3FvsEL.s 			page 14
 
 
  550:.\Generated_Source\PSoC5/USBFS_std.c **** }
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 1
  587:.\Generated_Source\PSoC5/USBFS_std.c ****     {
  588:.\Generated_Source\PSoC5/USBFS_std.c ****         USBFS_EP[ep].attrib     = 0u;
  589:.\Generated_Source\PSoC5/USBFS_std.c ****         USBFS_EP[ep].hwEpState  = 0u;
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 15
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc3FvsEL.s 			page 15
 
 
  590:.\Generated_Source\PSoC5/USBFS_std.c ****         USBFS_EP[ep].epToggle   = 0u;
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 1
  644:.\Generated_Source\PSoC5/USBFS_std.c ****                     USBFS_EP[curEp].addr       = pEP->addr;
  645:.\Generated_Source\PSoC5/USBFS_std.c ****                     USBFS_EP[curEp].attrib     = pEP->attributes;
  646:.\Generated_Source\PSoC5/USBFS_std.c ****                     USBFS_EP[curEp].bufferSize = pEP->bufferSize;
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 16
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc3FvsEL.s 			page 16
 
 
  647:.\Generated_Source\PSoC5/USBFS_std.c **** 
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 1
  701:.\Generated_Source\PSoC5/USBFS_std.c ****                             USBFS_EP[i].bufferSize = pEP->bufferSize;
  702:.\Generated_Source\PSoC5/USBFS_std.c ****                         }
  703:.\Generated_Source\PSoC5/USBFS_std.c ****                         
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 17
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc3FvsEL.s 			page 17
 
 
  704:.\Generated_Source\PSoC5/USBFS_std.c ****                         /* Compare current Alternate setting with EP Alt */
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 1
  758:.\Generated_Source\PSoC5/USBFS_std.c ****         *  It is used for handling Class specific requests directed to either an
  759:.\Generated_Source\PSoC5/USBFS_std.c ****         *  interface or the endpoint.
  760:.\Generated_Source\PSoC5/USBFS_std.c ****         */
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 18
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc3FvsEL.s 			page 18
 
 
  761:.\Generated_Source\PSoC5/USBFS_std.c ****         /* p_list points the endpoint setting table. */
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 1
  815:.\Generated_Source\PSoC5/USBFS_std.c **** 
  816:.\Generated_Source\PSoC5/USBFS_std.c ****     /* Init Endpoints and Device Status if configured */
  817:.\Generated_Source\PSoC5/USBFS_std.c ****     if (USBFS_configuration > 0u)
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 19
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc3FvsEL.s 			page 19
 
 
  818:.\Generated_Source\PSoC5/USBFS_std.c ****     {
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 1
  872:.\Generated_Source\PSoC5/USBFS_std.c ****                 
  873:.\Generated_Source\PSoC5/USBFS_std.c ****                 /* Wait until block is ready for re-configuration */
  874:.\Generated_Source\PSoC5/USBFS_std.c ****                 while (0u == (USBFS_DYN_RECONFIG_REG & USBFS_DYN_RECONFIG_RDY_STS))
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 20
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc3FvsEL.s 			page 20
 
 
  875:.\Generated_Source\PSoC5/USBFS_std.c ****                 {
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 1
  929:.\Generated_Source\PSoC5/USBFS_std.c **** 
  930:.\Generated_Source\PSoC5/USBFS_std.c **** /*******************************************************************************
  931:.\Generated_Source\PSoC5/USBFS_std.c **** * Function Name: USBFS_GetConfigTablePtr
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 21
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc3FvsEL.s 			page 21
 
 
  932:.\Generated_Source\PSoC5/USBFS_std.c **** ****************************************************************************//**
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 1
  228 0018 7047     		bx	lr
  229              	.LVL13:
  230              	.L19:
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 22
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc3FvsEL.s 			page 22
 
 
  959:.\Generated_Source\PSoC5/USBFS_std.c ****     }
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 1
  276              		.loc 1 822 0
  277 0018 047A     		ldrb	r4, [r0, #8]	@ zero_extendqisi2
  278              	.LVL16:
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 23
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc3FvsEL.s 			page 23
 
 
  825:.\Generated_Source\PSoC5/USBFS_std.c ****         
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 1
  323 005e 87F804C0 		strb	ip, [r7, #4]
  844:.\Generated_Source\PSoC5/USBFS_std.c ****                 USBFS_EP[curEp].bufferSize = pEP->bufferSize;
  324              		.loc 1 844 0
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 24
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc3FvsEL.s 			page 24
 
 
  325 0062 92F803C0 		ldrb	ip, [r2, #3]	@ zero_extendqisi2
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 1
  857:.\Generated_Source\PSoC5/USBFS_std.c ****                 }
  372              		.loc 1 857 0 is_stmt 1 discriminator 4
  373 00a8 0026     		movs	r6, #0
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 25
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc3FvsEL.s 			page 25
 
 
  374 00aa 6E70     		strb	r6, [r5, #1]
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 1
  419 00f8 0133     		adds	r3, r3, #1
  420              	.LVL28:
  421 00fa DBB2     		uxtb	r3, r3
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 26
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc3FvsEL.s 			page 26
 
 
  422              	.LVL29:
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 1
  993:.\Generated_Source\PSoC5/USBFS_std.c ****         */
  994:.\Generated_Source\PSoC5/USBFS_std.c ****         pTmp = &pTmp[1u];
  995:.\Generated_Source\PSoC5/USBFS_std.c ****         pTmp = (const T_USBFS_LUT CYCODE *) pTmp->p_list;
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 27
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc3FvsEL.s 			page 27
 
 
  996:.\Generated_Source\PSoC5/USBFS_std.c ****         return (pTmp);
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 1
 1021:.\Generated_Source\PSoC5/USBFS_std.c **** ****************************************************************************//**
 1022:.\Generated_Source\PSoC5/USBFS_std.c **** *
 1023:.\Generated_Source\PSoC5/USBFS_std.c **** *  This routine returns Interface Class table pointer, which contains
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 28
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc3FvsEL.s 			page 28
 
 
 1024:.\Generated_Source\PSoC5/USBFS_std.c **** *  the relation between interface number and interface class.
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 1
 1048:.\Generated_Source\PSoC5/USBFS_std.c ****         pInterfaceClass = (const uint8 CYCODE *) NULL;
  509              		.loc 1 1048 0
  510 001c 0020     		movs	r0, #0
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 29
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc3FvsEL.s 			page 29
 
 
  511              	.LVL36:
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 1
  557 0014 A170     		strb	r1, [r4, #2]
  590:.\Generated_Source\PSoC5/USBFS_std.c ****         USBFS_EP[ep].bufferSize = 0u;
  558              		.loc 1 590 0 discriminator 3
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 30
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc3FvsEL.s 			page 30
 
 
  559 0016 E170     		strb	r1, [r4, #3]
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 1
  602 0040 F4D0     		beq	.L50
  603              	.LVL47:
  604              	.L49:
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 31
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc3FvsEL.s 			page 31
 
 
  608:.\Generated_Source\PSoC5/USBFS_std.c ****     {
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 1
  650              	.LVL55:
  694:.\Generated_Source\PSoC5/USBFS_std.c ****                 {
  651              		.loc 1 694 0
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 32
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc3FvsEL.s 			page 32
 
 
  652 0082 0023     		movs	r3, #0
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 1
  699 00de CA78     		ldrb	r2, [r1, #3]	@ zero_extendqisi2
  700 00e0 02F00302 		and	r2, r2, #3
  701              	.LVL57:
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 33
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc3FvsEL.s 			page 33
 
 
  712:.\Generated_Source\PSoC5/USBFS_std.c ****                             {
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 1
  749 0134 7270     		strb	r2, [r6, #1]
  750              	.L56:
  752:.\Generated_Source\PSoC5/USBFS_std.c ****                 }
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 34
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc3FvsEL.s 			page 34
 
 
  751              		.loc 1 752 0 discriminator 2
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 1
  763:.\Generated_Source\PSoC5/USBFS_std.c ****         {
  797              		.loc 1 763 0 is_stmt 0 discriminator 1
  798 0168 AA42     		cmp	r2, r5
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 35
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc3FvsEL.s 			page 35
 
 
  799 016a F0D3     		bcc	.L64
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 1
  845 01a4 00000000 		.word	USBFS_interfaceSettingLast
  846 01a8 00000000 		.word	USBFS_configuration
  847 01ac 00000000 		.word	USBFS_deviceStatus
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 36
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc3FvsEL.s 			page 36
 
 
  848 01b0 08000000 		.word	USBFS_EP+8
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 1
 1080:.\Generated_Source\PSoC5/USBFS_std.c ****         USBFS_EP[epNumber].hwEpState |= USBFS_ENDPOINT_STATUS_HALT;
  875              		.loc 1 1080 0
  876 000c 4300     		lsls	r3, r0, #1
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 37
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc3FvsEL.s 			page 37
 
 
  877 000e 0344     		add	r3, r3, r0
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 1
  917              	.LFE8:
  918              		.size	USBFS_TerminateEP, .-USBFS_TerminateEP
  919              		.section	.text.USBFS_SetEndpointHalt,"ax",%progbits
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 38
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc3FvsEL.s 			page 38
 
 
  920              		.align	2
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 1
 1123:.\Generated_Source\PSoC5/USBFS_std.c ****         /* Set the endpoint Halt */
 1124:.\Generated_Source\PSoC5/USBFS_std.c ****         USBFS_EP[ep].hwEpState |= (USBFS_ENDPOINT_STATUS_HALT);
  946              		.loc 1 1124 0
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 39
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc3FvsEL.s 			page 39
 
 
  947 0012 5300     		lsls	r3, r2, #1
@@ -2338,7 +2338,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 1
 1142:.\Generated_Source\PSoC5/USBFS_std.c ****         requestHandled = USBFS_InitNoDataControlTransfer();
  984              		.loc 1 1142 0
  985 004e FFF7FEFF 		bl	USBFS_InitNoDataControlTransfer
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 40
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc3FvsEL.s 			page 40
 
 
  986              	.LVL92:
@@ -2398,7 +2398,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 1
 1165:.\Generated_Source\PSoC5/USBFS_std.c ****     uint8 ep;
 1166:.\Generated_Source\PSoC5/USBFS_std.c **** 
 1167:.\Generated_Source\PSoC5/USBFS_std.c ****     /* Clear endpoint halt */
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 41
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc3FvsEL.s 			page 41
 
 
 1168:.\Generated_Source\PSoC5/USBFS_std.c ****     ep = USBFS_wIndexLoReg & USBFS_DIR_UNUSED;
@@ -2458,7 +2458,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 1
  1053              		.loc 1 1184 0
  1054 0038 1279     		ldrb	r2, [r2, #4]	@ zero_extendqisi2
  1055 003a 12F0800F 		tst	r2, #128
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 42
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc3FvsEL.s 			page 42
 
 
  1056 003e 14D0     		beq	.L88
@@ -2518,7 +2518,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 1
  1094 007a 05D1     		bne	.L91
 1201:.\Generated_Source\PSoC5/USBFS_std.c ****             {       
 1202:.\Generated_Source\PSoC5/USBFS_std.c ****                 /* Allow application to read full buffer */
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 43
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc3FvsEL.s 			page 43
 
 
 1203:.\Generated_Source\PSoC5/USBFS_std.c ****                 USBFS_SIE_EP_BASE.sieEp[ep].epCr0 = USBFS_MODE_NAK_OUT;
@@ -2578,7 +2578,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 1
  1139              		.type	USBFS_ValidateAlternateSetting, %function
  1140              	USBFS_ValidateAlternateSetting:
  1141              	.LFB11:
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 44
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc3FvsEL.s 			page 44
 
 
 1212:.\Generated_Source\PSoC5/USBFS_std.c ****     }
@@ -2638,7 +2638,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 1
  1163              		.loc 1 1244 0
  1164 0014 4368     		ldr	r3, [r0, #4]
  1165 0016 1B79     		ldrb	r3, [r3, #4]	@ zero_extendqisi2
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 45
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc3FvsEL.s 			page 45
 
 
  1166              	.LVL109:
@@ -2698,7 +2698,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 1
  1204 0044 00000000 		.word	USBFS_interfaceSetting
  1205 0048 00000000 		.word	USBFS_interfaceSettingLast
  1206              		.cfi_endproc
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 46
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc3FvsEL.s 			page 46
 
 
  1207              	.LFE11:
@@ -2758,7 +2758,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 1
  1256 003a 9600     		.2byte	(.L111-.L108)/2
  1257              		.p2align 1
  1258              	.L109:
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 47
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc3FvsEL.s 			page 47
 
 
  110:.\Generated_Source\PSoC5/USBFS_std.c ****                 {
@@ -2818,7 +2818,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 1
  127:.\Generated_Source\PSoC5/USBFS_std.c ****                         requestHandled  = USBFS_InitControlRead();
  1303              		.loc 1 127 0
  1304 007c 5A68     		ldr	r2, [r3, #4]
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 48
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc3FvsEL.s 			page 48
 
 
  1305 007e 9278     		ldrb	r2, [r2, #2]	@ zero_extendqisi2
@@ -2878,7 +2878,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 1
  1351 00b6 EFD1     		bne	.L117
  1352              	.L116:
  176:.\Generated_Source\PSoC5/USBFS_std.c ****                         (USBFS_wValueLoReg == USBFS_DEVICE0_DESCR[USBFS_DEVICE_DESCR_SN_SHIFT]))
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 49
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc3FvsEL.s 			page 49
 
 
  1353              		.loc 1 176 0 is_stmt 1
@@ -2938,7 +2938,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 1
  1398 00f6 022B     		cmp	r3, #2
  1399 00f8 40F00781 		bne	.L156
  217:.\Generated_Source\PSoC5/USBFS_std.c ****                         USBFS_tBuffer[0u]     = USBFS_EP[USBFS_wIndexLoReg & USBFS_DIR_UNUSED].hwEp
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 50
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc3FvsEL.s 			page 50
 
 
  1400              		.loc 1 217 0
@@ -2998,7 +2998,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 1
  1444              	.LVL141:
  231:.\Generated_Source\PSoC5/USBFS_std.c ****                     default:    /* requestHandled is initialized as FALSE by default */
  1445              		.loc 1 231 0
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 51
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc3FvsEL.s 			page 51
 
 
  1446 0140 10BD     		pop	{r4, pc}
@@ -3058,7 +3058,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 1
  1491 017a CB00     		.2byte	(.L144-.L122)/2
  1492 017c 9600     		.2byte	(.L123-.L122)/2
  1493 017e CB00     		.2byte	(.L144-.L122)/2
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 52
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc3FvsEL.s 			page 52
 
 
  1494 0180 0B00     		.2byte	(.L124-.L122)/2
@@ -3118,7 +3118,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 1
  1539              	.L129:
  277:.\Generated_Source\PSoC5/USBFS_std.c ****                     {
  1540              		.loc 1 277 0 is_stmt 1
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 53
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc3FvsEL.s 			page 53
 
 
  1541 01ba 334B     		ldr	r3, .L160+32
@@ -3178,7 +3178,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 1
  1587 01fc 04D0     		beq	.L131
  297:.\Generated_Source\PSoC5/USBFS_std.c ****                     
  1588              		.loc 1 297 0
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 54
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc3FvsEL.s 			page 54
 
 
  1589 01fe 0122     		movs	r2, #1
@@ -3238,7 +3238,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 1
  1635 0244 10BD     		pop	{r4, pc}
  1636              	.LVL169:
  1637              	.L132:
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 55
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc3FvsEL.s 			page 55
 
 
  330:.\Generated_Source\PSoC5/USBFS_std.c ****                         {
@@ -3298,7 +3298,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 1
  1687 02b6 13F0FF0F 		tst	r3, #255
  1688 02ba 38D1     		bne	.L152
  347:.\Generated_Source\PSoC5/USBFS_std.c ****                         }
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 56
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc3FvsEL.s 			page 56
 
 
  1689              		.loc 1 347 0
@@ -3358,7 +3358,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 1
  1736              	.L139:
  1737 0302 0020     		movs	r0, #0
  1738              	.LVL180:
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 57
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc3FvsEL.s 			page 57
 
 
  1739 0304 10BD     		pop	{r4, pc}
@@ -3418,7 +3418,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 1
  1792              		.cfi_endproc
  1793              	.LFE0:
  1794              		.size	USBFS_HandleStandardRqst, .-USBFS_HandleStandardRqst
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 58
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc3FvsEL.s 			page 58
 
 
  1795              		.bss
@@ -3478,7 +3478,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 1
  1849 0056 02       		.uleb128 0x2
  1850 0057 08       		.byte	0x8
  1851 0058 07       		.byte	0x7
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 59
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc3FvsEL.s 			page 59
 
 
  1852 0059 5C000000 		.4byte	.LASF7
@@ -3538,7 +3538,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 1
  1906 00c5 E2030000 		.4byte	.LASF17
  1907 00c9 03       		.byte	0x3
  1908 00ca 96       		.byte	0x96
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 60
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc3FvsEL.s 			page 60
 
 
  1909 00cb 6B000000 		.4byte	0x6b
@@ -3598,7 +3598,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 1
  1963 0134 81010000 		.4byte	0x181
  1964 0138 07       		.uleb128 0x7
  1965 0139 8D020000 		.4byte	.LASF24
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 61
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc3FvsEL.s 			page 61
 
 
  1966 013d 03       		.byte	0x3
@@ -3658,7 +3658,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 1
  2020 01a6 AD       		.byte	0xad
  2021 01a7 77000000 		.4byte	0x77
  2022 01ab 02       		.byte	0x2
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 62
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc3FvsEL.s 			page 62
 
 
  2023 01ac 00       		.byte	0
@@ -3718,7 +3718,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 1
  2077 0213 03       		.byte	0x3
  2078 0214 BA       		.byte	0xba
  2079 0215 1B020000 		.4byte	0x21b
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 63
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc3FvsEL.s 			page 63
 
 
  2080 0219 04       		.byte	0x4
@@ -3778,7 +3778,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 1
  2134 0282 03       		.byte	0x3
  2135 0283 DE       		.byte	0xde
  2136 0284 6B000000 		.4byte	0x6b
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 64
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc3FvsEL.s 			page 64
 
 
  2137 0288 02       		.byte	0x2
@@ -3838,7 +3838,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 1
  2191 02f4 04       		.byte	0x4
  2192 02f5 07       		.uleb128 0x7
  2193 02f6 9F060000 		.4byte	.LASF50
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 65
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc3FvsEL.s 			page 65
 
 
  2194 02fa 03       		.byte	0x3
@@ -3898,7 +3898,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 1
  2248 0365 A6020000 		.4byte	0x2a6
  2249 0369 74030000 		.4byte	0x374
  2250 036d 0D       		.uleb128 0xd
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 66
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc3FvsEL.s 			page 66
 
 
  2251 036e A9000000 		.4byte	0xa9
@@ -3958,7 +3958,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 1
  2305 03e9 01       		.uleb128 0x1
  2306 03ea 9C       		.byte	0x9c
  2307 03eb FE030000 		.4byte	0x3fe
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 67
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc3FvsEL.s 			page 67
 
 
  2308 03ef 11       		.uleb128 0x11
@@ -4018,7 +4018,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 1
  2362 0471 6B000000 		.4byte	0x6b
  2363 0475 D9000000 		.4byte	.LLST5
  2364 0479 14       		.uleb128 0x14
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 68
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc3FvsEL.s 			page 68
 
 
  2365 047a EC010000 		.4byte	.LASF64
@@ -4078,7 +4078,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 1
  2419 0506 01       		.uleb128 0x1
  2420 0507 9C       		.byte	0x9c
  2421 0508 46050000 		.4byte	0x546
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 69
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc3FvsEL.s 			page 69
 
 
  2422 050c 14       		.uleb128 0x14
@@ -4138,7 +4138,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 1
  2476 0596 11       		.uleb128 0x11
  2477 0597 6900     		.ascii	"i\000"
  2478 0599 01       		.byte	0x1
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 70
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc3FvsEL.s 			page 70
 
 
  2479 059a 3E02     		.2byte	0x23e
@@ -4198,7 +4198,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 1
  2533 062b 01       		.byte	0x1
  2534 062c 3004     		.2byte	0x430
  2535 062e 6B000000 		.4byte	0x6b
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 71
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc3FvsEL.s 			page 71
 
 
  2536 0632 D5030000 		.4byte	.LLST23
@@ -4258,7 +4258,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 1
  2590 06bd 12       		.uleb128 0x12
  2591 06be 97020000 		.4byte	.LASF80
  2592 06c2 01       		.byte	0x1
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 72
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc3FvsEL.s 			page 72
 
 
  2593 06c3 CF04     		.2byte	0x4cf
@@ -4318,7 +4318,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 1
  2647 074f 57       		.byte	0x57
  2648 0750 6B000000 		.4byte	0x6b
  2649 0754 02070000 		.4byte	.LLST33
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 73
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc3FvsEL.s 			page 73
 
 
  2650 0758 19       		.uleb128 0x19
@@ -4378,7 +4378,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 1
  2704 07df 8A000000 		.4byte	.LVL123
  2705 07e3 090A0000 		.4byte	0xa09
  2706 07e7 16       		.uleb128 0x16
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 74
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc3FvsEL.s 			page 74
 
 
  2707 07e8 E8000000 		.4byte	.LVL134
@@ -4438,7 +4438,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 1
  2761 0872 2A020000 		.4byte	.LVL166
  2762 0876 7A060000 		.4byte	0x67a
  2763 087a 16       		.uleb128 0x16
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 75
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc3FvsEL.s 			page 75
 
 
  2764 087b 44020000 		.4byte	.LVL168
@@ -4498,7 +4498,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 1
  2818 0903 61       		.byte	0x61
  2819 0904 08090000 		.4byte	0x908
  2820 0908 15       		.uleb128 0x15
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 76
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc3FvsEL.s 			page 76
 
 
  2821 0909 ED080000 		.4byte	0x8ed
@@ -4558,7 +4558,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 1
  2875 0987 00       		.byte	0
  2876 0988 1E       		.uleb128 0x1e
  2877 0989 DA040000 		.4byte	.LASF99
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 77
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc3FvsEL.s 			page 77
 
 
  2878 098d 04       		.byte	0x4
@@ -4618,7 +4618,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 1
  2932 0a05 6B000000 		.4byte	0x6b
  2933 0a09 1F       		.uleb128 0x1f
  2934 0a0a 3C000000 		.4byte	.LASF107
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 78
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc3FvsEL.s 			page 78
 
 
  2935 0a0e 04       		.byte	0x4
@@ -4678,7 +4678,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 1
  2989 002b 00       		.byte	0
  2990 002c 03       		.uleb128 0x3
  2991 002d 0E       		.uleb128 0xe
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 79
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc3FvsEL.s 			page 79
 
 
  2992 002e 3A       		.uleb128 0x3a
@@ -4738,7 +4738,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 1
  3046 0064 00       		.byte	0
  3047 0065 00       		.byte	0
  3048 0066 09       		.uleb128 0x9
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 80
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc3FvsEL.s 			page 80
 
 
  3049 0067 0F       		.uleb128 0xf
@@ -4798,7 +4798,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 1
  3103 009d 05       		.uleb128 0x5
  3104 009e 01       		.uleb128 0x1
  3105 009f 13       		.uleb128 0x13
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 81
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc3FvsEL.s 			page 81
 
 
  3106 00a0 00       		.byte	0
@@ -4858,7 +4858,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 1
  3160 00d7 17       		.uleb128 0x17
  3161 00d8 00       		.byte	0
  3162 00d9 00       		.byte	0
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 82
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc3FvsEL.s 			page 82
 
 
  3163 00da 12       		.uleb128 0x12
@@ -4918,7 +4918,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 1
  3217 0111 17       		.uleb128 0x17
  3218 0112 00       		.byte	0
  3219 0113 00       		.byte	0
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 83
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc3FvsEL.s 			page 83
 
 
  3220 0114 15       		.uleb128 0x15
@@ -4978,7 +4978,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 1
  3274 014d 49       		.uleb128 0x49
  3275 014e 13       		.uleb128 0x13
  3276 014f 11       		.uleb128 0x11
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 84
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc3FvsEL.s 			page 84
 
 
  3277 0150 01       		.uleb128 0x1
@@ -5038,7 +5038,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 1
  3331 018b 00       		.byte	0
  3332 018c 02       		.uleb128 0x2
  3333 018d 18       		.uleb128 0x18
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 85
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc3FvsEL.s 			page 85
 
 
  3334 018e 9142     		.uleb128 0x2111
@@ -5098,7 +5098,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 1
  3388 01c5 19       		.uleb128 0x19
  3389 01c6 00       		.byte	0
  3390 01c7 00       		.byte	0
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 86
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc3FvsEL.s 			page 86
 
 
  3391 01c8 20       		.uleb128 0x20
@@ -5158,7 +5158,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 1
  3445              	.LLST2:
  3446 0054 00000000 		.4byte	.LVL9
  3447 0058 18000000 		.4byte	.LVL12
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 87
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc3FvsEL.s 			page 87
 
 
  3448 005c 0100     		.2byte	0x1
@@ -5218,7 +5218,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 1
  3502 00dd C0000000 		.4byte	.LVL26
  3503 00e1 0100     		.2byte	0x1
  3504 00e3 51       		.byte	0x51
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 88
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc3FvsEL.s 			page 88
 
 
  3505 00e4 00000000 		.4byte	0
@@ -5278,7 +5278,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 1
  3559 0173 18000000 		.4byte	.LVL33
  3560 0177 0100     		.2byte	0x1
  3561 0179 50       		.byte	0x50
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 89
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc3FvsEL.s 			page 89
 
 
  3562 017a 18000000 		.4byte	.LVL33
@@ -5338,7 +5338,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 1
  3616 01fc 9F       		.byte	0x9f
  3617 01fd 06000000 		.4byte	.LVL39
  3618 0201 22000000 		.4byte	.LVL40
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 90
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc3FvsEL.s 			page 90
 
 
  3619 0205 0100     		.2byte	0x1
@@ -5398,7 +5398,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 1
  3673 0293 3E000000 		.4byte	.LVL46
  3674 0297 42000000 		.4byte	.LVL47
  3675 029b 0100     		.2byte	0x1
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 91
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc3FvsEL.s 			page 91
 
 
  3676 029d 53       		.byte	0x53
@@ -5458,7 +5458,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 1
  3730 031e 01       		.byte	0x1
  3731 031f 33       		.byte	0x33
  3732 0320 1A       		.byte	0x1a
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 92
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc3FvsEL.s 			page 92
 
 
  3733 0321 9F       		.byte	0x9f
@@ -5518,7 +5518,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 1
  3787 03aa 4A010000 		.4byte	.LVL68
  3788 03ae 58010000 		.4byte	.LVL70
  3789 03b2 0100     		.2byte	0x1
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 93
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc3FvsEL.s 			page 93
 
 
  3790 03b4 50       		.byte	0x50
@@ -5578,7 +5578,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 1
  3844 043f 44000000 		.4byte	.LVL90
  3845 0443 46000000 		.4byte	.LVL91
  3846 0447 0100     		.2byte	0x1
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 94
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc3FvsEL.s 			page 94
 
 
  3847 0449 52       		.byte	0x52
@@ -5638,7 +5638,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 1
  3901 04d7 36000000 		.4byte	.LVL113
  3902 04db 0200     		.2byte	0x2
  3903 04dd 31       		.byte	0x31
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 95
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc3FvsEL.s 			page 95
 
 
  3904 04de 9F       		.byte	0x9f
@@ -5698,7 +5698,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 1
  3958 0567 9F       		.byte	0x9f
  3959 0568 58000000 		.4byte	.LVL120
  3960 056c 5A000000 		.4byte	.LVL121
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 96
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc3FvsEL.s 			page 96
 
 
  3961 0570 0100     		.2byte	0x1
@@ -5758,7 +5758,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 1
  4015 05fa 0100     		.2byte	0x1
  4016 05fc 50       		.byte	0x50
  4017 05fd 52010000 		.4byte	.LVL145
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 97
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc3FvsEL.s 			page 97
 
 
  4018 0601 66010000 		.4byte	.LVL147
@@ -5818,7 +5818,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 1
  4072 068b 66020000 		.4byte	.LVL170
  4073 068f 0200     		.2byte	0x2
  4074 0691 30       		.byte	0x30
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 98
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc3FvsEL.s 			page 98
 
 
  4075 0692 9F       		.byte	0x9f
@@ -5878,7 +5878,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 1
  4129 071f 53       		.byte	0x53
  4130 0720 00000000 		.4byte	0
  4131 0724 00000000 		.4byte	0
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 99
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc3FvsEL.s 			page 99
 
 
  4132              	.LLST35:
@@ -5938,7 +5938,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 1
  4186 07b9 A2000000 		.4byte	.LVL130
  4187 07bd 0100     		.2byte	0x1
  4188 07bf 51       		.byte	0x51
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 100
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc3FvsEL.s 			page 100
 
 
  4189 07c0 A2000000 		.4byte	.LVL130
@@ -5998,7 +5998,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 1
  4243 0851 0100     		.2byte	0x1
  4244 0853 50       		.byte	0x50
  4245 0854 B0010000 		.4byte	.LVL154
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 101
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc3FvsEL.s 			page 101
 
 
  4246 0858 CA010000 		.4byte	.LVL155
@@ -6058,7 +6058,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 1
  4300 0014 28000000 		.4byte	.LFE5
  4301 0018 00000000 		.4byte	.LFB4
  4302 001c 1C010000 		.4byte	.LFE4
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 102
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc3FvsEL.s 			page 102
 
 
  4303 0020 00000000 		.4byte	.LFB6
@@ -6118,7 +6118,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 1
  4337 0052 636F6E66 		.ascii	"confIndex\000"
  4337      496E6465 
  4337      7800
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 103
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc3FvsEL.s 			page 103
 
 
  4338              	.LASF7:
@@ -6178,7 +6178,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 1
  4361 00ff 55534246 		.ascii	"USBFS_deviceAddress\000"
  4361      535F6465 
  4361      76696365 
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 104
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc3FvsEL.s 			page 104
 
 
  4361      41646472 
@@ -6238,7 +6238,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 1
  4385      45545449 
  4385      4E47535F 
  4386              	.LASF77:
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 105
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc3FvsEL.s 			page 105
 
 
  4387 01b5 55534246 		.ascii	"USBFS_SetEndpointHalt\000"
@@ -6298,7 +6298,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 1
  4409      637200
  4410              	.LASF44:
  4411 0263 55534246 		.ascii	"USBFS_sie_ep_struct\000"
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 106
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc3FvsEL.s 			page 106
 
 
  4411      535F7369 
@@ -6358,7 +6358,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 1
  4435      00
  4436              	.LASF37:
  4437 0316 705F6C69 		.ascii	"p_list\000"
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 107
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc3FvsEL.s 			page 107
 
 
  4437      737400
@@ -6418,7 +6418,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 1
  4463 03c3 666C6F61 		.ascii	"float\000"
  4463      7400
  4464              	.LASF97:
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 108
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc3FvsEL.s 			page 108
 
 
  4465 03c9 55534246 		.ascii	"USBFS_STRING_DESCRIPTORS\000"
@@ -6478,7 +6478,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 1
  4487              	.LASF66:
  4488 0498 55534246 		.ascii	"USBFS_GetConfigTablePtr\000"
  4488      535F4765 
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 109
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc3FvsEL.s 			page 109
 
 
  4488      74436F6E 
@@ -6538,7 +6538,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 1
  4510      65725369 
  4510      7A6500
  4511              	.LASF78:
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 110
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc3FvsEL.s 			page 110
 
 
  4512 0571 72657175 		.ascii	"requestHandled\000"
@@ -6598,7 +6598,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 1
  4532      2D736563 
  4532      74696F6E 
  4533              	.LASF53:
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccvH7eQO.s 			page 111
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc3FvsEL.s 			page 111
 
 
  4534 067c 72774472 		.ascii	"rwDr\000"

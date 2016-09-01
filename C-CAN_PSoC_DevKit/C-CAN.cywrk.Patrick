@@ -586,6 +586,7 @@
 <name v=".\C-CAN.cydsn\C-CAN.cydwr" />
 <name v=".\C-CAN.cydsn\Generated_Source\PSoC5\Encoder_Left.c" />
 <name v=".\C-CAN.cydsn\Generated_Source\PSoC5\CAN_ISR.c" />
+<name v=".\C-CAN.cydsn\Generated_Source\PSoC5\Tick_ISR.c" />
 </OpenDocs>
 <config v="" />
 <AutoUpdate v="true" />

@@ -99,6 +99,9 @@ ADC_SAR_1_countsPerVolt
 ADC_SAR_1_shift     0x2               .\ARM_GCC_493\Debug\C-CAN.a(ADC_SAR_1.o)
 bIndex              0x1               .\ARM_GCC_493\Debug\main.o
 errno               0x4               c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-reent.o)
+right               0x94              .\ARM_GCC_493\Debug\main.o
+throttle            0x8c              .\ARM_GCC_493\Debug\main.o
+left                0x94              .\ARM_GCC_493\Debug\main.o
 ADC_SAR_1_countsPer10Volt
                     0x4               .\ARM_GCC_493\Debug\C-CAN.a(ADC_SAR_1.o)
 TxMessage1          0x8               .\ARM_GCC_493\Debug\main.o
@@ -106,6 +109,7 @@ RxMessage1          0x8               .\ARM_GCC_493\Debug\main.o
 RxFlag1             0x1               .\ARM_GCC_493\Debug\main.o
 dieTemperature      0x2               .\ARM_GCC_493\Debug\C-CAN.a(CyFlash.o)
 ADC_SAR_1_offset    0x2               .\ARM_GCC_493\Debug\C-CAN.a(ADC_SAR_1.o)
+steering            0x8c              .\ARM_GCC_493\Debug\main.o
 RXDLC1              0x1               .\ARM_GCC_493\Debug\main.o
 
 Memory Configuration
@@ -155,7 +159,7 @@ END GROUP
                 0x00000040                CY_METADATA_SIZE = 0x40
                 0x00000001                CY_APPL_LOADABLE = 0x1
                 0x00000000                CY_CHECKSUM_EXCLUDE_SIZE = ALIGN (0x0, CY_FLASH_ROW_SIZE)
-                0x1fff8268                PROVIDE (__cy_heap_start, _end)
+                0x1fff84a8                PROVIDE (__cy_heap_start, _end)
                 0x00000001                PROVIDE (__cy_region_num, ((__cy_regions_end - __cy_regions) / 0x10))
                 0x20008000                PROVIDE (__cy_stack, (ORIGIN (ram) + 0x10000))
                 0x20007800                PROVIDE (__cy_heap_end, (__cy_stack - 0x800))
@@ -172,7 +176,7 @@ END GROUP
                 0x00000800                ee_size = (CY_APPL_LOADABLE && ! (CY_EE_IN_BTLDR))?(CY_EE_SIZE / CY_APPL_MAX):CY_EE_SIZE
                 0x00000580                PROVIDE (CY_ECC_OFFSET, ecc_offset)
 
-.text           0x00002c00     0x6438
+.text           0x00002c00     0x68c8
  CREATE_OBJECT_SYMBOLS
                 0x00002c00                PROVIDE (__cy_interrupt_vector, RomVectors)
  *(.romvectors)
@@ -194,1085 +198,1114 @@ END GROUP
                 0x00002c74                _start
                 0x00002c74                _mainCRTStartup
  .text          0x00002ce8        0x0 .\ARM_GCC_493\Debug\main.o
+ .text.SysTick_ISR
+                0x00002ce8       0xb8 .\ARM_GCC_493\Debug\main.o
+                0x00002ce8                SysTick_ISR
  .text.CAN_1_SendMsg
-                0x00002ce8      0x180 .\ARM_GCC_493\Debug\main.o
-                0x00002ce8                CAN_1_SendMsg
+                0x00002da0      0x180 .\ARM_GCC_493\Debug\main.o
+                0x00002da0                CAN_1_SendMsg
  .text.CAN_1_TxCancel
-                0x00002e68       0x1c .\ARM_GCC_493\Debug\main.o
-                0x00002e68                CAN_1_TxCancel
+                0x00002f20       0x1c .\ARM_GCC_493\Debug\main.o
+                0x00002f20                CAN_1_TxCancel
  .text.CAN_1_SendMsg0
-                0x00002e84       0x64 .\ARM_GCC_493\Debug\main.o
-                0x00002e84                CAN_1_SendMsg0
+                0x00002f3c       0x64 .\ARM_GCC_493\Debug\main.o
+                0x00002f3c                CAN_1_SendMsg0
  .text.CAN_1_ReceiveMsg
-                0x00002ee8       0x18 .\ARM_GCC_493\Debug\main.o
-                0x00002ee8                CAN_1_ReceiveMsg
- .text.GetSample
-                0x00002f00       0x74 .\ARM_GCC_493\Debug\main.o
-                0x00002f00                GetSample
- .text.GetRPM   0x00002f74      0x120 .\ARM_GCC_493\Debug\main.o
-                0x00002f74                GetRPM
+                0x00002fa0       0x18 .\ARM_GCC_493\Debug\main.o
+                0x00002fa0                CAN_1_ReceiveMsg
  .text.startup.main
-                0x00003094      0x260 .\ARM_GCC_493\Debug\main.o
-                0x00003094                main
- .text          0x000032f4        0x0 .\ARM_GCC_493\Debug\cymetadata.o
- .text          0x000032f4        0x0 .\ARM_GCC_493\Debug\Cm3Start.o
+                0x00002fb8      0x55c .\ARM_GCC_493\Debug\main.o
+                0x00002fb8                main
+ .text.GetSample
+                0x00003514       0x7c .\ARM_GCC_493\Debug\main.o
+                0x00003514                GetSample
+ .text.GetRPM   0x00003590      0x128 .\ARM_GCC_493\Debug\main.o
+                0x00003590                GetRPM
+ .text.SensorSet
+                0x000036b8       0x1c .\ARM_GCC_493\Debug\main.o
+                0x000036b8                SensorSet
+ .text.EncoderSet
+                0x000036d4       0x1c .\ARM_GCC_493\Debug\main.o
+                0x000036d4                EncoderSet
+ .text.SensorInit
+                0x000036f0       0x18 .\ARM_GCC_493\Debug\main.o
+                0x000036f0                SensorInit
+ .text.EncoderInit
+                0x00003708       0x1c .\ARM_GCC_493\Debug\main.o
+                0x00003708                EncoderInit
+ .text.CAN_Send
+                0x00003724       0x2c .\ARM_GCC_493\Debug\main.o
+                0x00003724                CAN_Send
+ .text.SetEncoderFlag
+                0x00003750        0x8 .\ARM_GCC_493\Debug\main.o
+                0x00003750                SetEncoderFlag
+ .text.SetSensorFlag
+                0x00003758        0x8 .\ARM_GCC_493\Debug\main.o
+                0x00003758                SetSensorFlag
+ .text.GetEncoderRate
+                0x00003760       0x14 .\ARM_GCC_493\Debug\main.o
+                0x00003760                GetEncoderRate
+ .text.GetSensorRate
+                0x00003774       0x14 .\ARM_GCC_493\Debug\main.o
+                0x00003774                GetSensorRate
+ .text          0x00003788        0x0 .\ARM_GCC_493\Debug\cymetadata.o
+ .text          0x00003788        0x0 .\ARM_GCC_493\Debug\Cm3Start.o
  .text.IntDefaultHandler
-                0x000032f4        0x4 .\ARM_GCC_493\Debug\Cm3Start.o
-                0x000032f4                IntDefaultHandler
- .text._exit    0x000032f8        0xc .\ARM_GCC_493\Debug\Cm3Start.o
-                0x000032f8                _exit
- .text._sbrk    0x00003304       0x30 .\ARM_GCC_493\Debug\Cm3Start.o
-                0x00003304                _sbrk
- .text.Start_c  0x00003334       0x58 .\ARM_GCC_493\Debug\Cm3Start.o
-                0x00003334                Start_c
+                0x00003788        0x4 .\ARM_GCC_493\Debug\Cm3Start.o
+                0x00003788                IntDefaultHandler
+ .text._exit    0x0000378c        0xc .\ARM_GCC_493\Debug\Cm3Start.o
+                0x0000378c                _exit
+ .text._sbrk    0x00003798       0x30 .\ARM_GCC_493\Debug\Cm3Start.o
+                0x00003798                _sbrk
+ .text.Start_c  0x000037c8       0x58 .\ARM_GCC_493\Debug\Cm3Start.o
+                0x000037c8                Start_c
  .text.startup.initialize_psoc
-                0x0000338c       0x74 .\ARM_GCC_493\Debug\Cm3Start.o
-                0x0000338c                initialize_psoc
- .text          0x00003400        0x0 .\ARM_GCC_493\Debug\cybootloader.o
- .text          0x00003400        0x0 .\ARM_GCC_493\Debug\C-CAN.a(cyfitter_cfg.o)
+                0x00003820       0x74 .\ARM_GCC_493\Debug\Cm3Start.o
+                0x00003820                initialize_psoc
+ .text          0x00003894        0x0 .\ARM_GCC_493\Debug\cybootloader.o
+ .text          0x00003894        0x0 .\ARM_GCC_493\Debug\C-CAN.a(cyfitter_cfg.o)
  .text.SetAnalogRoutingPumps
-                0x00003400       0x20 .\ARM_GCC_493\Debug\C-CAN.a(cyfitter_cfg.o)
-                0x00003400                SetAnalogRoutingPumps
+                0x00003894       0x20 .\ARM_GCC_493\Debug\C-CAN.a(cyfitter_cfg.o)
+                0x00003894                SetAnalogRoutingPumps
  .text.AMux_1_Set
-                0x00003420       0x58 .\ARM_GCC_493\Debug\C-CAN.a(cyfitter_cfg.o)
-                0x00003420                AMux_1_Set
+                0x000038b4       0x58 .\ARM_GCC_493\Debug\C-CAN.a(cyfitter_cfg.o)
+                0x000038b4                AMux_1_Set
  .text.AMux_1_Unset
-                0x00003478       0x60 .\ARM_GCC_493\Debug\C-CAN.a(cyfitter_cfg.o)
-                0x00003478                AMux_1_Unset
+                0x0000390c       0x60 .\ARM_GCC_493\Debug\C-CAN.a(cyfitter_cfg.o)
+                0x0000390c                AMux_1_Unset
  .text.cyfitter_cfg
-                0x000034d8      0x2fc .\ARM_GCC_493\Debug\C-CAN.a(cyfitter_cfg.o)
-                0x000034d8                cyfitter_cfg
- .text          0x000037d4        0x0 .\ARM_GCC_493\Debug\C-CAN.a(UART_1.o)
+                0x0000396c      0x2fc .\ARM_GCC_493\Debug\C-CAN.a(cyfitter_cfg.o)
+                0x0000396c                cyfitter_cfg
+ .text          0x00003c68        0x0 .\ARM_GCC_493\Debug\C-CAN.a(UART_1.o)
  .text.UART_1_Start
-                0x000037d4       0x8c .\ARM_GCC_493\Debug\C-CAN.a(UART_1.o)
-                0x000037d4                UART_1_Start
+                0x00003c68       0x8c .\ARM_GCC_493\Debug\C-CAN.a(UART_1.o)
+                0x00003c68                UART_1_Start
  .text.UART_1_Init
-                0x00003860       0x3c .\ARM_GCC_493\Debug\C-CAN.a(UART_1.o)
-                0x00003860                UART_1_Init
+                0x00003cf4       0x3c .\ARM_GCC_493\Debug\C-CAN.a(UART_1.o)
+                0x00003cf4                UART_1_Init
  .text.UART_1_Enable
-                0x0000389c       0x40 .\ARM_GCC_493\Debug\C-CAN.a(UART_1.o)
-                0x0000389c                UART_1_Enable
+                0x00003d30       0x40 .\ARM_GCC_493\Debug\C-CAN.a(UART_1.o)
+                0x00003d30                UART_1_Enable
  .text.UART_1_Stop
-                0x000038dc       0x40 .\ARM_GCC_493\Debug\C-CAN.a(UART_1.o)
-                0x000038dc                UART_1_Stop
+                0x00003d70       0x40 .\ARM_GCC_493\Debug\C-CAN.a(UART_1.o)
+                0x00003d70                UART_1_Stop
  .text.UART_1_ReadControlRegister
-                0x0000391c        0x4 .\ARM_GCC_493\Debug\C-CAN.a(UART_1.o)
-                0x0000391c                UART_1_ReadControlRegister
+                0x00003db0        0x4 .\ARM_GCC_493\Debug\C-CAN.a(UART_1.o)
+                0x00003db0                UART_1_ReadControlRegister
  .text.UART_1_WriteControlRegister
-                0x00003920        0x4 .\ARM_GCC_493\Debug\C-CAN.a(UART_1.o)
-                0x00003920                UART_1_WriteControlRegister
+                0x00003db4        0x4 .\ARM_GCC_493\Debug\C-CAN.a(UART_1.o)
+                0x00003db4                UART_1_WriteControlRegister
  .text.UART_1_SetRxInterruptMode
-                0x00003924        0xc .\ARM_GCC_493\Debug\C-CAN.a(UART_1.o)
-                0x00003924                UART_1_SetRxInterruptMode
+                0x00003db8        0xc .\ARM_GCC_493\Debug\C-CAN.a(UART_1.o)
+                0x00003db8                UART_1_SetRxInterruptMode
  .text.UART_1_ReadRxData
-                0x00003930        0xc .\ARM_GCC_493\Debug\C-CAN.a(UART_1.o)
-                0x00003930                UART_1_ReadRxData
+                0x00003dc4        0xc .\ARM_GCC_493\Debug\C-CAN.a(UART_1.o)
+                0x00003dc4                UART_1_ReadRxData
  .text.UART_1_ReadRxStatus
-                0x0000393c       0x10 .\ARM_GCC_493\Debug\C-CAN.a(UART_1.o)
-                0x0000393c                UART_1_ReadRxStatus
+                0x00003dd0       0x10 .\ARM_GCC_493\Debug\C-CAN.a(UART_1.o)
+                0x00003dd0                UART_1_ReadRxStatus
  .text.UART_1_GetChar
-                0x0000394c       0x28 .\ARM_GCC_493\Debug\C-CAN.a(UART_1.o)
-                0x0000394c                UART_1_GetChar
+                0x00003de0       0x28 .\ARM_GCC_493\Debug\C-CAN.a(UART_1.o)
+                0x00003de0                UART_1_GetChar
  .text.UART_1_GetByte
-                0x00003974       0x1c .\ARM_GCC_493\Debug\C-CAN.a(UART_1.o)
-                0x00003974                UART_1_GetByte
+                0x00003e08       0x1c .\ARM_GCC_493\Debug\C-CAN.a(UART_1.o)
+                0x00003e08                UART_1_GetByte
  .text.UART_1_GetRxBufferSize
-                0x00003990       0x10 .\ARM_GCC_493\Debug\C-CAN.a(UART_1.o)
-                0x00003990                UART_1_GetRxBufferSize
+                0x00003e24       0x10 .\ARM_GCC_493\Debug\C-CAN.a(UART_1.o)
+                0x00003e24                UART_1_GetRxBufferSize
  .text.UART_1_ClearRxBuffer
-                0x000039a0       0x24 .\ARM_GCC_493\Debug\C-CAN.a(UART_1.o)
-                0x000039a0                UART_1_ClearRxBuffer
+                0x00003e34       0x24 .\ARM_GCC_493\Debug\C-CAN.a(UART_1.o)
+                0x00003e34                UART_1_ClearRxBuffer
  .text.UART_1_SetRxAddressMode
-                0x000039c4        0x4 .\ARM_GCC_493\Debug\C-CAN.a(UART_1.o)
-                0x000039c4                UART_1_SetRxAddressMode
+                0x00003e58        0x4 .\ARM_GCC_493\Debug\C-CAN.a(UART_1.o)
+                0x00003e58                UART_1_SetRxAddressMode
  .text.UART_1_SetRxAddress1
-                0x000039c8        0xc .\ARM_GCC_493\Debug\C-CAN.a(UART_1.o)
-                0x000039c8                UART_1_SetRxAddress1
+                0x00003e5c        0xc .\ARM_GCC_493\Debug\C-CAN.a(UART_1.o)
+                0x00003e5c                UART_1_SetRxAddress1
  .text.UART_1_SetRxAddress2
-                0x000039d4        0xc .\ARM_GCC_493\Debug\C-CAN.a(UART_1.o)
-                0x000039d4                UART_1_SetRxAddress2
+                0x00003e68        0xc .\ARM_GCC_493\Debug\C-CAN.a(UART_1.o)
+                0x00003e68                UART_1_SetRxAddress2
  .text.UART_1_SetTxInterruptMode
-                0x000039e0        0xc .\ARM_GCC_493\Debug\C-CAN.a(UART_1.o)
-                0x000039e0                UART_1_SetTxInterruptMode
+                0x00003e74        0xc .\ARM_GCC_493\Debug\C-CAN.a(UART_1.o)
+                0x00003e74                UART_1_SetTxInterruptMode
  .text.UART_1_WriteTxData
-                0x000039ec       0x14 .\ARM_GCC_493\Debug\C-CAN.a(UART_1.o)
-                0x000039ec                UART_1_WriteTxData
+                0x00003e80       0x14 .\ARM_GCC_493\Debug\C-CAN.a(UART_1.o)
+                0x00003e80                UART_1_WriteTxData
  .text.UART_1_ReadTxStatus
-                0x00003a00        0xc .\ARM_GCC_493\Debug\C-CAN.a(UART_1.o)
-                0x00003a00                UART_1_ReadTxStatus
+                0x00003e94        0xc .\ARM_GCC_493\Debug\C-CAN.a(UART_1.o)
+                0x00003e94                UART_1_ReadTxStatus
  .text.UART_1_PutChar
-                0x00003a0c       0x18 .\ARM_GCC_493\Debug\C-CAN.a(UART_1.o)
-                0x00003a0c                UART_1_PutChar
+                0x00003ea0       0x18 .\ARM_GCC_493\Debug\C-CAN.a(UART_1.o)
+                0x00003ea0                UART_1_PutChar
  .text.UART_1_PutString
-                0x00003a24       0x34 .\ARM_GCC_493\Debug\C-CAN.a(UART_1.o)
-                0x00003a24                UART_1_PutString
+                0x00003eb8       0x34 .\ARM_GCC_493\Debug\C-CAN.a(UART_1.o)
+                0x00003eb8                UART_1_PutString
  .text.UART_1_PutArray
-                0x00003a58       0x38 .\ARM_GCC_493\Debug\C-CAN.a(UART_1.o)
-                0x00003a58                UART_1_PutArray
+                0x00003eec       0x38 .\ARM_GCC_493\Debug\C-CAN.a(UART_1.o)
+                0x00003eec                UART_1_PutArray
  .text.UART_1_PutCRLF
-                0x00003a90       0x3c .\ARM_GCC_493\Debug\C-CAN.a(UART_1.o)
-                0x00003a90                UART_1_PutCRLF
+                0x00003f24       0x3c .\ARM_GCC_493\Debug\C-CAN.a(UART_1.o)
+                0x00003f24                UART_1_PutCRLF
  .text.UART_1_GetTxBufferSize
-                0x00003acc       0x1c .\ARM_GCC_493\Debug\C-CAN.a(UART_1.o)
-                0x00003acc                UART_1_GetTxBufferSize
+                0x00003f60       0x1c .\ARM_GCC_493\Debug\C-CAN.a(UART_1.o)
+                0x00003f60                UART_1_GetTxBufferSize
  .text.UART_1_ClearTxBuffer
-                0x00003ae8       0x24 .\ARM_GCC_493\Debug\C-CAN.a(UART_1.o)
-                0x00003ae8                UART_1_ClearTxBuffer
+                0x00003f7c       0x24 .\ARM_GCC_493\Debug\C-CAN.a(UART_1.o)
+                0x00003f7c                UART_1_ClearTxBuffer
  .text.UART_1_SendBreak
-                0x00003b0c       0x5c .\ARM_GCC_493\Debug\C-CAN.a(UART_1.o)
-                0x00003b0c                UART_1_SendBreak
+                0x00003fa0       0x5c .\ARM_GCC_493\Debug\C-CAN.a(UART_1.o)
+                0x00003fa0                UART_1_SendBreak
  .text.UART_1_SetTxAddressMode
-                0x00003b68        0x4 .\ARM_GCC_493\Debug\C-CAN.a(UART_1.o)
-                0x00003b68                UART_1_SetTxAddressMode
- .text          0x00003b6c        0x0 .\ARM_GCC_493\Debug\C-CAN.a(UART_1_IntClock.o)
+                0x00003ffc        0x4 .\ARM_GCC_493\Debug\C-CAN.a(UART_1.o)
+                0x00003ffc                UART_1_SetTxAddressMode
+ .text          0x00004000        0x0 .\ARM_GCC_493\Debug\C-CAN.a(UART_1_IntClock.o)
  .text.UART_1_IntClock_Start
-                0x00003b6c       0x20 .\ARM_GCC_493\Debug\C-CAN.a(UART_1_IntClock.o)
-                0x00003b6c                UART_1_IntClock_Start
+                0x00004000       0x20 .\ARM_GCC_493\Debug\C-CAN.a(UART_1_IntClock.o)
+                0x00004000                UART_1_IntClock_Start
  .text.UART_1_IntClock_Stop
-                0x00003b8c       0x20 .\ARM_GCC_493\Debug\C-CAN.a(UART_1_IntClock.o)
-                0x00003b8c                UART_1_IntClock_Stop
+                0x00004020       0x20 .\ARM_GCC_493\Debug\C-CAN.a(UART_1_IntClock.o)
+                0x00004020                UART_1_IntClock_Stop
  .text.UART_1_IntClock_StopBlock
-                0x00003bac       0x78 .\ARM_GCC_493\Debug\C-CAN.a(UART_1_IntClock.o)
-                0x00003bac                UART_1_IntClock_StopBlock
+                0x00004040       0x78 .\ARM_GCC_493\Debug\C-CAN.a(UART_1_IntClock.o)
+                0x00004040                UART_1_IntClock_StopBlock
  .text.UART_1_IntClock_StandbyPower
-                0x00003c24       0x1c .\ARM_GCC_493\Debug\C-CAN.a(UART_1_IntClock.o)
-                0x00003c24                UART_1_IntClock_StandbyPower
+                0x000040b8       0x1c .\ARM_GCC_493\Debug\C-CAN.a(UART_1_IntClock.o)
+                0x000040b8                UART_1_IntClock_StandbyPower
  .text.UART_1_IntClock_SetDividerRegister
-                0x00003c40       0xe8 .\ARM_GCC_493\Debug\C-CAN.a(UART_1_IntClock.o)
-                0x00003c40                UART_1_IntClock_SetDividerRegister
+                0x000040d4       0xe8 .\ARM_GCC_493\Debug\C-CAN.a(UART_1_IntClock.o)
+                0x000040d4                UART_1_IntClock_SetDividerRegister
  .text.UART_1_IntClock_GetDividerRegister
-                0x00003d28        0xc .\ARM_GCC_493\Debug\C-CAN.a(UART_1_IntClock.o)
-                0x00003d28                UART_1_IntClock_GetDividerRegister
+                0x000041bc        0xc .\ARM_GCC_493\Debug\C-CAN.a(UART_1_IntClock.o)
+                0x000041bc                UART_1_IntClock_GetDividerRegister
  .text.UART_1_IntClock_SetModeRegister
-                0x00003d34       0x14 .\ARM_GCC_493\Debug\C-CAN.a(UART_1_IntClock.o)
-                0x00003d34                UART_1_IntClock_SetModeRegister
+                0x000041c8       0x14 .\ARM_GCC_493\Debug\C-CAN.a(UART_1_IntClock.o)
+                0x000041c8                UART_1_IntClock_SetModeRegister
  .text.UART_1_IntClock_ClearModeRegister
-                0x00003d48       0x14 .\ARM_GCC_493\Debug\C-CAN.a(UART_1_IntClock.o)
-                0x00003d48                UART_1_IntClock_ClearModeRegister
+                0x000041dc       0x14 .\ARM_GCC_493\Debug\C-CAN.a(UART_1_IntClock.o)
+                0x000041dc                UART_1_IntClock_ClearModeRegister
  .text.UART_1_IntClock_GetModeRegister
-                0x00003d5c       0x10 .\ARM_GCC_493\Debug\C-CAN.a(UART_1_IntClock.o)
-                0x00003d5c                UART_1_IntClock_GetModeRegister
+                0x000041f0       0x10 .\ARM_GCC_493\Debug\C-CAN.a(UART_1_IntClock.o)
+                0x000041f0                UART_1_IntClock_GetModeRegister
  .text.UART_1_IntClock_SetSourceRegister
-                0x00003d6c       0x58 .\ARM_GCC_493\Debug\C-CAN.a(UART_1_IntClock.o)
-                0x00003d6c                UART_1_IntClock_SetSourceRegister
+                0x00004200       0x58 .\ARM_GCC_493\Debug\C-CAN.a(UART_1_IntClock.o)
+                0x00004200                UART_1_IntClock_SetSourceRegister
  .text.UART_1_IntClock_GetSourceRegister
-                0x00003dc4       0x10 .\ARM_GCC_493\Debug\C-CAN.a(UART_1_IntClock.o)
-                0x00003dc4                UART_1_IntClock_GetSourceRegister
- *fill*         0x00003dd4        0x4 
- .text          0x00003dd8       0x58 .\ARM_GCC_493\Debug\C-CAN.a(CyBootAsmGnu.o)
-                0x00003dd8                CyDelayCycles
-                0x00003e16                CyEnterCriticalSection
-                0x00003e1e                CyExitCriticalSection
- .text          0x00003e30        0x0 .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
+                0x00004258       0x10 .\ARM_GCC_493\Debug\C-CAN.a(UART_1_IntClock.o)
+                0x00004258                UART_1_IntClock_GetSourceRegister
+ .text          0x00004268       0x58 .\ARM_GCC_493\Debug\C-CAN.a(CyBootAsmGnu.o)
+                0x00004268                CyDelayCycles
+                0x000042a6                CyEnterCriticalSection
+                0x000042ae                CyExitCriticalSection
+ .text          0x000042c0        0x0 .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
  .text.CyIMO_SetTrimValue
-                0x00003e30       0xf4 .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
+                0x000042c0       0xf4 .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
  .text.CySysTickServiceCallbacks
-                0x00003f24       0x28 .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
+                0x000043b4       0x28 .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
  .text.CyPLL_OUT_Start
-                0x00003f4c       0x78 .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
-                0x00003f4c                CyPLL_OUT_Start
+                0x000043dc       0x78 .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
+                0x000043dc                CyPLL_OUT_Start
  .text.CyPLL_OUT_Stop
-                0x00003fc4       0x10 .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
-                0x00003fc4                CyPLL_OUT_Stop
+                0x00004454       0x10 .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
+                0x00004454                CyPLL_OUT_Stop
  .text.CyPLL_OUT_SetPQ
-                0x00003fd4       0x50 .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
-                0x00003fd4                CyPLL_OUT_SetPQ
+                0x00004464       0x50 .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
+                0x00004464                CyPLL_OUT_SetPQ
  .text.CyPLL_OUT_SetSource
-                0x00004024       0x28 .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
-                0x00004024                CyPLL_OUT_SetSource
+                0x000044b4       0x28 .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
+                0x000044b4                CyPLL_OUT_SetSource
  .text.CyIMO_Start
-                0x0000404c       0x6c .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
-                0x0000404c                CyIMO_Start
+                0x000044dc       0x6c .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
+                0x000044dc                CyIMO_Start
  .text.CyIMO_Stop
-                0x000040b8       0x20 .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
-                0x000040b8                CyIMO_Stop
+                0x00004548       0x20 .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
+                0x00004548                CyIMO_Stop
  .text.CyIMO_SetFreq
-                0x000040d8      0x130 .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
-                0x000040d8                CyIMO_SetFreq
+                0x00004568      0x130 .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
+                0x00004568                CyIMO_SetFreq
  .text.CyIMO_SetSource
-                0x00004208       0x50 .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
-                0x00004208                CyIMO_SetSource
+                0x00004698       0x50 .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
+                0x00004698                CyIMO_SetSource
  .text.CyIMO_EnableDoubler
-                0x00004258       0x10 .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
-                0x00004258                CyIMO_EnableDoubler
- .text.CyIMO_DisableDoubler
-                0x00004268       0x10 .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
-                0x00004268                CyIMO_DisableDoubler
- .text.CyMasterClk_SetSource
-                0x00004278       0x18 .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
-                0x00004278                CyMasterClk_SetSource
- .text.CyMasterClk_SetDivider
-                0x00004290        0xc .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
-                0x00004290                CyMasterClk_SetDivider
- .text.CyBusClk_SetDivider
-                0x0000429c      0x110 .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
-                0x0000429c                CyBusClk_SetDivider
- .text.CyUsbClk_SetSource
-                0x000043ac       0x18 .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
-                0x000043ac                CyUsbClk_SetSource
- .text.CyILO_Start1K
-                0x000043c4       0x10 .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
-                0x000043c4                CyILO_Start1K
- .text.CyILO_Stop1K
-                0x000043d4       0x10 .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
-                0x000043d4                CyILO_Stop1K
- .text.CyILO_Start100K
-                0x000043e4       0x10 .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
-                0x000043e4                CyILO_Start100K
- .text.CyILO_Stop100K
-                0x000043f4       0x10 .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
-                0x000043f4                CyILO_Stop100K
- .text.CyILO_Enable33K
-                0x00004404       0x10 .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
-                0x00004404                CyILO_Enable33K
- .text.CyILO_Disable33K
-                0x00004414       0x10 .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
-                0x00004414                CyILO_Disable33K
- .text.CyILO_SetSource
-                0x00004424       0x18 .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
-                0x00004424                CyILO_SetSource
- .text.CyILO_SetPowerMode
-                0x0000443c       0x24 .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
-                0x0000443c                CyILO_SetPowerMode
- .text.CyXTAL_32KHZ_Start
-                0x00004460       0xb4 .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
-                0x00004460                CyXTAL_32KHZ_Start
- .text.CyXTAL_32KHZ_Stop
-                0x00004514       0x3c .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
-                0x00004514                CyXTAL_32KHZ_Stop
- .text.CyXTAL_32KHZ_ReadStatus
-                0x00004550       0x10 .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
-                0x00004550                CyXTAL_32KHZ_ReadStatus
- .text.CyXTAL_32KHZ_SetPowerMode
-                0x00004560       0x90 .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
-                0x00004560                CyXTAL_32KHZ_SetPowerMode
- .text.CyXTAL_Start
-                0x000045f0       0xac .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
-                0x000045f0                CyXTAL_Start
- .text.CyXTAL_Stop
-                0x0000469c       0x10 .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
-                0x0000469c                CyXTAL_Stop
- .text.CyXTAL_EnableErrStatus
-                0x000046ac       0x10 .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
-                0x000046ac                CyXTAL_EnableErrStatus
- .text.CyXTAL_DisableErrStatus
-                0x000046bc       0x10 .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
-                0x000046bc                CyXTAL_DisableErrStatus
- .text.CyXTAL_ReadStatus
-                0x000046cc        0xc .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
-                0x000046cc                CyXTAL_ReadStatus
- .text.CyXTAL_EnableFaultRecovery
-                0x000046d8       0x10 .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
-                0x000046d8                CyXTAL_EnableFaultRecovery
- .text.CyXTAL_DisableFaultRecovery
                 0x000046e8       0x10 .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
-                0x000046e8                CyXTAL_DisableFaultRecovery
+                0x000046e8                CyIMO_EnableDoubler
+ .text.CyIMO_DisableDoubler
+                0x000046f8       0x10 .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
+                0x000046f8                CyIMO_DisableDoubler
+ .text.CyMasterClk_SetSource
+                0x00004708       0x18 .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
+                0x00004708                CyMasterClk_SetSource
+ .text.CyMasterClk_SetDivider
+                0x00004720        0xc .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
+                0x00004720                CyMasterClk_SetDivider
+ .text.CyBusClk_SetDivider
+                0x0000472c      0x110 .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
+                0x0000472c                CyBusClk_SetDivider
+ .text.CyUsbClk_SetSource
+                0x0000483c       0x18 .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
+                0x0000483c                CyUsbClk_SetSource
+ .text.CyILO_Start1K
+                0x00004854       0x10 .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
+                0x00004854                CyILO_Start1K
+ .text.CyILO_Stop1K
+                0x00004864       0x10 .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
+                0x00004864                CyILO_Stop1K
+ .text.CyILO_Start100K
+                0x00004874       0x10 .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
+                0x00004874                CyILO_Start100K
+ .text.CyILO_Stop100K
+                0x00004884       0x10 .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
+                0x00004884                CyILO_Stop100K
+ .text.CyILO_Enable33K
+                0x00004894       0x10 .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
+                0x00004894                CyILO_Enable33K
+ .text.CyILO_Disable33K
+                0x000048a4       0x10 .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
+                0x000048a4                CyILO_Disable33K
+ .text.CyILO_SetSource
+                0x000048b4       0x18 .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
+                0x000048b4                CyILO_SetSource
+ .text.CyILO_SetPowerMode
+                0x000048cc       0x24 .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
+                0x000048cc                CyILO_SetPowerMode
+ .text.CyXTAL_32KHZ_Start
+                0x000048f0       0xb4 .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
+                0x000048f0                CyXTAL_32KHZ_Start
+ .text.CyXTAL_32KHZ_Stop
+                0x000049a4       0x3c .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
+                0x000049a4                CyXTAL_32KHZ_Stop
+ .text.CyXTAL_32KHZ_ReadStatus
+                0x000049e0       0x10 .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
+                0x000049e0                CyXTAL_32KHZ_ReadStatus
+ .text.CyXTAL_32KHZ_SetPowerMode
+                0x000049f0       0x90 .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
+                0x000049f0                CyXTAL_32KHZ_SetPowerMode
+ .text.CyXTAL_Start
+                0x00004a80       0xac .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
+                0x00004a80                CyXTAL_Start
+ .text.CyXTAL_Stop
+                0x00004b2c       0x10 .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
+                0x00004b2c                CyXTAL_Stop
+ .text.CyXTAL_EnableErrStatus
+                0x00004b3c       0x10 .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
+                0x00004b3c                CyXTAL_EnableErrStatus
+ .text.CyXTAL_DisableErrStatus
+                0x00004b4c       0x10 .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
+                0x00004b4c                CyXTAL_DisableErrStatus
+ .text.CyXTAL_ReadStatus
+                0x00004b5c        0xc .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
+                0x00004b5c                CyXTAL_ReadStatus
+ .text.CyXTAL_EnableFaultRecovery
+                0x00004b68       0x10 .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
+                0x00004b68                CyXTAL_EnableFaultRecovery
+ .text.CyXTAL_DisableFaultRecovery
+                0x00004b78       0x10 .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
+                0x00004b78                CyXTAL_DisableFaultRecovery
  .text.CyXTAL_SetStartup
-                0x000046f8       0x18 .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
-                0x000046f8                CyXTAL_SetStartup
+                0x00004b88       0x18 .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
+                0x00004b88                CyXTAL_SetStartup
  .text.CyXTAL_SetFbVoltage
-                0x00004710       0x18 .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
-                0x00004710                CyXTAL_SetFbVoltage
+                0x00004ba0       0x18 .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
+                0x00004ba0                CyXTAL_SetFbVoltage
  .text.CyXTAL_SetWdVoltage
-                0x00004728       0x18 .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
-                0x00004728                CyXTAL_SetWdVoltage
- .text.CyHalt   0x00004740        0x4 .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
-                0x00004740                CyHalt
+                0x00004bb8       0x18 .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
+                0x00004bb8                CyXTAL_SetWdVoltage
+ .text.CyHalt   0x00004bd0        0x4 .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
+                0x00004bd0                CyHalt
  .text.CySoftwareReset
-                0x00004744       0x10 .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
-                0x00004744                CySoftwareReset
- .text.CyDelay  0x00004754       0x48 .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
-                0x00004754                CyDelay
+                0x00004bd4       0x10 .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
+                0x00004bd4                CySoftwareReset
+ .text.CyDelay  0x00004be4       0x48 .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
+                0x00004be4                CyDelay
  .text.CyDelayUs
-                0x0000479c       0x10 .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
-                0x0000479c                CyDelayUs
+                0x00004c2c       0x10 .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
+                0x00004c2c                CyDelayUs
  .text.CyDelayFreq
-                0x000047ac       0x58 .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
-                0x000047ac                CyDelayFreq
+                0x00004c3c       0x58 .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
+                0x00004c3c                CyDelayFreq
  .text.CyWdtStart
-                0x00004804       0x40 .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
-                0x00004804                CyWdtStart
+                0x00004c94       0x40 .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
+                0x00004c94                CyWdtStart
  .text.CyWdtClear
-                0x00004844        0xc .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
-                0x00004844                CyWdtClear
+                0x00004cd4        0xc .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
+                0x00004cd4                CyWdtClear
  .text.CyVdLvDigitEnable
-                0x00004850       0xb0 .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
-                0x00004850                CyVdLvDigitEnable
+                0x00004ce0       0xb0 .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
+                0x00004ce0                CyVdLvDigitEnable
  .text.CyVdLvAnalogEnable
-                0x00004900       0xac .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
-                0x00004900                CyVdLvAnalogEnable
+                0x00004d90       0xac .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
+                0x00004d90                CyVdLvAnalogEnable
  .text.CyVdLvDigitDisable
-                0x000049ac       0x58 .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
-                0x000049ac                CyVdLvDigitDisable
+                0x00004e3c       0x58 .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
+                0x00004e3c                CyVdLvDigitDisable
  .text.CyVdLvAnalogDisable
-                0x00004a04       0x44 .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
-                0x00004a04                CyVdLvAnalogDisable
+                0x00004e94       0x44 .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
+                0x00004e94                CyVdLvAnalogDisable
  .text.CyVdHvAnalogEnable
-                0x00004a48       0x78 .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
-                0x00004a48                CyVdHvAnalogEnable
+                0x00004ed8       0x78 .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
+                0x00004ed8                CyVdHvAnalogEnable
  .text.CyVdHvAnalogDisable
-                0x00004ac0       0x38 .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
-                0x00004ac0                CyVdHvAnalogDisable
+                0x00004f50       0x38 .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
+                0x00004f50                CyVdHvAnalogDisable
  .text.CyVdStickyStatus
-                0x00004af8       0x2c .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
-                0x00004af8                CyVdStickyStatus
+                0x00004f88       0x2c .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
+                0x00004f88                CyVdStickyStatus
  .text.CyVdRealTimeStatus
-                0x00004b24       0x1c .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
-                0x00004b24                CyVdRealTimeStatus
+                0x00004fb4       0x1c .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
+                0x00004fb4                CyVdRealTimeStatus
  .text.CyDisableInts
-                0x00004b40       0x1c .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
-                0x00004b40                CyDisableInts
+                0x00004fd0       0x1c .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
+                0x00004fd0                CyDisableInts
  .text.CyEnableInts
-                0x00004b5c       0x18 .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
-                0x00004b5c                CyEnableInts
+                0x00004fec       0x18 .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
+                0x00004fec                CyEnableInts
  .text.CyFlushCache
-                0x00004b74       0x44 .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
-                0x00004b74                CyFlushCache
+                0x00005004       0x44 .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
+                0x00005004                CyFlushCache
  .text.CyIntSetSysVector
-                0x00004bb8       0x1c .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
-                0x00004bb8                CyIntSetSysVector
+                0x00005048       0x1c .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
+                0x00005048                CyIntSetSysVector
  .text.CyIntGetSysVector
-                0x00004bd4       0x18 .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
-                0x00004bd4                CyIntGetSysVector
+                0x00005064       0x18 .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
+                0x00005064                CyIntGetSysVector
  .text.CyIntSetVector
-                0x00004bec       0x20 .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
-                0x00004bec                CyIntSetVector
+                0x0000507c       0x20 .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
+                0x0000507c                CyIntSetVector
  .text.CyIntGetVector
-                0x00004c0c       0x1c .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
-                0x00004c0c                CyIntGetVector
+                0x0000509c       0x1c .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
+                0x0000509c                CyIntGetVector
  .text.CyIntSetPriority
-                0x00004c28       0x20 .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
-                0x00004c28                CyIntSetPriority
+                0x000050b8       0x20 .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
+                0x000050b8                CyIntSetPriority
  .text.CyIntGetPriority
-                0x00004c48       0x18 .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
-                0x00004c48                CyIntGetPriority
+                0x000050d8       0x18 .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
+                0x000050d8                CyIntGetPriority
  .text.CyIntGetState
-                0x00004c60       0x1c .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
-                0x00004c60                CyIntGetState
+                0x000050f0       0x1c .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
+                0x000050f0                CyIntGetState
  .text.CySysTickStart
-                0x00004c7c       0x8c .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
-                0x00004c7c                CySysTickStart
+                0x0000510c       0x8c .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
+                0x0000510c                CySysTickStart
  .text.CySysTickInit
-                0x00004d08       0x70 .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
-                0x00004d08                CySysTickInit
+                0x00005198       0x70 .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
+                0x00005198                CySysTickInit
  .text.CySysTickEnable
-                0x00004d78       0x18 .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
-                0x00004d78                CySysTickEnable
+                0x00005208       0x18 .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
+                0x00005208                CySysTickEnable
  .text.CySysTickStop
-                0x00004d90       0x10 .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
-                0x00004d90                CySysTickStop
+                0x00005220       0x10 .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
+                0x00005220                CySysTickStop
  .text.CySysTickEnableInterrupt
-                0x00004da0       0x10 .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
-                0x00004da0                CySysTickEnableInterrupt
+                0x00005230       0x10 .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
+                0x00005230                CySysTickEnableInterrupt
  .text.CySysTickDisableInterrupt
-                0x00004db0       0x10 .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
-                0x00004db0                CySysTickDisableInterrupt
+                0x00005240       0x10 .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
+                0x00005240                CySysTickDisableInterrupt
  .text.CySysTickSetReload
-                0x00004dc0       0x10 .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
-                0x00004dc0                CySysTickSetReload
+                0x00005250       0x10 .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
+                0x00005250                CySysTickSetReload
  .text.CySysTickGetReload
-                0x00004dd0       0x10 .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
-                0x00004dd0                CySysTickGetReload
+                0x00005260       0x10 .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
+                0x00005260                CySysTickGetReload
  .text.CySysTickGetValue
-                0x00004de0       0x10 .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
-                0x00004de0                CySysTickGetValue
+                0x00005270       0x10 .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
+                0x00005270                CySysTickGetValue
  .text.CySysTickSetClockSource
-                0x00004df0       0x18 .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
-                0x00004df0                CySysTickSetClockSource
+                0x00005280       0x18 .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
+                0x00005280                CySysTickSetClockSource
  .text.CySysTickGetCountFlag
-                0x00004e08       0x10 .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
-                0x00004e08                CySysTickGetCountFlag
+                0x00005298       0x10 .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
+                0x00005298                CySysTickGetCountFlag
  .text.CySysTickClear
-                0x00004e18        0xc .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
-                0x00004e18                CySysTickClear
+                0x000052a8        0xc .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
+                0x000052a8                CySysTickClear
  .text.CySysTickSetCallback
-                0x00004e24       0x14 .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
-                0x00004e24                CySysTickSetCallback
+                0x000052b4       0x14 .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
+                0x000052b4                CySysTickSetCallback
  .text.CySysTickGetCallback
-                0x00004e38        0xc .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
-                0x00004e38                CySysTickGetCallback
+                0x000052c8        0xc .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
+                0x000052c8                CySysTickGetCallback
  .text.CyGetUniqueId
-                0x00004e44       0x68 .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
-                0x00004e44                CyGetUniqueId
- .text          0x00004eac        0x0 .\ARM_GCC_493\Debug\C-CAN.a(cyPm.o)
+                0x000052d4       0x68 .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
+                0x000052d4                CyGetUniqueId
+ .text          0x0000533c        0x0 .\ARM_GCC_493\Debug\C-CAN.a(cyPm.o)
  .text.CyPmHibSlpSaveSet
-                0x00004eac      0x1c8 .\ARM_GCC_493\Debug\C-CAN.a(cyPm.o)
+                0x0000533c      0x1c8 .\ARM_GCC_493\Debug\C-CAN.a(cyPm.o)
  .text.CyPmHibSlpRestore
-                0x00005074      0x140 .\ARM_GCC_493\Debug\C-CAN.a(cyPm.o)
+                0x00005504      0x140 .\ARM_GCC_493\Debug\C-CAN.a(cyPm.o)
  .text.CyPmSaveClocks
-                0x000051b4      0x1e4 .\ARM_GCC_493\Debug\C-CAN.a(cyPm.o)
-                0x000051b4                CyPmSaveClocks
+                0x00005644      0x1e4 .\ARM_GCC_493\Debug\C-CAN.a(cyPm.o)
+                0x00005644                CyPmSaveClocks
  .text.CyPmRestoreClocks
-                0x00005398      0x240 .\ARM_GCC_493\Debug\C-CAN.a(cyPm.o)
-                0x00005398                CyPmRestoreClocks
+                0x00005828      0x240 .\ARM_GCC_493\Debug\C-CAN.a(cyPm.o)
+                0x00005828                CyPmRestoreClocks
  .text.CyPmAltAct
-                0x000055d8       0x78 .\ARM_GCC_493\Debug\C-CAN.a(cyPm.o)
-                0x000055d8                CyPmAltAct
+                0x00005a68       0x78 .\ARM_GCC_493\Debug\C-CAN.a(cyPm.o)
+                0x00005a68                CyPmAltAct
  .text.CyPmSleep
-                0x00005650       0xf8 .\ARM_GCC_493\Debug\C-CAN.a(cyPm.o)
-                0x00005650                CyPmSleep
+                0x00005ae0       0xf8 .\ARM_GCC_493\Debug\C-CAN.a(cyPm.o)
+                0x00005ae0                CyPmSleep
  .text.CyPmHibernateEx
-                0x00005748      0x28c .\ARM_GCC_493\Debug\C-CAN.a(cyPm.o)
-                0x00005748                CyPmHibernateEx
+                0x00005bd8      0x28c .\ARM_GCC_493\Debug\C-CAN.a(cyPm.o)
+                0x00005bd8                CyPmHibernateEx
  .text.CyPmHibernate
-                0x000059d4        0x8 .\ARM_GCC_493\Debug\C-CAN.a(cyPm.o)
-                0x000059d4                CyPmHibernate
+                0x00005e64        0x8 .\ARM_GCC_493\Debug\C-CAN.a(cyPm.o)
+                0x00005e64                CyPmHibernate
  .text.CyPmReadStatus
-                0x000059dc       0x30 .\ARM_GCC_493\Debug\C-CAN.a(cyPm.o)
-                0x000059dc                CyPmReadStatus
+                0x00005e6c       0x30 .\ARM_GCC_493\Debug\C-CAN.a(cyPm.o)
+                0x00005e6c                CyPmReadStatus
  .text.CyPmCtwSetInterval
-                0x00005a0c       0x54 .\ARM_GCC_493\Debug\C-CAN.a(cyPm.o)
-                0x00005a0c                CyPmCtwSetInterval
+                0x00005e9c       0x54 .\ARM_GCC_493\Debug\C-CAN.a(cyPm.o)
+                0x00005e9c                CyPmCtwSetInterval
  .text.CyPmOppsSet
-                0x00005a60       0x2c .\ARM_GCC_493\Debug\C-CAN.a(cyPm.o)
-                0x00005a60                CyPmOppsSet
+                0x00005ef0       0x2c .\ARM_GCC_493\Debug\C-CAN.a(cyPm.o)
+                0x00005ef0                CyPmOppsSet
  .text.CyPmFtwSetInterval
-                0x00005a8c       0x54 .\ARM_GCC_493\Debug\C-CAN.a(cyPm.o)
-                0x00005a8c                CyPmFtwSetInterval
- .text          0x00005ae0        0x0 .\ARM_GCC_493\Debug\C-CAN.a(ADC_SAR_1.o)
+                0x00005f1c       0x54 .\ARM_GCC_493\Debug\C-CAN.a(cyPm.o)
+                0x00005f1c                CyPmFtwSetInterval
+ .text          0x00005f70        0x0 .\ARM_GCC_493\Debug\C-CAN.a(ADC_SAR_1.o)
  .text.ADC_SAR_1_Start
-                0x00005ae0      0x114 .\ARM_GCC_493\Debug\C-CAN.a(ADC_SAR_1.o)
-                0x00005ae0                ADC_SAR_1_Start
+                0x00005f70      0x114 .\ARM_GCC_493\Debug\C-CAN.a(ADC_SAR_1.o)
+                0x00005f70                ADC_SAR_1_Start
  .text.ADC_SAR_1_Init
-                0x00005bf4       0x64 .\ARM_GCC_493\Debug\C-CAN.a(ADC_SAR_1.o)
-                0x00005bf4                ADC_SAR_1_Init
+                0x00006084       0x64 .\ARM_GCC_493\Debug\C-CAN.a(ADC_SAR_1.o)
+                0x00006084                ADC_SAR_1_Init
  .text.ADC_SAR_1_Enable
-                0x00005c58       0xa0 .\ARM_GCC_493\Debug\C-CAN.a(ADC_SAR_1.o)
-                0x00005c58                ADC_SAR_1_Enable
+                0x000060e8       0xa0 .\ARM_GCC_493\Debug\C-CAN.a(ADC_SAR_1.o)
+                0x000060e8                ADC_SAR_1_Enable
  .text.ADC_SAR_1_Stop
-                0x00005cf8       0x50 .\ARM_GCC_493\Debug\C-CAN.a(ADC_SAR_1.o)
-                0x00005cf8                ADC_SAR_1_Stop
+                0x00006188       0x50 .\ARM_GCC_493\Debug\C-CAN.a(ADC_SAR_1.o)
+                0x00006188                ADC_SAR_1_Stop
  .text.ADC_SAR_1_SetPower
-                0x00005d48       0x18 .\ARM_GCC_493\Debug\C-CAN.a(ADC_SAR_1.o)
-                0x00005d48                ADC_SAR_1_SetPower
+                0x000061d8       0x18 .\ARM_GCC_493\Debug\C-CAN.a(ADC_SAR_1.o)
+                0x000061d8                ADC_SAR_1_SetPower
  .text.ADC_SAR_1_SetResolution
-                0x00005d60       0x78 .\ARM_GCC_493\Debug\C-CAN.a(ADC_SAR_1.o)
-                0x00005d60                ADC_SAR_1_SetResolution
+                0x000061f0       0x78 .\ARM_GCC_493\Debug\C-CAN.a(ADC_SAR_1.o)
+                0x000061f0                ADC_SAR_1_SetResolution
  .text.ADC_SAR_1_StartConvert
-                0x00005dd8       0x18 .\ARM_GCC_493\Debug\C-CAN.a(ADC_SAR_1.o)
-                0x00005dd8                ADC_SAR_1_StartConvert
+                0x00006268       0x18 .\ARM_GCC_493\Debug\C-CAN.a(ADC_SAR_1.o)
+                0x00006268                ADC_SAR_1_StartConvert
  .text.ADC_SAR_1_StopConvert
-                0x00005df0       0x18 .\ARM_GCC_493\Debug\C-CAN.a(ADC_SAR_1.o)
-                0x00005df0                ADC_SAR_1_StopConvert
+                0x00006280       0x18 .\ARM_GCC_493\Debug\C-CAN.a(ADC_SAR_1.o)
+                0x00006280                ADC_SAR_1_StopConvert
  .text.ADC_SAR_1_IsEndConversion
-                0x00005e08       0x2c .\ARM_GCC_493\Debug\C-CAN.a(ADC_SAR_1.o)
-                0x00005e08                ADC_SAR_1_IsEndConversion
+                0x00006298       0x2c .\ARM_GCC_493\Debug\C-CAN.a(ADC_SAR_1.o)
+                0x00006298                ADC_SAR_1_IsEndConversion
  .text.ADC_SAR_1_GetResult8
-                0x00005e34       0x18 .\ARM_GCC_493\Debug\C-CAN.a(ADC_SAR_1.o)
-                0x00005e34                ADC_SAR_1_GetResult8
+                0x000062c4       0x18 .\ARM_GCC_493\Debug\C-CAN.a(ADC_SAR_1.o)
+                0x000062c4                ADC_SAR_1_GetResult8
  .text.ADC_SAR_1_GetResult16
-                0x00005e4c       0x18 .\ARM_GCC_493\Debug\C-CAN.a(ADC_SAR_1.o)
-                0x00005e4c                ADC_SAR_1_GetResult16
+                0x000062dc       0x18 .\ARM_GCC_493\Debug\C-CAN.a(ADC_SAR_1.o)
+                0x000062dc                ADC_SAR_1_GetResult16
  .text.ADC_SAR_1_SetOffset
-                0x00005e64        0xc .\ARM_GCC_493\Debug\C-CAN.a(ADC_SAR_1.o)
-                0x00005e64                ADC_SAR_1_SetOffset
+                0x000062f4        0xc .\ARM_GCC_493\Debug\C-CAN.a(ADC_SAR_1.o)
+                0x000062f4                ADC_SAR_1_SetOffset
  .text.ADC_SAR_1_SetGain
-                0x00005e70       0x10 .\ARM_GCC_493\Debug\C-CAN.a(ADC_SAR_1.o)
-                0x00005e70                ADC_SAR_1_SetGain
+                0x00006300       0x10 .\ARM_GCC_493\Debug\C-CAN.a(ADC_SAR_1.o)
+                0x00006300                ADC_SAR_1_SetGain
  .text.ADC_SAR_1_SetScaledGain
-                0x00005e80        0xc .\ARM_GCC_493\Debug\C-CAN.a(ADC_SAR_1.o)
-                0x00005e80                ADC_SAR_1_SetScaledGain
+                0x00006310        0xc .\ARM_GCC_493\Debug\C-CAN.a(ADC_SAR_1.o)
+                0x00006310                ADC_SAR_1_SetScaledGain
  .text.ADC_SAR_1_CountsTo_mVolts
-                0x00005e8c       0x4c .\ARM_GCC_493\Debug\C-CAN.a(ADC_SAR_1.o)
-                0x00005e8c                ADC_SAR_1_CountsTo_mVolts
+                0x0000631c       0x4c .\ARM_GCC_493\Debug\C-CAN.a(ADC_SAR_1.o)
+                0x0000631c                ADC_SAR_1_CountsTo_mVolts
  .text.ADC_SAR_1_CountsTo_uVolts
-                0x00005ed8       0x48 .\ARM_GCC_493\Debug\C-CAN.a(ADC_SAR_1.o)
-                0x00005ed8                ADC_SAR_1_CountsTo_uVolts
+                0x00006368       0x48 .\ARM_GCC_493\Debug\C-CAN.a(ADC_SAR_1.o)
+                0x00006368                ADC_SAR_1_CountsTo_uVolts
  .text.ADC_SAR_1_CountsTo_Volts
-                0x00005f20       0x50 .\ARM_GCC_493\Debug\C-CAN.a(ADC_SAR_1.o)
-                0x00005f20                ADC_SAR_1_CountsTo_Volts
- .text          0x00005f70        0x0 .\ARM_GCC_493\Debug\C-CAN.a(ADC_SAR_1_INT.o)
+                0x000063b0       0x50 .\ARM_GCC_493\Debug\C-CAN.a(ADC_SAR_1.o)
+                0x000063b0                ADC_SAR_1_CountsTo_Volts
+ .text          0x00006400        0x0 .\ARM_GCC_493\Debug\C-CAN.a(ADC_SAR_1_INT.o)
  .text.ADC_SAR_1_ISR
-                0x00005f70        0x4 .\ARM_GCC_493\Debug\C-CAN.a(ADC_SAR_1_INT.o)
-                0x00005f70                ADC_SAR_1_ISR
- .text          0x00005f74        0x0 .\ARM_GCC_493\Debug\C-CAN.a(ADC_SAR_1_theACLK.o)
+                0x00006400        0x4 .\ARM_GCC_493\Debug\C-CAN.a(ADC_SAR_1_INT.o)
+                0x00006400                ADC_SAR_1_ISR
+ .text          0x00006404        0x0 .\ARM_GCC_493\Debug\C-CAN.a(ADC_SAR_1_theACLK.o)
  .text.ADC_SAR_1_theACLK_Start
-                0x00005f74       0x20 .\ARM_GCC_493\Debug\C-CAN.a(ADC_SAR_1_theACLK.o)
-                0x00005f74                ADC_SAR_1_theACLK_Start
+                0x00006404       0x20 .\ARM_GCC_493\Debug\C-CAN.a(ADC_SAR_1_theACLK.o)
+                0x00006404                ADC_SAR_1_theACLK_Start
  .text.ADC_SAR_1_theACLK_Stop
-                0x00005f94       0x20 .\ARM_GCC_493\Debug\C-CAN.a(ADC_SAR_1_theACLK.o)
-                0x00005f94                ADC_SAR_1_theACLK_Stop
+                0x00006424       0x20 .\ARM_GCC_493\Debug\C-CAN.a(ADC_SAR_1_theACLK.o)
+                0x00006424                ADC_SAR_1_theACLK_Stop
  .text.ADC_SAR_1_theACLK_StopBlock
-                0x00005fb4       0x78 .\ARM_GCC_493\Debug\C-CAN.a(ADC_SAR_1_theACLK.o)
-                0x00005fb4                ADC_SAR_1_theACLK_StopBlock
+                0x00006444       0x78 .\ARM_GCC_493\Debug\C-CAN.a(ADC_SAR_1_theACLK.o)
+                0x00006444                ADC_SAR_1_theACLK_StopBlock
  .text.ADC_SAR_1_theACLK_StandbyPower
-                0x0000602c       0x1c .\ARM_GCC_493\Debug\C-CAN.a(ADC_SAR_1_theACLK.o)
-                0x0000602c                ADC_SAR_1_theACLK_StandbyPower
+                0x000064bc       0x1c .\ARM_GCC_493\Debug\C-CAN.a(ADC_SAR_1_theACLK.o)
+                0x000064bc                ADC_SAR_1_theACLK_StandbyPower
  .text.ADC_SAR_1_theACLK_SetDividerRegister
-                0x00006048       0xe8 .\ARM_GCC_493\Debug\C-CAN.a(ADC_SAR_1_theACLK.o)
-                0x00006048                ADC_SAR_1_theACLK_SetDividerRegister
+                0x000064d8       0xe8 .\ARM_GCC_493\Debug\C-CAN.a(ADC_SAR_1_theACLK.o)
+                0x000064d8                ADC_SAR_1_theACLK_SetDividerRegister
  .text.ADC_SAR_1_theACLK_GetDividerRegister
-                0x00006130        0xc .\ARM_GCC_493\Debug\C-CAN.a(ADC_SAR_1_theACLK.o)
-                0x00006130                ADC_SAR_1_theACLK_GetDividerRegister
+                0x000065c0        0xc .\ARM_GCC_493\Debug\C-CAN.a(ADC_SAR_1_theACLK.o)
+                0x000065c0                ADC_SAR_1_theACLK_GetDividerRegister
  .text.ADC_SAR_1_theACLK_SetModeRegister
-                0x0000613c       0x14 .\ARM_GCC_493\Debug\C-CAN.a(ADC_SAR_1_theACLK.o)
-                0x0000613c                ADC_SAR_1_theACLK_SetModeRegister
+                0x000065cc       0x14 .\ARM_GCC_493\Debug\C-CAN.a(ADC_SAR_1_theACLK.o)
+                0x000065cc                ADC_SAR_1_theACLK_SetModeRegister
  .text.ADC_SAR_1_theACLK_ClearModeRegister
-                0x00006150       0x14 .\ARM_GCC_493\Debug\C-CAN.a(ADC_SAR_1_theACLK.o)
-                0x00006150                ADC_SAR_1_theACLK_ClearModeRegister
+                0x000065e0       0x14 .\ARM_GCC_493\Debug\C-CAN.a(ADC_SAR_1_theACLK.o)
+                0x000065e0                ADC_SAR_1_theACLK_ClearModeRegister
  .text.ADC_SAR_1_theACLK_GetModeRegister
-                0x00006164       0x10 .\ARM_GCC_493\Debug\C-CAN.a(ADC_SAR_1_theACLK.o)
-                0x00006164                ADC_SAR_1_theACLK_GetModeRegister
+                0x000065f4       0x10 .\ARM_GCC_493\Debug\C-CAN.a(ADC_SAR_1_theACLK.o)
+                0x000065f4                ADC_SAR_1_theACLK_GetModeRegister
  .text.ADC_SAR_1_theACLK_SetSourceRegister
-                0x00006174       0x58 .\ARM_GCC_493\Debug\C-CAN.a(ADC_SAR_1_theACLK.o)
-                0x00006174                ADC_SAR_1_theACLK_SetSourceRegister
+                0x00006604       0x58 .\ARM_GCC_493\Debug\C-CAN.a(ADC_SAR_1_theACLK.o)
+                0x00006604                ADC_SAR_1_theACLK_SetSourceRegister
  .text.ADC_SAR_1_theACLK_GetSourceRegister
-                0x000061cc       0x10 .\ARM_GCC_493\Debug\C-CAN.a(ADC_SAR_1_theACLK.o)
-                0x000061cc                ADC_SAR_1_theACLK_GetSourceRegister
- .text          0x000061dc        0x0 .\ARM_GCC_493\Debug\C-CAN.a(AMux_1.o)
+                0x0000665c       0x10 .\ARM_GCC_493\Debug\C-CAN.a(ADC_SAR_1_theACLK.o)
+                0x0000665c                ADC_SAR_1_theACLK_GetSourceRegister
+ .text          0x0000666c        0x0 .\ARM_GCC_493\Debug\C-CAN.a(AMux_1.o)
  .text.AMux_1_Start
-                0x000061dc       0x20 .\ARM_GCC_493\Debug\C-CAN.a(AMux_1.o)
-                0x000061dc                AMux_1_Start
+                0x0000666c       0x20 .\ARM_GCC_493\Debug\C-CAN.a(AMux_1.o)
+                0x0000666c                AMux_1_Start
  .text.AMux_1_FastSelect
-                0x000061fc       0x20 .\ARM_GCC_493\Debug\C-CAN.a(AMux_1.o)
-                0x000061fc                AMux_1_FastSelect
+                0x0000668c       0x20 .\ARM_GCC_493\Debug\C-CAN.a(AMux_1.o)
+                0x0000668c                AMux_1_FastSelect
  .text.AMux_1_DisconnectAll
-                0x0000621c       0x18 .\ARM_GCC_493\Debug\C-CAN.a(AMux_1.o)
-                0x0000621c                AMux_1_DisconnectAll
- .text          0x00006234        0x0 .\ARM_GCC_493\Debug\C-CAN.a(CAN_1.o)
+                0x000066ac       0x18 .\ARM_GCC_493\Debug\C-CAN.a(AMux_1.o)
+                0x000066ac                AMux_1_DisconnectAll
+ .text          0x000066c4        0x0 .\ARM_GCC_493\Debug\C-CAN.a(CAN_1.o)
  .text.CAN_1_RxTxBuffersConfig
-                0x00006234      0x14c .\ARM_GCC_493\Debug\C-CAN.a(CAN_1.o)
-                0x00006234                CAN_1_RxTxBuffersConfig
+                0x000066c4      0x14c .\ARM_GCC_493\Debug\C-CAN.a(CAN_1.o)
+                0x000066c4                CAN_1_RxTxBuffersConfig
  .text.CAN_1_Init
-                0x00006380       0xf0 .\ARM_GCC_493\Debug\C-CAN.a(CAN_1.o)
-                0x00006380                CAN_1_Init
+                0x00006810       0xf0 .\ARM_GCC_493\Debug\C-CAN.a(CAN_1.o)
+                0x00006810                CAN_1_Init
  .text.CAN_1_Enable
-                0x00006470       0x78 .\ARM_GCC_493\Debug\C-CAN.a(CAN_1.o)
-                0x00006470                CAN_1_Enable
+                0x00006900       0x78 .\ARM_GCC_493\Debug\C-CAN.a(CAN_1.o)
+                0x00006900                CAN_1_Enable
  .text.CAN_1_Start
-                0x000064e8       0x90 .\ARM_GCC_493\Debug\C-CAN.a(CAN_1.o)
-                0x000064e8                CAN_1_Start
+                0x00006978       0x90 .\ARM_GCC_493\Debug\C-CAN.a(CAN_1.o)
+                0x00006978                CAN_1_Start
  .text.CAN_1_Stop
-                0x00006578       0x5c .\ARM_GCC_493\Debug\C-CAN.a(CAN_1.o)
-                0x00006578                CAN_1_Stop
+                0x00006a08       0x5c .\ARM_GCC_493\Debug\C-CAN.a(CAN_1.o)
+                0x00006a08                CAN_1_Stop
  .text.CAN_1_GlobalIntEnable
-                0x000065d4       0x1c .\ARM_GCC_493\Debug\C-CAN.a(CAN_1.o)
-                0x000065d4                CAN_1_GlobalIntEnable
+                0x00006a64       0x1c .\ARM_GCC_493\Debug\C-CAN.a(CAN_1.o)
+                0x00006a64                CAN_1_GlobalIntEnable
  .text.CAN_1_GlobalIntDisable
-                0x000065f0       0x18 .\ARM_GCC_493\Debug\C-CAN.a(CAN_1.o)
-                0x000065f0                CAN_1_GlobalIntDisable
+                0x00006a80       0x18 .\ARM_GCC_493\Debug\C-CAN.a(CAN_1.o)
+                0x00006a80                CAN_1_GlobalIntDisable
  .text.CAN_1_SetPreScaler
-                0x00006608       0x1c .\ARM_GCC_493\Debug\C-CAN.a(CAN_1.o)
-                0x00006608                CAN_1_SetPreScaler
+                0x00006a98       0x1c .\ARM_GCC_493\Debug\C-CAN.a(CAN_1.o)
+                0x00006a98                CAN_1_SetPreScaler
  .text.CAN_1_SetArbiter
-                0x00006624       0x2c .\ARM_GCC_493\Debug\C-CAN.a(CAN_1.o)
-                0x00006624                CAN_1_SetArbiter
+                0x00006ab4       0x2c .\ARM_GCC_493\Debug\C-CAN.a(CAN_1.o)
+                0x00006ab4                CAN_1_SetArbiter
  .text.CAN_1_SetTsegSample
-                0x00006650       0x64 .\ARM_GCC_493\Debug\C-CAN.a(CAN_1.o)
-                0x00006650                CAN_1_SetTsegSample
+                0x00006ae0       0x64 .\ARM_GCC_493\Debug\C-CAN.a(CAN_1.o)
+                0x00006ae0                CAN_1_SetTsegSample
  .text.CAN_1_SetRestartType
-                0x000066b4       0x2c .\ARM_GCC_493\Debug\C-CAN.a(CAN_1.o)
-                0x000066b4                CAN_1_SetRestartType
+                0x00006b44       0x2c .\ARM_GCC_493\Debug\C-CAN.a(CAN_1.o)
+                0x00006b44                CAN_1_SetRestartType
  .text.CAN_1_SetEdgeMode
-                0x000066e0       0x2c .\ARM_GCC_493\Debug\C-CAN.a(CAN_1.o)
-                0x000066e0                CAN_1_SetEdgeMode
+                0x00006b70       0x2c .\ARM_GCC_493\Debug\C-CAN.a(CAN_1.o)
+                0x00006b70                CAN_1_SetEdgeMode
  .text.CAN_1_SetOpMode
-                0x0000670c       0x68 .\ARM_GCC_493\Debug\C-CAN.a(CAN_1.o)
-                0x0000670c                CAN_1_SetOpMode
+                0x00006b9c       0x68 .\ARM_GCC_493\Debug\C-CAN.a(CAN_1.o)
+                0x00006b9c                CAN_1_SetOpMode
  .text.CAN_1_RXRegisterInit
-                0x00006774       0x60 .\ARM_GCC_493\Debug\C-CAN.a(CAN_1.o)
-                0x00006774                CAN_1_RXRegisterInit
+                0x00006c04       0x60 .\ARM_GCC_493\Debug\C-CAN.a(CAN_1.o)
+                0x00006c04                CAN_1_RXRegisterInit
  .text.CAN_1_SetIrqMask
-                0x000067d4       0x14 .\ARM_GCC_493\Debug\C-CAN.a(CAN_1.o)
-                0x000067d4                CAN_1_SetIrqMask
+                0x00006c64       0x14 .\ARM_GCC_493\Debug\C-CAN.a(CAN_1.o)
+                0x00006c64                CAN_1_SetIrqMask
  .text.CAN_1_GetTXErrorFlag
-                0x000067e8       0x10 .\ARM_GCC_493\Debug\C-CAN.a(CAN_1.o)
-                0x000067e8                CAN_1_GetTXErrorFlag
+                0x00006c78       0x10 .\ARM_GCC_493\Debug\C-CAN.a(CAN_1.o)
+                0x00006c78                CAN_1_GetTXErrorFlag
  .text.CAN_1_GetRXErrorFlag
-                0x000067f8       0x10 .\ARM_GCC_493\Debug\C-CAN.a(CAN_1.o)
-                0x000067f8                CAN_1_GetRXErrorFlag
+                0x00006c88       0x10 .\ARM_GCC_493\Debug\C-CAN.a(CAN_1.o)
+                0x00006c88                CAN_1_GetRXErrorFlag
  .text.CAN_1_GetTXErrorCount
-                0x00006808        0xc .\ARM_GCC_493\Debug\C-CAN.a(CAN_1.o)
-                0x00006808                CAN_1_GetTXErrorCount
+                0x00006c98        0xc .\ARM_GCC_493\Debug\C-CAN.a(CAN_1.o)
+                0x00006c98                CAN_1_GetTXErrorCount
  .text.CAN_1_GetRXErrorCount
-                0x00006814        0xc .\ARM_GCC_493\Debug\C-CAN.a(CAN_1.o)
-                0x00006814                CAN_1_GetRXErrorCount
+                0x00006ca4        0xc .\ARM_GCC_493\Debug\C-CAN.a(CAN_1.o)
+                0x00006ca4                CAN_1_GetRXErrorCount
  .text.CAN_1_GetErrorState
-                0x00006820       0x10 .\ARM_GCC_493\Debug\C-CAN.a(CAN_1.o)
-                0x00006820                CAN_1_GetErrorState
+                0x00006cb0       0x10 .\ARM_GCC_493\Debug\C-CAN.a(CAN_1.o)
+                0x00006cb0                CAN_1_GetErrorState
  .text.CAN_1_RxBufConfig
-                0x00006830       0x88 .\ARM_GCC_493\Debug\C-CAN.a(CAN_1.o)
-                0x00006830                CAN_1_RxBufConfig
+                0x00006cc0       0x88 .\ARM_GCC_493\Debug\C-CAN.a(CAN_1.o)
+                0x00006cc0                CAN_1_RxBufConfig
  .text.CAN_1_TxBufConfig
-                0x000068b8       0x58 .\ARM_GCC_493\Debug\C-CAN.a(CAN_1.o)
-                0x000068b8                CAN_1_TxBufConfig
- .text          0x00006910        0x0 .\ARM_GCC_493\Debug\C-CAN.a(CAN_1_INT.o)
+                0x00006d48       0x58 .\ARM_GCC_493\Debug\C-CAN.a(CAN_1.o)
+                0x00006d48                CAN_1_TxBufConfig
+ .text          0x00006da0        0x0 .\ARM_GCC_493\Debug\C-CAN.a(CAN_1_INT.o)
  .text.CAN_1_BusOffIsr
-                0x00006910       0x18 .\ARM_GCC_493\Debug\C-CAN.a(CAN_1_INT.o)
-                0x00006910                CAN_1_BusOffIsr
+                0x00006da0       0x18 .\ARM_GCC_493\Debug\C-CAN.a(CAN_1_INT.o)
+                0x00006da0                CAN_1_BusOffIsr
  .text.CAN_1_MsgRXIsr
-                0x00006928       0x44 .\ARM_GCC_493\Debug\C-CAN.a(CAN_1_INT.o)
-                0x00006928                CAN_1_MsgRXIsr
+                0x00006db8       0x44 .\ARM_GCC_493\Debug\C-CAN.a(CAN_1_INT.o)
+                0x00006db8                CAN_1_MsgRXIsr
  .text.CAN_1_ISR
-                0x0000696c       0x60 .\ARM_GCC_493\Debug\C-CAN.a(CAN_1_INT.o)
-                0x0000696c                CAN_1_ISR
- .text          0x000069cc        0x0 .\ARM_GCC_493\Debug\C-CAN.a(CAN_TIMER.o)
+                0x00006dfc       0x60 .\ARM_GCC_493\Debug\C-CAN.a(CAN_1_INT.o)
+                0x00006dfc                CAN_1_ISR
+ .text          0x00006e5c        0x0 .\ARM_GCC_493\Debug\C-CAN.a(CAN_TIMER.o)
  .text.CAN_TIMER_Init
-                0x000069cc       0x54 .\ARM_GCC_493\Debug\C-CAN.a(CAN_TIMER.o)
-                0x000069cc                CAN_TIMER_Init
+                0x00006e5c       0x54 .\ARM_GCC_493\Debug\C-CAN.a(CAN_TIMER.o)
+                0x00006e5c                CAN_TIMER_Init
  .text.CAN_TIMER_Enable
-                0x00006a20       0x10 .\ARM_GCC_493\Debug\C-CAN.a(CAN_TIMER.o)
-                0x00006a20                CAN_TIMER_Enable
+                0x00006eb0       0x10 .\ARM_GCC_493\Debug\C-CAN.a(CAN_TIMER.o)
+                0x00006eb0                CAN_TIMER_Enable
  .text.CAN_TIMER_Start
-                0x00006a30       0x70 .\ARM_GCC_493\Debug\C-CAN.a(CAN_TIMER.o)
-                0x00006a30                CAN_TIMER_Start
+                0x00006ec0       0x70 .\ARM_GCC_493\Debug\C-CAN.a(CAN_TIMER.o)
+                0x00006ec0                CAN_TIMER_Start
  .text.CAN_TIMER_Stop
-                0x00006aa0       0x10 .\ARM_GCC_493\Debug\C-CAN.a(CAN_TIMER.o)
-                0x00006aa0                CAN_TIMER_Stop
+                0x00006f30       0x10 .\ARM_GCC_493\Debug\C-CAN.a(CAN_TIMER.o)
+                0x00006f30                CAN_TIMER_Stop
  .text.CAN_TIMER_SetInterruptMode
-                0x00006ab0        0xc .\ARM_GCC_493\Debug\C-CAN.a(CAN_TIMER.o)
-                0x00006ab0                CAN_TIMER_SetInterruptMode
+                0x00006f40        0xc .\ARM_GCC_493\Debug\C-CAN.a(CAN_TIMER.o)
+                0x00006f40                CAN_TIMER_SetInterruptMode
  .text.CAN_TIMER_SoftwareCapture
-                0x00006abc        0xc .\ARM_GCC_493\Debug\C-CAN.a(CAN_TIMER.o)
-                0x00006abc                CAN_TIMER_SoftwareCapture
+                0x00006f4c        0xc .\ARM_GCC_493\Debug\C-CAN.a(CAN_TIMER.o)
+                0x00006f4c                CAN_TIMER_SoftwareCapture
  .text.CAN_TIMER_ReadStatusRegister
-                0x00006ac8        0xc .\ARM_GCC_493\Debug\C-CAN.a(CAN_TIMER.o)
-                0x00006ac8                CAN_TIMER_ReadStatusRegister
+                0x00006f58        0xc .\ARM_GCC_493\Debug\C-CAN.a(CAN_TIMER.o)
+                0x00006f58                CAN_TIMER_ReadStatusRegister
  .text.CAN_TIMER_ReadControlRegister
-                0x00006ad4        0xc .\ARM_GCC_493\Debug\C-CAN.a(CAN_TIMER.o)
-                0x00006ad4                CAN_TIMER_ReadControlRegister
+                0x00006f64        0xc .\ARM_GCC_493\Debug\C-CAN.a(CAN_TIMER.o)
+                0x00006f64                CAN_TIMER_ReadControlRegister
  .text.CAN_TIMER_WriteControlRegister
-                0x00006ae0        0xc .\ARM_GCC_493\Debug\C-CAN.a(CAN_TIMER.o)
-                0x00006ae0                CAN_TIMER_WriteControlRegister
+                0x00006f70        0xc .\ARM_GCC_493\Debug\C-CAN.a(CAN_TIMER.o)
+                0x00006f70                CAN_TIMER_WriteControlRegister
  .text.CAN_TIMER_ReadPeriod
-                0x00006aec        0xc .\ARM_GCC_493\Debug\C-CAN.a(CAN_TIMER.o)
-                0x00006aec                CAN_TIMER_ReadPeriod
+                0x00006f7c        0xc .\ARM_GCC_493\Debug\C-CAN.a(CAN_TIMER.o)
+                0x00006f7c                CAN_TIMER_ReadPeriod
  .text.CAN_TIMER_WritePeriod
-                0x00006af8        0xc .\ARM_GCC_493\Debug\C-CAN.a(CAN_TIMER.o)
-                0x00006af8                CAN_TIMER_WritePeriod
+                0x00006f88        0xc .\ARM_GCC_493\Debug\C-CAN.a(CAN_TIMER.o)
+                0x00006f88                CAN_TIMER_WritePeriod
  .text.CAN_TIMER_ReadCapture
-                0x00006b04        0xc .\ARM_GCC_493\Debug\C-CAN.a(CAN_TIMER.o)
-                0x00006b04                CAN_TIMER_ReadCapture
+                0x00006f94        0xc .\ARM_GCC_493\Debug\C-CAN.a(CAN_TIMER.o)
+                0x00006f94                CAN_TIMER_ReadCapture
  .text.CAN_TIMER_WriteCounter
-                0x00006b10        0xc .\ARM_GCC_493\Debug\C-CAN.a(CAN_TIMER.o)
-                0x00006b10                CAN_TIMER_WriteCounter
+                0x00006fa0        0xc .\ARM_GCC_493\Debug\C-CAN.a(CAN_TIMER.o)
+                0x00006fa0                CAN_TIMER_WriteCounter
  .text.CAN_TIMER_ReadCounter
-                0x00006b1c       0x14 .\ARM_GCC_493\Debug\C-CAN.a(CAN_TIMER.o)
-                0x00006b1c                CAN_TIMER_ReadCounter
+                0x00006fac       0x14 .\ARM_GCC_493\Debug\C-CAN.a(CAN_TIMER.o)
+                0x00006fac                CAN_TIMER_ReadCounter
  .text.CAN_TIMER_ClearFIFO
-                0x00006b30       0x1c .\ARM_GCC_493\Debug\C-CAN.a(CAN_TIMER.o)
-                0x00006b30                CAN_TIMER_ClearFIFO
- .text          0x00006b4c        0x0 .\ARM_GCC_493\Debug\C-CAN.a(CAN_ISR.o)
+                0x00006fc0       0x1c .\ARM_GCC_493\Debug\C-CAN.a(CAN_TIMER.o)
+                0x00006fc0                CAN_TIMER_ClearFIFO
+ .text          0x00006fdc        0x0 .\ARM_GCC_493\Debug\C-CAN.a(CAN_ISR.o)
  .text.CAN_ISR_Interrupt
-                0x00006b4c       0x10 .\ARM_GCC_493\Debug\C-CAN.a(CAN_ISR.o)
-                0x00006b4c                CAN_ISR_Interrupt
+                0x00006fdc       0x10 .\ARM_GCC_493\Debug\C-CAN.a(CAN_ISR.o)
+                0x00006fdc                CAN_ISR_Interrupt
  .text.CAN_ISR_Start
-                0x00006b5c       0x34 .\ARM_GCC_493\Debug\C-CAN.a(CAN_ISR.o)
-                0x00006b5c                CAN_ISR_Start
+                0x00006fec       0x34 .\ARM_GCC_493\Debug\C-CAN.a(CAN_ISR.o)
+                0x00006fec                CAN_ISR_Start
  .text.CAN_ISR_StartEx
-                0x00006b90       0x2c .\ARM_GCC_493\Debug\C-CAN.a(CAN_ISR.o)
-                0x00006b90                CAN_ISR_StartEx
+                0x00007020       0x2c .\ARM_GCC_493\Debug\C-CAN.a(CAN_ISR.o)
+                0x00007020                CAN_ISR_StartEx
  .text.CAN_ISR_Stop
-                0x00006bbc       0x1c .\ARM_GCC_493\Debug\C-CAN.a(CAN_ISR.o)
-                0x00006bbc                CAN_ISR_Stop
+                0x0000704c       0x1c .\ARM_GCC_493\Debug\C-CAN.a(CAN_ISR.o)
+                0x0000704c                CAN_ISR_Stop
  .text.CAN_ISR_SetVector
-                0x00006bd8        0xc .\ARM_GCC_493\Debug\C-CAN.a(CAN_ISR.o)
-                0x00006bd8                CAN_ISR_SetVector
+                0x00007068        0xc .\ARM_GCC_493\Debug\C-CAN.a(CAN_ISR.o)
+                0x00007068                CAN_ISR_SetVector
  .text.CAN_ISR_GetVector
-                0x00006be4        0xc .\ARM_GCC_493\Debug\C-CAN.a(CAN_ISR.o)
-                0x00006be4                CAN_ISR_GetVector
+                0x00007074        0xc .\ARM_GCC_493\Debug\C-CAN.a(CAN_ISR.o)
+                0x00007074                CAN_ISR_GetVector
  .text.CAN_ISR_SetPriority
-                0x00006bf0       0x10 .\ARM_GCC_493\Debug\C-CAN.a(CAN_ISR.o)
-                0x00006bf0                CAN_ISR_SetPriority
+                0x00007080       0x10 .\ARM_GCC_493\Debug\C-CAN.a(CAN_ISR.o)
+                0x00007080                CAN_ISR_SetPriority
  .text.CAN_ISR_GetPriority
-                0x00006c00        0xc .\ARM_GCC_493\Debug\C-CAN.a(CAN_ISR.o)
-                0x00006c00                CAN_ISR_GetPriority
+                0x00007090        0xc .\ARM_GCC_493\Debug\C-CAN.a(CAN_ISR.o)
+                0x00007090                CAN_ISR_GetPriority
  .text.CAN_ISR_Enable
-                0x00006c0c        0xc .\ARM_GCC_493\Debug\C-CAN.a(CAN_ISR.o)
-                0x00006c0c                CAN_ISR_Enable
+                0x0000709c        0xc .\ARM_GCC_493\Debug\C-CAN.a(CAN_ISR.o)
+                0x0000709c                CAN_ISR_Enable
  .text.CAN_ISR_GetState
-                0x00006c18       0x10 .\ARM_GCC_493\Debug\C-CAN.a(CAN_ISR.o)
-                0x00006c18                CAN_ISR_GetState
+                0x000070a8       0x10 .\ARM_GCC_493\Debug\C-CAN.a(CAN_ISR.o)
+                0x000070a8                CAN_ISR_GetState
  .text.CAN_ISR_Disable
-                0x00006c28        0xc .\ARM_GCC_493\Debug\C-CAN.a(CAN_ISR.o)
-                0x00006c28                CAN_ISR_Disable
+                0x000070b8        0xc .\ARM_GCC_493\Debug\C-CAN.a(CAN_ISR.o)
+                0x000070b8                CAN_ISR_Disable
  .text.CAN_ISR_SetPending
-                0x00006c34        0xc .\ARM_GCC_493\Debug\C-CAN.a(CAN_ISR.o)
-                0x00006c34                CAN_ISR_SetPending
+                0x000070c4        0xc .\ARM_GCC_493\Debug\C-CAN.a(CAN_ISR.o)
+                0x000070c4                CAN_ISR_SetPending
  .text.CAN_ISR_ClearPending
-                0x00006c40        0xc .\ARM_GCC_493\Debug\C-CAN.a(CAN_ISR.o)
-                0x00006c40                CAN_ISR_ClearPending
- .text          0x00006c4c        0x0 .\ARM_GCC_493\Debug\C-CAN.a(Encoder_Left.o)
+                0x000070d0        0xc .\ARM_GCC_493\Debug\C-CAN.a(CAN_ISR.o)
+                0x000070d0                CAN_ISR_ClearPending
+ .text          0x000070dc        0x0 .\ARM_GCC_493\Debug\C-CAN.a(Encoder_Left.o)
  .text.Encoder_Left_Init
-                0x00006c4c       0x74 .\ARM_GCC_493\Debug\C-CAN.a(Encoder_Left.o)
-                0x00006c4c                Encoder_Left_Init
+                0x000070dc       0x74 .\ARM_GCC_493\Debug\C-CAN.a(Encoder_Left.o)
+                0x000070dc                Encoder_Left_Init
  .text.Encoder_Left_Enable
-                0x00006cc0       0x10 .\ARM_GCC_493\Debug\C-CAN.a(Encoder_Left.o)
-                0x00006cc0                Encoder_Left_Enable
+                0x00007150       0x10 .\ARM_GCC_493\Debug\C-CAN.a(Encoder_Left.o)
+                0x00007150                Encoder_Left_Enable
  .text.Encoder_Left_Start
-                0x00006cd0       0x8c .\ARM_GCC_493\Debug\C-CAN.a(Encoder_Left.o)
-                0x00006cd0                Encoder_Left_Start
+                0x00007160       0x8c .\ARM_GCC_493\Debug\C-CAN.a(Encoder_Left.o)
+                0x00007160                Encoder_Left_Start
  .text.Encoder_Left_Stop
-                0x00006d5c       0x10 .\ARM_GCC_493\Debug\C-CAN.a(Encoder_Left.o)
-                0x00006d5c                Encoder_Left_Stop
+                0x000071ec       0x10 .\ARM_GCC_493\Debug\C-CAN.a(Encoder_Left.o)
+                0x000071ec                Encoder_Left_Stop
  .text.Encoder_Left_SetInterruptMode
-                0x00006d6c        0xc .\ARM_GCC_493\Debug\C-CAN.a(Encoder_Left.o)
-                0x00006d6c                Encoder_Left_SetInterruptMode
+                0x000071fc        0xc .\ARM_GCC_493\Debug\C-CAN.a(Encoder_Left.o)
+                0x000071fc                Encoder_Left_SetInterruptMode
  .text.Encoder_Left_ReadStatusRegister
-                0x00006d78        0xc .\ARM_GCC_493\Debug\C-CAN.a(Encoder_Left.o)
-                0x00006d78                Encoder_Left_ReadStatusRegister
+                0x00007208        0xc .\ARM_GCC_493\Debug\C-CAN.a(Encoder_Left.o)
+                0x00007208                Encoder_Left_ReadStatusRegister
  .text.Encoder_Left_ReadControlRegister
-                0x00006d84        0xc .\ARM_GCC_493\Debug\C-CAN.a(Encoder_Left.o)
-                0x00006d84                Encoder_Left_ReadControlRegister
+                0x00007214        0xc .\ARM_GCC_493\Debug\C-CAN.a(Encoder_Left.o)
+                0x00007214                Encoder_Left_ReadControlRegister
  .text.Encoder_Left_WriteControlRegister
-                0x00006d90        0xc .\ARM_GCC_493\Debug\C-CAN.a(Encoder_Left.o)
-                0x00006d90                Encoder_Left_WriteControlRegister
+                0x00007220        0xc .\ARM_GCC_493\Debug\C-CAN.a(Encoder_Left.o)
+                0x00007220                Encoder_Left_WriteControlRegister
  .text.Encoder_Left_WriteCounter
-                0x00006d9c        0xc .\ARM_GCC_493\Debug\C-CAN.a(Encoder_Left.o)
-                0x00006d9c                Encoder_Left_WriteCounter
+                0x0000722c        0xc .\ARM_GCC_493\Debug\C-CAN.a(Encoder_Left.o)
+                0x0000722c                Encoder_Left_WriteCounter
  .text.Encoder_Left_ReadCounter
-                0x00006da8       0x14 .\ARM_GCC_493\Debug\C-CAN.a(Encoder_Left.o)
-                0x00006da8                Encoder_Left_ReadCounter
+                0x00007238       0x14 .\ARM_GCC_493\Debug\C-CAN.a(Encoder_Left.o)
+                0x00007238                Encoder_Left_ReadCounter
  .text.Encoder_Left_ReadCapture
-                0x00006dbc        0xc .\ARM_GCC_493\Debug\C-CAN.a(Encoder_Left.o)
-                0x00006dbc                Encoder_Left_ReadCapture
+                0x0000724c        0xc .\ARM_GCC_493\Debug\C-CAN.a(Encoder_Left.o)
+                0x0000724c                Encoder_Left_ReadCapture
  .text.Encoder_Left_WritePeriod
-                0x00006dc8        0xc .\ARM_GCC_493\Debug\C-CAN.a(Encoder_Left.o)
-                0x00006dc8                Encoder_Left_WritePeriod
+                0x00007258        0xc .\ARM_GCC_493\Debug\C-CAN.a(Encoder_Left.o)
+                0x00007258                Encoder_Left_WritePeriod
  .text.Encoder_Left_ReadPeriod
-                0x00006dd4        0xc .\ARM_GCC_493\Debug\C-CAN.a(Encoder_Left.o)
-                0x00006dd4                Encoder_Left_ReadPeriod
+                0x00007264        0xc .\ARM_GCC_493\Debug\C-CAN.a(Encoder_Left.o)
+                0x00007264                Encoder_Left_ReadPeriod
  .text.Encoder_Left_WriteCompare
-                0x00006de0        0xc .\ARM_GCC_493\Debug\C-CAN.a(Encoder_Left.o)
-                0x00006de0                Encoder_Left_WriteCompare
+                0x00007270        0xc .\ARM_GCC_493\Debug\C-CAN.a(Encoder_Left.o)
+                0x00007270                Encoder_Left_WriteCompare
  .text.Encoder_Left_ReadCompare
-                0x00006dec        0xc .\ARM_GCC_493\Debug\C-CAN.a(Encoder_Left.o)
-                0x00006dec                Encoder_Left_ReadCompare
+                0x0000727c        0xc .\ARM_GCC_493\Debug\C-CAN.a(Encoder_Left.o)
+                0x0000727c                Encoder_Left_ReadCompare
  .text.Encoder_Left_ClearFIFO
-                0x00006df8       0x1c .\ARM_GCC_493\Debug\C-CAN.a(Encoder_Left.o)
-                0x00006df8                Encoder_Left_ClearFIFO
- .text          0x00006e14        0x0 .\ARM_GCC_493\Debug\C-CAN.a(Encoder_Right.o)
+                0x00007288       0x1c .\ARM_GCC_493\Debug\C-CAN.a(Encoder_Left.o)
+                0x00007288                Encoder_Left_ClearFIFO
+ .text          0x000072a4        0x0 .\ARM_GCC_493\Debug\C-CAN.a(Encoder_Right.o)
  .text.Encoder_Right_Init
-                0x00006e14       0x74 .\ARM_GCC_493\Debug\C-CAN.a(Encoder_Right.o)
-                0x00006e14                Encoder_Right_Init
+                0x000072a4       0x74 .\ARM_GCC_493\Debug\C-CAN.a(Encoder_Right.o)
+                0x000072a4                Encoder_Right_Init
  .text.Encoder_Right_Enable
-                0x00006e88       0x10 .\ARM_GCC_493\Debug\C-CAN.a(Encoder_Right.o)
-                0x00006e88                Encoder_Right_Enable
+                0x00007318       0x10 .\ARM_GCC_493\Debug\C-CAN.a(Encoder_Right.o)
+                0x00007318                Encoder_Right_Enable
  .text.Encoder_Right_Start
-                0x00006e98       0x8c .\ARM_GCC_493\Debug\C-CAN.a(Encoder_Right.o)
-                0x00006e98                Encoder_Right_Start
+                0x00007328       0x8c .\ARM_GCC_493\Debug\C-CAN.a(Encoder_Right.o)
+                0x00007328                Encoder_Right_Start
  .text.Encoder_Right_Stop
-                0x00006f24       0x10 .\ARM_GCC_493\Debug\C-CAN.a(Encoder_Right.o)
-                0x00006f24                Encoder_Right_Stop
+                0x000073b4       0x10 .\ARM_GCC_493\Debug\C-CAN.a(Encoder_Right.o)
+                0x000073b4                Encoder_Right_Stop
  .text.Encoder_Right_SetInterruptMode
-                0x00006f34        0xc .\ARM_GCC_493\Debug\C-CAN.a(Encoder_Right.o)
-                0x00006f34                Encoder_Right_SetInterruptMode
+                0x000073c4        0xc .\ARM_GCC_493\Debug\C-CAN.a(Encoder_Right.o)
+                0x000073c4                Encoder_Right_SetInterruptMode
  .text.Encoder_Right_ReadStatusRegister
-                0x00006f40        0xc .\ARM_GCC_493\Debug\C-CAN.a(Encoder_Right.o)
-                0x00006f40                Encoder_Right_ReadStatusRegister
+                0x000073d0        0xc .\ARM_GCC_493\Debug\C-CAN.a(Encoder_Right.o)
+                0x000073d0                Encoder_Right_ReadStatusRegister
  .text.Encoder_Right_ReadControlRegister
-                0x00006f4c        0xc .\ARM_GCC_493\Debug\C-CAN.a(Encoder_Right.o)
-                0x00006f4c                Encoder_Right_ReadControlRegister
+                0x000073dc        0xc .\ARM_GCC_493\Debug\C-CAN.a(Encoder_Right.o)
+                0x000073dc                Encoder_Right_ReadControlRegister
  .text.Encoder_Right_WriteControlRegister
-                0x00006f58        0xc .\ARM_GCC_493\Debug\C-CAN.a(Encoder_Right.o)
-                0x00006f58                Encoder_Right_WriteControlRegister
+                0x000073e8        0xc .\ARM_GCC_493\Debug\C-CAN.a(Encoder_Right.o)
+                0x000073e8                Encoder_Right_WriteControlRegister
  .text.Encoder_Right_WriteCounter
-                0x00006f64        0xc .\ARM_GCC_493\Debug\C-CAN.a(Encoder_Right.o)
-                0x00006f64                Encoder_Right_WriteCounter
+                0x000073f4        0xc .\ARM_GCC_493\Debug\C-CAN.a(Encoder_Right.o)
+                0x000073f4                Encoder_Right_WriteCounter
  .text.Encoder_Right_ReadCounter
-                0x00006f70       0x14 .\ARM_GCC_493\Debug\C-CAN.a(Encoder_Right.o)
-                0x00006f70                Encoder_Right_ReadCounter
+                0x00007400       0x14 .\ARM_GCC_493\Debug\C-CAN.a(Encoder_Right.o)
+                0x00007400                Encoder_Right_ReadCounter
  .text.Encoder_Right_ReadCapture
-                0x00006f84        0xc .\ARM_GCC_493\Debug\C-CAN.a(Encoder_Right.o)
-                0x00006f84                Encoder_Right_ReadCapture
+                0x00007414        0xc .\ARM_GCC_493\Debug\C-CAN.a(Encoder_Right.o)
+                0x00007414                Encoder_Right_ReadCapture
  .text.Encoder_Right_WritePeriod
-                0x00006f90        0xc .\ARM_GCC_493\Debug\C-CAN.a(Encoder_Right.o)
-                0x00006f90                Encoder_Right_WritePeriod
+                0x00007420        0xc .\ARM_GCC_493\Debug\C-CAN.a(Encoder_Right.o)
+                0x00007420                Encoder_Right_WritePeriod
  .text.Encoder_Right_ReadPeriod
-                0x00006f9c        0xc .\ARM_GCC_493\Debug\C-CAN.a(Encoder_Right.o)
-                0x00006f9c                Encoder_Right_ReadPeriod
+                0x0000742c        0xc .\ARM_GCC_493\Debug\C-CAN.a(Encoder_Right.o)
+                0x0000742c                Encoder_Right_ReadPeriod
  .text.Encoder_Right_WriteCompare
-                0x00006fa8        0xc .\ARM_GCC_493\Debug\C-CAN.a(Encoder_Right.o)
-                0x00006fa8                Encoder_Right_WriteCompare
+                0x00007438        0xc .\ARM_GCC_493\Debug\C-CAN.a(Encoder_Right.o)
+                0x00007438                Encoder_Right_WriteCompare
  .text.Encoder_Right_ReadCompare
-                0x00006fb4        0xc .\ARM_GCC_493\Debug\C-CAN.a(Encoder_Right.o)
-                0x00006fb4                Encoder_Right_ReadCompare
+                0x00007444        0xc .\ARM_GCC_493\Debug\C-CAN.a(Encoder_Right.o)
+                0x00007444                Encoder_Right_ReadCompare
  .text.Encoder_Right_ClearFIFO
-                0x00006fc0       0x1c .\ARM_GCC_493\Debug\C-CAN.a(Encoder_Right.o)
-                0x00006fc0                Encoder_Right_ClearFIFO
- .text          0x00006fdc        0x0 .\ARM_GCC_493\Debug\C-CAN.a(leftEncTimer.o)
+                0x00007450       0x1c .\ARM_GCC_493\Debug\C-CAN.a(Encoder_Right.o)
+                0x00007450                Encoder_Right_ClearFIFO
+ .text          0x0000746c        0x0 .\ARM_GCC_493\Debug\C-CAN.a(leftEncTimer.o)
  .text.leftEncTimer_Init
-                0x00006fdc       0x74 .\ARM_GCC_493\Debug\C-CAN.a(leftEncTimer.o)
-                0x00006fdc                leftEncTimer_Init
+                0x0000746c       0x74 .\ARM_GCC_493\Debug\C-CAN.a(leftEncTimer.o)
+                0x0000746c                leftEncTimer_Init
  .text.leftEncTimer_Enable
-                0x00007050       0x10 .\ARM_GCC_493\Debug\C-CAN.a(leftEncTimer.o)
-                0x00007050                leftEncTimer_Enable
+                0x000074e0       0x10 .\ARM_GCC_493\Debug\C-CAN.a(leftEncTimer.o)
+                0x000074e0                leftEncTimer_Enable
  .text.leftEncTimer_Start
-                0x00007060       0x8c .\ARM_GCC_493\Debug\C-CAN.a(leftEncTimer.o)
-                0x00007060                leftEncTimer_Start
+                0x000074f0       0x8c .\ARM_GCC_493\Debug\C-CAN.a(leftEncTimer.o)
+                0x000074f0                leftEncTimer_Start
  .text.leftEncTimer_Stop
-                0x000070ec       0x10 .\ARM_GCC_493\Debug\C-CAN.a(leftEncTimer.o)
-                0x000070ec                leftEncTimer_Stop
+                0x0000757c       0x10 .\ARM_GCC_493\Debug\C-CAN.a(leftEncTimer.o)
+                0x0000757c                leftEncTimer_Stop
  .text.leftEncTimer_SetInterruptMode
-                0x000070fc        0xc .\ARM_GCC_493\Debug\C-CAN.a(leftEncTimer.o)
-                0x000070fc                leftEncTimer_SetInterruptMode
+                0x0000758c        0xc .\ARM_GCC_493\Debug\C-CAN.a(leftEncTimer.o)
+                0x0000758c                leftEncTimer_SetInterruptMode
  .text.leftEncTimer_ReadStatusRegister
-                0x00007108        0xc .\ARM_GCC_493\Debug\C-CAN.a(leftEncTimer.o)
-                0x00007108                leftEncTimer_ReadStatusRegister
+                0x00007598        0xc .\ARM_GCC_493\Debug\C-CAN.a(leftEncTimer.o)
+                0x00007598                leftEncTimer_ReadStatusRegister
  .text.leftEncTimer_ReadControlRegister
-                0x00007114        0xc .\ARM_GCC_493\Debug\C-CAN.a(leftEncTimer.o)
-                0x00007114                leftEncTimer_ReadControlRegister
+                0x000075a4        0xc .\ARM_GCC_493\Debug\C-CAN.a(leftEncTimer.o)
+                0x000075a4                leftEncTimer_ReadControlRegister
  .text.leftEncTimer_WriteControlRegister
-                0x00007120        0xc .\ARM_GCC_493\Debug\C-CAN.a(leftEncTimer.o)
-                0x00007120                leftEncTimer_WriteControlRegister
+                0x000075b0        0xc .\ARM_GCC_493\Debug\C-CAN.a(leftEncTimer.o)
+                0x000075b0                leftEncTimer_WriteControlRegister
  .text.leftEncTimer_WriteCounter
-                0x0000712c        0xc .\ARM_GCC_493\Debug\C-CAN.a(leftEncTimer.o)
-                0x0000712c                leftEncTimer_WriteCounter
+                0x000075bc        0xc .\ARM_GCC_493\Debug\C-CAN.a(leftEncTimer.o)
+                0x000075bc                leftEncTimer_WriteCounter
  .text.leftEncTimer_ReadCounter
-                0x00007138       0x14 .\ARM_GCC_493\Debug\C-CAN.a(leftEncTimer.o)
-                0x00007138                leftEncTimer_ReadCounter
+                0x000075c8       0x14 .\ARM_GCC_493\Debug\C-CAN.a(leftEncTimer.o)
+                0x000075c8                leftEncTimer_ReadCounter
  .text.leftEncTimer_ReadCapture
-                0x0000714c        0xc .\ARM_GCC_493\Debug\C-CAN.a(leftEncTimer.o)
-                0x0000714c                leftEncTimer_ReadCapture
+                0x000075dc        0xc .\ARM_GCC_493\Debug\C-CAN.a(leftEncTimer.o)
+                0x000075dc                leftEncTimer_ReadCapture
  .text.leftEncTimer_WritePeriod
-                0x00007158        0xc .\ARM_GCC_493\Debug\C-CAN.a(leftEncTimer.o)
-                0x00007158                leftEncTimer_WritePeriod
+                0x000075e8        0xc .\ARM_GCC_493\Debug\C-CAN.a(leftEncTimer.o)
+                0x000075e8                leftEncTimer_WritePeriod
  .text.leftEncTimer_ReadPeriod
-                0x00007164        0xc .\ARM_GCC_493\Debug\C-CAN.a(leftEncTimer.o)
-                0x00007164                leftEncTimer_ReadPeriod
+                0x000075f4        0xc .\ARM_GCC_493\Debug\C-CAN.a(leftEncTimer.o)
+                0x000075f4                leftEncTimer_ReadPeriod
  .text.leftEncTimer_WriteCompare
-                0x00007170        0xc .\ARM_GCC_493\Debug\C-CAN.a(leftEncTimer.o)
-                0x00007170                leftEncTimer_WriteCompare
+                0x00007600        0xc .\ARM_GCC_493\Debug\C-CAN.a(leftEncTimer.o)
+                0x00007600                leftEncTimer_WriteCompare
  .text.leftEncTimer_ReadCompare
-                0x0000717c        0xc .\ARM_GCC_493\Debug\C-CAN.a(leftEncTimer.o)
-                0x0000717c                leftEncTimer_ReadCompare
+                0x0000760c        0xc .\ARM_GCC_493\Debug\C-CAN.a(leftEncTimer.o)
+                0x0000760c                leftEncTimer_ReadCompare
  .text.leftEncTimer_ClearFIFO
-                0x00007188       0x1c .\ARM_GCC_493\Debug\C-CAN.a(leftEncTimer.o)
-                0x00007188                leftEncTimer_ClearFIFO
- .text          0x000071a4        0x0 .\ARM_GCC_493\Debug\C-CAN.a(rightEncTimer.o)
+                0x00007618       0x1c .\ARM_GCC_493\Debug\C-CAN.a(leftEncTimer.o)
+                0x00007618                leftEncTimer_ClearFIFO
+ .text          0x00007634        0x0 .\ARM_GCC_493\Debug\C-CAN.a(rightEncTimer.o)
  .text.rightEncTimer_Init
-                0x000071a4       0x74 .\ARM_GCC_493\Debug\C-CAN.a(rightEncTimer.o)
-                0x000071a4                rightEncTimer_Init
+                0x00007634       0x74 .\ARM_GCC_493\Debug\C-CAN.a(rightEncTimer.o)
+                0x00007634                rightEncTimer_Init
  .text.rightEncTimer_Enable
-                0x00007218       0x10 .\ARM_GCC_493\Debug\C-CAN.a(rightEncTimer.o)
-                0x00007218                rightEncTimer_Enable
+                0x000076a8       0x10 .\ARM_GCC_493\Debug\C-CAN.a(rightEncTimer.o)
+                0x000076a8                rightEncTimer_Enable
  .text.rightEncTimer_Start
-                0x00007228       0x8c .\ARM_GCC_493\Debug\C-CAN.a(rightEncTimer.o)
-                0x00007228                rightEncTimer_Start
+                0x000076b8       0x8c .\ARM_GCC_493\Debug\C-CAN.a(rightEncTimer.o)
+                0x000076b8                rightEncTimer_Start
  .text.rightEncTimer_Stop
-                0x000072b4       0x10 .\ARM_GCC_493\Debug\C-CAN.a(rightEncTimer.o)
-                0x000072b4                rightEncTimer_Stop
+                0x00007744       0x10 .\ARM_GCC_493\Debug\C-CAN.a(rightEncTimer.o)
+                0x00007744                rightEncTimer_Stop
  .text.rightEncTimer_SetInterruptMode
-                0x000072c4        0xc .\ARM_GCC_493\Debug\C-CAN.a(rightEncTimer.o)
-                0x000072c4                rightEncTimer_SetInterruptMode
+                0x00007754        0xc .\ARM_GCC_493\Debug\C-CAN.a(rightEncTimer.o)
+                0x00007754                rightEncTimer_SetInterruptMode
  .text.rightEncTimer_ReadStatusRegister
-                0x000072d0        0xc .\ARM_GCC_493\Debug\C-CAN.a(rightEncTimer.o)
-                0x000072d0                rightEncTimer_ReadStatusRegister
+                0x00007760        0xc .\ARM_GCC_493\Debug\C-CAN.a(rightEncTimer.o)
+                0x00007760                rightEncTimer_ReadStatusRegister
  .text.rightEncTimer_ReadControlRegister
-                0x000072dc        0xc .\ARM_GCC_493\Debug\C-CAN.a(rightEncTimer.o)
-                0x000072dc                rightEncTimer_ReadControlRegister
+                0x0000776c        0xc .\ARM_GCC_493\Debug\C-CAN.a(rightEncTimer.o)
+                0x0000776c                rightEncTimer_ReadControlRegister
  .text.rightEncTimer_WriteControlRegister
-                0x000072e8        0xc .\ARM_GCC_493\Debug\C-CAN.a(rightEncTimer.o)
-                0x000072e8                rightEncTimer_WriteControlRegister
+                0x00007778        0xc .\ARM_GCC_493\Debug\C-CAN.a(rightEncTimer.o)
+                0x00007778                rightEncTimer_WriteControlRegister
  .text.rightEncTimer_WriteCounter
-                0x000072f4        0xc .\ARM_GCC_493\Debug\C-CAN.a(rightEncTimer.o)
-                0x000072f4                rightEncTimer_WriteCounter
+                0x00007784        0xc .\ARM_GCC_493\Debug\C-CAN.a(rightEncTimer.o)
+                0x00007784                rightEncTimer_WriteCounter
  .text.rightEncTimer_ReadCounter
-                0x00007300       0x14 .\ARM_GCC_493\Debug\C-CAN.a(rightEncTimer.o)
-                0x00007300                rightEncTimer_ReadCounter
+                0x00007790       0x14 .\ARM_GCC_493\Debug\C-CAN.a(rightEncTimer.o)
+                0x00007790                rightEncTimer_ReadCounter
  .text.rightEncTimer_ReadCapture
-                0x00007314        0xc .\ARM_GCC_493\Debug\C-CAN.a(rightEncTimer.o)
-                0x00007314                rightEncTimer_ReadCapture
+                0x000077a4        0xc .\ARM_GCC_493\Debug\C-CAN.a(rightEncTimer.o)
+                0x000077a4                rightEncTimer_ReadCapture
  .text.rightEncTimer_WritePeriod
-                0x00007320        0xc .\ARM_GCC_493\Debug\C-CAN.a(rightEncTimer.o)
-                0x00007320                rightEncTimer_WritePeriod
+                0x000077b0        0xc .\ARM_GCC_493\Debug\C-CAN.a(rightEncTimer.o)
+                0x000077b0                rightEncTimer_WritePeriod
  .text.rightEncTimer_ReadPeriod
-                0x0000732c        0xc .\ARM_GCC_493\Debug\C-CAN.a(rightEncTimer.o)
-                0x0000732c                rightEncTimer_ReadPeriod
+                0x000077bc        0xc .\ARM_GCC_493\Debug\C-CAN.a(rightEncTimer.o)
+                0x000077bc                rightEncTimer_ReadPeriod
  .text.rightEncTimer_WriteCompare
-                0x00007338        0xc .\ARM_GCC_493\Debug\C-CAN.a(rightEncTimer.o)
-                0x00007338                rightEncTimer_WriteCompare
+                0x000077c8        0xc .\ARM_GCC_493\Debug\C-CAN.a(rightEncTimer.o)
+                0x000077c8                rightEncTimer_WriteCompare
  .text.rightEncTimer_ReadCompare
-                0x00007344        0xc .\ARM_GCC_493\Debug\C-CAN.a(rightEncTimer.o)
-                0x00007344                rightEncTimer_ReadCompare
+                0x000077d4        0xc .\ARM_GCC_493\Debug\C-CAN.a(rightEncTimer.o)
+                0x000077d4                rightEncTimer_ReadCompare
  .text.rightEncTimer_ClearFIFO
-                0x00007350       0x1c .\ARM_GCC_493\Debug\C-CAN.a(rightEncTimer.o)
-                0x00007350                rightEncTimer_ClearFIFO
- .text          0x0000736c        0x0 .\ARM_GCC_493\Debug\C-CAN.a(CyFlash.o)
+                0x000077e0       0x1c .\ARM_GCC_493\Debug\C-CAN.a(rightEncTimer.o)
+                0x000077e0                rightEncTimer_ClearFIFO
+ .text          0x000077fc        0x0 .\ARM_GCC_493\Debug\C-CAN.a(CyFlash.o)
  .text.CyFlash_Start
-                0x0000736c       0x50 .\ARM_GCC_493\Debug\C-CAN.a(CyFlash.o)
-                0x0000736c                CyFlash_Start
+                0x000077fc       0x50 .\ARM_GCC_493\Debug\C-CAN.a(CyFlash.o)
+                0x000077fc                CyFlash_Start
  .text.CyFlash_Stop
-                0x000073bc       0x2c .\ARM_GCC_493\Debug\C-CAN.a(CyFlash.o)
-                0x000073bc                CyFlash_Stop
+                0x0000784c       0x2c .\ARM_GCC_493\Debug\C-CAN.a(CyFlash.o)
+                0x0000784c                CyFlash_Stop
  .text.CySetTemp
-                0x000073e8       0xa4 .\ARM_GCC_493\Debug\C-CAN.a(CyFlash.o)
-                0x000073e8                CySetTemp
+                0x00007878       0xa4 .\ARM_GCC_493\Debug\C-CAN.a(CyFlash.o)
+                0x00007878                CySetTemp
  .text.CySetFlashEEBuffer
-                0x0000748c       0x34 .\ARM_GCC_493\Debug\C-CAN.a(CyFlash.o)
-                0x0000748c                CySetFlashEEBuffer
+                0x0000791c       0x34 .\ARM_GCC_493\Debug\C-CAN.a(CyFlash.o)
+                0x0000791c                CySetFlashEEBuffer
  .text.CyWriteRowData
-                0x000074c0       0xd0 .\ARM_GCC_493\Debug\C-CAN.a(CyFlash.o)
-                0x000074c0                CyWriteRowData
+                0x00007950       0xd0 .\ARM_GCC_493\Debug\C-CAN.a(CyFlash.o)
+                0x00007950                CyWriteRowData
  .text.CyWriteRowFull
-                0x00007590       0xcc .\ARM_GCC_493\Debug\C-CAN.a(CyFlash.o)
-                0x00007590                CyWriteRowFull
+                0x00007a20       0xcc .\ARM_GCC_493\Debug\C-CAN.a(CyFlash.o)
+                0x00007a20                CyWriteRowFull
  .text.CyFlash_SetWaitCycles
-                0x0000765c       0x90 .\ARM_GCC_493\Debug\C-CAN.a(CyFlash.o)
-                0x0000765c                CyFlash_SetWaitCycles
+                0x00007aec       0x90 .\ARM_GCC_493\Debug\C-CAN.a(CyFlash.o)
+                0x00007aec                CyFlash_SetWaitCycles
  .text.CyEEPROM_Start
-                0x000076ec       0x50 .\ARM_GCC_493\Debug\C-CAN.a(CyFlash.o)
-                0x000076ec                CyEEPROM_Start
+                0x00007b7c       0x50 .\ARM_GCC_493\Debug\C-CAN.a(CyFlash.o)
+                0x00007b7c                CyEEPROM_Start
  .text.CyEEPROM_Stop
-                0x0000773c       0x2c .\ARM_GCC_493\Debug\C-CAN.a(CyFlash.o)
-                0x0000773c                CyEEPROM_Stop
+                0x00007bcc       0x2c .\ARM_GCC_493\Debug\C-CAN.a(CyFlash.o)
+                0x00007bcc                CyEEPROM_Stop
  .text.CyEEPROM_ReadReserve
-                0x00007768       0x18 .\ARM_GCC_493\Debug\C-CAN.a(CyFlash.o)
-                0x00007768                CyEEPROM_ReadReserve
+                0x00007bf8       0x18 .\ARM_GCC_493\Debug\C-CAN.a(CyFlash.o)
+                0x00007bf8                CyEEPROM_ReadReserve
  .text.CyEEPROM_ReadRelease
-                0x00007780       0x10 .\ARM_GCC_493\Debug\C-CAN.a(CyFlash.o)
-                0x00007780                CyEEPROM_ReadRelease
- .text          0x00007790        0x0 .\ARM_GCC_493\Debug\C-CAN.a(CySpc.o)
+                0x00007c10       0x10 .\ARM_GCC_493\Debug\C-CAN.a(CyFlash.o)
+                0x00007c10                CyEEPROM_ReadRelease
+ .text          0x00007c20        0x0 .\ARM_GCC_493\Debug\C-CAN.a(CySpc.o)
  .text.CySpcStart
-                0x00007790       0x2c .\ARM_GCC_493\Debug\C-CAN.a(CySpc.o)
-                0x00007790                CySpcStart
+                0x00007c20       0x2c .\ARM_GCC_493\Debug\C-CAN.a(CySpc.o)
+                0x00007c20                CySpcStart
  .text.CySpcStop
-                0x000077bc       0x2c .\ARM_GCC_493\Debug\C-CAN.a(CySpc.o)
-                0x000077bc                CySpcStop
+                0x00007c4c       0x2c .\ARM_GCC_493\Debug\C-CAN.a(CySpc.o)
+                0x00007c4c                CySpcStop
  .text.CySpcReadData
-                0x000077e8       0x40 .\ARM_GCC_493\Debug\C-CAN.a(CySpc.o)
-                0x000077e8                CySpcReadData
+                0x00007c78       0x40 .\ARM_GCC_493\Debug\C-CAN.a(CySpc.o)
+                0x00007c78                CySpcReadData
  .text.CySpcLoadMultiByte
-                0x00007828       0x6c .\ARM_GCC_493\Debug\C-CAN.a(CySpc.o)
-                0x00007828                CySpcLoadMultiByte
+                0x00007cb8       0x6c .\ARM_GCC_493\Debug\C-CAN.a(CySpc.o)
+                0x00007cb8                CySpcLoadMultiByte
  .text.CySpcLoadRow
-                0x00007894       0x50 .\ARM_GCC_493\Debug\C-CAN.a(CySpc.o)
-                0x00007894                CySpcLoadRow
+                0x00007d24       0x50 .\ARM_GCC_493\Debug\C-CAN.a(CySpc.o)
+                0x00007d24                CySpcLoadRow
  .text.CySpcLoadRowFull
-                0x000078e4       0x74 .\ARM_GCC_493\Debug\C-CAN.a(CySpc.o)
-                0x000078e4                CySpcLoadRowFull
+                0x00007d74       0x74 .\ARM_GCC_493\Debug\C-CAN.a(CySpc.o)
+                0x00007d74                CySpcLoadRowFull
  .text.CySpcWriteRow
-                0x00007958       0x44 .\ARM_GCC_493\Debug\C-CAN.a(CySpc.o)
-                0x00007958                CySpcWriteRow
+                0x00007de8       0x44 .\ARM_GCC_493\Debug\C-CAN.a(CySpc.o)
+                0x00007de8                CySpcWriteRow
  .text.CySpcEraseSector
-                0x0000799c       0x3c .\ARM_GCC_493\Debug\C-CAN.a(CySpc.o)
-                0x0000799c                CySpcEraseSector
+                0x00007e2c       0x3c .\ARM_GCC_493\Debug\C-CAN.a(CySpc.o)
+                0x00007e2c                CySpcEraseSector
  .text.CySpcGetTemp
-                0x000079d8       0x38 .\ARM_GCC_493\Debug\C-CAN.a(CySpc.o)
-                0x000079d8                CySpcGetTemp
+                0x00007e68       0x38 .\ARM_GCC_493\Debug\C-CAN.a(CySpc.o)
+                0x00007e68                CySpcGetTemp
  .text.CySpcLock
-                0x00007a10       0x44 .\ARM_GCC_493\Debug\C-CAN.a(CySpc.o)
-                0x00007a10                CySpcLock
+                0x00007ea0       0x44 .\ARM_GCC_493\Debug\C-CAN.a(CySpc.o)
+                0x00007ea0                CySpcLock
  .text.CySpcUnlock
-                0x00007a54       0x34 .\ARM_GCC_493\Debug\C-CAN.a(CySpc.o)
-                0x00007a54                CySpcUnlock
+                0x00007ee4       0x34 .\ARM_GCC_493\Debug\C-CAN.a(CySpc.o)
+                0x00007ee4                CySpcUnlock
  .text.CySpcGetAlgorithm
-                0x00007a88       0x28 .\ARM_GCC_493\Debug\C-CAN.a(CySpc.o)
-                0x00007a88                CySpcGetAlgorithm
- .text          0x00007ab0      0x21c c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libgcc.a(_arm_addsubsf3.o)
-                0x00007ab0                __aeabi_frsub
-                0x00007ab8                __subsf3
-                0x00007ab8                __aeabi_fsub
-                0x00007abc                __aeabi_fadd
-                0x00007abc                __addsf3
-                0x00007c1c                __aeabi_ui2f
-                0x00007c1c                __floatunsisf
-                0x00007c24                __aeabi_i2f
-                0x00007c24                __floatsisf
-                0x00007c40                __aeabi_ul2f
-                0x00007c40                __floatundisf
-                0x00007c50                __aeabi_l2f
-                0x00007c50                __floatdisf
- .text          0x00007ccc      0x2a0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libgcc.a(_arm_muldivsf3.o)
-                0x00007ccc                __mulsf3
-                0x00007ccc                __aeabi_fmul
-                0x00007e34                __aeabi_fdiv
-                0x00007e34                __divsf3
- .text          0x00007f6c       0x4c c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libgcc.a(_arm_fixsfsi.o)
-                0x00007f6c                __aeabi_f2iz
-                0x00007f6c                __fixsfsi
- .text          0x00007fb8       0x38 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libgcc.a(_aeabi_ldivmod.o)
-                0x00007fb8                __aeabi_ldivmod
- .text          0x00007ff0       0x60 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libgcc.a(bpabi.o)
-                0x00007ff0                __gnu_ldivmod_helper
-                0x00008020                __gnu_uldivmod_helper
- .text          0x00008050        0x4 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libgcc.a(_dvmd_tls.o)
-                0x00008050                __aeabi_idiv0
-                0x00008050                __aeabi_ldiv0
- .text          0x00008054      0x2ac c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libgcc.a(_divdi3.o)
-                0x00008054                __divdi3
- .text          0x00008300      0x270 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libgcc.a(_udivdi3.o)
-                0x00008300                __udivdi3
- .text          0x00008570        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-errno.o)
- .text.__errno  0x00008570        0xc c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-errno.o)
-                0x00008570                __errno
- .text          0x0000857c        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-exit.o)
- .text.exit     0x0000857c       0x28 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-exit.o)
-                0x0000857c                exit
- .text          0x000085a4        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-impure.o)
- .text          0x000085a4        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-init.o)
+                0x00007f18       0x28 .\ARM_GCC_493\Debug\C-CAN.a(CySpc.o)
+                0x00007f18                CySpcGetAlgorithm
+ .text          0x00007f40      0x21c c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libgcc.a(_arm_addsubsf3.o)
+                0x00007f40                __aeabi_frsub
+                0x00007f48                __subsf3
+                0x00007f48                __aeabi_fsub
+                0x00007f4c                __aeabi_fadd
+                0x00007f4c                __addsf3
+                0x000080ac                __aeabi_ui2f
+                0x000080ac                __floatunsisf
+                0x000080b4                __aeabi_i2f
+                0x000080b4                __floatsisf
+                0x000080d0                __aeabi_ul2f
+                0x000080d0                __floatundisf
+                0x000080e0                __aeabi_l2f
+                0x000080e0                __floatdisf
+ .text          0x0000815c      0x2a0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libgcc.a(_arm_muldivsf3.o)
+                0x0000815c                __mulsf3
+                0x0000815c                __aeabi_fmul
+                0x000082c4                __aeabi_fdiv
+                0x000082c4                __divsf3
+ .text          0x000083fc       0x4c c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libgcc.a(_arm_fixsfsi.o)
+                0x000083fc                __aeabi_f2iz
+                0x000083fc                __fixsfsi
+ .text          0x00008448       0x38 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libgcc.a(_aeabi_ldivmod.o)
+                0x00008448                __aeabi_ldivmod
+ .text          0x00008480       0x60 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libgcc.a(bpabi.o)
+                0x00008480                __gnu_ldivmod_helper
+                0x000084b0                __gnu_uldivmod_helper
+ .text          0x000084e0        0x4 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libgcc.a(_dvmd_tls.o)
+                0x000084e0                __aeabi_idiv0
+                0x000084e0                __aeabi_ldiv0
+ .text          0x000084e4      0x2ac c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libgcc.a(_divdi3.o)
+                0x000084e4                __divdi3
+ .text          0x00008790      0x270 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libgcc.a(_udivdi3.o)
+                0x00008790                __udivdi3
+ .text          0x00008a00        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-errno.o)
+ .text.__errno  0x00008a00        0xc c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-errno.o)
+                0x00008a00                __errno
+ .text          0x00008a0c        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-exit.o)
+ .text.exit     0x00008a0c       0x28 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-exit.o)
+                0x00008a0c                exit
+ .text          0x00008a34        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-impure.o)
+ .text          0x00008a34        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-init.o)
  .text.__libc_init_array
-                0x000085a4       0x4c c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-init.o)
-                0x000085a4                __libc_init_array
- .text          0x000085f0        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memcpy.o)
- .text.memcpy   0x000085f0       0x16 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memcpy.o)
-                0x000085f0                memcpy
- .text          0x00008606        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memset.o)
- .text.memset   0x00008606       0x10 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memset.o)
-                0x00008606                memset
- .text          0x00008616        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-sprintf.o)
+                0x00008a34       0x4c c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-init.o)
+                0x00008a34                __libc_init_array
+ .text          0x00008a80        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memcpy.o)
+ .text.memcpy   0x00008a80       0x16 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memcpy.o)
+                0x00008a80                memcpy
+ .text          0x00008a96        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memset.o)
+ .text.memset   0x00008a96       0x10 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memset.o)
+                0x00008a96                memset
+ .text          0x00008aa6        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-sprintf.o)
  .text._sprintf_r
-                0x00008616       0x40 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-sprintf.o)
-                0x00008616                _sprintf_r
-                0x00008616                _siprintf_r
- *fill*         0x00008656        0x2 
- .text.sprintf  0x00008658       0x48 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-sprintf.o)
-                0x00008658                siprintf
-                0x00008658                sprintf
- .text          0x000086a0        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-svfprintf.o)
+                0x00008aa6       0x40 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-sprintf.o)
+                0x00008aa6                _sprintf_r
+                0x00008aa6                _siprintf_r
+ *fill*         0x00008ae6        0x2 
+ .text.sprintf  0x00008ae8       0x48 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-sprintf.o)
+                0x00008ae8                siprintf
+                0x00008ae8                sprintf
+ .text          0x00008b30        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-svfprintf.o)
  .text.__ssputs_r
-                0x000086a0       0xb2 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-svfprintf.o)
-                0x000086a0                __ssputs_r
+                0x00008b30       0xb2 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-svfprintf.o)
+                0x00008b30                __ssputs_r
  .text.__ssprint_r
-                0x00008752       0xfe c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-svfprintf.o)
-                0x00008752                __ssprint_r
+                0x00008be2       0xfe c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-svfprintf.o)
+                0x00008be2                __ssprint_r
  .text._svfprintf_r
-                0x00008850      0x1e4 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-svfprintf.o)
-                0x00008850                _svfiprintf_r
-                0x00008850                _svfprintf_r
- .text          0x00008a34        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-vfprintf_i.o)
+                0x00008ce0      0x1e4 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-svfprintf.o)
+                0x00008ce0                _svfiprintf_r
+                0x00008ce0                _svfprintf_r
+ .text          0x00008ec4        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-vfprintf_i.o)
  .text._printf_common
-                0x00008a34       0xea c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-vfprintf_i.o)
-                0x00008a34                _printf_common
- *fill*         0x00008b1e        0x2 
+                0x00008ec4       0xea c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-vfprintf_i.o)
+                0x00008ec4                _printf_common
+ *fill*         0x00008fae        0x2 
  .text._printf_i
-                0x00008b20      0x240 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-vfprintf_i.o)
-                0x00008b20                _printf_i
- .text          0x00008d60        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memchr.o)
- .text.memchr   0x00008d60       0x1c c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memchr.o)
-                0x00008d60                memchr
- .text          0x00008d7c        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memmove.o)
- .text.memmove  0x00008d7c       0x36 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memmove.o)
-                0x00008d7c                memmove
- .text          0x00008db2        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-freer.o)
- *fill*         0x00008db2        0x2 
- .text._free_r  0x00008db4       0x88 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-freer.o)
-                0x00008db4                _free_r
- .text          0x00008e3c        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-mallocr.o)
+                0x00008fb0      0x240 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-vfprintf_i.o)
+                0x00008fb0                _printf_i
+ .text          0x000091f0        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memchr.o)
+ .text.memchr   0x000091f0       0x1c c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memchr.o)
+                0x000091f0                memchr
+ .text          0x0000920c        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memmove.o)
+ .text.memmove  0x0000920c       0x36 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memmove.o)
+                0x0000920c                memmove
+ .text          0x00009242        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-freer.o)
+ *fill*         0x00009242        0x2 
+ .text._free_r  0x00009244       0x88 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-freer.o)
+                0x00009244                _free_r
+ .text          0x000092cc        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-mallocr.o)
  .text._malloc_r
-                0x00008e3c       0xac c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-mallocr.o)
-                0x00008e3c                _malloc_r
- .text          0x00008ee8        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-reallocr.o)
+                0x000092cc       0xac c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-mallocr.o)
+                0x000092cc                _malloc_r
+ .text          0x00009378        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-reallocr.o)
  .text._realloc_r
-                0x00008ee8       0x4c c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-reallocr.o)
-                0x00008ee8                _realloc_r
- .text          0x00008f34        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-sbrkr.o)
- .text._sbrk_r  0x00008f34       0x20 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-sbrkr.o)
-                0x00008f34                _sbrk_r
- .text          0x00008f54        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-msizer.o)
+                0x00009378       0x4c c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-reallocr.o)
+                0x00009378                _realloc_r
+ .text          0x000093c4        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-sbrkr.o)
+ .text._sbrk_r  0x000093c4       0x20 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-sbrkr.o)
+                0x000093c4                _sbrk_r
+ .text          0x000093e4        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-msizer.o)
  .text._malloc_usable_size_r
-                0x00008f54       0x14 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-msizer.o)
-                0x00008f54                _malloc_usable_size_r
- .text          0x00008f68        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-reent.o)
+                0x000093e4       0x14 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-msizer.o)
+                0x000093e4                _malloc_usable_size_r
+ .text          0x000093f8        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-reent.o)
  .text.cleanup_glue
-                0x00008f68       0x1a c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-reent.o)
-                0x00008f68                cleanup_glue
- *fill*         0x00008f82        0x2 
+                0x000093f8       0x1a c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-reent.o)
+                0x000093f8                cleanup_glue
+ *fill*         0x00009412        0x2 
  .text._reclaim_reent
-                0x00008f84       0xb4 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-reent.o)
-                0x00008f84                _reclaim_reent
- .text          0x00009038        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crtend.o
- .text          0x00009038        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crtn.o
+                0x00009414       0xb4 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-reent.o)
+                0x00009414                _reclaim_reent
+ .text          0x000094c8        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crtend.o
+ .text          0x000094c8        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crtn.o
  *(.plt)
  *(.gnu.warning)
  *(.glue_7t)
@@ -1283,100 +1316,100 @@ END GROUP
  .vfp11_veneer  0x00000000        0x0 linker stubs
  *(.bootloader)
  *(.ARM.extab* .gnu.linkonce.armextab.*)
- .ARM.extab     0x00009038        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/crt0.o
- .ARM.extab     0x00009038        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libgcc.a(_divdi3.o)
- .ARM.extab     0x00009038        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libgcc.a(_udivdi3.o)
+ .ARM.extab     0x000094c8        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/crt0.o
+ .ARM.extab     0x000094c8        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libgcc.a(_divdi3.o)
+ .ARM.extab     0x000094c8        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libgcc.a(_udivdi3.o)
  *(.gcc_except_table)
 
-.v4_bx          0x00009038        0x0
+.v4_bx          0x000094c8        0x0
  .v4_bx         0x00000000        0x0 linker stubs
 
-.iplt           0x00009038        0x0
+.iplt           0x000094c8        0x0
  .iplt          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crtbegin.o
 
 .eh_frame_hdr
  *(.eh_frame_hdr)
 
-.eh_frame       0x00009038        0x4
+.eh_frame       0x000094c8        0x4
  *(.eh_frame)
- .eh_frame      0x00009038        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crtbegin.o
- .eh_frame      0x00009038        0x4 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crtend.o
-                0x0000903c                PROVIDE (__exidx_start, .)
+ .eh_frame      0x000094c8        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crtbegin.o
+ .eh_frame      0x000094c8        0x4 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crtend.o
+                0x000094cc                PROVIDE (__exidx_start, .)
 
-.ARM.exidx      0x0000903c        0x8
+.ARM.exidx      0x000094cc        0x8
  *(.ARM.exidx* .gnu.linkonce.armexidx.*)
- .ARM.exidx     0x0000903c        0x8 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/crt0.o
- .ARM.exidx     0x00009044        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libgcc.a(_divdi3.o)
+ .ARM.exidx     0x000094cc        0x8 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/crt0.o
+ .ARM.exidx     0x000094d4        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libgcc.a(_divdi3.o)
                                   0x8 (size before relaxing)
- .ARM.exidx     0x00009044        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libgcc.a(_udivdi3.o)
+ .ARM.exidx     0x000094d4        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libgcc.a(_udivdi3.o)
                                   0x8 (size before relaxing)
-                0x00009044                __exidx_end = .
+                0x000094d4                __exidx_end = .
 
-.rodata         0x00009044      0x204
+.rodata         0x000094d4      0x204
  *(.rodata .rodata.* .gnu.linkonce.r.*)
  .rodata.str1.4
-                0x00009044       0x24 .\ARM_GCC_493\Debug\main.o
- .rodata        0x00009068       0x5c .\ARM_GCC_493\Debug\C-CAN.a(cyfitter_cfg.o)
- .rodata        0x000090c4       0x10 .\ARM_GCC_493\Debug\C-CAN.a(cyPm.o)
- .rodata        0x000090d4      0x100 .\ARM_GCC_493\Debug\C-CAN.a(CAN_1.o)
+                0x000094d4       0x24 .\ARM_GCC_493\Debug\main.o
+ .rodata        0x000094f8       0x5c .\ARM_GCC_493\Debug\C-CAN.a(cyfitter_cfg.o)
+ .rodata        0x00009554       0x10 .\ARM_GCC_493\Debug\C-CAN.a(cyPm.o)
+ .rodata        0x00009564      0x100 .\ARM_GCC_493\Debug\C-CAN.a(CAN_1.o)
  .rodata.str1.1
-                0x000091d4        0x2 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-impure.o)
- *fill*         0x000091d6        0x2 
+                0x00009664        0x2 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-impure.o)
+ *fill*         0x00009666        0x2 
  .rodata._global_impure_ptr
-                0x000091d8        0x4 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-impure.o)
-                0x000091d8                _global_impure_ptr
+                0x00009668        0x4 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-impure.o)
+                0x00009668                _global_impure_ptr
  .rodata.str1.1
-                0x000091dc       0x11 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-svfprintf.o)
+                0x0000966c       0x11 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-svfprintf.o)
  .rodata.str1.1
-                0x000091ed       0x22 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-vfprintf_i.o)
-                0x00009210                . = ALIGN (0x4)
- *fill*         0x0000920f        0x1 
+                0x0000967d       0x22 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-vfprintf_i.o)
+                0x000096a0                . = ALIGN (0x4)
+ *fill*         0x0000969f        0x1 
  *(.init)
- .init          0x00009210        0x4 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crti.o
-                0x00009210                _init
- .init          0x00009214        0x8 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crtn.o
-                0x0000921c                . = ALIGN (0x4)
-                0x0000921c                __preinit_array_start = .
+ .init          0x000096a0        0x4 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crti.o
+                0x000096a0                _init
+ .init          0x000096a4        0x8 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crtn.o
+                0x000096ac                . = ALIGN (0x4)
+                0x000096ac                __preinit_array_start = .
  *(.preinit_array)
-                0x0000921c                __preinit_array_end = .
-                0x0000921c                . = ALIGN (0x4)
-                0x0000921c                __init_array_start = .
+                0x000096ac                __preinit_array_end = .
+                0x000096ac                . = ALIGN (0x4)
+                0x000096ac                __init_array_start = .
  *(SORT(.init_array.*))
  *(.init_array)
- .init_array    0x0000921c        0x4 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crtbegin.o
- .init_array    0x00009220        0x4 .\ARM_GCC_493\Debug\Cm3Start.o
-                0x00009224                __init_array_end = .
-                0x00009224                . = ALIGN (0x4)
+ .init_array    0x000096ac        0x4 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crtbegin.o
+ .init_array    0x000096b0        0x4 .\ARM_GCC_493\Debug\Cm3Start.o
+                0x000096b4                __init_array_end = .
+                0x000096b4                . = ALIGN (0x4)
  *(.fini)
- .fini          0x00009224        0x4 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crti.o
-                0x00009224                _fini
- .fini          0x00009228        0x8 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crtn.o
-                0x00009230                . = ALIGN (0x4)
-                0x00009230                __fini_array_start = .
+ .fini          0x000096b4        0x4 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crti.o
+                0x000096b4                _fini
+ .fini          0x000096b8        0x8 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crtn.o
+                0x000096c0                . = ALIGN (0x4)
+                0x000096c0                __fini_array_start = .
  *(.fini_array)
- .fini_array    0x00009230        0x4 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crtbegin.o
+ .fini_array    0x000096c0        0x4 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crtbegin.o
  *(SORT(.fini_array.*))
-                0x00009234                __fini_array_end = .
-                0x00009234                . = ALIGN (0x4)
+                0x000096c4                __fini_array_end = .
+                0x000096c4                . = ALIGN (0x4)
  *crtbegin.o(.ctors)
  *(EXCLUDE_FILE(*crtend.o) .ctors)
  *(SORT(.ctors.*))
  *crtend.o(.ctors)
-                0x00009234                . = ALIGN (0x4)
+                0x000096c4                . = ALIGN (0x4)
  *crtbegin.o(.dtors)
  *(EXCLUDE_FILE(*crtend.o) .dtors)
  *(SORT(.dtors.*))
  *crtend.o(.dtors)
-                0x00009234                . = ALIGN (0x4)
-                0x00009234                __cy_regions = .
-                0x00009234        0x4 LONG 0x9248 __cy_region_init_ram
-                0x00009238        0x4 LONG 0x1fff8108 __cy_region_start_data
-                0x0000923c        0x4 LONG 0x88 __cy_region_init_size_ram
-                0x00009240        0x4 LONG 0xd8 __cy_region_zero_size_ram
-                0x00009244                __cy_regions_end = .
-                0x00009248                . = ALIGN (0x8)
- *fill*         0x00009244        0x4 
-                0x00009248                _etext = .
+                0x000096c4                . = ALIGN (0x4)
+                0x000096c4                __cy_regions = .
+                0x000096c4        0x4 LONG 0x96d8 __cy_region_init_ram
+                0x000096c8        0x4 LONG 0x1fff8108 __cy_region_start_data
+                0x000096cc        0x4 LONG 0x88 __cy_region_init_size_ram
+                0x000096d0        0x4 LONG 0x318 __cy_region_zero_size_ram
+                0x000096d4                __cy_regions_end = .
+                0x000096d8                . = ALIGN (0x8)
+ *fill*         0x000096d4        0x4 
+                0x000096d8                _etext = .
 
 .ramvectors     0x1fff8000      0x100
                 0x1fff8000                __cy_region_start_ram = .
@@ -1390,7 +1423,7 @@ END GROUP
  .noinit        0x1fff8104        0x1 .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
                 0x1fff8104                CyResetStatus
 
-.data           0x1fff8108       0x88 load address 0x00009248
+.data           0x1fff8108       0x88 load address 0x000096d8
                 0x1fff8108                __cy_region_start_data = .
  *(.jcr)
  .jcr           0x1fff8108        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crtbegin.o
@@ -1469,10 +1502,10 @@ END GROUP
  *(.ram)
                 0x1fff8190                _edata = .
 
-.igot.plt       0x1fff8190        0x0 load address 0x000092d0
+.igot.plt       0x1fff8190        0x0 load address 0x00009760
  .igot.plt      0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crtbegin.o
 
-.bss            0x1fff8190       0xd8 load address 0x000092d0
+.bss            0x1fff8190      0x318 load address 0x00009760
                 0x1fff8190                PROVIDE (__bss_start__, .)
  *(.shbss)
  *(.bss .bss.* .gnu.linkonce.b.*)
@@ -1480,7 +1513,7 @@ END GROUP
  .bss           0x1fff8190       0x1c c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crtbegin.o
  .bss           0x1fff81ac        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/crt0.o
  .bss           0x1fff81ac        0x4 .\ARM_GCC_493\Debug\main.o
-                0x1fff81ac                time
+                0x1fff81ac                timer
  .bss           0x1fff81b0        0x0 .\ARM_GCC_493\Debug\cymetadata.o
  .bss           0x1fff81b0        0x0 .\ARM_GCC_493\Debug\Cm3Start.o
  .bss           0x1fff81b0        0x0 .\ARM_GCC_493\Debug\cybootloader.o
@@ -1550,40 +1583,43 @@ END GROUP
  .bss           0x1fff8238        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crtend.o
  .bss           0x1fff8238        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crtn.o
  *(COMMON)
- COMMON         0x1fff8238       0x16 .\ARM_GCC_493\Debug\main.o
+ COMMON         0x1fff8238      0x259 .\ARM_GCC_493\Debug\main.o
                 0x1fff8238                bIndex
-                0x1fff823c                TxMessage1
-                0x1fff8244                RxMessage1
-                0x1fff824c                RxFlag1
-                0x1fff824d                RXDLC1
- *fill*         0x1fff824e        0x2 
- COMMON         0x1fff8250        0xa .\ARM_GCC_493\Debug\C-CAN.a(ADC_SAR_1.o)
-                0x1fff8250                ADC_SAR_1_countsPerVolt
-                0x1fff8252                ADC_SAR_1_shift
-                0x1fff8254                ADC_SAR_1_countsPer10Volt
-                0x1fff8258                ADC_SAR_1_offset
- *fill*         0x1fff825a        0x2 
- COMMON         0x1fff825c        0x2 .\ARM_GCC_493\Debug\C-CAN.a(CyFlash.o)
-                0x1fff825c                dieTemperature
- *fill*         0x1fff825e        0x2 
- COMMON         0x1fff8260        0x4 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-reent.o)
-                0x1fff8260                errno
-                0x1fff8268                . = ALIGN (0x8)
- *fill*         0x1fff8264        0x4 
+                0x1fff823c                right
+                0x1fff82d0                throttle
+                0x1fff835c                left
+                0x1fff83f0                TxMessage1
+                0x1fff83f8                RxMessage1
+                0x1fff8400                RxFlag1
+                0x1fff8404                steering
+                0x1fff8490                RXDLC1
+ *fill*         0x1fff8491        0x3 
+ COMMON         0x1fff8494        0xa .\ARM_GCC_493\Debug\C-CAN.a(ADC_SAR_1.o)
+                0x1fff8494                ADC_SAR_1_countsPerVolt
+                0x1fff8496                ADC_SAR_1_shift
+                0x1fff8498                ADC_SAR_1_countsPer10Volt
+                0x1fff849c                ADC_SAR_1_offset
+ *fill*         0x1fff849e        0x2 
+ COMMON         0x1fff84a0        0x2 .\ARM_GCC_493\Debug\C-CAN.a(CyFlash.o)
+                0x1fff84a0                dieTemperature
+ *fill*         0x1fff84a2        0x2 
+ COMMON         0x1fff84a4        0x4 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-reent.o)
+                0x1fff84a4                errno
+                0x1fff84a8                . = ALIGN (0x8)
  *(.ram.b)
-                0x1fff8268                _end = .
-                0x1fff8268                __end = .
-                0x1fff8268                PROVIDE (end, .)
-                0x1fff8268                PROVIDE (__bss_end__, .)
-                0x00009248                __cy_region_init_ram = LOADADDR (.data)
+                0x1fff84a8                _end = .
+                0x1fff84a8                __end = .
+                0x1fff84a8                PROVIDE (end, .)
+                0x1fff84a8                PROVIDE (__bss_end__, .)
+                0x000096d8                __cy_region_init_ram = LOADADDR (.data)
                 0x00000088                __cy_region_init_size_ram = (_edata - ADDR (.data))
-                0x000000d8                __cy_region_zero_size_ram = (_end - _edata)
+                0x00000318                __cy_region_zero_size_ram = (_end - _edata)
 
-.heap           0x1fff8268       0x80 load address 0x000092d0
-                0x1fff8268                . = _end
-                0x1fff82e8                . = (. + 0x80)
- *fill*         0x1fff8268       0x80 
-                0x1fff82e8                __cy_heap_limit = .
+.heap           0x1fff84a8       0x80 load address 0x00009760
+                0x1fff84a8                . = _end
+                0x1fff8528                . = (. + 0x80)
+ *fill*         0x1fff84a8       0x80 
+                0x1fff8528                __cy_heap_limit = .
 
 .stack          0x20007800      0x800
                 0x20007800                __cy_stack_limit = .
@@ -1661,283 +1697,283 @@ END GROUP
 .debug_sfnames
  *(.debug_sfnames)
 
-.debug_aranges  0x00000000      0xc30
+.debug_aranges  0x00000000      0xc80
  *(.debug_aranges)
  .debug_aranges
-                0x00000000       0x50 .\ARM_GCC_493\Debug\main.o
+                0x00000000       0xa0 .\ARM_GCC_493\Debug\main.o
  .debug_aranges
-                0x00000050       0x18 .\ARM_GCC_493\Debug\cymetadata.o
+                0x000000a0       0x18 .\ARM_GCC_493\Debug\cymetadata.o
  .debug_aranges
-                0x00000068       0x48 .\ARM_GCC_493\Debug\Cm3Start.o
+                0x000000b8       0x48 .\ARM_GCC_493\Debug\Cm3Start.o
  .debug_aranges
-                0x000000b0       0x18 .\ARM_GCC_493\Debug\cybootloader.o
+                0x00000100       0x18 .\ARM_GCC_493\Debug\cybootloader.o
  .debug_aranges
-                0x000000c8       0x38 .\ARM_GCC_493\Debug\C-CAN.a(cyfitter_cfg.o)
+                0x00000118       0x38 .\ARM_GCC_493\Debug\C-CAN.a(cyfitter_cfg.o)
  .debug_aranges
-                0x00000100       0xf0 .\ARM_GCC_493\Debug\C-CAN.a(UART_1.o)
+                0x00000150       0xf0 .\ARM_GCC_493\Debug\C-CAN.a(UART_1.o)
  .debug_aranges
-                0x000001f0       0x70 .\ARM_GCC_493\Debug\C-CAN.a(UART_1_IntClock.o)
+                0x00000240       0x70 .\ARM_GCC_493\Debug\C-CAN.a(UART_1_IntClock.o)
  .debug_aranges
-                0x00000260       0x20 .\ARM_GCC_493\Debug\C-CAN.a(CyBootAsmGnu.o)
+                0x000002b0       0x20 .\ARM_GCC_493\Debug\C-CAN.a(CyBootAsmGnu.o)
  .debug_aranges
-                0x00000280      0x288 .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
+                0x000002d0      0x288 .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
  .debug_aranges
-                0x00000508       0x78 .\ARM_GCC_493\Debug\C-CAN.a(cyPm.o)
+                0x00000558       0x78 .\ARM_GCC_493\Debug\C-CAN.a(cyPm.o)
  .debug_aranges
-                0x00000580       0xa0 .\ARM_GCC_493\Debug\C-CAN.a(ADC_SAR_1.o)
+                0x000005d0       0xa0 .\ARM_GCC_493\Debug\C-CAN.a(ADC_SAR_1.o)
  .debug_aranges
-                0x00000620       0x20 .\ARM_GCC_493\Debug\C-CAN.a(ADC_SAR_1_INT.o)
+                0x00000670       0x20 .\ARM_GCC_493\Debug\C-CAN.a(ADC_SAR_1_INT.o)
  .debug_aranges
-                0x00000640       0x70 .\ARM_GCC_493\Debug\C-CAN.a(ADC_SAR_1_theACLK.o)
+                0x00000690       0x70 .\ARM_GCC_493\Debug\C-CAN.a(ADC_SAR_1_theACLK.o)
  .debug_aranges
-                0x000006b0       0x30 .\ARM_GCC_493\Debug\C-CAN.a(AMux_1.o)
+                0x00000700       0x30 .\ARM_GCC_493\Debug\C-CAN.a(AMux_1.o)
  .debug_aranges
-                0x000006e0       0xc8 .\ARM_GCC_493\Debug\C-CAN.a(CAN_1.o)
+                0x00000730       0xc8 .\ARM_GCC_493\Debug\C-CAN.a(CAN_1.o)
  .debug_aranges
-                0x000007a8       0x30 .\ARM_GCC_493\Debug\C-CAN.a(CAN_1_INT.o)
+                0x000007f8       0x30 .\ARM_GCC_493\Debug\C-CAN.a(CAN_1_INT.o)
  .debug_aranges
-                0x000007d8       0x90 .\ARM_GCC_493\Debug\C-CAN.a(CAN_TIMER.o)
+                0x00000828       0x90 .\ARM_GCC_493\Debug\C-CAN.a(CAN_TIMER.o)
  .debug_aranges
-                0x00000868       0x80 .\ARM_GCC_493\Debug\C-CAN.a(CAN_ISR.o)
+                0x000008b8       0x80 .\ARM_GCC_493\Debug\C-CAN.a(CAN_ISR.o)
  .debug_aranges
-                0x000008e8       0x98 .\ARM_GCC_493\Debug\C-CAN.a(Encoder_Left.o)
+                0x00000938       0x98 .\ARM_GCC_493\Debug\C-CAN.a(Encoder_Left.o)
  .debug_aranges
-                0x00000980       0x98 .\ARM_GCC_493\Debug\C-CAN.a(Encoder_Right.o)
+                0x000009d0       0x98 .\ARM_GCC_493\Debug\C-CAN.a(Encoder_Right.o)
  .debug_aranges
-                0x00000a18       0x98 .\ARM_GCC_493\Debug\C-CAN.a(leftEncTimer.o)
+                0x00000a68       0x98 .\ARM_GCC_493\Debug\C-CAN.a(leftEncTimer.o)
  .debug_aranges
-                0x00000ab0       0x98 .\ARM_GCC_493\Debug\C-CAN.a(rightEncTimer.o)
+                0x00000b00       0x98 .\ARM_GCC_493\Debug\C-CAN.a(rightEncTimer.o)
  .debug_aranges
-                0x00000b48       0x70 .\ARM_GCC_493\Debug\C-CAN.a(CyFlash.o)
+                0x00000b98       0x70 .\ARM_GCC_493\Debug\C-CAN.a(CyFlash.o)
  .debug_aranges
-                0x00000bb8       0x78 .\ARM_GCC_493\Debug\C-CAN.a(CySpc.o)
+                0x00000c08       0x78 .\ARM_GCC_493\Debug\C-CAN.a(CySpc.o)
 
 .debug_pubnames
  *(.debug_pubnames)
 
-.debug_info     0x00000000     0x8a03
+.debug_info     0x00000000     0x940e
  *(.debug_info .gnu.linkonce.wi.*)
- .debug_info    0x00000000      0xb8c .\ARM_GCC_493\Debug\main.o
- .debug_info    0x00000b8c       0xd9 .\ARM_GCC_493\Debug\cymetadata.o
- .debug_info    0x00000c65      0x39f .\ARM_GCC_493\Debug\Cm3Start.o
- .debug_info    0x00001004      0x165 .\ARM_GCC_493\Debug\cybootloader.o
- .debug_info    0x00001169      0x79f .\ARM_GCC_493\Debug\C-CAN.a(cyfitter_cfg.o)
- .debug_info    0x00001908      0x6e3 .\ARM_GCC_493\Debug\C-CAN.a(UART_1.o)
- .debug_info    0x00001feb      0x29b .\ARM_GCC_493\Debug\C-CAN.a(UART_1_IntClock.o)
- .debug_info    0x00002286       0x9f .\ARM_GCC_493\Debug\C-CAN.a(CyBootAsmGnu.o)
- .debug_info    0x00002325     0x18df .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
- .debug_info    0x00003c04      0xa0f .\ARM_GCC_493\Debug\C-CAN.a(cyPm.o)
- .debug_info    0x00004613      0x746 .\ARM_GCC_493\Debug\C-CAN.a(ADC_SAR_1.o)
- .debug_info    0x00004d59       0x92 .\ARM_GCC_493\Debug\C-CAN.a(ADC_SAR_1_INT.o)
- .debug_info    0x00004deb      0x29b .\ARM_GCC_493\Debug\C-CAN.a(ADC_SAR_1_theACLK.o)
- .debug_info    0x00005086      0x173 .\ARM_GCC_493\Debug\C-CAN.a(AMux_1.o)
- .debug_info    0x000051f9      0xd52 .\ARM_GCC_493\Debug\C-CAN.a(CAN_1.o)
- .debug_info    0x00005f4b      0x2be .\ARM_GCC_493\Debug\C-CAN.a(CAN_1_INT.o)
- .debug_info    0x00006209      0x449 .\ARM_GCC_493\Debug\C-CAN.a(CAN_TIMER.o)
- .debug_info    0x00006652      0x38d .\ARM_GCC_493\Debug\C-CAN.a(CAN_ISR.o)
- .debug_info    0x000069df      0x4eb .\ARM_GCC_493\Debug\C-CAN.a(Encoder_Left.o)
- .debug_info    0x00006eca      0x4eb .\ARM_GCC_493\Debug\C-CAN.a(Encoder_Right.o)
- .debug_info    0x000073b5      0x4eb .\ARM_GCC_493\Debug\C-CAN.a(leftEncTimer.o)
- .debug_info    0x000078a0      0x4eb .\ARM_GCC_493\Debug\C-CAN.a(rightEncTimer.o)
- .debug_info    0x00007d8b      0x77d .\ARM_GCC_493\Debug\C-CAN.a(CyFlash.o)
- .debug_info    0x00008508      0x4fb .\ARM_GCC_493\Debug\C-CAN.a(CySpc.o)
+ .debug_info    0x00000000     0x1597 .\ARM_GCC_493\Debug\main.o
+ .debug_info    0x00001597       0xd9 .\ARM_GCC_493\Debug\cymetadata.o
+ .debug_info    0x00001670      0x39f .\ARM_GCC_493\Debug\Cm3Start.o
+ .debug_info    0x00001a0f      0x165 .\ARM_GCC_493\Debug\cybootloader.o
+ .debug_info    0x00001b74      0x79f .\ARM_GCC_493\Debug\C-CAN.a(cyfitter_cfg.o)
+ .debug_info    0x00002313      0x6e3 .\ARM_GCC_493\Debug\C-CAN.a(UART_1.o)
+ .debug_info    0x000029f6      0x29b .\ARM_GCC_493\Debug\C-CAN.a(UART_1_IntClock.o)
+ .debug_info    0x00002c91       0x9f .\ARM_GCC_493\Debug\C-CAN.a(CyBootAsmGnu.o)
+ .debug_info    0x00002d30     0x18df .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
+ .debug_info    0x0000460f      0xa0f .\ARM_GCC_493\Debug\C-CAN.a(cyPm.o)
+ .debug_info    0x0000501e      0x746 .\ARM_GCC_493\Debug\C-CAN.a(ADC_SAR_1.o)
+ .debug_info    0x00005764       0x92 .\ARM_GCC_493\Debug\C-CAN.a(ADC_SAR_1_INT.o)
+ .debug_info    0x000057f6      0x29b .\ARM_GCC_493\Debug\C-CAN.a(ADC_SAR_1_theACLK.o)
+ .debug_info    0x00005a91      0x173 .\ARM_GCC_493\Debug\C-CAN.a(AMux_1.o)
+ .debug_info    0x00005c04      0xd52 .\ARM_GCC_493\Debug\C-CAN.a(CAN_1.o)
+ .debug_info    0x00006956      0x2be .\ARM_GCC_493\Debug\C-CAN.a(CAN_1_INT.o)
+ .debug_info    0x00006c14      0x449 .\ARM_GCC_493\Debug\C-CAN.a(CAN_TIMER.o)
+ .debug_info    0x0000705d      0x38d .\ARM_GCC_493\Debug\C-CAN.a(CAN_ISR.o)
+ .debug_info    0x000073ea      0x4eb .\ARM_GCC_493\Debug\C-CAN.a(Encoder_Left.o)
+ .debug_info    0x000078d5      0x4eb .\ARM_GCC_493\Debug\C-CAN.a(Encoder_Right.o)
+ .debug_info    0x00007dc0      0x4eb .\ARM_GCC_493\Debug\C-CAN.a(leftEncTimer.o)
+ .debug_info    0x000082ab      0x4eb .\ARM_GCC_493\Debug\C-CAN.a(rightEncTimer.o)
+ .debug_info    0x00008796      0x77d .\ARM_GCC_493\Debug\C-CAN.a(CyFlash.o)
+ .debug_info    0x00008f13      0x4fb .\ARM_GCC_493\Debug\C-CAN.a(CySpc.o)
 
-.debug_abbrev   0x00000000     0x2cce
+.debug_abbrev   0x00000000     0x2e2a
  *(.debug_abbrev)
- .debug_abbrev  0x00000000      0x2d0 .\ARM_GCC_493\Debug\main.o
- .debug_abbrev  0x000002d0       0x66 .\ARM_GCC_493\Debug\cymetadata.o
- .debug_abbrev  0x00000336      0x200 .\ARM_GCC_493\Debug\Cm3Start.o
- .debug_abbrev  0x00000536       0x77 .\ARM_GCC_493\Debug\cybootloader.o
- .debug_abbrev  0x000005ad      0x2a9 .\ARM_GCC_493\Debug\C-CAN.a(cyfitter_cfg.o)
- .debug_abbrev  0x00000856      0x270 .\ARM_GCC_493\Debug\C-CAN.a(UART_1.o)
- .debug_abbrev  0x00000ac6      0x142 .\ARM_GCC_493\Debug\C-CAN.a(UART_1_IntClock.o)
- .debug_abbrev  0x00000c08       0x14 .\ARM_GCC_493\Debug\C-CAN.a(CyBootAsmGnu.o)
- .debug_abbrev  0x00000c1c      0x40e .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
- .debug_abbrev  0x0000102a      0x211 .\ARM_GCC_493\Debug\C-CAN.a(cyPm.o)
- .debug_abbrev  0x0000123b      0x2cd .\ARM_GCC_493\Debug\C-CAN.a(ADC_SAR_1.o)
- .debug_abbrev  0x00001508       0x42 .\ARM_GCC_493\Debug\C-CAN.a(ADC_SAR_1_INT.o)
- .debug_abbrev  0x0000154a      0x142 .\ARM_GCC_493\Debug\C-CAN.a(ADC_SAR_1_theACLK.o)
- .debug_abbrev  0x0000168c       0xd8 .\ARM_GCC_493\Debug\C-CAN.a(AMux_1.o)
- .debug_abbrev  0x00001764      0x2d3 .\ARM_GCC_493\Debug\C-CAN.a(CAN_1.o)
- .debug_abbrev  0x00001a37      0x163 .\ARM_GCC_493\Debug\C-CAN.a(CAN_1_INT.o)
- .debug_abbrev  0x00001b9a      0x234 .\ARM_GCC_493\Debug\C-CAN.a(CAN_TIMER.o)
- .debug_abbrev  0x00001dce      0x1f8 .\ARM_GCC_493\Debug\C-CAN.a(CAN_ISR.o)
- .debug_abbrev  0x00001fc6      0x22c .\ARM_GCC_493\Debug\C-CAN.a(Encoder_Left.o)
- .debug_abbrev  0x000021f2      0x22c .\ARM_GCC_493\Debug\C-CAN.a(Encoder_Right.o)
- .debug_abbrev  0x0000241e      0x22c .\ARM_GCC_493\Debug\C-CAN.a(leftEncTimer.o)
- .debug_abbrev  0x0000264a      0x22c .\ARM_GCC_493\Debug\C-CAN.a(rightEncTimer.o)
- .debug_abbrev  0x00002876      0x298 .\ARM_GCC_493\Debug\C-CAN.a(CyFlash.o)
- .debug_abbrev  0x00002b0e      0x1c0 .\ARM_GCC_493\Debug\C-CAN.a(CySpc.o)
+ .debug_abbrev  0x00000000      0x42c .\ARM_GCC_493\Debug\main.o
+ .debug_abbrev  0x0000042c       0x66 .\ARM_GCC_493\Debug\cymetadata.o
+ .debug_abbrev  0x00000492      0x200 .\ARM_GCC_493\Debug\Cm3Start.o
+ .debug_abbrev  0x00000692       0x77 .\ARM_GCC_493\Debug\cybootloader.o
+ .debug_abbrev  0x00000709      0x2a9 .\ARM_GCC_493\Debug\C-CAN.a(cyfitter_cfg.o)
+ .debug_abbrev  0x000009b2      0x270 .\ARM_GCC_493\Debug\C-CAN.a(UART_1.o)
+ .debug_abbrev  0x00000c22      0x142 .\ARM_GCC_493\Debug\C-CAN.a(UART_1_IntClock.o)
+ .debug_abbrev  0x00000d64       0x14 .\ARM_GCC_493\Debug\C-CAN.a(CyBootAsmGnu.o)
+ .debug_abbrev  0x00000d78      0x40e .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
+ .debug_abbrev  0x00001186      0x211 .\ARM_GCC_493\Debug\C-CAN.a(cyPm.o)
+ .debug_abbrev  0x00001397      0x2cd .\ARM_GCC_493\Debug\C-CAN.a(ADC_SAR_1.o)
+ .debug_abbrev  0x00001664       0x42 .\ARM_GCC_493\Debug\C-CAN.a(ADC_SAR_1_INT.o)
+ .debug_abbrev  0x000016a6      0x142 .\ARM_GCC_493\Debug\C-CAN.a(ADC_SAR_1_theACLK.o)
+ .debug_abbrev  0x000017e8       0xd8 .\ARM_GCC_493\Debug\C-CAN.a(AMux_1.o)
+ .debug_abbrev  0x000018c0      0x2d3 .\ARM_GCC_493\Debug\C-CAN.a(CAN_1.o)
+ .debug_abbrev  0x00001b93      0x163 .\ARM_GCC_493\Debug\C-CAN.a(CAN_1_INT.o)
+ .debug_abbrev  0x00001cf6      0x234 .\ARM_GCC_493\Debug\C-CAN.a(CAN_TIMER.o)
+ .debug_abbrev  0x00001f2a      0x1f8 .\ARM_GCC_493\Debug\C-CAN.a(CAN_ISR.o)
+ .debug_abbrev  0x00002122      0x22c .\ARM_GCC_493\Debug\C-CAN.a(Encoder_Left.o)
+ .debug_abbrev  0x0000234e      0x22c .\ARM_GCC_493\Debug\C-CAN.a(Encoder_Right.o)
+ .debug_abbrev  0x0000257a      0x22c .\ARM_GCC_493\Debug\C-CAN.a(leftEncTimer.o)
+ .debug_abbrev  0x000027a6      0x22c .\ARM_GCC_493\Debug\C-CAN.a(rightEncTimer.o)
+ .debug_abbrev  0x000029d2      0x298 .\ARM_GCC_493\Debug\C-CAN.a(CyFlash.o)
+ .debug_abbrev  0x00002c6a      0x1c0 .\ARM_GCC_493\Debug\C-CAN.a(CySpc.o)
 
-.debug_line     0x00000000     0x3c2c
+.debug_line     0x00000000     0x3dea
  *(.debug_line)
- .debug_line    0x00000000      0x3d9 .\ARM_GCC_493\Debug\main.o
- .debug_line    0x000003d9       0x53 .\ARM_GCC_493\Debug\cymetadata.o
- .debug_line    0x0000042c      0x229 .\ARM_GCC_493\Debug\Cm3Start.o
- .debug_line    0x00000655       0x55 .\ARM_GCC_493\Debug\cybootloader.o
- .debug_line    0x000006aa      0x2db .\ARM_GCC_493\Debug\C-CAN.a(cyfitter_cfg.o)
- .debug_line    0x00000985      0x38a .\ARM_GCC_493\Debug\C-CAN.a(UART_1.o)
- .debug_line    0x00000d0f      0x202 .\ARM_GCC_493\Debug\C-CAN.a(UART_1_IntClock.o)
- .debug_line    0x00000f11       0x7f .\ARM_GCC_493\Debug\C-CAN.a(CyBootAsmGnu.o)
- .debug_line    0x00000f90      0xadb .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
- .debug_line    0x00001a6b      0x521 .\ARM_GCC_493\Debug\C-CAN.a(cyPm.o)
- .debug_line    0x00001f8c      0x308 .\ARM_GCC_493\Debug\C-CAN.a(ADC_SAR_1.o)
- .debug_line    0x00002294       0x58 .\ARM_GCC_493\Debug\C-CAN.a(ADC_SAR_1_INT.o)
- .debug_line    0x000022ec      0x204 .\ARM_GCC_493\Debug\C-CAN.a(ADC_SAR_1_theACLK.o)
- .debug_line    0x000024f0       0x9b .\ARM_GCC_493\Debug\C-CAN.a(AMux_1.o)
- .debug_line    0x0000258b      0x420 .\ARM_GCC_493\Debug\C-CAN.a(CAN_1.o)
- .debug_line    0x000029ab       0xfa .\ARM_GCC_493\Debug\C-CAN.a(CAN_1_INT.o)
- .debug_line    0x00002aa5      0x1d5 .\ARM_GCC_493\Debug\C-CAN.a(CAN_TIMER.o)
- .debug_line    0x00002c7a      0x1c9 .\ARM_GCC_493\Debug\C-CAN.a(CAN_ISR.o)
- .debug_line    0x00002e43      0x23e .\ARM_GCC_493\Debug\C-CAN.a(Encoder_Left.o)
- .debug_line    0x00003081      0x23f .\ARM_GCC_493\Debug\C-CAN.a(Encoder_Right.o)
- .debug_line    0x000032c0      0x23e .\ARM_GCC_493\Debug\C-CAN.a(leftEncTimer.o)
- .debug_line    0x000034fe      0x23f .\ARM_GCC_493\Debug\C-CAN.a(rightEncTimer.o)
- .debug_line    0x0000373d      0x26f .\ARM_GCC_493\Debug\C-CAN.a(CyFlash.o)
- .debug_line    0x000039ac      0x280 .\ARM_GCC_493\Debug\C-CAN.a(CySpc.o)
+ .debug_line    0x00000000      0x597 .\ARM_GCC_493\Debug\main.o
+ .debug_line    0x00000597       0x53 .\ARM_GCC_493\Debug\cymetadata.o
+ .debug_line    0x000005ea      0x229 .\ARM_GCC_493\Debug\Cm3Start.o
+ .debug_line    0x00000813       0x55 .\ARM_GCC_493\Debug\cybootloader.o
+ .debug_line    0x00000868      0x2db .\ARM_GCC_493\Debug\C-CAN.a(cyfitter_cfg.o)
+ .debug_line    0x00000b43      0x38a .\ARM_GCC_493\Debug\C-CAN.a(UART_1.o)
+ .debug_line    0x00000ecd      0x202 .\ARM_GCC_493\Debug\C-CAN.a(UART_1_IntClock.o)
+ .debug_line    0x000010cf       0x7f .\ARM_GCC_493\Debug\C-CAN.a(CyBootAsmGnu.o)
+ .debug_line    0x0000114e      0xadb .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
+ .debug_line    0x00001c29      0x521 .\ARM_GCC_493\Debug\C-CAN.a(cyPm.o)
+ .debug_line    0x0000214a      0x308 .\ARM_GCC_493\Debug\C-CAN.a(ADC_SAR_1.o)
+ .debug_line    0x00002452       0x58 .\ARM_GCC_493\Debug\C-CAN.a(ADC_SAR_1_INT.o)
+ .debug_line    0x000024aa      0x204 .\ARM_GCC_493\Debug\C-CAN.a(ADC_SAR_1_theACLK.o)
+ .debug_line    0x000026ae       0x9b .\ARM_GCC_493\Debug\C-CAN.a(AMux_1.o)
+ .debug_line    0x00002749      0x420 .\ARM_GCC_493\Debug\C-CAN.a(CAN_1.o)
+ .debug_line    0x00002b69       0xfa .\ARM_GCC_493\Debug\C-CAN.a(CAN_1_INT.o)
+ .debug_line    0x00002c63      0x1d5 .\ARM_GCC_493\Debug\C-CAN.a(CAN_TIMER.o)
+ .debug_line    0x00002e38      0x1c9 .\ARM_GCC_493\Debug\C-CAN.a(CAN_ISR.o)
+ .debug_line    0x00003001      0x23e .\ARM_GCC_493\Debug\C-CAN.a(Encoder_Left.o)
+ .debug_line    0x0000323f      0x23f .\ARM_GCC_493\Debug\C-CAN.a(Encoder_Right.o)
+ .debug_line    0x0000347e      0x23e .\ARM_GCC_493\Debug\C-CAN.a(leftEncTimer.o)
+ .debug_line    0x000036bc      0x23f .\ARM_GCC_493\Debug\C-CAN.a(rightEncTimer.o)
+ .debug_line    0x000038fb      0x26f .\ARM_GCC_493\Debug\C-CAN.a(CyFlash.o)
+ .debug_line    0x00003b6a      0x280 .\ARM_GCC_493\Debug\C-CAN.a(CySpc.o)
 
-.debug_frame    0x00000000     0x2474
+.debug_frame    0x00000000     0x2540
  *(.debug_frame)
- .debug_frame   0x00000000      0x108 .\ARM_GCC_493\Debug\main.o
- .debug_frame   0x00000108       0xac .\ARM_GCC_493\Debug\Cm3Start.o
- .debug_frame   0x000001b4       0xb4 .\ARM_GCC_493\Debug\C-CAN.a(cyfitter_cfg.o)
- .debug_frame   0x00000268      0x29c .\ARM_GCC_493\Debug\C-CAN.a(UART_1.o)
- .debug_frame   0x00000504       0xec .\ARM_GCC_493\Debug\C-CAN.a(UART_1_IntClock.o)
- .debug_frame   0x000005f0      0x744 .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
- .debug_frame   0x00000d34      0x1f8 .\ARM_GCC_493\Debug\C-CAN.a(cyPm.o)
- .debug_frame   0x00000f2c      0x1d8 .\ARM_GCC_493\Debug\C-CAN.a(ADC_SAR_1.o)
- .debug_frame   0x00001104       0x20 .\ARM_GCC_493\Debug\C-CAN.a(ADC_SAR_1_INT.o)
- .debug_frame   0x00001124       0xec .\ARM_GCC_493\Debug\C-CAN.a(ADC_SAR_1_theACLK.o)
- .debug_frame   0x00001210       0x68 .\ARM_GCC_493\Debug\C-CAN.a(AMux_1.o)
- .debug_frame   0x00001278      0x230 .\ARM_GCC_493\Debug\C-CAN.a(CAN_1.o)
- .debug_frame   0x000014a8       0x80 .\ARM_GCC_493\Debug\C-CAN.a(CAN_1_INT.o)
- .debug_frame   0x00001528      0x118 .\ARM_GCC_493\Debug\C-CAN.a(CAN_TIMER.o)
- .debug_frame   0x00001640      0x11c .\ARM_GCC_493\Debug\C-CAN.a(CAN_ISR.o)
- .debug_frame   0x0000175c      0x13c .\ARM_GCC_493\Debug\C-CAN.a(Encoder_Left.o)
- .debug_frame   0x00001898      0x13c .\ARM_GCC_493\Debug\C-CAN.a(Encoder_Right.o)
- .debug_frame   0x000019d4      0x13c .\ARM_GCC_493\Debug\C-CAN.a(leftEncTimer.o)
- .debug_frame   0x00001b10      0x13c .\ARM_GCC_493\Debug\C-CAN.a(rightEncTimer.o)
- .debug_frame   0x00001c4c      0x1cc .\ARM_GCC_493\Debug\C-CAN.a(CyFlash.o)
- .debug_frame   0x00001e18      0x1dc .\ARM_GCC_493\Debug\C-CAN.a(CySpc.o)
- .debug_frame   0x00001ff4       0x28 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libgcc.a(_aeabi_ldivmod.o)
- .debug_frame   0x0000201c       0x54 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libgcc.a(bpabi.o)
- .debug_frame   0x00002070       0x34 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libgcc.a(_divdi3.o)
- .debug_frame   0x000020a4       0x34 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libgcc.a(_udivdi3.o)
- .debug_frame   0x000020d8       0x20 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-errno.o)
- .debug_frame   0x000020f8       0x28 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-exit.o)
- .debug_frame   0x00002120       0x2c c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-init.o)
- .debug_frame   0x0000214c       0x28 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memcpy.o)
- .debug_frame   0x00002174       0x20 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memset.o)
- .debug_frame   0x00002194       0x70 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-sprintf.o)
- .debug_frame   0x00002204       0x8c c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-svfprintf.o)
- .debug_frame   0x00002290       0x58 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-vfprintf_i.o)
- .debug_frame   0x000022e8       0x28 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memchr.o)
- .debug_frame   0x00002310       0x28 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memmove.o)
- .debug_frame   0x00002338       0x2c c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-freer.o)
- .debug_frame   0x00002364       0x2c c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-mallocr.o)
- .debug_frame   0x00002390       0x3c c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-reallocr.o)
- .debug_frame   0x000023cc       0x2c c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-sbrkr.o)
- .debug_frame   0x000023f8       0x20 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-msizer.o)
- .debug_frame   0x00002418       0x5c c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-reent.o)
+ .debug_frame   0x00000000      0x1d4 .\ARM_GCC_493\Debug\main.o
+ .debug_frame   0x000001d4       0xac .\ARM_GCC_493\Debug\Cm3Start.o
+ .debug_frame   0x00000280       0xb4 .\ARM_GCC_493\Debug\C-CAN.a(cyfitter_cfg.o)
+ .debug_frame   0x00000334      0x29c .\ARM_GCC_493\Debug\C-CAN.a(UART_1.o)
+ .debug_frame   0x000005d0       0xec .\ARM_GCC_493\Debug\C-CAN.a(UART_1_IntClock.o)
+ .debug_frame   0x000006bc      0x744 .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
+ .debug_frame   0x00000e00      0x1f8 .\ARM_GCC_493\Debug\C-CAN.a(cyPm.o)
+ .debug_frame   0x00000ff8      0x1d8 .\ARM_GCC_493\Debug\C-CAN.a(ADC_SAR_1.o)
+ .debug_frame   0x000011d0       0x20 .\ARM_GCC_493\Debug\C-CAN.a(ADC_SAR_1_INT.o)
+ .debug_frame   0x000011f0       0xec .\ARM_GCC_493\Debug\C-CAN.a(ADC_SAR_1_theACLK.o)
+ .debug_frame   0x000012dc       0x68 .\ARM_GCC_493\Debug\C-CAN.a(AMux_1.o)
+ .debug_frame   0x00001344      0x230 .\ARM_GCC_493\Debug\C-CAN.a(CAN_1.o)
+ .debug_frame   0x00001574       0x80 .\ARM_GCC_493\Debug\C-CAN.a(CAN_1_INT.o)
+ .debug_frame   0x000015f4      0x118 .\ARM_GCC_493\Debug\C-CAN.a(CAN_TIMER.o)
+ .debug_frame   0x0000170c      0x11c .\ARM_GCC_493\Debug\C-CAN.a(CAN_ISR.o)
+ .debug_frame   0x00001828      0x13c .\ARM_GCC_493\Debug\C-CAN.a(Encoder_Left.o)
+ .debug_frame   0x00001964      0x13c .\ARM_GCC_493\Debug\C-CAN.a(Encoder_Right.o)
+ .debug_frame   0x00001aa0      0x13c .\ARM_GCC_493\Debug\C-CAN.a(leftEncTimer.o)
+ .debug_frame   0x00001bdc      0x13c .\ARM_GCC_493\Debug\C-CAN.a(rightEncTimer.o)
+ .debug_frame   0x00001d18      0x1cc .\ARM_GCC_493\Debug\C-CAN.a(CyFlash.o)
+ .debug_frame   0x00001ee4      0x1dc .\ARM_GCC_493\Debug\C-CAN.a(CySpc.o)
+ .debug_frame   0x000020c0       0x28 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libgcc.a(_aeabi_ldivmod.o)
+ .debug_frame   0x000020e8       0x54 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libgcc.a(bpabi.o)
+ .debug_frame   0x0000213c       0x34 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libgcc.a(_divdi3.o)
+ .debug_frame   0x00002170       0x34 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libgcc.a(_udivdi3.o)
+ .debug_frame   0x000021a4       0x20 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-errno.o)
+ .debug_frame   0x000021c4       0x28 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-exit.o)
+ .debug_frame   0x000021ec       0x2c c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-init.o)
+ .debug_frame   0x00002218       0x28 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memcpy.o)
+ .debug_frame   0x00002240       0x20 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memset.o)
+ .debug_frame   0x00002260       0x70 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-sprintf.o)
+ .debug_frame   0x000022d0       0x8c c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-svfprintf.o)
+ .debug_frame   0x0000235c       0x58 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-vfprintf_i.o)
+ .debug_frame   0x000023b4       0x28 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memchr.o)
+ .debug_frame   0x000023dc       0x28 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memmove.o)
+ .debug_frame   0x00002404       0x2c c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-freer.o)
+ .debug_frame   0x00002430       0x2c c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-mallocr.o)
+ .debug_frame   0x0000245c       0x3c c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-reallocr.o)
+ .debug_frame   0x00002498       0x2c c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-sbrkr.o)
+ .debug_frame   0x000024c4       0x20 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-msizer.o)
+ .debug_frame   0x000024e4       0x5c c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-reent.o)
 
-.debug_str      0x00000000     0x2c50
+.debug_str      0x00000000     0x2eb7
  *(.debug_str)
- .debug_str     0x00000000      0x5aa .\ARM_GCC_493\Debug\main.o
-                                0x5fc (size before relaxing)
- .debug_str     0x000005aa       0x49 .\ARM_GCC_493\Debug\cymetadata.o
+ .debug_str     0x00000000      0x82f .\ARM_GCC_493\Debug\main.o
+                                0x89c (size before relaxing)
+ .debug_str     0x0000082f       0x49 .\ARM_GCC_493\Debug\cymetadata.o
                                 0x1cb (size before relaxing)
- .debug_str     0x000005f3      0x15a .\ARM_GCC_493\Debug\Cm3Start.o
+ .debug_str     0x00000878      0x14d .\ARM_GCC_493\Debug\Cm3Start.o
                                 0x30d (size before relaxing)
- .debug_str     0x0000074d       0x84 .\ARM_GCC_493\Debug\cybootloader.o
+ .debug_str     0x000009c5       0x84 .\ARM_GCC_493\Debug\cybootloader.o
                                 0x206 (size before relaxing)
- .debug_str     0x000007d1      0x23d .\ARM_GCC_493\Debug\C-CAN.a(cyfitter_cfg.o)
+ .debug_str     0x00000a49      0x23d .\ARM_GCC_493\Debug\C-CAN.a(cyfitter_cfg.o)
                                 0x407 (size before relaxing)
- .debug_str     0x00000a0e      0x2e1 .\ARM_GCC_493\Debug\C-CAN.a(UART_1.o)
+ .debug_str     0x00000c86      0x2e1 .\ARM_GCC_493\Debug\C-CAN.a(UART_1.o)
                                 0x4b6 (size before relaxing)
- .debug_str     0x00000cef      0x19f .\ARM_GCC_493\Debug\C-CAN.a(UART_1_IntClock.o)
+ .debug_str     0x00000f67      0x19f .\ARM_GCC_493\Debug\C-CAN.a(UART_1_IntClock.o)
                                 0x35d (size before relaxing)
- .debug_str     0x00000e8e      0x7e3 .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
+ .debug_str     0x00001106      0x7ca .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
                                 0xa32 (size before relaxing)
- .debug_str     0x00001671      0x35b .\ARM_GCC_493\Debug\C-CAN.a(cyPm.o)
+ .debug_str     0x000018d0      0x35b .\ARM_GCC_493\Debug\C-CAN.a(cyPm.o)
                                 0x72a (size before relaxing)
- .debug_str     0x000019cc      0x1fa .\ARM_GCC_493\Debug\C-CAN.a(ADC_SAR_1.o)
+ .debug_str     0x00001c2b      0x1fa .\ARM_GCC_493\Debug\C-CAN.a(ADC_SAR_1.o)
                                 0x4cd (size before relaxing)
- .debug_str     0x00001bc6       0x37 .\ARM_GCC_493\Debug\C-CAN.a(ADC_SAR_1_INT.o)
+ .debug_str     0x00001e25       0x37 .\ARM_GCC_493\Debug\C-CAN.a(ADC_SAR_1_INT.o)
                                 0x1aa (size before relaxing)
- .debug_str     0x00001bfd      0x16f .\ARM_GCC_493\Debug\C-CAN.a(ADC_SAR_1_theACLK.o)
+ .debug_str     0x00001e5c      0x16f .\ARM_GCC_493\Debug\C-CAN.a(ADC_SAR_1_theACLK.o)
                                 0x375 (size before relaxing)
- .debug_str     0x00001d6c       0x4f .\ARM_GCC_493\Debug\C-CAN.a(AMux_1.o)
+ .debug_str     0x00001fcb       0x4f .\ARM_GCC_493\Debug\C-CAN.a(AMux_1.o)
                                 0x207 (size before relaxing)
- .debug_str     0x00001dbb      0x27e .\ARM_GCC_493\Debug\C-CAN.a(CAN_1.o)
+ .debug_str     0x0000201a      0x27e .\ARM_GCC_493\Debug\C-CAN.a(CAN_1.o)
                                 0x531 (size before relaxing)
- .debug_str     0x00002039       0x5c .\ARM_GCC_493\Debug\C-CAN.a(CAN_1_INT.o)
+ .debug_str     0x00002298       0x5c .\ARM_GCC_493\Debug\C-CAN.a(CAN_1_INT.o)
                                 0x288 (size before relaxing)
- .debug_str     0x00002095      0x1a5 .\ARM_GCC_493\Debug\C-CAN.a(CAN_TIMER.o)
+ .debug_str     0x000022f4      0x1ad .\ARM_GCC_493\Debug\C-CAN.a(CAN_TIMER.o)
                                 0x386 (size before relaxing)
- .debug_str     0x0000223a       0xf6 .\ARM_GCC_493\Debug\C-CAN.a(CAN_ISR.o)
+ .debug_str     0x000024a1       0xf6 .\ARM_GCC_493\Debug\C-CAN.a(CAN_ISR.o)
                                 0x2d4 (size before relaxing)
- .debug_str     0x00002330      0x1c2 .\ARM_GCC_493\Debug\C-CAN.a(Encoder_Left.o)
+ .debug_str     0x00002597      0x1c2 .\ARM_GCC_493\Debug\C-CAN.a(Encoder_Left.o)
                                 0x3e0 (size before relaxing)
- .debug_str     0x000024f2      0x1b6 .\ARM_GCC_493\Debug\C-CAN.a(Encoder_Right.o)
+ .debug_str     0x00002759      0x1b6 .\ARM_GCC_493\Debug\C-CAN.a(Encoder_Right.o)
                                 0x3f3 (size before relaxing)
- .debug_str     0x000026a8      0x1a6 .\ARM_GCC_493\Debug\C-CAN.a(leftEncTimer.o)
+ .debug_str     0x0000290f      0x1a6 .\ARM_GCC_493\Debug\C-CAN.a(leftEncTimer.o)
                                 0x3e0 (size before relaxing)
- .debug_str     0x0000284e      0x1b6 .\ARM_GCC_493\Debug\C-CAN.a(rightEncTimer.o)
+ .debug_str     0x00002ab5      0x1b6 .\ARM_GCC_493\Debug\C-CAN.a(rightEncTimer.o)
                                 0x3f3 (size before relaxing)
- .debug_str     0x00002a04      0x19e .\ARM_GCC_493\Debug\C-CAN.a(CyFlash.o)
+ .debug_str     0x00002c6b      0x19e .\ARM_GCC_493\Debug\C-CAN.a(CyFlash.o)
                                 0x3a4 (size before relaxing)
- .debug_str     0x00002ba2       0xae .\ARM_GCC_493\Debug\C-CAN.a(CySpc.o)
+ .debug_str     0x00002e09       0xae .\ARM_GCC_493\Debug\C-CAN.a(CySpc.o)
                                 0x32d (size before relaxing)
 
-.debug_loc      0x00000000     0x3ec4
+.debug_loc      0x00000000     0x4083
  *(.debug_loc)
- .debug_loc     0x00000000      0x5af .\ARM_GCC_493\Debug\main.o
- .debug_loc     0x000005af      0x19b .\ARM_GCC_493\Debug\Cm3Start.o
- .debug_loc     0x0000074a      0x29a .\ARM_GCC_493\Debug\C-CAN.a(cyfitter_cfg.o)
- .debug_loc     0x000009e4      0x21b .\ARM_GCC_493\Debug\C-CAN.a(UART_1.o)
- .debug_loc     0x00000bff       0xec .\ARM_GCC_493\Debug\C-CAN.a(UART_1_IntClock.o)
- .debug_loc     0x00000ceb      0xde0 .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
- .debug_loc     0x00001acb      0x198 .\ARM_GCC_493\Debug\C-CAN.a(cyPm.o)
- .debug_loc     0x00001c63      0x3f3 .\ARM_GCC_493\Debug\C-CAN.a(ADC_SAR_1.o)
- .debug_loc     0x00002056       0xec .\ARM_GCC_493\Debug\C-CAN.a(ADC_SAR_1_theACLK.o)
- .debug_loc     0x00002142       0x59 .\ARM_GCC_493\Debug\C-CAN.a(AMux_1.o)
- .debug_loc     0x0000219b      0xafe .\ARM_GCC_493\Debug\C-CAN.a(CAN_1.o)
- .debug_loc     0x00002c99       0xa8 .\ARM_GCC_493\Debug\C-CAN.a(CAN_1_INT.o)
- .debug_loc     0x00002d41       0x26 .\ARM_GCC_493\Debug\C-CAN.a(CAN_TIMER.o)
- .debug_loc     0x00002d67       0x8d .\ARM_GCC_493\Debug\C-CAN.a(CAN_ISR.o)
- .debug_loc     0x00002df4       0xa2 .\ARM_GCC_493\Debug\C-CAN.a(Encoder_Left.o)
- .debug_loc     0x00002e96       0xa2 .\ARM_GCC_493\Debug\C-CAN.a(Encoder_Right.o)
- .debug_loc     0x00002f38       0xa2 .\ARM_GCC_493\Debug\C-CAN.a(leftEncTimer.o)
- .debug_loc     0x00002fda       0xa2 .\ARM_GCC_493\Debug\C-CAN.a(rightEncTimer.o)
- .debug_loc     0x0000307c      0x6e2 .\ARM_GCC_493\Debug\C-CAN.a(CyFlash.o)
- .debug_loc     0x0000375e      0x766 .\ARM_GCC_493\Debug\C-CAN.a(CySpc.o)
+ .debug_loc     0x00000000      0x76e .\ARM_GCC_493\Debug\main.o
+ .debug_loc     0x0000076e      0x19b .\ARM_GCC_493\Debug\Cm3Start.o
+ .debug_loc     0x00000909      0x29a .\ARM_GCC_493\Debug\C-CAN.a(cyfitter_cfg.o)
+ .debug_loc     0x00000ba3      0x21b .\ARM_GCC_493\Debug\C-CAN.a(UART_1.o)
+ .debug_loc     0x00000dbe       0xec .\ARM_GCC_493\Debug\C-CAN.a(UART_1_IntClock.o)
+ .debug_loc     0x00000eaa      0xde0 .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
+ .debug_loc     0x00001c8a      0x198 .\ARM_GCC_493\Debug\C-CAN.a(cyPm.o)
+ .debug_loc     0x00001e22      0x3f3 .\ARM_GCC_493\Debug\C-CAN.a(ADC_SAR_1.o)
+ .debug_loc     0x00002215       0xec .\ARM_GCC_493\Debug\C-CAN.a(ADC_SAR_1_theACLK.o)
+ .debug_loc     0x00002301       0x59 .\ARM_GCC_493\Debug\C-CAN.a(AMux_1.o)
+ .debug_loc     0x0000235a      0xafe .\ARM_GCC_493\Debug\C-CAN.a(CAN_1.o)
+ .debug_loc     0x00002e58       0xa8 .\ARM_GCC_493\Debug\C-CAN.a(CAN_1_INT.o)
+ .debug_loc     0x00002f00       0x26 .\ARM_GCC_493\Debug\C-CAN.a(CAN_TIMER.o)
+ .debug_loc     0x00002f26       0x8d .\ARM_GCC_493\Debug\C-CAN.a(CAN_ISR.o)
+ .debug_loc     0x00002fb3       0xa2 .\ARM_GCC_493\Debug\C-CAN.a(Encoder_Left.o)
+ .debug_loc     0x00003055       0xa2 .\ARM_GCC_493\Debug\C-CAN.a(Encoder_Right.o)
+ .debug_loc     0x000030f7       0xa2 .\ARM_GCC_493\Debug\C-CAN.a(leftEncTimer.o)
+ .debug_loc     0x00003199       0xa2 .\ARM_GCC_493\Debug\C-CAN.a(rightEncTimer.o)
+ .debug_loc     0x0000323b      0x6e2 .\ARM_GCC_493\Debug\C-CAN.a(CyFlash.o)
+ .debug_loc     0x0000391d      0x766 .\ARM_GCC_493\Debug\C-CAN.a(CySpc.o)
 
 .debug_macinfo
  *(.debug_macinfo)
 
-.debug_ranges   0x00000000     0x1c58
+.debug_ranges   0x00000000     0x1e38
  *(.debug_ranges)
- .debug_ranges  0x00000000       0x90 .\ARM_GCC_493\Debug\main.o
- .debug_ranges  0x00000090       0x38 .\ARM_GCC_493\Debug\Cm3Start.o
- .debug_ranges  0x000000c8      0x190 .\ARM_GCC_493\Debug\C-CAN.a(cyfitter_cfg.o)
- .debug_ranges  0x00000258      0x1e8 .\ARM_GCC_493\Debug\C-CAN.a(UART_1.o)
- .debug_ranges  0x00000440       0xf0 .\ARM_GCC_493\Debug\C-CAN.a(UART_1_IntClock.o)
- .debug_ranges  0x00000530      0x548 .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
- .debug_ranges  0x00000a78      0x130 .\ARM_GCC_493\Debug\C-CAN.a(cyPm.o)
- .debug_ranges  0x00000ba8      0x190 .\ARM_GCC_493\Debug\C-CAN.a(ADC_SAR_1.o)
- .debug_ranges  0x00000d38       0x10 .\ARM_GCC_493\Debug\C-CAN.a(ADC_SAR_1_INT.o)
- .debug_ranges  0x00000d48       0xf0 .\ARM_GCC_493\Debug\C-CAN.a(ADC_SAR_1_theACLK.o)
- .debug_ranges  0x00000e38       0x20 .\ARM_GCC_493\Debug\C-CAN.a(AMux_1.o)
- .debug_ranges  0x00000e58      0x1b8 .\ARM_GCC_493\Debug\C-CAN.a(CAN_1.o)
- .debug_ranges  0x00001010       0x20 .\ARM_GCC_493\Debug\C-CAN.a(CAN_1_INT.o)
- .debug_ranges  0x00001030      0x128 .\ARM_GCC_493\Debug\C-CAN.a(CAN_TIMER.o)
- .debug_ranges  0x00001158      0x198 .\ARM_GCC_493\Debug\C-CAN.a(CAN_ISR.o)
- .debug_ranges  0x000012f0      0x210 .\ARM_GCC_493\Debug\C-CAN.a(Encoder_Left.o)
- .debug_ranges  0x00001500      0x210 .\ARM_GCC_493\Debug\C-CAN.a(Encoder_Right.o)
- .debug_ranges  0x00001710      0x210 .\ARM_GCC_493\Debug\C-CAN.a(leftEncTimer.o)
- .debug_ranges  0x00001920      0x210 .\ARM_GCC_493\Debug\C-CAN.a(rightEncTimer.o)
- .debug_ranges  0x00001b30       0xc0 .\ARM_GCC_493\Debug\C-CAN.a(CyFlash.o)
- .debug_ranges  0x00001bf0       0x68 .\ARM_GCC_493\Debug\C-CAN.a(CySpc.o)
+ .debug_ranges  0x00000000      0x270 .\ARM_GCC_493\Debug\main.o
+ .debug_ranges  0x00000270       0x38 .\ARM_GCC_493\Debug\Cm3Start.o
+ .debug_ranges  0x000002a8      0x190 .\ARM_GCC_493\Debug\C-CAN.a(cyfitter_cfg.o)
+ .debug_ranges  0x00000438      0x1e8 .\ARM_GCC_493\Debug\C-CAN.a(UART_1.o)
+ .debug_ranges  0x00000620       0xf0 .\ARM_GCC_493\Debug\C-CAN.a(UART_1_IntClock.o)
+ .debug_ranges  0x00000710      0x548 .\ARM_GCC_493\Debug\C-CAN.a(CyLib.o)
+ .debug_ranges  0x00000c58      0x130 .\ARM_GCC_493\Debug\C-CAN.a(cyPm.o)
+ .debug_ranges  0x00000d88      0x190 .\ARM_GCC_493\Debug\C-CAN.a(ADC_SAR_1.o)
+ .debug_ranges  0x00000f18       0x10 .\ARM_GCC_493\Debug\C-CAN.a(ADC_SAR_1_INT.o)
+ .debug_ranges  0x00000f28       0xf0 .\ARM_GCC_493\Debug\C-CAN.a(ADC_SAR_1_theACLK.o)
+ .debug_ranges  0x00001018       0x20 .\ARM_GCC_493\Debug\C-CAN.a(AMux_1.o)
+ .debug_ranges  0x00001038      0x1b8 .\ARM_GCC_493\Debug\C-CAN.a(CAN_1.o)
+ .debug_ranges  0x000011f0       0x20 .\ARM_GCC_493\Debug\C-CAN.a(CAN_1_INT.o)
+ .debug_ranges  0x00001210      0x128 .\ARM_GCC_493\Debug\C-CAN.a(CAN_TIMER.o)
+ .debug_ranges  0x00001338      0x198 .\ARM_GCC_493\Debug\C-CAN.a(CAN_ISR.o)
+ .debug_ranges  0x000014d0      0x210 .\ARM_GCC_493\Debug\C-CAN.a(Encoder_Left.o)
+ .debug_ranges  0x000016e0      0x210 .\ARM_GCC_493\Debug\C-CAN.a(Encoder_Right.o)
+ .debug_ranges  0x000018f0      0x210 .\ARM_GCC_493\Debug\C-CAN.a(leftEncTimer.o)
+ .debug_ranges  0x00001b00      0x210 .\ARM_GCC_493\Debug\C-CAN.a(rightEncTimer.o)
+ .debug_ranges  0x00001d10       0xc0 .\ARM_GCC_493\Debug\C-CAN.a(CyFlash.o)
+ .debug_ranges  0x00001dd0       0x68 .\ARM_GCC_493\Debug\C-CAN.a(CySpc.o)
 
 .comment        0x00000000       0x70
  .comment       0x00000000       0x70 .\ARM_GCC_493\Debug\main.o

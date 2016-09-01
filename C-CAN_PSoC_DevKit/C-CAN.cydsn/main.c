@@ -44,6 +44,9 @@
 #include "CAN_1_TX_RX_func.c"
 
 /* Project Defines */
+#define SYSTICK_INTERRUPT_VECTOR_NUMBER 15u  //SysTick defines
+#define CLOCK_FREQ BCLK__BUS_CLK__HZ
+#define INTERRUPT_FREQ 100000u
 #define FALSE  0
 #define TRUE   1
 #define TRANSMIT_BUFFER_SIZE  50
@@ -52,6 +55,9 @@
     uint8 RxMessage1[8];
     uint8 RXDLC1;
     uint8 RxFlag1;
+#define TIMER_RATE 100000
+    
+typedef unsigned char bool;
     
 typedef struct Sensors {
     uint16 data[BUFF];
@@ -60,6 +66,8 @@ typedef struct Sensors {
     uint8 number;
     uint8 index;
     uint8 window;
+    bool flag;
+    uint16 rate;
 }Sensor;
 
 typedef struct Encoders {
@@ -70,13 +78,39 @@ typedef struct Encoders {
     uint8 index;
     uint8 window;
     uint32 time;
+    bool flag;
+    uint16 rate;
 }Encoder;
     
-uint32 time = 0;
-
 void GetSample(Sensor * sensor);
 void GetRPM(Encoder * encoder);
+void SensorSet(Sensor * sensor, uint8 number_set, uint8 window_set, uint16 rate_set);
+void EncoderSet(Encoder * encoder, uint8 number_set, uint8 window_set, uint16 rate_set);
+void SensorInit(Sensor * sensor);
+void EncoderInit(Encoder * encoder);
+void CAN_Send(uint8 zero, uint8 one, uint8 two, uint8 three, uint8 four, uint8 five, uint8 six, uint8 seven);
+void SetEncoderFlag(Encoder * encoder, bool flag_set);
+void SetSensorFlag(Sensor * sensor, bool flag_set);
+uint16 GetEncoderRate(Encoder * encoder);
+uint16 GetSensorRate(Sensor * sensor);
 
+uint32 timer=0;
+
+Sensor steering;
+Sensor throttle;
+Encoder left;
+Encoder right;
+
+CY_ISR(SysTick_ISR)
+{
+    timer++;
+    if (timer     % GetSensorRate(&throttle) == 0) { SetSensorFlag(&throttle, TRUE); }
+    if ((timer+1) % GetSensorRate(&steering) == 0) { SetSensorFlag(&steering, TRUE); }
+    if ((timer+2) % GetEncoderRate(&left)    == 0) { SetEncoderFlag(&left, TRUE); }
+    if ((timer+3) % GetEncoderRate(&right)   == 0) { SetEncoderFlag(&right, TRUE); }
+    if (timer >= TIMER_RATE)        { timer = 0; }
+    /* no need to clear interrupt source */
+}
 
 /*******************************************************************************
 * Function Name: main
@@ -109,28 +143,7 @@ void main()
     uint8 SendSingleByte;
     /* Transmit Buffer */
     char TransmitBuffer[TRANSMIT_BUFFER_SIZE];
-    /* Filtering Variables */
-    uint8 i=0;
-    uint8 j=0;
-    uint16 sampleCount = 0;
-    uint32 counter = 0;
-    
-    uint32 rpm = 0;
-    
-    Sensor hrs180;
-    Sensor hrs090;
-    Sensor pot;
-    
-    Encoder left;
-    Encoder right;
-    
-    left.number = 0;
-    right.number = 1;
-    
-    hrs180.number = 0;
-    hrs090.number = 1;
-    pot.number = 2;
-    
+
     /* Start the components */
     ADC_SAR_1_Start();
     UART_1_Start();
@@ -144,46 +157,32 @@ void main()
     CAN_ISR_Start();
     CAN_TIMER_Start();
     
+    SensorInit(&steering);
+    SensorInit(&throttle);
+    EncoderInit(&left);
+    EncoderInit(&right);
+    
+    /*Point the Systick vector to the ISR in this file */
+    CyIntSetSysVector(SYSTICK_INTERRUPT_VECTOR_NUMBER, SysTick_ISR);
+    
+    /* Set the number of ticks between interrupts.
+    Ignore the function success/fail return value.
+    Defined in auto-generated core_cm3.h */
+    (void)SysTick_Config(CLOCK_FREQ / INTERRUPT_FREQ); 
+
+    
     CYGlobalIntEnable;
 
     
     /* Initialize Variables */
     ContinuouslySendData = FALSE;
     SendSingleByte = FALSE;
+
+    SensorSet(&steering, 0, 50, 200);
+    SensorSet(&throttle, 1, 50, 200);
     
-    for(i=0;i<BUFF;i++){
-        hrs180.data[i] = 0;
-        hrs090.data[i] = 0;
-        pot.data[i] = 0;
-        left.data[i] = 0;
-        right.data[i] = 0;
-    }
-    
-    hrs180.mV = 0;
-    hrs180.accumulator = 0;
-    hrs180.index = 0;
-    
-    hrs090.mV = 0;
-    hrs090.accumulator = 0;
-    hrs090.index = 0;
-    
-    pot.mV = 0;
-    pot.accumulator = 0;
-    pot.index = 0;
-    
-    left.accumulator = 0.0;
-    left.rpm = 0.0;
-    left.index = 0;
-    
-    right.accumulator = 0.0;
-    right.rpm = 0.0;
-    right.index = 0;
-    
-    hrs180.window = 50;
-    hrs090.window = 50;
-    pot.window = 50;
-    left.window = 10;
-    right.window = 10;
+    EncoderSet(&left, 0, 10, 200);
+    EncoderSet(&right, 1, 10, 200);
             
     
     
@@ -218,38 +217,25 @@ void main()
                 break;    
         }
         
+        if(steering.flag==TRUE){
+            GetSample(&steering);
+        }
+        else if(throttle.flag==TRUE){
+            GetSample(&throttle);
+        }
+        else if(left.flag==TRUE){
+            GetRPM(&left);
+        }
+        else if(right.flag==TRUE){
+            GetRPM(&right);
+        }
         
-        GetSample(&hrs180);
-        GetSample(&hrs090);
-        GetSample(&pot);
-        GetRPM(&left);
-        GetRPM(&right);
-        
-        
-      
-        
-            
-        
-        TxMessage1[0] = 0xAA;
-        TxMessage1[1] = 0xBB;
-        TxMessage1[2] = 0xCC;
-        TxMessage1[3] = 0xDD;
-        TxMessage1[4] = 0xEE;
-        TxMessage1[5] = 0xFF;
-        TxMessage1[6] = 0x00;
-        TxMessage1[7] = 0x11;        
-        
-        CyDelay(5);            
-        //Time_Cnt_WriteCounter(0);
-            
-            
-            
         /* Send data based on last UART command */
         if(SendSingleByte || ContinuouslySendData)
         {
             
             /* Format ADC result for transmition */
-            sprintf(TransmitBuffer, "%d, %d, %d\n\r", hrs180.mV, (int)left.rpm, (int)right.rpm);
+            sprintf(TransmitBuffer, "%d, %d, %d\n\r", steering.mV, (int)left.rpm, (int)right.rpm);
             /* Send out the data */
             UART_1_PutString(TransmitBuffer);
             /* Reset the send once flag */
@@ -285,6 +271,8 @@ void GetSample( Sensor * sensor){
     }
     
     sensor->mV = ADC_SAR_1_CountsTo_mVolts((sensor->accumulator)/sensor->window);
+    
+    sensor->rate = FALSE;
     
 }
 
@@ -336,10 +324,76 @@ void GetRPM(Encoder * encoder){
     if(encoder->index >= encoder->window){
         encoder->index = 0;
     }
+    
+    encoder->flag = FALSE;
 
 }
-        
 
+void SensorSet(Sensor * sensor, uint8 number_set, uint8 window_set, uint16 rate_set){
+    sensor->number = number_set;
+    sensor->window = window_set;
+    sensor->rate = rate_set;
+    if(window_set>=BUFF){
+        sensor->window = BUFF;
+    }
+}
+
+void EncoderSet(Encoder * encoder, uint8 number_set, uint8 window_set, uint16 rate_set){
+    encoder->number = number_set;
+    encoder->window = window_set;
+    encoder->rate = rate_set;
+    if(window_set>=BUFF){
+        encoder->window = BUFF;
+    }
+}
+
+void SensorInit(Sensor * sensor){
+    int i = 0;
+    sensor->accumulator = 0;
+    sensor->mV = 0;
+    sensor->index = 0;
+    sensor->flag = 0;
+    for(i=0;i<BUFF;i++){
+        sensor->data[i]=0;
+    }
+}
+
+void EncoderInit(Encoder * encoder){
+    int i = 0;
+    encoder->accumulator = 0;
+    encoder->rpm = 0;
+    encoder->index = 0;
+    encoder->flag = 0;
+    for(i=0;i<BUFF;i++){
+        encoder->data[i]=0;
+    }
+}
+
+void CAN_Send(uint8 zero, uint8 one, uint8 two, uint8 three, uint8 four, uint8 five, uint8 six, uint8 seven){
+    TxMessage1[0] = zero;
+    TxMessage1[1] = one;
+    TxMessage1[2] = two;
+    TxMessage1[3] = three;
+    TxMessage1[4] = four;
+    TxMessage1[5] = five;
+    TxMessage1[6] = six;
+    TxMessage1[7] = seven;
+}
     
+void SetEncoderFlag(Encoder * encoder, bool flag_set){
+    encoder->flag = flag_set; 
+}
+
+void SetSensorFlag(Sensor * sensor, bool flag_set){
+    sensor->flag = flag_set;
+}
+
+uint16 GetEncoderRate(Encoder * encoder){
+    return INTERRUPT_FREQ/(encoder->rate);
+}
+
+uint16 GetSensorRate(Sensor * sensor){
+    return INTERRUPT_FREQ/(sensor->rate);
+}
 
 /* [] END OF FILE */

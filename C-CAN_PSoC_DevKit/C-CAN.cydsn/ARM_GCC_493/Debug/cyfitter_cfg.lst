@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccy4Y7jA.s 			page 1
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccrA4HZ6.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccy4Y7jA.s 			page 1
   29:.\Generated_Source\PSoC5/cyfitter_cfg.c ****     #define CYPACKED 
   30:.\Generated_Source\PSoC5/cyfitter_cfg.c ****     #define CYPACKED_ATTR __attribute__ ((packed))
   31:.\Generated_Source\PSoC5/cyfitter_cfg.c ****     #define CYALIGNED __attribute__ ((aligned))
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccy4Y7jA.s 			page 2
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccrA4HZ6.s 			page 2
 
 
   32:.\Generated_Source\PSoC5/cyfitter_cfg.c ****     #define CY_CFG_UNUSED __attribute__ ((unused))
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccy4Y7jA.s 			page 1
   86:.\Generated_Source\PSoC5/cyfitter_cfg.c **** {
   87:.\Generated_Source\PSoC5/cyfitter_cfg.c **** 	(void)memcpy(dest, src, n);
   88:.\Generated_Source\PSoC5/cyfitter_cfg.c **** }
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccy4Y7jA.s 			page 3
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccrA4HZ6.s 			page 3
 
 
   89:.\Generated_Source\PSoC5/cyfitter_cfg.c **** 
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccy4Y7jA.s 			page 1
  143:.\Generated_Source\PSoC5/cyfitter_cfg.c **** #define cy_cfg_addr_table ((const uint32 CYFAR *)(0x48000000u + CYAPP_ECC_OFFSET))
  144:.\Generated_Source\PSoC5/cyfitter_cfg.c **** #define cy_cfg_data_table ((const cy_cfg_addrvalue_t CYFAR *)(0x4800008Cu + CYAPP_ECC_OFFSET))
  145:.\Generated_Source\PSoC5/cyfitter_cfg.c **** 
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccy4Y7jA.s 			page 4
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccrA4HZ6.s 			page 4
 
 
  146:.\Generated_Source\PSoC5/cyfitter_cfg.c **** /* UDB_0_1_0_CONFIG Address: CYDEV_UCFG_B1_P4_U1_BASE Size (bytes): 128 */
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccy4Y7jA.s 			page 1
  200:.\Generated_Source\PSoC5/cyfitter_cfg.c **** *  Performs the initialization of all of the clocks in the device based on the
  201:.\Generated_Source\PSoC5/cyfitter_cfg.c **** *  settings in the Clock tab of the DWR.  This includes enabling the requested
  202:.\Generated_Source\PSoC5/cyfitter_cfg.c **** *  clocks and setting the necessary dividers to produce the desired frequency. 
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccy4Y7jA.s 			page 5
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccrA4HZ6.s 			page 5
 
 
  203:.\Generated_Source\PSoC5/cyfitter_cfg.c **** *
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccy4Y7jA.s 			page 1
  257:.\Generated_Source\PSoC5/cyfitter_cfg.c **** 	CY_SET_XTND_REG8((void CYFAR *)(CYREG_CLKDIST_BCFG0), 0x00u);
  258:.\Generated_Source\PSoC5/cyfitter_cfg.c **** 	CY_SET_XTND_REG8((void CYFAR *)(CYREG_CLKDIST_BCFG2), 0x48u);
  259:.\Generated_Source\PSoC5/cyfitter_cfg.c **** 	CY_SET_XTND_REG8((void CYFAR *)(CYREG_CLKDIST_MSTR0), 0x00u);
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccy4Y7jA.s 			page 6
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccrA4HZ6.s 			page 6
 
 
  260:.\Generated_Source\PSoC5/cyfitter_cfg.c **** 	CY_SET_XTND_REG8((void CYFAR *)(CYREG_CLKDIST_LD), 0x02u);
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccy4Y7jA.s 			page 1
  314:.\Generated_Source\PSoC5/cyfitter_cfg.c **** *
  315:.\Generated_Source\PSoC5/cyfitter_cfg.c **** * Parameters:
  316:.\Generated_Source\PSoC5/cyfitter_cfg.c **** *  enabled - 1 to enable the pumps, 0 to disable the pumps
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccy4Y7jA.s 			page 7
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccrA4HZ6.s 			page 7
 
 
  317:.\Generated_Source\PSoC5/cyfitter_cfg.c **** *
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccy4Y7jA.s 			page 1
   62              		.size	SetAnalogRoutingPumps, .-SetAnalogRoutingPumps
   63              		.section	.text.AMux_1_Set,"ax",%progbits
   64              		.align	2
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccy4Y7jA.s 			page 8
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccrA4HZ6.s 			page 8
 
 
   65              		.global	AMux_1_Set
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccy4Y7jA.s 			page 1
  382:.\Generated_Source\PSoC5/cyfitter_cfg.c **** {
   71              		.loc 1 382 0
   72              		.cfi_startproc
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccy4Y7jA.s 			page 9
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccrA4HZ6.s 			page 9
 
 
   73              		@ args = 0, pretend = 0, frame = 0
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccy4Y7jA.s 			page 1
  114 0028 0079     		ldrb	r0, [r0, #4]	@ zero_extendqisi2
  388:.\Generated_Source\PSoC5/cyfitter_cfg.c **** 		i = AMux_1__innerMap[channel];
  115              		.loc 1 388 0
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccy4Y7jA.s 			page 10
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccrA4HZ6.s 			page 10
 
 
  116 002a 4EEA0505 		orr	r5, lr, r5
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccy4Y7jA.s 			page 1
  396:.\Generated_Source\PSoC5/cyfitter_cfg.c **** }
  397:.\Generated_Source\PSoC5/cyfitter_cfg.c **** 
  398:.\Generated_Source\PSoC5/cyfitter_cfg.c **** /*******************************************************************************
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccy4Y7jA.s 			page 11
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccrA4HZ6.s 			page 11
 
 
  399:.\Generated_Source\PSoC5/cyfitter_cfg.c **** * Function Name: AMux_1_Unset
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccy4Y7jA.s 			page 1
  418:.\Generated_Source\PSoC5/cyfitter_cfg.c **** 		*AMux_1__outerAddr[channel] &= (uint8)~AMux_1__outerMask[channel];
  193              		.loc 1 418 0
  194 0016 22EA0303 		bic	r3, r2, r3
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccy4Y7jA.s 			page 12
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccrA4HZ6.s 			page 12
 
 
  195              		.loc 1 419 0
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccy4Y7jA.s 			page 1
  239              		.cfi_restore 7
  240              		.cfi_restore 14
  241 0054 7047     		bx	lr
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccy4Y7jA.s 			page 13
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccrA4HZ6.s 			page 13
 
 
  242              	.L25:
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccy4Y7jA.s 			page 1
  271              		.cfi_offset 10, -12
  272              		.cfi_offset 11, -8
  273              		.cfi_offset 14, -4
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccy4Y7jA.s 			page 14
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccrA4HZ6.s 			page 14
 
 
  450:.\Generated_Source\PSoC5/cyfitter_cfg.c **** #ifdef CYGlobalIntDisable
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccy4Y7jA.s 			page 1
  311              		.loc 1 223 0
  312 0024 8D4E     		ldr	r6, .L48+12
  221:.\Generated_Source\PSoC5/cyfitter_cfg.c **** 	CY_SET_XTND_REG8((void CYFAR *)(CYREG_CLKDIST_DCFG1_CFG0 + 0x2u), 0x18u);
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccy4Y7jA.s 			page 15
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccrA4HZ6.s 			page 15
 
 
  313              		.loc 1 221 0
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccy4Y7jA.s 			page 1
  349              		.loc 1 232 0
  350 0062 0827     		movs	r7, #8
  226:.\Generated_Source\PSoC5/cyfitter_cfg.c **** 	CY_SET_XTND_REG16((void CYFAR *)(CYREG_CLKDIST_DCFG4_CFG0), 0x004Du);
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccy4Y7jA.s 			page 16
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccrA4HZ6.s 			page 16
 
 
  351              		.loc 1 226 0
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccy4Y7jA.s 			page 1
  390              	.L28:
  245:.\Generated_Source\PSoC5/cyfitter_cfg.c **** 		CyDelayCycles(10u * 48u); /* Delay 10us based on 48MHz clock */
  391              		.loc 1 245 0
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccy4Y7jA.s 			page 17
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccrA4HZ6.s 			page 17
 
 
  392 0096 3378     		ldrb	r3, [r6]	@ zero_extendqisi2
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccy4Y7jA.s 			page 1
  430              		.loc 1 258 0
  431 00ca 4827     		movs	r7, #72
  255:.\Generated_Source\PSoC5/cyfitter_cfg.c **** 	CY_SET_XTND_REG8((void CYFAR *)(CYREG_CLKDIST_MSTR0), 0x07u);
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccy4Y7jA.s 			page 18
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccrA4HZ6.s 			page 18
 
 
  432              		.loc 1 255 0
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccy4Y7jA.s 			page 1
  474              	.LBB55:
  475              	.LBB56:
  462:.\Generated_Source\PSoC5/cyfitter_cfg.c **** 
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccy4Y7jA.s 			page 19
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccrA4HZ6.s 			page 19
 
 
  463:.\Generated_Source\PSoC5/cyfitter_cfg.c **** 	{
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccy4Y7jA.s 			page 1
  491              	.LBE57:
  492              	.LBE56:
  497:.\Generated_Source\PSoC5/cyfitter_cfg.c **** 		{
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccy4Y7jA.s 			page 20
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccrA4HZ6.s 			page 20
 
 
  493              		.loc 1 497 0 discriminator 3
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccy4Y7jA.s 			page 1
  530              	.LVL26:
  531              	.L33:
  532              	.LBB68:
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccy4Y7jA.s 			page 21
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccrA4HZ6.s 			page 21
 
 
  183:.\Generated_Source\PSoC5/cyfitter_cfg.c **** 		uint8 count = (uint8)baseAddr;
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccy4Y7jA.s 			page 1
  575 016e 4C49     		ldr	r1, .L48+80
  517:.\Generated_Source\PSoC5/cyfitter_cfg.c **** 		CY_SET_XTND_REG8((void CYFAR *)CYREG_BCTL1_BANK_CTL, CY_GET_XTND_REG8((void CYFAR *)CYREG_BCTL1_B
  576              		.loc 1 517 0
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccy4Y7jA.s 			page 22
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccrA4HZ6.s 			page 22
 
 
  577 0170 4C4A     		ldr	r2, .L48+84
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccy4Y7jA.s 			page 1
  619              	.LBE74:
  620              	.LBB75:
  621              		.loc 1 521 0
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccy4Y7jA.s 			page 23
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccrA4HZ6.s 			page 23
 
 
  622 019c 0A70     		strb	r2, [r1]
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccy4Y7jA.s 			page 1
  530:.\Generated_Source\PSoC5/cyfitter_cfg.c **** 	/* Switch Boost to the precision bandgap reference from its internal reference */
  531:.\Generated_Source\PSoC5/cyfitter_cfg.c **** 	CY_SET_REG8((void CYXDATA *)CYREG_BOOST_CR2, (CY_GET_REG8((void CYXDATA *)CYREG_BOOST_CR2) | 0x08u
  666              		.loc 1 531 0
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccy4Y7jA.s 			page 24
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccrA4HZ6.s 			page 24
 
 
  667 01b8 A6F6A666 		subw	r6, r6, #3750
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccy4Y7jA.s 			page 1
  713 01d6 3D78     		ldrb	r5, [r7]	@ zero_extendqisi2
  287:.\Generated_Source\PSoC5/cyfitter_cfg.c **** 	uint8 cr4 = CY_GET_XTND_REG8((void CYFAR *)(CYREG_RESET_CR4));
  714              		.loc 1 287 0
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccy4Y7jA.s 			page 25
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccrA4HZ6.s 			page 25
 
 
  715 01d8 DBB2     		uxtb	r3, r3
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccy4Y7jA.s 			page 1
  757              		.loc 1 289 0
  758 01fe F6B2     		uxtb	r6, r6
  759              	.LVL42:
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccy4Y7jA.s 			page 26
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccrA4HZ6.s 			page 26
 
 
  291:.\Generated_Source\PSoC5/cyfitter_cfg.c **** 	/* Disable PRES while setting up SAR voltage reference */
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccy4Y7jA.s 			page 1
  799              	.LBE95:
  800              	.LBE113:
  801              	.LBB114:
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccy4Y7jA.s 			page 27
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccrA4HZ6.s 			page 27
 
 
  802              	.LBB111:
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccy4Y7jA.s 			page 1
  850 02a0 03500140 		.word	1073827843
  851 02a4 13500140 		.word	1073827859
  852 02a8 A0430040 		.word	1073759136
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccy4Y7jA.s 			page 28
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccrA4HZ6.s 			page 28
 
 
  853 02ac 02510040 		.word	1073762562
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccy4Y7jA.s 			page 1
  907              		.size	AMux_1__innerMask, 2
  908              	AMux_1__innerMask:
  909 001c 40       		.byte	64
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccy4Y7jA.s 			page 29
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccrA4HZ6.s 			page 29
 
 
  910 001d 20       		.byte	32
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccy4Y7jA.s 			page 1
  964 0015 8C020000 		.4byte	.LASF66
  965 0019 68010000 		.4byte	.Ldebug_ranges0+0x168
  966 001d 00000000 		.4byte	0
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccy4Y7jA.s 			page 30
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccrA4HZ6.s 			page 30
 
 
  967 0021 00000000 		.4byte	.Ldebug_line0
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccy4Y7jA.s 			page 1
  1021 0081 08       		.byte	0x8
  1022 0082 80020000 		.4byte	.LASF10
  1023 0086 06       		.uleb128 0x6
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccy4Y7jA.s 			page 31
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccrA4HZ6.s 			page 31
 
 
  1024 0087 D5000000 		.4byte	.LASF12
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccy4Y7jA.s 			page 1
  1078 00fb 03       		.uleb128 0x3
  1079 00fc 61020000 		.4byte	.LASF21
  1080 0100 01       		.byte	0x1
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccy4Y7jA.s 			page 32
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccrA4HZ6.s 			page 32
 
 
  1081 0101 8D       		.byte	0x8d
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccy4Y7jA.s 			page 1
  1135 016a 04       		.byte	0x4
  1136 016b 6F010000 		.4byte	0x16f
  1137 016f 0E       		.uleb128 0xe
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccy4Y7jA.s 			page 33
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccrA4HZ6.s 			page 33
 
 
  1138 0170 0F       		.uleb128 0xf
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccy4Y7jA.s 			page 1
  1192 01ea 9C01     		.2byte	0x19c
  1193 01ec 00000000 		.4byte	.LFB9
  1194 01f0 60000000 		.4byte	.LFE9-.LFB9
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccy4Y7jA.s 			page 34
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccrA4HZ6.s 			page 34
 
 
  1195 01f4 01       		.uleb128 0x1
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccy4Y7jA.s 			page 1
  1249 026a 16       		.uleb128 0x16
  1250 026b 6900     		.ascii	"i\000"
  1251 026d 01       		.byte	0x1
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccy4Y7jA.s 			page 35
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccrA4HZ6.s 			page 35
 
 
  1252 026e B4       		.byte	0xb4
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccy4Y7jA.s 			page 1
  1306 02e2 01       		.byte	0x1
  1307 02e3 C001     		.2byte	0x1c0
  1308 02e5 00000000 		.4byte	.LFB10
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccy4Y7jA.s 			page 36
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccrA4HZ6.s 			page 36
 
 
  1309 02e9 FC020000 		.4byte	.LFE10-.LFB10
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccy4Y7jA.s 			page 1
  1363 0363 01       		.byte	0x1
  1364 0364 D401     		.2byte	0x1d4
  1365 0366 3A030000 		.4byte	0x33a
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccy4Y7jA.s 			page 37
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccrA4HZ6.s 			page 37
 
 
  1366 036a 21       		.uleb128 0x21
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccy4Y7jA.s 			page 1
  1420 03df D8030000 		.4byte	.LASF50
  1421 03e3 01       		.byte	0x1
  1422 03e4 E901     		.2byte	0x1e9
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccy4Y7jA.s 			page 38
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccrA4HZ6.s 			page 38
 
 
  1423 03e6 F0030000 		.4byte	0x3f0
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccy4Y7jA.s 			page 1
  1477 0466 01       		.byte	0x1
  1478 0467 FA01     		.2byte	0x1fa
  1479 0469 74040000 		.4byte	0x474
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccy4Y7jA.s 			page 39
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccrA4HZ6.s 			page 39
 
 
  1480 046d 06       		.uleb128 0x6
@@ -2338,7 +2338,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccy4Y7jA.s 			page 1
  1534 04e6 80       		.byte	0x80
  1535 04e7 1F       		.uleb128 0x1f
  1536 04e8 01       		.uleb128 0x1
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccy4Y7jA.s 			page 40
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccrA4HZ6.s 			page 40
 
 
  1537 04e9 50       		.byte	0x50
@@ -2398,7 +2398,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccy4Y7jA.s 			page 1
  1591 056f 02510040 		.4byte	0x40005102
  1592 0573 00       		.byte	0
  1593 0574 1B       		.uleb128 0x1b
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccy4Y7jA.s 			page 41
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccrA4HZ6.s 			page 41
 
 
  1594 0575 3D010000 		.4byte	0x13d
@@ -2458,7 +2458,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccy4Y7jA.s 			page 1
  1648 0605 50       		.byte	0x50
  1649 0606 01       		.uleb128 0x1
  1650 0607 3A       		.byte	0x3a
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccy4Y7jA.s 			page 42
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccrA4HZ6.s 			page 42
 
 
  1651 0608 00       		.byte	0
@@ -2518,7 +2518,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccy4Y7jA.s 			page 1
  1705 0686 18       		.uleb128 0x18
  1706 0687 5E060000 		.4byte	0x65e
  1707 068b 24       		.uleb128 0x24
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccy4Y7jA.s 			page 43
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccrA4HZ6.s 			page 43
 
 
  1708 068c 86000000 		.4byte	0x86
@@ -2578,7 +2578,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccy4Y7jA.s 			page 1
  1762 0708 12070000 		.4byte	0x712
  1763 070c 05       		.uleb128 0x5
  1764 070d 03       		.byte	0x3
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccy4Y7jA.s 			page 44
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccrA4HZ6.s 			page 44
 
 
  1765 070e 10000000 		.4byte	AMux_1__innerMap
@@ -2638,7 +2638,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccy4Y7jA.s 			page 1
  1819 0791 36       		.uleb128 0x36
  1820 0792 DB000000 		.4byte	.LASF68
  1821 0796 04       		.byte	0x4
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccy4Y7jA.s 			page 45
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccrA4HZ6.s 			page 45
 
 
  1822 0797 77       		.byte	0x77
@@ -2698,7 +2698,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccy4Y7jA.s 			page 1
  1876 002f 0B       		.uleb128 0xb
  1877 0030 3E       		.uleb128 0x3e
  1878 0031 0B       		.uleb128 0xb
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccy4Y7jA.s 			page 46
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccrA4HZ6.s 			page 46
 
 
  1879 0032 03       		.uleb128 0x3
@@ -2758,7 +2758,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccy4Y7jA.s 			page 1
  1933 0068 13       		.uleb128 0x13
  1934 0069 38       		.uleb128 0x38
  1935 006a 0B       		.uleb128 0xb
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccy4Y7jA.s 			page 47
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccrA4HZ6.s 			page 47
 
 
  1936 006b 00       		.byte	0
@@ -2818,7 +2818,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccy4Y7jA.s 			page 1
  1990 00a1 0E       		.uleb128 0xe
  1991 00a2 26       		.uleb128 0x26
  1992 00a3 00       		.byte	0
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccy4Y7jA.s 			page 48
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccrA4HZ6.s 			page 48
 
 
  1993 00a4 00       		.byte	0
@@ -2878,7 +2878,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccy4Y7jA.s 			page 1
  2047 00db 18       		.uleb128 0x18
  2048 00dc 00       		.byte	0
  2049 00dd 00       		.byte	0
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccy4Y7jA.s 			page 49
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccrA4HZ6.s 			page 49
 
 
  2050 00de 12       		.uleb128 0x12
@@ -2938,7 +2938,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccy4Y7jA.s 			page 1
  2104 0114 00       		.byte	0
  2105 0115 00       		.byte	0
  2106 0116 16       		.uleb128 0x16
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccy4Y7jA.s 			page 50
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccrA4HZ6.s 			page 50
 
 
  2107 0117 34       		.uleb128 0x34
@@ -2998,7 +2998,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccy4Y7jA.s 			page 1
  2161 014d 1B       		.uleb128 0x1b
  2162 014e 1D       		.uleb128 0x1d
  2163 014f 01       		.byte	0x1
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccy4Y7jA.s 			page 51
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccrA4HZ6.s 			page 51
 
 
  2164 0150 31       		.uleb128 0x31
@@ -3058,7 +3058,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccy4Y7jA.s 			page 1
  2218 018b 13       		.uleb128 0x13
  2219 018c 00       		.byte	0
  2220 018d 00       		.byte	0
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccy4Y7jA.s 			page 52
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccrA4HZ6.s 			page 52
 
 
  2221 018e 21       		.uleb128 0x21
@@ -3118,7 +3118,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccy4Y7jA.s 			page 1
  2275 01c4 00       		.byte	0
  2276 01c5 49       		.uleb128 0x49
  2277 01c6 13       		.uleb128 0x13
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccy4Y7jA.s 			page 53
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccrA4HZ6.s 			page 53
 
 
  2278 01c7 2F       		.uleb128 0x2f
@@ -3178,7 +3178,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccy4Y7jA.s 			page 1
  2332 01fd 02       		.uleb128 0x2
  2333 01fe 18       		.uleb128 0x18
  2334 01ff 00       		.byte	0
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccy4Y7jA.s 			page 54
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccrA4HZ6.s 			page 54
 
 
  2335 0200 00       		.byte	0
@@ -3238,7 +3238,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccy4Y7jA.s 			page 1
  2389 0236 00       		.byte	0
  2390 0237 2E       		.uleb128 0x2e
  2391 0238 05       		.uleb128 0x5
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccy4Y7jA.s 			page 55
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccrA4HZ6.s 			page 55
 
 
  2392 0239 00       		.byte	0
@@ -3298,7 +3298,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccy4Y7jA.s 			page 1
  2446 026f 03       		.uleb128 0x3
  2447 0270 0E       		.uleb128 0xe
  2448 0271 3A       		.uleb128 0x3a
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccy4Y7jA.s 			page 56
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccrA4HZ6.s 			page 56
 
 
  2449 0272 0B       		.uleb128 0xb
@@ -3358,7 +3358,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccy4Y7jA.s 			page 1
  2503 02a8 00       		.byte	0
  2504              		.section	.debug_loc,"",%progbits
  2505              	.Ldebug_loc0:
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccy4Y7jA.s 			page 57
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccrA4HZ6.s 			page 57
 
 
  2506              	.LLST0:
@@ -3418,7 +3418,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccy4Y7jA.s 			page 1
  2560 0067 00000000 		.4byte	0
  2561              	.LLST2:
  2562 006b 00000000 		.4byte	.LVL8
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccy4Y7jA.s 			page 58
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccrA4HZ6.s 			page 58
 
 
  2563 006f 2C000000 		.4byte	.LVL9
@@ -3478,7 +3478,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccy4Y7jA.s 			page 1
  2617 00d6 90000000 		.4byte	.LVL12
  2618 00da 92000000 		.4byte	.LVL13
  2619 00de 0200     		.2byte	0x2
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccy4Y7jA.s 			page 59
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccrA4HZ6.s 			page 59
 
 
  2620 00e0 49       		.byte	0x49
@@ -3538,7 +3538,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccy4Y7jA.s 			page 1
  2674 0160 06010000 		.4byte	.LVL22
  2675 0164 2A010000 		.4byte	.LVL26
  2676 0168 0B00     		.2byte	0xb
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccy4Y7jA.s 			page 60
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccrA4HZ6.s 			page 60
 
 
  2677 016a 74       		.byte	0x74
@@ -3598,7 +3598,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccy4Y7jA.s 			page 1
  2731 01db 0200     		.2byte	0x2
  2732 01dd 30       		.byte	0x30
  2733 01de 9F       		.byte	0x9f
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccy4Y7jA.s 			page 61
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccrA4HZ6.s 			page 61
 
 
  2734 01df 00000000 		.4byte	0
@@ -3658,7 +3658,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccy4Y7jA.s 			page 1
  2788 0270 00000000 		.4byte	0
  2789              	.LLST16:
  2790 0274 FA010000 		.4byte	.LVL41
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccy4Y7jA.s 			page 62
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccrA4HZ6.s 			page 62
 
 
  2791 0278 4E020000 		.4byte	.LVL45
@@ -3718,7 +3718,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccy4Y7jA.s 			page 1
  2845 0058 12010000 		.4byte	.LBB59
  2846 005c 14010000 		.4byte	.LBE59
  2847 0060 00000000 		.4byte	0
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccy4Y7jA.s 			page 63
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccrA4HZ6.s 			page 63
 
 
  2848 0064 00000000 		.4byte	0
@@ -3778,7 +3778,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccy4Y7jA.s 			page 1
  2902 013c F8010000 		.4byte	.LBE107
  2903 0140 00000000 		.4byte	0
  2904 0144 00000000 		.4byte	0
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccy4Y7jA.s 			page 64
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccrA4HZ6.s 			page 64
 
 
  2905 0148 2E020000 		.4byte	.LBB109
@@ -3838,7 +3838,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccy4Y7jA.s 			page 1
  2939      72656643 
  2939      6E7400
  2940              	.LASF38:
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccy4Y7jA.s 			page 65
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccrA4HZ6.s 			page 65
 
 
  2941 005c 61646472 		.ascii	"addr_table\000"
@@ -3898,7 +3898,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccy4Y7jA.s 			page 1
  2967      6C6500
  2968              	.LASF33:
  2969 00ec 414D7578 		.ascii	"AMux_1_Unset\000"
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccy4Y7jA.s 			page 66
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccrA4HZ6.s 			page 66
 
 
  2969      5F315F55 
@@ -3958,7 +3958,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccy4Y7jA.s 			page 1
  2993      696E6E65 
  2993      724D6170 
  2993      00
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccy4Y7jA.s 			page 67
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccrA4HZ6.s 			page 67
 
 
  2994              	.LASF46:
@@ -4018,7 +4018,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccy4Y7jA.s 			page 1
  3019      676E6564 
  3019      20636861 
  3019      7200
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccy4Y7jA.s 			page 68
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccrA4HZ6.s 			page 68
 
 
  3020              	.LASF3:
@@ -4078,7 +4078,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccy4Y7jA.s 			page 1
  3042      7200
  3043              	.LASF19:
  3044 0303 6F666673 		.ascii	"offset\000"
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccy4Y7jA.s 			page 69
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccrA4HZ6.s 			page 69
 
 
  3044      657400
@@ -4138,6 +4138,6 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccy4Y7jA.s 			page 1
  3066      724D6173 
  3066      6B00
  3067              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.9.3 20150303 (release) [ARM/embedded-4_9-br
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccy4Y7jA.s 			page 70
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccrA4HZ6.s 			page 70
 
 
