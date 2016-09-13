@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccsaJl8G.s 			page 1
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccI5Eyob.s 			page 1
 
 
    1              		.syntax unified
@@ -10,7 +10,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccsaJl8G.s 			page 1
    7              		.eabi_attribute 24, 1
    8              		.eabi_attribute 25, 1
    9              		.eabi_attribute 26, 1
-  10              		.eabi_attribute 30, 2
+  10              		.eabi_attribute 30, 6
   11              		.eabi_attribute 34, 1
   12              		.eabi_attribute 18, 4
   13              		.thumb
@@ -26,10 +26,10 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccsaJl8G.s 			page 1
   23 0006 00000000 		.4byte	.Ldebug_abbrev0
   24 000a 04       		.byte	0x4
   25 000b 01       		.uleb128 0x1
-  26 000c 1B000000 		.4byte	.LASF13
+  26 000c AF000000 		.4byte	.LASF13
   27 0010 01       		.byte	0x1
   28 0011 44010000 		.4byte	.LASF14
-  29 0015 A9000000 		.4byte	.LASF15
+  29 0015 1B000000 		.4byte	.LASF15
   30 0019 00000000 		.4byte	.Ldebug_line0
   31 001d 02       		.uleb128 0x2
   32 001e 01       		.byte	0x1
@@ -38,7 +38,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccsaJl8G.s 			page 1
   35 0024 02       		.uleb128 0x2
   36 0025 01       		.byte	0x1
   37 0026 08       		.byte	0x8
-  38 0027 21010000 		.4byte	.LASF1
+  38 0027 93000000 		.4byte	.LASF1
   39 002b 02       		.uleb128 0x2
   40 002c 02       		.byte	0x2
   41 002d 05       		.byte	0x5
@@ -50,22 +50,22 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccsaJl8G.s 			page 1
   47 0039 02       		.uleb128 0x2
   48 003a 04       		.byte	0x4
   49 003b 05       		.byte	0x5
-  50 003c 34010000 		.4byte	.LASF4
+  50 003c A6000000 		.4byte	.LASF4
   51 0040 02       		.uleb128 0x2
   52 0041 04       		.byte	0x4
   53 0042 07       		.byte	0x7
-  54 0043 F8000000 		.4byte	.LASF5
+  54 0043 6A000000 		.4byte	.LASF5
   55 0047 02       		.uleb128 0x2
   56 0048 08       		.byte	0x8
   57 0049 05       		.byte	0x5
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccsaJl8G.s 			page 2
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccI5Eyob.s 			page 2
 
 
   58 004a 00000000 		.4byte	.LASF6
   59 004e 02       		.uleb128 0x2
   60 004f 08       		.byte	0x8
   61 0050 07       		.byte	0x7
-  62 0051 0A010000 		.4byte	.LASF7
+  62 0051 7C000000 		.4byte	.LASF7
   63 0055 03       		.uleb128 0x3
   64 0056 04       		.byte	0x4
   65 0057 05       		.byte	0x5
@@ -85,7 +85,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccsaJl8G.s 			page 1
   79 0071 02       		.uleb128 0x2
   80 0072 01       		.byte	0x1
   81 0073 08       		.byte	0x8
-  82 0074 2F010000 		.4byte	.LASF11
+  82 0074 A1000000 		.4byte	.LASF11
   83 0078 02       		.uleb128 0x2
   84 0079 04       		.byte	0x4
   85 007a 07       		.byte	0x7
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccsaJl8G.s 			page 1
  112 0016 03       		.uleb128 0x3
  113 0017 0E       		.uleb128 0xe
  114 0018 00       		.byte	0
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccsaJl8G.s 			page 3
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccI5Eyob.s 			page 3
 
 
  115 0019 00       		.byte	0
@@ -161,60 +161,60 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccsaJl8G.s 			page 1
  144      676E6564 
  144      20696E74 
  144      00
- 145              	.LASF13:
- 146 001b 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
- 146      4320342E 
- 146      392E3320 
- 146      32303135 
- 146      30333033 
- 147 004e 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m3 -mthumb -g -O"
- 147      20726576 
- 147      6973696F 
- 147      6E203232 
- 147      31323230 
- 148 0081 33202D66 		.ascii	"3 -ffunction-sections -ffat-lto-objects\000"
- 148      66756E63 
- 148      74696F6E 
- 148      2D736563 
- 148      74696F6E 
- 149              	.LASF15:
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccsaJl8G.s 			page 4
+ 145              	.LASF15:
+ 146 001b 433A5C55 		.ascii	"C:\\Users\\Patrick\\Documents\\GitHub\\PSoC 5LP FIl"
+ 146      73657273 
+ 146      5C506174 
+ 146      7269636B 
+ 146      5C446F63 
+ 147 0049 65735C43 		.ascii	"es\\C-CAN_PSoC_DevKit\\C-CAN.cydsn\000"
+ 147      2D43414E 
+ 147      5F50536F 
+ 147      435F4465 
+ 147      764B6974 
+ 148              	.LASF5:
+ 149 006a 6C6F6E67 		.ascii	"long unsigned int\000"
+ 149      20756E73 
+ 149      69676E65 
+ 149      6420696E 
+ 149      7400
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccI5Eyob.s 			page 4
 
 
- 150 00a9 433A5C55 		.ascii	"C:\\Users\\Patrick\\Documents\\GitHub\\PSoC 5LP FIl"
- 150      73657273 
- 150      5C506174 
- 150      7269636B 
- 150      5C446F63 
- 151 00d7 65735C43 		.ascii	"es\\C-CAN_PSoC_DevKit\\C-CAN.cydsn\000"
- 151      2D43414E 
- 151      5F50536F 
- 151      435F4465 
- 151      764B6974 
- 152              	.LASF5:
- 153 00f8 6C6F6E67 		.ascii	"long unsigned int\000"
- 153      20756E73 
- 153      69676E65 
- 153      6420696E 
- 153      7400
- 154              	.LASF7:
- 155 010a 6C6F6E67 		.ascii	"long long unsigned int\000"
- 155      206C6F6E 
- 155      6720756E 
- 155      7369676E 
- 155      65642069 
- 156              	.LASF1:
- 157 0121 756E7369 		.ascii	"unsigned char\000"
- 157      676E6564 
- 157      20636861 
- 157      7200
- 158              	.LASF11:
- 159 012f 63686172 		.ascii	"char\000"
- 159      00
- 160              	.LASF4:
- 161 0134 6C6F6E67 		.ascii	"long int\000"
- 161      20696E74 
- 161      00
+ 150              	.LASF7:
+ 151 007c 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 151      206C6F6E 
+ 151      6720756E 
+ 151      7369676E 
+ 151      65642069 
+ 152              	.LASF1:
+ 153 0093 756E7369 		.ascii	"unsigned char\000"
+ 153      676E6564 
+ 153      20636861 
+ 153      7200
+ 154              	.LASF11:
+ 155 00a1 63686172 		.ascii	"char\000"
+ 155      00
+ 156              	.LASF4:
+ 157 00a6 6C6F6E67 		.ascii	"long int\000"
+ 157      20696E74 
+ 157      00
+ 158              	.LASF13:
+ 159 00af 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
+ 159      4320342E 
+ 159      392E3320 
+ 159      32303135 
+ 159      30333033 
+ 160 00e2 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m3 -mthumb -g -O"
+ 160      20726576 
+ 160      6973696F 
+ 160      6E203232 
+ 160      31323230 
+ 161 0115 30202D66 		.ascii	"0 -ffunction-sections -ffat-lto-objects\000"
+ 161      66756E63 
+ 161      74696F6E 
+ 161      2D736563 
+ 161      74696F6E 
  162              	.LASF10:
  163 013d 646F7562 		.ascii	"double\000"
  163      6C6500
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccsaJl8G.s 			page 1
  171 018a 666C6F61 		.ascii	"float\000"
  171      7400
  172              	.LASF2:
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccsaJl8G.s 			page 5
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccI5Eyob.s 			page 5
 
 
  173 0190 73686F72 		.ascii	"short int\000"

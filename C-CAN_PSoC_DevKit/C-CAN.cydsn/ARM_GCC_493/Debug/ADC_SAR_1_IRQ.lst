@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc54Jpya.s 			page 1
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccZtCLWz.s 			page 1
 
 
    1              		.syntax unified
@@ -10,7 +10,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc54Jpya.s 			page 1
    7              		.eabi_attribute 24, 1
    8              		.eabi_attribute 25, 1
    9              		.eabi_attribute 26, 1
-  10              		.eabi_attribute 30, 2
+  10              		.eabi_attribute 30, 6
   11              		.eabi_attribute 34, 1
   12              		.eabi_attribute 18, 4
   13              		.thumb
@@ -18,14 +18,14 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc54Jpya.s 			page 1
   15              		.text
   16              	.Ltext0:
   17              		.cfi_sections	.debug_frame
-  18              		.section	.text.ADC_SAR_1_IRQ_Interrupt,"ax",%progbits
+  18              		.section	.text.ADC_SAR_1_IRQ_Start,"ax",%progbits
   19              		.align	2
-  20              		.global	ADC_SAR_1_IRQ_Interrupt
+  20              		.global	ADC_SAR_1_IRQ_Start
   21              		.thumb
   22              		.thumb_func
-  23              		.type	ADC_SAR_1_IRQ_Interrupt, %function
-  24              	ADC_SAR_1_IRQ_Interrupt:
-  25              	.LFB3:
+  23              		.type	ADC_SAR_1_IRQ_Start, %function
+  24              	ADC_SAR_1_IRQ_Start:
+  25              	.LFB0:
   26              		.file 1 ".\\Generated_Source\\PSoC5\\ADC_SAR_1_IRQ.c"
    1:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** /*******************************************************************************
    2:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** * File Name: ADC_SAR_1_IRQ.c  
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc54Jpya.s 			page 1
   29:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** /* `#START ADC_SAR_1_IRQ_intc` */
   30:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** 
   31:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** /* `#END` */
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc54Jpya.s 			page 2
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccZtCLWz.s 			page 2
 
 
   32:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** 
@@ -92,18 +92,58 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc54Jpya.s 			page 1
   60:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** *******************************************************************************/
   61:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** void ADC_SAR_1_IRQ_Start(void)
   62:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** {
+  27              		.loc 1 62 0
+  28              		.cfi_startproc
+  29              		@ args = 0, pretend = 0, frame = 0
+  30              		@ frame_needed = 1, uses_anonymous_args = 0
+  31 0000 80B5     		push	{r7, lr}
+  32              		.cfi_def_cfa_offset 8
+  33              		.cfi_offset 7, -8
+  34              		.cfi_offset 14, -4
+  35 0002 00AF     		add	r7, sp, #0
+  36              		.cfi_def_cfa_register 7
   63:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c ****     /* For all we know the interrupt is active. */
   64:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c ****     ADC_SAR_1_IRQ_Disable();
+  37              		.loc 1 64 0
+  38 0004 FFF7FEFF 		bl	ADC_SAR_1_IRQ_Disable
   65:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** 
   66:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c ****     /* Set the ISR to point to the ADC_SAR_1_IRQ Interrupt. */
   67:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c ****     ADC_SAR_1_IRQ_SetVector(&ADC_SAR_1_IRQ_Interrupt);
+  39              		.loc 1 67 0
+  40 0008 0448     		ldr	r0, .L2
+  41 000a FFF7FEFF 		bl	ADC_SAR_1_IRQ_SetVector
   68:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** 
   69:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c ****     /* Set the priority. */
   70:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c ****     ADC_SAR_1_IRQ_SetPriority((uint8)ADC_SAR_1_IRQ_INTC_PRIOR_NUMBER);
+  42              		.loc 1 70 0
+  43 000e 0720     		movs	r0, #7
+  44 0010 FFF7FEFF 		bl	ADC_SAR_1_IRQ_SetPriority
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccZtCLWz.s 			page 3
+
+
   71:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** 
   72:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c ****     /* Enable it. */
   73:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c ****     ADC_SAR_1_IRQ_Enable();
+  45              		.loc 1 73 0
+  46 0014 FFF7FEFF 		bl	ADC_SAR_1_IRQ_Enable
   74:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** }
+  47              		.loc 1 74 0
+  48 0018 80BD     		pop	{r7, pc}
+  49              	.L3:
+  50 001a 00BF     		.align	2
+  51              	.L2:
+  52 001c 00000000 		.word	ADC_SAR_1_IRQ_Interrupt
+  53              		.cfi_endproc
+  54              	.LFE0:
+  55              		.size	ADC_SAR_1_IRQ_Start, .-ADC_SAR_1_IRQ_Start
+  56              		.section	.text.ADC_SAR_1_IRQ_StartEx,"ax",%progbits
+  57              		.align	2
+  58              		.global	ADC_SAR_1_IRQ_StartEx
+  59              		.thumb
+  60              		.thumb_func
+  61              		.type	ADC_SAR_1_IRQ_StartEx, %function
+  62              	ADC_SAR_1_IRQ_StartEx:
+  63              	.LFB1:
   75:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** 
   76:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** 
   77:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** /*******************************************************************************
@@ -118,9 +158,6 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc54Jpya.s 			page 1
   86:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** *  
   87:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** *  When defining ISR functions, the CY_ISR and CY_ISR_PROTO macros should be 
   88:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** *  used to provide consistent definition across compilers:
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc54Jpya.s 			page 3
-
-
   89:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** *  
   90:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** *  Function definition example:
   91:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** *   CY_ISR(MyISR)
@@ -138,18 +175,62 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc54Jpya.s 			page 1
  103:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** *******************************************************************************/
  104:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** void ADC_SAR_1_IRQ_StartEx(cyisraddress address)
  105:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** {
+  64              		.loc 1 105 0
+  65              		.cfi_startproc
+  66              		@ args = 0, pretend = 0, frame = 8
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccZtCLWz.s 			page 4
+
+
+  67              		@ frame_needed = 1, uses_anonymous_args = 0
+  68 0000 80B5     		push	{r7, lr}
+  69              		.cfi_def_cfa_offset 8
+  70              		.cfi_offset 7, -8
+  71              		.cfi_offset 14, -4
+  72 0002 82B0     		sub	sp, sp, #8
+  73              		.cfi_def_cfa_offset 16
+  74 0004 00AF     		add	r7, sp, #0
+  75              		.cfi_def_cfa_register 7
+  76 0006 7860     		str	r0, [r7, #4]
  106:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c ****     /* For all we know the interrupt is active. */
  107:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c ****     ADC_SAR_1_IRQ_Disable();
+  77              		.loc 1 107 0
+  78 0008 FFF7FEFF 		bl	ADC_SAR_1_IRQ_Disable
  108:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** 
  109:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c ****     /* Set the ISR to point to the ADC_SAR_1_IRQ Interrupt. */
  110:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c ****     ADC_SAR_1_IRQ_SetVector(address);
+  79              		.loc 1 110 0
+  80 000c 7868     		ldr	r0, [r7, #4]
+  81 000e FFF7FEFF 		bl	ADC_SAR_1_IRQ_SetVector
  111:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** 
  112:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c ****     /* Set the priority. */
  113:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c ****     ADC_SAR_1_IRQ_SetPriority((uint8)ADC_SAR_1_IRQ_INTC_PRIOR_NUMBER);
+  82              		.loc 1 113 0
+  83 0012 0720     		movs	r0, #7
+  84 0014 FFF7FEFF 		bl	ADC_SAR_1_IRQ_SetPriority
  114:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** 
  115:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c ****     /* Enable it. */
  116:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c ****     ADC_SAR_1_IRQ_Enable();
+  85              		.loc 1 116 0
+  86 0018 FFF7FEFF 		bl	ADC_SAR_1_IRQ_Enable
  117:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** }
+  87              		.loc 1 117 0
+  88 001c 0837     		adds	r7, r7, #8
+  89              		.cfi_def_cfa_offset 8
+  90 001e BD46     		mov	sp, r7
+  91              		.cfi_def_cfa_register 13
+  92              		@ sp needed
+  93 0020 80BD     		pop	{r7, pc}
+  94              		.cfi_endproc
+  95              	.LFE1:
+  96              		.size	ADC_SAR_1_IRQ_StartEx, .-ADC_SAR_1_IRQ_StartEx
+  97 0022 00BF     		.section	.text.ADC_SAR_1_IRQ_Stop,"ax",%progbits
+  98              		.align	2
+  99              		.global	ADC_SAR_1_IRQ_Stop
+ 100              		.thumb
+ 101              		.thumb_func
+ 102              		.type	ADC_SAR_1_IRQ_Stop, %function
+ 103              	ADC_SAR_1_IRQ_Stop:
+ 104              	.LFB2:
  118:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** 
  119:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** 
  120:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** /*******************************************************************************
@@ -157,6 +238,9 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc54Jpya.s 			page 1
  122:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** ********************************************************************************
  123:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** *
  124:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** * Summary:
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccZtCLWz.s 			page 5
+
+
  125:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** *   Disables and removes the interrupt.
  126:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** *
  127:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** * Parameters:  
@@ -168,23 +252,55 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc54Jpya.s 			page 1
  133:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** *******************************************************************************/
  134:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** void ADC_SAR_1_IRQ_Stop(void)
  135:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** {
+ 105              		.loc 1 135 0
+ 106              		.cfi_startproc
+ 107              		@ args = 0, pretend = 0, frame = 0
+ 108              		@ frame_needed = 1, uses_anonymous_args = 0
+ 109 0000 80B5     		push	{r7, lr}
+ 110              		.cfi_def_cfa_offset 8
+ 111              		.cfi_offset 7, -8
+ 112              		.cfi_offset 14, -4
+ 113 0002 00AF     		add	r7, sp, #0
+ 114              		.cfi_def_cfa_register 7
  136:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c ****     /* Disable this interrupt. */
  137:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c ****     ADC_SAR_1_IRQ_Disable();
+ 115              		.loc 1 137 0
+ 116 0004 FFF7FEFF 		bl	ADC_SAR_1_IRQ_Disable
  138:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** 
  139:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c ****     /* Set the ISR to point to the passive one. */
  140:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c ****     ADC_SAR_1_IRQ_SetVector(&IntDefaultHandler);
+ 117              		.loc 1 140 0
+ 118 0008 0148     		ldr	r0, .L6
+ 119 000a FFF7FEFF 		bl	ADC_SAR_1_IRQ_SetVector
  141:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** }
+ 120              		.loc 1 141 0
+ 121 000e 80BD     		pop	{r7, pc}
+ 122              	.L7:
+ 123              		.align	2
+ 124              	.L6:
+ 125 0010 00000000 		.word	IntDefaultHandler
+ 126              		.cfi_endproc
+ 127              	.LFE2:
+ 128              		.size	ADC_SAR_1_IRQ_Stop, .-ADC_SAR_1_IRQ_Stop
+ 129              		.section	.text.ADC_SAR_1_IRQ_Interrupt,"ax",%progbits
+ 130              		.align	2
+ 131              		.global	ADC_SAR_1_IRQ_Interrupt
+ 132              		.thumb
+ 133              		.thumb_func
+ 134              		.type	ADC_SAR_1_IRQ_Interrupt, %function
+ 135              	ADC_SAR_1_IRQ_Interrupt:
+ 136              	.LFB3:
  142:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** 
  143:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** 
  144:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** /*******************************************************************************
  145:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** * Function Name: ADC_SAR_1_IRQ_Interrupt
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc54Jpya.s 			page 4
-
-
  146:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** ********************************************************************************
  147:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** *
  148:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** * Summary:
  149:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** *   The default Interrupt Service Routine for ADC_SAR_1_IRQ.
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccZtCLWz.s 			page 6
+
+
  150:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** *
  151:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** *   Add custom code between the coments to keep the next version of this file
  152:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** *   from over writting your code.
@@ -197,38 +313,16 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc54Jpya.s 			page 1
  159:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** *******************************************************************************/
  160:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** CY_ISR(ADC_SAR_1_IRQ_Interrupt)
  161:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** {
-  27              		.loc 1 161 0
-  28              		.cfi_startproc
-  29              		@ args = 0, pretend = 0, frame = 0
-  30              		@ frame_needed = 0, uses_anonymous_args = 0
-  31              		@ link register save eliminated.
-  32 0000 7047     		bx	lr
-  33              		.cfi_endproc
-  34              	.LFE3:
-  35              		.size	ADC_SAR_1_IRQ_Interrupt, .-ADC_SAR_1_IRQ_Interrupt
-  36 0002 00BF     		.section	.text.ADC_SAR_1_IRQ_Start,"ax",%progbits
-  37              		.align	2
-  38              		.global	ADC_SAR_1_IRQ_Start
-  39              		.thumb
-  40              		.thumb_func
-  41              		.type	ADC_SAR_1_IRQ_Start, %function
-  42              	ADC_SAR_1_IRQ_Start:
-  43              	.LFB0:
-  62:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c ****     /* For all we know the interrupt is active. */
-  44              		.loc 1 62 0
-  45              		.cfi_startproc
-  46              		@ args = 0, pretend = 0, frame = 0
-  47              		@ frame_needed = 0, uses_anonymous_args = 0
-  48              		@ link register save eliminated.
-  62:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c ****     /* For all we know the interrupt is active. */
-  49              		.loc 1 62 0
-  50 0000 70B4     		push	{r4, r5, r6}
-  51              		.cfi_def_cfa_offset 12
-  52              		.cfi_offset 4, -12
-  53              		.cfi_offset 5, -8
-  54              		.cfi_offset 6, -4
-  55              	.LBB22:
-  56              	.LBB23:
+ 137              		.loc 1 161 0
+ 138              		.cfi_startproc
+ 139              		@ args = 0, pretend = 0, frame = 0
+ 140              		@ frame_needed = 1, uses_anonymous_args = 0
+ 141              		@ link register save eliminated.
+ 142 0000 80B4     		push	{r7}
+ 143              		.cfi_def_cfa_offset 4
+ 144              		.cfi_offset 7, -4
+ 145 0002 00AF     		add	r7, sp, #0
+ 146              		.cfi_def_cfa_register 7
  162:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c ****     #ifdef ADC_SAR_1_IRQ_INTERRUPT_INTERRUPT_CALLBACK
  163:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c ****         ADC_SAR_1_IRQ_Interrupt_InterruptCallback();
  164:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c ****     #endif /* ADC_SAR_1_IRQ_INTERRUPT_INTERRUPT_CALLBACK */ 
@@ -238,9 +332,25 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc54Jpya.s 			page 1
  168:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** 
  169:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c ****     /* `#END` */
  170:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** }
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc54Jpya.s 			page 5
-
-
+ 147              		.loc 1 170 0
+ 148 0004 BD46     		mov	sp, r7
+ 149              		.cfi_def_cfa_register 13
+ 150              		@ sp needed
+ 151 0006 5DF8047B 		ldr	r7, [sp], #4
+ 152              		.cfi_restore 7
+ 153              		.cfi_def_cfa_offset 0
+ 154 000a 7047     		bx	lr
+ 155              		.cfi_endproc
+ 156              	.LFE3:
+ 157              		.size	ADC_SAR_1_IRQ_Interrupt, .-ADC_SAR_1_IRQ_Interrupt
+ 158              		.section	.text.ADC_SAR_1_IRQ_SetVector,"ax",%progbits
+ 159              		.align	2
+ 160              		.global	ADC_SAR_1_IRQ_SetVector
+ 161              		.thumb
+ 162              		.thumb_func
+ 163              		.type	ADC_SAR_1_IRQ_SetVector, %function
+ 164              	ADC_SAR_1_IRQ_SetVector:
+ 165              	.LFB4:
  171:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** 
  172:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** 
  173:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** /*******************************************************************************
@@ -248,6 +358,9 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc54Jpya.s 			page 1
  175:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** ********************************************************************************
  176:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** *
  177:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** * Summary:
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccZtCLWz.s 			page 7
+
+
  178:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** *   Change the ISR vector for the Interrupt. Note calling ADC_SAR_1_IRQ_Start
  179:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** *   will override any effect this method would have had. To set the vector 
  180:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** *   before the component has been started use ADC_SAR_1_IRQ_StartEx instead.
@@ -272,18 +385,62 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc54Jpya.s 			page 1
  199:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** *******************************************************************************/
  200:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** void ADC_SAR_1_IRQ_SetVector(cyisraddress address)
  201:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** {
+ 166              		.loc 1 201 0
+ 167              		.cfi_startproc
+ 168              		@ args = 0, pretend = 0, frame = 16
+ 169              		@ frame_needed = 1, uses_anonymous_args = 0
+ 170              		@ link register save eliminated.
+ 171 0000 80B4     		push	{r7}
+ 172              		.cfi_def_cfa_offset 4
+ 173              		.cfi_offset 7, -4
+ 174 0002 85B0     		sub	sp, sp, #20
+ 175              		.cfi_def_cfa_offset 24
+ 176 0004 00AF     		add	r7, sp, #0
+ 177              		.cfi_def_cfa_register 7
+ 178 0006 7860     		str	r0, [r7, #4]
  202:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c ****     cyisraddress * ramVectorTable;
  203:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** 
  204:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c ****     ramVectorTable = (cyisraddress *) *CYINT_VECT_TABLE;
-  57              		.loc 1 204 0
-  58 0002 074B     		ldr	r3, .L4
-  59              	.LBE23:
-  60              	.LBE22:
-  61              	.LBB26:
-  62              	.LBB27:
+ 179              		.loc 1 204 0
+ 180 0008 054B     		ldr	r3, .L10
+ 181 000a 1B68     		ldr	r3, [r3]
+ 182 000c FB60     		str	r3, [r7, #12]
  205:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** 
  206:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c ****     ramVectorTable[CYINT_IRQ_BASE + (uint32)ADC_SAR_1_IRQ__INTC_NUMBER] = address;
+ 183              		.loc 1 206 0
+ 184 000e FB68     		ldr	r3, [r7, #12]
+ 185 0010 4033     		adds	r3, r3, #64
+ 186 0012 7A68     		ldr	r2, [r7, #4]
+ 187 0014 1A60     		str	r2, [r3]
  207:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** }
+ 188              		.loc 1 207 0
+ 189 0016 1437     		adds	r7, r7, #20
+ 190              		.cfi_def_cfa_offset 4
+ 191 0018 BD46     		mov	sp, r7
+ 192              		.cfi_def_cfa_register 13
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccZtCLWz.s 			page 8
+
+
+ 193              		@ sp needed
+ 194 001a 5DF8047B 		ldr	r7, [sp], #4
+ 195              		.cfi_restore 7
+ 196              		.cfi_def_cfa_offset 0
+ 197 001e 7047     		bx	lr
+ 198              	.L11:
+ 199              		.align	2
+ 200              	.L10:
+ 201 0020 08ED00E0 		.word	-536810232
+ 202              		.cfi_endproc
+ 203              	.LFE4:
+ 204              		.size	ADC_SAR_1_IRQ_SetVector, .-ADC_SAR_1_IRQ_SetVector
+ 205              		.section	.text.ADC_SAR_1_IRQ_GetVector,"ax",%progbits
+ 206              		.align	2
+ 207              		.global	ADC_SAR_1_IRQ_GetVector
+ 208              		.thumb
+ 209              		.thumb_func
+ 210              		.type	ADC_SAR_1_IRQ_GetVector, %function
+ 211              	ADC_SAR_1_IRQ_GetVector:
+ 212              	.LFB5:
  208:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** 
  209:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** 
  210:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** /*******************************************************************************
@@ -298,19 +455,64 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc54Jpya.s 			page 1
  219:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** *
  220:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** * Return:
  221:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** *   Address of the ISR in the interrupt vector table.
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc54Jpya.s 			page 6
-
-
  222:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** *
  223:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** *******************************************************************************/
  224:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** cyisraddress ADC_SAR_1_IRQ_GetVector(void)
  225:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** {
+ 213              		.loc 1 225 0
+ 214              		.cfi_startproc
+ 215              		@ args = 0, pretend = 0, frame = 8
+ 216              		@ frame_needed = 1, uses_anonymous_args = 0
+ 217              		@ link register save eliminated.
+ 218 0000 80B4     		push	{r7}
+ 219              		.cfi_def_cfa_offset 4
+ 220              		.cfi_offset 7, -4
+ 221 0002 83B0     		sub	sp, sp, #12
+ 222              		.cfi_def_cfa_offset 16
+ 223 0004 00AF     		add	r7, sp, #0
+ 224              		.cfi_def_cfa_register 7
  226:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c ****     cyisraddress * ramVectorTable;
  227:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** 
  228:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c ****     ramVectorTable = (cyisraddress *) *CYINT_VECT_TABLE;
+ 225              		.loc 1 228 0
+ 226 0006 054B     		ldr	r3, .L14
+ 227 0008 1B68     		ldr	r3, [r3]
+ 228 000a 7B60     		str	r3, [r7, #4]
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccZtCLWz.s 			page 9
+
+
  229:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** 
  230:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c ****     return ramVectorTable[CYINT_IRQ_BASE + (uint32)ADC_SAR_1_IRQ__INTC_NUMBER];
+ 229              		.loc 1 230 0
+ 230 000c 7B68     		ldr	r3, [r7, #4]
+ 231 000e 1B6C     		ldr	r3, [r3, #64]
  231:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** }
+ 232              		.loc 1 231 0
+ 233 0010 1846     		mov	r0, r3
+ 234 0012 0C37     		adds	r7, r7, #12
+ 235              		.cfi_def_cfa_offset 4
+ 236 0014 BD46     		mov	sp, r7
+ 237              		.cfi_def_cfa_register 13
+ 238              		@ sp needed
+ 239 0016 5DF8047B 		ldr	r7, [sp], #4
+ 240              		.cfi_restore 7
+ 241              		.cfi_def_cfa_offset 0
+ 242 001a 7047     		bx	lr
+ 243              	.L15:
+ 244              		.align	2
+ 245              	.L14:
+ 246 001c 08ED00E0 		.word	-536810232
+ 247              		.cfi_endproc
+ 248              	.LFE5:
+ 249              		.size	ADC_SAR_1_IRQ_GetVector, .-ADC_SAR_1_IRQ_GetVector
+ 250              		.section	.text.ADC_SAR_1_IRQ_SetPriority,"ax",%progbits
+ 251              		.align	2
+ 252              		.global	ADC_SAR_1_IRQ_SetPriority
+ 253              		.thumb
+ 254              		.thumb_func
+ 255              		.type	ADC_SAR_1_IRQ_SetPriority, %function
+ 256              	ADC_SAR_1_IRQ_SetPriority:
+ 257              	.LFB6:
  232:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** 
  233:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** 
  234:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** /*******************************************************************************
@@ -336,11 +538,59 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc54Jpya.s 			page 1
  254:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** * Return:
  255:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** *   None
  256:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** *
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccZtCLWz.s 			page 10
+
+
  257:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** *******************************************************************************/
  258:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** void ADC_SAR_1_IRQ_SetPriority(uint8 priority)
  259:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** {
+ 258              		.loc 1 259 0
+ 259              		.cfi_startproc
+ 260              		@ args = 0, pretend = 0, frame = 8
+ 261              		@ frame_needed = 1, uses_anonymous_args = 0
+ 262              		@ link register save eliminated.
+ 263 0000 80B4     		push	{r7}
+ 264              		.cfi_def_cfa_offset 4
+ 265              		.cfi_offset 7, -4
+ 266 0002 83B0     		sub	sp, sp, #12
+ 267              		.cfi_def_cfa_offset 16
+ 268 0004 00AF     		add	r7, sp, #0
+ 269              		.cfi_def_cfa_register 7
+ 270 0006 0346     		mov	r3, r0
+ 271 0008 FB71     		strb	r3, [r7, #7]
  260:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c ****     *ADC_SAR_1_IRQ_INTC_PRIOR = priority << 5;
+ 272              		.loc 1 260 0
+ 273 000a 054A     		ldr	r2, .L17
+ 274 000c FB79     		ldrb	r3, [r7, #7]
+ 275 000e 5B01     		lsls	r3, r3, #5
+ 276 0010 DBB2     		uxtb	r3, r3
+ 277 0012 1370     		strb	r3, [r2]
  261:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** }
+ 278              		.loc 1 261 0
+ 279 0014 0C37     		adds	r7, r7, #12
+ 280              		.cfi_def_cfa_offset 4
+ 281 0016 BD46     		mov	sp, r7
+ 282              		.cfi_def_cfa_register 13
+ 283              		@ sp needed
+ 284 0018 5DF8047B 		ldr	r7, [sp], #4
+ 285              		.cfi_restore 7
+ 286              		.cfi_def_cfa_offset 0
+ 287 001c 7047     		bx	lr
+ 288              	.L18:
+ 289 001e 00BF     		.align	2
+ 290              	.L17:
+ 291 0020 00E400E0 		.word	-536812544
+ 292              		.cfi_endproc
+ 293              	.LFE6:
+ 294              		.size	ADC_SAR_1_IRQ_SetPriority, .-ADC_SAR_1_IRQ_SetPriority
+ 295              		.section	.text.ADC_SAR_1_IRQ_GetPriority,"ax",%progbits
+ 296              		.align	2
+ 297              		.global	ADC_SAR_1_IRQ_GetPriority
+ 298              		.thumb
+ 299              		.thumb_func
+ 300              		.type	ADC_SAR_1_IRQ_GetPriority, %function
+ 301              	ADC_SAR_1_IRQ_GetPriority:
+ 302              	.LFB7:
  262:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** 
  263:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** 
  264:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** /*******************************************************************************
@@ -348,6 +598,9 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc54Jpya.s 			page 1
  266:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** ********************************************************************************
  267:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** *
  268:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** * Summary:
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccZtCLWz.s 			page 11
+
+
  269:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** *   Gets the Priority of the Interrupt.
  270:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** *
  271:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** * Parameters:
@@ -358,19 +611,65 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc54Jpya.s 			page 1
  276:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** *    PSoC 3 and PSoC 5LP: Priority is from 0 to 7.
  277:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** *    PSoC 4: Priority is from 0 to 3.
  278:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** *
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc54Jpya.s 			page 7
-
-
  279:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** *******************************************************************************/
  280:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** uint8 ADC_SAR_1_IRQ_GetPriority(void)
  281:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** {
+ 303              		.loc 1 281 0
+ 304              		.cfi_startproc
+ 305              		@ args = 0, pretend = 0, frame = 8
+ 306              		@ frame_needed = 1, uses_anonymous_args = 0
+ 307              		@ link register save eliminated.
+ 308 0000 80B4     		push	{r7}
+ 309              		.cfi_def_cfa_offset 4
+ 310              		.cfi_offset 7, -4
+ 311 0002 83B0     		sub	sp, sp, #12
+ 312              		.cfi_def_cfa_offset 16
+ 313 0004 00AF     		add	r7, sp, #0
+ 314              		.cfi_def_cfa_register 7
  282:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c ****     uint8 priority;
  283:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** 
  284:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** 
  285:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c ****     priority = *ADC_SAR_1_IRQ_INTC_PRIOR >> 5;
+ 315              		.loc 1 285 0
+ 316 0006 064B     		ldr	r3, .L21
+ 317 0008 1B78     		ldrb	r3, [r3]
+ 318 000a DBB2     		uxtb	r3, r3
+ 319 000c 5B09     		lsrs	r3, r3, #5
+ 320 000e FB71     		strb	r3, [r7, #7]
  286:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** 
  287:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c ****     return priority;
+ 321              		.loc 1 287 0
+ 322 0010 FB79     		ldrb	r3, [r7, #7]	@ zero_extendqisi2
  288:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** }
+ 323              		.loc 1 288 0
+ 324 0012 1846     		mov	r0, r3
+ 325 0014 0C37     		adds	r7, r7, #12
+ 326              		.cfi_def_cfa_offset 4
+ 327 0016 BD46     		mov	sp, r7
+ 328              		.cfi_def_cfa_register 13
+ 329              		@ sp needed
+ 330 0018 5DF8047B 		ldr	r7, [sp], #4
+ 331              		.cfi_restore 7
+ 332              		.cfi_def_cfa_offset 0
+ 333 001c 7047     		bx	lr
+ 334              	.L22:
+ 335 001e 00BF     		.align	2
+ 336              	.L21:
+ 337 0020 00E400E0 		.word	-536812544
+ 338              		.cfi_endproc
+ 339              	.LFE7:
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccZtCLWz.s 			page 12
+
+
+ 340              		.size	ADC_SAR_1_IRQ_GetPriority, .-ADC_SAR_1_IRQ_GetPriority
+ 341              		.section	.text.ADC_SAR_1_IRQ_Enable,"ax",%progbits
+ 342              		.align	2
+ 343              		.global	ADC_SAR_1_IRQ_Enable
+ 344              		.thumb
+ 345              		.thumb_func
+ 346              		.type	ADC_SAR_1_IRQ_Enable, %function
+ 347              	ADC_SAR_1_IRQ_Enable:
+ 348              	.LFB8:
  289:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** 
  290:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** 
  291:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** /*******************************************************************************
@@ -391,9 +690,49 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc54Jpya.s 			page 1
  306:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** *******************************************************************************/
  307:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** void ADC_SAR_1_IRQ_Enable(void)
  308:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** {
+ 349              		.loc 1 308 0
+ 350              		.cfi_startproc
+ 351              		@ args = 0, pretend = 0, frame = 0
+ 352              		@ frame_needed = 1, uses_anonymous_args = 0
+ 353              		@ link register save eliminated.
+ 354 0000 80B4     		push	{r7}
+ 355              		.cfi_def_cfa_offset 4
+ 356              		.cfi_offset 7, -4
+ 357 0002 00AF     		add	r7, sp, #0
+ 358              		.cfi_def_cfa_register 7
  309:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c ****     /* Enable the general interrupt. */
  310:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c ****     *ADC_SAR_1_IRQ_INTC_SET_EN = ADC_SAR_1_IRQ__INTC_MASK;
+ 359              		.loc 1 310 0
+ 360 0004 034B     		ldr	r3, .L24
+ 361 0006 0122     		movs	r2, #1
+ 362 0008 1A60     		str	r2, [r3]
  311:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** }
+ 363              		.loc 1 311 0
+ 364 000a BD46     		mov	sp, r7
+ 365              		.cfi_def_cfa_register 13
+ 366              		@ sp needed
+ 367 000c 5DF8047B 		ldr	r7, [sp], #4
+ 368              		.cfi_restore 7
+ 369              		.cfi_def_cfa_offset 0
+ 370 0010 7047     		bx	lr
+ 371              	.L25:
+ 372 0012 00BF     		.align	2
+ 373              	.L24:
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccZtCLWz.s 			page 13
+
+
+ 374 0014 00E100E0 		.word	-536813312
+ 375              		.cfi_endproc
+ 376              	.LFE8:
+ 377              		.size	ADC_SAR_1_IRQ_Enable, .-ADC_SAR_1_IRQ_Enable
+ 378              		.section	.text.ADC_SAR_1_IRQ_GetState,"ax",%progbits
+ 379              		.align	2
+ 380              		.global	ADC_SAR_1_IRQ_GetState
+ 381              		.thumb
+ 382              		.thumb_func
+ 383              		.type	ADC_SAR_1_IRQ_GetState, %function
+ 384              	ADC_SAR_1_IRQ_GetState:
+ 385              	.LFB9:
  312:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** 
  313:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** 
  314:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** /*******************************************************************************
@@ -412,15 +751,55 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc54Jpya.s 			page 1
  327:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** *******************************************************************************/
  328:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** uint8 ADC_SAR_1_IRQ_GetState(void)
  329:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** {
+ 386              		.loc 1 329 0
+ 387              		.cfi_startproc
+ 388              		@ args = 0, pretend = 0, frame = 0
+ 389              		@ frame_needed = 1, uses_anonymous_args = 0
+ 390              		@ link register save eliminated.
+ 391 0000 80B4     		push	{r7}
+ 392              		.cfi_def_cfa_offset 4
+ 393              		.cfi_offset 7, -4
+ 394 0002 00AF     		add	r7, sp, #0
+ 395              		.cfi_def_cfa_register 7
  330:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c ****     /* Get the state of the general interrupt. */
  331:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c ****     return ((*ADC_SAR_1_IRQ_INTC_SET_EN & (uint32)ADC_SAR_1_IRQ__INTC_MASK) != 0u) ? 1u:0u;
+ 396              		.loc 1 331 0
+ 397 0004 054B     		ldr	r3, .L28
+ 398 0006 1B68     		ldr	r3, [r3]
+ 399 0008 DBB2     		uxtb	r3, r3
+ 400 000a 03F00103 		and	r3, r3, #1
+ 401 000e DBB2     		uxtb	r3, r3
  332:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** }
+ 402              		.loc 1 332 0
+ 403 0010 1846     		mov	r0, r3
+ 404 0012 BD46     		mov	sp, r7
+ 405              		.cfi_def_cfa_register 13
+ 406              		@ sp needed
+ 407 0014 5DF8047B 		ldr	r7, [sp], #4
+ 408              		.cfi_restore 7
+ 409              		.cfi_def_cfa_offset 0
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccZtCLWz.s 			page 14
+
+
+ 410 0018 7047     		bx	lr
+ 411              	.L29:
+ 412 001a 00BF     		.align	2
+ 413              	.L28:
+ 414 001c 00E100E0 		.word	-536813312
+ 415              		.cfi_endproc
+ 416              	.LFE9:
+ 417              		.size	ADC_SAR_1_IRQ_GetState, .-ADC_SAR_1_IRQ_GetState
+ 418              		.section	.text.ADC_SAR_1_IRQ_Disable,"ax",%progbits
+ 419              		.align	2
+ 420              		.global	ADC_SAR_1_IRQ_Disable
+ 421              		.thumb
+ 422              		.thumb_func
+ 423              		.type	ADC_SAR_1_IRQ_Disable, %function
+ 424              	ADC_SAR_1_IRQ_Disable:
+ 425              	.LFB10:
  333:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** 
  334:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** 
  335:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** /*******************************************************************************
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc54Jpya.s 			page 8
-
-
  336:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** * Function Name: ADC_SAR_1_IRQ_Disable
  337:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** ********************************************************************************
  338:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** *
@@ -436,520 +815,49 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc54Jpya.s 			page 1
  348:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** *******************************************************************************/
  349:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** void ADC_SAR_1_IRQ_Disable(void)
  350:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** {
+ 426              		.loc 1 350 0
+ 427              		.cfi_startproc
+ 428              		@ args = 0, pretend = 0, frame = 0
+ 429              		@ frame_needed = 1, uses_anonymous_args = 0
+ 430              		@ link register save eliminated.
+ 431 0000 80B4     		push	{r7}
+ 432              		.cfi_def_cfa_offset 4
+ 433              		.cfi_offset 7, -4
+ 434 0002 00AF     		add	r7, sp, #0
+ 435              		.cfi_def_cfa_register 7
  351:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c ****     /* Disable the general interrupt. */
  352:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c ****     *ADC_SAR_1_IRQ_INTC_CLR_EN = ADC_SAR_1_IRQ__INTC_MASK;
-  63              		.loc 1 352 0
-  64 0004 074E     		ldr	r6, .L4+4
-  65              	.LBE27:
-  66              	.LBE26:
-  67              	.LBB30:
-  68              	.LBB24:
- 204:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** 
-  69              		.loc 1 204 0
-  70 0006 1C68     		ldr	r4, [r3]
- 206:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** }
-  71              		.loc 1 206 0
-  72 0008 074D     		ldr	r5, .L4+8
-  73              	.LBE24:
-  74              	.LBE30:
-  75              	.LBB31:
-  76              	.LBB32:
- 260:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** }
-  77              		.loc 1 260 0
-  78 000a 0849     		ldr	r1, .L4+12
-  79              	.LBE32:
-  80              	.LBE31:
-  81              	.LBB35:
-  82              	.LBB28:
-  83              		.loc 1 352 0
-  84 000c 0223     		movs	r3, #2
-  85              	.LBE28:
-  86              	.LBE35:
-  87              	.LBB36:
-  88              	.LBB37:
- 310:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** }
-  89              		.loc 1 310 0
-  90 000e 084A     		ldr	r2, .L4+16
-  91              	.LBE37:
-  92              	.LBE36:
-  93              	.LBB39:
-  94              	.LBB33:
- 260:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** }
-  95              		.loc 1 260 0
-  96 0010 E020     		movs	r0, #224
-  97              	.LBE33:
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc54Jpya.s 			page 9
-
-
-  98              	.LBE39:
-  99              	.LBB40:
- 100              	.LBB29:
- 101              		.loc 1 352 0
- 102 0012 3360     		str	r3, [r6]
- 103              	.LVL0:
- 104              	.LBE29:
- 105              	.LBE40:
- 106              	.LBB41:
- 107              	.LBB25:
- 206:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** }
- 108              		.loc 1 206 0
- 109 0014 6564     		str	r5, [r4, #68]
- 110              	.LVL1:
- 111              	.LBE25:
- 112              	.LBE41:
- 113              	.LBB42:
- 114              	.LBB34:
- 260:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** }
- 115              		.loc 1 260 0
- 116 0016 0870     		strb	r0, [r1]
- 117              	.LBE34:
- 118              	.LBE42:
-  74:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** 
- 119              		.loc 1 74 0
- 120 0018 70BC     		pop	{r4, r5, r6}
- 121              		.cfi_restore 6
- 122              		.cfi_restore 5
- 123              		.cfi_restore 4
- 124              		.cfi_def_cfa_offset 0
- 125              	.LVL2:
- 126              	.LBB43:
- 127              	.LBB38:
- 310:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** }
- 128              		.loc 1 310 0
- 129 001a 1360     		str	r3, [r2]
- 130              	.LBE38:
- 131              	.LBE43:
-  74:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** 
- 132              		.loc 1 74 0
- 133 001c 7047     		bx	lr
- 134              	.L5:
- 135 001e 00BF     		.align	2
- 136              	.L4:
- 137 0020 08ED00E0 		.word	-536810232
- 138 0024 80E100E0 		.word	-536813184
- 139 0028 00000000 		.word	ADC_SAR_1_IRQ_Interrupt
- 140 002c 01E400E0 		.word	-536812543
- 141 0030 00E100E0 		.word	-536813312
- 142              		.cfi_endproc
- 143              	.LFE0:
- 144              		.size	ADC_SAR_1_IRQ_Start, .-ADC_SAR_1_IRQ_Start
- 145              		.section	.text.ADC_SAR_1_IRQ_StartEx,"ax",%progbits
- 146              		.align	2
- 147              		.global	ADC_SAR_1_IRQ_StartEx
- 148              		.thumb
- 149              		.thumb_func
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc54Jpya.s 			page 10
-
-
- 150              		.type	ADC_SAR_1_IRQ_StartEx, %function
- 151              	ADC_SAR_1_IRQ_StartEx:
- 152              	.LFB1:
- 105:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c ****     /* For all we know the interrupt is active. */
- 153              		.loc 1 105 0
- 154              		.cfi_startproc
- 155              		@ args = 0, pretend = 0, frame = 0
- 156              		@ frame_needed = 0, uses_anonymous_args = 0
- 157              		@ link register save eliminated.
- 158              	.LVL3:
- 159 0000 70B4     		push	{r4, r5, r6}
- 160              		.cfi_def_cfa_offset 12
- 161              		.cfi_offset 4, -12
- 162              		.cfi_offset 5, -8
- 163              		.cfi_offset 6, -4
- 164              	.LBB44:
- 165              	.LBB45:
- 204:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** 
- 166              		.loc 1 204 0
- 167 0002 064B     		ldr	r3, .L8
- 168              	.LBE45:
- 169              	.LBE44:
- 170              	.LBB48:
- 171              	.LBB49:
- 172              		.loc 1 352 0
- 173 0004 064E     		ldr	r6, .L8+4
- 174              	.LBE49:
- 175              	.LBE48:
- 176              	.LBB52:
- 177              	.LBB46:
- 204:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** 
- 178              		.loc 1 204 0
- 179 0006 1D68     		ldr	r5, [r3]
- 180              	.LBE46:
- 181              	.LBE52:
- 182              	.LBB53:
- 183              	.LBB54:
- 260:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** }
- 184              		.loc 1 260 0
- 185 0008 0649     		ldr	r1, .L8+8
- 186              	.LBE54:
- 187              	.LBE53:
- 188              	.LBB57:
- 189              	.LBB50:
- 190              		.loc 1 352 0
- 191 000a 0223     		movs	r3, #2
- 192              	.LBE50:
- 193              	.LBE57:
- 194              	.LBB58:
- 195              	.LBB55:
- 260:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** }
- 196              		.loc 1 260 0
- 197 000c E024     		movs	r4, #224
- 198              	.LBE55:
- 199              	.LBE58:
- 200              	.LBB59:
- 201              	.LBB60:
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc54Jpya.s 			page 11
-
-
- 310:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** }
- 202              		.loc 1 310 0
- 203 000e 064A     		ldr	r2, .L8+12
- 204              	.LBE60:
- 205              	.LBE59:
- 206              	.LBB62:
- 207              	.LBB51:
- 208              		.loc 1 352 0
- 209 0010 3360     		str	r3, [r6]
- 210              	.LVL4:
- 211              	.LBE51:
- 212              	.LBE62:
- 213              	.LBB63:
- 214              	.LBB47:
- 206:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** }
- 215              		.loc 1 206 0
- 216 0012 6864     		str	r0, [r5, #68]
- 217              	.LVL5:
- 218              	.LBE47:
- 219              	.LBE63:
- 220              	.LBB64:
- 221              	.LBB56:
- 260:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** }
- 222              		.loc 1 260 0
- 223 0014 0C70     		strb	r4, [r1]
- 224              	.LBE56:
- 225              	.LBE64:
- 117:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** 
- 226              		.loc 1 117 0
- 227 0016 70BC     		pop	{r4, r5, r6}
- 228              		.cfi_restore 6
- 229              		.cfi_restore 5
- 230              		.cfi_restore 4
- 231              		.cfi_def_cfa_offset 0
- 232              	.LVL6:
- 233              	.LBB65:
- 234              	.LBB61:
- 310:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** }
- 235              		.loc 1 310 0
- 236 0018 1360     		str	r3, [r2]
- 237              	.LBE61:
- 238              	.LBE65:
- 117:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** 
- 239              		.loc 1 117 0
- 240 001a 7047     		bx	lr
- 241              	.L9:
- 242              		.align	2
- 243              	.L8:
- 244 001c 08ED00E0 		.word	-536810232
- 245 0020 80E100E0 		.word	-536813184
- 246 0024 01E400E0 		.word	-536812543
- 247 0028 00E100E0 		.word	-536813312
- 248              		.cfi_endproc
- 249              	.LFE1:
- 250              		.size	ADC_SAR_1_IRQ_StartEx, .-ADC_SAR_1_IRQ_StartEx
- 251              		.section	.text.ADC_SAR_1_IRQ_Stop,"ax",%progbits
- 252              		.align	2
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc54Jpya.s 			page 12
-
-
- 253              		.global	ADC_SAR_1_IRQ_Stop
- 254              		.thumb
- 255              		.thumb_func
- 256              		.type	ADC_SAR_1_IRQ_Stop, %function
- 257              	ADC_SAR_1_IRQ_Stop:
- 258              	.LFB2:
- 135:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c ****     /* Disable this interrupt. */
- 259              		.loc 1 135 0
- 260              		.cfi_startproc
- 261              		@ args = 0, pretend = 0, frame = 0
- 262              		@ frame_needed = 0, uses_anonymous_args = 0
- 263              		@ link register save eliminated.
- 264              	.LBB66:
- 265              	.LBB67:
- 204:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** 
- 266              		.loc 1 204 0
- 267 0000 034B     		ldr	r3, .L11
- 268              	.LBE67:
- 269              	.LBE66:
- 270              	.LBB70:
- 271              	.LBB71:
- 272              		.loc 1 352 0
- 273 0002 0449     		ldr	r1, .L11+4
- 274              	.LBE71:
- 275              	.LBE70:
- 276              	.LBB73:
- 277              	.LBB68:
- 204:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** 
- 278              		.loc 1 204 0
- 279 0004 1B68     		ldr	r3, [r3]
- 206:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** }
- 280              		.loc 1 206 0
- 281 0006 044A     		ldr	r2, .L11+8
- 282              	.LBE68:
- 283              	.LBE73:
- 284              	.LBB74:
- 285              	.LBB72:
- 286              		.loc 1 352 0
- 287 0008 0220     		movs	r0, #2
- 288 000a 0860     		str	r0, [r1]
- 289              	.LVL7:
- 290              	.LBE72:
- 291              	.LBE74:
- 292              	.LBB75:
- 293              	.LBB69:
- 206:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** }
- 294              		.loc 1 206 0
- 295 000c 5A64     		str	r2, [r3, #68]
- 296 000e 7047     		bx	lr
- 297              	.L12:
- 298              		.align	2
- 299              	.L11:
- 300 0010 08ED00E0 		.word	-536810232
- 301 0014 80E100E0 		.word	-536813184
- 302 0018 00000000 		.word	IntDefaultHandler
- 303              	.LBE69:
- 304              	.LBE75:
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc54Jpya.s 			page 13
-
-
- 305              		.cfi_endproc
- 306              	.LFE2:
- 307              		.size	ADC_SAR_1_IRQ_Stop, .-ADC_SAR_1_IRQ_Stop
- 308              		.section	.text.ADC_SAR_1_IRQ_SetVector,"ax",%progbits
- 309              		.align	2
- 310              		.global	ADC_SAR_1_IRQ_SetVector
- 311              		.thumb
- 312              		.thumb_func
- 313              		.type	ADC_SAR_1_IRQ_SetVector, %function
- 314              	ADC_SAR_1_IRQ_SetVector:
- 315              	.LFB4:
- 201:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c ****     cyisraddress * ramVectorTable;
- 316              		.loc 1 201 0
- 317              		.cfi_startproc
- 318              		@ args = 0, pretend = 0, frame = 0
- 319              		@ frame_needed = 0, uses_anonymous_args = 0
- 320              		@ link register save eliminated.
- 321              	.LVL8:
- 204:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** 
- 322              		.loc 1 204 0
- 323 0000 014B     		ldr	r3, .L14
- 324 0002 1B68     		ldr	r3, [r3]
- 325              	.LVL9:
- 206:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** }
- 326              		.loc 1 206 0
- 327 0004 5864     		str	r0, [r3, #68]
- 328 0006 7047     		bx	lr
- 329              	.L15:
- 330              		.align	2
- 331              	.L14:
- 332 0008 08ED00E0 		.word	-536810232
- 333              		.cfi_endproc
- 334              	.LFE4:
- 335              		.size	ADC_SAR_1_IRQ_SetVector, .-ADC_SAR_1_IRQ_SetVector
- 336              		.section	.text.ADC_SAR_1_IRQ_GetVector,"ax",%progbits
- 337              		.align	2
- 338              		.global	ADC_SAR_1_IRQ_GetVector
- 339              		.thumb
- 340              		.thumb_func
- 341              		.type	ADC_SAR_1_IRQ_GetVector, %function
- 342              	ADC_SAR_1_IRQ_GetVector:
- 343              	.LFB5:
- 225:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c ****     cyisraddress * ramVectorTable;
- 344              		.loc 1 225 0
- 345              		.cfi_startproc
- 346              		@ args = 0, pretend = 0, frame = 0
- 347              		@ frame_needed = 0, uses_anonymous_args = 0
- 348              		@ link register save eliminated.
- 349              	.LVL10:
- 228:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** 
- 350              		.loc 1 228 0
- 351 0000 014B     		ldr	r3, .L17
- 352              	.LVL11:
- 230:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** }
- 353              		.loc 1 230 0
- 354 0002 1B68     		ldr	r3, [r3]
- 355              	.LVL12:
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc54Jpya.s 			page 14
-
-
- 231:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** 
- 356              		.loc 1 231 0
- 357 0004 586C     		ldr	r0, [r3, #68]
- 358 0006 7047     		bx	lr
- 359              	.L18:
- 360              		.align	2
- 361              	.L17:
- 362 0008 08ED00E0 		.word	-536810232
- 363              		.cfi_endproc
- 364              	.LFE5:
- 365              		.size	ADC_SAR_1_IRQ_GetVector, .-ADC_SAR_1_IRQ_GetVector
- 366              		.section	.text.ADC_SAR_1_IRQ_SetPriority,"ax",%progbits
- 367              		.align	2
- 368              		.global	ADC_SAR_1_IRQ_SetPriority
- 369              		.thumb
- 370              		.thumb_func
- 371              		.type	ADC_SAR_1_IRQ_SetPriority, %function
- 372              	ADC_SAR_1_IRQ_SetPriority:
- 373              	.LFB6:
- 259:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c ****     *ADC_SAR_1_IRQ_INTC_PRIOR = priority << 5;
- 374              		.loc 1 259 0
- 375              		.cfi_startproc
- 376              		@ args = 0, pretend = 0, frame = 0
- 377              		@ frame_needed = 0, uses_anonymous_args = 0
- 378              		@ link register save eliminated.
- 379              	.LVL13:
- 260:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** }
- 380              		.loc 1 260 0
- 381 0000 4001     		lsls	r0, r0, #5
- 382              	.LVL14:
- 383 0002 024B     		ldr	r3, .L20
- 384 0004 C0B2     		uxtb	r0, r0
- 385 0006 1870     		strb	r0, [r3]
- 386 0008 7047     		bx	lr
- 387              	.L21:
- 388 000a 00BF     		.align	2
- 389              	.L20:
- 390 000c 01E400E0 		.word	-536812543
- 391              		.cfi_endproc
- 392              	.LFE6:
- 393              		.size	ADC_SAR_1_IRQ_SetPriority, .-ADC_SAR_1_IRQ_SetPriority
- 394              		.section	.text.ADC_SAR_1_IRQ_GetPriority,"ax",%progbits
- 395              		.align	2
- 396              		.global	ADC_SAR_1_IRQ_GetPriority
- 397              		.thumb
- 398              		.thumb_func
- 399              		.type	ADC_SAR_1_IRQ_GetPriority, %function
- 400              	ADC_SAR_1_IRQ_GetPriority:
- 401              	.LFB7:
- 281:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c ****     uint8 priority;
- 402              		.loc 1 281 0
- 403              		.cfi_startproc
- 404              		@ args = 0, pretend = 0, frame = 0
- 405              		@ frame_needed = 0, uses_anonymous_args = 0
- 406              		@ link register save eliminated.
- 285:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** 
- 407              		.loc 1 285 0
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc54Jpya.s 			page 15
-
-
- 408 0000 014B     		ldr	r3, .L23
- 409 0002 1878     		ldrb	r0, [r3]	@ zero_extendqisi2
- 410              	.LVL15:
- 288:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** 
- 411              		.loc 1 288 0
- 412 0004 4009     		lsrs	r0, r0, #5
- 413              	.LVL16:
- 414 0006 7047     		bx	lr
- 415              	.L24:
- 416              		.align	2
- 417              	.L23:
- 418 0008 01E400E0 		.word	-536812543
- 419              		.cfi_endproc
- 420              	.LFE7:
- 421              		.size	ADC_SAR_1_IRQ_GetPriority, .-ADC_SAR_1_IRQ_GetPriority
- 422              		.section	.text.ADC_SAR_1_IRQ_Enable,"ax",%progbits
- 423              		.align	2
- 424              		.global	ADC_SAR_1_IRQ_Enable
- 425              		.thumb
- 426              		.thumb_func
- 427              		.type	ADC_SAR_1_IRQ_Enable, %function
- 428              	ADC_SAR_1_IRQ_Enable:
- 429              	.LFB8:
- 308:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c ****     /* Enable the general interrupt. */
- 430              		.loc 1 308 0
- 431              		.cfi_startproc
- 432              		@ args = 0, pretend = 0, frame = 0
- 433              		@ frame_needed = 0, uses_anonymous_args = 0
- 434              		@ link register save eliminated.
- 310:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** }
- 435              		.loc 1 310 0
- 436 0000 014B     		ldr	r3, .L26
- 437 0002 0222     		movs	r2, #2
- 438 0004 1A60     		str	r2, [r3]
- 439 0006 7047     		bx	lr
- 440              	.L27:
- 441              		.align	2
- 442              	.L26:
- 443 0008 00E100E0 		.word	-536813312
- 444              		.cfi_endproc
- 445              	.LFE8:
- 446              		.size	ADC_SAR_1_IRQ_Enable, .-ADC_SAR_1_IRQ_Enable
- 447              		.section	.text.ADC_SAR_1_IRQ_GetState,"ax",%progbits
- 448              		.align	2
- 449              		.global	ADC_SAR_1_IRQ_GetState
- 450              		.thumb
- 451              		.thumb_func
- 452              		.type	ADC_SAR_1_IRQ_GetState, %function
- 453              	ADC_SAR_1_IRQ_GetState:
- 454              	.LFB9:
- 329:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c ****     /* Get the state of the general interrupt. */
- 455              		.loc 1 329 0
- 456              		.cfi_startproc
- 457              		@ args = 0, pretend = 0, frame = 0
- 458              		@ frame_needed = 0, uses_anonymous_args = 0
- 459              		@ link register save eliminated.
- 331:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** }
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc54Jpya.s 			page 16
-
-
- 460              		.loc 1 331 0
- 461 0000 024B     		ldr	r3, .L29
- 462 0002 1868     		ldr	r0, [r3]
- 332:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** 
- 463              		.loc 1 332 0
- 464 0004 C0F34000 		ubfx	r0, r0, #1, #1
- 465 0008 7047     		bx	lr
- 466              	.L30:
- 467 000a 00BF     		.align	2
- 468              	.L29:
- 469 000c 00E100E0 		.word	-536813312
- 470              		.cfi_endproc
- 471              	.LFE9:
- 472              		.size	ADC_SAR_1_IRQ_GetState, .-ADC_SAR_1_IRQ_GetState
- 473              		.section	.text.ADC_SAR_1_IRQ_Disable,"ax",%progbits
- 474              		.align	2
- 475              		.global	ADC_SAR_1_IRQ_Disable
- 476              		.thumb
- 477              		.thumb_func
- 478              		.type	ADC_SAR_1_IRQ_Disable, %function
- 479              	ADC_SAR_1_IRQ_Disable:
- 480              	.LFB10:
- 350:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c ****     /* Disable the general interrupt. */
- 481              		.loc 1 350 0
- 482              		.cfi_startproc
- 483              		@ args = 0, pretend = 0, frame = 0
- 484              		@ frame_needed = 0, uses_anonymous_args = 0
- 485              		@ link register save eliminated.
- 486              		.loc 1 352 0
- 487 0000 014B     		ldr	r3, .L32
- 488 0002 0222     		movs	r2, #2
- 489 0004 1A60     		str	r2, [r3]
- 490 0006 7047     		bx	lr
- 491              	.L33:
- 492              		.align	2
- 493              	.L32:
- 494 0008 80E100E0 		.word	-536813184
- 495              		.cfi_endproc
- 496              	.LFE10:
- 497              		.size	ADC_SAR_1_IRQ_Disable, .-ADC_SAR_1_IRQ_Disable
- 498              		.section	.text.ADC_SAR_1_IRQ_SetPending,"ax",%progbits
- 499              		.align	2
- 500              		.global	ADC_SAR_1_IRQ_SetPending
- 501              		.thumb
- 502              		.thumb_func
- 503              		.type	ADC_SAR_1_IRQ_SetPending, %function
- 504              	ADC_SAR_1_IRQ_SetPending:
- 505              	.LFB11:
+ 436              		.loc 1 352 0
+ 437 0004 034B     		ldr	r3, .L31
+ 438 0006 0122     		movs	r2, #1
+ 439 0008 1A60     		str	r2, [r3]
  353:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** }
+ 440              		.loc 1 353 0
+ 441 000a BD46     		mov	sp, r7
+ 442              		.cfi_def_cfa_register 13
+ 443              		@ sp needed
+ 444 000c 5DF8047B 		ldr	r7, [sp], #4
+ 445              		.cfi_restore 7
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccZtCLWz.s 			page 15
+
+
+ 446              		.cfi_def_cfa_offset 0
+ 447 0010 7047     		bx	lr
+ 448              	.L32:
+ 449 0012 00BF     		.align	2
+ 450              	.L31:
+ 451 0014 80E100E0 		.word	-536813184
+ 452              		.cfi_endproc
+ 453              	.LFE10:
+ 454              		.size	ADC_SAR_1_IRQ_Disable, .-ADC_SAR_1_IRQ_Disable
+ 455              		.section	.text.ADC_SAR_1_IRQ_SetPending,"ax",%progbits
+ 456              		.align	2
+ 457              		.global	ADC_SAR_1_IRQ_SetPending
+ 458              		.thumb
+ 459              		.thumb_func
+ 460              		.type	ADC_SAR_1_IRQ_SetPending, %function
+ 461              	ADC_SAR_1_IRQ_SetPending:
+ 462              	.LFB11:
  354:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** 
  355:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** 
  356:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** /*******************************************************************************
@@ -958,9 +866,6 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc54Jpya.s 			page 1
  359:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** *
  360:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** * Summary:
  361:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** *   Causes the Interrupt to enter the pending state, a software method of
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc54Jpya.s 			page 17
-
-
  362:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** *   generating the interrupt.
  363:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** *
  364:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** * Parameters:
@@ -977,33 +882,48 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc54Jpya.s 			page 1
  375:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** *******************************************************************************/
  376:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** void ADC_SAR_1_IRQ_SetPending(void)
  377:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** {
- 506              		.loc 1 377 0
- 507              		.cfi_startproc
- 508              		@ args = 0, pretend = 0, frame = 0
- 509              		@ frame_needed = 0, uses_anonymous_args = 0
- 510              		@ link register save eliminated.
+ 463              		.loc 1 377 0
+ 464              		.cfi_startproc
+ 465              		@ args = 0, pretend = 0, frame = 0
+ 466              		@ frame_needed = 1, uses_anonymous_args = 0
+ 467              		@ link register save eliminated.
+ 468 0000 80B4     		push	{r7}
+ 469              		.cfi_def_cfa_offset 4
+ 470              		.cfi_offset 7, -4
+ 471 0002 00AF     		add	r7, sp, #0
+ 472              		.cfi_def_cfa_register 7
  378:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c ****     *ADC_SAR_1_IRQ_INTC_SET_PD = ADC_SAR_1_IRQ__INTC_MASK;
- 511              		.loc 1 378 0
- 512 0000 014B     		ldr	r3, .L35
- 513 0002 0222     		movs	r2, #2
- 514 0004 1A60     		str	r2, [r3]
- 515 0006 7047     		bx	lr
- 516              	.L36:
- 517              		.align	2
- 518              	.L35:
- 519 0008 00E200E0 		.word	-536813056
- 520              		.cfi_endproc
- 521              	.LFE11:
- 522              		.size	ADC_SAR_1_IRQ_SetPending, .-ADC_SAR_1_IRQ_SetPending
- 523              		.section	.text.ADC_SAR_1_IRQ_ClearPending,"ax",%progbits
- 524              		.align	2
- 525              		.global	ADC_SAR_1_IRQ_ClearPending
- 526              		.thumb
- 527              		.thumb_func
- 528              		.type	ADC_SAR_1_IRQ_ClearPending, %function
- 529              	ADC_SAR_1_IRQ_ClearPending:
- 530              	.LFB12:
+ 473              		.loc 1 378 0
+ 474 0004 034B     		ldr	r3, .L34
+ 475 0006 0122     		movs	r2, #1
+ 476 0008 1A60     		str	r2, [r3]
  379:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** }
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccZtCLWz.s 			page 16
+
+
+ 477              		.loc 1 379 0
+ 478 000a BD46     		mov	sp, r7
+ 479              		.cfi_def_cfa_register 13
+ 480              		@ sp needed
+ 481 000c 5DF8047B 		ldr	r7, [sp], #4
+ 482              		.cfi_restore 7
+ 483              		.cfi_def_cfa_offset 0
+ 484 0010 7047     		bx	lr
+ 485              	.L35:
+ 486 0012 00BF     		.align	2
+ 487              	.L34:
+ 488 0014 00E200E0 		.word	-536813056
+ 489              		.cfi_endproc
+ 490              	.LFE11:
+ 491              		.size	ADC_SAR_1_IRQ_SetPending, .-ADC_SAR_1_IRQ_SetPending
+ 492              		.section	.text.ADC_SAR_1_IRQ_ClearPending,"ax",%progbits
+ 493              		.align	2
+ 494              		.global	ADC_SAR_1_IRQ_ClearPending
+ 495              		.thumb
+ 496              		.thumb_func
+ 497              		.type	ADC_SAR_1_IRQ_ClearPending, %function
+ 498              	ADC_SAR_1_IRQ_ClearPending:
+ 499              	.LFB12:
  380:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** 
  381:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** 
  382:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** /*******************************************************************************
@@ -1018,9 +938,6 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc54Jpya.s 			page 1
  391:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** *   (GPIO, UART, and so on). Otherwise the ISR will continue to remain in 
  392:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** *   pending state even though the interrupt itself is cleared using this API.
  393:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** *
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc54Jpya.s 			page 18
-
-
  394:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** * Parameters:
  395:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** *   None
  396:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** *
@@ -1030,1386 +947,995 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc54Jpya.s 			page 1
  400:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** *******************************************************************************/
  401:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** void ADC_SAR_1_IRQ_ClearPending(void)
  402:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** {
- 531              		.loc 1 402 0
- 532              		.cfi_startproc
- 533              		@ args = 0, pretend = 0, frame = 0
- 534              		@ frame_needed = 0, uses_anonymous_args = 0
- 535              		@ link register save eliminated.
+ 500              		.loc 1 402 0
+ 501              		.cfi_startproc
+ 502              		@ args = 0, pretend = 0, frame = 0
+ 503              		@ frame_needed = 1, uses_anonymous_args = 0
+ 504              		@ link register save eliminated.
+ 505 0000 80B4     		push	{r7}
+ 506              		.cfi_def_cfa_offset 4
+ 507              		.cfi_offset 7, -4
+ 508 0002 00AF     		add	r7, sp, #0
+ 509              		.cfi_def_cfa_register 7
  403:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c ****     *ADC_SAR_1_IRQ_INTC_CLR_PD = ADC_SAR_1_IRQ__INTC_MASK;
- 536              		.loc 1 403 0
- 537 0000 014B     		ldr	r3, .L38
- 538 0002 0222     		movs	r2, #2
- 539 0004 1A60     		str	r2, [r3]
- 540 0006 7047     		bx	lr
- 541              	.L39:
- 542              		.align	2
- 543              	.L38:
- 544 0008 80E200E0 		.word	-536812928
- 545              		.cfi_endproc
- 546              	.LFE12:
- 547              		.size	ADC_SAR_1_IRQ_ClearPending, .-ADC_SAR_1_IRQ_ClearPending
- 548              		.text
- 549              	.Letext0:
- 550              		.file 2 "Generated_Source\\PSoC5/cytypes.h"
- 551              		.section	.debug_info,"",%progbits
- 552              	.Ldebug_info0:
- 553 0000 6F030000 		.4byte	0x36f
- 554 0004 0400     		.2byte	0x4
- 555 0006 00000000 		.4byte	.Ldebug_abbrev0
- 556 000a 04       		.byte	0x4
- 557 000b 01       		.uleb128 0x1
- 558 000c EE000000 		.4byte	.LASF33
- 559 0010 01       		.byte	0x1
- 560 0011 B3010000 		.4byte	.LASF34
- 561 0015 42000000 		.4byte	.LASF35
- 562 0019 28010000 		.4byte	.Ldebug_ranges0+0x128
- 563 001d 00000000 		.4byte	0
- 564 0021 00000000 		.4byte	.Ldebug_line0
- 565 0025 02       		.uleb128 0x2
- 566 0026 04       		.byte	0x4
- 567 0027 05       		.byte	0x5
- 568 0028 696E7400 		.ascii	"int\000"
- 569 002c 03       		.uleb128 0x3
- 570 002d 04       		.byte	0x4
- 571 002e 07       		.byte	0x7
- 572 002f B7000000 		.4byte	.LASF0
- 573 0033 03       		.uleb128 0x3
- 574 0034 01       		.byte	0x1
- 575 0035 06       		.byte	0x6
- 576 0036 F4020000 		.4byte	.LASF1
- 577 003a 03       		.uleb128 0x3
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc54Jpya.s 			page 19
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccZtCLWz.s 			page 17
 
 
- 578 003b 01       		.byte	0x1
- 579 003c 08       		.byte	0x8
- 580 003d E0000000 		.4byte	.LASF2
- 581 0041 03       		.uleb128 0x3
- 582 0042 02       		.byte	0x2
- 583 0043 05       		.byte	0x5
- 584 0044 A9010000 		.4byte	.LASF3
- 585 0048 03       		.uleb128 0x3
- 586 0049 02       		.byte	0x2
- 587 004a 07       		.byte	0x7
- 588 004b A4000000 		.4byte	.LASF4
- 589 004f 03       		.uleb128 0x3
- 590 0050 04       		.byte	0x4
- 591 0051 05       		.byte	0x5
- 592 0052 EB020000 		.4byte	.LASF5
- 593 0056 03       		.uleb128 0x3
- 594 0057 04       		.byte	0x4
- 595 0058 07       		.byte	0x7
- 596 0059 81010000 		.4byte	.LASF6
- 597 005d 03       		.uleb128 0x3
- 598 005e 08       		.byte	0x8
- 599 005f 05       		.byte	0x5
- 600 0060 00000000 		.4byte	.LASF7
- 601 0064 03       		.uleb128 0x3
- 602 0065 08       		.byte	0x8
- 603 0066 07       		.byte	0x7
- 604 0067 19020000 		.4byte	.LASF8
- 605 006b 03       		.uleb128 0x3
- 606 006c 04       		.byte	0x4
- 607 006d 07       		.byte	0x7
- 608 006e 3D020000 		.4byte	.LASF9
- 609 0072 04       		.uleb128 0x4
- 610 0073 04       		.byte	0x4
- 611 0074 78000000 		.4byte	0x78
- 612 0078 05       		.uleb128 0x5
- 613 0079 03       		.uleb128 0x3
- 614 007a 01       		.byte	0x1
- 615 007b 08       		.byte	0x8
- 616 007c 5B020000 		.4byte	.LASF10
- 617 0080 06       		.uleb128 0x6
- 618 0081 93010000 		.4byte	.LASF11
- 619 0085 02       		.byte	0x2
- 620 0086 9201     		.2byte	0x192
- 621 0088 3A000000 		.4byte	0x3a
- 622 008c 06       		.uleb128 0x6
- 623 008d F0010000 		.4byte	.LASF12
- 624 0091 02       		.byte	0x2
- 625 0092 9401     		.2byte	0x194
- 626 0094 56000000 		.4byte	0x56
- 627 0098 03       		.uleb128 0x3
- 628 0099 04       		.byte	0x4
- 629 009a 04       		.byte	0x4
- 630 009b C4000000 		.4byte	.LASF13
- 631 009f 03       		.uleb128 0x3
- 632 00a0 08       		.byte	0x8
- 633 00a1 04       		.byte	0x4
- 634 00a2 A2010000 		.4byte	.LASF14
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc54Jpya.s 			page 20
+ 510              		.loc 1 403 0
+ 511 0004 034B     		ldr	r3, .L37
+ 512 0006 0122     		movs	r2, #1
+ 513 0008 1A60     		str	r2, [r3]
+ 404:.\Generated_Source\PSoC5/ADC_SAR_1_IRQ.c **** }
+ 514              		.loc 1 404 0
+ 515 000a BD46     		mov	sp, r7
+ 516              		.cfi_def_cfa_register 13
+ 517              		@ sp needed
+ 518 000c 5DF8047B 		ldr	r7, [sp], #4
+ 519              		.cfi_restore 7
+ 520              		.cfi_def_cfa_offset 0
+ 521 0010 7047     		bx	lr
+ 522              	.L38:
+ 523 0012 00BF     		.align	2
+ 524              	.L37:
+ 525 0014 80E200E0 		.word	-536812928
+ 526              		.cfi_endproc
+ 527              	.LFE12:
+ 528              		.size	ADC_SAR_1_IRQ_ClearPending, .-ADC_SAR_1_IRQ_ClearPending
+ 529              		.text
+ 530              	.Letext0:
+ 531              		.file 2 "Generated_Source\\PSoC5/cytypes.h"
+ 532              		.section	.debug_info,"",%progbits
+ 533              	.Ldebug_info0:
+ 534 0000 36020000 		.4byte	0x236
+ 535 0004 0400     		.2byte	0x4
+ 536 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 537 000a 04       		.byte	0x4
+ 538 000b 01       		.uleb128 0x1
+ 539 000c 14010000 		.4byte	.LASF33
+ 540 0010 01       		.byte	0x1
+ 541 0011 B3010000 		.4byte	.LASF34
+ 542 0015 42000000 		.4byte	.LASF35
+ 543 0019 00000000 		.4byte	.Ldebug_ranges0+0
+ 544 001d 00000000 		.4byte	0
+ 545 0021 00000000 		.4byte	.Ldebug_line0
+ 546 0025 02       		.uleb128 0x2
+ 547 0026 04       		.byte	0x4
+ 548 0027 05       		.byte	0x5
+ 549 0028 696E7400 		.ascii	"int\000"
+ 550 002c 03       		.uleb128 0x3
+ 551 002d 04       		.byte	0x4
+ 552 002e 07       		.byte	0x7
+ 553 002f B7000000 		.4byte	.LASF0
+ 554 0033 03       		.uleb128 0x3
+ 555 0034 01       		.byte	0x1
+ 556 0035 06       		.byte	0x6
+ 557 0036 F4020000 		.4byte	.LASF1
+ 558 003a 03       		.uleb128 0x3
+ 559 003b 01       		.byte	0x1
+ 560 003c 08       		.byte	0x8
+ 561 003d E0000000 		.4byte	.LASF2
+ 562 0041 03       		.uleb128 0x3
+ 563 0042 02       		.byte	0x2
+ 564 0043 05       		.byte	0x5
+ 565 0044 A9010000 		.4byte	.LASF3
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccZtCLWz.s 			page 18
 
 
- 635 00a6 06       		.uleb128 0x6
- 636 00a7 7C010000 		.4byte	.LASF15
- 637 00ab 02       		.byte	0x2
- 638 00ac 3C02     		.2byte	0x23c
- 639 00ae B2000000 		.4byte	0xb2
- 640 00b2 07       		.uleb128 0x7
- 641 00b3 80000000 		.4byte	0x80
- 642 00b7 06       		.uleb128 0x6
- 643 00b8 0E000000 		.4byte	.LASF16
- 644 00bc 02       		.byte	0x2
- 645 00bd 3E02     		.2byte	0x23e
- 646 00bf C3000000 		.4byte	0xc3
- 647 00c3 07       		.uleb128 0x7
- 648 00c4 8C000000 		.4byte	0x8c
- 649 00c8 06       		.uleb128 0x6
- 650 00c9 30020000 		.4byte	.LASF17
- 651 00cd 02       		.byte	0x2
- 652 00ce 4E02     		.2byte	0x24e
- 653 00d0 72000000 		.4byte	0x72
- 654 00d4 08       		.uleb128 0x8
- 655 00d5 CA000000 		.4byte	.LASF22
- 656 00d9 01       		.byte	0x1
- 657 00da 5D01     		.2byte	0x15d
- 658 00dc 01       		.byte	0x1
- 659 00dd 09       		.uleb128 0x9
- 660 00de 2A000000 		.4byte	.LASF18
- 661 00e2 01       		.byte	0x1
- 662 00e3 C8       		.byte	0xc8
- 663 00e4 01       		.byte	0x1
- 664 00e5 00010000 		.4byte	0x100
- 665 00e9 0A       		.uleb128 0xa
- 666 00ea 11020000 		.4byte	.LASF20
- 667 00ee 01       		.byte	0x1
- 668 00ef C8       		.byte	0xc8
- 669 00f0 C8000000 		.4byte	0xc8
- 670 00f4 0B       		.uleb128 0xb
- 671 00f5 60020000 		.4byte	.LASF29
- 672 00f9 01       		.byte	0x1
- 673 00fa CA       		.byte	0xca
- 674 00fb 00010000 		.4byte	0x100
- 675 00ff 00       		.byte	0
- 676 0100 04       		.uleb128 0x4
- 677 0101 04       		.byte	0x4
- 678 0102 C8000000 		.4byte	0xc8
- 679 0106 0C       		.uleb128 0xc
- 680 0107 B6020000 		.4byte	.LASF19
- 681 010b 01       		.byte	0x1
- 682 010c 0201     		.2byte	0x102
- 683 010e 01       		.byte	0x1
- 684 010f 20010000 		.4byte	0x120
- 685 0113 0D       		.uleb128 0xd
- 686 0114 99010000 		.4byte	.LASF21
- 687 0118 01       		.byte	0x1
- 688 0119 0201     		.2byte	0x102
- 689 011b 80000000 		.4byte	0x80
- 690 011f 00       		.byte	0
- 691 0120 08       		.uleb128 0x8
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc54Jpya.s 			page 21
+ 566 0048 03       		.uleb128 0x3
+ 567 0049 02       		.byte	0x2
+ 568 004a 07       		.byte	0x7
+ 569 004b A4000000 		.4byte	.LASF4
+ 570 004f 03       		.uleb128 0x3
+ 571 0050 04       		.byte	0x4
+ 572 0051 05       		.byte	0x5
+ 573 0052 EB020000 		.4byte	.LASF5
+ 574 0056 03       		.uleb128 0x3
+ 575 0057 04       		.byte	0x4
+ 576 0058 07       		.byte	0x7
+ 577 0059 F3000000 		.4byte	.LASF6
+ 578 005d 03       		.uleb128 0x3
+ 579 005e 08       		.byte	0x8
+ 580 005f 05       		.byte	0x5
+ 581 0060 00000000 		.4byte	.LASF7
+ 582 0064 03       		.uleb128 0x3
+ 583 0065 08       		.byte	0x8
+ 584 0066 07       		.byte	0x7
+ 585 0067 19020000 		.4byte	.LASF8
+ 586 006b 03       		.uleb128 0x3
+ 587 006c 04       		.byte	0x4
+ 588 006d 07       		.byte	0x7
+ 589 006e 3D020000 		.4byte	.LASF9
+ 590 0072 04       		.uleb128 0x4
+ 591 0073 04       		.byte	0x4
+ 592 0074 78000000 		.4byte	0x78
+ 593 0078 05       		.uleb128 0x5
+ 594 0079 03       		.uleb128 0x3
+ 595 007a 01       		.byte	0x1
+ 596 007b 08       		.byte	0x8
+ 597 007c 5B020000 		.4byte	.LASF10
+ 598 0080 06       		.uleb128 0x6
+ 599 0081 05010000 		.4byte	.LASF11
+ 600 0085 02       		.byte	0x2
+ 601 0086 9201     		.2byte	0x192
+ 602 0088 3A000000 		.4byte	0x3a
+ 603 008c 06       		.uleb128 0x6
+ 604 008d F0010000 		.4byte	.LASF12
+ 605 0091 02       		.byte	0x2
+ 606 0092 9401     		.2byte	0x194
+ 607 0094 56000000 		.4byte	0x56
+ 608 0098 03       		.uleb128 0x3
+ 609 0099 04       		.byte	0x4
+ 610 009a 04       		.byte	0x4
+ 611 009b C4000000 		.4byte	.LASF13
+ 612 009f 03       		.uleb128 0x3
+ 613 00a0 08       		.byte	0x8
+ 614 00a1 04       		.byte	0x4
+ 615 00a2 A2010000 		.4byte	.LASF14
+ 616 00a6 06       		.uleb128 0x6
+ 617 00a7 EE000000 		.4byte	.LASF15
+ 618 00ab 02       		.byte	0x2
+ 619 00ac 3C02     		.2byte	0x23c
+ 620 00ae B2000000 		.4byte	0xb2
+ 621 00b2 07       		.uleb128 0x7
+ 622 00b3 80000000 		.4byte	0x80
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccZtCLWz.s 			page 19
 
 
- 692 0121 46020000 		.4byte	.LASF23
- 693 0125 01       		.byte	0x1
- 694 0126 3301     		.2byte	0x133
- 695 0128 01       		.byte	0x1
- 696 0129 0E       		.uleb128 0xe
- 697 012a 87020000 		.4byte	.LASF30
- 698 012e 01       		.byte	0x1
- 699 012f A0       		.byte	0xa0
- 700 0130 00000000 		.4byte	.LFB3
- 701 0134 02000000 		.4byte	.LFE3-.LFB3
- 702 0138 01       		.uleb128 0x1
- 703 0139 9C       		.byte	0x9c
- 704 013a 0F       		.uleb128 0xf
- 705 013b DC010000 		.4byte	.LASF24
- 706 013f 01       		.byte	0x1
- 707 0140 3D       		.byte	0x3d
- 708 0141 00000000 		.4byte	.LFB0
- 709 0145 34000000 		.4byte	.LFE0-.LFB0
- 710 0149 01       		.uleb128 0x1
- 711 014a 9C       		.byte	0x9c
- 712 014b B7010000 		.4byte	0x1b7
- 713 014f 10       		.uleb128 0x10
- 714 0150 DD000000 		.4byte	0xdd
- 715 0154 02000000 		.4byte	.LBB22
- 716 0158 00000000 		.4byte	.Ldebug_ranges0+0
- 717 015c 01       		.byte	0x1
- 718 015d 43       		.byte	0x43
- 719 015e 7E010000 		.4byte	0x17e
- 720 0162 11       		.uleb128 0x11
- 721 0163 E9000000 		.4byte	0xe9
- 722 0167 06       		.uleb128 0x6
- 723 0168 03       		.byte	0x3
- 724 0169 00000000 		.4byte	ADC_SAR_1_IRQ_Interrupt
- 725 016d 9F       		.byte	0x9f
- 726 016e 12       		.uleb128 0x12
- 727 016f 00000000 		.4byte	.Ldebug_ranges0+0
- 728 0173 13       		.uleb128 0x13
- 729 0174 F4000000 		.4byte	0xf4
- 730 0178 00000000 		.4byte	.LLST0
- 731 017c 00       		.byte	0
- 732 017d 00       		.byte	0
- 733 017e 14       		.uleb128 0x14
- 734 017f D4000000 		.4byte	0xd4
- 735 0183 04000000 		.4byte	.LBB26
- 736 0187 20000000 		.4byte	.Ldebug_ranges0+0x20
- 737 018b 01       		.byte	0x1
- 738 018c 40       		.byte	0x40
- 739 018d 10       		.uleb128 0x10
- 740 018e 06010000 		.4byte	0x106
- 741 0192 0A000000 		.4byte	.LBB31
- 742 0196 40000000 		.4byte	.Ldebug_ranges0+0x40
- 743 019a 01       		.byte	0x1
- 744 019b 46       		.byte	0x46
- 745 019c A7010000 		.4byte	0x1a7
- 746 01a0 15       		.uleb128 0x15
- 747 01a1 13010000 		.4byte	0x113
- 748 01a5 07       		.byte	0x7
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc54Jpya.s 			page 22
+ 623 00b7 06       		.uleb128 0x6
+ 624 00b8 0E000000 		.4byte	.LASF16
+ 625 00bc 02       		.byte	0x2
+ 626 00bd 3E02     		.2byte	0x23e
+ 627 00bf C3000000 		.4byte	0xc3
+ 628 00c3 07       		.uleb128 0x7
+ 629 00c4 8C000000 		.4byte	0x8c
+ 630 00c8 06       		.uleb128 0x6
+ 631 00c9 30020000 		.4byte	.LASF17
+ 632 00cd 02       		.byte	0x2
+ 633 00ce 4E02     		.2byte	0x24e
+ 634 00d0 72000000 		.4byte	0x72
+ 635 00d4 08       		.uleb128 0x8
+ 636 00d5 DC010000 		.4byte	.LASF18
+ 637 00d9 01       		.byte	0x1
+ 638 00da 3D       		.byte	0x3d
+ 639 00db 00000000 		.4byte	.LFB0
+ 640 00df 20000000 		.4byte	.LFE0-.LFB0
+ 641 00e3 01       		.uleb128 0x1
+ 642 00e4 9C       		.byte	0x9c
+ 643 00e5 09       		.uleb128 0x9
+ 644 00e6 14000000 		.4byte	.LASF21
+ 645 00ea 01       		.byte	0x1
+ 646 00eb 68       		.byte	0x68
+ 647 00ec 00000000 		.4byte	.LFB1
+ 648 00f0 22000000 		.4byte	.LFE1-.LFB1
+ 649 00f4 01       		.uleb128 0x1
+ 650 00f5 9C       		.byte	0x9c
+ 651 00f6 09010000 		.4byte	0x109
+ 652 00fa 0A       		.uleb128 0xa
+ 653 00fb 11020000 		.4byte	.LASF23
+ 654 00ff 01       		.byte	0x1
+ 655 0100 68       		.byte	0x68
+ 656 0101 C8000000 		.4byte	0xc8
+ 657 0105 02       		.uleb128 0x2
+ 658 0106 91       		.byte	0x91
+ 659 0107 74       		.sleb128 -12
+ 660 0108 00       		.byte	0
+ 661 0109 08       		.uleb128 0x8
+ 662 010a 91000000 		.4byte	.LASF19
+ 663 010e 01       		.byte	0x1
+ 664 010f 86       		.byte	0x86
+ 665 0110 00000000 		.4byte	.LFB2
+ 666 0114 14000000 		.4byte	.LFE2-.LFB2
+ 667 0118 01       		.uleb128 0x1
+ 668 0119 9C       		.byte	0x9c
+ 669 011a 0B       		.uleb128 0xb
+ 670 011b 87020000 		.4byte	.LASF20
+ 671 011f 01       		.byte	0x1
+ 672 0120 A0       		.byte	0xa0
+ 673 0121 00000000 		.4byte	.LFB3
+ 674 0125 0C000000 		.4byte	.LFE3-.LFB3
+ 675 0129 01       		.uleb128 0x1
+ 676 012a 9C       		.byte	0x9c
+ 677 012b 0C       		.uleb128 0xc
+ 678 012c 2A000000 		.4byte	.LASF22
+ 679 0130 01       		.byte	0x1
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccZtCLWz.s 			page 20
 
 
- 749 01a6 00       		.byte	0
- 750 01a7 14       		.uleb128 0x14
- 751 01a8 20010000 		.4byte	0x120
- 752 01ac 0E000000 		.4byte	.LBB36
- 753 01b0 60000000 		.4byte	.Ldebug_ranges0+0x60
- 754 01b4 01       		.byte	0x1
- 755 01b5 49       		.byte	0x49
- 756 01b6 00       		.byte	0
- 757 01b7 0F       		.uleb128 0xf
- 758 01b8 14000000 		.4byte	.LASF25
- 759 01bc 01       		.byte	0x1
- 760 01bd 68       		.byte	0x68
- 761 01be 00000000 		.4byte	.LFB1
- 762 01c2 2C000000 		.4byte	.LFE1-.LFB1
- 763 01c6 01       		.uleb128 0x1
- 764 01c7 9C       		.byte	0x9c
- 765 01c8 3C020000 		.4byte	0x23c
- 766 01cc 16       		.uleb128 0x16
- 767 01cd 11020000 		.4byte	.LASF20
- 768 01d1 01       		.byte	0x1
- 769 01d2 68       		.byte	0x68
- 770 01d3 C8000000 		.4byte	0xc8
- 771 01d7 01       		.uleb128 0x1
- 772 01d8 50       		.byte	0x50
- 773 01d9 10       		.uleb128 0x10
- 774 01da DD000000 		.4byte	0xdd
- 775 01de 02000000 		.4byte	.LBB44
- 776 01e2 78000000 		.4byte	.Ldebug_ranges0+0x78
- 777 01e6 01       		.byte	0x1
- 778 01e7 6E       		.byte	0x6e
- 779 01e8 03020000 		.4byte	0x203
- 780 01ec 11       		.uleb128 0x11
- 781 01ed E9000000 		.4byte	0xe9
- 782 01f1 01       		.uleb128 0x1
- 783 01f2 50       		.byte	0x50
- 784 01f3 12       		.uleb128 0x12
- 785 01f4 78000000 		.4byte	.Ldebug_ranges0+0x78
- 786 01f8 13       		.uleb128 0x13
- 787 01f9 F4000000 		.4byte	0xf4
- 788 01fd 13000000 		.4byte	.LLST1
- 789 0201 00       		.byte	0
- 790 0202 00       		.byte	0
- 791 0203 14       		.uleb128 0x14
- 792 0204 D4000000 		.4byte	0xd4
- 793 0208 04000000 		.4byte	.LBB48
- 794 020c 98000000 		.4byte	.Ldebug_ranges0+0x98
- 795 0210 01       		.byte	0x1
- 796 0211 6B       		.byte	0x6b
- 797 0212 10       		.uleb128 0x10
- 798 0213 06010000 		.4byte	0x106
- 799 0217 08000000 		.4byte	.LBB53
- 800 021b B8000000 		.4byte	.Ldebug_ranges0+0xb8
- 801 021f 01       		.byte	0x1
- 802 0220 71       		.byte	0x71
- 803 0221 2C020000 		.4byte	0x22c
- 804 0225 15       		.uleb128 0x15
- 805 0226 13010000 		.4byte	0x113
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc54Jpya.s 			page 23
+ 680 0131 C8       		.byte	0xc8
+ 681 0132 00000000 		.4byte	.LFB4
+ 682 0136 24000000 		.4byte	.LFE4-.LFB4
+ 683 013a 01       		.uleb128 0x1
+ 684 013b 9C       		.byte	0x9c
+ 685 013c 5D010000 		.4byte	0x15d
+ 686 0140 0A       		.uleb128 0xa
+ 687 0141 11020000 		.4byte	.LASF23
+ 688 0145 01       		.byte	0x1
+ 689 0146 C8       		.byte	0xc8
+ 690 0147 C8000000 		.4byte	0xc8
+ 691 014b 02       		.uleb128 0x2
+ 692 014c 91       		.byte	0x91
+ 693 014d 6C       		.sleb128 -20
+ 694 014e 0D       		.uleb128 0xd
+ 695 014f 60020000 		.4byte	.LASF24
+ 696 0153 01       		.byte	0x1
+ 697 0154 CA       		.byte	0xca
+ 698 0155 5D010000 		.4byte	0x15d
+ 699 0159 02       		.uleb128 0x2
+ 700 015a 91       		.byte	0x91
+ 701 015b 74       		.sleb128 -12
+ 702 015c 00       		.byte	0
+ 703 015d 04       		.uleb128 0x4
+ 704 015e 04       		.byte	0x4
+ 705 015f C8000000 		.4byte	0xc8
+ 706 0163 0E       		.uleb128 0xe
+ 707 0164 6F020000 		.4byte	.LASF27
+ 708 0168 01       		.byte	0x1
+ 709 0169 E0       		.byte	0xe0
+ 710 016a C8000000 		.4byte	0xc8
+ 711 016e 00000000 		.4byte	.LFB5
+ 712 0172 20000000 		.4byte	.LFE5-.LFB5
+ 713 0176 01       		.uleb128 0x1
+ 714 0177 9C       		.byte	0x9c
+ 715 0178 8B010000 		.4byte	0x18b
+ 716 017c 0D       		.uleb128 0xd
+ 717 017d 60020000 		.4byte	.LASF24
+ 718 0181 01       		.byte	0x1
+ 719 0182 E2       		.byte	0xe2
+ 720 0183 5D010000 		.4byte	0x15d
+ 721 0187 02       		.uleb128 0x2
+ 722 0188 91       		.byte	0x91
+ 723 0189 74       		.sleb128 -12
+ 724 018a 00       		.byte	0
+ 725 018b 0F       		.uleb128 0xf
+ 726 018c B6020000 		.4byte	.LASF25
+ 727 0190 01       		.byte	0x1
+ 728 0191 0201     		.2byte	0x102
+ 729 0193 00000000 		.4byte	.LFB6
+ 730 0197 24000000 		.4byte	.LFE6-.LFB6
+ 731 019b 01       		.uleb128 0x1
+ 732 019c 9C       		.byte	0x9c
+ 733 019d B1010000 		.4byte	0x1b1
+ 734 01a1 10       		.uleb128 0x10
+ 735 01a2 0B010000 		.4byte	.LASF26
+ 736 01a6 01       		.byte	0x1
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccZtCLWz.s 			page 21
 
 
- 806 022a 07       		.byte	0x7
- 807 022b 00       		.byte	0
- 808 022c 14       		.uleb128 0x14
- 809 022d 20010000 		.4byte	0x120
- 810 0231 0E000000 		.4byte	.LBB59
- 811 0235 D8000000 		.4byte	.Ldebug_ranges0+0xd8
- 812 0239 01       		.byte	0x1
- 813 023a 74       		.byte	0x74
- 814 023b 00       		.byte	0
- 815 023c 0F       		.uleb128 0xf
- 816 023d 91000000 		.4byte	.LASF26
- 817 0241 01       		.byte	0x1
- 818 0242 86       		.byte	0x86
- 819 0243 00000000 		.4byte	.LFB2
- 820 0247 1C000000 		.4byte	.LFE2-.LFB2
- 821 024b 01       		.uleb128 0x1
- 822 024c 9C       		.byte	0x9c
- 823 024d 87020000 		.4byte	0x287
- 824 0251 10       		.uleb128 0x10
- 825 0252 DD000000 		.4byte	0xdd
- 826 0256 00000000 		.4byte	.LBB66
- 827 025a F0000000 		.4byte	.Ldebug_ranges0+0xf0
- 828 025e 01       		.byte	0x1
- 829 025f 8C       		.byte	0x8c
- 830 0260 77020000 		.4byte	0x277
- 831 0264 17       		.uleb128 0x17
- 832 0265 E9000000 		.4byte	0xe9
- 833 0269 12       		.uleb128 0x12
- 834 026a F0000000 		.4byte	.Ldebug_ranges0+0xf0
- 835 026e 18       		.uleb128 0x18
- 836 026f F4000000 		.4byte	0xf4
- 837 0273 01       		.uleb128 0x1
- 838 0274 53       		.byte	0x53
- 839 0275 00       		.byte	0
- 840 0276 00       		.byte	0
- 841 0277 14       		.uleb128 0x14
- 842 0278 D4000000 		.4byte	0xd4
- 843 027c 02000000 		.4byte	.LBB70
- 844 0280 10010000 		.4byte	.Ldebug_ranges0+0x110
- 845 0284 01       		.byte	0x1
- 846 0285 89       		.byte	0x89
- 847 0286 00       		.byte	0
- 848 0287 19       		.uleb128 0x19
- 849 0288 DD000000 		.4byte	0xdd
- 850 028c 00000000 		.4byte	.LFB4
- 851 0290 0C000000 		.4byte	.LFE4-.LFB4
- 852 0294 01       		.uleb128 0x1
- 853 0295 9C       		.byte	0x9c
- 854 0296 A9020000 		.4byte	0x2a9
- 855 029a 11       		.uleb128 0x11
- 856 029b E9000000 		.4byte	0xe9
- 857 029f 01       		.uleb128 0x1
- 858 02a0 50       		.byte	0x50
- 859 02a1 18       		.uleb128 0x18
- 860 02a2 F4000000 		.4byte	0xf4
- 861 02a6 01       		.uleb128 0x1
- 862 02a7 53       		.byte	0x53
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc54Jpya.s 			page 24
+ 737 01a7 0201     		.2byte	0x102
+ 738 01a9 80000000 		.4byte	0x80
+ 739 01ad 02       		.uleb128 0x2
+ 740 01ae 91       		.byte	0x91
+ 741 01af 77       		.sleb128 -9
+ 742 01b0 00       		.byte	0
+ 743 01b1 11       		.uleb128 0x11
+ 744 01b2 F7010000 		.4byte	.LASF28
+ 745 01b6 01       		.byte	0x1
+ 746 01b7 1801     		.2byte	0x118
+ 747 01b9 80000000 		.4byte	0x80
+ 748 01bd 00000000 		.4byte	.LFB7
+ 749 01c1 24000000 		.4byte	.LFE7-.LFB7
+ 750 01c5 01       		.uleb128 0x1
+ 751 01c6 9C       		.byte	0x9c
+ 752 01c7 DB010000 		.4byte	0x1db
+ 753 01cb 12       		.uleb128 0x12
+ 754 01cc 0B010000 		.4byte	.LASF26
+ 755 01d0 01       		.byte	0x1
+ 756 01d1 1A01     		.2byte	0x11a
+ 757 01d3 80000000 		.4byte	0x80
+ 758 01d7 02       		.uleb128 0x2
+ 759 01d8 91       		.byte	0x91
+ 760 01d9 77       		.sleb128 -9
+ 761 01da 00       		.byte	0
+ 762 01db 13       		.uleb128 0x13
+ 763 01dc 46020000 		.4byte	.LASF29
+ 764 01e0 01       		.byte	0x1
+ 765 01e1 3301     		.2byte	0x133
+ 766 01e3 00000000 		.4byte	.LFB8
+ 767 01e7 18000000 		.4byte	.LFE8-.LFB8
+ 768 01eb 01       		.uleb128 0x1
+ 769 01ec 9C       		.byte	0x9c
+ 770 01ed 14       		.uleb128 0x14
+ 771 01ee 9F020000 		.4byte	.LASF36
+ 772 01f2 01       		.byte	0x1
+ 773 01f3 4801     		.2byte	0x148
+ 774 01f5 80000000 		.4byte	0x80
+ 775 01f9 00000000 		.4byte	.LFB9
+ 776 01fd 20000000 		.4byte	.LFE9-.LFB9
+ 777 0201 01       		.uleb128 0x1
+ 778 0202 9C       		.byte	0x9c
+ 779 0203 13       		.uleb128 0x13
+ 780 0204 CA000000 		.4byte	.LASF30
+ 781 0208 01       		.byte	0x1
+ 782 0209 5D01     		.2byte	0x15d
+ 783 020b 00000000 		.4byte	.LFB10
+ 784 020f 18000000 		.4byte	.LFE10-.LFB10
+ 785 0213 01       		.uleb128 0x1
+ 786 0214 9C       		.byte	0x9c
+ 787 0215 13       		.uleb128 0x13
+ 788 0216 00030000 		.4byte	.LASF31
+ 789 021a 01       		.byte	0x1
+ 790 021b 7801     		.2byte	0x178
+ 791 021d 00000000 		.4byte	.LFB11
+ 792 0221 18000000 		.4byte	.LFE11-.LFB11
+ 793 0225 01       		.uleb128 0x1
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccZtCLWz.s 			page 22
 
 
- 863 02a8 00       		.byte	0
- 864 02a9 1A       		.uleb128 0x1a
- 865 02aa 6F020000 		.4byte	.LASF27
- 866 02ae 01       		.byte	0x1
- 867 02af E0       		.byte	0xe0
- 868 02b0 C8000000 		.4byte	0xc8
- 869 02b4 00000000 		.4byte	.LFB5
- 870 02b8 0C000000 		.4byte	.LFE5-.LFB5
- 871 02bc 01       		.uleb128 0x1
- 872 02bd 9C       		.byte	0x9c
- 873 02be D2020000 		.4byte	0x2d2
- 874 02c2 1B       		.uleb128 0x1b
- 875 02c3 60020000 		.4byte	.LASF29
- 876 02c7 01       		.byte	0x1
- 877 02c8 E2       		.byte	0xe2
- 878 02c9 00010000 		.4byte	0x100
- 879 02cd 26000000 		.4byte	.LLST2
- 880 02d1 00       		.byte	0
- 881 02d2 19       		.uleb128 0x19
- 882 02d3 06010000 		.4byte	0x106
- 883 02d7 00000000 		.4byte	.LFB6
- 884 02db 10000000 		.4byte	.LFE6-.LFB6
- 885 02df 01       		.uleb128 0x1
- 886 02e0 9C       		.byte	0x9c
- 887 02e1 EF020000 		.4byte	0x2ef
- 888 02e5 1C       		.uleb128 0x1c
- 889 02e6 13010000 		.4byte	0x113
- 890 02ea 55000000 		.4byte	.LLST3
- 891 02ee 00       		.byte	0
- 892 02ef 1D       		.uleb128 0x1d
- 893 02f0 F7010000 		.4byte	.LASF28
- 894 02f4 01       		.byte	0x1
- 895 02f5 1801     		.2byte	0x118
- 896 02f7 80000000 		.4byte	0x80
- 897 02fb 00000000 		.4byte	.LFB7
- 898 02ff 0C000000 		.4byte	.LFE7-.LFB7
- 899 0303 01       		.uleb128 0x1
- 900 0304 9C       		.byte	0x9c
- 901 0305 1A030000 		.4byte	0x31a
- 902 0309 1E       		.uleb128 0x1e
- 903 030a 99010000 		.4byte	.LASF21
- 904 030e 01       		.byte	0x1
- 905 030f 1A01     		.2byte	0x11a
- 906 0311 80000000 		.4byte	0x80
- 907 0315 76000000 		.4byte	.LLST4
- 908 0319 00       		.byte	0
- 909 031a 1F       		.uleb128 0x1f
- 910 031b 20010000 		.4byte	0x120
- 911 031f 00000000 		.4byte	.LFB8
- 912 0323 0C000000 		.4byte	.LFE8-.LFB8
- 913 0327 01       		.uleb128 0x1
- 914 0328 9C       		.byte	0x9c
- 915 0329 20       		.uleb128 0x20
- 916 032a 9F020000 		.4byte	.LASF36
- 917 032e 01       		.byte	0x1
- 918 032f 4801     		.2byte	0x148
- 919 0331 80000000 		.4byte	0x80
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc54Jpya.s 			page 25
+ 794 0226 9C       		.byte	0x9c
+ 795 0227 13       		.uleb128 0x13
+ 796 0228 D0020000 		.4byte	.LASF32
+ 797 022c 01       		.byte	0x1
+ 798 022d 9101     		.2byte	0x191
+ 799 022f 00000000 		.4byte	.LFB12
+ 800 0233 18000000 		.4byte	.LFE12-.LFB12
+ 801 0237 01       		.uleb128 0x1
+ 802 0238 9C       		.byte	0x9c
+ 803 0239 00       		.byte	0
+ 804              		.section	.debug_abbrev,"",%progbits
+ 805              	.Ldebug_abbrev0:
+ 806 0000 01       		.uleb128 0x1
+ 807 0001 11       		.uleb128 0x11
+ 808 0002 01       		.byte	0x1
+ 809 0003 25       		.uleb128 0x25
+ 810 0004 0E       		.uleb128 0xe
+ 811 0005 13       		.uleb128 0x13
+ 812 0006 0B       		.uleb128 0xb
+ 813 0007 03       		.uleb128 0x3
+ 814 0008 0E       		.uleb128 0xe
+ 815 0009 1B       		.uleb128 0x1b
+ 816 000a 0E       		.uleb128 0xe
+ 817 000b 55       		.uleb128 0x55
+ 818 000c 17       		.uleb128 0x17
+ 819 000d 11       		.uleb128 0x11
+ 820 000e 01       		.uleb128 0x1
+ 821 000f 10       		.uleb128 0x10
+ 822 0010 17       		.uleb128 0x17
+ 823 0011 00       		.byte	0
+ 824 0012 00       		.byte	0
+ 825 0013 02       		.uleb128 0x2
+ 826 0014 24       		.uleb128 0x24
+ 827 0015 00       		.byte	0
+ 828 0016 0B       		.uleb128 0xb
+ 829 0017 0B       		.uleb128 0xb
+ 830 0018 3E       		.uleb128 0x3e
+ 831 0019 0B       		.uleb128 0xb
+ 832 001a 03       		.uleb128 0x3
+ 833 001b 08       		.uleb128 0x8
+ 834 001c 00       		.byte	0
+ 835 001d 00       		.byte	0
+ 836 001e 03       		.uleb128 0x3
+ 837 001f 24       		.uleb128 0x24
+ 838 0020 00       		.byte	0
+ 839 0021 0B       		.uleb128 0xb
+ 840 0022 0B       		.uleb128 0xb
+ 841 0023 3E       		.uleb128 0x3e
+ 842 0024 0B       		.uleb128 0xb
+ 843 0025 03       		.uleb128 0x3
+ 844 0026 0E       		.uleb128 0xe
+ 845 0027 00       		.byte	0
+ 846 0028 00       		.byte	0
+ 847 0029 04       		.uleb128 0x4
+ 848 002a 0F       		.uleb128 0xf
+ 849 002b 00       		.byte	0
+ 850 002c 0B       		.uleb128 0xb
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccZtCLWz.s 			page 23
 
 
- 920 0335 00000000 		.4byte	.LFB9
- 921 0339 10000000 		.4byte	.LFE9-.LFB9
- 922 033d 01       		.uleb128 0x1
- 923 033e 9C       		.byte	0x9c
- 924 033f 1F       		.uleb128 0x1f
- 925 0340 D4000000 		.4byte	0xd4
- 926 0344 00000000 		.4byte	.LFB10
- 927 0348 0C000000 		.4byte	.LFE10-.LFB10
- 928 034c 01       		.uleb128 0x1
- 929 034d 9C       		.byte	0x9c
- 930 034e 21       		.uleb128 0x21
- 931 034f 00030000 		.4byte	.LASF31
- 932 0353 01       		.byte	0x1
- 933 0354 7801     		.2byte	0x178
- 934 0356 00000000 		.4byte	.LFB11
- 935 035a 0C000000 		.4byte	.LFE11-.LFB11
- 936 035e 01       		.uleb128 0x1
- 937 035f 9C       		.byte	0x9c
- 938 0360 21       		.uleb128 0x21
- 939 0361 D0020000 		.4byte	.LASF32
- 940 0365 01       		.byte	0x1
- 941 0366 9101     		.2byte	0x191
- 942 0368 00000000 		.4byte	.LFB12
- 943 036c 0C000000 		.4byte	.LFE12-.LFB12
- 944 0370 01       		.uleb128 0x1
- 945 0371 9C       		.byte	0x9c
- 946 0372 00       		.byte	0
- 947              		.section	.debug_abbrev,"",%progbits
- 948              	.Ldebug_abbrev0:
- 949 0000 01       		.uleb128 0x1
- 950 0001 11       		.uleb128 0x11
- 951 0002 01       		.byte	0x1
- 952 0003 25       		.uleb128 0x25
- 953 0004 0E       		.uleb128 0xe
- 954 0005 13       		.uleb128 0x13
- 955 0006 0B       		.uleb128 0xb
- 956 0007 03       		.uleb128 0x3
- 957 0008 0E       		.uleb128 0xe
- 958 0009 1B       		.uleb128 0x1b
- 959 000a 0E       		.uleb128 0xe
- 960 000b 55       		.uleb128 0x55
- 961 000c 17       		.uleb128 0x17
- 962 000d 11       		.uleb128 0x11
- 963 000e 01       		.uleb128 0x1
- 964 000f 10       		.uleb128 0x10
- 965 0010 17       		.uleb128 0x17
- 966 0011 00       		.byte	0
- 967 0012 00       		.byte	0
- 968 0013 02       		.uleb128 0x2
- 969 0014 24       		.uleb128 0x24
- 970 0015 00       		.byte	0
- 971 0016 0B       		.uleb128 0xb
- 972 0017 0B       		.uleb128 0xb
- 973 0018 3E       		.uleb128 0x3e
- 974 0019 0B       		.uleb128 0xb
- 975 001a 03       		.uleb128 0x3
- 976 001b 08       		.uleb128 0x8
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc54Jpya.s 			page 26
+ 851 002d 0B       		.uleb128 0xb
+ 852 002e 49       		.uleb128 0x49
+ 853 002f 13       		.uleb128 0x13
+ 854 0030 00       		.byte	0
+ 855 0031 00       		.byte	0
+ 856 0032 05       		.uleb128 0x5
+ 857 0033 15       		.uleb128 0x15
+ 858 0034 00       		.byte	0
+ 859 0035 27       		.uleb128 0x27
+ 860 0036 19       		.uleb128 0x19
+ 861 0037 00       		.byte	0
+ 862 0038 00       		.byte	0
+ 863 0039 06       		.uleb128 0x6
+ 864 003a 16       		.uleb128 0x16
+ 865 003b 00       		.byte	0
+ 866 003c 03       		.uleb128 0x3
+ 867 003d 0E       		.uleb128 0xe
+ 868 003e 3A       		.uleb128 0x3a
+ 869 003f 0B       		.uleb128 0xb
+ 870 0040 3B       		.uleb128 0x3b
+ 871 0041 05       		.uleb128 0x5
+ 872 0042 49       		.uleb128 0x49
+ 873 0043 13       		.uleb128 0x13
+ 874 0044 00       		.byte	0
+ 875 0045 00       		.byte	0
+ 876 0046 07       		.uleb128 0x7
+ 877 0047 35       		.uleb128 0x35
+ 878 0048 00       		.byte	0
+ 879 0049 49       		.uleb128 0x49
+ 880 004a 13       		.uleb128 0x13
+ 881 004b 00       		.byte	0
+ 882 004c 00       		.byte	0
+ 883 004d 08       		.uleb128 0x8
+ 884 004e 2E       		.uleb128 0x2e
+ 885 004f 00       		.byte	0
+ 886 0050 3F       		.uleb128 0x3f
+ 887 0051 19       		.uleb128 0x19
+ 888 0052 03       		.uleb128 0x3
+ 889 0053 0E       		.uleb128 0xe
+ 890 0054 3A       		.uleb128 0x3a
+ 891 0055 0B       		.uleb128 0xb
+ 892 0056 3B       		.uleb128 0x3b
+ 893 0057 0B       		.uleb128 0xb
+ 894 0058 27       		.uleb128 0x27
+ 895 0059 19       		.uleb128 0x19
+ 896 005a 11       		.uleb128 0x11
+ 897 005b 01       		.uleb128 0x1
+ 898 005c 12       		.uleb128 0x12
+ 899 005d 06       		.uleb128 0x6
+ 900 005e 40       		.uleb128 0x40
+ 901 005f 18       		.uleb128 0x18
+ 902 0060 9642     		.uleb128 0x2116
+ 903 0062 19       		.uleb128 0x19
+ 904 0063 00       		.byte	0
+ 905 0064 00       		.byte	0
+ 906 0065 09       		.uleb128 0x9
+ 907 0066 2E       		.uleb128 0x2e
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccZtCLWz.s 			page 24
 
 
- 977 001c 00       		.byte	0
- 978 001d 00       		.byte	0
- 979 001e 03       		.uleb128 0x3
- 980 001f 24       		.uleb128 0x24
- 981 0020 00       		.byte	0
- 982 0021 0B       		.uleb128 0xb
- 983 0022 0B       		.uleb128 0xb
- 984 0023 3E       		.uleb128 0x3e
- 985 0024 0B       		.uleb128 0xb
- 986 0025 03       		.uleb128 0x3
- 987 0026 0E       		.uleb128 0xe
- 988 0027 00       		.byte	0
- 989 0028 00       		.byte	0
- 990 0029 04       		.uleb128 0x4
- 991 002a 0F       		.uleb128 0xf
- 992 002b 00       		.byte	0
- 993 002c 0B       		.uleb128 0xb
- 994 002d 0B       		.uleb128 0xb
- 995 002e 49       		.uleb128 0x49
- 996 002f 13       		.uleb128 0x13
- 997 0030 00       		.byte	0
- 998 0031 00       		.byte	0
- 999 0032 05       		.uleb128 0x5
- 1000 0033 15       		.uleb128 0x15
- 1001 0034 00       		.byte	0
- 1002 0035 27       		.uleb128 0x27
- 1003 0036 19       		.uleb128 0x19
- 1004 0037 00       		.byte	0
- 1005 0038 00       		.byte	0
- 1006 0039 06       		.uleb128 0x6
- 1007 003a 16       		.uleb128 0x16
- 1008 003b 00       		.byte	0
- 1009 003c 03       		.uleb128 0x3
- 1010 003d 0E       		.uleb128 0xe
- 1011 003e 3A       		.uleb128 0x3a
- 1012 003f 0B       		.uleb128 0xb
- 1013 0040 3B       		.uleb128 0x3b
- 1014 0041 05       		.uleb128 0x5
- 1015 0042 49       		.uleb128 0x49
- 1016 0043 13       		.uleb128 0x13
- 1017 0044 00       		.byte	0
- 1018 0045 00       		.byte	0
- 1019 0046 07       		.uleb128 0x7
- 1020 0047 35       		.uleb128 0x35
- 1021 0048 00       		.byte	0
- 1022 0049 49       		.uleb128 0x49
- 1023 004a 13       		.uleb128 0x13
- 1024 004b 00       		.byte	0
- 1025 004c 00       		.byte	0
- 1026 004d 08       		.uleb128 0x8
- 1027 004e 2E       		.uleb128 0x2e
- 1028 004f 00       		.byte	0
- 1029 0050 3F       		.uleb128 0x3f
- 1030 0051 19       		.uleb128 0x19
- 1031 0052 03       		.uleb128 0x3
- 1032 0053 0E       		.uleb128 0xe
- 1033 0054 3A       		.uleb128 0x3a
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc54Jpya.s 			page 27
+ 908 0067 01       		.byte	0x1
+ 909 0068 3F       		.uleb128 0x3f
+ 910 0069 19       		.uleb128 0x19
+ 911 006a 03       		.uleb128 0x3
+ 912 006b 0E       		.uleb128 0xe
+ 913 006c 3A       		.uleb128 0x3a
+ 914 006d 0B       		.uleb128 0xb
+ 915 006e 3B       		.uleb128 0x3b
+ 916 006f 0B       		.uleb128 0xb
+ 917 0070 27       		.uleb128 0x27
+ 918 0071 19       		.uleb128 0x19
+ 919 0072 11       		.uleb128 0x11
+ 920 0073 01       		.uleb128 0x1
+ 921 0074 12       		.uleb128 0x12
+ 922 0075 06       		.uleb128 0x6
+ 923 0076 40       		.uleb128 0x40
+ 924 0077 18       		.uleb128 0x18
+ 925 0078 9642     		.uleb128 0x2116
+ 926 007a 19       		.uleb128 0x19
+ 927 007b 01       		.uleb128 0x1
+ 928 007c 13       		.uleb128 0x13
+ 929 007d 00       		.byte	0
+ 930 007e 00       		.byte	0
+ 931 007f 0A       		.uleb128 0xa
+ 932 0080 05       		.uleb128 0x5
+ 933 0081 00       		.byte	0
+ 934 0082 03       		.uleb128 0x3
+ 935 0083 0E       		.uleb128 0xe
+ 936 0084 3A       		.uleb128 0x3a
+ 937 0085 0B       		.uleb128 0xb
+ 938 0086 3B       		.uleb128 0x3b
+ 939 0087 0B       		.uleb128 0xb
+ 940 0088 49       		.uleb128 0x49
+ 941 0089 13       		.uleb128 0x13
+ 942 008a 02       		.uleb128 0x2
+ 943 008b 18       		.uleb128 0x18
+ 944 008c 00       		.byte	0
+ 945 008d 00       		.byte	0
+ 946 008e 0B       		.uleb128 0xb
+ 947 008f 2E       		.uleb128 0x2e
+ 948 0090 00       		.byte	0
+ 949 0091 3F       		.uleb128 0x3f
+ 950 0092 19       		.uleb128 0x19
+ 951 0093 03       		.uleb128 0x3
+ 952 0094 0E       		.uleb128 0xe
+ 953 0095 3A       		.uleb128 0x3a
+ 954 0096 0B       		.uleb128 0xb
+ 955 0097 3B       		.uleb128 0x3b
+ 956 0098 0B       		.uleb128 0xb
+ 957 0099 27       		.uleb128 0x27
+ 958 009a 19       		.uleb128 0x19
+ 959 009b 11       		.uleb128 0x11
+ 960 009c 01       		.uleb128 0x1
+ 961 009d 12       		.uleb128 0x12
+ 962 009e 06       		.uleb128 0x6
+ 963 009f 40       		.uleb128 0x40
+ 964 00a0 18       		.uleb128 0x18
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccZtCLWz.s 			page 25
 
 
- 1034 0055 0B       		.uleb128 0xb
- 1035 0056 3B       		.uleb128 0x3b
- 1036 0057 05       		.uleb128 0x5
- 1037 0058 27       		.uleb128 0x27
- 1038 0059 19       		.uleb128 0x19
- 1039 005a 20       		.uleb128 0x20
- 1040 005b 0B       		.uleb128 0xb
- 1041 005c 00       		.byte	0
- 1042 005d 00       		.byte	0
- 1043 005e 09       		.uleb128 0x9
- 1044 005f 2E       		.uleb128 0x2e
- 1045 0060 01       		.byte	0x1
- 1046 0061 3F       		.uleb128 0x3f
- 1047 0062 19       		.uleb128 0x19
- 1048 0063 03       		.uleb128 0x3
- 1049 0064 0E       		.uleb128 0xe
- 1050 0065 3A       		.uleb128 0x3a
- 1051 0066 0B       		.uleb128 0xb
- 1052 0067 3B       		.uleb128 0x3b
- 1053 0068 0B       		.uleb128 0xb
- 1054 0069 27       		.uleb128 0x27
- 1055 006a 19       		.uleb128 0x19
- 1056 006b 20       		.uleb128 0x20
- 1057 006c 0B       		.uleb128 0xb
- 1058 006d 01       		.uleb128 0x1
- 1059 006e 13       		.uleb128 0x13
- 1060 006f 00       		.byte	0
- 1061 0070 00       		.byte	0
- 1062 0071 0A       		.uleb128 0xa
- 1063 0072 05       		.uleb128 0x5
- 1064 0073 00       		.byte	0
- 1065 0074 03       		.uleb128 0x3
- 1066 0075 0E       		.uleb128 0xe
- 1067 0076 3A       		.uleb128 0x3a
- 1068 0077 0B       		.uleb128 0xb
- 1069 0078 3B       		.uleb128 0x3b
- 1070 0079 0B       		.uleb128 0xb
- 1071 007a 49       		.uleb128 0x49
- 1072 007b 13       		.uleb128 0x13
- 1073 007c 00       		.byte	0
- 1074 007d 00       		.byte	0
- 1075 007e 0B       		.uleb128 0xb
- 1076 007f 34       		.uleb128 0x34
- 1077 0080 00       		.byte	0
- 1078 0081 03       		.uleb128 0x3
- 1079 0082 0E       		.uleb128 0xe
- 1080 0083 3A       		.uleb128 0x3a
- 1081 0084 0B       		.uleb128 0xb
- 1082 0085 3B       		.uleb128 0x3b
- 1083 0086 0B       		.uleb128 0xb
- 1084 0087 49       		.uleb128 0x49
- 1085 0088 13       		.uleb128 0x13
- 1086 0089 00       		.byte	0
- 1087 008a 00       		.byte	0
- 1088 008b 0C       		.uleb128 0xc
- 1089 008c 2E       		.uleb128 0x2e
- 1090 008d 01       		.byte	0x1
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc54Jpya.s 			page 28
+ 965 00a1 9742     		.uleb128 0x2117
+ 966 00a3 19       		.uleb128 0x19
+ 967 00a4 00       		.byte	0
+ 968 00a5 00       		.byte	0
+ 969 00a6 0C       		.uleb128 0xc
+ 970 00a7 2E       		.uleb128 0x2e
+ 971 00a8 01       		.byte	0x1
+ 972 00a9 3F       		.uleb128 0x3f
+ 973 00aa 19       		.uleb128 0x19
+ 974 00ab 03       		.uleb128 0x3
+ 975 00ac 0E       		.uleb128 0xe
+ 976 00ad 3A       		.uleb128 0x3a
+ 977 00ae 0B       		.uleb128 0xb
+ 978 00af 3B       		.uleb128 0x3b
+ 979 00b0 0B       		.uleb128 0xb
+ 980 00b1 27       		.uleb128 0x27
+ 981 00b2 19       		.uleb128 0x19
+ 982 00b3 11       		.uleb128 0x11
+ 983 00b4 01       		.uleb128 0x1
+ 984 00b5 12       		.uleb128 0x12
+ 985 00b6 06       		.uleb128 0x6
+ 986 00b7 40       		.uleb128 0x40
+ 987 00b8 18       		.uleb128 0x18
+ 988 00b9 9742     		.uleb128 0x2117
+ 989 00bb 19       		.uleb128 0x19
+ 990 00bc 01       		.uleb128 0x1
+ 991 00bd 13       		.uleb128 0x13
+ 992 00be 00       		.byte	0
+ 993 00bf 00       		.byte	0
+ 994 00c0 0D       		.uleb128 0xd
+ 995 00c1 34       		.uleb128 0x34
+ 996 00c2 00       		.byte	0
+ 997 00c3 03       		.uleb128 0x3
+ 998 00c4 0E       		.uleb128 0xe
+ 999 00c5 3A       		.uleb128 0x3a
+ 1000 00c6 0B       		.uleb128 0xb
+ 1001 00c7 3B       		.uleb128 0x3b
+ 1002 00c8 0B       		.uleb128 0xb
+ 1003 00c9 49       		.uleb128 0x49
+ 1004 00ca 13       		.uleb128 0x13
+ 1005 00cb 02       		.uleb128 0x2
+ 1006 00cc 18       		.uleb128 0x18
+ 1007 00cd 00       		.byte	0
+ 1008 00ce 00       		.byte	0
+ 1009 00cf 0E       		.uleb128 0xe
+ 1010 00d0 2E       		.uleb128 0x2e
+ 1011 00d1 01       		.byte	0x1
+ 1012 00d2 3F       		.uleb128 0x3f
+ 1013 00d3 19       		.uleb128 0x19
+ 1014 00d4 03       		.uleb128 0x3
+ 1015 00d5 0E       		.uleb128 0xe
+ 1016 00d6 3A       		.uleb128 0x3a
+ 1017 00d7 0B       		.uleb128 0xb
+ 1018 00d8 3B       		.uleb128 0x3b
+ 1019 00d9 0B       		.uleb128 0xb
+ 1020 00da 27       		.uleb128 0x27
+ 1021 00db 19       		.uleb128 0x19
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccZtCLWz.s 			page 26
 
 
- 1091 008e 3F       		.uleb128 0x3f
- 1092 008f 19       		.uleb128 0x19
- 1093 0090 03       		.uleb128 0x3
- 1094 0091 0E       		.uleb128 0xe
- 1095 0092 3A       		.uleb128 0x3a
- 1096 0093 0B       		.uleb128 0xb
- 1097 0094 3B       		.uleb128 0x3b
- 1098 0095 05       		.uleb128 0x5
- 1099 0096 27       		.uleb128 0x27
- 1100 0097 19       		.uleb128 0x19
- 1101 0098 20       		.uleb128 0x20
- 1102 0099 0B       		.uleb128 0xb
- 1103 009a 01       		.uleb128 0x1
- 1104 009b 13       		.uleb128 0x13
- 1105 009c 00       		.byte	0
- 1106 009d 00       		.byte	0
- 1107 009e 0D       		.uleb128 0xd
- 1108 009f 05       		.uleb128 0x5
- 1109 00a0 00       		.byte	0
- 1110 00a1 03       		.uleb128 0x3
- 1111 00a2 0E       		.uleb128 0xe
- 1112 00a3 3A       		.uleb128 0x3a
- 1113 00a4 0B       		.uleb128 0xb
- 1114 00a5 3B       		.uleb128 0x3b
- 1115 00a6 05       		.uleb128 0x5
- 1116 00a7 49       		.uleb128 0x49
- 1117 00a8 13       		.uleb128 0x13
- 1118 00a9 00       		.byte	0
- 1119 00aa 00       		.byte	0
- 1120 00ab 0E       		.uleb128 0xe
- 1121 00ac 2E       		.uleb128 0x2e
- 1122 00ad 00       		.byte	0
- 1123 00ae 3F       		.uleb128 0x3f
- 1124 00af 19       		.uleb128 0x19
- 1125 00b0 03       		.uleb128 0x3
- 1126 00b1 0E       		.uleb128 0xe
- 1127 00b2 3A       		.uleb128 0x3a
- 1128 00b3 0B       		.uleb128 0xb
- 1129 00b4 3B       		.uleb128 0x3b
- 1130 00b5 0B       		.uleb128 0xb
- 1131 00b6 27       		.uleb128 0x27
- 1132 00b7 19       		.uleb128 0x19
- 1133 00b8 11       		.uleb128 0x11
- 1134 00b9 01       		.uleb128 0x1
- 1135 00ba 12       		.uleb128 0x12
- 1136 00bb 06       		.uleb128 0x6
- 1137 00bc 40       		.uleb128 0x40
- 1138 00bd 18       		.uleb128 0x18
- 1139 00be 9742     		.uleb128 0x2117
- 1140 00c0 19       		.uleb128 0x19
- 1141 00c1 00       		.byte	0
- 1142 00c2 00       		.byte	0
- 1143 00c3 0F       		.uleb128 0xf
- 1144 00c4 2E       		.uleb128 0x2e
- 1145 00c5 01       		.byte	0x1
- 1146 00c6 3F       		.uleb128 0x3f
- 1147 00c7 19       		.uleb128 0x19
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc54Jpya.s 			page 29
+ 1022 00dc 49       		.uleb128 0x49
+ 1023 00dd 13       		.uleb128 0x13
+ 1024 00de 11       		.uleb128 0x11
+ 1025 00df 01       		.uleb128 0x1
+ 1026 00e0 12       		.uleb128 0x12
+ 1027 00e1 06       		.uleb128 0x6
+ 1028 00e2 40       		.uleb128 0x40
+ 1029 00e3 18       		.uleb128 0x18
+ 1030 00e4 9742     		.uleb128 0x2117
+ 1031 00e6 19       		.uleb128 0x19
+ 1032 00e7 01       		.uleb128 0x1
+ 1033 00e8 13       		.uleb128 0x13
+ 1034 00e9 00       		.byte	0
+ 1035 00ea 00       		.byte	0
+ 1036 00eb 0F       		.uleb128 0xf
+ 1037 00ec 2E       		.uleb128 0x2e
+ 1038 00ed 01       		.byte	0x1
+ 1039 00ee 3F       		.uleb128 0x3f
+ 1040 00ef 19       		.uleb128 0x19
+ 1041 00f0 03       		.uleb128 0x3
+ 1042 00f1 0E       		.uleb128 0xe
+ 1043 00f2 3A       		.uleb128 0x3a
+ 1044 00f3 0B       		.uleb128 0xb
+ 1045 00f4 3B       		.uleb128 0x3b
+ 1046 00f5 05       		.uleb128 0x5
+ 1047 00f6 27       		.uleb128 0x27
+ 1048 00f7 19       		.uleb128 0x19
+ 1049 00f8 11       		.uleb128 0x11
+ 1050 00f9 01       		.uleb128 0x1
+ 1051 00fa 12       		.uleb128 0x12
+ 1052 00fb 06       		.uleb128 0x6
+ 1053 00fc 40       		.uleb128 0x40
+ 1054 00fd 18       		.uleb128 0x18
+ 1055 00fe 9742     		.uleb128 0x2117
+ 1056 0100 19       		.uleb128 0x19
+ 1057 0101 01       		.uleb128 0x1
+ 1058 0102 13       		.uleb128 0x13
+ 1059 0103 00       		.byte	0
+ 1060 0104 00       		.byte	0
+ 1061 0105 10       		.uleb128 0x10
+ 1062 0106 05       		.uleb128 0x5
+ 1063 0107 00       		.byte	0
+ 1064 0108 03       		.uleb128 0x3
+ 1065 0109 0E       		.uleb128 0xe
+ 1066 010a 3A       		.uleb128 0x3a
+ 1067 010b 0B       		.uleb128 0xb
+ 1068 010c 3B       		.uleb128 0x3b
+ 1069 010d 05       		.uleb128 0x5
+ 1070 010e 49       		.uleb128 0x49
+ 1071 010f 13       		.uleb128 0x13
+ 1072 0110 02       		.uleb128 0x2
+ 1073 0111 18       		.uleb128 0x18
+ 1074 0112 00       		.byte	0
+ 1075 0113 00       		.byte	0
+ 1076 0114 11       		.uleb128 0x11
+ 1077 0115 2E       		.uleb128 0x2e
+ 1078 0116 01       		.byte	0x1
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccZtCLWz.s 			page 27
 
 
- 1148 00c8 03       		.uleb128 0x3
- 1149 00c9 0E       		.uleb128 0xe
- 1150 00ca 3A       		.uleb128 0x3a
- 1151 00cb 0B       		.uleb128 0xb
- 1152 00cc 3B       		.uleb128 0x3b
- 1153 00cd 0B       		.uleb128 0xb
- 1154 00ce 27       		.uleb128 0x27
- 1155 00cf 19       		.uleb128 0x19
- 1156 00d0 11       		.uleb128 0x11
- 1157 00d1 01       		.uleb128 0x1
- 1158 00d2 12       		.uleb128 0x12
- 1159 00d3 06       		.uleb128 0x6
- 1160 00d4 40       		.uleb128 0x40
- 1161 00d5 18       		.uleb128 0x18
- 1162 00d6 9742     		.uleb128 0x2117
- 1163 00d8 19       		.uleb128 0x19
- 1164 00d9 01       		.uleb128 0x1
- 1165 00da 13       		.uleb128 0x13
- 1166 00db 00       		.byte	0
- 1167 00dc 00       		.byte	0
- 1168 00dd 10       		.uleb128 0x10
- 1169 00de 1D       		.uleb128 0x1d
- 1170 00df 01       		.byte	0x1
- 1171 00e0 31       		.uleb128 0x31
- 1172 00e1 13       		.uleb128 0x13
- 1173 00e2 52       		.uleb128 0x52
- 1174 00e3 01       		.uleb128 0x1
- 1175 00e4 55       		.uleb128 0x55
- 1176 00e5 17       		.uleb128 0x17
- 1177 00e6 58       		.uleb128 0x58
- 1178 00e7 0B       		.uleb128 0xb
- 1179 00e8 59       		.uleb128 0x59
- 1180 00e9 0B       		.uleb128 0xb
- 1181 00ea 01       		.uleb128 0x1
- 1182 00eb 13       		.uleb128 0x13
- 1183 00ec 00       		.byte	0
- 1184 00ed 00       		.byte	0
- 1185 00ee 11       		.uleb128 0x11
- 1186 00ef 05       		.uleb128 0x5
- 1187 00f0 00       		.byte	0
- 1188 00f1 31       		.uleb128 0x31
- 1189 00f2 13       		.uleb128 0x13
- 1190 00f3 02       		.uleb128 0x2
- 1191 00f4 18       		.uleb128 0x18
- 1192 00f5 00       		.byte	0
- 1193 00f6 00       		.byte	0
- 1194 00f7 12       		.uleb128 0x12
- 1195 00f8 0B       		.uleb128 0xb
- 1196 00f9 01       		.byte	0x1
- 1197 00fa 55       		.uleb128 0x55
- 1198 00fb 17       		.uleb128 0x17
- 1199 00fc 00       		.byte	0
- 1200 00fd 00       		.byte	0
- 1201 00fe 13       		.uleb128 0x13
- 1202 00ff 34       		.uleb128 0x34
- 1203 0100 00       		.byte	0
- 1204 0101 31       		.uleb128 0x31
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc54Jpya.s 			page 30
+ 1079 0117 3F       		.uleb128 0x3f
+ 1080 0118 19       		.uleb128 0x19
+ 1081 0119 03       		.uleb128 0x3
+ 1082 011a 0E       		.uleb128 0xe
+ 1083 011b 3A       		.uleb128 0x3a
+ 1084 011c 0B       		.uleb128 0xb
+ 1085 011d 3B       		.uleb128 0x3b
+ 1086 011e 05       		.uleb128 0x5
+ 1087 011f 27       		.uleb128 0x27
+ 1088 0120 19       		.uleb128 0x19
+ 1089 0121 49       		.uleb128 0x49
+ 1090 0122 13       		.uleb128 0x13
+ 1091 0123 11       		.uleb128 0x11
+ 1092 0124 01       		.uleb128 0x1
+ 1093 0125 12       		.uleb128 0x12
+ 1094 0126 06       		.uleb128 0x6
+ 1095 0127 40       		.uleb128 0x40
+ 1096 0128 18       		.uleb128 0x18
+ 1097 0129 9742     		.uleb128 0x2117
+ 1098 012b 19       		.uleb128 0x19
+ 1099 012c 01       		.uleb128 0x1
+ 1100 012d 13       		.uleb128 0x13
+ 1101 012e 00       		.byte	0
+ 1102 012f 00       		.byte	0
+ 1103 0130 12       		.uleb128 0x12
+ 1104 0131 34       		.uleb128 0x34
+ 1105 0132 00       		.byte	0
+ 1106 0133 03       		.uleb128 0x3
+ 1107 0134 0E       		.uleb128 0xe
+ 1108 0135 3A       		.uleb128 0x3a
+ 1109 0136 0B       		.uleb128 0xb
+ 1110 0137 3B       		.uleb128 0x3b
+ 1111 0138 05       		.uleb128 0x5
+ 1112 0139 49       		.uleb128 0x49
+ 1113 013a 13       		.uleb128 0x13
+ 1114 013b 02       		.uleb128 0x2
+ 1115 013c 18       		.uleb128 0x18
+ 1116 013d 00       		.byte	0
+ 1117 013e 00       		.byte	0
+ 1118 013f 13       		.uleb128 0x13
+ 1119 0140 2E       		.uleb128 0x2e
+ 1120 0141 00       		.byte	0
+ 1121 0142 3F       		.uleb128 0x3f
+ 1122 0143 19       		.uleb128 0x19
+ 1123 0144 03       		.uleb128 0x3
+ 1124 0145 0E       		.uleb128 0xe
+ 1125 0146 3A       		.uleb128 0x3a
+ 1126 0147 0B       		.uleb128 0xb
+ 1127 0148 3B       		.uleb128 0x3b
+ 1128 0149 05       		.uleb128 0x5
+ 1129 014a 27       		.uleb128 0x27
+ 1130 014b 19       		.uleb128 0x19
+ 1131 014c 11       		.uleb128 0x11
+ 1132 014d 01       		.uleb128 0x1
+ 1133 014e 12       		.uleb128 0x12
+ 1134 014f 06       		.uleb128 0x6
+ 1135 0150 40       		.uleb128 0x40
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccZtCLWz.s 			page 28
 
 
- 1205 0102 13       		.uleb128 0x13
- 1206 0103 02       		.uleb128 0x2
- 1207 0104 17       		.uleb128 0x17
- 1208 0105 00       		.byte	0
- 1209 0106 00       		.byte	0
- 1210 0107 14       		.uleb128 0x14
- 1211 0108 1D       		.uleb128 0x1d
- 1212 0109 00       		.byte	0
- 1213 010a 31       		.uleb128 0x31
- 1214 010b 13       		.uleb128 0x13
- 1215 010c 52       		.uleb128 0x52
- 1216 010d 01       		.uleb128 0x1
- 1217 010e 55       		.uleb128 0x55
- 1218 010f 17       		.uleb128 0x17
- 1219 0110 58       		.uleb128 0x58
- 1220 0111 0B       		.uleb128 0xb
- 1221 0112 59       		.uleb128 0x59
- 1222 0113 0B       		.uleb128 0xb
- 1223 0114 00       		.byte	0
- 1224 0115 00       		.byte	0
- 1225 0116 15       		.uleb128 0x15
- 1226 0117 05       		.uleb128 0x5
- 1227 0118 00       		.byte	0
- 1228 0119 31       		.uleb128 0x31
- 1229 011a 13       		.uleb128 0x13
- 1230 011b 1C       		.uleb128 0x1c
- 1231 011c 0B       		.uleb128 0xb
- 1232 011d 00       		.byte	0
- 1233 011e 00       		.byte	0
- 1234 011f 16       		.uleb128 0x16
- 1235 0120 05       		.uleb128 0x5
- 1236 0121 00       		.byte	0
- 1237 0122 03       		.uleb128 0x3
- 1238 0123 0E       		.uleb128 0xe
- 1239 0124 3A       		.uleb128 0x3a
- 1240 0125 0B       		.uleb128 0xb
- 1241 0126 3B       		.uleb128 0x3b
- 1242 0127 0B       		.uleb128 0xb
- 1243 0128 49       		.uleb128 0x49
- 1244 0129 13       		.uleb128 0x13
- 1245 012a 02       		.uleb128 0x2
- 1246 012b 18       		.uleb128 0x18
- 1247 012c 00       		.byte	0
- 1248 012d 00       		.byte	0
- 1249 012e 17       		.uleb128 0x17
- 1250 012f 05       		.uleb128 0x5
- 1251 0130 00       		.byte	0
- 1252 0131 31       		.uleb128 0x31
- 1253 0132 13       		.uleb128 0x13
- 1254 0133 00       		.byte	0
- 1255 0134 00       		.byte	0
- 1256 0135 18       		.uleb128 0x18
- 1257 0136 34       		.uleb128 0x34
- 1258 0137 00       		.byte	0
- 1259 0138 31       		.uleb128 0x31
- 1260 0139 13       		.uleb128 0x13
- 1261 013a 02       		.uleb128 0x2
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc54Jpya.s 			page 31
+ 1136 0151 18       		.uleb128 0x18
+ 1137 0152 9742     		.uleb128 0x2117
+ 1138 0154 19       		.uleb128 0x19
+ 1139 0155 00       		.byte	0
+ 1140 0156 00       		.byte	0
+ 1141 0157 14       		.uleb128 0x14
+ 1142 0158 2E       		.uleb128 0x2e
+ 1143 0159 00       		.byte	0
+ 1144 015a 3F       		.uleb128 0x3f
+ 1145 015b 19       		.uleb128 0x19
+ 1146 015c 03       		.uleb128 0x3
+ 1147 015d 0E       		.uleb128 0xe
+ 1148 015e 3A       		.uleb128 0x3a
+ 1149 015f 0B       		.uleb128 0xb
+ 1150 0160 3B       		.uleb128 0x3b
+ 1151 0161 05       		.uleb128 0x5
+ 1152 0162 27       		.uleb128 0x27
+ 1153 0163 19       		.uleb128 0x19
+ 1154 0164 49       		.uleb128 0x49
+ 1155 0165 13       		.uleb128 0x13
+ 1156 0166 11       		.uleb128 0x11
+ 1157 0167 01       		.uleb128 0x1
+ 1158 0168 12       		.uleb128 0x12
+ 1159 0169 06       		.uleb128 0x6
+ 1160 016a 40       		.uleb128 0x40
+ 1161 016b 18       		.uleb128 0x18
+ 1162 016c 9742     		.uleb128 0x2117
+ 1163 016e 19       		.uleb128 0x19
+ 1164 016f 00       		.byte	0
+ 1165 0170 00       		.byte	0
+ 1166 0171 00       		.byte	0
+ 1167              		.section	.debug_aranges,"",%progbits
+ 1168 0000 7C000000 		.4byte	0x7c
+ 1169 0004 0200     		.2byte	0x2
+ 1170 0006 00000000 		.4byte	.Ldebug_info0
+ 1171 000a 04       		.byte	0x4
+ 1172 000b 00       		.byte	0
+ 1173 000c 0000     		.2byte	0
+ 1174 000e 0000     		.2byte	0
+ 1175 0010 00000000 		.4byte	.LFB0
+ 1176 0014 20000000 		.4byte	.LFE0-.LFB0
+ 1177 0018 00000000 		.4byte	.LFB1
+ 1178 001c 22000000 		.4byte	.LFE1-.LFB1
+ 1179 0020 00000000 		.4byte	.LFB2
+ 1180 0024 14000000 		.4byte	.LFE2-.LFB2
+ 1181 0028 00000000 		.4byte	.LFB3
+ 1182 002c 0C000000 		.4byte	.LFE3-.LFB3
+ 1183 0030 00000000 		.4byte	.LFB4
+ 1184 0034 24000000 		.4byte	.LFE4-.LFB4
+ 1185 0038 00000000 		.4byte	.LFB5
+ 1186 003c 20000000 		.4byte	.LFE5-.LFB5
+ 1187 0040 00000000 		.4byte	.LFB6
+ 1188 0044 24000000 		.4byte	.LFE6-.LFB6
+ 1189 0048 00000000 		.4byte	.LFB7
+ 1190 004c 24000000 		.4byte	.LFE7-.LFB7
+ 1191 0050 00000000 		.4byte	.LFB8
+ 1192 0054 18000000 		.4byte	.LFE8-.LFB8
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccZtCLWz.s 			page 29
 
 
- 1262 013b 18       		.uleb128 0x18
- 1263 013c 00       		.byte	0
- 1264 013d 00       		.byte	0
- 1265 013e 19       		.uleb128 0x19
- 1266 013f 2E       		.uleb128 0x2e
- 1267 0140 01       		.byte	0x1
- 1268 0141 31       		.uleb128 0x31
- 1269 0142 13       		.uleb128 0x13
- 1270 0143 11       		.uleb128 0x11
- 1271 0144 01       		.uleb128 0x1
- 1272 0145 12       		.uleb128 0x12
- 1273 0146 06       		.uleb128 0x6
- 1274 0147 40       		.uleb128 0x40
- 1275 0148 18       		.uleb128 0x18
- 1276 0149 9742     		.uleb128 0x2117
- 1277 014b 19       		.uleb128 0x19
- 1278 014c 01       		.uleb128 0x1
- 1279 014d 13       		.uleb128 0x13
- 1280 014e 00       		.byte	0
- 1281 014f 00       		.byte	0
- 1282 0150 1A       		.uleb128 0x1a
- 1283 0151 2E       		.uleb128 0x2e
- 1284 0152 01       		.byte	0x1
- 1285 0153 3F       		.uleb128 0x3f
- 1286 0154 19       		.uleb128 0x19
- 1287 0155 03       		.uleb128 0x3
- 1288 0156 0E       		.uleb128 0xe
- 1289 0157 3A       		.uleb128 0x3a
- 1290 0158 0B       		.uleb128 0xb
- 1291 0159 3B       		.uleb128 0x3b
- 1292 015a 0B       		.uleb128 0xb
- 1293 015b 27       		.uleb128 0x27
- 1294 015c 19       		.uleb128 0x19
- 1295 015d 49       		.uleb128 0x49
- 1296 015e 13       		.uleb128 0x13
- 1297 015f 11       		.uleb128 0x11
- 1298 0160 01       		.uleb128 0x1
- 1299 0161 12       		.uleb128 0x12
- 1300 0162 06       		.uleb128 0x6
- 1301 0163 40       		.uleb128 0x40
- 1302 0164 18       		.uleb128 0x18
- 1303 0165 9742     		.uleb128 0x2117
- 1304 0167 19       		.uleb128 0x19
- 1305 0168 01       		.uleb128 0x1
- 1306 0169 13       		.uleb128 0x13
- 1307 016a 00       		.byte	0
- 1308 016b 00       		.byte	0
- 1309 016c 1B       		.uleb128 0x1b
- 1310 016d 34       		.uleb128 0x34
- 1311 016e 00       		.byte	0
- 1312 016f 03       		.uleb128 0x3
- 1313 0170 0E       		.uleb128 0xe
- 1314 0171 3A       		.uleb128 0x3a
- 1315 0172 0B       		.uleb128 0xb
- 1316 0173 3B       		.uleb128 0x3b
- 1317 0174 0B       		.uleb128 0xb
- 1318 0175 49       		.uleb128 0x49
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc54Jpya.s 			page 32
+ 1193 0058 00000000 		.4byte	.LFB9
+ 1194 005c 20000000 		.4byte	.LFE9-.LFB9
+ 1195 0060 00000000 		.4byte	.LFB10
+ 1196 0064 18000000 		.4byte	.LFE10-.LFB10
+ 1197 0068 00000000 		.4byte	.LFB11
+ 1198 006c 18000000 		.4byte	.LFE11-.LFB11
+ 1199 0070 00000000 		.4byte	.LFB12
+ 1200 0074 18000000 		.4byte	.LFE12-.LFB12
+ 1201 0078 00000000 		.4byte	0
+ 1202 007c 00000000 		.4byte	0
+ 1203              		.section	.debug_ranges,"",%progbits
+ 1204              	.Ldebug_ranges0:
+ 1205 0000 00000000 		.4byte	.LFB0
+ 1206 0004 20000000 		.4byte	.LFE0
+ 1207 0008 00000000 		.4byte	.LFB1
+ 1208 000c 22000000 		.4byte	.LFE1
+ 1209 0010 00000000 		.4byte	.LFB2
+ 1210 0014 14000000 		.4byte	.LFE2
+ 1211 0018 00000000 		.4byte	.LFB3
+ 1212 001c 0C000000 		.4byte	.LFE3
+ 1213 0020 00000000 		.4byte	.LFB4
+ 1214 0024 24000000 		.4byte	.LFE4
+ 1215 0028 00000000 		.4byte	.LFB5
+ 1216 002c 20000000 		.4byte	.LFE5
+ 1217 0030 00000000 		.4byte	.LFB6
+ 1218 0034 24000000 		.4byte	.LFE6
+ 1219 0038 00000000 		.4byte	.LFB7
+ 1220 003c 24000000 		.4byte	.LFE7
+ 1221 0040 00000000 		.4byte	.LFB8
+ 1222 0044 18000000 		.4byte	.LFE8
+ 1223 0048 00000000 		.4byte	.LFB9
+ 1224 004c 20000000 		.4byte	.LFE9
+ 1225 0050 00000000 		.4byte	.LFB10
+ 1226 0054 18000000 		.4byte	.LFE10
+ 1227 0058 00000000 		.4byte	.LFB11
+ 1228 005c 18000000 		.4byte	.LFE11
+ 1229 0060 00000000 		.4byte	.LFB12
+ 1230 0064 18000000 		.4byte	.LFE12
+ 1231 0068 00000000 		.4byte	0
+ 1232 006c 00000000 		.4byte	0
+ 1233              		.section	.debug_line,"",%progbits
+ 1234              	.Ldebug_line0:
+ 1235 0000 5D010000 		.section	.debug_str,"MS",%progbits,1
+ 1235      02006300 
+ 1235      00000201 
+ 1235      FB0E0D00 
+ 1235      01010101 
+ 1236              	.LASF7:
+ 1237 0000 6C6F6E67 		.ascii	"long long int\000"
+ 1237      206C6F6E 
+ 1237      6720696E 
+ 1237      7400
+ 1238              	.LASF16:
+ 1239 000e 72656733 		.ascii	"reg32\000"
+ 1239      3200
+ 1240              	.LASF21:
+ 1241 0014 4144435F 		.ascii	"ADC_SAR_1_IRQ_StartEx\000"
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccZtCLWz.s 			page 30
 
 
- 1319 0176 13       		.uleb128 0x13
- 1320 0177 02       		.uleb128 0x2
- 1321 0178 17       		.uleb128 0x17
- 1322 0179 00       		.byte	0
- 1323 017a 00       		.byte	0
- 1324 017b 1C       		.uleb128 0x1c
- 1325 017c 05       		.uleb128 0x5
- 1326 017d 00       		.byte	0
- 1327 017e 31       		.uleb128 0x31
- 1328 017f 13       		.uleb128 0x13
- 1329 0180 02       		.uleb128 0x2
- 1330 0181 17       		.uleb128 0x17
- 1331 0182 00       		.byte	0
- 1332 0183 00       		.byte	0
- 1333 0184 1D       		.uleb128 0x1d
- 1334 0185 2E       		.uleb128 0x2e
- 1335 0186 01       		.byte	0x1
- 1336 0187 3F       		.uleb128 0x3f
- 1337 0188 19       		.uleb128 0x19
- 1338 0189 03       		.uleb128 0x3
- 1339 018a 0E       		.uleb128 0xe
- 1340 018b 3A       		.uleb128 0x3a
- 1341 018c 0B       		.uleb128 0xb
- 1342 018d 3B       		.uleb128 0x3b
- 1343 018e 05       		.uleb128 0x5
- 1344 018f 27       		.uleb128 0x27
- 1345 0190 19       		.uleb128 0x19
- 1346 0191 49       		.uleb128 0x49
- 1347 0192 13       		.uleb128 0x13
- 1348 0193 11       		.uleb128 0x11
- 1349 0194 01       		.uleb128 0x1
- 1350 0195 12       		.uleb128 0x12
- 1351 0196 06       		.uleb128 0x6
- 1352 0197 40       		.uleb128 0x40
- 1353 0198 18       		.uleb128 0x18
- 1354 0199 9742     		.uleb128 0x2117
- 1355 019b 19       		.uleb128 0x19
- 1356 019c 01       		.uleb128 0x1
- 1357 019d 13       		.uleb128 0x13
- 1358 019e 00       		.byte	0
- 1359 019f 00       		.byte	0
- 1360 01a0 1E       		.uleb128 0x1e
- 1361 01a1 34       		.uleb128 0x34
- 1362 01a2 00       		.byte	0
- 1363 01a3 03       		.uleb128 0x3
- 1364 01a4 0E       		.uleb128 0xe
- 1365 01a5 3A       		.uleb128 0x3a
- 1366 01a6 0B       		.uleb128 0xb
- 1367 01a7 3B       		.uleb128 0x3b
- 1368 01a8 05       		.uleb128 0x5
- 1369 01a9 49       		.uleb128 0x49
- 1370 01aa 13       		.uleb128 0x13
- 1371 01ab 02       		.uleb128 0x2
- 1372 01ac 17       		.uleb128 0x17
- 1373 01ad 00       		.byte	0
- 1374 01ae 00       		.byte	0
- 1375 01af 1F       		.uleb128 0x1f
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc54Jpya.s 			page 33
+ 1241      5341525F 
+ 1241      315F4952 
+ 1241      515F5374 
+ 1241      61727445 
+ 1242              	.LASF22:
+ 1243 002a 4144435F 		.ascii	"ADC_SAR_1_IRQ_SetVector\000"
+ 1243      5341525F 
+ 1243      315F4952 
+ 1243      515F5365 
+ 1243      74566563 
+ 1244              	.LASF35:
+ 1245 0042 433A5C55 		.ascii	"C:\\Users\\Patrick\\Documents\\GitHub\\PSoC 5LP FIl"
+ 1245      73657273 
+ 1245      5C506174 
+ 1245      7269636B 
+ 1245      5C446F63 
+ 1246 0070 65735C43 		.ascii	"es\\C-CAN_PSoC_DevKit\\C-CAN.cydsn\000"
+ 1246      2D43414E 
+ 1246      5F50536F 
+ 1246      435F4465 
+ 1246      764B6974 
+ 1247              	.LASF19:
+ 1248 0091 4144435F 		.ascii	"ADC_SAR_1_IRQ_Stop\000"
+ 1248      5341525F 
+ 1248      315F4952 
+ 1248      515F5374 
+ 1248      6F7000
+ 1249              	.LASF4:
+ 1250 00a4 73686F72 		.ascii	"short unsigned int\000"
+ 1250      7420756E 
+ 1250      7369676E 
+ 1250      65642069 
+ 1250      6E7400
+ 1251              	.LASF0:
+ 1252 00b7 756E7369 		.ascii	"unsigned int\000"
+ 1252      676E6564 
+ 1252      20696E74 
+ 1252      00
+ 1253              	.LASF13:
+ 1254 00c4 666C6F61 		.ascii	"float\000"
+ 1254      7400
+ 1255              	.LASF30:
+ 1256 00ca 4144435F 		.ascii	"ADC_SAR_1_IRQ_Disable\000"
+ 1256      5341525F 
+ 1256      315F4952 
+ 1256      515F4469 
+ 1256      7361626C 
+ 1257              	.LASF2:
+ 1258 00e0 756E7369 		.ascii	"unsigned char\000"
+ 1258      676E6564 
+ 1258      20636861 
+ 1258      7200
+ 1259              	.LASF15:
+ 1260 00ee 72656738 		.ascii	"reg8\000"
+ 1260      00
+ 1261              	.LASF6:
+ 1262 00f3 6C6F6E67 		.ascii	"long unsigned int\000"
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccZtCLWz.s 			page 31
 
 
- 1376 01b0 2E       		.uleb128 0x2e
- 1377 01b1 00       		.byte	0
- 1378 01b2 31       		.uleb128 0x31
- 1379 01b3 13       		.uleb128 0x13
- 1380 01b4 11       		.uleb128 0x11
- 1381 01b5 01       		.uleb128 0x1
- 1382 01b6 12       		.uleb128 0x12
- 1383 01b7 06       		.uleb128 0x6
- 1384 01b8 40       		.uleb128 0x40
- 1385 01b9 18       		.uleb128 0x18
- 1386 01ba 9742     		.uleb128 0x2117
- 1387 01bc 19       		.uleb128 0x19
- 1388 01bd 00       		.byte	0
- 1389 01be 00       		.byte	0
- 1390 01bf 20       		.uleb128 0x20
- 1391 01c0 2E       		.uleb128 0x2e
- 1392 01c1 00       		.byte	0
- 1393 01c2 3F       		.uleb128 0x3f
- 1394 01c3 19       		.uleb128 0x19
- 1395 01c4 03       		.uleb128 0x3
- 1396 01c5 0E       		.uleb128 0xe
- 1397 01c6 3A       		.uleb128 0x3a
- 1398 01c7 0B       		.uleb128 0xb
- 1399 01c8 3B       		.uleb128 0x3b
- 1400 01c9 05       		.uleb128 0x5
- 1401 01ca 27       		.uleb128 0x27
- 1402 01cb 19       		.uleb128 0x19
- 1403 01cc 49       		.uleb128 0x49
- 1404 01cd 13       		.uleb128 0x13
- 1405 01ce 11       		.uleb128 0x11
- 1406 01cf 01       		.uleb128 0x1
- 1407 01d0 12       		.uleb128 0x12
- 1408 01d1 06       		.uleb128 0x6
- 1409 01d2 40       		.uleb128 0x40
- 1410 01d3 18       		.uleb128 0x18
- 1411 01d4 9742     		.uleb128 0x2117
- 1412 01d6 19       		.uleb128 0x19
- 1413 01d7 00       		.byte	0
- 1414 01d8 00       		.byte	0
- 1415 01d9 21       		.uleb128 0x21
- 1416 01da 2E       		.uleb128 0x2e
- 1417 01db 00       		.byte	0
- 1418 01dc 3F       		.uleb128 0x3f
- 1419 01dd 19       		.uleb128 0x19
- 1420 01de 03       		.uleb128 0x3
- 1421 01df 0E       		.uleb128 0xe
- 1422 01e0 3A       		.uleb128 0x3a
- 1423 01e1 0B       		.uleb128 0xb
- 1424 01e2 3B       		.uleb128 0x3b
- 1425 01e3 05       		.uleb128 0x5
- 1426 01e4 27       		.uleb128 0x27
- 1427 01e5 19       		.uleb128 0x19
- 1428 01e6 11       		.uleb128 0x11
- 1429 01e7 01       		.uleb128 0x1
- 1430 01e8 12       		.uleb128 0x12
- 1431 01e9 06       		.uleb128 0x6
- 1432 01ea 40       		.uleb128 0x40
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc54Jpya.s 			page 34
+ 1262      20756E73 
+ 1262      69676E65 
+ 1262      6420696E 
+ 1262      7400
+ 1263              	.LASF11:
+ 1264 0105 75696E74 		.ascii	"uint8\000"
+ 1264      3800
+ 1265              	.LASF26:
+ 1266 010b 7072696F 		.ascii	"priority\000"
+ 1266      72697479 
+ 1266      00
+ 1267              	.LASF33:
+ 1268 0114 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
+ 1268      4320342E 
+ 1268      392E3320 
+ 1268      32303135 
+ 1268      30333033 
+ 1269 0147 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m3 -mthumb -g -O"
+ 1269      20726576 
+ 1269      6973696F 
+ 1269      6E203232 
+ 1269      31323230 
+ 1270 017a 30202D66 		.ascii	"0 -ffunction-sections -ffat-lto-objects\000"
+ 1270      66756E63 
+ 1270      74696F6E 
+ 1270      2D736563 
+ 1270      74696F6E 
+ 1271              	.LASF14:
+ 1272 01a2 646F7562 		.ascii	"double\000"
+ 1272      6C6500
+ 1273              	.LASF3:
+ 1274 01a9 73686F72 		.ascii	"short int\000"
+ 1274      7420696E 
+ 1274      7400
+ 1275              	.LASF34:
+ 1276 01b3 2E5C4765 		.ascii	".\\Generated_Source\\PSoC5\\ADC_SAR_1_IRQ.c\000"
+ 1276      6E657261 
+ 1276      7465645F 
+ 1276      536F7572 
+ 1276      63655C50 
+ 1277              	.LASF18:
+ 1278 01dc 4144435F 		.ascii	"ADC_SAR_1_IRQ_Start\000"
+ 1278      5341525F 
+ 1278      315F4952 
+ 1278      515F5374 
+ 1278      61727400 
+ 1279              	.LASF12:
+ 1280 01f0 75696E74 		.ascii	"uint32\000"
+ 1280      333200
+ 1281              	.LASF28:
+ 1282 01f7 4144435F 		.ascii	"ADC_SAR_1_IRQ_GetPriority\000"
+ 1282      5341525F 
+ 1282      315F4952 
+ 1282      515F4765 
+ 1282      74507269 
+ 1283              	.LASF23:
+ 1284 0211 61646472 		.ascii	"address\000"
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccZtCLWz.s 			page 32
 
 
- 1433 01eb 18       		.uleb128 0x18
- 1434 01ec 9742     		.uleb128 0x2117
- 1435 01ee 19       		.uleb128 0x19
- 1436 01ef 00       		.byte	0
- 1437 01f0 00       		.byte	0
- 1438 01f1 00       		.byte	0
- 1439              		.section	.debug_loc,"",%progbits
- 1440              	.Ldebug_loc0:
- 1441              	.LLST0:
- 1442 0000 14000000 		.4byte	.LVL0
- 1443 0004 1A000000 		.4byte	.LVL2
- 1444 0008 0100     		.2byte	0x1
- 1445 000a 54       		.byte	0x54
- 1446 000b 00000000 		.4byte	0
- 1447 000f 00000000 		.4byte	0
- 1448              	.LLST1:
- 1449 0013 12000000 		.4byte	.LVL4
- 1450 0017 18000000 		.4byte	.LVL6
- 1451 001b 0100     		.2byte	0x1
- 1452 001d 55       		.byte	0x55
- 1453 001e 00000000 		.4byte	0
- 1454 0022 00000000 		.4byte	0
- 1455              	.LLST2:
- 1456 0026 00000000 		.4byte	.LVL10
- 1457 002a 02000000 		.4byte	.LVL11
- 1458 002e 0600     		.2byte	0x6
- 1459 0030 11       		.byte	0x11
- 1460 0031 88DA8380 		.sleb128 -536810232
- 1460      7E
- 1461 0036 02000000 		.4byte	.LVL11
- 1462 003a 04000000 		.4byte	.LVL12
- 1463 003e 0200     		.2byte	0x2
- 1464 0040 73       		.byte	0x73
- 1465 0041 00       		.sleb128 0
- 1466 0042 04000000 		.4byte	.LVL12
- 1467 0046 0C000000 		.4byte	.LFE5
- 1468 004a 0100     		.2byte	0x1
- 1469 004c 53       		.byte	0x53
- 1470 004d 00000000 		.4byte	0
- 1471 0051 00000000 		.4byte	0
- 1472              	.LLST3:
- 1473 0055 00000000 		.4byte	.LVL13
- 1474 0059 02000000 		.4byte	.LVL14
- 1475 005d 0100     		.2byte	0x1
- 1476 005f 50       		.byte	0x50
- 1477 0060 02000000 		.4byte	.LVL14
- 1478 0064 10000000 		.4byte	.LFE6
- 1479 0068 0400     		.2byte	0x4
- 1480 006a F3       		.byte	0xf3
- 1481 006b 01       		.uleb128 0x1
- 1482 006c 50       		.byte	0x50
- 1483 006d 9F       		.byte	0x9f
- 1484 006e 00000000 		.4byte	0
- 1485 0072 00000000 		.4byte	0
- 1486              	.LLST4:
- 1487 0076 04000000 		.4byte	.LVL15
- 1488 007a 06000000 		.4byte	.LVL16
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc54Jpya.s 			page 35
+ 1284      65737300 
+ 1285              	.LASF8:
+ 1286 0219 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 1286      206C6F6E 
+ 1286      6720756E 
+ 1286      7369676E 
+ 1286      65642069 
+ 1287              	.LASF17:
+ 1288 0230 63796973 		.ascii	"cyisraddress\000"
+ 1288      72616464 
+ 1288      72657373 
+ 1288      00
+ 1289              	.LASF9:
+ 1290 023d 73697A65 		.ascii	"sizetype\000"
+ 1290      74797065 
+ 1290      00
+ 1291              	.LASF29:
+ 1292 0246 4144435F 		.ascii	"ADC_SAR_1_IRQ_Enable\000"
+ 1292      5341525F 
+ 1292      315F4952 
+ 1292      515F456E 
+ 1292      61626C65 
+ 1293              	.LASF10:
+ 1294 025b 63686172 		.ascii	"char\000"
+ 1294      00
+ 1295              	.LASF24:
+ 1296 0260 72616D56 		.ascii	"ramVectorTable\000"
+ 1296      6563746F 
+ 1296      72546162 
+ 1296      6C6500
+ 1297              	.LASF27:
+ 1298 026f 4144435F 		.ascii	"ADC_SAR_1_IRQ_GetVector\000"
+ 1298      5341525F 
+ 1298      315F4952 
+ 1298      515F4765 
+ 1298      74566563 
+ 1299              	.LASF20:
+ 1300 0287 4144435F 		.ascii	"ADC_SAR_1_IRQ_Interrupt\000"
+ 1300      5341525F 
+ 1300      315F4952 
+ 1300      515F496E 
+ 1300      74657272 
+ 1301              	.LASF36:
+ 1302 029f 4144435F 		.ascii	"ADC_SAR_1_IRQ_GetState\000"
+ 1302      5341525F 
+ 1302      315F4952 
+ 1302      515F4765 
+ 1302      74537461 
+ 1303              	.LASF25:
+ 1304 02b6 4144435F 		.ascii	"ADC_SAR_1_IRQ_SetPriority\000"
+ 1304      5341525F 
+ 1304      315F4952 
+ 1304      515F5365 
+ 1304      74507269 
+ 1305              	.LASF32:
+ 1306 02d0 4144435F 		.ascii	"ADC_SAR_1_IRQ_ClearPending\000"
+ 1306      5341525F 
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccZtCLWz.s 			page 33
 
 
- 1489 007e 0500     		.2byte	0x5
- 1490 0080 70       		.byte	0x70
- 1491 0081 00       		.sleb128 0
- 1492 0082 35       		.byte	0x35
- 1493 0083 25       		.byte	0x25
- 1494 0084 9F       		.byte	0x9f
- 1495 0085 00000000 		.4byte	0
- 1496 0089 00000000 		.4byte	0
- 1497              		.section	.debug_aranges,"",%progbits
- 1498 0000 7C000000 		.4byte	0x7c
- 1499 0004 0200     		.2byte	0x2
- 1500 0006 00000000 		.4byte	.Ldebug_info0
- 1501 000a 04       		.byte	0x4
- 1502 000b 00       		.byte	0
- 1503 000c 0000     		.2byte	0
- 1504 000e 0000     		.2byte	0
- 1505 0010 00000000 		.4byte	.LFB3
- 1506 0014 02000000 		.4byte	.LFE3-.LFB3
- 1507 0018 00000000 		.4byte	.LFB0
- 1508 001c 34000000 		.4byte	.LFE0-.LFB0
- 1509 0020 00000000 		.4byte	.LFB1
- 1510 0024 2C000000 		.4byte	.LFE1-.LFB1
- 1511 0028 00000000 		.4byte	.LFB2
- 1512 002c 1C000000 		.4byte	.LFE2-.LFB2
- 1513 0030 00000000 		.4byte	.LFB4
- 1514 0034 0C000000 		.4byte	.LFE4-.LFB4
- 1515 0038 00000000 		.4byte	.LFB5
- 1516 003c 0C000000 		.4byte	.LFE5-.LFB5
- 1517 0040 00000000 		.4byte	.LFB6
- 1518 0044 10000000 		.4byte	.LFE6-.LFB6
- 1519 0048 00000000 		.4byte	.LFB7
- 1520 004c 0C000000 		.4byte	.LFE7-.LFB7
- 1521 0050 00000000 		.4byte	.LFB8
- 1522 0054 0C000000 		.4byte	.LFE8-.LFB8
- 1523 0058 00000000 		.4byte	.LFB9
- 1524 005c 10000000 		.4byte	.LFE9-.LFB9
- 1525 0060 00000000 		.4byte	.LFB10
- 1526 0064 0C000000 		.4byte	.LFE10-.LFB10
- 1527 0068 00000000 		.4byte	.LFB11
- 1528 006c 0C000000 		.4byte	.LFE11-.LFB11
- 1529 0070 00000000 		.4byte	.LFB12
- 1530 0074 0C000000 		.4byte	.LFE12-.LFB12
- 1531 0078 00000000 		.4byte	0
- 1532 007c 00000000 		.4byte	0
- 1533              		.section	.debug_ranges,"",%progbits
- 1534              	.Ldebug_ranges0:
- 1535 0000 02000000 		.4byte	.LBB22
- 1536 0004 04000000 		.4byte	.LBE22
- 1537 0008 06000000 		.4byte	.LBB30
- 1538 000c 0A000000 		.4byte	.LBE30
- 1539 0010 14000000 		.4byte	.LBB41
- 1540 0014 16000000 		.4byte	.LBE41
- 1541 0018 00000000 		.4byte	0
- 1542 001c 00000000 		.4byte	0
- 1543 0020 04000000 		.4byte	.LBB26
- 1544 0024 06000000 		.4byte	.LBE26
- 1545 0028 0C000000 		.4byte	.LBB35
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc54Jpya.s 			page 36
-
-
- 1546 002c 0E000000 		.4byte	.LBE35
- 1547 0030 12000000 		.4byte	.LBB40
- 1548 0034 14000000 		.4byte	.LBE40
- 1549 0038 00000000 		.4byte	0
- 1550 003c 00000000 		.4byte	0
- 1551 0040 0A000000 		.4byte	.LBB31
- 1552 0044 0C000000 		.4byte	.LBE31
- 1553 0048 10000000 		.4byte	.LBB39
- 1554 004c 12000000 		.4byte	.LBE39
- 1555 0050 16000000 		.4byte	.LBB42
- 1556 0054 18000000 		.4byte	.LBE42
- 1557 0058 00000000 		.4byte	0
- 1558 005c 00000000 		.4byte	0
- 1559 0060 0E000000 		.4byte	.LBB36
- 1560 0064 10000000 		.4byte	.LBE36
- 1561 0068 1A000000 		.4byte	.LBB43
- 1562 006c 1C000000 		.4byte	.LBE43
- 1563 0070 00000000 		.4byte	0
- 1564 0074 00000000 		.4byte	0
- 1565 0078 02000000 		.4byte	.LBB44
- 1566 007c 04000000 		.4byte	.LBE44
- 1567 0080 06000000 		.4byte	.LBB52
- 1568 0084 08000000 		.4byte	.LBE52
- 1569 0088 12000000 		.4byte	.LBB63
- 1570 008c 14000000 		.4byte	.LBE63
- 1571 0090 00000000 		.4byte	0
- 1572 0094 00000000 		.4byte	0
- 1573 0098 04000000 		.4byte	.LBB48
- 1574 009c 06000000 		.4byte	.LBE48
- 1575 00a0 0A000000 		.4byte	.LBB57
- 1576 00a4 0C000000 		.4byte	.LBE57
- 1577 00a8 10000000 		.4byte	.LBB62
- 1578 00ac 12000000 		.4byte	.LBE62
- 1579 00b0 00000000 		.4byte	0
- 1580 00b4 00000000 		.4byte	0
- 1581 00b8 08000000 		.4byte	.LBB53
- 1582 00bc 0A000000 		.4byte	.LBE53
- 1583 00c0 0C000000 		.4byte	.LBB58
- 1584 00c4 0E000000 		.4byte	.LBE58
- 1585 00c8 14000000 		.4byte	.LBB64
- 1586 00cc 16000000 		.4byte	.LBE64
- 1587 00d0 00000000 		.4byte	0
- 1588 00d4 00000000 		.4byte	0
- 1589 00d8 0E000000 		.4byte	.LBB59
- 1590 00dc 10000000 		.4byte	.LBE59
- 1591 00e0 18000000 		.4byte	.LBB65
- 1592 00e4 1A000000 		.4byte	.LBE65
- 1593 00e8 00000000 		.4byte	0
- 1594 00ec 00000000 		.4byte	0
- 1595 00f0 00000000 		.4byte	.LBB66
- 1596 00f4 02000000 		.4byte	.LBE66
- 1597 00f8 04000000 		.4byte	.LBB73
- 1598 00fc 08000000 		.4byte	.LBE73
- 1599 0100 0C000000 		.4byte	.LBB75
- 1600 0104 1C000000 		.4byte	.LBE75
- 1601 0108 00000000 		.4byte	0
- 1602 010c 00000000 		.4byte	0
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc54Jpya.s 			page 37
-
-
- 1603 0110 02000000 		.4byte	.LBB70
- 1604 0114 04000000 		.4byte	.LBE70
- 1605 0118 08000000 		.4byte	.LBB74
- 1606 011c 0C000000 		.4byte	.LBE74
- 1607 0120 00000000 		.4byte	0
- 1608 0124 00000000 		.4byte	0
- 1609 0128 00000000 		.4byte	.LFB3
- 1610 012c 02000000 		.4byte	.LFE3
- 1611 0130 00000000 		.4byte	.LFB0
- 1612 0134 34000000 		.4byte	.LFE0
- 1613 0138 00000000 		.4byte	.LFB1
- 1614 013c 2C000000 		.4byte	.LFE1
- 1615 0140 00000000 		.4byte	.LFB2
- 1616 0144 1C000000 		.4byte	.LFE2
- 1617 0148 00000000 		.4byte	.LFB4
- 1618 014c 0C000000 		.4byte	.LFE4
- 1619 0150 00000000 		.4byte	.LFB5
- 1620 0154 0C000000 		.4byte	.LFE5
- 1621 0158 00000000 		.4byte	.LFB6
- 1622 015c 10000000 		.4byte	.LFE6
- 1623 0160 00000000 		.4byte	.LFB7
- 1624 0164 0C000000 		.4byte	.LFE7
- 1625 0168 00000000 		.4byte	.LFB8
- 1626 016c 0C000000 		.4byte	.LFE8
- 1627 0170 00000000 		.4byte	.LFB9
- 1628 0174 10000000 		.4byte	.LFE9
- 1629 0178 00000000 		.4byte	.LFB10
- 1630 017c 0C000000 		.4byte	.LFE10
- 1631 0180 00000000 		.4byte	.LFB11
- 1632 0184 0C000000 		.4byte	.LFE11
- 1633 0188 00000000 		.4byte	.LFB12
- 1634 018c 0C000000 		.4byte	.LFE12
- 1635 0190 00000000 		.4byte	0
- 1636 0194 00000000 		.4byte	0
- 1637              		.section	.debug_line,"",%progbits
- 1638              	.Ldebug_line0:
- 1639 0000 BD010000 		.section	.debug_str,"MS",%progbits,1
- 1639      02006300 
- 1639      00000201 
- 1639      FB0E0D00 
- 1639      01010101 
- 1640              	.LASF7:
- 1641 0000 6C6F6E67 		.ascii	"long long int\000"
- 1641      206C6F6E 
- 1641      6720696E 
- 1641      7400
- 1642              	.LASF16:
- 1643 000e 72656733 		.ascii	"reg32\000"
- 1643      3200
- 1644              	.LASF25:
- 1645 0014 4144435F 		.ascii	"ADC_SAR_1_IRQ_StartEx\000"
- 1645      5341525F 
- 1645      315F4952 
- 1645      515F5374 
- 1645      61727445 
- 1646              	.LASF18:
- 1647 002a 4144435F 		.ascii	"ADC_SAR_1_IRQ_SetVector\000"
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc54Jpya.s 			page 38
-
-
- 1647      5341525F 
- 1647      315F4952 
- 1647      515F5365 
- 1647      74566563 
- 1648              	.LASF35:
- 1649 0042 433A5C55 		.ascii	"C:\\Users\\Patrick\\Documents\\GitHub\\PSoC 5LP FIl"
- 1649      73657273 
- 1649      5C506174 
- 1649      7269636B 
- 1649      5C446F63 
- 1650 0070 65735C43 		.ascii	"es\\C-CAN_PSoC_DevKit\\C-CAN.cydsn\000"
- 1650      2D43414E 
- 1650      5F50536F 
- 1650      435F4465 
- 1650      764B6974 
- 1651              	.LASF26:
- 1652 0091 4144435F 		.ascii	"ADC_SAR_1_IRQ_Stop\000"
- 1652      5341525F 
- 1652      315F4952 
- 1652      515F5374 
- 1652      6F7000
- 1653              	.LASF4:
- 1654 00a4 73686F72 		.ascii	"short unsigned int\000"
- 1654      7420756E 
- 1654      7369676E 
- 1654      65642069 
- 1654      6E7400
- 1655              	.LASF0:
- 1656 00b7 756E7369 		.ascii	"unsigned int\000"
- 1656      676E6564 
- 1656      20696E74 
- 1656      00
- 1657              	.LASF13:
- 1658 00c4 666C6F61 		.ascii	"float\000"
- 1658      7400
- 1659              	.LASF22:
- 1660 00ca 4144435F 		.ascii	"ADC_SAR_1_IRQ_Disable\000"
- 1660      5341525F 
- 1660      315F4952 
- 1660      515F4469 
- 1660      7361626C 
- 1661              	.LASF2:
- 1662 00e0 756E7369 		.ascii	"unsigned char\000"
- 1662      676E6564 
- 1662      20636861 
- 1662      7200
- 1663              	.LASF33:
- 1664 00ee 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
- 1664      4320342E 
- 1664      392E3320 
- 1664      32303135 
- 1664      30333033 
- 1665 0121 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m3 -mthumb -g -O"
- 1665      20726576 
- 1665      6973696F 
- 1665      6E203232 
- 1665      31323230 
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc54Jpya.s 			page 39
-
-
- 1666 0154 33202D66 		.ascii	"3 -ffunction-sections -ffat-lto-objects\000"
- 1666      66756E63 
- 1666      74696F6E 
- 1666      2D736563 
- 1666      74696F6E 
- 1667              	.LASF15:
- 1668 017c 72656738 		.ascii	"reg8\000"
- 1668      00
- 1669              	.LASF6:
- 1670 0181 6C6F6E67 		.ascii	"long unsigned int\000"
- 1670      20756E73 
- 1670      69676E65 
- 1670      6420696E 
- 1670      7400
- 1671              	.LASF11:
- 1672 0193 75696E74 		.ascii	"uint8\000"
- 1672      3800
- 1673              	.LASF21:
- 1674 0199 7072696F 		.ascii	"priority\000"
- 1674      72697479 
- 1674      00
- 1675              	.LASF14:
- 1676 01a2 646F7562 		.ascii	"double\000"
- 1676      6C6500
- 1677              	.LASF3:
- 1678 01a9 73686F72 		.ascii	"short int\000"
- 1678      7420696E 
- 1678      7400
- 1679              	.LASF34:
- 1680 01b3 2E5C4765 		.ascii	".\\Generated_Source\\PSoC5\\ADC_SAR_1_IRQ.c\000"
- 1680      6E657261 
- 1680      7465645F 
- 1680      536F7572 
- 1680      63655C50 
- 1681              	.LASF24:
- 1682 01dc 4144435F 		.ascii	"ADC_SAR_1_IRQ_Start\000"
- 1682      5341525F 
- 1682      315F4952 
- 1682      515F5374 
- 1682      61727400 
- 1683              	.LASF12:
- 1684 01f0 75696E74 		.ascii	"uint32\000"
- 1684      333200
- 1685              	.LASF28:
- 1686 01f7 4144435F 		.ascii	"ADC_SAR_1_IRQ_GetPriority\000"
- 1686      5341525F 
- 1686      315F4952 
- 1686      515F4765 
- 1686      74507269 
- 1687              	.LASF20:
- 1688 0211 61646472 		.ascii	"address\000"
- 1688      65737300 
- 1689              	.LASF8:
- 1690 0219 6C6F6E67 		.ascii	"long long unsigned int\000"
- 1690      206C6F6E 
- 1690      6720756E 
- 1690      7369676E 
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc54Jpya.s 			page 40
-
-
- 1690      65642069 
- 1691              	.LASF17:
- 1692 0230 63796973 		.ascii	"cyisraddress\000"
- 1692      72616464 
- 1692      72657373 
- 1692      00
- 1693              	.LASF9:
- 1694 023d 73697A65 		.ascii	"sizetype\000"
- 1694      74797065 
- 1694      00
- 1695              	.LASF23:
- 1696 0246 4144435F 		.ascii	"ADC_SAR_1_IRQ_Enable\000"
- 1696      5341525F 
- 1696      315F4952 
- 1696      515F456E 
- 1696      61626C65 
- 1697              	.LASF10:
- 1698 025b 63686172 		.ascii	"char\000"
- 1698      00
- 1699              	.LASF29:
- 1700 0260 72616D56 		.ascii	"ramVectorTable\000"
- 1700      6563746F 
- 1700      72546162 
- 1700      6C6500
- 1701              	.LASF27:
- 1702 026f 4144435F 		.ascii	"ADC_SAR_1_IRQ_GetVector\000"
- 1702      5341525F 
- 1702      315F4952 
- 1702      515F4765 
- 1702      74566563 
- 1703              	.LASF30:
- 1704 0287 4144435F 		.ascii	"ADC_SAR_1_IRQ_Interrupt\000"
- 1704      5341525F 
- 1704      315F4952 
- 1704      515F496E 
- 1704      74657272 
- 1705              	.LASF36:
- 1706 029f 4144435F 		.ascii	"ADC_SAR_1_IRQ_GetState\000"
- 1706      5341525F 
- 1706      315F4952 
- 1706      515F4765 
- 1706      74537461 
- 1707              	.LASF19:
- 1708 02b6 4144435F 		.ascii	"ADC_SAR_1_IRQ_SetPriority\000"
- 1708      5341525F 
- 1708      315F4952 
- 1708      515F5365 
- 1708      74507269 
- 1709              	.LASF32:
- 1710 02d0 4144435F 		.ascii	"ADC_SAR_1_IRQ_ClearPending\000"
- 1710      5341525F 
- 1710      315F4952 
- 1710      515F436C 
- 1710      65617250 
- 1711              	.LASF5:
- 1712 02eb 6C6F6E67 		.ascii	"long int\000"
- 1712      20696E74 
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc54Jpya.s 			page 41
-
-
- 1712      00
- 1713              	.LASF1:
- 1714 02f4 7369676E 		.ascii	"signed char\000"
- 1714      65642063 
- 1714      68617200 
- 1715              	.LASF31:
- 1716 0300 4144435F 		.ascii	"ADC_SAR_1_IRQ_SetPending\000"
- 1716      5341525F 
- 1716      315F4952 
- 1716      515F5365 
- 1716      7450656E 
- 1717              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.9.3 20150303 (release) [ARM/embedded-4_9-br
+ 1306      315F4952 
+ 1306      515F436C 
+ 1306      65617250 
+ 1307              	.LASF5:
+ 1308 02eb 6C6F6E67 		.ascii	"long int\000"
+ 1308      20696E74 
+ 1308      00
+ 1309              	.LASF1:
+ 1310 02f4 7369676E 		.ascii	"signed char\000"
+ 1310      65642063 
+ 1310      68617200 
+ 1311              	.LASF31:
+ 1312 0300 4144435F 		.ascii	"ADC_SAR_1_IRQ_SetPending\000"
+ 1312      5341525F 
+ 1312      315F4952 
+ 1312      515F5365 
+ 1312      7450656E 
+ 1313              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.9.3 20150303 (release) [ARM/embedded-4_9-br

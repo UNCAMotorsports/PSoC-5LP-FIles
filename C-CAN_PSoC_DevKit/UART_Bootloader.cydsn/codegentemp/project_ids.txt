@@ -1,0 +1,7 @@
+C:\Users\Patrick\Documents\GitHub\PSoC 5LP FIles\C-CAN_PSoC_DevKit\C-CAN.cydsn\C-CAN.cyprj|7e27602f-9cc3-4d14-ba3d-5e552dc7ee03
+C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|80ddb512-d710-4423-a395-9b0b46abd0f1
+C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\default\CyReferenceLibrary\CyReferenceLibrary.cylib\CyReferenceLibrary.cyprj|efd31a95-fabf-4e2e-8616-d4476eddfc8b
+C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|8d098300-ccc5-49f7-b1c2-bcde12e122ae
+C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|75cecd86-e144-448a-bfa2-457f2bfe669b
+C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|2a25a8f8-6a3d-4f13-a660-1c179d62bb70
+C:\Users\Patrick\Documents\GitHub\PSoC 5LP FIles\C-CAN_PSoC_DevKit\UART_Bootloader.cydsn\UART_Bootloader.cyprj|3b471960-368f-4186-ab0d-3f56c1d153be

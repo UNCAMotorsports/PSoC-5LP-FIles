@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccIX6jYz.s 			page 1
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccOA0PDY.s 			page 1
 
 
    1              		.syntax unified
@@ -10,7 +10,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccIX6jYz.s 			page 1
    7              		.eabi_attribute 24, 1
    8              		.eabi_attribute 25, 1
    9              		.eabi_attribute 26, 1
-  10              		.eabi_attribute 30, 2
+  10              		.eabi_attribute 30, 6
   11              		.eabi_attribute 34, 1
   12              		.eabi_attribute 18, 4
   13              		.thumb
@@ -18,15 +18,21 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccIX6jYz.s 			page 1
   15              		.text
   16              	.Ltext0:
   17              		.cfi_sections	.debug_frame
-  18              		.section	.text.Encoder_Left_Init,"ax",%progbits
-  19              		.align	2
-  20              		.global	Encoder_Left_Init
-  21              		.thumb
-  22              		.thumb_func
-  23              		.type	Encoder_Left_Init, %function
-  24              	Encoder_Left_Init:
-  25              	.LFB0:
-  26              		.file 1 ".\\Generated_Source\\PSoC5\\Encoder_Left.c"
+  18              		.global	Encoder_Left_initVar
+  19              		.bss
+  20              		.type	Encoder_Left_initVar, %object
+  21              		.size	Encoder_Left_initVar, 1
+  22              	Encoder_Left_initVar:
+  23 0000 00       		.space	1
+  24              		.section	.text.Encoder_Left_Init,"ax",%progbits
+  25              		.align	2
+  26              		.global	Encoder_Left_Init
+  27              		.thumb
+  28              		.thumb_func
+  29              		.type	Encoder_Left_Init, %function
+  30              	Encoder_Left_Init:
+  31              	.LFB0:
+  32              		.file 1 ".\\Generated_Source\\PSoC5\\Encoder_Left.c"
    1:.\Generated_Source\PSoC5/Encoder_Left.c **** /*******************************************************************************
    2:.\Generated_Source\PSoC5/Encoder_Left.c **** * File Name: Encoder_Left.c  
    3:.\Generated_Source\PSoC5/Encoder_Left.c **** * Version 3.0
@@ -52,15 +58,15 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccIX6jYz.s 			page 1
   23:.\Generated_Source\PSoC5/Encoder_Left.c **** 
   24:.\Generated_Source\PSoC5/Encoder_Left.c **** /*******************************************************************************
   25:.\Generated_Source\PSoC5/Encoder_Left.c **** * Function Name: Encoder_Left_Init
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccOA0PDY.s 			page 2
+
+
   26:.\Generated_Source\PSoC5/Encoder_Left.c **** ********************************************************************************
   27:.\Generated_Source\PSoC5/Encoder_Left.c **** * Summary:
   28:.\Generated_Source\PSoC5/Encoder_Left.c **** *     Initialize to the schematic state
   29:.\Generated_Source\PSoC5/Encoder_Left.c **** * 
   30:.\Generated_Source\PSoC5/Encoder_Left.c **** * Parameters:  
   31:.\Generated_Source\PSoC5/Encoder_Left.c **** *  void  
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccIX6jYz.s 			page 2
-
-
   32:.\Generated_Source\PSoC5/Encoder_Left.c **** *
   33:.\Generated_Source\PSoC5/Encoder_Left.c **** * Return: 
   34:.\Generated_Source\PSoC5/Encoder_Left.c **** *  void
@@ -68,16 +74,18 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccIX6jYz.s 			page 1
   36:.\Generated_Source\PSoC5/Encoder_Left.c **** *******************************************************************************/
   37:.\Generated_Source\PSoC5/Encoder_Left.c **** void Encoder_Left_Init(void) 
   38:.\Generated_Source\PSoC5/Encoder_Left.c **** {
-  27              		.loc 1 38 0
-  28              		.cfi_startproc
-  29              		@ args = 0, pretend = 0, frame = 0
-  30              		@ frame_needed = 0, uses_anonymous_args = 0
-  31 0000 38B5     		push	{r3, r4, r5, lr}
-  32              		.cfi_def_cfa_offset 16
-  33              		.cfi_offset 3, -16
-  34              		.cfi_offset 4, -12
-  35              		.cfi_offset 5, -8
-  36              		.cfi_offset 14, -4
+  33              		.loc 1 38 0
+  34              		.cfi_startproc
+  35              		@ args = 0, pretend = 0, frame = 8
+  36              		@ frame_needed = 1, uses_anonymous_args = 0
+  37 0000 80B5     		push	{r7, lr}
+  38              		.cfi_def_cfa_offset 8
+  39              		.cfi_offset 7, -8
+  40              		.cfi_offset 14, -4
+  41 0002 82B0     		sub	sp, sp, #8
+  42              		.cfi_def_cfa_offset 16
+  43 0004 00AF     		add	r7, sp, #0
+  44              		.cfi_def_cfa_register 7
   39:.\Generated_Source\PSoC5/Encoder_Left.c ****         #if (!Encoder_Left_UsingFixedFunction && !Encoder_Left_ControlRegRemoved)
   40:.\Generated_Source\PSoC5/Encoder_Left.c ****             uint8 ctrl;
   41:.\Generated_Source\PSoC5/Encoder_Left.c ****         #endif /* (!Encoder_Left_UsingFixedFunction && !Encoder_Left_ControlRegRemoved) */
@@ -110,6 +118,9 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccIX6jYz.s 			page 1
   68:.\Generated_Source\PSoC5/Encoder_Left.c ****             /* Clear and Set SYNCTC and SYNCCMP bits of RT1 register */
   69:.\Generated_Source\PSoC5/Encoder_Left.c ****             Encoder_Left_RT1 &= ((uint8)(~Encoder_Left_RT1_MASK));
   70:.\Generated_Source\PSoC5/Encoder_Left.c ****             Encoder_Left_RT1 |= Encoder_Left_SYNC;     
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccOA0PDY.s 			page 3
+
+
   71:.\Generated_Source\PSoC5/Encoder_Left.c ****                     
   72:.\Generated_Source\PSoC5/Encoder_Left.c ****             /*Enable DSI Sync all all inputs of the Timer*/
   73:.\Generated_Source\PSoC5/Encoder_Left.c ****             Encoder_Left_RT1 &= ((uint8)(~Encoder_Left_SYNCDSI_MASK));
@@ -118,25 +129,38 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccIX6jYz.s 			page 1
   76:.\Generated_Source\PSoC5/Encoder_Left.c ****         #else
   77:.\Generated_Source\PSoC5/Encoder_Left.c ****             #if(!Encoder_Left_ControlRegRemoved)
   78:.\Generated_Source\PSoC5/Encoder_Left.c ****             /* Set the default compare mode defined in the parameter */
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccIX6jYz.s 			page 3
-
-
   79:.\Generated_Source\PSoC5/Encoder_Left.c ****             ctrl = Encoder_Left_CONTROL & ((uint8)(~Encoder_Left_CTRL_CMPMODE_MASK));
-  37              		.loc 1 79 0
-  38 0002 1549     		ldr	r1, .L11
-  39              	.LBB40:
-  40              	.LBB41:
-  41              	.LBB42:
-  42              	.LBB43:
+  45              		.loc 1 79 0
+  46 0006 1C4B     		ldr	r3, .L2
+  47 0008 1B78     		ldrb	r3, [r3]
+  48 000a DBB2     		uxtb	r3, r3
+  49 000c 23F00703 		bic	r3, r3, #7
+  50 0010 FB71     		strb	r3, [r7, #7]
   80:.\Generated_Source\PSoC5/Encoder_Left.c ****             Encoder_Left_CONTROL = ctrl | Encoder_Left_DEFAULT_COMPARE_MODE;
+  51              		.loc 1 80 0
+  52 0012 194A     		ldr	r2, .L2
+  53 0014 FB79     		ldrb	r3, [r7, #7]
+  54 0016 43F00103 		orr	r3, r3, #1
+  55 001a DBB2     		uxtb	r3, r3
+  56 001c 1370     		strb	r3, [r2]
   81:.\Generated_Source\PSoC5/Encoder_Left.c ****             
   82:.\Generated_Source\PSoC5/Encoder_Left.c ****             /* Set the default capture mode defined in the parameter */
   83:.\Generated_Source\PSoC5/Encoder_Left.c ****             ctrl = Encoder_Left_CONTROL & ((uint8)(~Encoder_Left_CTRL_CAPMODE_MASK));
+  57              		.loc 1 83 0
+  58 001e 164B     		ldr	r3, .L2
+  59 0020 1B78     		ldrb	r3, [r3]
+  60 0022 DBB2     		uxtb	r3, r3
+  61 0024 23F00303 		bic	r3, r3, #3
+  62 0028 FB71     		strb	r3, [r7, #7]
   84:.\Generated_Source\PSoC5/Encoder_Left.c ****             
   85:.\Generated_Source\PSoC5/Encoder_Left.c ****             #if( 0 != Encoder_Left_CAPTURE_MODE_CONF)
   86:.\Generated_Source\PSoC5/Encoder_Left.c ****                 Encoder_Left_CONTROL = ctrl | Encoder_Left_DEFAULT_CAPTURE_MODE;
   87:.\Generated_Source\PSoC5/Encoder_Left.c ****             #else
   88:.\Generated_Source\PSoC5/Encoder_Left.c ****                 Encoder_Left_CONTROL = ctrl;
+  63              		.loc 1 88 0
+  64 002a 134A     		ldr	r2, .L2
+  65 002c FB79     		ldrb	r3, [r7, #7]
+  66 002e 1370     		strb	r3, [r2]
   89:.\Generated_Source\PSoC5/Encoder_Left.c ****             #endif /* 0 != Encoder_Left_CAPTURE_MODE */ 
   90:.\Generated_Source\PSoC5/Encoder_Left.c ****             
   91:.\Generated_Source\PSoC5/Encoder_Left.c ****             #endif /* (!Encoder_Left_ControlRegRemoved) */
@@ -145,42 +169,100 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccIX6jYz.s 			page 1
   94:.\Generated_Source\PSoC5/Encoder_Left.c ****         /* Clear all data in the FIFO's */
   95:.\Generated_Source\PSoC5/Encoder_Left.c ****         #if (!Encoder_Left_UsingFixedFunction)
   96:.\Generated_Source\PSoC5/Encoder_Left.c ****             Encoder_Left_ClearFIFO();
+  67              		.loc 1 96 0
+  68 0030 FFF7FEFF 		bl	Encoder_Left_ClearFIFO
   97:.\Generated_Source\PSoC5/Encoder_Left.c ****         #endif /* (!Encoder_Left_UsingFixedFunction) */
   98:.\Generated_Source\PSoC5/Encoder_Left.c ****         
   99:.\Generated_Source\PSoC5/Encoder_Left.c ****         /* Set Initial values from Configuration */
  100:.\Generated_Source\PSoC5/Encoder_Left.c ****         Encoder_Left_WritePeriod(Encoder_Left_INIT_PERIOD_VALUE);
+  69              		.loc 1 100 0
+  70 0034 0020     		movs	r0, #0
+  71 0036 FFF7FEFF 		bl	Encoder_Left_WritePeriod
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccOA0PDY.s 			page 4
+
+
  101:.\Generated_Source\PSoC5/Encoder_Left.c ****         #if (!(Encoder_Left_UsingFixedFunction && (CY_PSOC5A)))
  102:.\Generated_Source\PSoC5/Encoder_Left.c ****             Encoder_Left_WriteCounter(Encoder_Left_INIT_COUNTER_VALUE);
+  72              		.loc 1 102 0
+  73 003a 0020     		movs	r0, #0
+  74 003c FFF7FEFF 		bl	Encoder_Left_WriteCounter
  103:.\Generated_Source\PSoC5/Encoder_Left.c ****         #endif /* (!(Encoder_Left_UsingFixedFunction && (CY_PSOC5A))) */
  104:.\Generated_Source\PSoC5/Encoder_Left.c ****         Encoder_Left_SetInterruptMode(Encoder_Left_INIT_INTERRUPTS_MASK);
+  75              		.loc 1 104 0
+  76 0040 0020     		movs	r0, #0
+  77 0042 FFF7FEFF 		bl	Encoder_Left_SetInterruptMode
  105:.\Generated_Source\PSoC5/Encoder_Left.c ****         
  106:.\Generated_Source\PSoC5/Encoder_Left.c ****         #if (!Encoder_Left_UsingFixedFunction)
  107:.\Generated_Source\PSoC5/Encoder_Left.c ****             /* Read the status register to clear the unwanted interrupts */
  108:.\Generated_Source\PSoC5/Encoder_Left.c ****             (void)Encoder_Left_ReadStatusRegister();
+  78              		.loc 1 108 0
+  79 0046 FFF7FEFF 		bl	Encoder_Left_ReadStatusRegister
  109:.\Generated_Source\PSoC5/Encoder_Left.c ****             /* Set the compare value (only available to non-fixed function implementation */
  110:.\Generated_Source\PSoC5/Encoder_Left.c ****             Encoder_Left_WriteCompare(Encoder_Left_INIT_COMPARE_VALUE);
+  80              		.loc 1 110 0
+  81 004a 0020     		movs	r0, #0
+  82 004c FFF7FEFF 		bl	Encoder_Left_WriteCompare
  111:.\Generated_Source\PSoC5/Encoder_Left.c ****             /* Use the interrupt output of the status register for IRQ output */
  112:.\Generated_Source\PSoC5/Encoder_Left.c ****             
  113:.\Generated_Source\PSoC5/Encoder_Left.c ****             /* CyEnterCriticalRegion and CyExitCriticalRegion are used to mark following region cri
  114:.\Generated_Source\PSoC5/Encoder_Left.c ****             /* Enter Critical Region*/
  115:.\Generated_Source\PSoC5/Encoder_Left.c ****             Encoder_Left_interruptState = CyEnterCriticalSection();
+  83              		.loc 1 115 0
+  84 0050 FFF7FEFF 		bl	CyEnterCriticalSection
+  85 0054 0346     		mov	r3, r0
+  86 0056 BB71     		strb	r3, [r7, #6]
  116:.\Generated_Source\PSoC5/Encoder_Left.c ****             
  117:.\Generated_Source\PSoC5/Encoder_Left.c ****             Encoder_Left_STATUS_AUX_CTRL |= Encoder_Left_STATUS_ACTL_INT_EN_MASK;
+  87              		.loc 1 117 0
+  88 0058 084A     		ldr	r2, .L2+4
+  89 005a 084B     		ldr	r3, .L2+4
+  90 005c 1B78     		ldrb	r3, [r3]
+  91 005e DBB2     		uxtb	r3, r3
+  92 0060 43F01003 		orr	r3, r3, #16
+  93 0064 DBB2     		uxtb	r3, r3
+  94 0066 1370     		strb	r3, [r2]
  118:.\Generated_Source\PSoC5/Encoder_Left.c ****             
  119:.\Generated_Source\PSoC5/Encoder_Left.c ****             /* Exit Critical Region*/
  120:.\Generated_Source\PSoC5/Encoder_Left.c ****             CyExitCriticalSection(Encoder_Left_interruptState);
+  95              		.loc 1 120 0
+  96 0068 BB79     		ldrb	r3, [r7, #6]	@ zero_extendqisi2
+  97 006a 1846     		mov	r0, r3
+  98 006c FFF7FEFF 		bl	CyExitCriticalSection
  121:.\Generated_Source\PSoC5/Encoder_Left.c ****             
  122:.\Generated_Source\PSoC5/Encoder_Left.c ****         #endif /* (!Encoder_Left_UsingFixedFunction) */
  123:.\Generated_Source\PSoC5/Encoder_Left.c **** }
+  99              		.loc 1 123 0
+ 100 0070 0837     		adds	r7, r7, #8
+ 101              		.cfi_def_cfa_offset 8
+ 102 0072 BD46     		mov	sp, r7
+ 103              		.cfi_def_cfa_register 13
+ 104              		@ sp needed
+ 105 0074 80BD     		pop	{r7, pc}
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccOA0PDY.s 			page 5
+
+
+ 106              	.L3:
+ 107 0076 00BF     		.align	2
+ 108              	.L2:
+ 109 0078 7B650040 		.word	1073767803
+ 110 007c 99640040 		.word	1073767577
+ 111              		.cfi_endproc
+ 112              	.LFE0:
+ 113              		.size	Encoder_Left_Init, .-Encoder_Left_Init
+ 114              		.section	.text.Encoder_Left_Enable,"ax",%progbits
+ 115              		.align	2
+ 116              		.global	Encoder_Left_Enable
+ 117              		.thumb
+ 118              		.thumb_func
+ 119              		.type	Encoder_Left_Enable, %function
+ 120              	Encoder_Left_Enable:
+ 121              	.LFB1:
  124:.\Generated_Source\PSoC5/Encoder_Left.c **** 
  125:.\Generated_Source\PSoC5/Encoder_Left.c **** 
  126:.\Generated_Source\PSoC5/Encoder_Left.c **** /*******************************************************************************
  127:.\Generated_Source\PSoC5/Encoder_Left.c **** * Function Name: Encoder_Left_Enable
  128:.\Generated_Source\PSoC5/Encoder_Left.c **** ********************************************************************************
  129:.\Generated_Source\PSoC5/Encoder_Left.c **** * Summary:
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccIX6jYz.s 			page 4
-
-
  130:.\Generated_Source\PSoC5/Encoder_Left.c **** *     Enable the Counter
  131:.\Generated_Source\PSoC5/Encoder_Left.c **** * 
  132:.\Generated_Source\PSoC5/Encoder_Left.c **** * Parameters:  
@@ -196,6 +278,16 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccIX6jYz.s 			page 1
  142:.\Generated_Source\PSoC5/Encoder_Left.c **** *******************************************************************************/
  143:.\Generated_Source\PSoC5/Encoder_Left.c **** void Encoder_Left_Enable(void) 
  144:.\Generated_Source\PSoC5/Encoder_Left.c **** {
+ 122              		.loc 1 144 0
+ 123              		.cfi_startproc
+ 124              		@ args = 0, pretend = 0, frame = 0
+ 125              		@ frame_needed = 1, uses_anonymous_args = 0
+ 126              		@ link register save eliminated.
+ 127 0000 80B4     		push	{r7}
+ 128              		.cfi_def_cfa_offset 4
+ 129              		.cfi_offset 7, -4
+ 130 0002 00AF     		add	r7, sp, #0
+ 131              		.cfi_def_cfa_register 7
  145:.\Generated_Source\PSoC5/Encoder_Left.c ****     /* Globally Enable the Fixed Function Block chosen */
  146:.\Generated_Source\PSoC5/Encoder_Left.c ****     #if (Encoder_Left_UsingFixedFunction)
  147:.\Generated_Source\PSoC5/Encoder_Left.c ****         Encoder_Left_GLOBAL_ENABLE |= Encoder_Left_BLOCK_EN_MASK;
@@ -206,10 +298,44 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccIX6jYz.s 			page 1
  152:.\Generated_Source\PSoC5/Encoder_Left.c ****     /* If Fixed Function then make sure Mode is set correctly */
  153:.\Generated_Source\PSoC5/Encoder_Left.c ****     /* else make sure reset is clear */
  154:.\Generated_Source\PSoC5/Encoder_Left.c ****     #if(!Encoder_Left_ControlRegRemoved || Encoder_Left_UsingFixedFunction)
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccOA0PDY.s 			page 6
+
+
  155:.\Generated_Source\PSoC5/Encoder_Left.c ****         Encoder_Left_CONTROL |= Encoder_Left_CTRL_ENABLE;                
+ 132              		.loc 1 155 0
+ 133 0004 054A     		ldr	r2, .L5
+ 134 0006 054B     		ldr	r3, .L5
+ 135 0008 1B78     		ldrb	r3, [r3]
+ 136 000a DBB2     		uxtb	r3, r3
+ 137 000c 63F07F03 		orn	r3, r3, #127
+ 138 0010 DBB2     		uxtb	r3, r3
+ 139 0012 1370     		strb	r3, [r2]
  156:.\Generated_Source\PSoC5/Encoder_Left.c ****     #endif /* (!Encoder_Left_ControlRegRemoved || Encoder_Left_UsingFixedFunction) */
  157:.\Generated_Source\PSoC5/Encoder_Left.c ****     
  158:.\Generated_Source\PSoC5/Encoder_Left.c **** }
+ 140              		.loc 1 158 0
+ 141 0014 BD46     		mov	sp, r7
+ 142              		.cfi_def_cfa_register 13
+ 143              		@ sp needed
+ 144 0016 5DF8047B 		ldr	r7, [sp], #4
+ 145              		.cfi_restore 7
+ 146              		.cfi_def_cfa_offset 0
+ 147 001a 7047     		bx	lr
+ 148              	.L6:
+ 149              		.align	2
+ 150              	.L5:
+ 151 001c 7B650040 		.word	1073767803
+ 152              		.cfi_endproc
+ 153              	.LFE1:
+ 154              		.size	Encoder_Left_Enable, .-Encoder_Left_Enable
+ 155              		.section	.text.Encoder_Left_Start,"ax",%progbits
+ 156              		.align	2
+ 157              		.global	Encoder_Left_Start
+ 158              		.thumb
+ 159              		.thumb_func
+ 160              		.type	Encoder_Left_Start, %function
+ 161              	Encoder_Left_Start:
+ 162              	.LFB2:
  159:.\Generated_Source\PSoC5/Encoder_Left.c **** 
  160:.\Generated_Source\PSoC5/Encoder_Left.c **** 
  161:.\Generated_Source\PSoC5/Encoder_Left.c **** /*******************************************************************************
@@ -231,19 +357,60 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccIX6jYz.s 			page 1
  177:.\Generated_Source\PSoC5/Encoder_Left.c **** *******************************************************************************/
  178:.\Generated_Source\PSoC5/Encoder_Left.c **** void Encoder_Left_Start(void) 
  179:.\Generated_Source\PSoC5/Encoder_Left.c **** {
+ 163              		.loc 1 179 0
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccOA0PDY.s 			page 7
+
+
+ 164              		.cfi_startproc
+ 165              		@ args = 0, pretend = 0, frame = 0
+ 166              		@ frame_needed = 1, uses_anonymous_args = 0
+ 167 0000 80B5     		push	{r7, lr}
+ 168              		.cfi_def_cfa_offset 8
+ 169              		.cfi_offset 7, -8
+ 170              		.cfi_offset 14, -4
+ 171 0002 00AF     		add	r7, sp, #0
+ 172              		.cfi_def_cfa_register 7
  180:.\Generated_Source\PSoC5/Encoder_Left.c ****     if(Encoder_Left_initVar == 0u)
+ 173              		.loc 1 180 0
+ 174 0004 054B     		ldr	r3, .L9
+ 175 0006 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
+ 176 0008 002B     		cmp	r3, #0
+ 177 000a 04D1     		bne	.L8
  181:.\Generated_Source\PSoC5/Encoder_Left.c ****     {
  182:.\Generated_Source\PSoC5/Encoder_Left.c ****         Encoder_Left_Init();
+ 178              		.loc 1 182 0
+ 179 000c FFF7FEFF 		bl	Encoder_Left_Init
  183:.\Generated_Source\PSoC5/Encoder_Left.c ****         
  184:.\Generated_Source\PSoC5/Encoder_Left.c ****         Encoder_Left_initVar = 1u; /* Clear this bit for Initialization */        
+ 180              		.loc 1 184 0
+ 181 0010 024B     		ldr	r3, .L9
+ 182 0012 0122     		movs	r2, #1
+ 183 0014 1A70     		strb	r2, [r3]
+ 184              	.L8:
  185:.\Generated_Source\PSoC5/Encoder_Left.c ****     }
  186:.\Generated_Source\PSoC5/Encoder_Left.c ****     
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccIX6jYz.s 			page 5
-
-
  187:.\Generated_Source\PSoC5/Encoder_Left.c ****     /* Enable the Counter */
  188:.\Generated_Source\PSoC5/Encoder_Left.c ****     Encoder_Left_Enable();        
+ 185              		.loc 1 188 0
+ 186 0016 FFF7FEFF 		bl	Encoder_Left_Enable
  189:.\Generated_Source\PSoC5/Encoder_Left.c **** }
+ 187              		.loc 1 189 0
+ 188 001a 80BD     		pop	{r7, pc}
+ 189              	.L10:
+ 190              		.align	2
+ 191              	.L9:
+ 192 001c 00000000 		.word	Encoder_Left_initVar
+ 193              		.cfi_endproc
+ 194              	.LFE2:
+ 195              		.size	Encoder_Left_Start, .-Encoder_Left_Start
+ 196              		.section	.text.Encoder_Left_Stop,"ax",%progbits
+ 197              		.align	2
+ 198              		.global	Encoder_Left_Stop
+ 199              		.thumb
+ 200              		.thumb_func
+ 201              		.type	Encoder_Left_Stop, %function
+ 202              	Encoder_Left_Stop:
+ 203              	.LFB3:
  190:.\Generated_Source\PSoC5/Encoder_Left.c **** 
  191:.\Generated_Source\PSoC5/Encoder_Left.c **** 
  192:.\Generated_Source\PSoC5/Encoder_Left.c **** /*******************************************************************************
@@ -251,6 +418,9 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccIX6jYz.s 			page 1
  194:.\Generated_Source\PSoC5/Encoder_Left.c **** ********************************************************************************
  195:.\Generated_Source\PSoC5/Encoder_Left.c **** * Summary:
  196:.\Generated_Source\PSoC5/Encoder_Left.c **** * Halts the counter, but does not change any modes or disable interrupts.
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccOA0PDY.s 			page 8
+
+
  197:.\Generated_Source\PSoC5/Encoder_Left.c **** *
  198:.\Generated_Source\PSoC5/Encoder_Left.c **** * Parameters:  
  199:.\Generated_Source\PSoC5/Encoder_Left.c **** *  void  
@@ -264,9 +434,27 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccIX6jYz.s 			page 1
  207:.\Generated_Source\PSoC5/Encoder_Left.c **** *******************************************************************************/
  208:.\Generated_Source\PSoC5/Encoder_Left.c **** void Encoder_Left_Stop(void) 
  209:.\Generated_Source\PSoC5/Encoder_Left.c **** {
+ 204              		.loc 1 209 0
+ 205              		.cfi_startproc
+ 206              		@ args = 0, pretend = 0, frame = 0
+ 207              		@ frame_needed = 1, uses_anonymous_args = 0
+ 208              		@ link register save eliminated.
+ 209 0000 80B4     		push	{r7}
+ 210              		.cfi_def_cfa_offset 4
+ 211              		.cfi_offset 7, -4
+ 212 0002 00AF     		add	r7, sp, #0
+ 213              		.cfi_def_cfa_register 7
  210:.\Generated_Source\PSoC5/Encoder_Left.c ****     /* Disable Counter */
  211:.\Generated_Source\PSoC5/Encoder_Left.c ****     #if(!Encoder_Left_ControlRegRemoved || Encoder_Left_UsingFixedFunction)
  212:.\Generated_Source\PSoC5/Encoder_Left.c ****         Encoder_Left_CONTROL &= ((uint8)(~Encoder_Left_CTRL_ENABLE));        
+ 214              		.loc 1 212 0
+ 215 0004 054A     		ldr	r2, .L12
+ 216 0006 054B     		ldr	r3, .L12
+ 217 0008 1B78     		ldrb	r3, [r3]
+ 218 000a DBB2     		uxtb	r3, r3
+ 219 000c 03F07F03 		and	r3, r3, #127
+ 220 0010 DBB2     		uxtb	r3, r3
+ 221 0012 1370     		strb	r3, [r2]
  213:.\Generated_Source\PSoC5/Encoder_Left.c ****     #endif /* (!Encoder_Left_ControlRegRemoved || Encoder_Left_UsingFixedFunction) */
  214:.\Generated_Source\PSoC5/Encoder_Left.c ****     
  215:.\Generated_Source\PSoC5/Encoder_Left.c ****     /* Globally disable the Fixed Function Block chosen */
@@ -275,6 +463,32 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccIX6jYz.s 			page 1
  218:.\Generated_Source\PSoC5/Encoder_Left.c ****         Encoder_Left_GLOBAL_STBY_ENABLE &= ((uint8)(~Encoder_Left_BLOCK_STBY_EN_MASK));
  219:.\Generated_Source\PSoC5/Encoder_Left.c ****     #endif /* (Encoder_Left_UsingFixedFunction) */
  220:.\Generated_Source\PSoC5/Encoder_Left.c **** }
+ 222              		.loc 1 220 0
+ 223 0014 BD46     		mov	sp, r7
+ 224              		.cfi_def_cfa_register 13
+ 225              		@ sp needed
+ 226 0016 5DF8047B 		ldr	r7, [sp], #4
+ 227              		.cfi_restore 7
+ 228              		.cfi_def_cfa_offset 0
+ 229 001a 7047     		bx	lr
+ 230              	.L13:
+ 231              		.align	2
+ 232              	.L12:
+ 233 001c 7B650040 		.word	1073767803
+ 234              		.cfi_endproc
+ 235              	.LFE3:
+ 236              		.size	Encoder_Left_Stop, .-Encoder_Left_Stop
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccOA0PDY.s 			page 9
+
+
+ 237              		.section	.text.Encoder_Left_SetInterruptMode,"ax",%progbits
+ 238              		.align	2
+ 239              		.global	Encoder_Left_SetInterruptMode
+ 240              		.thumb
+ 241              		.thumb_func
+ 242              		.type	Encoder_Left_SetInterruptMode, %function
+ 243              	Encoder_Left_SetInterruptMode:
+ 244              	.LFB4:
  221:.\Generated_Source\PSoC5/Encoder_Left.c **** 
  222:.\Generated_Source\PSoC5/Encoder_Left.c **** 
  223:.\Generated_Source\PSoC5/Encoder_Left.c **** /*******************************************************************************
@@ -293,14 +507,57 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccIX6jYz.s 			page 1
  236:.\Generated_Source\PSoC5/Encoder_Left.c **** *******************************************************************************/
  237:.\Generated_Source\PSoC5/Encoder_Left.c **** void Encoder_Left_SetInterruptMode(uint8 interruptsMask) 
  238:.\Generated_Source\PSoC5/Encoder_Left.c **** {
+ 245              		.loc 1 238 0
+ 246              		.cfi_startproc
+ 247              		@ args = 0, pretend = 0, frame = 8
+ 248              		@ frame_needed = 1, uses_anonymous_args = 0
+ 249              		@ link register save eliminated.
+ 250 0000 80B4     		push	{r7}
+ 251              		.cfi_def_cfa_offset 4
+ 252              		.cfi_offset 7, -4
+ 253 0002 83B0     		sub	sp, sp, #12
+ 254              		.cfi_def_cfa_offset 16
+ 255 0004 00AF     		add	r7, sp, #0
+ 256              		.cfi_def_cfa_register 7
+ 257 0006 0346     		mov	r3, r0
+ 258 0008 FB71     		strb	r3, [r7, #7]
  239:.\Generated_Source\PSoC5/Encoder_Left.c ****     Encoder_Left_STATUS_MASK = interruptsMask;
+ 259              		.loc 1 239 0
+ 260 000a 044A     		ldr	r2, .L15
+ 261 000c FB79     		ldrb	r3, [r7, #7]
+ 262 000e 1370     		strb	r3, [r2]
  240:.\Generated_Source\PSoC5/Encoder_Left.c **** }
+ 263              		.loc 1 240 0
+ 264 0010 0C37     		adds	r7, r7, #12
+ 265              		.cfi_def_cfa_offset 4
+ 266 0012 BD46     		mov	sp, r7
+ 267              		.cfi_def_cfa_register 13
+ 268              		@ sp needed
+ 269 0014 5DF8047B 		ldr	r7, [sp], #4
+ 270              		.cfi_restore 7
+ 271              		.cfi_def_cfa_offset 0
+ 272 0018 7047     		bx	lr
+ 273              	.L16:
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccOA0PDY.s 			page 10
+
+
+ 274 001a 00BF     		.align	2
+ 275              	.L15:
+ 276 001c 89640040 		.word	1073767561
+ 277              		.cfi_endproc
+ 278              	.LFE4:
+ 279              		.size	Encoder_Left_SetInterruptMode, .-Encoder_Left_SetInterruptMode
+ 280              		.section	.text.Encoder_Left_ReadStatusRegister,"ax",%progbits
+ 281              		.align	2
+ 282              		.global	Encoder_Left_ReadStatusRegister
+ 283              		.thumb
+ 284              		.thumb_func
+ 285              		.type	Encoder_Left_ReadStatusRegister, %function
+ 286              	Encoder_Left_ReadStatusRegister:
+ 287              	.LFB5:
  241:.\Generated_Source\PSoC5/Encoder_Left.c **** 
  242:.\Generated_Source\PSoC5/Encoder_Left.c **** 
  243:.\Generated_Source\PSoC5/Encoder_Left.c **** /*******************************************************************************
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccIX6jYz.s 			page 6
-
-
  244:.\Generated_Source\PSoC5/Encoder_Left.c **** * Function Name: Encoder_Left_ReadStatusRegister
  245:.\Generated_Source\PSoC5/Encoder_Left.c **** ********************************************************************************
  246:.\Generated_Source\PSoC5/Encoder_Left.c **** * Summary:
@@ -320,47 +577,52 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccIX6jYz.s 			page 1
  260:.\Generated_Source\PSoC5/Encoder_Left.c **** *******************************************************************************/
  261:.\Generated_Source\PSoC5/Encoder_Left.c **** uint8   Encoder_Left_ReadStatusRegister(void) 
  262:.\Generated_Source\PSoC5/Encoder_Left.c **** {
+ 288              		.loc 1 262 0
+ 289              		.cfi_startproc
+ 290              		@ args = 0, pretend = 0, frame = 0
+ 291              		@ frame_needed = 1, uses_anonymous_args = 0
+ 292              		@ link register save eliminated.
+ 293 0000 80B4     		push	{r7}
+ 294              		.cfi_def_cfa_offset 4
+ 295              		.cfi_offset 7, -4
+ 296 0002 00AF     		add	r7, sp, #0
+ 297              		.cfi_def_cfa_register 7
  263:.\Generated_Source\PSoC5/Encoder_Left.c ****     return Encoder_Left_STATUS;
-  43              		.loc 1 263 0
-  44 0004 154A     		ldr	r2, .L11+4
-  45              	.LBE43:
-  46              	.LBE42:
-  47              	.LBE41:
-  48              	.LBE40:
-  79:.\Generated_Source\PSoC5/Encoder_Left.c ****             Encoder_Left_CONTROL = ctrl | Encoder_Left_DEFAULT_COMPARE_MODE;
-  49              		.loc 1 79 0
-  50 0006 0B78     		ldrb	r3, [r1]	@ zero_extendqisi2
-  51              	.LVL0:
-  52 0008 03F0F803 		and	r3, r3, #248
-  53              	.LVL1:
-  80:.\Generated_Source\PSoC5/Encoder_Left.c ****             Encoder_Left_CONTROL = ctrl | Encoder_Left_DEFAULT_COMPARE_MODE;
-  54              		.loc 1 80 0
-  55 000c 43F00103 		orr	r3, r3, #1
-  56 0010 0B70     		strb	r3, [r1]
-  83:.\Generated_Source\PSoC5/Encoder_Left.c ****             
-  57              		.loc 1 83 0
-  58 0012 0B78     		ldrb	r3, [r1]	@ zero_extendqisi2
-  59 0014 03F0FC03 		and	r3, r3, #252
-  60              	.LVL2:
-  88:.\Generated_Source\PSoC5/Encoder_Left.c ****             #endif /* 0 != Encoder_Left_CAPTURE_MODE */ 
-  61              		.loc 1 88 0
-  62 0018 0B70     		strb	r3, [r1]
-  63              	.LBB51:
-  64              	.LBB50:
-  65              	.LBB46:
-  66              	.LBB44:
-  67              		.loc 1 263 0
-  68 001a 1378     		ldrb	r3, [r2]	@ zero_extendqisi2
-  69              	.LVL3:
-  70              	.LBE44:
-  71              	.LBE46:
+ 298              		.loc 1 263 0
+ 299 0004 034B     		ldr	r3, .L19
+ 300 0006 1B78     		ldrb	r3, [r3]
+ 301 0008 DBB2     		uxtb	r3, r3
  264:.\Generated_Source\PSoC5/Encoder_Left.c **** }
+ 302              		.loc 1 264 0
+ 303 000a 1846     		mov	r0, r3
+ 304 000c BD46     		mov	sp, r7
+ 305              		.cfi_def_cfa_register 13
+ 306              		@ sp needed
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccOA0PDY.s 			page 11
+
+
+ 307 000e 5DF8047B 		ldr	r7, [sp], #4
+ 308              		.cfi_restore 7
+ 309              		.cfi_def_cfa_offset 0
+ 310 0012 7047     		bx	lr
+ 311              	.L20:
+ 312              		.align	2
+ 313              	.L19:
+ 314 0014 69640040 		.word	1073767529
+ 315              		.cfi_endproc
+ 316              	.LFE5:
+ 317              		.size	Encoder_Left_ReadStatusRegister, .-Encoder_Left_ReadStatusRegister
+ 318              		.section	.text.Encoder_Left_ReadControlRegister,"ax",%progbits
+ 319              		.align	2
+ 320              		.global	Encoder_Left_ReadControlRegister
+ 321              		.thumb
+ 322              		.thumb_func
+ 323              		.type	Encoder_Left_ReadControlRegister, %function
+ 324              	Encoder_Left_ReadControlRegister:
+ 325              	.LFB6:
  265:.\Generated_Source\PSoC5/Encoder_Left.c **** 
  266:.\Generated_Source\PSoC5/Encoder_Left.c **** 
  267:.\Generated_Source\PSoC5/Encoder_Left.c **** #if(!Encoder_Left_ControlRegRemoved)
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccIX6jYz.s 			page 7
-
-
  268:.\Generated_Source\PSoC5/Encoder_Left.c **** /*******************************************************************************
  269:.\Generated_Source\PSoC5/Encoder_Left.c **** * Function Name: Encoder_Left_ReadControlRegister
  270:.\Generated_Source\PSoC5/Encoder_Left.c **** ********************************************************************************
@@ -378,8 +640,49 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccIX6jYz.s 			page 1
  282:.\Generated_Source\PSoC5/Encoder_Left.c **** *******************************************************************************/
  283:.\Generated_Source\PSoC5/Encoder_Left.c **** uint8   Encoder_Left_ReadControlRegister(void) 
  284:.\Generated_Source\PSoC5/Encoder_Left.c **** {
+ 326              		.loc 1 284 0
+ 327              		.cfi_startproc
+ 328              		@ args = 0, pretend = 0, frame = 0
+ 329              		@ frame_needed = 1, uses_anonymous_args = 0
+ 330              		@ link register save eliminated.
+ 331 0000 80B4     		push	{r7}
+ 332              		.cfi_def_cfa_offset 4
+ 333              		.cfi_offset 7, -4
+ 334 0002 00AF     		add	r7, sp, #0
+ 335              		.cfi_def_cfa_register 7
  285:.\Generated_Source\PSoC5/Encoder_Left.c ****     return Encoder_Left_CONTROL;
+ 336              		.loc 1 285 0
+ 337 0004 034B     		ldr	r3, .L23
+ 338 0006 1B78     		ldrb	r3, [r3]
+ 339 0008 DBB2     		uxtb	r3, r3
  286:.\Generated_Source\PSoC5/Encoder_Left.c **** }
+ 340              		.loc 1 286 0
+ 341 000a 1846     		mov	r0, r3
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccOA0PDY.s 			page 12
+
+
+ 342 000c BD46     		mov	sp, r7
+ 343              		.cfi_def_cfa_register 13
+ 344              		@ sp needed
+ 345 000e 5DF8047B 		ldr	r7, [sp], #4
+ 346              		.cfi_restore 7
+ 347              		.cfi_def_cfa_offset 0
+ 348 0012 7047     		bx	lr
+ 349              	.L24:
+ 350              		.align	2
+ 351              	.L23:
+ 352 0014 7B650040 		.word	1073767803
+ 353              		.cfi_endproc
+ 354              	.LFE6:
+ 355              		.size	Encoder_Left_ReadControlRegister, .-Encoder_Left_ReadControlRegister
+ 356              		.section	.text.Encoder_Left_WriteControlRegister,"ax",%progbits
+ 357              		.align	2
+ 358              		.global	Encoder_Left_WriteControlRegister
+ 359              		.thumb
+ 360              		.thumb_func
+ 361              		.type	Encoder_Left_WriteControlRegister, %function
+ 362              	Encoder_Left_WriteControlRegister:
+ 363              	.LFB7:
  287:.\Generated_Source\PSoC5/Encoder_Left.c **** 
  288:.\Generated_Source\PSoC5/Encoder_Left.c **** 
  289:.\Generated_Source\PSoC5/Encoder_Left.c **** /*******************************************************************************
@@ -399,8 +702,54 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccIX6jYz.s 			page 1
  303:.\Generated_Source\PSoC5/Encoder_Left.c **** *******************************************************************************/
  304:.\Generated_Source\PSoC5/Encoder_Left.c **** void    Encoder_Left_WriteControlRegister(uint8 control) 
  305:.\Generated_Source\PSoC5/Encoder_Left.c **** {
+ 364              		.loc 1 305 0
+ 365              		.cfi_startproc
+ 366              		@ args = 0, pretend = 0, frame = 8
+ 367              		@ frame_needed = 1, uses_anonymous_args = 0
+ 368              		@ link register save eliminated.
+ 369 0000 80B4     		push	{r7}
+ 370              		.cfi_def_cfa_offset 4
+ 371              		.cfi_offset 7, -4
+ 372 0002 83B0     		sub	sp, sp, #12
+ 373              		.cfi_def_cfa_offset 16
+ 374 0004 00AF     		add	r7, sp, #0
+ 375              		.cfi_def_cfa_register 7
+ 376 0006 0346     		mov	r3, r0
+ 377 0008 FB71     		strb	r3, [r7, #7]
  306:.\Generated_Source\PSoC5/Encoder_Left.c ****     Encoder_Left_CONTROL = control;
+ 378              		.loc 1 306 0
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccOA0PDY.s 			page 13
+
+
+ 379 000a 044A     		ldr	r2, .L26
+ 380 000c FB79     		ldrb	r3, [r7, #7]
+ 381 000e 1370     		strb	r3, [r2]
  307:.\Generated_Source\PSoC5/Encoder_Left.c **** }
+ 382              		.loc 1 307 0
+ 383 0010 0C37     		adds	r7, r7, #12
+ 384              		.cfi_def_cfa_offset 4
+ 385 0012 BD46     		mov	sp, r7
+ 386              		.cfi_def_cfa_register 13
+ 387              		@ sp needed
+ 388 0014 5DF8047B 		ldr	r7, [sp], #4
+ 389              		.cfi_restore 7
+ 390              		.cfi_def_cfa_offset 0
+ 391 0018 7047     		bx	lr
+ 392              	.L27:
+ 393 001a 00BF     		.align	2
+ 394              	.L26:
+ 395 001c 7B650040 		.word	1073767803
+ 396              		.cfi_endproc
+ 397              	.LFE7:
+ 398              		.size	Encoder_Left_WriteControlRegister, .-Encoder_Left_WriteControlRegister
+ 399              		.section	.text.Encoder_Left_WriteCounter,"ax",%progbits
+ 400              		.align	2
+ 401              		.global	Encoder_Left_WriteCounter
+ 402              		.thumb
+ 403              		.thumb_func
+ 404              		.type	Encoder_Left_WriteCounter, %function
+ 405              	Encoder_Left_WriteCounter:
+ 406              	.LFB8:
  308:.\Generated_Source\PSoC5/Encoder_Left.c **** 
  309:.\Generated_Source\PSoC5/Encoder_Left.c **** #endif  /* (!Encoder_Left_ControlRegRemoved) */
  310:.\Generated_Source\PSoC5/Encoder_Left.c **** 
@@ -418,13 +767,27 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccIX6jYz.s 			page 1
  322:.\Generated_Source\PSoC5/Encoder_Left.c **** * Return: 
  323:.\Generated_Source\PSoC5/Encoder_Left.c **** *  void 
  324:.\Generated_Source\PSoC5/Encoder_Left.c **** *
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccIX6jYz.s 			page 8
-
-
  325:.\Generated_Source\PSoC5/Encoder_Left.c **** *******************************************************************************/
  326:.\Generated_Source\PSoC5/Encoder_Left.c **** void Encoder_Left_WriteCounter(uint16 counter) \
  327:.\Generated_Source\PSoC5/Encoder_Left.c ****                                    
  328:.\Generated_Source\PSoC5/Encoder_Left.c **** {
+ 407              		.loc 1 328 0
+ 408              		.cfi_startproc
+ 409              		@ args = 0, pretend = 0, frame = 8
+ 410              		@ frame_needed = 1, uses_anonymous_args = 0
+ 411              		@ link register save eliminated.
+ 412 0000 80B4     		push	{r7}
+ 413              		.cfi_def_cfa_offset 4
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccOA0PDY.s 			page 14
+
+
+ 414              		.cfi_offset 7, -4
+ 415 0002 83B0     		sub	sp, sp, #12
+ 416              		.cfi_def_cfa_offset 16
+ 417 0004 00AF     		add	r7, sp, #0
+ 418              		.cfi_def_cfa_register 7
+ 419 0006 0346     		mov	r3, r0
+ 420 0008 FB80     		strh	r3, [r7, #6]	@ movhi
  329:.\Generated_Source\PSoC5/Encoder_Left.c ****     #if(Encoder_Left_UsingFixedFunction)
  330:.\Generated_Source\PSoC5/Encoder_Left.c ****         /* assert if block is already enabled */
  331:.\Generated_Source\PSoC5/Encoder_Left.c ****         CYASSERT (0u == (Encoder_Left_GLOBAL_ENABLE & Encoder_Left_BLOCK_EN_MASK));
@@ -434,8 +797,37 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccIX6jYz.s 			page 1
  335:.\Generated_Source\PSoC5/Encoder_Left.c ****         Encoder_Left_GLOBAL_ENABLE &= ((uint8)(~Encoder_Left_BLOCK_EN_MASK));
  336:.\Generated_Source\PSoC5/Encoder_Left.c ****     #else
  337:.\Generated_Source\PSoC5/Encoder_Left.c ****         CY_SET_REG16(Encoder_Left_COUNTER_LSB_PTR, counter);
+ 421              		.loc 1 337 0
+ 422 000a 044A     		ldr	r2, .L29
+ 423 000c FB88     		ldrh	r3, [r7, #6]	@ movhi
+ 424 000e 1380     		strh	r3, [r2]	@ movhi
  338:.\Generated_Source\PSoC5/Encoder_Left.c ****     #endif /* (Encoder_Left_UsingFixedFunction) */
  339:.\Generated_Source\PSoC5/Encoder_Left.c **** }
+ 425              		.loc 1 339 0
+ 426 0010 0C37     		adds	r7, r7, #12
+ 427              		.cfi_def_cfa_offset 4
+ 428 0012 BD46     		mov	sp, r7
+ 429              		.cfi_def_cfa_register 13
+ 430              		@ sp needed
+ 431 0014 5DF8047B 		ldr	r7, [sp], #4
+ 432              		.cfi_restore 7
+ 433              		.cfi_def_cfa_offset 0
+ 434 0018 7047     		bx	lr
+ 435              	.L30:
+ 436 001a 00BF     		.align	2
+ 437              	.L29:
+ 438 001c 106A0040 		.word	1073768976
+ 439              		.cfi_endproc
+ 440              	.LFE8:
+ 441              		.size	Encoder_Left_WriteCounter, .-Encoder_Left_WriteCounter
+ 442              		.section	.text.Encoder_Left_ReadCounter,"ax",%progbits
+ 443              		.align	2
+ 444              		.global	Encoder_Left_ReadCounter
+ 445              		.thumb
+ 446              		.thumb_func
+ 447              		.type	Encoder_Left_ReadCounter, %function
+ 448              	Encoder_Left_ReadCounter:
+ 449              	.LFB9:
  340:.\Generated_Source\PSoC5/Encoder_Left.c **** #endif /* (!(Encoder_Left_UsingFixedFunction && (CY_PSOC5A))) */
  341:.\Generated_Source\PSoC5/Encoder_Left.c **** 
  342:.\Generated_Source\PSoC5/Encoder_Left.c **** 
@@ -446,6 +838,9 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccIX6jYz.s 			page 1
  347:.\Generated_Source\PSoC5/Encoder_Left.c **** * Returns the current value of the counter.  It doesn't matter
  348:.\Generated_Source\PSoC5/Encoder_Left.c **** * if the counter is enabled or running.
  349:.\Generated_Source\PSoC5/Encoder_Left.c **** *
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccOA0PDY.s 			page 15
+
+
  350:.\Generated_Source\PSoC5/Encoder_Left.c **** * Parameters:  
  351:.\Generated_Source\PSoC5/Encoder_Left.c **** *  void:  
  352:.\Generated_Source\PSoC5/Encoder_Left.c **** *
@@ -455,6 +850,16 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccIX6jYz.s 			page 1
  356:.\Generated_Source\PSoC5/Encoder_Left.c **** *******************************************************************************/
  357:.\Generated_Source\PSoC5/Encoder_Left.c **** uint16 Encoder_Left_ReadCounter(void) 
  358:.\Generated_Source\PSoC5/Encoder_Left.c **** {
+ 450              		.loc 1 358 0
+ 451              		.cfi_startproc
+ 452              		@ args = 0, pretend = 0, frame = 0
+ 453              		@ frame_needed = 1, uses_anonymous_args = 0
+ 454              		@ link register save eliminated.
+ 455 0000 80B4     		push	{r7}
+ 456              		.cfi_def_cfa_offset 4
+ 457              		.cfi_offset 7, -4
+ 458 0002 00AF     		add	r7, sp, #0
+ 459              		.cfi_def_cfa_register 7
  359:.\Generated_Source\PSoC5/Encoder_Left.c ****     /* Force capture by reading Accumulator */
  360:.\Generated_Source\PSoC5/Encoder_Left.c ****     /* Must first do a software capture to be able to read the counter */
  361:.\Generated_Source\PSoC5/Encoder_Left.c ****     /* It is up to the user code to make sure there isn't already captured data in the FIFO */
@@ -462,6 +867,9 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccIX6jYz.s 			page 1
  363:.\Generated_Source\PSoC5/Encoder_Left.c **** 		(void)CY_GET_REG16(Encoder_Left_COUNTER_LSB_PTR);
  364:.\Generated_Source\PSoC5/Encoder_Left.c **** 	#else
  365:.\Generated_Source\PSoC5/Encoder_Left.c **** 		(void)CY_GET_REG8(Encoder_Left_COUNTER_LSB_PTR_8BIT);
+ 460              		.loc 1 365 0
+ 461 0004 044B     		ldr	r3, .L33
+ 462 0006 1B78     		ldrb	r3, [r3]
  366:.\Generated_Source\PSoC5/Encoder_Left.c **** 	#endif/* (Encoder_Left_UsingFixedFunction) */
  367:.\Generated_Source\PSoC5/Encoder_Left.c ****     
  368:.\Generated_Source\PSoC5/Encoder_Left.c ****     /* Read the data from the FIFO (or capture register for Fixed Function)*/
@@ -469,8 +877,40 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccIX6jYz.s 			page 1
  370:.\Generated_Source\PSoC5/Encoder_Left.c ****         return ((uint16)CY_GET_REG16(Encoder_Left_STATICCOUNT_LSB_PTR));
  371:.\Generated_Source\PSoC5/Encoder_Left.c ****     #else
  372:.\Generated_Source\PSoC5/Encoder_Left.c ****         return (CY_GET_REG16(Encoder_Left_STATICCOUNT_LSB_PTR));
+ 463              		.loc 1 372 0
+ 464 0008 044B     		ldr	r3, .L33+4
+ 465 000a 1B88     		ldrh	r3, [r3]	@ movhi
+ 466 000c 9BB2     		uxth	r3, r3
  373:.\Generated_Source\PSoC5/Encoder_Left.c ****     #endif /* (Encoder_Left_UsingFixedFunction) */
  374:.\Generated_Source\PSoC5/Encoder_Left.c **** }
+ 467              		.loc 1 374 0
+ 468 000e 1846     		mov	r0, r3
+ 469 0010 BD46     		mov	sp, r7
+ 470              		.cfi_def_cfa_register 13
+ 471              		@ sp needed
+ 472 0012 5DF8047B 		ldr	r7, [sp], #4
+ 473              		.cfi_restore 7
+ 474              		.cfi_def_cfa_offset 0
+ 475 0016 7047     		bx	lr
+ 476              	.L34:
+ 477              		.align	2
+ 478              	.L33:
+ 479 0018 08650040 		.word	1073767688
+ 480 001c 906A0040 		.word	1073769104
+ 481              		.cfi_endproc
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccOA0PDY.s 			page 16
+
+
+ 482              	.LFE9:
+ 483              		.size	Encoder_Left_ReadCounter, .-Encoder_Left_ReadCounter
+ 484              		.section	.text.Encoder_Left_ReadCapture,"ax",%progbits
+ 485              		.align	2
+ 486              		.global	Encoder_Left_ReadCapture
+ 487              		.thumb
+ 488              		.thumb_func
+ 489              		.type	Encoder_Left_ReadCapture, %function
+ 490              	Encoder_Left_ReadCapture:
+ 491              	.LFB10:
  375:.\Generated_Source\PSoC5/Encoder_Left.c **** 
  376:.\Generated_Source\PSoC5/Encoder_Left.c **** 
  377:.\Generated_Source\PSoC5/Encoder_Left.c **** /*******************************************************************************
@@ -478,9 +918,6 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccIX6jYz.s 			page 1
  379:.\Generated_Source\PSoC5/Encoder_Left.c **** ********************************************************************************
  380:.\Generated_Source\PSoC5/Encoder_Left.c **** * Summary:
  381:.\Generated_Source\PSoC5/Encoder_Left.c **** *   This function returns the last value captured.
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccIX6jYz.s 			page 9
-
-
  382:.\Generated_Source\PSoC5/Encoder_Left.c **** *
  383:.\Generated_Source\PSoC5/Encoder_Left.c **** * Parameters:  
  384:.\Generated_Source\PSoC5/Encoder_Left.c **** *  void
@@ -491,12 +928,53 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccIX6jYz.s 			page 1
  389:.\Generated_Source\PSoC5/Encoder_Left.c **** *******************************************************************************/
  390:.\Generated_Source\PSoC5/Encoder_Left.c **** uint16 Encoder_Left_ReadCapture(void) 
  391:.\Generated_Source\PSoC5/Encoder_Left.c **** {
+ 492              		.loc 1 391 0
+ 493              		.cfi_startproc
+ 494              		@ args = 0, pretend = 0, frame = 0
+ 495              		@ frame_needed = 1, uses_anonymous_args = 0
+ 496              		@ link register save eliminated.
+ 497 0000 80B4     		push	{r7}
+ 498              		.cfi_def_cfa_offset 4
+ 499              		.cfi_offset 7, -4
+ 500 0002 00AF     		add	r7, sp, #0
+ 501              		.cfi_def_cfa_register 7
  392:.\Generated_Source\PSoC5/Encoder_Left.c ****     #if(Encoder_Left_UsingFixedFunction)
  393:.\Generated_Source\PSoC5/Encoder_Left.c ****         return ((uint16)CY_GET_REG16(Encoder_Left_STATICCOUNT_LSB_PTR));
  394:.\Generated_Source\PSoC5/Encoder_Left.c ****     #else
  395:.\Generated_Source\PSoC5/Encoder_Left.c ****         return (CY_GET_REG16(Encoder_Left_STATICCOUNT_LSB_PTR));
+ 502              		.loc 1 395 0
+ 503 0004 034B     		ldr	r3, .L37
+ 504 0006 1B88     		ldrh	r3, [r3]	@ movhi
+ 505 0008 9BB2     		uxth	r3, r3
  396:.\Generated_Source\PSoC5/Encoder_Left.c ****     #endif /* (Encoder_Left_UsingFixedFunction) */
  397:.\Generated_Source\PSoC5/Encoder_Left.c **** }
+ 506              		.loc 1 397 0
+ 507 000a 1846     		mov	r0, r3
+ 508 000c BD46     		mov	sp, r7
+ 509              		.cfi_def_cfa_register 13
+ 510              		@ sp needed
+ 511 000e 5DF8047B 		ldr	r7, [sp], #4
+ 512              		.cfi_restore 7
+ 513              		.cfi_def_cfa_offset 0
+ 514 0012 7047     		bx	lr
+ 515              	.L38:
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccOA0PDY.s 			page 17
+
+
+ 516              		.align	2
+ 517              	.L37:
+ 518 0014 906A0040 		.word	1073769104
+ 519              		.cfi_endproc
+ 520              	.LFE10:
+ 521              		.size	Encoder_Left_ReadCapture, .-Encoder_Left_ReadCapture
+ 522              		.section	.text.Encoder_Left_WritePeriod,"ax",%progbits
+ 523              		.align	2
+ 524              		.global	Encoder_Left_WritePeriod
+ 525              		.thumb
+ 526              		.thumb_func
+ 527              		.type	Encoder_Left_WritePeriod, %function
+ 528              	Encoder_Left_WritePeriod:
+ 529              	.LFB11:
  398:.\Generated_Source\PSoC5/Encoder_Left.c **** 
  399:.\Generated_Source\PSoC5/Encoder_Left.c **** 
  400:.\Generated_Source\PSoC5/Encoder_Left.c **** /*******************************************************************************
@@ -516,12 +994,58 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccIX6jYz.s 			page 1
  414:.\Generated_Source\PSoC5/Encoder_Left.c **** *******************************************************************************/
  415:.\Generated_Source\PSoC5/Encoder_Left.c **** void Encoder_Left_WritePeriod(uint16 period) 
  416:.\Generated_Source\PSoC5/Encoder_Left.c **** {
+ 530              		.loc 1 416 0
+ 531              		.cfi_startproc
+ 532              		@ args = 0, pretend = 0, frame = 8
+ 533              		@ frame_needed = 1, uses_anonymous_args = 0
+ 534              		@ link register save eliminated.
+ 535 0000 80B4     		push	{r7}
+ 536              		.cfi_def_cfa_offset 4
+ 537              		.cfi_offset 7, -4
+ 538 0002 83B0     		sub	sp, sp, #12
+ 539              		.cfi_def_cfa_offset 16
+ 540 0004 00AF     		add	r7, sp, #0
+ 541              		.cfi_def_cfa_register 7
+ 542 0006 0346     		mov	r3, r0
+ 543 0008 FB80     		strh	r3, [r7, #6]	@ movhi
  417:.\Generated_Source\PSoC5/Encoder_Left.c ****     #if(Encoder_Left_UsingFixedFunction)
  418:.\Generated_Source\PSoC5/Encoder_Left.c ****         CY_SET_REG16(Encoder_Left_PERIOD_LSB_PTR,(uint16)period);
  419:.\Generated_Source\PSoC5/Encoder_Left.c ****     #else
  420:.\Generated_Source\PSoC5/Encoder_Left.c ****         CY_SET_REG16(Encoder_Left_PERIOD_LSB_PTR, period);
+ 544              		.loc 1 420 0
+ 545 000a 044A     		ldr	r2, .L40
+ 546 000c FB88     		ldrh	r3, [r7, #6]	@ movhi
+ 547 000e 1380     		strh	r3, [r2]	@ movhi
  421:.\Generated_Source\PSoC5/Encoder_Left.c ****     #endif /* (Encoder_Left_UsingFixedFunction) */
  422:.\Generated_Source\PSoC5/Encoder_Left.c **** }
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccOA0PDY.s 			page 18
+
+
+ 548              		.loc 1 422 0
+ 549 0010 0C37     		adds	r7, r7, #12
+ 550              		.cfi_def_cfa_offset 4
+ 551 0012 BD46     		mov	sp, r7
+ 552              		.cfi_def_cfa_register 13
+ 553              		@ sp needed
+ 554 0014 5DF8047B 		ldr	r7, [sp], #4
+ 555              		.cfi_restore 7
+ 556              		.cfi_def_cfa_offset 0
+ 557 0018 7047     		bx	lr
+ 558              	.L41:
+ 559 001a 00BF     		.align	2
+ 560              	.L40:
+ 561 001c 506A0040 		.word	1073769040
+ 562              		.cfi_endproc
+ 563              	.LFE11:
+ 564              		.size	Encoder_Left_WritePeriod, .-Encoder_Left_WritePeriod
+ 565              		.section	.text.Encoder_Left_ReadPeriod,"ax",%progbits
+ 566              		.align	2
+ 567              		.global	Encoder_Left_ReadPeriod
+ 568              		.thumb
+ 569              		.thumb_func
+ 570              		.type	Encoder_Left_ReadPeriod, %function
+ 571              	Encoder_Left_ReadPeriod:
+ 572              	.LFB12:
  423:.\Generated_Source\PSoC5/Encoder_Left.c **** 
  424:.\Generated_Source\PSoC5/Encoder_Left.c **** 
  425:.\Generated_Source\PSoC5/Encoder_Left.c **** /*******************************************************************************
@@ -538,16 +1062,54 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccIX6jYz.s 			page 1
  436:.\Generated_Source\PSoC5/Encoder_Left.c **** *
  437:.\Generated_Source\PSoC5/Encoder_Left.c **** *******************************************************************************/
  438:.\Generated_Source\PSoC5/Encoder_Left.c **** uint16 Encoder_Left_ReadPeriod(void) 
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccIX6jYz.s 			page 10
-
-
  439:.\Generated_Source\PSoC5/Encoder_Left.c **** {
+ 573              		.loc 1 439 0
+ 574              		.cfi_startproc
+ 575              		@ args = 0, pretend = 0, frame = 0
+ 576              		@ frame_needed = 1, uses_anonymous_args = 0
+ 577              		@ link register save eliminated.
+ 578 0000 80B4     		push	{r7}
+ 579              		.cfi_def_cfa_offset 4
+ 580              		.cfi_offset 7, -4
+ 581 0002 00AF     		add	r7, sp, #0
+ 582              		.cfi_def_cfa_register 7
  440:.\Generated_Source\PSoC5/Encoder_Left.c ****     #if(Encoder_Left_UsingFixedFunction)
  441:.\Generated_Source\PSoC5/Encoder_Left.c ****         return ((uint16)CY_GET_REG16(Encoder_Left_PERIOD_LSB_PTR));
  442:.\Generated_Source\PSoC5/Encoder_Left.c ****     #else
  443:.\Generated_Source\PSoC5/Encoder_Left.c ****         return (CY_GET_REG16(Encoder_Left_PERIOD_LSB_PTR));
+ 583              		.loc 1 443 0
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccOA0PDY.s 			page 19
+
+
+ 584 0004 034B     		ldr	r3, .L44
+ 585 0006 1B88     		ldrh	r3, [r3]	@ movhi
+ 586 0008 9BB2     		uxth	r3, r3
  444:.\Generated_Source\PSoC5/Encoder_Left.c ****     #endif /* (Encoder_Left_UsingFixedFunction) */
  445:.\Generated_Source\PSoC5/Encoder_Left.c **** }
+ 587              		.loc 1 445 0
+ 588 000a 1846     		mov	r0, r3
+ 589 000c BD46     		mov	sp, r7
+ 590              		.cfi_def_cfa_register 13
+ 591              		@ sp needed
+ 592 000e 5DF8047B 		ldr	r7, [sp], #4
+ 593              		.cfi_restore 7
+ 594              		.cfi_def_cfa_offset 0
+ 595 0012 7047     		bx	lr
+ 596              	.L45:
+ 597              		.align	2
+ 598              	.L44:
+ 599 0014 506A0040 		.word	1073769040
+ 600              		.cfi_endproc
+ 601              	.LFE12:
+ 602              		.size	Encoder_Left_ReadPeriod, .-Encoder_Left_ReadPeriod
+ 603              		.section	.text.Encoder_Left_WriteCompare,"ax",%progbits
+ 604              		.align	2
+ 605              		.global	Encoder_Left_WriteCompare
+ 606              		.thumb
+ 607              		.thumb_func
+ 608              		.type	Encoder_Left_WriteCompare, %function
+ 609              	Encoder_Left_WriteCompare:
+ 610              	.LFB13:
  446:.\Generated_Source\PSoC5/Encoder_Left.c **** 
  447:.\Generated_Source\PSoC5/Encoder_Left.c **** 
  448:.\Generated_Source\PSoC5/Encoder_Left.c **** #if (!Encoder_Left_UsingFixedFunction)
@@ -570,12 +1132,58 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccIX6jYz.s 			page 1
  465:.\Generated_Source\PSoC5/Encoder_Left.c **** void Encoder_Left_WriteCompare(uint16 compare) \
  466:.\Generated_Source\PSoC5/Encoder_Left.c ****                                    
  467:.\Generated_Source\PSoC5/Encoder_Left.c **** {
+ 611              		.loc 1 467 0
+ 612              		.cfi_startproc
+ 613              		@ args = 0, pretend = 0, frame = 8
+ 614              		@ frame_needed = 1, uses_anonymous_args = 0
+ 615              		@ link register save eliminated.
+ 616 0000 80B4     		push	{r7}
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccOA0PDY.s 			page 20
+
+
+ 617              		.cfi_def_cfa_offset 4
+ 618              		.cfi_offset 7, -4
+ 619 0002 83B0     		sub	sp, sp, #12
+ 620              		.cfi_def_cfa_offset 16
+ 621 0004 00AF     		add	r7, sp, #0
+ 622              		.cfi_def_cfa_register 7
+ 623 0006 0346     		mov	r3, r0
+ 624 0008 FB80     		strh	r3, [r7, #6]	@ movhi
  468:.\Generated_Source\PSoC5/Encoder_Left.c ****     #if(Encoder_Left_UsingFixedFunction)
  469:.\Generated_Source\PSoC5/Encoder_Left.c ****         CY_SET_REG16(Encoder_Left_COMPARE_LSB_PTR, (uint16)compare);
  470:.\Generated_Source\PSoC5/Encoder_Left.c ****     #else
  471:.\Generated_Source\PSoC5/Encoder_Left.c ****         CY_SET_REG16(Encoder_Left_COMPARE_LSB_PTR, compare);
+ 625              		.loc 1 471 0
+ 626 000a 044A     		ldr	r2, .L47
+ 627 000c FB88     		ldrh	r3, [r7, #6]	@ movhi
+ 628 000e 1380     		strh	r3, [r2]	@ movhi
  472:.\Generated_Source\PSoC5/Encoder_Left.c ****     #endif /* (Encoder_Left_UsingFixedFunction) */
  473:.\Generated_Source\PSoC5/Encoder_Left.c **** }
+ 629              		.loc 1 473 0
+ 630 0010 0C37     		adds	r7, r7, #12
+ 631              		.cfi_def_cfa_offset 4
+ 632 0012 BD46     		mov	sp, r7
+ 633              		.cfi_def_cfa_register 13
+ 634              		@ sp needed
+ 635 0014 5DF8047B 		ldr	r7, [sp], #4
+ 636              		.cfi_restore 7
+ 637              		.cfi_def_cfa_offset 0
+ 638 0018 7047     		bx	lr
+ 639              	.L48:
+ 640 001a 00BF     		.align	2
+ 641              	.L47:
+ 642 001c 706A0040 		.word	1073769072
+ 643              		.cfi_endproc
+ 644              	.LFE13:
+ 645              		.size	Encoder_Left_WriteCompare, .-Encoder_Left_WriteCompare
+ 646              		.section	.text.Encoder_Left_ReadCompare,"ax",%progbits
+ 647              		.align	2
+ 648              		.global	Encoder_Left_ReadCompare
+ 649              		.thumb
+ 650              		.thumb_func
+ 651              		.type	Encoder_Left_ReadCompare, %function
+ 652              	Encoder_Left_ReadCompare:
+ 653              	.LFB14:
  474:.\Generated_Source\PSoC5/Encoder_Left.c **** 
  475:.\Generated_Source\PSoC5/Encoder_Left.c **** 
  476:.\Generated_Source\PSoC5/Encoder_Left.c **** /*******************************************************************************
@@ -590,17 +1198,55 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccIX6jYz.s 			page 1
  485:.\Generated_Source\PSoC5/Encoder_Left.c **** * Return: 
  486:.\Generated_Source\PSoC5/Encoder_Left.c **** *  (uint16) Present compare value.
  487:.\Generated_Source\PSoC5/Encoder_Left.c **** *
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccOA0PDY.s 			page 21
+
+
  488:.\Generated_Source\PSoC5/Encoder_Left.c **** *******************************************************************************/
  489:.\Generated_Source\PSoC5/Encoder_Left.c **** uint16 Encoder_Left_ReadCompare(void) 
  490:.\Generated_Source\PSoC5/Encoder_Left.c **** {
+ 654              		.loc 1 490 0
+ 655              		.cfi_startproc
+ 656              		@ args = 0, pretend = 0, frame = 0
+ 657              		@ frame_needed = 1, uses_anonymous_args = 0
+ 658              		@ link register save eliminated.
+ 659 0000 80B4     		push	{r7}
+ 660              		.cfi_def_cfa_offset 4
+ 661              		.cfi_offset 7, -4
+ 662 0002 00AF     		add	r7, sp, #0
+ 663              		.cfi_def_cfa_register 7
  491:.\Generated_Source\PSoC5/Encoder_Left.c ****     return (CY_GET_REG16(Encoder_Left_COMPARE_LSB_PTR));
+ 664              		.loc 1 491 0
+ 665 0004 034B     		ldr	r3, .L51
+ 666 0006 1B88     		ldrh	r3, [r3]	@ movhi
+ 667 0008 9BB2     		uxth	r3, r3
  492:.\Generated_Source\PSoC5/Encoder_Left.c **** }
+ 668              		.loc 1 492 0
+ 669 000a 1846     		mov	r0, r3
+ 670 000c BD46     		mov	sp, r7
+ 671              		.cfi_def_cfa_register 13
+ 672              		@ sp needed
+ 673 000e 5DF8047B 		ldr	r7, [sp], #4
+ 674              		.cfi_restore 7
+ 675              		.cfi_def_cfa_offset 0
+ 676 0012 7047     		bx	lr
+ 677              	.L52:
+ 678              		.align	2
+ 679              	.L51:
+ 680 0014 706A0040 		.word	1073769072
+ 681              		.cfi_endproc
+ 682              	.LFE14:
+ 683              		.size	Encoder_Left_ReadCompare, .-Encoder_Left_ReadCompare
+ 684              		.section	.text.Encoder_Left_ClearFIFO,"ax",%progbits
+ 685              		.align	2
+ 686              		.global	Encoder_Left_ClearFIFO
+ 687              		.thumb
+ 688              		.thumb_func
+ 689              		.type	Encoder_Left_ClearFIFO, %function
+ 690              	Encoder_Left_ClearFIFO:
+ 691              	.LFB15:
  493:.\Generated_Source\PSoC5/Encoder_Left.c **** 
  494:.\Generated_Source\PSoC5/Encoder_Left.c **** 
  495:.\Generated_Source\PSoC5/Encoder_Left.c **** #if (Encoder_Left_COMPARE_MODE_SOFTWARE)
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccIX6jYz.s 			page 11
-
-
  496:.\Generated_Source\PSoC5/Encoder_Left.c **** /*******************************************************************************
  497:.\Generated_Source\PSoC5/Encoder_Left.c **** * Function Name: Encoder_Left_SetCompareMode
  498:.\Generated_Source\PSoC5/Encoder_Left.c **** ********************************************************************************
@@ -612,6 +1258,9 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccIX6jYz.s 			page 1
  504:.\Generated_Source\PSoC5/Encoder_Left.c **** *
  505:.\Generated_Source\PSoC5/Encoder_Left.c **** * Return:
  506:.\Generated_Source\PSoC5/Encoder_Left.c **** *  void
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccOA0PDY.s 			page 22
+
+
  507:.\Generated_Source\PSoC5/Encoder_Left.c **** *
  508:.\Generated_Source\PSoC5/Encoder_Left.c **** *******************************************************************************/
  509:.\Generated_Source\PSoC5/Encoder_Left.c **** void Encoder_Left_SetCompareMode(uint8 compareMode) 
@@ -658,9 +1307,6 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccIX6jYz.s 			page 1
  550:.\Generated_Source\PSoC5/Encoder_Left.c **** *
  551:.\Generated_Source\PSoC5/Encoder_Left.c **** * Parameters:  
  552:.\Generated_Source\PSoC5/Encoder_Left.c **** *  void:
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccIX6jYz.s 			page 12
-
-
  553:.\Generated_Source\PSoC5/Encoder_Left.c **** *
  554:.\Generated_Source\PSoC5/Encoder_Left.c **** * Return: 
  555:.\Generated_Source\PSoC5/Encoder_Left.c **** *  None
@@ -668,2521 +1314,1009 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccIX6jYz.s 			page 1
  557:.\Generated_Source\PSoC5/Encoder_Left.c **** *******************************************************************************/
  558:.\Generated_Source\PSoC5/Encoder_Left.c **** void Encoder_Left_ClearFIFO(void) 
  559:.\Generated_Source\PSoC5/Encoder_Left.c **** {
+ 692              		.loc 1 559 0
+ 693              		.cfi_startproc
+ 694              		@ args = 0, pretend = 0, frame = 0
+ 695              		@ frame_needed = 1, uses_anonymous_args = 0
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccOA0PDY.s 			page 23
+
+
+ 696 0000 80B5     		push	{r7, lr}
+ 697              		.cfi_def_cfa_offset 8
+ 698              		.cfi_offset 7, -8
+ 699              		.cfi_offset 14, -4
+ 700 0002 00AF     		add	r7, sp, #0
+ 701              		.cfi_def_cfa_register 7
  560:.\Generated_Source\PSoC5/Encoder_Left.c **** 
  561:.\Generated_Source\PSoC5/Encoder_Left.c ****     while(0u != (Encoder_Left_ReadStatusRegister() & Encoder_Left_STATUS_FIFONEMP))
-  72              		.loc 1 561 0
-  73 001c 5806     		lsls	r0, r3, #25
-  74 001e 05D5     		bpl	.L2
-  75              	.LBB47:
-  76              	.LBB48:
- 395:.\Generated_Source\PSoC5/Encoder_Left.c ****     #endif /* (Encoder_Left_UsingFixedFunction) */
-  77              		.loc 1 395 0
-  78 0020 01F21531 		addw	r1, r1, #789
-  79              	.LVL4:
-  80              	.L6:
-  81 0024 0B88     		ldrh	r3, [r1]
-  82              	.LBE48:
-  83              	.LBE47:
-  84              	.LBB49:
-  85              	.LBB45:
- 263:.\Generated_Source\PSoC5/Encoder_Left.c **** }
-  86              		.loc 1 263 0
-  87 0026 1378     		ldrb	r3, [r2]	@ zero_extendqisi2
-  88              	.LBE45:
-  89              	.LBE49:
-  90              		.loc 1 561 0
-  91 0028 5B06     		lsls	r3, r3, #25
-  92 002a FBD4     		bmi	.L6
-  93              	.L2:
-  94              	.LVL5:
-  95              	.LBE50:
-  96              	.LBE51:
-  97              	.LBB52:
-  98              	.LBB53:
- 420:.\Generated_Source\PSoC5/Encoder_Left.c ****     #endif /* (Encoder_Left_UsingFixedFunction) */
-  99              		.loc 1 420 0
- 100 002c 0C4D     		ldr	r5, .L11+8
- 101              	.LBE53:
- 102              	.LBE52:
- 103              	.LBB56:
- 104              	.LBB57:
- 337:.\Generated_Source\PSoC5/Encoder_Left.c ****     #endif /* (Encoder_Left_UsingFixedFunction) */
- 105              		.loc 1 337 0
- 106 002e 0D4C     		ldr	r4, .L11+12
- 107              	.LBE57:
- 108              	.LBE56:
- 109              	.LBB59:
- 110              	.LBB60:
- 239:.\Generated_Source\PSoC5/Encoder_Left.c **** }
- 111              		.loc 1 239 0
- 112 0030 0D48     		ldr	r0, .L11+16
- 113              	.LBE60:
- 114              	.LBE59:
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccIX6jYz.s 			page 13
-
-
- 115              	.LBB62:
- 116              	.LBB54:
- 420:.\Generated_Source\PSoC5/Encoder_Left.c ****     #endif /* (Encoder_Left_UsingFixedFunction) */
- 117              		.loc 1 420 0
- 118 0032 0023     		movs	r3, #0
- 119              	.LBE54:
- 120              	.LBE62:
- 121              	.LBB63:
- 122              	.LBB64:
- 471:.\Generated_Source\PSoC5/Encoder_Left.c ****     #endif /* (Encoder_Left_UsingFixedFunction) */
- 123              		.loc 1 471 0
- 124 0034 0D4A     		ldr	r2, .L11+20
- 125              	.LBE64:
- 126              	.LBE63:
- 127              	.LBB66:
- 128              	.LBB67:
- 263:.\Generated_Source\PSoC5/Encoder_Left.c **** }
- 129              		.loc 1 263 0
- 130 0036 0949     		ldr	r1, .L11+4
- 131              	.LBE67:
- 132              	.LBE66:
- 133              	.LBB69:
- 134              	.LBB55:
- 420:.\Generated_Source\PSoC5/Encoder_Left.c ****     #endif /* (Encoder_Left_UsingFixedFunction) */
- 135              		.loc 1 420 0
- 136 0038 2B80     		strh	r3, [r5]	@ movhi
- 137              	.LVL6:
- 138              	.LBE55:
- 139              	.LBE69:
- 140              	.LBB70:
- 141              	.LBB58:
- 337:.\Generated_Source\PSoC5/Encoder_Left.c ****     #endif /* (Encoder_Left_UsingFixedFunction) */
- 142              		.loc 1 337 0
- 143 003a 2380     		strh	r3, [r4]	@ movhi
- 144              	.LVL7:
- 145              	.LBE58:
- 146              	.LBE70:
- 147              	.LBB71:
- 148              	.LBB61:
- 239:.\Generated_Source\PSoC5/Encoder_Left.c **** }
- 149              		.loc 1 239 0
- 150 003c 0370     		strb	r3, [r0]
- 151              	.LBE61:
- 152              	.LBE71:
- 153              	.LBB72:
- 154              	.LBB68:
- 263:.\Generated_Source\PSoC5/Encoder_Left.c **** }
- 155              		.loc 1 263 0
- 156 003e 0978     		ldrb	r1, [r1]	@ zero_extendqisi2
- 157              	.LVL8:
- 158              	.LBE68:
- 159              	.LBE72:
- 160              	.LBB73:
- 161              	.LBB65:
- 471:.\Generated_Source\PSoC5/Encoder_Left.c ****     #endif /* (Encoder_Left_UsingFixedFunction) */
- 162              		.loc 1 471 0
- 163 0040 1380     		strh	r3, [r2]	@ movhi
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccIX6jYz.s 			page 14
-
-
- 164              	.LBE65:
- 165              	.LBE73:
- 115:.\Generated_Source\PSoC5/Encoder_Left.c ****             
- 166              		.loc 1 115 0
- 167 0042 FFF7FEFF 		bl	CyEnterCriticalSection
- 168              	.LVL9:
- 117:.\Generated_Source\PSoC5/Encoder_Left.c ****             
- 169              		.loc 1 117 0
- 170 0046 0A4A     		ldr	r2, .L11+24
- 171 0048 1378     		ldrb	r3, [r2]	@ zero_extendqisi2
- 172 004a 43F01003 		orr	r3, r3, #16
- 173 004e 1370     		strb	r3, [r2]
- 123:.\Generated_Source\PSoC5/Encoder_Left.c **** 
- 174              		.loc 1 123 0
- 175 0050 BDE83840 		pop	{r3, r4, r5, lr}
- 176              		.cfi_restore 14
- 177              		.cfi_restore 5
- 178              		.cfi_restore 4
- 179              		.cfi_restore 3
- 180              		.cfi_def_cfa_offset 0
- 120:.\Generated_Source\PSoC5/Encoder_Left.c ****             
- 181              		.loc 1 120 0
- 182 0054 FFF7FEBF 		b	CyExitCriticalSection
- 183              	.LVL10:
- 184              	.L12:
- 185              		.align	2
- 186              	.L11:
- 187 0058 7B650040 		.word	1073767803
- 188 005c 6A640040 		.word	1073767530
- 189 0060 50680040 		.word	1073768528
- 190 0064 10680040 		.word	1073768464
- 191 0068 8A640040 		.word	1073767562
- 192 006c 70680040 		.word	1073768560
- 193 0070 9A640040 		.word	1073767578
- 194              		.cfi_endproc
- 195              	.LFE0:
- 196              		.size	Encoder_Left_Init, .-Encoder_Left_Init
- 197              		.section	.text.Encoder_Left_Enable,"ax",%progbits
- 198              		.align	2
- 199              		.global	Encoder_Left_Enable
- 200              		.thumb
- 201              		.thumb_func
- 202              		.type	Encoder_Left_Enable, %function
- 203              	Encoder_Left_Enable:
- 204              	.LFB1:
- 144:.\Generated_Source\PSoC5/Encoder_Left.c ****     /* Globally Enable the Fixed Function Block chosen */
- 205              		.loc 1 144 0
- 206              		.cfi_startproc
- 207              		@ args = 0, pretend = 0, frame = 0
- 208              		@ frame_needed = 0, uses_anonymous_args = 0
- 209              		@ link register save eliminated.
- 155:.\Generated_Source\PSoC5/Encoder_Left.c ****     #endif /* (!Encoder_Left_ControlRegRemoved || Encoder_Left_UsingFixedFunction) */
- 210              		.loc 1 155 0
- 211 0000 024A     		ldr	r2, .L14
- 212 0002 1378     		ldrb	r3, [r2]	@ zero_extendqisi2
- 213 0004 43F08003 		orr	r3, r3, #128
- 214 0008 1370     		strb	r3, [r2]
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccIX6jYz.s 			page 15
-
-
- 215 000a 7047     		bx	lr
- 216              	.L15:
- 217              		.align	2
- 218              	.L14:
- 219 000c 7B650040 		.word	1073767803
- 220              		.cfi_endproc
- 221              	.LFE1:
- 222              		.size	Encoder_Left_Enable, .-Encoder_Left_Enable
- 223              		.section	.text.Encoder_Left_Start,"ax",%progbits
- 224              		.align	2
- 225              		.global	Encoder_Left_Start
- 226              		.thumb
- 227              		.thumb_func
- 228              		.type	Encoder_Left_Start, %function
- 229              	Encoder_Left_Start:
- 230              	.LFB2:
- 179:.\Generated_Source\PSoC5/Encoder_Left.c ****     if(Encoder_Left_initVar == 0u)
- 231              		.loc 1 179 0
- 232              		.cfi_startproc
- 233              		@ args = 0, pretend = 0, frame = 0
- 234              		@ frame_needed = 0, uses_anonymous_args = 0
- 235 0000 70B5     		push	{r4, r5, r6, lr}
- 236              		.cfi_def_cfa_offset 16
- 237              		.cfi_offset 4, -16
- 238              		.cfi_offset 5, -12
- 239              		.cfi_offset 6, -8
- 240              		.cfi_offset 14, -4
- 180:.\Generated_Source\PSoC5/Encoder_Left.c ****     {
- 241              		.loc 1 180 0
- 242 0002 1A4C     		ldr	r4, .L27
- 243 0004 2378     		ldrb	r3, [r4]	@ zero_extendqisi2
- 244 0006 2BB1     		cbz	r3, .L26
- 245              	.L17:
- 246              	.LBB94:
- 247              	.LBB95:
- 155:.\Generated_Source\PSoC5/Encoder_Left.c ****     #endif /* (!Encoder_Left_ControlRegRemoved || Encoder_Left_UsingFixedFunction) */
- 248              		.loc 1 155 0
- 249 0008 194A     		ldr	r2, .L27+4
- 250 000a 1378     		ldrb	r3, [r2]	@ zero_extendqisi2
- 251 000c 43F08003 		orr	r3, r3, #128
- 252 0010 1370     		strb	r3, [r2]
- 253 0012 70BD     		pop	{r4, r5, r6, pc}
- 254              	.L26:
- 255              	.LBE95:
- 256              	.LBE94:
- 257              	.LBB96:
- 258              	.LBB97:
-  79:.\Generated_Source\PSoC5/Encoder_Left.c ****             Encoder_Left_CONTROL = ctrl | Encoder_Left_DEFAULT_COMPARE_MODE;
- 259              		.loc 1 79 0
- 260 0014 1649     		ldr	r1, .L27+4
- 261              	.LBB98:
- 262              	.LBB99:
- 263              	.LBB100:
- 264              	.LBB101:
- 263:.\Generated_Source\PSoC5/Encoder_Left.c **** }
- 265              		.loc 1 263 0
- 266 0016 174A     		ldr	r2, .L27+8
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccIX6jYz.s 			page 16
-
-
- 267              	.LBE101:
- 268              	.LBE100:
- 269              	.LBE99:
- 270              	.LBE98:
-  79:.\Generated_Source\PSoC5/Encoder_Left.c ****             Encoder_Left_CONTROL = ctrl | Encoder_Left_DEFAULT_COMPARE_MODE;
- 271              		.loc 1 79 0
- 272 0018 0B78     		ldrb	r3, [r1]	@ zero_extendqisi2
- 273              	.LVL11:
- 274 001a 03F0F803 		and	r3, r3, #248
- 275              	.LVL12:
-  80:.\Generated_Source\PSoC5/Encoder_Left.c ****             
- 276              		.loc 1 80 0
- 277 001e 43F00103 		orr	r3, r3, #1
- 278 0022 0B70     		strb	r3, [r1]
-  83:.\Generated_Source\PSoC5/Encoder_Left.c ****             
- 279              		.loc 1 83 0
- 280 0024 0B78     		ldrb	r3, [r1]	@ zero_extendqisi2
- 281 0026 03F0FC03 		and	r3, r3, #252
- 282              	.LVL13:
-  88:.\Generated_Source\PSoC5/Encoder_Left.c ****             #endif /* 0 != Encoder_Left_CAPTURE_MODE */ 
- 283              		.loc 1 88 0
- 284 002a 0B70     		strb	r3, [r1]
- 285              	.LBB109:
- 286              	.LBB108:
- 287              	.LBB104:
- 288              	.LBB102:
- 263:.\Generated_Source\PSoC5/Encoder_Left.c **** }
- 289              		.loc 1 263 0
- 290 002c 1378     		ldrb	r3, [r2]	@ zero_extendqisi2
- 291              	.LVL14:
- 292              	.LBE102:
- 293              	.LBE104:
- 294              		.loc 1 561 0
- 295 002e 5806     		lsls	r0, r3, #25
- 296 0030 05D5     		bpl	.L18
- 297              	.LBB105:
- 298              	.LBB106:
- 395:.\Generated_Source\PSoC5/Encoder_Left.c ****     #endif /* (Encoder_Left_UsingFixedFunction) */
- 299              		.loc 1 395 0
- 300 0032 01F21531 		addw	r1, r1, #789
- 301              	.LVL15:
- 302              	.L22:
- 303 0036 0B88     		ldrh	r3, [r1]
- 304              	.LBE106:
- 305              	.LBE105:
- 306              	.LBB107:
- 307              	.LBB103:
- 263:.\Generated_Source\PSoC5/Encoder_Left.c **** }
- 308              		.loc 1 263 0
- 309 0038 1378     		ldrb	r3, [r2]	@ zero_extendqisi2
- 310              	.LBE103:
- 311              	.LBE107:
- 312              		.loc 1 561 0
- 313 003a 5B06     		lsls	r3, r3, #25
- 314 003c FBD4     		bmi	.L22
- 315              	.L18:
- 316              	.LVL16:
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccIX6jYz.s 			page 17
-
-
- 317              	.LBE108:
- 318              	.LBE109:
- 319              	.LBB110:
- 320              	.LBB111:
- 239:.\Generated_Source\PSoC5/Encoder_Left.c **** }
- 321              		.loc 1 239 0
- 322 003e 0E48     		ldr	r0, .L27+12
- 323              	.LBE111:
- 324              	.LBE110:
- 325              	.LBB113:
- 326              	.LBB114:
- 420:.\Generated_Source\PSoC5/Encoder_Left.c ****     #endif /* (Encoder_Left_UsingFixedFunction) */
- 327              		.loc 1 420 0
- 328 0040 0E4E     		ldr	r6, .L27+16
- 329              	.LBE114:
- 330              	.LBE113:
- 331              	.LBB117:
- 332              	.LBB118:
- 337:.\Generated_Source\PSoC5/Encoder_Left.c ****     #endif /* (Encoder_Left_UsingFixedFunction) */
- 333              		.loc 1 337 0
- 334 0042 0F4D     		ldr	r5, .L27+20
- 335              	.LBE118:
- 336              	.LBE117:
- 337              	.LBB120:
- 338              	.LBB115:
- 420:.\Generated_Source\PSoC5/Encoder_Left.c ****     #endif /* (Encoder_Left_UsingFixedFunction) */
- 339              		.loc 1 420 0
- 340 0044 0023     		movs	r3, #0
- 341              	.LBE115:
- 342              	.LBE120:
- 343              	.LBB121:
- 344              	.LBB122:
- 471:.\Generated_Source\PSoC5/Encoder_Left.c ****     #endif /* (Encoder_Left_UsingFixedFunction) */
- 345              		.loc 1 471 0
- 346 0046 0F4A     		ldr	r2, .L27+24
- 347              	.LBE122:
- 348              	.LBE121:
- 349              	.LBB124:
- 350              	.LBB125:
- 263:.\Generated_Source\PSoC5/Encoder_Left.c **** }
- 351              		.loc 1 263 0
- 352 0048 0A49     		ldr	r1, .L27+8
- 353              	.LBE125:
- 354              	.LBE124:
- 355              	.LBB127:
- 356              	.LBB116:
- 420:.\Generated_Source\PSoC5/Encoder_Left.c ****     #endif /* (Encoder_Left_UsingFixedFunction) */
- 357              		.loc 1 420 0
- 358 004a 3380     		strh	r3, [r6]	@ movhi
- 359              	.LVL17:
- 360              	.LBE116:
- 361              	.LBE127:
- 362              	.LBB128:
- 363              	.LBB119:
- 337:.\Generated_Source\PSoC5/Encoder_Left.c ****     #endif /* (Encoder_Left_UsingFixedFunction) */
- 364              		.loc 1 337 0
- 365 004c 2B80     		strh	r3, [r5]	@ movhi
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccIX6jYz.s 			page 18
-
-
- 366              	.LVL18:
- 367              	.LBE119:
- 368              	.LBE128:
- 369              	.LBB129:
- 370              	.LBB112:
- 239:.\Generated_Source\PSoC5/Encoder_Left.c **** }
- 371              		.loc 1 239 0
- 372 004e 0370     		strb	r3, [r0]
- 373              	.LBE112:
- 374              	.LBE129:
- 375              	.LBB130:
- 376              	.LBB126:
- 263:.\Generated_Source\PSoC5/Encoder_Left.c **** }
- 377              		.loc 1 263 0
- 378 0050 0978     		ldrb	r1, [r1]	@ zero_extendqisi2
- 379              	.LVL19:
- 380              	.LBE126:
- 381              	.LBE130:
- 382              	.LBB131:
- 383              	.LBB123:
- 471:.\Generated_Source\PSoC5/Encoder_Left.c ****     #endif /* (Encoder_Left_UsingFixedFunction) */
- 384              		.loc 1 471 0
- 385 0052 1380     		strh	r3, [r2]	@ movhi
- 386              	.LBE123:
- 387              	.LBE131:
- 115:.\Generated_Source\PSoC5/Encoder_Left.c ****             
- 388              		.loc 1 115 0
- 389 0054 FFF7FEFF 		bl	CyEnterCriticalSection
- 390              	.LVL20:
- 117:.\Generated_Source\PSoC5/Encoder_Left.c ****             
- 391              		.loc 1 117 0
- 392 0058 0B4A     		ldr	r2, .L27+28
- 393 005a 1378     		ldrb	r3, [r2]	@ zero_extendqisi2
- 394 005c 43F01003 		orr	r3, r3, #16
- 395 0060 1370     		strb	r3, [r2]
- 120:.\Generated_Source\PSoC5/Encoder_Left.c ****             
- 396              		.loc 1 120 0
- 397 0062 FFF7FEFF 		bl	CyExitCriticalSection
- 398              	.LVL21:
- 399              	.LBE97:
- 400              	.LBE96:
- 184:.\Generated_Source\PSoC5/Encoder_Left.c ****     }
- 401              		.loc 1 184 0
- 402 0066 0123     		movs	r3, #1
- 403 0068 2370     		strb	r3, [r4]
- 404 006a CDE7     		b	.L17
- 405              	.L28:
- 406              		.align	2
- 407              	.L27:
- 408 006c 00000000 		.word	.LANCHOR0
- 409 0070 7B650040 		.word	1073767803
- 410 0074 6A640040 		.word	1073767530
- 411 0078 8A640040 		.word	1073767562
- 412 007c 50680040 		.word	1073768528
- 413 0080 10680040 		.word	1073768464
- 414 0084 70680040 		.word	1073768560
- 415 0088 9A640040 		.word	1073767578
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccIX6jYz.s 			page 19
-
-
- 416              		.cfi_endproc
- 417              	.LFE2:
- 418              		.size	Encoder_Left_Start, .-Encoder_Left_Start
- 419              		.section	.text.Encoder_Left_Stop,"ax",%progbits
- 420              		.align	2
- 421              		.global	Encoder_Left_Stop
- 422              		.thumb
- 423              		.thumb_func
- 424              		.type	Encoder_Left_Stop, %function
- 425              	Encoder_Left_Stop:
- 426              	.LFB3:
- 209:.\Generated_Source\PSoC5/Encoder_Left.c ****     /* Disable Counter */
- 427              		.loc 1 209 0
- 428              		.cfi_startproc
- 429              		@ args = 0, pretend = 0, frame = 0
- 430              		@ frame_needed = 0, uses_anonymous_args = 0
- 431              		@ link register save eliminated.
- 212:.\Generated_Source\PSoC5/Encoder_Left.c ****     #endif /* (!Encoder_Left_ControlRegRemoved || Encoder_Left_UsingFixedFunction) */
- 432              		.loc 1 212 0
- 433 0000 024A     		ldr	r2, .L30
- 434 0002 1378     		ldrb	r3, [r2]	@ zero_extendqisi2
- 435 0004 03F07F03 		and	r3, r3, #127
- 436 0008 1370     		strb	r3, [r2]
- 437 000a 7047     		bx	lr
- 438              	.L31:
- 439              		.align	2
- 440              	.L30:
- 441 000c 7B650040 		.word	1073767803
- 442              		.cfi_endproc
- 443              	.LFE3:
- 444              		.size	Encoder_Left_Stop, .-Encoder_Left_Stop
- 445              		.section	.text.Encoder_Left_SetInterruptMode,"ax",%progbits
- 446              		.align	2
- 447              		.global	Encoder_Left_SetInterruptMode
- 448              		.thumb
- 449              		.thumb_func
- 450              		.type	Encoder_Left_SetInterruptMode, %function
- 451              	Encoder_Left_SetInterruptMode:
- 452              	.LFB4:
- 238:.\Generated_Source\PSoC5/Encoder_Left.c ****     Encoder_Left_STATUS_MASK = interruptsMask;
- 453              		.loc 1 238 0
- 454              		.cfi_startproc
- 455              		@ args = 0, pretend = 0, frame = 0
- 456              		@ frame_needed = 0, uses_anonymous_args = 0
- 457              		@ link register save eliminated.
- 458              	.LVL22:
- 239:.\Generated_Source\PSoC5/Encoder_Left.c **** }
- 459              		.loc 1 239 0
- 460 0000 014B     		ldr	r3, .L33
- 461 0002 1870     		strb	r0, [r3]
- 462 0004 7047     		bx	lr
- 463              	.L34:
- 464 0006 00BF     		.align	2
- 465              	.L33:
- 466 0008 8A640040 		.word	1073767562
- 467              		.cfi_endproc
- 468              	.LFE4:
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccIX6jYz.s 			page 20
-
-
- 469              		.size	Encoder_Left_SetInterruptMode, .-Encoder_Left_SetInterruptMode
- 470              		.section	.text.Encoder_Left_ReadStatusRegister,"ax",%progbits
- 471              		.align	2
- 472              		.global	Encoder_Left_ReadStatusRegister
- 473              		.thumb
- 474              		.thumb_func
- 475              		.type	Encoder_Left_ReadStatusRegister, %function
- 476              	Encoder_Left_ReadStatusRegister:
- 477              	.LFB5:
- 262:.\Generated_Source\PSoC5/Encoder_Left.c ****     return Encoder_Left_STATUS;
- 478              		.loc 1 262 0
- 479              		.cfi_startproc
- 480              		@ args = 0, pretend = 0, frame = 0
- 481              		@ frame_needed = 0, uses_anonymous_args = 0
- 482              		@ link register save eliminated.
- 263:.\Generated_Source\PSoC5/Encoder_Left.c **** }
- 483              		.loc 1 263 0
- 484 0000 014B     		ldr	r3, .L36
- 485 0002 1878     		ldrb	r0, [r3]	@ zero_extendqisi2
- 264:.\Generated_Source\PSoC5/Encoder_Left.c **** 
- 486              		.loc 1 264 0
- 487 0004 7047     		bx	lr
- 488              	.L37:
- 489 0006 00BF     		.align	2
- 490              	.L36:
- 491 0008 6A640040 		.word	1073767530
- 492              		.cfi_endproc
- 493              	.LFE5:
- 494              		.size	Encoder_Left_ReadStatusRegister, .-Encoder_Left_ReadStatusRegister
- 495              		.section	.text.Encoder_Left_ReadControlRegister,"ax",%progbits
- 496              		.align	2
- 497              		.global	Encoder_Left_ReadControlRegister
- 498              		.thumb
- 499              		.thumb_func
- 500              		.type	Encoder_Left_ReadControlRegister, %function
- 501              	Encoder_Left_ReadControlRegister:
- 502              	.LFB6:
- 284:.\Generated_Source\PSoC5/Encoder_Left.c ****     return Encoder_Left_CONTROL;
- 503              		.loc 1 284 0
- 504              		.cfi_startproc
- 505              		@ args = 0, pretend = 0, frame = 0
- 506              		@ frame_needed = 0, uses_anonymous_args = 0
- 507              		@ link register save eliminated.
- 285:.\Generated_Source\PSoC5/Encoder_Left.c **** }
- 508              		.loc 1 285 0
- 509 0000 014B     		ldr	r3, .L39
- 510 0002 1878     		ldrb	r0, [r3]	@ zero_extendqisi2
- 286:.\Generated_Source\PSoC5/Encoder_Left.c **** 
- 511              		.loc 1 286 0
- 512 0004 7047     		bx	lr
- 513              	.L40:
- 514 0006 00BF     		.align	2
- 515              	.L39:
- 516 0008 7B650040 		.word	1073767803
- 517              		.cfi_endproc
- 518              	.LFE6:
- 519              		.size	Encoder_Left_ReadControlRegister, .-Encoder_Left_ReadControlRegister
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccIX6jYz.s 			page 21
-
-
- 520              		.section	.text.Encoder_Left_WriteControlRegister,"ax",%progbits
- 521              		.align	2
- 522              		.global	Encoder_Left_WriteControlRegister
- 523              		.thumb
- 524              		.thumb_func
- 525              		.type	Encoder_Left_WriteControlRegister, %function
- 526              	Encoder_Left_WriteControlRegister:
- 527              	.LFB7:
- 305:.\Generated_Source\PSoC5/Encoder_Left.c ****     Encoder_Left_CONTROL = control;
- 528              		.loc 1 305 0
- 529              		.cfi_startproc
- 530              		@ args = 0, pretend = 0, frame = 0
- 531              		@ frame_needed = 0, uses_anonymous_args = 0
- 532              		@ link register save eliminated.
- 533              	.LVL23:
- 306:.\Generated_Source\PSoC5/Encoder_Left.c **** }
- 534              		.loc 1 306 0
- 535 0000 014B     		ldr	r3, .L42
- 536 0002 1870     		strb	r0, [r3]
- 537 0004 7047     		bx	lr
- 538              	.L43:
- 539 0006 00BF     		.align	2
- 540              	.L42:
- 541 0008 7B650040 		.word	1073767803
- 542              		.cfi_endproc
- 543              	.LFE7:
- 544              		.size	Encoder_Left_WriteControlRegister, .-Encoder_Left_WriteControlRegister
- 545              		.section	.text.Encoder_Left_WriteCounter,"ax",%progbits
- 546              		.align	2
- 547              		.global	Encoder_Left_WriteCounter
- 548              		.thumb
- 549              		.thumb_func
- 550              		.type	Encoder_Left_WriteCounter, %function
- 551              	Encoder_Left_WriteCounter:
- 552              	.LFB8:
- 328:.\Generated_Source\PSoC5/Encoder_Left.c ****     #if(Encoder_Left_UsingFixedFunction)
- 553              		.loc 1 328 0
- 554              		.cfi_startproc
- 555              		@ args = 0, pretend = 0, frame = 0
- 556              		@ frame_needed = 0, uses_anonymous_args = 0
- 557              		@ link register save eliminated.
- 558              	.LVL24:
- 337:.\Generated_Source\PSoC5/Encoder_Left.c ****     #endif /* (Encoder_Left_UsingFixedFunction) */
- 559              		.loc 1 337 0
- 560 0000 014B     		ldr	r3, .L45
- 561 0002 1880     		strh	r0, [r3]	@ movhi
- 562 0004 7047     		bx	lr
- 563              	.L46:
- 564 0006 00BF     		.align	2
- 565              	.L45:
- 566 0008 10680040 		.word	1073768464
- 567              		.cfi_endproc
- 568              	.LFE8:
- 569              		.size	Encoder_Left_WriteCounter, .-Encoder_Left_WriteCounter
- 570              		.section	.text.Encoder_Left_ReadCounter,"ax",%progbits
- 571              		.align	2
- 572              		.global	Encoder_Left_ReadCounter
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccIX6jYz.s 			page 22
-
-
- 573              		.thumb
- 574              		.thumb_func
- 575              		.type	Encoder_Left_ReadCounter, %function
- 576              	Encoder_Left_ReadCounter:
- 577              	.LFB9:
- 358:.\Generated_Source\PSoC5/Encoder_Left.c ****     /* Force capture by reading Accumulator */
- 578              		.loc 1 358 0
- 579              		.cfi_startproc
- 580              		@ args = 0, pretend = 0, frame = 0
- 581              		@ frame_needed = 0, uses_anonymous_args = 0
- 582              		@ link register save eliminated.
- 372:.\Generated_Source\PSoC5/Encoder_Left.c ****     #endif /* (Encoder_Left_UsingFixedFunction) */
- 583              		.loc 1 372 0
- 584 0000 024B     		ldr	r3, .L48
- 365:.\Generated_Source\PSoC5/Encoder_Left.c **** 	#endif/* (Encoder_Left_UsingFixedFunction) */
- 585              		.loc 1 365 0
- 586 0002 034A     		ldr	r2, .L48+4
- 587 0004 1278     		ldrb	r2, [r2]	@ zero_extendqisi2
- 372:.\Generated_Source\PSoC5/Encoder_Left.c ****     #endif /* (Encoder_Left_UsingFixedFunction) */
- 588              		.loc 1 372 0
- 589 0006 1888     		ldrh	r0, [r3]
- 374:.\Generated_Source\PSoC5/Encoder_Left.c **** 
- 590              		.loc 1 374 0
- 591 0008 80B2     		uxth	r0, r0
- 592 000a 7047     		bx	lr
- 593              	.L49:
- 594              		.align	2
- 595              	.L48:
- 596 000c 90680040 		.word	1073768592
- 597 0010 08640040 		.word	1073767432
- 598              		.cfi_endproc
- 599              	.LFE9:
- 600              		.size	Encoder_Left_ReadCounter, .-Encoder_Left_ReadCounter
- 601              		.section	.text.Encoder_Left_ReadCapture,"ax",%progbits
- 602              		.align	2
- 603              		.global	Encoder_Left_ReadCapture
- 604              		.thumb
- 605              		.thumb_func
- 606              		.type	Encoder_Left_ReadCapture, %function
- 607              	Encoder_Left_ReadCapture:
- 608              	.LFB10:
- 391:.\Generated_Source\PSoC5/Encoder_Left.c ****     #if(Encoder_Left_UsingFixedFunction)
- 609              		.loc 1 391 0
- 610              		.cfi_startproc
- 611              		@ args = 0, pretend = 0, frame = 0
- 612              		@ frame_needed = 0, uses_anonymous_args = 0
- 613              		@ link register save eliminated.
- 395:.\Generated_Source\PSoC5/Encoder_Left.c ****     #endif /* (Encoder_Left_UsingFixedFunction) */
- 614              		.loc 1 395 0
- 615 0000 014B     		ldr	r3, .L51
- 616 0002 1888     		ldrh	r0, [r3]
- 397:.\Generated_Source\PSoC5/Encoder_Left.c **** 
- 617              		.loc 1 397 0
- 618 0004 80B2     		uxth	r0, r0
- 619 0006 7047     		bx	lr
- 620              	.L52:
- 621              		.align	2
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccIX6jYz.s 			page 23
-
-
- 622              	.L51:
- 623 0008 90680040 		.word	1073768592
- 624              		.cfi_endproc
- 625              	.LFE10:
- 626              		.size	Encoder_Left_ReadCapture, .-Encoder_Left_ReadCapture
- 627              		.section	.text.Encoder_Left_WritePeriod,"ax",%progbits
- 628              		.align	2
- 629              		.global	Encoder_Left_WritePeriod
- 630              		.thumb
- 631              		.thumb_func
- 632              		.type	Encoder_Left_WritePeriod, %function
- 633              	Encoder_Left_WritePeriod:
- 634              	.LFB11:
- 416:.\Generated_Source\PSoC5/Encoder_Left.c ****     #if(Encoder_Left_UsingFixedFunction)
- 635              		.loc 1 416 0
- 636              		.cfi_startproc
- 637              		@ args = 0, pretend = 0, frame = 0
- 638              		@ frame_needed = 0, uses_anonymous_args = 0
- 639              		@ link register save eliminated.
- 640              	.LVL25:
- 420:.\Generated_Source\PSoC5/Encoder_Left.c ****     #endif /* (Encoder_Left_UsingFixedFunction) */
- 641              		.loc 1 420 0
- 642 0000 014B     		ldr	r3, .L54
- 643 0002 1880     		strh	r0, [r3]	@ movhi
- 644 0004 7047     		bx	lr
- 645              	.L55:
- 646 0006 00BF     		.align	2
- 647              	.L54:
- 648 0008 50680040 		.word	1073768528
- 649              		.cfi_endproc
- 650              	.LFE11:
- 651              		.size	Encoder_Left_WritePeriod, .-Encoder_Left_WritePeriod
- 652              		.section	.text.Encoder_Left_ReadPeriod,"ax",%progbits
- 653              		.align	2
- 654              		.global	Encoder_Left_ReadPeriod
- 655              		.thumb
- 656              		.thumb_func
- 657              		.type	Encoder_Left_ReadPeriod, %function
- 658              	Encoder_Left_ReadPeriod:
- 659              	.LFB12:
- 439:.\Generated_Source\PSoC5/Encoder_Left.c ****     #if(Encoder_Left_UsingFixedFunction)
- 660              		.loc 1 439 0
- 661              		.cfi_startproc
- 662              		@ args = 0, pretend = 0, frame = 0
- 663              		@ frame_needed = 0, uses_anonymous_args = 0
- 664              		@ link register save eliminated.
- 443:.\Generated_Source\PSoC5/Encoder_Left.c ****     #endif /* (Encoder_Left_UsingFixedFunction) */
- 665              		.loc 1 443 0
- 666 0000 014B     		ldr	r3, .L57
- 667 0002 1888     		ldrh	r0, [r3]
- 445:.\Generated_Source\PSoC5/Encoder_Left.c **** 
- 668              		.loc 1 445 0
- 669 0004 80B2     		uxth	r0, r0
- 670 0006 7047     		bx	lr
- 671              	.L58:
- 672              		.align	2
- 673              	.L57:
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccIX6jYz.s 			page 24
-
-
- 674 0008 50680040 		.word	1073768528
- 675              		.cfi_endproc
- 676              	.LFE12:
- 677              		.size	Encoder_Left_ReadPeriod, .-Encoder_Left_ReadPeriod
- 678              		.section	.text.Encoder_Left_WriteCompare,"ax",%progbits
- 679              		.align	2
- 680              		.global	Encoder_Left_WriteCompare
- 681              		.thumb
- 682              		.thumb_func
- 683              		.type	Encoder_Left_WriteCompare, %function
- 684              	Encoder_Left_WriteCompare:
- 685              	.LFB13:
- 467:.\Generated_Source\PSoC5/Encoder_Left.c ****     #if(Encoder_Left_UsingFixedFunction)
- 686              		.loc 1 467 0
- 687              		.cfi_startproc
- 688              		@ args = 0, pretend = 0, frame = 0
- 689              		@ frame_needed = 0, uses_anonymous_args = 0
- 690              		@ link register save eliminated.
- 691              	.LVL26:
- 471:.\Generated_Source\PSoC5/Encoder_Left.c ****     #endif /* (Encoder_Left_UsingFixedFunction) */
- 692              		.loc 1 471 0
- 693 0000 014B     		ldr	r3, .L60
- 694 0002 1880     		strh	r0, [r3]	@ movhi
- 695 0004 7047     		bx	lr
- 696              	.L61:
- 697 0006 00BF     		.align	2
- 698              	.L60:
- 699 0008 70680040 		.word	1073768560
- 700              		.cfi_endproc
- 701              	.LFE13:
- 702              		.size	Encoder_Left_WriteCompare, .-Encoder_Left_WriteCompare
- 703              		.section	.text.Encoder_Left_ReadCompare,"ax",%progbits
- 704              		.align	2
- 705              		.global	Encoder_Left_ReadCompare
- 706              		.thumb
- 707              		.thumb_func
- 708              		.type	Encoder_Left_ReadCompare, %function
- 709              	Encoder_Left_ReadCompare:
- 710              	.LFB14:
- 490:.\Generated_Source\PSoC5/Encoder_Left.c ****     return (CY_GET_REG16(Encoder_Left_COMPARE_LSB_PTR));
- 711              		.loc 1 490 0
- 712              		.cfi_startproc
- 713              		@ args = 0, pretend = 0, frame = 0
- 714              		@ frame_needed = 0, uses_anonymous_args = 0
- 715              		@ link register save eliminated.
- 491:.\Generated_Source\PSoC5/Encoder_Left.c **** }
- 716              		.loc 1 491 0
- 717 0000 014B     		ldr	r3, .L63
- 718 0002 1888     		ldrh	r0, [r3]
- 492:.\Generated_Source\PSoC5/Encoder_Left.c **** 
- 719              		.loc 1 492 0
- 720 0004 80B2     		uxth	r0, r0
- 721 0006 7047     		bx	lr
- 722              	.L64:
- 723              		.align	2
- 724              	.L63:
- 725 0008 70680040 		.word	1073768560
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccIX6jYz.s 			page 25
-
-
- 726              		.cfi_endproc
- 727              	.LFE14:
- 728              		.size	Encoder_Left_ReadCompare, .-Encoder_Left_ReadCompare
- 729              		.section	.text.Encoder_Left_ClearFIFO,"ax",%progbits
- 730              		.align	2
- 731              		.global	Encoder_Left_ClearFIFO
- 732              		.thumb
- 733              		.thumb_func
- 734              		.type	Encoder_Left_ClearFIFO, %function
- 735              	Encoder_Left_ClearFIFO:
- 736              	.LFB15:
- 559:.\Generated_Source\PSoC5/Encoder_Left.c **** 
- 737              		.loc 1 559 0
- 738              		.cfi_startproc
- 739              		@ args = 0, pretend = 0, frame = 0
- 740              		@ frame_needed = 0, uses_anonymous_args = 0
- 741              		@ link register save eliminated.
- 742              	.LBB132:
- 743              	.LBB133:
- 263:.\Generated_Source\PSoC5/Encoder_Left.c **** }
- 744              		.loc 1 263 0
- 745 0000 044A     		ldr	r2, .L73
- 746 0002 1378     		ldrb	r3, [r2]	@ zero_extendqisi2
- 747              	.LBE133:
- 748              	.LBE132:
- 749              		.loc 1 561 0
- 750 0004 5906     		lsls	r1, r3, #25
- 751 0006 04D5     		bpl	.L65
- 752              	.LBB135:
- 753              	.LBB136:
- 395:.\Generated_Source\PSoC5/Encoder_Left.c ****     #endif /* (Encoder_Left_UsingFixedFunction) */
- 754              		.loc 1 395 0
- 755 0008 0349     		ldr	r1, .L73+4
- 756              	.L70:
- 757 000a 0B88     		ldrh	r3, [r1]
- 758              	.LBE136:
- 759              	.LBE135:
- 760              	.LBB137:
- 761              	.LBB134:
- 263:.\Generated_Source\PSoC5/Encoder_Left.c **** }
- 762              		.loc 1 263 0
- 763 000c 1378     		ldrb	r3, [r2]	@ zero_extendqisi2
- 764              	.LBE134:
- 765              	.LBE137:
- 766              		.loc 1 561 0
- 767 000e 5B06     		lsls	r3, r3, #25
- 768 0010 FBD4     		bmi	.L70
- 769              	.L65:
- 770 0012 7047     		bx	lr
- 771              	.L74:
- 772              		.align	2
- 773              	.L73:
- 774 0014 6A640040 		.word	1073767530
- 775 0018 90680040 		.word	1073768592
- 776              		.cfi_endproc
- 777              	.LFE15:
- 778              		.size	Encoder_Left_ClearFIFO, .-Encoder_Left_ClearFIFO
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccIX6jYz.s 			page 26
-
-
- 779              		.global	Encoder_Left_initVar
- 780              		.bss
- 781              		.set	.LANCHOR0,. + 0
- 782              		.type	Encoder_Left_initVar, %object
- 783              		.size	Encoder_Left_initVar, 1
- 784              	Encoder_Left_initVar:
- 785 0000 00       		.space	1
- 786              		.text
- 787              	.Letext0:
- 788              		.file 2 ".\\Generated_Source\\PSoC5\\cytypes.h"
- 789              		.file 3 ".\\Generated_Source\\PSoC5\\CyLib.h"
- 790              		.section	.debug_info,"",%progbits
- 791              	.Ldebug_info0:
- 792 0000 E7040000 		.4byte	0x4e7
- 793 0004 0400     		.2byte	0x4
- 794 0006 00000000 		.4byte	.Ldebug_abbrev0
- 795 000a 04       		.byte	0x4
- 796 000b 01       		.uleb128 0x1
- 797 000c E5000000 		.4byte	.LASF39
- 798 0010 01       		.byte	0x1
- 799 0011 06020000 		.4byte	.LASF40
- 800 0015 18000000 		.4byte	.LASF41
- 801 0019 88010000 		.4byte	.Ldebug_ranges0+0x188
- 802 001d 00000000 		.4byte	0
- 803 0021 00000000 		.4byte	.Ldebug_line0
- 804 0025 02       		.uleb128 0x2
- 805 0026 01       		.byte	0x1
- 806 0027 06       		.byte	0x6
- 807 0028 4A030000 		.4byte	.LASF0
- 808 002c 02       		.uleb128 0x2
- 809 002d 01       		.byte	0x1
- 810 002e 08       		.byte	0x8
- 811 002f D7000000 		.4byte	.LASF1
- 812 0033 02       		.uleb128 0x2
- 813 0034 02       		.byte	0x2
- 814 0035 05       		.byte	0x5
- 815 0036 32030000 		.4byte	.LASF2
- 816 003a 02       		.uleb128 0x2
- 817 003b 02       		.byte	0x2
- 818 003c 07       		.byte	0x7
- 819 003d 6E000000 		.4byte	.LASF3
- 820 0041 02       		.uleb128 0x2
- 821 0042 04       		.byte	0x4
- 822 0043 05       		.byte	0x5
- 823 0044 41030000 		.4byte	.LASF4
- 824 0048 02       		.uleb128 0x2
- 825 0049 04       		.byte	0x4
- 826 004a 07       		.byte	0x7
- 827 004b BD010000 		.4byte	.LASF5
- 828 004f 02       		.uleb128 0x2
- 829 0050 08       		.byte	0x8
- 830 0051 05       		.byte	0x5
- 831 0052 FE020000 		.4byte	.LASF6
- 832 0056 02       		.uleb128 0x2
- 833 0057 08       		.byte	0x8
- 834 0058 07       		.byte	0x7
- 835 0059 C0000000 		.4byte	.LASF7
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccIX6jYz.s 			page 27
-
-
- 836 005d 03       		.uleb128 0x3
- 837 005e 04       		.byte	0x4
- 838 005f 05       		.byte	0x5
- 839 0060 696E7400 		.ascii	"int\000"
- 840 0064 02       		.uleb128 0x2
- 841 0065 04       		.byte	0x4
- 842 0066 07       		.byte	0x7
- 843 0067 81020000 		.4byte	.LASF8
- 844 006b 04       		.uleb128 0x4
- 845 006c CF010000 		.4byte	.LASF9
- 846 0070 02       		.byte	0x2
- 847 0071 9201     		.2byte	0x192
- 848 0073 2C000000 		.4byte	0x2c
- 849 0077 04       		.uleb128 0x4
- 850 0078 47020000 		.4byte	.LASF10
- 851 007c 02       		.byte	0x2
- 852 007d 9301     		.2byte	0x193
- 853 007f 3A000000 		.4byte	0x3a
- 854 0083 02       		.uleb128 0x2
- 855 0084 04       		.byte	0x4
- 856 0085 04       		.byte	0x4
- 857 0086 B2000000 		.4byte	.LASF11
- 858 008a 02       		.uleb128 0x2
- 859 008b 08       		.byte	0x8
- 860 008c 04       		.byte	0x4
- 861 008d EC010000 		.4byte	.LASF12
- 862 0091 02       		.uleb128 0x2
- 863 0092 01       		.byte	0x1
- 864 0093 08       		.byte	0x8
- 865 0094 0C030000 		.4byte	.LASF13
- 866 0098 04       		.uleb128 0x4
- 867 0099 BD020000 		.4byte	.LASF14
- 868 009d 02       		.byte	0x2
- 869 009e 3C02     		.2byte	0x23c
- 870 00a0 A4000000 		.4byte	0xa4
- 871 00a4 05       		.uleb128 0x5
- 872 00a5 6B000000 		.4byte	0x6b
- 873 00a9 04       		.uleb128 0x4
- 874 00aa 00000000 		.4byte	.LASF15
- 875 00ae 02       		.byte	0x2
- 876 00af 3D02     		.2byte	0x23d
- 877 00b1 B5000000 		.4byte	0xb5
- 878 00b5 05       		.uleb128 0x5
- 879 00b6 77000000 		.4byte	0x77
- 880 00ba 02       		.uleb128 0x2
- 881 00bb 04       		.byte	0x4
- 882 00bc 07       		.byte	0x7
- 883 00bd D7020000 		.4byte	.LASF16
- 884 00c1 06       		.uleb128 0x6
- 885 00c2 81000000 		.4byte	.LASF17
- 886 00c6 01       		.byte	0x1
- 887 00c7 8601     		.2byte	0x186
- 888 00c9 77000000 		.4byte	0x77
- 889 00cd 01       		.byte	0x1
- 890 00ce 06       		.uleb128 0x6
- 891 00cf 9A030000 		.4byte	.LASF18
- 892 00d3 01       		.byte	0x1
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccIX6jYz.s 			page 28
-
-
- 893 00d4 0501     		.2byte	0x105
- 894 00d6 6B000000 		.4byte	0x6b
- 895 00da 01       		.byte	0x1
- 896 00db 07       		.uleb128 0x7
- 897 00dc A6010000 		.4byte	.LASF27
- 898 00e0 01       		.byte	0x1
- 899 00e1 2E02     		.2byte	0x22e
- 900 00e3 01       		.byte	0x1
- 901 00e4 08       		.uleb128 0x8
- 902 00e5 A4020000 		.4byte	.LASF19
- 903 00e9 01       		.byte	0x1
- 904 00ea 9F01     		.2byte	0x19f
- 905 00ec 01       		.byte	0x1
- 906 00ed FE000000 		.4byte	0xfe
- 907 00f1 09       		.uleb128 0x9
- 908 00f2 67000000 		.4byte	.LASF21
- 909 00f6 01       		.byte	0x1
- 910 00f7 9F01     		.2byte	0x19f
- 911 00f9 77000000 		.4byte	0x77
- 912 00fd 00       		.byte	0
- 913 00fe 08       		.uleb128 0x8
- 914 00ff 73010000 		.4byte	.LASF20
- 915 0103 01       		.byte	0x1
- 916 0104 4601     		.2byte	0x146
- 917 0106 01       		.byte	0x1
- 918 0107 18010000 		.4byte	0x118
- 919 010b 09       		.uleb128 0x9
- 920 010c B8000000 		.4byte	.LASF22
- 921 0110 01       		.byte	0x1
- 922 0111 4601     		.2byte	0x146
- 923 0113 77000000 		.4byte	0x77
- 924 0117 00       		.byte	0
- 925 0118 0A       		.uleb128 0xa
- 926 0119 E0020000 		.4byte	.LASF23
- 927 011d 01       		.byte	0x1
- 928 011e ED       		.byte	0xed
- 929 011f 01       		.byte	0x1
- 930 0120 30010000 		.4byte	0x130
- 931 0124 0B       		.uleb128 0xb
- 932 0125 DD010000 		.4byte	.LASF24
- 933 0129 01       		.byte	0x1
- 934 012a ED       		.byte	0xed
- 935 012b 6B000000 		.4byte	0x6b
- 936 012f 00       		.byte	0
- 937 0130 08       		.uleb128 0x8
- 938 0131 80030000 		.4byte	.LASF25
- 939 0135 01       		.byte	0x1
- 940 0136 D101     		.2byte	0x1d1
- 941 0138 01       		.byte	0x1
- 942 0139 4A010000 		.4byte	0x14a
- 943 013d 09       		.uleb128 0x9
- 944 013e 56030000 		.4byte	.LASF26
- 945 0142 01       		.byte	0x1
- 946 0143 D101     		.2byte	0x1d1
- 947 0145 77000000 		.4byte	0x77
- 948 0149 00       		.byte	0
- 949 014a 0C       		.uleb128 0xc
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccIX6jYz.s 			page 29
-
-
- 950 014b BA030000 		.4byte	.LASF28
- 951 014f 01       		.byte	0x1
- 952 0150 8F       		.byte	0x8f
- 953 0151 01       		.byte	0x1
- 954 0152 0A       		.uleb128 0xa
- 955 0153 CE030000 		.4byte	.LASF29
- 956 0157 01       		.byte	0x1
- 957 0158 25       		.byte	0x25
- 958 0159 01       		.byte	0x1
- 959 015a 75010000 		.4byte	0x175
- 960 015e 0D       		.uleb128 0xd
- 961 015f 3C030000 		.4byte	.LASF30
- 962 0163 01       		.byte	0x1
- 963 0164 28       		.byte	0x28
- 964 0165 6B000000 		.4byte	0x6b
- 965 0169 0D       		.uleb128 0xd
- 966 016a 65020000 		.4byte	.LASF31
- 967 016e 01       		.byte	0x1
- 968 016f 2D       		.byte	0x2d
- 969 0170 6B000000 		.4byte	0x6b
- 970 0174 00       		.byte	0
- 971 0175 0E       		.uleb128 0xe
- 972 0176 52010000 		.4byte	0x152
- 973 017a 00000000 		.4byte	.LFB0
- 974 017e 74000000 		.4byte	.LFE0-.LFB0
- 975 0182 01       		.uleb128 0x1
- 976 0183 9C       		.byte	0x9c
- 977 0184 58020000 		.4byte	0x258
- 978 0188 0F       		.uleb128 0xf
- 979 0189 5E010000 		.4byte	0x15e
- 980 018d 00000000 		.4byte	.LLST0
- 981 0191 0F       		.uleb128 0xf
- 982 0192 69010000 		.4byte	0x169
- 983 0196 3E000000 		.4byte	.LLST1
- 984 019a 10       		.uleb128 0x10
- 985 019b DB000000 		.4byte	0xdb
- 986 019f 04000000 		.4byte	.LBB40
- 987 01a3 00000000 		.4byte	.Ldebug_ranges0+0
- 988 01a7 01       		.byte	0x1
- 989 01a8 60       		.byte	0x60
- 990 01a9 CE010000 		.4byte	0x1ce
- 991 01ad 11       		.uleb128 0x11
- 992 01ae CE000000 		.4byte	0xce
- 993 01b2 04000000 		.4byte	.LBB42
- 994 01b6 18000000 		.4byte	.Ldebug_ranges0+0x18
- 995 01ba 01       		.byte	0x1
- 996 01bb 3102     		.2byte	0x231
- 997 01bd 12       		.uleb128 0x12
- 998 01be C1000000 		.4byte	0xc1
- 999 01c2 20000000 		.4byte	.LBB47
- 1000 01c6 06000000 		.4byte	.LBE47-.LBB47
- 1001 01ca 01       		.byte	0x1
- 1002 01cb 3302     		.2byte	0x233
- 1003 01cd 00       		.byte	0
- 1004 01ce 10       		.uleb128 0x10
- 1005 01cf E4000000 		.4byte	0xe4
- 1006 01d3 2C000000 		.4byte	.LBB52
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccIX6jYz.s 			page 30
-
-
- 1007 01d7 38000000 		.4byte	.Ldebug_ranges0+0x38
- 1008 01db 01       		.byte	0x1
- 1009 01dc 64       		.byte	0x64
- 1010 01dd E8010000 		.4byte	0x1e8
- 1011 01e1 13       		.uleb128 0x13
- 1012 01e2 F1000000 		.4byte	0xf1
- 1013 01e6 00       		.byte	0
- 1014 01e7 00       		.byte	0
- 1015 01e8 10       		.uleb128 0x10
- 1016 01e9 FE000000 		.4byte	0xfe
- 1017 01ed 2E000000 		.4byte	.LBB56
- 1018 01f1 58000000 		.4byte	.Ldebug_ranges0+0x58
- 1019 01f5 01       		.byte	0x1
- 1020 01f6 66       		.byte	0x66
- 1021 01f7 02020000 		.4byte	0x202
- 1022 01fb 13       		.uleb128 0x13
- 1023 01fc 0B010000 		.4byte	0x10b
- 1024 0200 00       		.byte	0
- 1025 0201 00       		.byte	0
- 1026 0202 10       		.uleb128 0x10
- 1027 0203 18010000 		.4byte	0x118
- 1028 0207 30000000 		.4byte	.LBB59
- 1029 020b 70000000 		.4byte	.Ldebug_ranges0+0x70
- 1030 020f 01       		.byte	0x1
- 1031 0210 68       		.byte	0x68
- 1032 0211 1C020000 		.4byte	0x21c
- 1033 0215 13       		.uleb128 0x13
- 1034 0216 24010000 		.4byte	0x124
- 1035 021a 00       		.byte	0
- 1036 021b 00       		.byte	0
- 1037 021c 10       		.uleb128 0x10
- 1038 021d 30010000 		.4byte	0x130
- 1039 0221 34000000 		.4byte	.LBB63
- 1040 0225 88000000 		.4byte	.Ldebug_ranges0+0x88
- 1041 0229 01       		.byte	0x1
- 1042 022a 6E       		.byte	0x6e
- 1043 022b 36020000 		.4byte	0x236
- 1044 022f 13       		.uleb128 0x13
- 1045 0230 3D010000 		.4byte	0x13d
- 1046 0234 00       		.byte	0
- 1047 0235 00       		.byte	0
- 1048 0236 14       		.uleb128 0x14
- 1049 0237 CE000000 		.4byte	0xce
- 1050 023b 36000000 		.4byte	.LBB66
- 1051 023f A0000000 		.4byte	.Ldebug_ranges0+0xa0
- 1052 0243 01       		.byte	0x1
- 1053 0244 6C       		.byte	0x6c
- 1054 0245 15       		.uleb128 0x15
- 1055 0246 46000000 		.4byte	.LVL9
- 1056 024a D2040000 		.4byte	0x4d2
- 1057 024e 16       		.uleb128 0x16
- 1058 024f 58000000 		.4byte	.LVL10
- 1059 0253 DD040000 		.4byte	0x4dd
- 1060 0257 00       		.byte	0
- 1061 0258 17       		.uleb128 0x17
- 1062 0259 4A010000 		.4byte	0x14a
- 1063 025d 00000000 		.4byte	.LFB1
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccIX6jYz.s 			page 31
-
-
- 1064 0261 10000000 		.4byte	.LFE1-.LFB1
- 1065 0265 01       		.uleb128 0x1
- 1066 0266 9C       		.byte	0x9c
- 1067 0267 18       		.uleb128 0x18
- 1068 0268 F3010000 		.4byte	.LASF32
- 1069 026c 01       		.byte	0x1
- 1070 026d B2       		.byte	0xb2
- 1071 026e 00000000 		.4byte	.LFB2
- 1072 0272 8C000000 		.4byte	.LFE2-.LFB2
- 1073 0276 01       		.uleb128 0x1
- 1074 0277 9C       		.byte	0x9c
- 1075 0278 75030000 		.4byte	0x375
- 1076 027c 19       		.uleb128 0x19
- 1077 027d 4A010000 		.4byte	0x14a
- 1078 0281 08000000 		.4byte	.LBB94
- 1079 0285 0C000000 		.4byte	.LBE94-.LBB94
- 1080 0289 01       		.byte	0x1
- 1081 028a BC       		.byte	0xbc
- 1082 028b 1A       		.uleb128 0x1a
- 1083 028c 52010000 		.4byte	0x152
- 1084 0290 14000000 		.4byte	.LBB96
- 1085 0294 52000000 		.4byte	.LBE96-.LBB96
- 1086 0298 01       		.byte	0x1
- 1087 0299 B6       		.byte	0xb6
- 1088 029a 1B       		.uleb128 0x1b
- 1089 029b 14000000 		.4byte	.LBB97
- 1090 029f 52000000 		.4byte	.LBE97-.LBB97
- 1091 02a3 0F       		.uleb128 0xf
- 1092 02a4 5E010000 		.4byte	0x15e
- 1093 02a8 51000000 		.4byte	.LLST2
- 1094 02ac 0F       		.uleb128 0xf
- 1095 02ad 69010000 		.4byte	0x169
- 1096 02b1 8F000000 		.4byte	.LLST3
- 1097 02b5 10       		.uleb128 0x10
- 1098 02b6 DB000000 		.4byte	0xdb
- 1099 02ba 16000000 		.4byte	.LBB98
- 1100 02be B8000000 		.4byte	.Ldebug_ranges0+0xb8
- 1101 02c2 01       		.byte	0x1
- 1102 02c3 60       		.byte	0x60
- 1103 02c4 E9020000 		.4byte	0x2e9
- 1104 02c8 11       		.uleb128 0x11
- 1105 02c9 CE000000 		.4byte	0xce
- 1106 02cd 16000000 		.4byte	.LBB100
- 1107 02d1 D0000000 		.4byte	.Ldebug_ranges0+0xd0
- 1108 02d5 01       		.byte	0x1
- 1109 02d6 3102     		.2byte	0x231
- 1110 02d8 12       		.uleb128 0x12
- 1111 02d9 C1000000 		.4byte	0xc1
- 1112 02dd 32000000 		.4byte	.LBB105
- 1113 02e1 06000000 		.4byte	.LBE105-.LBB105
- 1114 02e5 01       		.byte	0x1
- 1115 02e6 3302     		.2byte	0x233
- 1116 02e8 00       		.byte	0
- 1117 02e9 10       		.uleb128 0x10
- 1118 02ea 18010000 		.4byte	0x118
- 1119 02ee 3E000000 		.4byte	.LBB110
- 1120 02f2 F0000000 		.4byte	.Ldebug_ranges0+0xf0
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccIX6jYz.s 			page 32
-
-
- 1121 02f6 01       		.byte	0x1
- 1122 02f7 68       		.byte	0x68
- 1123 02f8 03030000 		.4byte	0x303
- 1124 02fc 13       		.uleb128 0x13
- 1125 02fd 24010000 		.4byte	0x124
- 1126 0301 00       		.byte	0
- 1127 0302 00       		.byte	0
- 1128 0303 10       		.uleb128 0x10
- 1129 0304 E4000000 		.4byte	0xe4
- 1130 0308 40000000 		.4byte	.LBB113
- 1131 030c 08010000 		.4byte	.Ldebug_ranges0+0x108
- 1132 0310 01       		.byte	0x1
- 1133 0311 64       		.byte	0x64
- 1134 0312 1D030000 		.4byte	0x31d
- 1135 0316 13       		.uleb128 0x13
- 1136 0317 F1000000 		.4byte	0xf1
- 1137 031b 00       		.byte	0
- 1138 031c 00       		.byte	0
- 1139 031d 10       		.uleb128 0x10
- 1140 031e FE000000 		.4byte	0xfe
- 1141 0322 42000000 		.4byte	.LBB117
- 1142 0326 28010000 		.4byte	.Ldebug_ranges0+0x128
- 1143 032a 01       		.byte	0x1
- 1144 032b 66       		.byte	0x66
- 1145 032c 37030000 		.4byte	0x337
- 1146 0330 13       		.uleb128 0x13
- 1147 0331 0B010000 		.4byte	0x10b
- 1148 0335 00       		.byte	0
- 1149 0336 00       		.byte	0
- 1150 0337 10       		.uleb128 0x10
- 1151 0338 30010000 		.4byte	0x130
- 1152 033c 46000000 		.4byte	.LBB121
- 1153 0340 40010000 		.4byte	.Ldebug_ranges0+0x140
- 1154 0344 01       		.byte	0x1
- 1155 0345 6E       		.byte	0x6e
- 1156 0346 51030000 		.4byte	0x351
- 1157 034a 13       		.uleb128 0x13
- 1158 034b 3D010000 		.4byte	0x13d
- 1159 034f 00       		.byte	0
- 1160 0350 00       		.byte	0
- 1161 0351 14       		.uleb128 0x14
- 1162 0352 CE000000 		.4byte	0xce
- 1163 0356 48000000 		.4byte	.LBB124
- 1164 035a 58010000 		.4byte	.Ldebug_ranges0+0x158
- 1165 035e 01       		.byte	0x1
- 1166 035f 6C       		.byte	0x6c
- 1167 0360 15       		.uleb128 0x15
- 1168 0361 58000000 		.4byte	.LVL20
- 1169 0365 D2040000 		.4byte	0x4d2
- 1170 0369 15       		.uleb128 0x15
- 1171 036a 66000000 		.4byte	.LVL21
- 1172 036e DD040000 		.4byte	0x4dd
- 1173 0372 00       		.byte	0
- 1174 0373 00       		.byte	0
- 1175 0374 00       		.byte	0
- 1176 0375 1C       		.uleb128 0x1c
- 1177 0376 06000000 		.4byte	.LASF42
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccIX6jYz.s 			page 33
-
-
- 1178 037a 01       		.byte	0x1
- 1179 037b D0       		.byte	0xd0
- 1180 037c 00000000 		.4byte	.LFB3
- 1181 0380 10000000 		.4byte	.LFE3-.LFB3
- 1182 0384 01       		.uleb128 0x1
- 1183 0385 9C       		.byte	0x9c
- 1184 0386 0E       		.uleb128 0xe
- 1185 0387 18010000 		.4byte	0x118
- 1186 038b 00000000 		.4byte	.LFB4
- 1187 038f 0C000000 		.4byte	.LFE4-.LFB4
- 1188 0393 01       		.uleb128 0x1
- 1189 0394 9C       		.byte	0x9c
- 1190 0395 A1030000 		.4byte	0x3a1
- 1191 0399 1D       		.uleb128 0x1d
- 1192 039a 24010000 		.4byte	0x124
- 1193 039e 01       		.uleb128 0x1
- 1194 039f 50       		.byte	0x50
- 1195 03a0 00       		.byte	0
- 1196 03a1 17       		.uleb128 0x17
- 1197 03a2 CE000000 		.4byte	0xce
- 1198 03a6 00000000 		.4byte	.LFB5
- 1199 03aa 0C000000 		.4byte	.LFE5-.LFB5
- 1200 03ae 01       		.uleb128 0x1
- 1201 03af 9C       		.byte	0x9c
- 1202 03b0 1E       		.uleb128 0x1e
- 1203 03b1 11030000 		.4byte	.LASF34
- 1204 03b5 01       		.byte	0x1
- 1205 03b6 1B01     		.2byte	0x11b
- 1206 03b8 6B000000 		.4byte	0x6b
- 1207 03bc 00000000 		.4byte	.LFB6
- 1208 03c0 0C000000 		.4byte	.LFE6-.LFB6
- 1209 03c4 01       		.uleb128 0x1
- 1210 03c5 9C       		.byte	0x9c
- 1211 03c6 1F       		.uleb128 0x1f
- 1212 03c7 5E030000 		.4byte	.LASF33
- 1213 03cb 01       		.byte	0x1
- 1214 03cc 3001     		.2byte	0x130
- 1215 03ce 00000000 		.4byte	.LFB7
- 1216 03d2 0C000000 		.4byte	.LFE7-.LFB7
- 1217 03d6 01       		.uleb128 0x1
- 1218 03d7 9C       		.byte	0x9c
- 1219 03d8 EB030000 		.4byte	0x3eb
- 1220 03dc 20       		.uleb128 0x20
- 1221 03dd D5010000 		.4byte	.LASF43
- 1222 03e1 01       		.byte	0x1
- 1223 03e2 3001     		.2byte	0x130
- 1224 03e4 6B000000 		.4byte	0x6b
- 1225 03e8 01       		.uleb128 0x1
- 1226 03e9 50       		.byte	0x50
- 1227 03ea 00       		.byte	0
- 1228 03eb 0E       		.uleb128 0xe
- 1229 03ec FE000000 		.4byte	0xfe
- 1230 03f0 00000000 		.4byte	.LFB8
- 1231 03f4 0C000000 		.4byte	.LFE8-.LFB8
- 1232 03f8 01       		.uleb128 0x1
- 1233 03f9 9C       		.byte	0x9c
- 1234 03fa 06040000 		.4byte	0x406
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccIX6jYz.s 			page 34
-
-
- 1235 03fe 1D       		.uleb128 0x1d
- 1236 03ff 0B010000 		.4byte	0x10b
- 1237 0403 01       		.uleb128 0x1
- 1238 0404 50       		.byte	0x50
- 1239 0405 00       		.byte	0
- 1240 0406 1E       		.uleb128 0x1e
- 1241 0407 8D010000 		.4byte	.LASF35
- 1242 040b 01       		.byte	0x1
- 1243 040c 6501     		.2byte	0x165
- 1244 040e 77000000 		.4byte	0x77
- 1245 0412 00000000 		.4byte	.LFB9
- 1246 0416 14000000 		.4byte	.LFE9-.LFB9
- 1247 041a 01       		.uleb128 0x1
- 1248 041b 9C       		.byte	0x9c
- 1249 041c 17       		.uleb128 0x17
- 1250 041d C1000000 		.4byte	0xc1
- 1251 0421 00000000 		.4byte	.LFB10
- 1252 0425 0C000000 		.4byte	.LFE10-.LFB10
- 1253 0429 01       		.uleb128 0x1
- 1254 042a 9C       		.byte	0x9c
- 1255 042b 0E       		.uleb128 0xe
- 1256 042c E4000000 		.4byte	0xe4
- 1257 0430 00000000 		.4byte	.LFB11
- 1258 0434 0C000000 		.4byte	.LFE11-.LFB11
- 1259 0438 01       		.uleb128 0x1
- 1260 0439 9C       		.byte	0x9c
- 1261 043a 46040000 		.4byte	0x446
- 1262 043e 1D       		.uleb128 0x1d
- 1263 043f F1000000 		.4byte	0xf1
- 1264 0443 01       		.uleb128 0x1
- 1265 0444 50       		.byte	0x50
- 1266 0445 00       		.byte	0
- 1267 0446 1E       		.uleb128 0x1e
- 1268 0447 9A000000 		.4byte	.LASF36
- 1269 044b 01       		.byte	0x1
- 1270 044c B601     		.2byte	0x1b6
- 1271 044e 77000000 		.4byte	0x77
- 1272 0452 00000000 		.4byte	.LFB12
- 1273 0456 0C000000 		.4byte	.LFE12-.LFB12
- 1274 045a 01       		.uleb128 0x1
- 1275 045b 9C       		.byte	0x9c
- 1276 045c 0E       		.uleb128 0xe
- 1277 045d 30010000 		.4byte	0x130
- 1278 0461 00000000 		.4byte	.LFB13
- 1279 0465 0C000000 		.4byte	.LFE13-.LFB13
- 1280 0469 01       		.uleb128 0x1
- 1281 046a 9C       		.byte	0x9c
- 1282 046b 77040000 		.4byte	0x477
- 1283 046f 1D       		.uleb128 0x1d
- 1284 0470 3D010000 		.4byte	0x13d
- 1285 0474 01       		.uleb128 0x1
- 1286 0475 50       		.byte	0x50
- 1287 0476 00       		.byte	0
- 1288 0477 1E       		.uleb128 0x1e
- 1289 0478 2E020000 		.4byte	.LASF37
- 1290 047c 01       		.byte	0x1
- 1291 047d E901     		.2byte	0x1e9
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccIX6jYz.s 			page 35
-
-
- 1292 047f 77000000 		.4byte	0x77
- 1293 0483 00000000 		.4byte	.LFB14
- 1294 0487 0C000000 		.4byte	.LFE14-.LFB14
- 1295 048b 01       		.uleb128 0x1
- 1296 048c 9C       		.byte	0x9c
- 1297 048d 0E       		.uleb128 0xe
- 1298 048e DB000000 		.4byte	0xdb
- 1299 0492 00000000 		.4byte	.LFB15
- 1300 0496 1C000000 		.4byte	.LFE15-.LFB15
- 1301 049a 01       		.uleb128 0x1
- 1302 049b 9C       		.byte	0x9c
- 1303 049c C1040000 		.4byte	0x4c1
- 1304 04a0 11       		.uleb128 0x11
- 1305 04a1 CE000000 		.4byte	0xce
- 1306 04a5 00000000 		.4byte	.LBB132
- 1307 04a9 70010000 		.4byte	.Ldebug_ranges0+0x170
- 1308 04ad 01       		.byte	0x1
- 1309 04ae 3102     		.2byte	0x231
- 1310 04b0 12       		.uleb128 0x12
- 1311 04b1 C1000000 		.4byte	0xc1
- 1312 04b5 08000000 		.4byte	.LBB135
- 1313 04b9 04000000 		.4byte	.LBE135-.LBB135
- 1314 04bd 01       		.byte	0x1
- 1315 04be 3302     		.2byte	0x233
- 1316 04c0 00       		.byte	0
- 1317 04c1 21       		.uleb128 0x21
- 1318 04c2 C2020000 		.4byte	.LASF44
- 1319 04c6 01       		.byte	0x1
- 1320 04c7 15       		.byte	0x15
- 1321 04c8 6B000000 		.4byte	0x6b
- 1322 04cc 05       		.uleb128 0x5
- 1323 04cd 03       		.byte	0x3
- 1324 04ce 00000000 		.4byte	Encoder_Left_initVar
- 1325 04d2 22       		.uleb128 0x22
- 1326 04d3 4E020000 		.4byte	.LASF38
- 1327 04d7 03       		.byte	0x3
- 1328 04d8 7D       		.byte	0x7d
- 1329 04d9 6B000000 		.4byte	0x6b
- 1330 04dd 23       		.uleb128 0x23
- 1331 04de 8E020000 		.4byte	.LASF45
- 1332 04e2 03       		.byte	0x3
- 1333 04e3 7E       		.byte	0x7e
- 1334 04e4 24       		.uleb128 0x24
- 1335 04e5 6B000000 		.4byte	0x6b
- 1336 04e9 00       		.byte	0
- 1337 04ea 00       		.byte	0
- 1338              		.section	.debug_abbrev,"",%progbits
- 1339              	.Ldebug_abbrev0:
- 1340 0000 01       		.uleb128 0x1
- 1341 0001 11       		.uleb128 0x11
- 1342 0002 01       		.byte	0x1
- 1343 0003 25       		.uleb128 0x25
- 1344 0004 0E       		.uleb128 0xe
- 1345 0005 13       		.uleb128 0x13
- 1346 0006 0B       		.uleb128 0xb
- 1347 0007 03       		.uleb128 0x3
- 1348 0008 0E       		.uleb128 0xe
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccIX6jYz.s 			page 36
-
-
- 1349 0009 1B       		.uleb128 0x1b
- 1350 000a 0E       		.uleb128 0xe
- 1351 000b 55       		.uleb128 0x55
- 1352 000c 17       		.uleb128 0x17
- 1353 000d 11       		.uleb128 0x11
- 1354 000e 01       		.uleb128 0x1
- 1355 000f 10       		.uleb128 0x10
- 1356 0010 17       		.uleb128 0x17
- 1357 0011 00       		.byte	0
- 1358 0012 00       		.byte	0
- 1359 0013 02       		.uleb128 0x2
- 1360 0014 24       		.uleb128 0x24
- 1361 0015 00       		.byte	0
- 1362 0016 0B       		.uleb128 0xb
- 1363 0017 0B       		.uleb128 0xb
- 1364 0018 3E       		.uleb128 0x3e
- 1365 0019 0B       		.uleb128 0xb
- 1366 001a 03       		.uleb128 0x3
- 1367 001b 0E       		.uleb128 0xe
- 1368 001c 00       		.byte	0
- 1369 001d 00       		.byte	0
- 1370 001e 03       		.uleb128 0x3
- 1371 001f 24       		.uleb128 0x24
- 1372 0020 00       		.byte	0
- 1373 0021 0B       		.uleb128 0xb
- 1374 0022 0B       		.uleb128 0xb
- 1375 0023 3E       		.uleb128 0x3e
- 1376 0024 0B       		.uleb128 0xb
- 1377 0025 03       		.uleb128 0x3
- 1378 0026 08       		.uleb128 0x8
- 1379 0027 00       		.byte	0
- 1380 0028 00       		.byte	0
- 1381 0029 04       		.uleb128 0x4
- 1382 002a 16       		.uleb128 0x16
- 1383 002b 00       		.byte	0
- 1384 002c 03       		.uleb128 0x3
- 1385 002d 0E       		.uleb128 0xe
- 1386 002e 3A       		.uleb128 0x3a
- 1387 002f 0B       		.uleb128 0xb
- 1388 0030 3B       		.uleb128 0x3b
- 1389 0031 05       		.uleb128 0x5
- 1390 0032 49       		.uleb128 0x49
- 1391 0033 13       		.uleb128 0x13
- 1392 0034 00       		.byte	0
- 1393 0035 00       		.byte	0
- 1394 0036 05       		.uleb128 0x5
- 1395 0037 35       		.uleb128 0x35
- 1396 0038 00       		.byte	0
- 1397 0039 49       		.uleb128 0x49
- 1398 003a 13       		.uleb128 0x13
- 1399 003b 00       		.byte	0
- 1400 003c 00       		.byte	0
- 1401 003d 06       		.uleb128 0x6
- 1402 003e 2E       		.uleb128 0x2e
- 1403 003f 00       		.byte	0
- 1404 0040 3F       		.uleb128 0x3f
- 1405 0041 19       		.uleb128 0x19
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccIX6jYz.s 			page 37
-
-
- 1406 0042 03       		.uleb128 0x3
- 1407 0043 0E       		.uleb128 0xe
- 1408 0044 3A       		.uleb128 0x3a
- 1409 0045 0B       		.uleb128 0xb
- 1410 0046 3B       		.uleb128 0x3b
- 1411 0047 05       		.uleb128 0x5
- 1412 0048 27       		.uleb128 0x27
- 1413 0049 19       		.uleb128 0x19
- 1414 004a 49       		.uleb128 0x49
- 1415 004b 13       		.uleb128 0x13
- 1416 004c 20       		.uleb128 0x20
- 1417 004d 0B       		.uleb128 0xb
- 1418 004e 00       		.byte	0
- 1419 004f 00       		.byte	0
- 1420 0050 07       		.uleb128 0x7
- 1421 0051 2E       		.uleb128 0x2e
- 1422 0052 00       		.byte	0
- 1423 0053 3F       		.uleb128 0x3f
- 1424 0054 19       		.uleb128 0x19
- 1425 0055 03       		.uleb128 0x3
- 1426 0056 0E       		.uleb128 0xe
- 1427 0057 3A       		.uleb128 0x3a
- 1428 0058 0B       		.uleb128 0xb
- 1429 0059 3B       		.uleb128 0x3b
- 1430 005a 05       		.uleb128 0x5
- 1431 005b 27       		.uleb128 0x27
- 1432 005c 19       		.uleb128 0x19
- 1433 005d 20       		.uleb128 0x20
- 1434 005e 0B       		.uleb128 0xb
- 1435 005f 00       		.byte	0
- 1436 0060 00       		.byte	0
- 1437 0061 08       		.uleb128 0x8
- 1438 0062 2E       		.uleb128 0x2e
- 1439 0063 01       		.byte	0x1
- 1440 0064 3F       		.uleb128 0x3f
- 1441 0065 19       		.uleb128 0x19
- 1442 0066 03       		.uleb128 0x3
- 1443 0067 0E       		.uleb128 0xe
- 1444 0068 3A       		.uleb128 0x3a
- 1445 0069 0B       		.uleb128 0xb
- 1446 006a 3B       		.uleb128 0x3b
- 1447 006b 05       		.uleb128 0x5
- 1448 006c 27       		.uleb128 0x27
- 1449 006d 19       		.uleb128 0x19
- 1450 006e 20       		.uleb128 0x20
- 1451 006f 0B       		.uleb128 0xb
- 1452 0070 01       		.uleb128 0x1
- 1453 0071 13       		.uleb128 0x13
- 1454 0072 00       		.byte	0
- 1455 0073 00       		.byte	0
- 1456 0074 09       		.uleb128 0x9
- 1457 0075 05       		.uleb128 0x5
- 1458 0076 00       		.byte	0
- 1459 0077 03       		.uleb128 0x3
- 1460 0078 0E       		.uleb128 0xe
- 1461 0079 3A       		.uleb128 0x3a
- 1462 007a 0B       		.uleb128 0xb
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccIX6jYz.s 			page 38
-
-
- 1463 007b 3B       		.uleb128 0x3b
- 1464 007c 05       		.uleb128 0x5
- 1465 007d 49       		.uleb128 0x49
- 1466 007e 13       		.uleb128 0x13
- 1467 007f 00       		.byte	0
- 1468 0080 00       		.byte	0
- 1469 0081 0A       		.uleb128 0xa
- 1470 0082 2E       		.uleb128 0x2e
- 1471 0083 01       		.byte	0x1
- 1472 0084 3F       		.uleb128 0x3f
- 1473 0085 19       		.uleb128 0x19
- 1474 0086 03       		.uleb128 0x3
- 1475 0087 0E       		.uleb128 0xe
- 1476 0088 3A       		.uleb128 0x3a
- 1477 0089 0B       		.uleb128 0xb
- 1478 008a 3B       		.uleb128 0x3b
- 1479 008b 0B       		.uleb128 0xb
- 1480 008c 27       		.uleb128 0x27
- 1481 008d 19       		.uleb128 0x19
- 1482 008e 20       		.uleb128 0x20
- 1483 008f 0B       		.uleb128 0xb
- 1484 0090 01       		.uleb128 0x1
- 1485 0091 13       		.uleb128 0x13
- 1486 0092 00       		.byte	0
- 1487 0093 00       		.byte	0
- 1488 0094 0B       		.uleb128 0xb
- 1489 0095 05       		.uleb128 0x5
- 1490 0096 00       		.byte	0
- 1491 0097 03       		.uleb128 0x3
- 1492 0098 0E       		.uleb128 0xe
- 1493 0099 3A       		.uleb128 0x3a
- 1494 009a 0B       		.uleb128 0xb
- 1495 009b 3B       		.uleb128 0x3b
- 1496 009c 0B       		.uleb128 0xb
- 1497 009d 49       		.uleb128 0x49
- 1498 009e 13       		.uleb128 0x13
- 1499 009f 00       		.byte	0
- 1500 00a0 00       		.byte	0
- 1501 00a1 0C       		.uleb128 0xc
- 1502 00a2 2E       		.uleb128 0x2e
- 1503 00a3 00       		.byte	0
- 1504 00a4 3F       		.uleb128 0x3f
- 1505 00a5 19       		.uleb128 0x19
- 1506 00a6 03       		.uleb128 0x3
- 1507 00a7 0E       		.uleb128 0xe
- 1508 00a8 3A       		.uleb128 0x3a
- 1509 00a9 0B       		.uleb128 0xb
- 1510 00aa 3B       		.uleb128 0x3b
- 1511 00ab 0B       		.uleb128 0xb
- 1512 00ac 27       		.uleb128 0x27
- 1513 00ad 19       		.uleb128 0x19
- 1514 00ae 20       		.uleb128 0x20
- 1515 00af 0B       		.uleb128 0xb
- 1516 00b0 00       		.byte	0
- 1517 00b1 00       		.byte	0
- 1518 00b2 0D       		.uleb128 0xd
- 1519 00b3 34       		.uleb128 0x34
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccIX6jYz.s 			page 39
-
-
- 1520 00b4 00       		.byte	0
- 1521 00b5 03       		.uleb128 0x3
- 1522 00b6 0E       		.uleb128 0xe
- 1523 00b7 3A       		.uleb128 0x3a
- 1524 00b8 0B       		.uleb128 0xb
- 1525 00b9 3B       		.uleb128 0x3b
- 1526 00ba 0B       		.uleb128 0xb
- 1527 00bb 49       		.uleb128 0x49
- 1528 00bc 13       		.uleb128 0x13
- 1529 00bd 00       		.byte	0
- 1530 00be 00       		.byte	0
- 1531 00bf 0E       		.uleb128 0xe
- 1532 00c0 2E       		.uleb128 0x2e
- 1533 00c1 01       		.byte	0x1
- 1534 00c2 31       		.uleb128 0x31
- 1535 00c3 13       		.uleb128 0x13
- 1536 00c4 11       		.uleb128 0x11
- 1537 00c5 01       		.uleb128 0x1
- 1538 00c6 12       		.uleb128 0x12
- 1539 00c7 06       		.uleb128 0x6
- 1540 00c8 40       		.uleb128 0x40
- 1541 00c9 18       		.uleb128 0x18
- 1542 00ca 9742     		.uleb128 0x2117
- 1543 00cc 19       		.uleb128 0x19
- 1544 00cd 01       		.uleb128 0x1
- 1545 00ce 13       		.uleb128 0x13
- 1546 00cf 00       		.byte	0
- 1547 00d0 00       		.byte	0
- 1548 00d1 0F       		.uleb128 0xf
- 1549 00d2 34       		.uleb128 0x34
- 1550 00d3 00       		.byte	0
- 1551 00d4 31       		.uleb128 0x31
- 1552 00d5 13       		.uleb128 0x13
- 1553 00d6 02       		.uleb128 0x2
- 1554 00d7 17       		.uleb128 0x17
- 1555 00d8 00       		.byte	0
- 1556 00d9 00       		.byte	0
- 1557 00da 10       		.uleb128 0x10
- 1558 00db 1D       		.uleb128 0x1d
- 1559 00dc 01       		.byte	0x1
- 1560 00dd 31       		.uleb128 0x31
- 1561 00de 13       		.uleb128 0x13
- 1562 00df 52       		.uleb128 0x52
- 1563 00e0 01       		.uleb128 0x1
- 1564 00e1 55       		.uleb128 0x55
- 1565 00e2 17       		.uleb128 0x17
- 1566 00e3 58       		.uleb128 0x58
- 1567 00e4 0B       		.uleb128 0xb
- 1568 00e5 59       		.uleb128 0x59
- 1569 00e6 0B       		.uleb128 0xb
- 1570 00e7 01       		.uleb128 0x1
- 1571 00e8 13       		.uleb128 0x13
- 1572 00e9 00       		.byte	0
- 1573 00ea 00       		.byte	0
- 1574 00eb 11       		.uleb128 0x11
- 1575 00ec 1D       		.uleb128 0x1d
- 1576 00ed 00       		.byte	0
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccIX6jYz.s 			page 40
-
-
- 1577 00ee 31       		.uleb128 0x31
- 1578 00ef 13       		.uleb128 0x13
- 1579 00f0 52       		.uleb128 0x52
- 1580 00f1 01       		.uleb128 0x1
- 1581 00f2 55       		.uleb128 0x55
- 1582 00f3 17       		.uleb128 0x17
- 1583 00f4 58       		.uleb128 0x58
- 1584 00f5 0B       		.uleb128 0xb
- 1585 00f6 59       		.uleb128 0x59
- 1586 00f7 05       		.uleb128 0x5
- 1587 00f8 00       		.byte	0
- 1588 00f9 00       		.byte	0
- 1589 00fa 12       		.uleb128 0x12
- 1590 00fb 1D       		.uleb128 0x1d
- 1591 00fc 00       		.byte	0
- 1592 00fd 31       		.uleb128 0x31
- 1593 00fe 13       		.uleb128 0x13
- 1594 00ff 11       		.uleb128 0x11
- 1595 0100 01       		.uleb128 0x1
- 1596 0101 12       		.uleb128 0x12
- 1597 0102 06       		.uleb128 0x6
- 1598 0103 58       		.uleb128 0x58
- 1599 0104 0B       		.uleb128 0xb
- 1600 0105 59       		.uleb128 0x59
- 1601 0106 05       		.uleb128 0x5
- 1602 0107 00       		.byte	0
- 1603 0108 00       		.byte	0
- 1604 0109 13       		.uleb128 0x13
- 1605 010a 05       		.uleb128 0x5
- 1606 010b 00       		.byte	0
- 1607 010c 31       		.uleb128 0x31
- 1608 010d 13       		.uleb128 0x13
- 1609 010e 1C       		.uleb128 0x1c
- 1610 010f 0B       		.uleb128 0xb
- 1611 0110 00       		.byte	0
- 1612 0111 00       		.byte	0
- 1613 0112 14       		.uleb128 0x14
- 1614 0113 1D       		.uleb128 0x1d
- 1615 0114 00       		.byte	0
- 1616 0115 31       		.uleb128 0x31
- 1617 0116 13       		.uleb128 0x13
- 1618 0117 52       		.uleb128 0x52
- 1619 0118 01       		.uleb128 0x1
- 1620 0119 55       		.uleb128 0x55
- 1621 011a 17       		.uleb128 0x17
- 1622 011b 58       		.uleb128 0x58
- 1623 011c 0B       		.uleb128 0xb
- 1624 011d 59       		.uleb128 0x59
- 1625 011e 0B       		.uleb128 0xb
- 1626 011f 00       		.byte	0
- 1627 0120 00       		.byte	0
- 1628 0121 15       		.uleb128 0x15
- 1629 0122 898201   		.uleb128 0x4109
- 1630 0125 00       		.byte	0
- 1631 0126 11       		.uleb128 0x11
- 1632 0127 01       		.uleb128 0x1
- 1633 0128 31       		.uleb128 0x31
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccIX6jYz.s 			page 41
-
-
- 1634 0129 13       		.uleb128 0x13
- 1635 012a 00       		.byte	0
- 1636 012b 00       		.byte	0
- 1637 012c 16       		.uleb128 0x16
- 1638 012d 898201   		.uleb128 0x4109
- 1639 0130 00       		.byte	0
- 1640 0131 11       		.uleb128 0x11
- 1641 0132 01       		.uleb128 0x1
- 1642 0133 9542     		.uleb128 0x2115
- 1643 0135 19       		.uleb128 0x19
- 1644 0136 31       		.uleb128 0x31
- 1645 0137 13       		.uleb128 0x13
- 1646 0138 00       		.byte	0
- 1647 0139 00       		.byte	0
- 1648 013a 17       		.uleb128 0x17
- 1649 013b 2E       		.uleb128 0x2e
- 1650 013c 00       		.byte	0
- 1651 013d 31       		.uleb128 0x31
- 1652 013e 13       		.uleb128 0x13
- 1653 013f 11       		.uleb128 0x11
- 1654 0140 01       		.uleb128 0x1
- 1655 0141 12       		.uleb128 0x12
- 1656 0142 06       		.uleb128 0x6
- 1657 0143 40       		.uleb128 0x40
- 1658 0144 18       		.uleb128 0x18
- 1659 0145 9742     		.uleb128 0x2117
- 1660 0147 19       		.uleb128 0x19
- 1661 0148 00       		.byte	0
- 1662 0149 00       		.byte	0
- 1663 014a 18       		.uleb128 0x18
- 1664 014b 2E       		.uleb128 0x2e
- 1665 014c 01       		.byte	0x1
- 1666 014d 3F       		.uleb128 0x3f
- 1667 014e 19       		.uleb128 0x19
- 1668 014f 03       		.uleb128 0x3
- 1669 0150 0E       		.uleb128 0xe
- 1670 0151 3A       		.uleb128 0x3a
- 1671 0152 0B       		.uleb128 0xb
- 1672 0153 3B       		.uleb128 0x3b
- 1673 0154 0B       		.uleb128 0xb
- 1674 0155 27       		.uleb128 0x27
- 1675 0156 19       		.uleb128 0x19
- 1676 0157 11       		.uleb128 0x11
- 1677 0158 01       		.uleb128 0x1
- 1678 0159 12       		.uleb128 0x12
- 1679 015a 06       		.uleb128 0x6
- 1680 015b 40       		.uleb128 0x40
- 1681 015c 18       		.uleb128 0x18
- 1682 015d 9742     		.uleb128 0x2117
- 1683 015f 19       		.uleb128 0x19
- 1684 0160 01       		.uleb128 0x1
- 1685 0161 13       		.uleb128 0x13
- 1686 0162 00       		.byte	0
- 1687 0163 00       		.byte	0
- 1688 0164 19       		.uleb128 0x19
- 1689 0165 1D       		.uleb128 0x1d
- 1690 0166 00       		.byte	0
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccIX6jYz.s 			page 42
-
-
- 1691 0167 31       		.uleb128 0x31
- 1692 0168 13       		.uleb128 0x13
- 1693 0169 11       		.uleb128 0x11
- 1694 016a 01       		.uleb128 0x1
- 1695 016b 12       		.uleb128 0x12
- 1696 016c 06       		.uleb128 0x6
- 1697 016d 58       		.uleb128 0x58
- 1698 016e 0B       		.uleb128 0xb
- 1699 016f 59       		.uleb128 0x59
- 1700 0170 0B       		.uleb128 0xb
- 1701 0171 00       		.byte	0
- 1702 0172 00       		.byte	0
- 1703 0173 1A       		.uleb128 0x1a
- 1704 0174 1D       		.uleb128 0x1d
- 1705 0175 01       		.byte	0x1
- 1706 0176 31       		.uleb128 0x31
- 1707 0177 13       		.uleb128 0x13
- 1708 0178 11       		.uleb128 0x11
- 1709 0179 01       		.uleb128 0x1
- 1710 017a 12       		.uleb128 0x12
- 1711 017b 06       		.uleb128 0x6
- 1712 017c 58       		.uleb128 0x58
- 1713 017d 0B       		.uleb128 0xb
- 1714 017e 59       		.uleb128 0x59
- 1715 017f 0B       		.uleb128 0xb
- 1716 0180 00       		.byte	0
- 1717 0181 00       		.byte	0
- 1718 0182 1B       		.uleb128 0x1b
- 1719 0183 0B       		.uleb128 0xb
- 1720 0184 01       		.byte	0x1
- 1721 0185 11       		.uleb128 0x11
- 1722 0186 01       		.uleb128 0x1
- 1723 0187 12       		.uleb128 0x12
- 1724 0188 06       		.uleb128 0x6
- 1725 0189 00       		.byte	0
- 1726 018a 00       		.byte	0
- 1727 018b 1C       		.uleb128 0x1c
- 1728 018c 2E       		.uleb128 0x2e
- 1729 018d 00       		.byte	0
- 1730 018e 3F       		.uleb128 0x3f
- 1731 018f 19       		.uleb128 0x19
- 1732 0190 03       		.uleb128 0x3
- 1733 0191 0E       		.uleb128 0xe
- 1734 0192 3A       		.uleb128 0x3a
- 1735 0193 0B       		.uleb128 0xb
- 1736 0194 3B       		.uleb128 0x3b
- 1737 0195 0B       		.uleb128 0xb
- 1738 0196 27       		.uleb128 0x27
- 1739 0197 19       		.uleb128 0x19
- 1740 0198 11       		.uleb128 0x11
- 1741 0199 01       		.uleb128 0x1
- 1742 019a 12       		.uleb128 0x12
- 1743 019b 06       		.uleb128 0x6
- 1744 019c 40       		.uleb128 0x40
- 1745 019d 18       		.uleb128 0x18
- 1746 019e 9742     		.uleb128 0x2117
- 1747 01a0 19       		.uleb128 0x19
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccIX6jYz.s 			page 43
-
-
- 1748 01a1 00       		.byte	0
- 1749 01a2 00       		.byte	0
- 1750 01a3 1D       		.uleb128 0x1d
- 1751 01a4 05       		.uleb128 0x5
- 1752 01a5 00       		.byte	0
- 1753 01a6 31       		.uleb128 0x31
- 1754 01a7 13       		.uleb128 0x13
- 1755 01a8 02       		.uleb128 0x2
- 1756 01a9 18       		.uleb128 0x18
- 1757 01aa 00       		.byte	0
- 1758 01ab 00       		.byte	0
- 1759 01ac 1E       		.uleb128 0x1e
- 1760 01ad 2E       		.uleb128 0x2e
- 1761 01ae 00       		.byte	0
- 1762 01af 3F       		.uleb128 0x3f
- 1763 01b0 19       		.uleb128 0x19
- 1764 01b1 03       		.uleb128 0x3
- 1765 01b2 0E       		.uleb128 0xe
- 1766 01b3 3A       		.uleb128 0x3a
- 1767 01b4 0B       		.uleb128 0xb
- 1768 01b5 3B       		.uleb128 0x3b
- 1769 01b6 05       		.uleb128 0x5
- 1770 01b7 27       		.uleb128 0x27
- 1771 01b8 19       		.uleb128 0x19
- 1772 01b9 49       		.uleb128 0x49
- 1773 01ba 13       		.uleb128 0x13
- 1774 01bb 11       		.uleb128 0x11
- 1775 01bc 01       		.uleb128 0x1
- 1776 01bd 12       		.uleb128 0x12
- 1777 01be 06       		.uleb128 0x6
- 1778 01bf 40       		.uleb128 0x40
- 1779 01c0 18       		.uleb128 0x18
- 1780 01c1 9742     		.uleb128 0x2117
- 1781 01c3 19       		.uleb128 0x19
- 1782 01c4 00       		.byte	0
- 1783 01c5 00       		.byte	0
- 1784 01c6 1F       		.uleb128 0x1f
- 1785 01c7 2E       		.uleb128 0x2e
- 1786 01c8 01       		.byte	0x1
- 1787 01c9 3F       		.uleb128 0x3f
- 1788 01ca 19       		.uleb128 0x19
- 1789 01cb 03       		.uleb128 0x3
- 1790 01cc 0E       		.uleb128 0xe
- 1791 01cd 3A       		.uleb128 0x3a
- 1792 01ce 0B       		.uleb128 0xb
- 1793 01cf 3B       		.uleb128 0x3b
- 1794 01d0 05       		.uleb128 0x5
- 1795 01d1 27       		.uleb128 0x27
- 1796 01d2 19       		.uleb128 0x19
- 1797 01d3 11       		.uleb128 0x11
- 1798 01d4 01       		.uleb128 0x1
- 1799 01d5 12       		.uleb128 0x12
- 1800 01d6 06       		.uleb128 0x6
- 1801 01d7 40       		.uleb128 0x40
- 1802 01d8 18       		.uleb128 0x18
- 1803 01d9 9742     		.uleb128 0x2117
- 1804 01db 19       		.uleb128 0x19
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccIX6jYz.s 			page 44
-
-
- 1805 01dc 01       		.uleb128 0x1
- 1806 01dd 13       		.uleb128 0x13
- 1807 01de 00       		.byte	0
- 1808 01df 00       		.byte	0
- 1809 01e0 20       		.uleb128 0x20
- 1810 01e1 05       		.uleb128 0x5
- 1811 01e2 00       		.byte	0
- 1812 01e3 03       		.uleb128 0x3
- 1813 01e4 0E       		.uleb128 0xe
- 1814 01e5 3A       		.uleb128 0x3a
- 1815 01e6 0B       		.uleb128 0xb
- 1816 01e7 3B       		.uleb128 0x3b
- 1817 01e8 05       		.uleb128 0x5
- 1818 01e9 49       		.uleb128 0x49
- 1819 01ea 13       		.uleb128 0x13
- 1820 01eb 02       		.uleb128 0x2
- 1821 01ec 18       		.uleb128 0x18
- 1822 01ed 00       		.byte	0
- 1823 01ee 00       		.byte	0
- 1824 01ef 21       		.uleb128 0x21
- 1825 01f0 34       		.uleb128 0x34
- 1826 01f1 00       		.byte	0
- 1827 01f2 03       		.uleb128 0x3
- 1828 01f3 0E       		.uleb128 0xe
- 1829 01f4 3A       		.uleb128 0x3a
- 1830 01f5 0B       		.uleb128 0xb
- 1831 01f6 3B       		.uleb128 0x3b
- 1832 01f7 0B       		.uleb128 0xb
- 1833 01f8 49       		.uleb128 0x49
- 1834 01f9 13       		.uleb128 0x13
- 1835 01fa 3F       		.uleb128 0x3f
- 1836 01fb 19       		.uleb128 0x19
- 1837 01fc 02       		.uleb128 0x2
- 1838 01fd 18       		.uleb128 0x18
- 1839 01fe 00       		.byte	0
- 1840 01ff 00       		.byte	0
- 1841 0200 22       		.uleb128 0x22
- 1842 0201 2E       		.uleb128 0x2e
- 1843 0202 00       		.byte	0
- 1844 0203 3F       		.uleb128 0x3f
- 1845 0204 19       		.uleb128 0x19
- 1846 0205 03       		.uleb128 0x3
- 1847 0206 0E       		.uleb128 0xe
- 1848 0207 3A       		.uleb128 0x3a
- 1849 0208 0B       		.uleb128 0xb
- 1850 0209 3B       		.uleb128 0x3b
- 1851 020a 0B       		.uleb128 0xb
- 1852 020b 27       		.uleb128 0x27
- 1853 020c 19       		.uleb128 0x19
- 1854 020d 49       		.uleb128 0x49
- 1855 020e 13       		.uleb128 0x13
- 1856 020f 3C       		.uleb128 0x3c
- 1857 0210 19       		.uleb128 0x19
- 1858 0211 00       		.byte	0
- 1859 0212 00       		.byte	0
- 1860 0213 23       		.uleb128 0x23
- 1861 0214 2E       		.uleb128 0x2e
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccIX6jYz.s 			page 45
-
-
- 1862 0215 01       		.byte	0x1
- 1863 0216 3F       		.uleb128 0x3f
- 1864 0217 19       		.uleb128 0x19
- 1865 0218 03       		.uleb128 0x3
- 1866 0219 0E       		.uleb128 0xe
- 1867 021a 3A       		.uleb128 0x3a
- 1868 021b 0B       		.uleb128 0xb
- 1869 021c 3B       		.uleb128 0x3b
- 1870 021d 0B       		.uleb128 0xb
- 1871 021e 27       		.uleb128 0x27
- 1872 021f 19       		.uleb128 0x19
- 1873 0220 3C       		.uleb128 0x3c
- 1874 0221 19       		.uleb128 0x19
- 1875 0222 00       		.byte	0
- 1876 0223 00       		.byte	0
- 1877 0224 24       		.uleb128 0x24
- 1878 0225 05       		.uleb128 0x5
- 1879 0226 00       		.byte	0
- 1880 0227 49       		.uleb128 0x49
- 1881 0228 13       		.uleb128 0x13
- 1882 0229 00       		.byte	0
- 1883 022a 00       		.byte	0
- 1884 022b 00       		.byte	0
- 1885              		.section	.debug_loc,"",%progbits
- 1886              	.Ldebug_loc0:
- 1887              	.LLST0:
- 1888 0000 08000000 		.4byte	.LVL0
- 1889 0004 0C000000 		.4byte	.LVL1
- 1890 0008 0600     		.2byte	0x6
- 1891 000a 73       		.byte	0x73
- 1892 000b 00       		.sleb128 0
- 1893 000c 09       		.byte	0x9
- 1894 000d F8       		.byte	0xf8
- 1895 000e 1A       		.byte	0x1a
- 1896 000f 9F       		.byte	0x9f
- 1897 0010 18000000 		.4byte	.LVL2
- 1898 0014 1C000000 		.4byte	.LVL3
- 1899 0018 0100     		.2byte	0x1
- 1900 001a 53       		.byte	0x53
- 1901 001b 1C000000 		.4byte	.LVL3
- 1902 001f 24000000 		.4byte	.LVL4
- 1903 0023 0200     		.2byte	0x2
- 1904 0025 71       		.byte	0x71
- 1905 0026 00       		.sleb128 0
- 1906 0027 24000000 		.4byte	.LVL4
- 1907 002b 3A000000 		.4byte	.LVL6
- 1908 002f 0500     		.2byte	0x5
- 1909 0031 0C       		.byte	0xc
- 1910 0032 7B650040 		.4byte	0x4000657b
- 1911 0036 00000000 		.4byte	0
- 1912 003a 00000000 		.4byte	0
- 1913              	.LLST1:
- 1914 003e 46000000 		.4byte	.LVL9
- 1915 0042 57000000 		.4byte	.LVL10-1
- 1916 0046 0100     		.2byte	0x1
- 1917 0048 50       		.byte	0x50
- 1918 0049 00000000 		.4byte	0
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccIX6jYz.s 			page 46
-
-
- 1919 004d 00000000 		.4byte	0
- 1920              	.LLST2:
- 1921 0051 1A000000 		.4byte	.LVL11
- 1922 0055 1E000000 		.4byte	.LVL12
- 1923 0059 0600     		.2byte	0x6
- 1924 005b 73       		.byte	0x73
- 1925 005c 00       		.sleb128 0
- 1926 005d 09       		.byte	0x9
- 1927 005e F8       		.byte	0xf8
- 1928 005f 1A       		.byte	0x1a
- 1929 0060 9F       		.byte	0x9f
- 1930 0061 2A000000 		.4byte	.LVL13
- 1931 0065 2E000000 		.4byte	.LVL14
- 1932 0069 0100     		.2byte	0x1
- 1933 006b 53       		.byte	0x53
- 1934 006c 2E000000 		.4byte	.LVL14
- 1935 0070 36000000 		.4byte	.LVL15
- 1936 0074 0200     		.2byte	0x2
- 1937 0076 71       		.byte	0x71
- 1938 0077 00       		.sleb128 0
- 1939 0078 36000000 		.4byte	.LVL15
- 1940 007c 4C000000 		.4byte	.LVL17
- 1941 0080 0500     		.2byte	0x5
- 1942 0082 0C       		.byte	0xc
- 1943 0083 7B650040 		.4byte	0x4000657b
- 1944 0087 00000000 		.4byte	0
- 1945 008b 00000000 		.4byte	0
- 1946              	.LLST3:
- 1947 008f 58000000 		.4byte	.LVL20
- 1948 0093 65000000 		.4byte	.LVL21-1
- 1949 0097 0100     		.2byte	0x1
- 1950 0099 50       		.byte	0x50
- 1951 009a 00000000 		.4byte	0
- 1952 009e 00000000 		.4byte	0
- 1953              		.section	.debug_aranges,"",%progbits
- 1954 0000 94000000 		.4byte	0x94
- 1955 0004 0200     		.2byte	0x2
- 1956 0006 00000000 		.4byte	.Ldebug_info0
- 1957 000a 04       		.byte	0x4
- 1958 000b 00       		.byte	0
- 1959 000c 0000     		.2byte	0
- 1960 000e 0000     		.2byte	0
- 1961 0010 00000000 		.4byte	.LFB0
- 1962 0014 74000000 		.4byte	.LFE0-.LFB0
- 1963 0018 00000000 		.4byte	.LFB1
- 1964 001c 10000000 		.4byte	.LFE1-.LFB1
- 1965 0020 00000000 		.4byte	.LFB2
- 1966 0024 8C000000 		.4byte	.LFE2-.LFB2
- 1967 0028 00000000 		.4byte	.LFB3
- 1968 002c 10000000 		.4byte	.LFE3-.LFB3
- 1969 0030 00000000 		.4byte	.LFB4
- 1970 0034 0C000000 		.4byte	.LFE4-.LFB4
- 1971 0038 00000000 		.4byte	.LFB5
- 1972 003c 0C000000 		.4byte	.LFE5-.LFB5
- 1973 0040 00000000 		.4byte	.LFB6
- 1974 0044 0C000000 		.4byte	.LFE6-.LFB6
- 1975 0048 00000000 		.4byte	.LFB7
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccIX6jYz.s 			page 47
-
-
- 1976 004c 0C000000 		.4byte	.LFE7-.LFB7
- 1977 0050 00000000 		.4byte	.LFB8
- 1978 0054 0C000000 		.4byte	.LFE8-.LFB8
- 1979 0058 00000000 		.4byte	.LFB9
- 1980 005c 14000000 		.4byte	.LFE9-.LFB9
- 1981 0060 00000000 		.4byte	.LFB10
- 1982 0064 0C000000 		.4byte	.LFE10-.LFB10
- 1983 0068 00000000 		.4byte	.LFB11
- 1984 006c 0C000000 		.4byte	.LFE11-.LFB11
- 1985 0070 00000000 		.4byte	.LFB12
- 1986 0074 0C000000 		.4byte	.LFE12-.LFB12
- 1987 0078 00000000 		.4byte	.LFB13
- 1988 007c 0C000000 		.4byte	.LFE13-.LFB13
- 1989 0080 00000000 		.4byte	.LFB14
- 1990 0084 0C000000 		.4byte	.LFE14-.LFB14
- 1991 0088 00000000 		.4byte	.LFB15
- 1992 008c 1C000000 		.4byte	.LFE15-.LFB15
- 1993 0090 00000000 		.4byte	0
- 1994 0094 00000000 		.4byte	0
- 1995              		.section	.debug_ranges,"",%progbits
- 1996              	.Ldebug_ranges0:
- 1997 0000 04000000 		.4byte	.LBB40
- 1998 0004 06000000 		.4byte	.LBE40
- 1999 0008 1A000000 		.4byte	.LBB51
- 2000 000c 2C000000 		.4byte	.LBE51
- 2001 0010 00000000 		.4byte	0
- 2002 0014 00000000 		.4byte	0
- 2003 0018 04000000 		.4byte	.LBB42
- 2004 001c 06000000 		.4byte	.LBE42
- 2005 0020 1A000000 		.4byte	.LBB46
- 2006 0024 1C000000 		.4byte	.LBE46
- 2007 0028 26000000 		.4byte	.LBB49
- 2008 002c 28000000 		.4byte	.LBE49
- 2009 0030 00000000 		.4byte	0
- 2010 0034 00000000 		.4byte	0
- 2011 0038 2C000000 		.4byte	.LBB52
- 2012 003c 2E000000 		.4byte	.LBE52
- 2013 0040 32000000 		.4byte	.LBB62
- 2014 0044 34000000 		.4byte	.LBE62
- 2015 0048 38000000 		.4byte	.LBB69
- 2016 004c 3A000000 		.4byte	.LBE69
- 2017 0050 00000000 		.4byte	0
- 2018 0054 00000000 		.4byte	0
- 2019 0058 2E000000 		.4byte	.LBB56
- 2020 005c 30000000 		.4byte	.LBE56
- 2021 0060 3A000000 		.4byte	.LBB70
- 2022 0064 3C000000 		.4byte	.LBE70
- 2023 0068 00000000 		.4byte	0
- 2024 006c 00000000 		.4byte	0
- 2025 0070 30000000 		.4byte	.LBB59
- 2026 0074 32000000 		.4byte	.LBE59
- 2027 0078 3C000000 		.4byte	.LBB71
- 2028 007c 3E000000 		.4byte	.LBE71
- 2029 0080 00000000 		.4byte	0
- 2030 0084 00000000 		.4byte	0
- 2031 0088 34000000 		.4byte	.LBB63
- 2032 008c 36000000 		.4byte	.LBE63
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccIX6jYz.s 			page 48
-
-
- 2033 0090 40000000 		.4byte	.LBB73
- 2034 0094 42000000 		.4byte	.LBE73
- 2035 0098 00000000 		.4byte	0
- 2036 009c 00000000 		.4byte	0
- 2037 00a0 36000000 		.4byte	.LBB66
- 2038 00a4 38000000 		.4byte	.LBE66
- 2039 00a8 3E000000 		.4byte	.LBB72
- 2040 00ac 40000000 		.4byte	.LBE72
- 2041 00b0 00000000 		.4byte	0
- 2042 00b4 00000000 		.4byte	0
- 2043 00b8 16000000 		.4byte	.LBB98
- 2044 00bc 18000000 		.4byte	.LBE98
- 2045 00c0 2C000000 		.4byte	.LBB109
- 2046 00c4 3E000000 		.4byte	.LBE109
- 2047 00c8 00000000 		.4byte	0
- 2048 00cc 00000000 		.4byte	0
- 2049 00d0 16000000 		.4byte	.LBB100
- 2050 00d4 18000000 		.4byte	.LBE100
- 2051 00d8 2C000000 		.4byte	.LBB104
- 2052 00dc 2E000000 		.4byte	.LBE104
- 2053 00e0 38000000 		.4byte	.LBB107
- 2054 00e4 3A000000 		.4byte	.LBE107
- 2055 00e8 00000000 		.4byte	0
- 2056 00ec 00000000 		.4byte	0
- 2057 00f0 3E000000 		.4byte	.LBB110
- 2058 00f4 40000000 		.4byte	.LBE110
- 2059 00f8 4E000000 		.4byte	.LBB129
- 2060 00fc 50000000 		.4byte	.LBE129
- 2061 0100 00000000 		.4byte	0
- 2062 0104 00000000 		.4byte	0
- 2063 0108 40000000 		.4byte	.LBB113
- 2064 010c 42000000 		.4byte	.LBE113
- 2065 0110 44000000 		.4byte	.LBB120
- 2066 0114 46000000 		.4byte	.LBE120
- 2067 0118 4A000000 		.4byte	.LBB127
- 2068 011c 4C000000 		.4byte	.LBE127
- 2069 0120 00000000 		.4byte	0
- 2070 0124 00000000 		.4byte	0
- 2071 0128 42000000 		.4byte	.LBB117
- 2072 012c 44000000 		.4byte	.LBE117
- 2073 0130 4C000000 		.4byte	.LBB128
- 2074 0134 4E000000 		.4byte	.LBE128
- 2075 0138 00000000 		.4byte	0
- 2076 013c 00000000 		.4byte	0
- 2077 0140 46000000 		.4byte	.LBB121
- 2078 0144 48000000 		.4byte	.LBE121
- 2079 0148 52000000 		.4byte	.LBB131
- 2080 014c 54000000 		.4byte	.LBE131
- 2081 0150 00000000 		.4byte	0
- 2082 0154 00000000 		.4byte	0
- 2083 0158 48000000 		.4byte	.LBB124
- 2084 015c 4A000000 		.4byte	.LBE124
- 2085 0160 50000000 		.4byte	.LBB130
- 2086 0164 52000000 		.4byte	.LBE130
- 2087 0168 00000000 		.4byte	0
- 2088 016c 00000000 		.4byte	0
- 2089 0170 00000000 		.4byte	.LBB132
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccIX6jYz.s 			page 49
-
-
- 2090 0174 04000000 		.4byte	.LBE132
- 2091 0178 0C000000 		.4byte	.LBB137
- 2092 017c 0E000000 		.4byte	.LBE137
- 2093 0180 00000000 		.4byte	0
- 2094 0184 00000000 		.4byte	0
- 2095 0188 00000000 		.4byte	.LFB0
- 2096 018c 74000000 		.4byte	.LFE0
- 2097 0190 00000000 		.4byte	.LFB1
- 2098 0194 10000000 		.4byte	.LFE1
- 2099 0198 00000000 		.4byte	.LFB2
- 2100 019c 8C000000 		.4byte	.LFE2
- 2101 01a0 00000000 		.4byte	.LFB3
- 2102 01a4 10000000 		.4byte	.LFE3
- 2103 01a8 00000000 		.4byte	.LFB4
- 2104 01ac 0C000000 		.4byte	.LFE4
- 2105 01b0 00000000 		.4byte	.LFB5
- 2106 01b4 0C000000 		.4byte	.LFE5
- 2107 01b8 00000000 		.4byte	.LFB6
- 2108 01bc 0C000000 		.4byte	.LFE6
- 2109 01c0 00000000 		.4byte	.LFB7
- 2110 01c4 0C000000 		.4byte	.LFE7
- 2111 01c8 00000000 		.4byte	.LFB8
- 2112 01cc 0C000000 		.4byte	.LFE8
- 2113 01d0 00000000 		.4byte	.LFB9
- 2114 01d4 14000000 		.4byte	.LFE9
- 2115 01d8 00000000 		.4byte	.LFB10
- 2116 01dc 0C000000 		.4byte	.LFE10
- 2117 01e0 00000000 		.4byte	.LFB11
- 2118 01e4 0C000000 		.4byte	.LFE11
- 2119 01e8 00000000 		.4byte	.LFB12
- 2120 01ec 0C000000 		.4byte	.LFE12
- 2121 01f0 00000000 		.4byte	.LFB13
- 2122 01f4 0C000000 		.4byte	.LFE13
- 2123 01f8 00000000 		.4byte	.LFB14
- 2124 01fc 0C000000 		.4byte	.LFE14
- 2125 0200 00000000 		.4byte	.LFB15
- 2126 0204 1C000000 		.4byte	.LFE15
- 2127 0208 00000000 		.4byte	0
- 2128 020c 00000000 		.4byte	0
- 2129              		.section	.debug_line,"",%progbits
- 2130              	.Ldebug_line0:
- 2131 0000 3A020000 		.section	.debug_str,"MS",%progbits,1
- 2131      02005600 
- 2131      00000201 
- 2131      FB0E0D00 
- 2131      01010101 
- 2132              	.LASF15:
- 2133 0000 72656731 		.ascii	"reg16\000"
- 2133      3600
- 2134              	.LASF42:
- 2135 0006 456E636F 		.ascii	"Encoder_Left_Stop\000"
- 2135      6465725F 
- 2135      4C656674 
- 2135      5F53746F 
- 2135      7000
- 2136              	.LASF41:
- 2137 0018 433A5C55 		.ascii	"C:\\Users\\Patrick\\Documents\\GitHub\\PSoC 5LP FIl"
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccIX6jYz.s 			page 50
-
-
- 2137      73657273 
- 2137      5C506174 
- 2137      7269636B 
- 2137      5C446F63 
- 2138 0046 65735C43 		.ascii	"es\\C-CAN_PSoC_DevKit\\C-CAN.cydsn\000"
- 2138      2D43414E 
- 2138      5F50536F 
- 2138      435F4465 
- 2138      764B6974 
- 2139              	.LASF21:
- 2140 0067 70657269 		.ascii	"period\000"
- 2140      6F6400
- 2141              	.LASF3:
- 2142 006e 73686F72 		.ascii	"short unsigned int\000"
- 2142      7420756E 
- 2142      7369676E 
- 2142      65642069 
- 2142      6E7400
- 2143              	.LASF17:
- 2144 0081 456E636F 		.ascii	"Encoder_Left_ReadCapture\000"
- 2144      6465725F 
- 2144      4C656674 
- 2144      5F526561 
- 2144      64436170 
- 2145              	.LASF36:
- 2146 009a 456E636F 		.ascii	"Encoder_Left_ReadPeriod\000"
- 2146      6465725F 
- 2146      4C656674 
- 2146      5F526561 
- 2146      64506572 
- 2147              	.LASF11:
- 2148 00b2 666C6F61 		.ascii	"float\000"
- 2148      7400
- 2149              	.LASF22:
- 2150 00b8 636F756E 		.ascii	"counter\000"
- 2150      74657200 
- 2151              	.LASF7:
- 2152 00c0 6C6F6E67 		.ascii	"long long unsigned int\000"
- 2152      206C6F6E 
- 2152      6720756E 
- 2152      7369676E 
- 2152      65642069 
- 2153              	.LASF1:
- 2154 00d7 756E7369 		.ascii	"unsigned char\000"
- 2154      676E6564 
- 2154      20636861 
- 2154      7200
- 2155              	.LASF39:
- 2156 00e5 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
- 2156      4320342E 
- 2156      392E3320 
- 2156      32303135 
- 2156      30333033 
- 2157 0118 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m3 -mthumb -g -O"
- 2157      20726576 
- 2157      6973696F 
- 2157      6E203232 
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccIX6jYz.s 			page 51
-
-
- 2157      31323230 
- 2158 014b 33202D66 		.ascii	"3 -ffunction-sections -ffat-lto-objects\000"
- 2158      66756E63 
- 2158      74696F6E 
- 2158      2D736563 
- 2158      74696F6E 
- 2159              	.LASF20:
- 2160 0173 456E636F 		.ascii	"Encoder_Left_WriteCounter\000"
- 2160      6465725F 
- 2160      4C656674 
- 2160      5F577269 
- 2160      7465436F 
- 2161              	.LASF35:
- 2162 018d 456E636F 		.ascii	"Encoder_Left_ReadCounter\000"
- 2162      6465725F 
- 2162      4C656674 
- 2162      5F526561 
- 2162      64436F75 
- 2163              	.LASF27:
- 2164 01a6 456E636F 		.ascii	"Encoder_Left_ClearFIFO\000"
- 2164      6465725F 
- 2164      4C656674 
- 2164      5F436C65 
- 2164      61724649 
- 2165              	.LASF5:
- 2166 01bd 6C6F6E67 		.ascii	"long unsigned int\000"
- 2166      20756E73 
- 2166      69676E65 
- 2166      6420696E 
- 2166      7400
- 2167              	.LASF9:
- 2168 01cf 75696E74 		.ascii	"uint8\000"
- 2168      3800
- 2169              	.LASF43:
- 2170 01d5 636F6E74 		.ascii	"control\000"
- 2170      726F6C00 
- 2171              	.LASF24:
- 2172 01dd 696E7465 		.ascii	"interruptsMask\000"
- 2172      72727570 
- 2172      74734D61 
- 2172      736B00
- 2173              	.LASF12:
- 2174 01ec 646F7562 		.ascii	"double\000"
- 2174      6C6500
- 2175              	.LASF32:
- 2176 01f3 456E636F 		.ascii	"Encoder_Left_Start\000"
- 2176      6465725F 
- 2176      4C656674 
- 2176      5F537461 
- 2176      727400
- 2177              	.LASF40:
- 2178 0206 2E5C4765 		.ascii	".\\Generated_Source\\PSoC5\\Encoder_Left.c\000"
- 2178      6E657261 
- 2178      7465645F 
- 2178      536F7572 
- 2178      63655C50 
- 2179              	.LASF37:
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccIX6jYz.s 			page 52
-
-
- 2180 022e 456E636F 		.ascii	"Encoder_Left_ReadCompare\000"
- 2180      6465725F 
- 2180      4C656674 
- 2180      5F526561 
- 2180      64436F6D 
- 2181              	.LASF10:
- 2182 0247 75696E74 		.ascii	"uint16\000"
- 2182      313600
- 2183              	.LASF38:
- 2184 024e 4379456E 		.ascii	"CyEnterCriticalSection\000"
- 2184      74657243 
- 2184      72697469 
- 2184      63616C53 
- 2184      65637469 
- 2185              	.LASF31:
- 2186 0265 456E636F 		.ascii	"Encoder_Left_interruptState\000"
- 2186      6465725F 
- 2186      4C656674 
- 2186      5F696E74 
- 2186      65727275 
- 2187              	.LASF8:
- 2188 0281 756E7369 		.ascii	"unsigned int\000"
- 2188      676E6564 
- 2188      20696E74 
- 2188      00
- 2189              	.LASF45:
- 2190 028e 43794578 		.ascii	"CyExitCriticalSection\000"
- 2190      69744372 
- 2190      69746963 
- 2190      616C5365 
- 2190      6374696F 
- 2191              	.LASF19:
- 2192 02a4 456E636F 		.ascii	"Encoder_Left_WritePeriod\000"
- 2192      6465725F 
- 2192      4C656674 
- 2192      5F577269 
- 2192      74655065 
- 2193              	.LASF14:
- 2194 02bd 72656738 		.ascii	"reg8\000"
- 2194      00
- 2195              	.LASF44:
- 2196 02c2 456E636F 		.ascii	"Encoder_Left_initVar\000"
- 2196      6465725F 
- 2196      4C656674 
- 2196      5F696E69 
- 2196      74566172 
- 2197              	.LASF16:
- 2198 02d7 73697A65 		.ascii	"sizetype\000"
- 2198      74797065 
- 2198      00
- 2199              	.LASF23:
- 2200 02e0 456E636F 		.ascii	"Encoder_Left_SetInterruptMode\000"
- 2200      6465725F 
- 2200      4C656674 
- 2200      5F536574 
- 2200      496E7465 
- 2201              	.LASF6:
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccIX6jYz.s 			page 53
-
-
- 2202 02fe 6C6F6E67 		.ascii	"long long int\000"
- 2202      206C6F6E 
- 2202      6720696E 
- 2202      7400
- 2203              	.LASF13:
- 2204 030c 63686172 		.ascii	"char\000"
- 2204      00
- 2205              	.LASF34:
- 2206 0311 456E636F 		.ascii	"Encoder_Left_ReadControlRegister\000"
- 2206      6465725F 
- 2206      4C656674 
- 2206      5F526561 
- 2206      64436F6E 
- 2207              	.LASF2:
- 2208 0332 73686F72 		.ascii	"short int\000"
- 2208      7420696E 
- 2208      7400
- 2209              	.LASF30:
- 2210 033c 6374726C 		.ascii	"ctrl\000"
- 2210      00
- 2211              	.LASF4:
- 2212 0341 6C6F6E67 		.ascii	"long int\000"
- 2212      20696E74 
- 2212      00
- 2213              	.LASF0:
- 2214 034a 7369676E 		.ascii	"signed char\000"
- 2214      65642063 
- 2214      68617200 
- 2215              	.LASF26:
- 2216 0356 636F6D70 		.ascii	"compare\000"
- 2216      61726500 
- 2217              	.LASF33:
- 2218 035e 456E636F 		.ascii	"Encoder_Left_WriteControlRegister\000"
- 2218      6465725F 
- 2218      4C656674 
- 2218      5F577269 
- 2218      7465436F 
- 2219              	.LASF25:
- 2220 0380 456E636F 		.ascii	"Encoder_Left_WriteCompare\000"
- 2220      6465725F 
- 2220      4C656674 
- 2220      5F577269 
- 2220      7465436F 
- 2221              	.LASF18:
- 2222 039a 456E636F 		.ascii	"Encoder_Left_ReadStatusRegister\000"
- 2222      6465725F 
- 2222      4C656674 
- 2222      5F526561 
- 2222      64537461 
- 2223              	.LASF28:
- 2224 03ba 456E636F 		.ascii	"Encoder_Left_Enable\000"
- 2224      6465725F 
- 2224      4C656674 
- 2224      5F456E61 
- 2224      626C6500 
- 2225              	.LASF29:
- 2226 03ce 456E636F 		.ascii	"Encoder_Left_Init\000"
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccIX6jYz.s 			page 54
-
-
- 2226      6465725F 
- 2226      4C656674 
- 2226      5F496E69 
- 2226      7400
- 2227              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.9.3 20150303 (release) [ARM/embedded-4_9-br
+ 702              		.loc 1 561 0
+ 703 0004 01E0     		b	.L54
+ 704              	.L55:
+ 562:.\Generated_Source\PSoC5/Encoder_Left.c ****     {
+ 563:.\Generated_Source\PSoC5/Encoder_Left.c ****         (void)Encoder_Left_ReadCapture();
+ 705              		.loc 1 563 0
+ 706 0006 FFF7FEFF 		bl	Encoder_Left_ReadCapture
+ 707              	.L54:
+ 561:.\Generated_Source\PSoC5/Encoder_Left.c ****     {
+ 708              		.loc 1 561 0
+ 709 000a FFF7FEFF 		bl	Encoder_Left_ReadStatusRegister
+ 710 000e 0346     		mov	r3, r0
+ 711 0010 03F04003 		and	r3, r3, #64
+ 712 0014 002B     		cmp	r3, #0
+ 713 0016 F6D1     		bne	.L55
+ 564:.\Generated_Source\PSoC5/Encoder_Left.c ****     }
+ 565:.\Generated_Source\PSoC5/Encoder_Left.c **** 
+ 566:.\Generated_Source\PSoC5/Encoder_Left.c **** }
+ 714              		.loc 1 566 0
+ 715 0018 80BD     		pop	{r7, pc}
+ 716              		.cfi_endproc
+ 717              	.LFE15:
+ 718              		.size	Encoder_Left_ClearFIFO, .-Encoder_Left_ClearFIFO
+ 719 001a 00BF     		.text
+ 720              	.Letext0:
+ 721              		.file 2 ".\\Generated_Source\\PSoC5\\cytypes.h"
+ 722              		.section	.debug_info,"",%progbits
+ 723              	.Ldebug_info0:
+ 724 0000 86020000 		.4byte	0x286
+ 725 0004 0400     		.2byte	0x4
+ 726 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 727 000a 04       		.byte	0x4
+ 728 000b 01       		.uleb128 0x1
+ 729 000c 5B010000 		.4byte	.LASF40
+ 730 0010 01       		.byte	0x1
+ 731 0011 03020000 		.4byte	.LASF41
+ 732 0015 18000000 		.4byte	.LASF42
+ 733 0019 00000000 		.4byte	.Ldebug_ranges0+0
+ 734 001d 00000000 		.4byte	0
+ 735 0021 00000000 		.4byte	.Ldebug_line0
+ 736 0025 02       		.uleb128 0x2
+ 737 0026 01       		.byte	0x1
+ 738 0027 06       		.byte	0x6
+ 739 0028 31030000 		.4byte	.LASF0
+ 740 002c 02       		.uleb128 0x2
+ 741 002d 01       		.byte	0x1
+ 742 002e 08       		.byte	0x8
+ 743 002f D4000000 		.4byte	.LASF1
+ 744 0033 02       		.uleb128 0x2
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccOA0PDY.s 			page 24
+
+
+ 745 0034 02       		.byte	0x2
+ 746 0035 05       		.byte	0x5
+ 747 0036 19030000 		.4byte	.LASF2
+ 748 003a 02       		.uleb128 0x2
+ 749 003b 02       		.byte	0x2
+ 750 003c 07       		.byte	0x7
+ 751 003d 6E000000 		.4byte	.LASF3
+ 752 0041 02       		.uleb128 0x2
+ 753 0042 04       		.byte	0x4
+ 754 0043 05       		.byte	0x5
+ 755 0044 28030000 		.4byte	.LASF4
+ 756 0048 02       		.uleb128 0x2
+ 757 0049 04       		.byte	0x4
+ 758 004a 07       		.byte	0x7
+ 759 004b 2C010000 		.4byte	.LASF5
+ 760 004f 02       		.uleb128 0x2
+ 761 0050 08       		.byte	0x8
+ 762 0051 05       		.byte	0x5
+ 763 0052 E5020000 		.4byte	.LASF6
+ 764 0056 02       		.uleb128 0x2
+ 765 0057 08       		.byte	0x8
+ 766 0058 07       		.byte	0x7
+ 767 0059 74020000 		.4byte	.LASF7
+ 768 005d 03       		.uleb128 0x3
+ 769 005e 04       		.byte	0x4
+ 770 005f 05       		.byte	0x5
+ 771 0060 696E7400 		.ascii	"int\000"
+ 772 0064 02       		.uleb128 0x2
+ 773 0065 04       		.byte	0x4
+ 774 0066 07       		.byte	0x7
+ 775 0067 67020000 		.4byte	.LASF8
+ 776 006b 04       		.uleb128 0x4
+ 777 006c 3E010000 		.4byte	.LASF9
+ 778 0070 02       		.byte	0x2
+ 779 0071 9201     		.2byte	0x192
+ 780 0073 2C000000 		.4byte	0x2c
+ 781 0077 04       		.uleb128 0x4
+ 782 0078 44020000 		.4byte	.LASF10
+ 783 007c 02       		.byte	0x2
+ 784 007d 9301     		.2byte	0x193
+ 785 007f 3A000000 		.4byte	0x3a
+ 786 0083 02       		.uleb128 0x2
+ 787 0084 04       		.byte	0x4
+ 788 0085 04       		.byte	0x4
+ 789 0086 B2000000 		.4byte	.LASF11
+ 790 008a 02       		.uleb128 0x2
+ 791 008b 08       		.byte	0x8
+ 792 008c 04       		.byte	0x4
+ 793 008d E9010000 		.4byte	.LASF12
+ 794 0091 02       		.uleb128 0x2
+ 795 0092 01       		.byte	0x1
+ 796 0093 08       		.byte	0x8
+ 797 0094 F3020000 		.4byte	.LASF13
+ 798 0098 04       		.uleb128 0x4
+ 799 0099 A4020000 		.4byte	.LASF14
+ 800 009d 02       		.byte	0x2
+ 801 009e 3C02     		.2byte	0x23c
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccOA0PDY.s 			page 25
+
+
+ 802 00a0 A4000000 		.4byte	0xa4
+ 803 00a4 05       		.uleb128 0x5
+ 804 00a5 6B000000 		.4byte	0x6b
+ 805 00a9 04       		.uleb128 0x4
+ 806 00aa 00000000 		.4byte	.LASF15
+ 807 00ae 02       		.byte	0x2
+ 808 00af 3D02     		.2byte	0x23d
+ 809 00b1 B5000000 		.4byte	0xb5
+ 810 00b5 05       		.uleb128 0x5
+ 811 00b6 77000000 		.4byte	0x77
+ 812 00ba 02       		.uleb128 0x2
+ 813 00bb 04       		.byte	0x4
+ 814 00bc 07       		.byte	0x7
+ 815 00bd BE020000 		.4byte	.LASF16
+ 816 00c1 06       		.uleb128 0x6
+ 817 00c2 A1030000 		.4byte	.LASF22
+ 818 00c6 01       		.byte	0x1
+ 819 00c7 25       		.byte	0x25
+ 820 00c8 00000000 		.4byte	.LFB0
+ 821 00cc 80000000 		.4byte	.LFE0-.LFB0
+ 822 00d0 01       		.uleb128 0x1
+ 823 00d1 9C       		.byte	0x9c
+ 824 00d2 F3000000 		.4byte	0xf3
+ 825 00d6 07       		.uleb128 0x7
+ 826 00d7 23030000 		.4byte	.LASF17
+ 827 00db 01       		.byte	0x1
+ 828 00dc 28       		.byte	0x28
+ 829 00dd 6B000000 		.4byte	0x6b
+ 830 00e1 02       		.uleb128 0x2
+ 831 00e2 91       		.byte	0x91
+ 832 00e3 77       		.sleb128 -9
+ 833 00e4 07       		.uleb128 0x7
+ 834 00e5 4B020000 		.4byte	.LASF18
+ 835 00e9 01       		.byte	0x1
+ 836 00ea 2D       		.byte	0x2d
+ 837 00eb 6B000000 		.4byte	0x6b
+ 838 00ef 02       		.uleb128 0x2
+ 839 00f0 91       		.byte	0x91
+ 840 00f1 76       		.sleb128 -10
+ 841 00f2 00       		.byte	0
+ 842 00f3 08       		.uleb128 0x8
+ 843 00f4 C0000000 		.4byte	.LASF19
+ 844 00f8 01       		.byte	0x1
+ 845 00f9 8F       		.byte	0x8f
+ 846 00fa 00000000 		.4byte	.LFB1
+ 847 00fe 20000000 		.4byte	.LFE1-.LFB1
+ 848 0102 01       		.uleb128 0x1
+ 849 0103 9C       		.byte	0x9c
+ 850 0104 09       		.uleb128 0x9
+ 851 0105 F0010000 		.4byte	.LASF20
+ 852 0109 01       		.byte	0x1
+ 853 010a B2       		.byte	0xb2
+ 854 010b 00000000 		.4byte	.LFB2
+ 855 010f 20000000 		.4byte	.LFE2-.LFB2
+ 856 0113 01       		.uleb128 0x1
+ 857 0114 9C       		.byte	0x9c
+ 858 0115 08       		.uleb128 0x8
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccOA0PDY.s 			page 26
+
+
+ 859 0116 06000000 		.4byte	.LASF21
+ 860 011a 01       		.byte	0x1
+ 861 011b D0       		.byte	0xd0
+ 862 011c 00000000 		.4byte	.LFB3
+ 863 0120 20000000 		.4byte	.LFE3-.LFB3
+ 864 0124 01       		.uleb128 0x1
+ 865 0125 9C       		.byte	0x9c
+ 866 0126 0A       		.uleb128 0xa
+ 867 0127 C7020000 		.4byte	.LASF23
+ 868 012b 01       		.byte	0x1
+ 869 012c ED       		.byte	0xed
+ 870 012d 00000000 		.4byte	.LFB4
+ 871 0131 20000000 		.4byte	.LFE4-.LFB4
+ 872 0135 01       		.uleb128 0x1
+ 873 0136 9C       		.byte	0x9c
+ 874 0137 4A010000 		.4byte	0x14a
+ 875 013b 0B       		.uleb128 0xb
+ 876 013c 4C010000 		.4byte	.LASF27
+ 877 0140 01       		.byte	0x1
+ 878 0141 ED       		.byte	0xed
+ 879 0142 6B000000 		.4byte	0x6b
+ 880 0146 02       		.uleb128 0x2
+ 881 0147 91       		.byte	0x91
+ 882 0148 77       		.sleb128 -9
+ 883 0149 00       		.byte	0
+ 884 014a 0C       		.uleb128 0xc
+ 885 014b 81030000 		.4byte	.LASF24
+ 886 014f 01       		.byte	0x1
+ 887 0150 0501     		.2byte	0x105
+ 888 0152 6B000000 		.4byte	0x6b
+ 889 0156 00000000 		.4byte	.LFB5
+ 890 015a 18000000 		.4byte	.LFE5-.LFB5
+ 891 015e 01       		.uleb128 0x1
+ 892 015f 9C       		.byte	0x9c
+ 893 0160 0C       		.uleb128 0xc
+ 894 0161 F8020000 		.4byte	.LASF25
+ 895 0165 01       		.byte	0x1
+ 896 0166 1B01     		.2byte	0x11b
+ 897 0168 6B000000 		.4byte	0x6b
+ 898 016c 00000000 		.4byte	.LFB6
+ 899 0170 18000000 		.4byte	.LFE6-.LFB6
+ 900 0174 01       		.uleb128 0x1
+ 901 0175 9C       		.byte	0x9c
+ 902 0176 0D       		.uleb128 0xd
+ 903 0177 45030000 		.4byte	.LASF26
+ 904 017b 01       		.byte	0x1
+ 905 017c 3001     		.2byte	0x130
+ 906 017e 00000000 		.4byte	.LFB7
+ 907 0182 20000000 		.4byte	.LFE7-.LFB7
+ 908 0186 01       		.uleb128 0x1
+ 909 0187 9C       		.byte	0x9c
+ 910 0188 9C010000 		.4byte	0x19c
+ 911 018c 0E       		.uleb128 0xe
+ 912 018d 44010000 		.4byte	.LASF28
+ 913 0191 01       		.byte	0x1
+ 914 0192 3001     		.2byte	0x130
+ 915 0194 6B000000 		.4byte	0x6b
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccOA0PDY.s 			page 27
+
+
+ 916 0198 02       		.uleb128 0x2
+ 917 0199 91       		.byte	0x91
+ 918 019a 77       		.sleb128 -9
+ 919 019b 00       		.byte	0
+ 920 019c 0D       		.uleb128 0xd
+ 921 019d E2000000 		.4byte	.LASF29
+ 922 01a1 01       		.byte	0x1
+ 923 01a2 4601     		.2byte	0x146
+ 924 01a4 00000000 		.4byte	.LFB8
+ 925 01a8 20000000 		.4byte	.LFE8-.LFB8
+ 926 01ac 01       		.uleb128 0x1
+ 927 01ad 9C       		.byte	0x9c
+ 928 01ae C2010000 		.4byte	0x1c2
+ 929 01b2 0E       		.uleb128 0xe
+ 930 01b3 B8000000 		.4byte	.LASF30
+ 931 01b7 01       		.byte	0x1
+ 932 01b8 4601     		.2byte	0x146
+ 933 01ba 77000000 		.4byte	0x77
+ 934 01be 02       		.uleb128 0x2
+ 935 01bf 91       		.byte	0x91
+ 936 01c0 76       		.sleb128 -10
+ 937 01c1 00       		.byte	0
+ 938 01c2 0C       		.uleb128 0xc
+ 939 01c3 FC000000 		.4byte	.LASF31
+ 940 01c7 01       		.byte	0x1
+ 941 01c8 6501     		.2byte	0x165
+ 942 01ca 77000000 		.4byte	0x77
+ 943 01ce 00000000 		.4byte	.LFB9
+ 944 01d2 20000000 		.4byte	.LFE9-.LFB9
+ 945 01d6 01       		.uleb128 0x1
+ 946 01d7 9C       		.byte	0x9c
+ 947 01d8 0C       		.uleb128 0xc
+ 948 01d9 81000000 		.4byte	.LASF32
+ 949 01dd 01       		.byte	0x1
+ 950 01de 8601     		.2byte	0x186
+ 951 01e0 77000000 		.4byte	0x77
+ 952 01e4 00000000 		.4byte	.LFB10
+ 953 01e8 18000000 		.4byte	.LFE10-.LFB10
+ 954 01ec 01       		.uleb128 0x1
+ 955 01ed 9C       		.byte	0x9c
+ 956 01ee 0D       		.uleb128 0xd
+ 957 01ef 8B020000 		.4byte	.LASF33
+ 958 01f3 01       		.byte	0x1
+ 959 01f4 9F01     		.2byte	0x19f
+ 960 01f6 00000000 		.4byte	.LFB11
+ 961 01fa 20000000 		.4byte	.LFE11-.LFB11
+ 962 01fe 01       		.uleb128 0x1
+ 963 01ff 9C       		.byte	0x9c
+ 964 0200 14020000 		.4byte	0x214
+ 965 0204 0E       		.uleb128 0xe
+ 966 0205 67000000 		.4byte	.LASF34
+ 967 0209 01       		.byte	0x1
+ 968 020a 9F01     		.2byte	0x19f
+ 969 020c 77000000 		.4byte	0x77
+ 970 0210 02       		.uleb128 0x2
+ 971 0211 91       		.byte	0x91
+ 972 0212 76       		.sleb128 -10
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccOA0PDY.s 			page 28
+
+
+ 973 0213 00       		.byte	0
+ 974 0214 0C       		.uleb128 0xc
+ 975 0215 9A000000 		.4byte	.LASF35
+ 976 0219 01       		.byte	0x1
+ 977 021a B601     		.2byte	0x1b6
+ 978 021c 77000000 		.4byte	0x77
+ 979 0220 00000000 		.4byte	.LFB12
+ 980 0224 18000000 		.4byte	.LFE12-.LFB12
+ 981 0228 01       		.uleb128 0x1
+ 982 0229 9C       		.byte	0x9c
+ 983 022a 0D       		.uleb128 0xd
+ 984 022b 67030000 		.4byte	.LASF36
+ 985 022f 01       		.byte	0x1
+ 986 0230 D101     		.2byte	0x1d1
+ 987 0232 00000000 		.4byte	.LFB13
+ 988 0236 20000000 		.4byte	.LFE13-.LFB13
+ 989 023a 01       		.uleb128 0x1
+ 990 023b 9C       		.byte	0x9c
+ 991 023c 50020000 		.4byte	0x250
+ 992 0240 0E       		.uleb128 0xe
+ 993 0241 3D030000 		.4byte	.LASF37
+ 994 0245 01       		.byte	0x1
+ 995 0246 D101     		.2byte	0x1d1
+ 996 0248 77000000 		.4byte	0x77
+ 997 024c 02       		.uleb128 0x2
+ 998 024d 91       		.byte	0x91
+ 999 024e 76       		.sleb128 -10
+ 1000 024f 00       		.byte	0
+ 1001 0250 0C       		.uleb128 0xc
+ 1002 0251 2B020000 		.4byte	.LASF38
+ 1003 0255 01       		.byte	0x1
+ 1004 0256 E901     		.2byte	0x1e9
+ 1005 0258 77000000 		.4byte	0x77
+ 1006 025c 00000000 		.4byte	.LFB14
+ 1007 0260 18000000 		.4byte	.LFE14-.LFB14
+ 1008 0264 01       		.uleb128 0x1
+ 1009 0265 9C       		.byte	0x9c
+ 1010 0266 0F       		.uleb128 0xf
+ 1011 0267 15010000 		.4byte	.LASF39
+ 1012 026b 01       		.byte	0x1
+ 1013 026c 2E02     		.2byte	0x22e
+ 1014 026e 00000000 		.4byte	.LFB15
+ 1015 0272 1A000000 		.4byte	.LFE15-.LFB15
+ 1016 0276 01       		.uleb128 0x1
+ 1017 0277 9C       		.byte	0x9c
+ 1018 0278 10       		.uleb128 0x10
+ 1019 0279 A9020000 		.4byte	.LASF43
+ 1020 027d 01       		.byte	0x1
+ 1021 027e 15       		.byte	0x15
+ 1022 027f 6B000000 		.4byte	0x6b
+ 1023 0283 05       		.uleb128 0x5
+ 1024 0284 03       		.byte	0x3
+ 1025 0285 00000000 		.4byte	Encoder_Left_initVar
+ 1026 0289 00       		.byte	0
+ 1027              		.section	.debug_abbrev,"",%progbits
+ 1028              	.Ldebug_abbrev0:
+ 1029 0000 01       		.uleb128 0x1
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccOA0PDY.s 			page 29
+
+
+ 1030 0001 11       		.uleb128 0x11
+ 1031 0002 01       		.byte	0x1
+ 1032 0003 25       		.uleb128 0x25
+ 1033 0004 0E       		.uleb128 0xe
+ 1034 0005 13       		.uleb128 0x13
+ 1035 0006 0B       		.uleb128 0xb
+ 1036 0007 03       		.uleb128 0x3
+ 1037 0008 0E       		.uleb128 0xe
+ 1038 0009 1B       		.uleb128 0x1b
+ 1039 000a 0E       		.uleb128 0xe
+ 1040 000b 55       		.uleb128 0x55
+ 1041 000c 17       		.uleb128 0x17
+ 1042 000d 11       		.uleb128 0x11
+ 1043 000e 01       		.uleb128 0x1
+ 1044 000f 10       		.uleb128 0x10
+ 1045 0010 17       		.uleb128 0x17
+ 1046 0011 00       		.byte	0
+ 1047 0012 00       		.byte	0
+ 1048 0013 02       		.uleb128 0x2
+ 1049 0014 24       		.uleb128 0x24
+ 1050 0015 00       		.byte	0
+ 1051 0016 0B       		.uleb128 0xb
+ 1052 0017 0B       		.uleb128 0xb
+ 1053 0018 3E       		.uleb128 0x3e
+ 1054 0019 0B       		.uleb128 0xb
+ 1055 001a 03       		.uleb128 0x3
+ 1056 001b 0E       		.uleb128 0xe
+ 1057 001c 00       		.byte	0
+ 1058 001d 00       		.byte	0
+ 1059 001e 03       		.uleb128 0x3
+ 1060 001f 24       		.uleb128 0x24
+ 1061 0020 00       		.byte	0
+ 1062 0021 0B       		.uleb128 0xb
+ 1063 0022 0B       		.uleb128 0xb
+ 1064 0023 3E       		.uleb128 0x3e
+ 1065 0024 0B       		.uleb128 0xb
+ 1066 0025 03       		.uleb128 0x3
+ 1067 0026 08       		.uleb128 0x8
+ 1068 0027 00       		.byte	0
+ 1069 0028 00       		.byte	0
+ 1070 0029 04       		.uleb128 0x4
+ 1071 002a 16       		.uleb128 0x16
+ 1072 002b 00       		.byte	0
+ 1073 002c 03       		.uleb128 0x3
+ 1074 002d 0E       		.uleb128 0xe
+ 1075 002e 3A       		.uleb128 0x3a
+ 1076 002f 0B       		.uleb128 0xb
+ 1077 0030 3B       		.uleb128 0x3b
+ 1078 0031 05       		.uleb128 0x5
+ 1079 0032 49       		.uleb128 0x49
+ 1080 0033 13       		.uleb128 0x13
+ 1081 0034 00       		.byte	0
+ 1082 0035 00       		.byte	0
+ 1083 0036 05       		.uleb128 0x5
+ 1084 0037 35       		.uleb128 0x35
+ 1085 0038 00       		.byte	0
+ 1086 0039 49       		.uleb128 0x49
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccOA0PDY.s 			page 30
+
+
+ 1087 003a 13       		.uleb128 0x13
+ 1088 003b 00       		.byte	0
+ 1089 003c 00       		.byte	0
+ 1090 003d 06       		.uleb128 0x6
+ 1091 003e 2E       		.uleb128 0x2e
+ 1092 003f 01       		.byte	0x1
+ 1093 0040 3F       		.uleb128 0x3f
+ 1094 0041 19       		.uleb128 0x19
+ 1095 0042 03       		.uleb128 0x3
+ 1096 0043 0E       		.uleb128 0xe
+ 1097 0044 3A       		.uleb128 0x3a
+ 1098 0045 0B       		.uleb128 0xb
+ 1099 0046 3B       		.uleb128 0x3b
+ 1100 0047 0B       		.uleb128 0xb
+ 1101 0048 27       		.uleb128 0x27
+ 1102 0049 19       		.uleb128 0x19
+ 1103 004a 11       		.uleb128 0x11
+ 1104 004b 01       		.uleb128 0x1
+ 1105 004c 12       		.uleb128 0x12
+ 1106 004d 06       		.uleb128 0x6
+ 1107 004e 40       		.uleb128 0x40
+ 1108 004f 18       		.uleb128 0x18
+ 1109 0050 9642     		.uleb128 0x2116
+ 1110 0052 19       		.uleb128 0x19
+ 1111 0053 01       		.uleb128 0x1
+ 1112 0054 13       		.uleb128 0x13
+ 1113 0055 00       		.byte	0
+ 1114 0056 00       		.byte	0
+ 1115 0057 07       		.uleb128 0x7
+ 1116 0058 34       		.uleb128 0x34
+ 1117 0059 00       		.byte	0
+ 1118 005a 03       		.uleb128 0x3
+ 1119 005b 0E       		.uleb128 0xe
+ 1120 005c 3A       		.uleb128 0x3a
+ 1121 005d 0B       		.uleb128 0xb
+ 1122 005e 3B       		.uleb128 0x3b
+ 1123 005f 0B       		.uleb128 0xb
+ 1124 0060 49       		.uleb128 0x49
+ 1125 0061 13       		.uleb128 0x13
+ 1126 0062 02       		.uleb128 0x2
+ 1127 0063 18       		.uleb128 0x18
+ 1128 0064 00       		.byte	0
+ 1129 0065 00       		.byte	0
+ 1130 0066 08       		.uleb128 0x8
+ 1131 0067 2E       		.uleb128 0x2e
+ 1132 0068 00       		.byte	0
+ 1133 0069 3F       		.uleb128 0x3f
+ 1134 006a 19       		.uleb128 0x19
+ 1135 006b 03       		.uleb128 0x3
+ 1136 006c 0E       		.uleb128 0xe
+ 1137 006d 3A       		.uleb128 0x3a
+ 1138 006e 0B       		.uleb128 0xb
+ 1139 006f 3B       		.uleb128 0x3b
+ 1140 0070 0B       		.uleb128 0xb
+ 1141 0071 27       		.uleb128 0x27
+ 1142 0072 19       		.uleb128 0x19
+ 1143 0073 11       		.uleb128 0x11
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccOA0PDY.s 			page 31
+
+
+ 1144 0074 01       		.uleb128 0x1
+ 1145 0075 12       		.uleb128 0x12
+ 1146 0076 06       		.uleb128 0x6
+ 1147 0077 40       		.uleb128 0x40
+ 1148 0078 18       		.uleb128 0x18
+ 1149 0079 9742     		.uleb128 0x2117
+ 1150 007b 19       		.uleb128 0x19
+ 1151 007c 00       		.byte	0
+ 1152 007d 00       		.byte	0
+ 1153 007e 09       		.uleb128 0x9
+ 1154 007f 2E       		.uleb128 0x2e
+ 1155 0080 00       		.byte	0
+ 1156 0081 3F       		.uleb128 0x3f
+ 1157 0082 19       		.uleb128 0x19
+ 1158 0083 03       		.uleb128 0x3
+ 1159 0084 0E       		.uleb128 0xe
+ 1160 0085 3A       		.uleb128 0x3a
+ 1161 0086 0B       		.uleb128 0xb
+ 1162 0087 3B       		.uleb128 0x3b
+ 1163 0088 0B       		.uleb128 0xb
+ 1164 0089 27       		.uleb128 0x27
+ 1165 008a 19       		.uleb128 0x19
+ 1166 008b 11       		.uleb128 0x11
+ 1167 008c 01       		.uleb128 0x1
+ 1168 008d 12       		.uleb128 0x12
+ 1169 008e 06       		.uleb128 0x6
+ 1170 008f 40       		.uleb128 0x40
+ 1171 0090 18       		.uleb128 0x18
+ 1172 0091 9642     		.uleb128 0x2116
+ 1173 0093 19       		.uleb128 0x19
+ 1174 0094 00       		.byte	0
+ 1175 0095 00       		.byte	0
+ 1176 0096 0A       		.uleb128 0xa
+ 1177 0097 2E       		.uleb128 0x2e
+ 1178 0098 01       		.byte	0x1
+ 1179 0099 3F       		.uleb128 0x3f
+ 1180 009a 19       		.uleb128 0x19
+ 1181 009b 03       		.uleb128 0x3
+ 1182 009c 0E       		.uleb128 0xe
+ 1183 009d 3A       		.uleb128 0x3a
+ 1184 009e 0B       		.uleb128 0xb
+ 1185 009f 3B       		.uleb128 0x3b
+ 1186 00a0 0B       		.uleb128 0xb
+ 1187 00a1 27       		.uleb128 0x27
+ 1188 00a2 19       		.uleb128 0x19
+ 1189 00a3 11       		.uleb128 0x11
+ 1190 00a4 01       		.uleb128 0x1
+ 1191 00a5 12       		.uleb128 0x12
+ 1192 00a6 06       		.uleb128 0x6
+ 1193 00a7 40       		.uleb128 0x40
+ 1194 00a8 18       		.uleb128 0x18
+ 1195 00a9 9742     		.uleb128 0x2117
+ 1196 00ab 19       		.uleb128 0x19
+ 1197 00ac 01       		.uleb128 0x1
+ 1198 00ad 13       		.uleb128 0x13
+ 1199 00ae 00       		.byte	0
+ 1200 00af 00       		.byte	0
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccOA0PDY.s 			page 32
+
+
+ 1201 00b0 0B       		.uleb128 0xb
+ 1202 00b1 05       		.uleb128 0x5
+ 1203 00b2 00       		.byte	0
+ 1204 00b3 03       		.uleb128 0x3
+ 1205 00b4 0E       		.uleb128 0xe
+ 1206 00b5 3A       		.uleb128 0x3a
+ 1207 00b6 0B       		.uleb128 0xb
+ 1208 00b7 3B       		.uleb128 0x3b
+ 1209 00b8 0B       		.uleb128 0xb
+ 1210 00b9 49       		.uleb128 0x49
+ 1211 00ba 13       		.uleb128 0x13
+ 1212 00bb 02       		.uleb128 0x2
+ 1213 00bc 18       		.uleb128 0x18
+ 1214 00bd 00       		.byte	0
+ 1215 00be 00       		.byte	0
+ 1216 00bf 0C       		.uleb128 0xc
+ 1217 00c0 2E       		.uleb128 0x2e
+ 1218 00c1 00       		.byte	0
+ 1219 00c2 3F       		.uleb128 0x3f
+ 1220 00c3 19       		.uleb128 0x19
+ 1221 00c4 03       		.uleb128 0x3
+ 1222 00c5 0E       		.uleb128 0xe
+ 1223 00c6 3A       		.uleb128 0x3a
+ 1224 00c7 0B       		.uleb128 0xb
+ 1225 00c8 3B       		.uleb128 0x3b
+ 1226 00c9 05       		.uleb128 0x5
+ 1227 00ca 27       		.uleb128 0x27
+ 1228 00cb 19       		.uleb128 0x19
+ 1229 00cc 49       		.uleb128 0x49
+ 1230 00cd 13       		.uleb128 0x13
+ 1231 00ce 11       		.uleb128 0x11
+ 1232 00cf 01       		.uleb128 0x1
+ 1233 00d0 12       		.uleb128 0x12
+ 1234 00d1 06       		.uleb128 0x6
+ 1235 00d2 40       		.uleb128 0x40
+ 1236 00d3 18       		.uleb128 0x18
+ 1237 00d4 9742     		.uleb128 0x2117
+ 1238 00d6 19       		.uleb128 0x19
+ 1239 00d7 00       		.byte	0
+ 1240 00d8 00       		.byte	0
+ 1241 00d9 0D       		.uleb128 0xd
+ 1242 00da 2E       		.uleb128 0x2e
+ 1243 00db 01       		.byte	0x1
+ 1244 00dc 3F       		.uleb128 0x3f
+ 1245 00dd 19       		.uleb128 0x19
+ 1246 00de 03       		.uleb128 0x3
+ 1247 00df 0E       		.uleb128 0xe
+ 1248 00e0 3A       		.uleb128 0x3a
+ 1249 00e1 0B       		.uleb128 0xb
+ 1250 00e2 3B       		.uleb128 0x3b
+ 1251 00e3 05       		.uleb128 0x5
+ 1252 00e4 27       		.uleb128 0x27
+ 1253 00e5 19       		.uleb128 0x19
+ 1254 00e6 11       		.uleb128 0x11
+ 1255 00e7 01       		.uleb128 0x1
+ 1256 00e8 12       		.uleb128 0x12
+ 1257 00e9 06       		.uleb128 0x6
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccOA0PDY.s 			page 33
+
+
+ 1258 00ea 40       		.uleb128 0x40
+ 1259 00eb 18       		.uleb128 0x18
+ 1260 00ec 9742     		.uleb128 0x2117
+ 1261 00ee 19       		.uleb128 0x19
+ 1262 00ef 01       		.uleb128 0x1
+ 1263 00f0 13       		.uleb128 0x13
+ 1264 00f1 00       		.byte	0
+ 1265 00f2 00       		.byte	0
+ 1266 00f3 0E       		.uleb128 0xe
+ 1267 00f4 05       		.uleb128 0x5
+ 1268 00f5 00       		.byte	0
+ 1269 00f6 03       		.uleb128 0x3
+ 1270 00f7 0E       		.uleb128 0xe
+ 1271 00f8 3A       		.uleb128 0x3a
+ 1272 00f9 0B       		.uleb128 0xb
+ 1273 00fa 3B       		.uleb128 0x3b
+ 1274 00fb 05       		.uleb128 0x5
+ 1275 00fc 49       		.uleb128 0x49
+ 1276 00fd 13       		.uleb128 0x13
+ 1277 00fe 02       		.uleb128 0x2
+ 1278 00ff 18       		.uleb128 0x18
+ 1279 0100 00       		.byte	0
+ 1280 0101 00       		.byte	0
+ 1281 0102 0F       		.uleb128 0xf
+ 1282 0103 2E       		.uleb128 0x2e
+ 1283 0104 00       		.byte	0
+ 1284 0105 3F       		.uleb128 0x3f
+ 1285 0106 19       		.uleb128 0x19
+ 1286 0107 03       		.uleb128 0x3
+ 1287 0108 0E       		.uleb128 0xe
+ 1288 0109 3A       		.uleb128 0x3a
+ 1289 010a 0B       		.uleb128 0xb
+ 1290 010b 3B       		.uleb128 0x3b
+ 1291 010c 05       		.uleb128 0x5
+ 1292 010d 27       		.uleb128 0x27
+ 1293 010e 19       		.uleb128 0x19
+ 1294 010f 11       		.uleb128 0x11
+ 1295 0110 01       		.uleb128 0x1
+ 1296 0111 12       		.uleb128 0x12
+ 1297 0112 06       		.uleb128 0x6
+ 1298 0113 40       		.uleb128 0x40
+ 1299 0114 18       		.uleb128 0x18
+ 1300 0115 9642     		.uleb128 0x2116
+ 1301 0117 19       		.uleb128 0x19
+ 1302 0118 00       		.byte	0
+ 1303 0119 00       		.byte	0
+ 1304 011a 10       		.uleb128 0x10
+ 1305 011b 34       		.uleb128 0x34
+ 1306 011c 00       		.byte	0
+ 1307 011d 03       		.uleb128 0x3
+ 1308 011e 0E       		.uleb128 0xe
+ 1309 011f 3A       		.uleb128 0x3a
+ 1310 0120 0B       		.uleb128 0xb
+ 1311 0121 3B       		.uleb128 0x3b
+ 1312 0122 0B       		.uleb128 0xb
+ 1313 0123 49       		.uleb128 0x49
+ 1314 0124 13       		.uleb128 0x13
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccOA0PDY.s 			page 34
+
+
+ 1315 0125 3F       		.uleb128 0x3f
+ 1316 0126 19       		.uleb128 0x19
+ 1317 0127 02       		.uleb128 0x2
+ 1318 0128 18       		.uleb128 0x18
+ 1319 0129 00       		.byte	0
+ 1320 012a 00       		.byte	0
+ 1321 012b 00       		.byte	0
+ 1322              		.section	.debug_aranges,"",%progbits
+ 1323 0000 94000000 		.4byte	0x94
+ 1324 0004 0200     		.2byte	0x2
+ 1325 0006 00000000 		.4byte	.Ldebug_info0
+ 1326 000a 04       		.byte	0x4
+ 1327 000b 00       		.byte	0
+ 1328 000c 0000     		.2byte	0
+ 1329 000e 0000     		.2byte	0
+ 1330 0010 00000000 		.4byte	.LFB0
+ 1331 0014 80000000 		.4byte	.LFE0-.LFB0
+ 1332 0018 00000000 		.4byte	.LFB1
+ 1333 001c 20000000 		.4byte	.LFE1-.LFB1
+ 1334 0020 00000000 		.4byte	.LFB2
+ 1335 0024 20000000 		.4byte	.LFE2-.LFB2
+ 1336 0028 00000000 		.4byte	.LFB3
+ 1337 002c 20000000 		.4byte	.LFE3-.LFB3
+ 1338 0030 00000000 		.4byte	.LFB4
+ 1339 0034 20000000 		.4byte	.LFE4-.LFB4
+ 1340 0038 00000000 		.4byte	.LFB5
+ 1341 003c 18000000 		.4byte	.LFE5-.LFB5
+ 1342 0040 00000000 		.4byte	.LFB6
+ 1343 0044 18000000 		.4byte	.LFE6-.LFB6
+ 1344 0048 00000000 		.4byte	.LFB7
+ 1345 004c 20000000 		.4byte	.LFE7-.LFB7
+ 1346 0050 00000000 		.4byte	.LFB8
+ 1347 0054 20000000 		.4byte	.LFE8-.LFB8
+ 1348 0058 00000000 		.4byte	.LFB9
+ 1349 005c 20000000 		.4byte	.LFE9-.LFB9
+ 1350 0060 00000000 		.4byte	.LFB10
+ 1351 0064 18000000 		.4byte	.LFE10-.LFB10
+ 1352 0068 00000000 		.4byte	.LFB11
+ 1353 006c 20000000 		.4byte	.LFE11-.LFB11
+ 1354 0070 00000000 		.4byte	.LFB12
+ 1355 0074 18000000 		.4byte	.LFE12-.LFB12
+ 1356 0078 00000000 		.4byte	.LFB13
+ 1357 007c 20000000 		.4byte	.LFE13-.LFB13
+ 1358 0080 00000000 		.4byte	.LFB14
+ 1359 0084 18000000 		.4byte	.LFE14-.LFB14
+ 1360 0088 00000000 		.4byte	.LFB15
+ 1361 008c 1A000000 		.4byte	.LFE15-.LFB15
+ 1362 0090 00000000 		.4byte	0
+ 1363 0094 00000000 		.4byte	0
+ 1364              		.section	.debug_ranges,"",%progbits
+ 1365              	.Ldebug_ranges0:
+ 1366 0000 00000000 		.4byte	.LFB0
+ 1367 0004 80000000 		.4byte	.LFE0
+ 1368 0008 00000000 		.4byte	.LFB1
+ 1369 000c 20000000 		.4byte	.LFE1
+ 1370 0010 00000000 		.4byte	.LFB2
+ 1371 0014 20000000 		.4byte	.LFE2
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccOA0PDY.s 			page 35
+
+
+ 1372 0018 00000000 		.4byte	.LFB3
+ 1373 001c 20000000 		.4byte	.LFE3
+ 1374 0020 00000000 		.4byte	.LFB4
+ 1375 0024 20000000 		.4byte	.LFE4
+ 1376 0028 00000000 		.4byte	.LFB5
+ 1377 002c 18000000 		.4byte	.LFE5
+ 1378 0030 00000000 		.4byte	.LFB6
+ 1379 0034 18000000 		.4byte	.LFE6
+ 1380 0038 00000000 		.4byte	.LFB7
+ 1381 003c 20000000 		.4byte	.LFE7
+ 1382 0040 00000000 		.4byte	.LFB8
+ 1383 0044 20000000 		.4byte	.LFE8
+ 1384 0048 00000000 		.4byte	.LFB9
+ 1385 004c 20000000 		.4byte	.LFE9
+ 1386 0050 00000000 		.4byte	.LFB10
+ 1387 0054 18000000 		.4byte	.LFE10
+ 1388 0058 00000000 		.4byte	.LFB11
+ 1389 005c 20000000 		.4byte	.LFE11
+ 1390 0060 00000000 		.4byte	.LFB12
+ 1391 0064 18000000 		.4byte	.LFE12
+ 1392 0068 00000000 		.4byte	.LFB13
+ 1393 006c 20000000 		.4byte	.LFE13
+ 1394 0070 00000000 		.4byte	.LFB14
+ 1395 0074 18000000 		.4byte	.LFE14
+ 1396 0078 00000000 		.4byte	.LFB15
+ 1397 007c 1A000000 		.4byte	.LFE15
+ 1398 0080 00000000 		.4byte	0
+ 1399 0084 00000000 		.4byte	0
+ 1400              		.section	.debug_line,"",%progbits
+ 1401              	.Ldebug_line0:
+ 1402 0000 88010000 		.section	.debug_str,"MS",%progbits,1
+ 1402      02004B00 
+ 1402      00000201 
+ 1402      FB0E0D00 
+ 1402      01010101 
+ 1403              	.LASF15:
+ 1404 0000 72656731 		.ascii	"reg16\000"
+ 1404      3600
+ 1405              	.LASF21:
+ 1406 0006 456E636F 		.ascii	"Encoder_Left_Stop\000"
+ 1406      6465725F 
+ 1406      4C656674 
+ 1406      5F53746F 
+ 1406      7000
+ 1407              	.LASF42:
+ 1408 0018 433A5C55 		.ascii	"C:\\Users\\Patrick\\Documents\\GitHub\\PSoC 5LP FIl"
+ 1408      73657273 
+ 1408      5C506174 
+ 1408      7269636B 
+ 1408      5C446F63 
+ 1409 0046 65735C43 		.ascii	"es\\C-CAN_PSoC_DevKit\\C-CAN.cydsn\000"
+ 1409      2D43414E 
+ 1409      5F50536F 
+ 1409      435F4465 
+ 1409      764B6974 
+ 1410              	.LASF34:
+ 1411 0067 70657269 		.ascii	"period\000"
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccOA0PDY.s 			page 36
+
+
+ 1411      6F6400
+ 1412              	.LASF3:
+ 1413 006e 73686F72 		.ascii	"short unsigned int\000"
+ 1413      7420756E 
+ 1413      7369676E 
+ 1413      65642069 
+ 1413      6E7400
+ 1414              	.LASF32:
+ 1415 0081 456E636F 		.ascii	"Encoder_Left_ReadCapture\000"
+ 1415      6465725F 
+ 1415      4C656674 
+ 1415      5F526561 
+ 1415      64436170 
+ 1416              	.LASF35:
+ 1417 009a 456E636F 		.ascii	"Encoder_Left_ReadPeriod\000"
+ 1417      6465725F 
+ 1417      4C656674 
+ 1417      5F526561 
+ 1417      64506572 
+ 1418              	.LASF11:
+ 1419 00b2 666C6F61 		.ascii	"float\000"
+ 1419      7400
+ 1420              	.LASF30:
+ 1421 00b8 636F756E 		.ascii	"counter\000"
+ 1421      74657200 
+ 1422              	.LASF19:
+ 1423 00c0 456E636F 		.ascii	"Encoder_Left_Enable\000"
+ 1423      6465725F 
+ 1423      4C656674 
+ 1423      5F456E61 
+ 1423      626C6500 
+ 1424              	.LASF1:
+ 1425 00d4 756E7369 		.ascii	"unsigned char\000"
+ 1425      676E6564 
+ 1425      20636861 
+ 1425      7200
+ 1426              	.LASF29:
+ 1427 00e2 456E636F 		.ascii	"Encoder_Left_WriteCounter\000"
+ 1427      6465725F 
+ 1427      4C656674 
+ 1427      5F577269 
+ 1427      7465436F 
+ 1428              	.LASF31:
+ 1429 00fc 456E636F 		.ascii	"Encoder_Left_ReadCounter\000"
+ 1429      6465725F 
+ 1429      4C656674 
+ 1429      5F526561 
+ 1429      64436F75 
+ 1430              	.LASF39:
+ 1431 0115 456E636F 		.ascii	"Encoder_Left_ClearFIFO\000"
+ 1431      6465725F 
+ 1431      4C656674 
+ 1431      5F436C65 
+ 1431      61724649 
+ 1432              	.LASF5:
+ 1433 012c 6C6F6E67 		.ascii	"long unsigned int\000"
+ 1433      20756E73 
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccOA0PDY.s 			page 37
+
+
+ 1433      69676E65 
+ 1433      6420696E 
+ 1433      7400
+ 1434              	.LASF9:
+ 1435 013e 75696E74 		.ascii	"uint8\000"
+ 1435      3800
+ 1436              	.LASF28:
+ 1437 0144 636F6E74 		.ascii	"control\000"
+ 1437      726F6C00 
+ 1438              	.LASF27:
+ 1439 014c 696E7465 		.ascii	"interruptsMask\000"
+ 1439      72727570 
+ 1439      74734D61 
+ 1439      736B00
+ 1440              	.LASF40:
+ 1441 015b 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
+ 1441      4320342E 
+ 1441      392E3320 
+ 1441      32303135 
+ 1441      30333033 
+ 1442 018e 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m3 -mthumb -g -O"
+ 1442      20726576 
+ 1442      6973696F 
+ 1442      6E203232 
+ 1442      31323230 
+ 1443 01c1 30202D66 		.ascii	"0 -ffunction-sections -ffat-lto-objects\000"
+ 1443      66756E63 
+ 1443      74696F6E 
+ 1443      2D736563 
+ 1443      74696F6E 
+ 1444              	.LASF12:
+ 1445 01e9 646F7562 		.ascii	"double\000"
+ 1445      6C6500
+ 1446              	.LASF20:
+ 1447 01f0 456E636F 		.ascii	"Encoder_Left_Start\000"
+ 1447      6465725F 
+ 1447      4C656674 
+ 1447      5F537461 
+ 1447      727400
+ 1448              	.LASF41:
+ 1449 0203 2E5C4765 		.ascii	".\\Generated_Source\\PSoC5\\Encoder_Left.c\000"
+ 1449      6E657261 
+ 1449      7465645F 
+ 1449      536F7572 
+ 1449      63655C50 
+ 1450              	.LASF38:
+ 1451 022b 456E636F 		.ascii	"Encoder_Left_ReadCompare\000"
+ 1451      6465725F 
+ 1451      4C656674 
+ 1451      5F526561 
+ 1451      64436F6D 
+ 1452              	.LASF10:
+ 1453 0244 75696E74 		.ascii	"uint16\000"
+ 1453      313600
+ 1454              	.LASF18:
+ 1455 024b 456E636F 		.ascii	"Encoder_Left_interruptState\000"
+ 1455      6465725F 
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccOA0PDY.s 			page 38
+
+
+ 1455      4C656674 
+ 1455      5F696E74 
+ 1455      65727275 
+ 1456              	.LASF8:
+ 1457 0267 756E7369 		.ascii	"unsigned int\000"
+ 1457      676E6564 
+ 1457      20696E74 
+ 1457      00
+ 1458              	.LASF7:
+ 1459 0274 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 1459      206C6F6E 
+ 1459      6720756E 
+ 1459      7369676E 
+ 1459      65642069 
+ 1460              	.LASF33:
+ 1461 028b 456E636F 		.ascii	"Encoder_Left_WritePeriod\000"
+ 1461      6465725F 
+ 1461      4C656674 
+ 1461      5F577269 
+ 1461      74655065 
+ 1462              	.LASF14:
+ 1463 02a4 72656738 		.ascii	"reg8\000"
+ 1463      00
+ 1464              	.LASF43:
+ 1465 02a9 456E636F 		.ascii	"Encoder_Left_initVar\000"
+ 1465      6465725F 
+ 1465      4C656674 
+ 1465      5F696E69 
+ 1465      74566172 
+ 1466              	.LASF16:
+ 1467 02be 73697A65 		.ascii	"sizetype\000"
+ 1467      74797065 
+ 1467      00
+ 1468              	.LASF23:
+ 1469 02c7 456E636F 		.ascii	"Encoder_Left_SetInterruptMode\000"
+ 1469      6465725F 
+ 1469      4C656674 
+ 1469      5F536574 
+ 1469      496E7465 
+ 1470              	.LASF6:
+ 1471 02e5 6C6F6E67 		.ascii	"long long int\000"
+ 1471      206C6F6E 
+ 1471      6720696E 
+ 1471      7400
+ 1472              	.LASF13:
+ 1473 02f3 63686172 		.ascii	"char\000"
+ 1473      00
+ 1474              	.LASF25:
+ 1475 02f8 456E636F 		.ascii	"Encoder_Left_ReadControlRegister\000"
+ 1475      6465725F 
+ 1475      4C656674 
+ 1475      5F526561 
+ 1475      64436F6E 
+ 1476              	.LASF2:
+ 1477 0319 73686F72 		.ascii	"short int\000"
+ 1477      7420696E 
+ 1477      7400
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccOA0PDY.s 			page 39
+
+
+ 1478              	.LASF17:
+ 1479 0323 6374726C 		.ascii	"ctrl\000"
+ 1479      00
+ 1480              	.LASF4:
+ 1481 0328 6C6F6E67 		.ascii	"long int\000"
+ 1481      20696E74 
+ 1481      00
+ 1482              	.LASF0:
+ 1483 0331 7369676E 		.ascii	"signed char\000"
+ 1483      65642063 
+ 1483      68617200 
+ 1484              	.LASF37:
+ 1485 033d 636F6D70 		.ascii	"compare\000"
+ 1485      61726500 
+ 1486              	.LASF26:
+ 1487 0345 456E636F 		.ascii	"Encoder_Left_WriteControlRegister\000"
+ 1487      6465725F 
+ 1487      4C656674 
+ 1487      5F577269 
+ 1487      7465436F 
+ 1488              	.LASF36:
+ 1489 0367 456E636F 		.ascii	"Encoder_Left_WriteCompare\000"
+ 1489      6465725F 
+ 1489      4C656674 
+ 1489      5F577269 
+ 1489      7465436F 
+ 1490              	.LASF24:
+ 1491 0381 456E636F 		.ascii	"Encoder_Left_ReadStatusRegister\000"
+ 1491      6465725F 
+ 1491      4C656674 
+ 1491      5F526561 
+ 1491      64537461 
+ 1492              	.LASF22:
+ 1493 03a1 456E636F 		.ascii	"Encoder_Left_Init\000"
+ 1493      6465725F 
+ 1493      4C656674 
+ 1493      5F496E69 
+ 1493      7400
+ 1494              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.9.3 20150303 (release) [ARM/embedded-4_9-br

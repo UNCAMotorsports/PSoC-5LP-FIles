@@ -8,7 +8,6 @@
 <files />
 <projects>
 <v>.\C-CAN.cydsn\C-CAN.cyprj</v>
-<v>.\Bootloader.cydsn\Bootloader.cyprj</v>
 </projects>
 <workspace_id v="7bb8b810-46f7-4e59-8ce0-4674d22173ee" />
 <WriteAppVersionLastSavedWith v="3.3.0.9604" />

@@ -1,7 +1,6 @@
-C:\Users\Patrick\Documents\GitHub\PSoC 5LP FIles\C-CAN_PSoC_DevKit\C-CAN.cydsn\C-CAN.cyprj|31e9b401-9d68-497e-8fdd-cac83d1c6a38
-C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|00a84559-178d-4df7-9488-c90a2da7c9c1
-C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\default\CyReferenceLibrary\CyReferenceLibrary.cylib\CyReferenceLibrary.cyprj|a2b4e244-2d4f-48bf-9d28-d1a1c979dca6
-C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|2727224c-7591-4b4a-969e-8f9bfd1b0bd0
-C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|44df2105-d439-4fe8-af91-8cac460db330
-C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|a62778c0-f777-4926-9724-c62638256668
-C:\Users\Patrick\Documents\GitHub\PSoC 5LP FIles\C-CAN_PSoC_DevKit\Bootloader.cydsn\Bootloader.cyprj|4fd38b03-29bb-4af1-ba5e-cd81c4120ca8
+C:\Users\Patrick\Documents\GitHub\PSoC 5LP FIles\C-CAN_PSoC_DevKit\C-CAN.cydsn\C-CAN.cyprj|ab5f183c-55b6-411b-abc5-ccd1e015fed6
+C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|984d2e43-d4c7-4238-b179-11ee35c6dea0
+C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\default\CyReferenceLibrary\CyReferenceLibrary.cylib\CyReferenceLibrary.cyprj|217e5497-dc7d-40c7-b130-1c3d653c2ae0
+C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|732db393-56e2-49bb-b426-507ac6b35896
+C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|bf0752aa-873c-43b0-8c61-cede65e1807b
+C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|a3357102-f186-4cb0-b224-4016883875de

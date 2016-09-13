@@ -1,5 +1,6 @@
---------------- Rebuild Started: 08/03/2016 04:33:37 Project: CE95277 ADC and UART, Configuration: ARM GCC 4.9-2015-q1-update Debug ---------------
+--------------- Rebuild Started: 09/07/2016 17:10:32 Project: C-CAN, Configuration: ARM GCC 4.9-2015-q1-update Debug ---------------
 Deleting file ".\ARM_GCC_493\Debug\main.o"
+Deleting file ".\ARM_GCC_493\Debug\myUART.o"
 Deleting file ".\ARM_GCC_493\Debug\cyfitter_cfg.o"
 Deleting file ".\ARM_GCC_493\Debug\cymetadata.o"
 Deleting file ".\ARM_GCC_493\Debug\UART_1.o"
@@ -23,9 +24,6 @@ Deleting file ".\ARM_GCC_493\Debug\ADC_SAR_1_IRQ.o"
 Deleting file ".\ARM_GCC_493\Debug\ADC_SAR_1_theACLK.o"
 Deleting file ".\ARM_GCC_493\Debug\ADC_SAR_1_Bypass.o"
 Deleting file ".\ARM_GCC_493\Debug\AMux_1.o"
-Deleting file ".\ARM_GCC_493\Debug\Vin_180.o"
-Deleting file ".\ARM_GCC_493\Debug\Vin_90.o"
-Deleting file ".\ARM_GCC_493\Debug\Vin_Pot.o"
 Deleting file ".\ARM_GCC_493\Debug\mcp2515_clk.o"
 Deleting file ".\ARM_GCC_493\Debug\RX_2.o"
 Deleting file ".\ARM_GCC_493\Debug\TX_2.o"
@@ -34,28 +32,35 @@ Deleting file ".\ARM_GCC_493\Debug\CAN_1_INT.o"
 Deleting file ".\ARM_GCC_493\Debug\CAN_1_PM.o"
 Deleting file ".\ARM_GCC_493\Debug\CAN_1_TX_RX_func.o"
 Deleting file ".\ARM_GCC_493\Debug\Clock_2.o"
-Deleting file ".\ARM_GCC_493\Debug\Enc_A.o"
 Deleting file ".\ARM_GCC_493\Debug\Clock_3.o"
-Deleting file ".\ARM_GCC_493\Debug\Encoder_Count.o"
-Deleting file ".\ARM_GCC_493\Debug\Encoder_Count_PM.o"
-Deleting file ".\ARM_GCC_493\Debug\Time_Count.o"
-Deleting file ".\ARM_GCC_493\Debug\Time_Count_PM.o"
-Deleting file ".\ARM_GCC_493\Debug\CAN_TIMER.o"
-Deleting file ".\ARM_GCC_493\Debug\CAN_TIMER_PM.o"
-Deleting file ".\ARM_GCC_493\Debug\CAN_ISR.o"
-Deleting file ".\ARM_GCC_493\Debug\Test_Pin.o"
-Deleting file ".\ARM_GCC_493\Debug\ISR_PIN.o"
-Deleting file ".\ARM_GCC_493\Debug\CE95277 ADC and UART.hex"
-Deleting file ".\ARM_GCC_493\Debug\CE95277 ADC and UART.elf"
-Deleting file ".\ARM_GCC_493\Debug\CE95277 ADC and UART.map"
-Deleting file ".\CE95277 ADC and UART.cycdx"
-Deleting file ".\CE95277 ADC and UART.svd"
-Deleting file ".\CE95277 ADC and UART.rpt"
-Deleting file ".\CE95277 ADC and UART_timing.html"
+Deleting file ".\ARM_GCC_493\Debug\Encoder_Left.o"
+Deleting file ".\ARM_GCC_493\Debug\Encoder_Left_PM.o"
+Deleting file ".\ARM_GCC_493\Debug\Enc_L.o"
+Deleting file ".\ARM_GCC_493\Debug\Encoder_Right.o"
+Deleting file ".\ARM_GCC_493\Debug\Encoder_Right_PM.o"
+Deleting file ".\ARM_GCC_493\Debug\Enc_R.o"
+Deleting file ".\ARM_GCC_493\Debug\leftEncTimer.o"
+Deleting file ".\ARM_GCC_493\Debug\leftEncTimer_PM.o"
+Deleting file ".\ARM_GCC_493\Debug\rightEncTimer.o"
+Deleting file ".\ARM_GCC_493\Debug\rightEncTimer_PM.o"
+Deleting file ".\ARM_GCC_493\Debug\two.o"
+Deleting file ".\ARM_GCC_493\Debug\one.o"
+Deleting file ".\ARM_GCC_493\Debug\zero.o"
+Deleting file ".\ARM_GCC_493\Debug\three.o"
+Deleting file ".\ARM_GCC_493\Debug\four.o"
+Deleting file ".\ARM_GCC_493\Debug\five.o"
+Deleting file ".\ARM_GCC_493\Debug\Em_EEPROM.o"
+Deleting file ".\ARM_GCC_493\Debug\C-CAN.hex"
+Deleting file ".\ARM_GCC_493\Debug\C-CAN.elf"
+Deleting file ".\ARM_GCC_493\Debug\C-CAN.map"
+Deleting file ".\C-CAN.cycdx"
+Deleting file ".\C-CAN.svd"
+Deleting file ".\C-CAN.rpt"
+Deleting file ".\C-CAN_timing.html"
 Deleting file ".\ARM_GCC_493\Debug\.deps\C_FILE.P"
 Deleting file ".\ARM_GCC_493\Debug\.deps\ARM_C_FILE.P"
 Deleting file ".\ARM_GCC_493\Debug\.deps\GNU_ARM_ASM_FILE.P"
-cydsfit.exe -.appdatapath "C:\Users\Patrick\AppData\Local\Cypress Semiconductor\PSoC Creator\3.3" -.fdsnotice -.fdswarpdepfile=warp_dependencies.txt -.fdselabdepfile=elab_dependencies.txt -.fdsbldfile=generated_files.txt -p "C:\Users\Patrick\Desktop\cy8ckit-059\CE95277 ADC and UART\CE95277 ADC and UART.cydsn\CE95277 ADC and UART.cyprj" -d CY8C5888LTI-LP097 -s "C:\Users\Patrick\Desktop\cy8ckit-059\CE95277 ADC and UART\CE95277 ADC and UART.cydsn\Generated_Source\PSoC5" -- -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE
+cydsfit.exe -.appdatapath "C:\Users\Patrick\AppData\Local\Cypress Semiconductor\PSoC Creator\3.3" -.fdsnotice -.fdswarpdepfile=warp_dependencies.txt -.fdselabdepfile=elab_dependencies.txt -.fdsbldfile=generated_files.txt -p "C:\Users\Patrick\Documents\GitHub\PSoC 5LP FIles\C-CAN_PSoC_DevKit\C-CAN.cydsn\C-CAN.cyprj" -d CY8C5888LTI-LP097 -s "C:\Users\Patrick\Documents\GitHub\PSoC 5LP FIles\C-CAN_PSoC_DevKit\C-CAN.cydsn\Generated_Source\PSoC5" -- -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE
 Elaborating Design...
 HDL Generation ...
 Synthesis ...
@@ -68,61 +73,68 @@ Digital Placement ...
 Digital Routing ...
 Bitstream Generation ...
 Static timing analysis ...
-Warning: sta.M0019: CE95277 ADC and UART_timing.html: Warning-1366: Setup time violation found in a path from clock ( CyBUS_CLK ) to clock ( Clock_2 ). (File=C:\Users\Patrick\Desktop\cy8ckit-059\CE95277 ADC and UART\CE95277 ADC and UART.cydsn\CE95277 ADC and UART_timing.html)
 API Generation ...
 Dependency Generation ...
 Clean Temporary Files ...
-arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -Wno-main -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\ARM_GCC_493\Debug/main.lst -g -ffunction-sections -O3 -ffat-lto-objects -c .\main.c -o .\ARM_GCC_493\Debug\main.o
-arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -Wno-main -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\ARM_GCC_493\Debug/cyfitter_cfg.lst -g -ffunction-sections -O3 -ffat-lto-objects -c .\Generated_Source\PSoC5\cyfitter_cfg.c -o .\ARM_GCC_493\Debug\cyfitter_cfg.o
-arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -Wno-main -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\ARM_GCC_493\Debug/cymetadata.lst -g -ffunction-sections -O3 -ffat-lto-objects -c .\Generated_Source\PSoC5\cymetadata.c -o .\ARM_GCC_493\Debug\cymetadata.o
-arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -Wno-main -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\ARM_GCC_493\Debug/UART_1.lst -g -ffunction-sections -O3 -ffat-lto-objects -c .\Generated_Source\PSoC5\UART_1.c -o .\ARM_GCC_493\Debug\UART_1.o
-arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -Wno-main -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\ARM_GCC_493\Debug/UART_1_PM.lst -g -ffunction-sections -O3 -ffat-lto-objects -c .\Generated_Source\PSoC5\UART_1_PM.c -o .\ARM_GCC_493\Debug\UART_1_PM.o
-arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -Wno-main -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\ARM_GCC_493\Debug/UART_1_INT.lst -g -ffunction-sections -O3 -ffat-lto-objects -c .\Generated_Source\PSoC5\UART_1_INT.c -o .\ARM_GCC_493\Debug\UART_1_INT.o
-arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -Wno-main -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\ARM_GCC_493\Debug/UART_1_BOOT.lst -g -ffunction-sections -O3 -ffat-lto-objects -c .\Generated_Source\PSoC5\UART_1_BOOT.c -o .\ARM_GCC_493\Debug\UART_1_BOOT.o
-arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -Wno-main -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\ARM_GCC_493\Debug/UART_1_IntClock.lst -g -ffunction-sections -O3 -ffat-lto-objects -c .\Generated_Source\PSoC5\UART_1_IntClock.c -o .\ARM_GCC_493\Debug\UART_1_IntClock.o
-arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -Wno-main -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\ARM_GCC_493\Debug/Cm3Start.lst -g -ffunction-sections -O3 -ffat-lto-objects -c .\Generated_Source\PSoC5\Cm3Start.c -o .\ARM_GCC_493\Debug\Cm3Start.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -Wno-main -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\ARM_GCC_493\Debug/main.lst -g -ffunction-sections -O0 -ffat-lto-objects -c .\main.c -o .\ARM_GCC_493\Debug\main.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -Wno-main -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\ARM_GCC_493\Debug/myUART.lst -g -ffunction-sections -O0 -ffat-lto-objects -c .\myUART.c -o .\ARM_GCC_493\Debug\myUART.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -Wno-main -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\ARM_GCC_493\Debug/C-CAN.lst -g -ffunction-sections -O0 -ffat-lto-objects -c .\C-CAN.c -o .\ARM_GCC_493\Debug\C-CAN.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -Wno-main -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\ARM_GCC_493\Debug/cyfitter_cfg.lst -g -ffunction-sections -O0 -ffat-lto-objects -c .\Generated_Source\PSoC5\cyfitter_cfg.c -o .\ARM_GCC_493\Debug\cyfitter_cfg.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -Wno-main -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\ARM_GCC_493\Debug/cymetadata.lst -g -ffunction-sections -O0 -ffat-lto-objects -c .\Generated_Source\PSoC5\cymetadata.c -o .\ARM_GCC_493\Debug\cymetadata.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -Wno-main -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\ARM_GCC_493\Debug/UART_1.lst -g -ffunction-sections -O0 -ffat-lto-objects -c .\Generated_Source\PSoC5\UART_1.c -o .\ARM_GCC_493\Debug\UART_1.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -Wno-main -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\ARM_GCC_493\Debug/UART_1_PM.lst -g -ffunction-sections -O0 -ffat-lto-objects -c .\Generated_Source\PSoC5\UART_1_PM.c -o .\ARM_GCC_493\Debug\UART_1_PM.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -Wno-main -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\ARM_GCC_493\Debug/UART_1_INT.lst -g -ffunction-sections -O0 -ffat-lto-objects -c .\Generated_Source\PSoC5\UART_1_INT.c -o .\ARM_GCC_493\Debug\UART_1_INT.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -Wno-main -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\ARM_GCC_493\Debug/UART_1_BOOT.lst -g -ffunction-sections -O0 -ffat-lto-objects -c .\Generated_Source\PSoC5\UART_1_BOOT.c -o .\ARM_GCC_493\Debug\UART_1_BOOT.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -Wno-main -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\ARM_GCC_493\Debug/UART_1_IntClock.lst -g -ffunction-sections -O0 -ffat-lto-objects -c .\Generated_Source\PSoC5\UART_1_IntClock.c -o .\ARM_GCC_493\Debug\UART_1_IntClock.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -Wno-main -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\ARM_GCC_493\Debug/Cm3Start.lst -g -ffunction-sections -O0 -ffat-lto-objects -c .\Generated_Source\PSoC5\Cm3Start.c -o .\ARM_GCC_493\Debug\Cm3Start.o
 arm-none-eabi-as.exe -mcpu=cortex-m3 -mthumb -I. -IGenerated_Source\PSoC5 -alh=.\ARM_GCC_493\Debug/CyBootAsmGnu.lst -g -o .\ARM_GCC_493\Debug\CyBootAsmGnu.o .\Generated_Source\PSoC5\CyBootAsmGnu.s
-arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -Wno-main -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\ARM_GCC_493\Debug/CyDmac.lst -g -ffunction-sections -O3 -ffat-lto-objects -c .\Generated_Source\PSoC5\CyDmac.c -o .\ARM_GCC_493\Debug\CyDmac.o
-arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -Wno-main -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\ARM_GCC_493\Debug/CyFlash.lst -g -ffunction-sections -O3 -ffat-lto-objects -c .\Generated_Source\PSoC5\CyFlash.c -o .\ARM_GCC_493\Debug\CyFlash.o
-arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -Wno-main -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\ARM_GCC_493\Debug/CyLib.lst -g -ffunction-sections -O3 -ffat-lto-objects -c .\Generated_Source\PSoC5\CyLib.c -o .\ARM_GCC_493\Debug\CyLib.o
-arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -Wno-main -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\ARM_GCC_493\Debug/cyPm.lst -g -ffunction-sections -O3 -ffat-lto-objects -c .\Generated_Source\PSoC5\cyPm.c -o .\ARM_GCC_493\Debug\cyPm.o
-arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -Wno-main -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\ARM_GCC_493\Debug/CySpc.lst -g -ffunction-sections -O3 -ffat-lto-objects -c .\Generated_Source\PSoC5\CySpc.c -o .\ARM_GCC_493\Debug\CySpc.o
-arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -Wno-main -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\ARM_GCC_493\Debug/cyutils.lst -g -ffunction-sections -O3 -ffat-lto-objects -c .\Generated_Source\PSoC5\cyutils.c -o .\ARM_GCC_493\Debug\cyutils.o
-arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -Wno-main -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\ARM_GCC_493\Debug/Clock_1.lst -g -ffunction-sections -O3 -ffat-lto-objects -c .\Generated_Source\PSoC5\Clock_1.c -o .\ARM_GCC_493\Debug\Clock_1.o
-arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -Wno-main -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\ARM_GCC_493\Debug/ADC_SAR_1.lst -g -ffunction-sections -O3 -ffat-lto-objects -c .\Generated_Source\PSoC5\ADC_SAR_1.c -o .\ARM_GCC_493\Debug\ADC_SAR_1.o
-arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -Wno-main -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\ARM_GCC_493\Debug/ADC_SAR_1_INT.lst -g -ffunction-sections -O3 -ffat-lto-objects -c .\Generated_Source\PSoC5\ADC_SAR_1_INT.c -o .\ARM_GCC_493\Debug\ADC_SAR_1_INT.o
-arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -Wno-main -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\ARM_GCC_493\Debug/ADC_SAR_1_PM.lst -g -ffunction-sections -O3 -ffat-lto-objects -c .\Generated_Source\PSoC5\ADC_SAR_1_PM.c -o .\ARM_GCC_493\Debug\ADC_SAR_1_PM.o
-arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -Wno-main -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\ARM_GCC_493\Debug/ADC_SAR_1_IRQ.lst -g -ffunction-sections -O3 -ffat-lto-objects -c .\Generated_Source\PSoC5\ADC_SAR_1_IRQ.c -o .\ARM_GCC_493\Debug\ADC_SAR_1_IRQ.o
-arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -Wno-main -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\ARM_GCC_493\Debug/ADC_SAR_1_theACLK.lst -g -ffunction-sections -O3 -ffat-lto-objects -c .\Generated_Source\PSoC5\ADC_SAR_1_theACLK.c -o .\ARM_GCC_493\Debug\ADC_SAR_1_theACLK.o
-arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -Wno-main -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\ARM_GCC_493\Debug/ADC_SAR_1_Bypass.lst -g -ffunction-sections -O3 -ffat-lto-objects -c .\Generated_Source\PSoC5\ADC_SAR_1_Bypass.c -o .\ARM_GCC_493\Debug\ADC_SAR_1_Bypass.o
-arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -Wno-main -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\ARM_GCC_493\Debug/AMux_1.lst -g -ffunction-sections -O3 -ffat-lto-objects -c .\Generated_Source\PSoC5\AMux_1.c -o .\ARM_GCC_493\Debug\AMux_1.o
-arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -Wno-main -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\ARM_GCC_493\Debug/Vin_180.lst -g -ffunction-sections -O3 -ffat-lto-objects -c .\Generated_Source\PSoC5\Vin_180.c -o .\ARM_GCC_493\Debug\Vin_180.o
-arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -Wno-main -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\ARM_GCC_493\Debug/Vin_90.lst -g -ffunction-sections -O3 -ffat-lto-objects -c .\Generated_Source\PSoC5\Vin_90.c -o .\ARM_GCC_493\Debug\Vin_90.o
-arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -Wno-main -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\ARM_GCC_493\Debug/Vin_Pot.lst -g -ffunction-sections -O3 -ffat-lto-objects -c .\Generated_Source\PSoC5\Vin_Pot.c -o .\ARM_GCC_493\Debug\Vin_Pot.o
-arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -Wno-main -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\ARM_GCC_493\Debug/mcp2515_clk.lst -g -ffunction-sections -O3 -ffat-lto-objects -c .\Generated_Source\PSoC5\mcp2515_clk.c -o .\ARM_GCC_493\Debug\mcp2515_clk.o
-arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -Wno-main -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\ARM_GCC_493\Debug/RX_2.lst -g -ffunction-sections -O3 -ffat-lto-objects -c .\Generated_Source\PSoC5\RX_2.c -o .\ARM_GCC_493\Debug\RX_2.o
-arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -Wno-main -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\ARM_GCC_493\Debug/TX_2.lst -g -ffunction-sections -O3 -ffat-lto-objects -c .\Generated_Source\PSoC5\TX_2.c -o .\ARM_GCC_493\Debug\TX_2.o
-arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -Wno-main -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\ARM_GCC_493\Debug/CAN_1.lst -g -ffunction-sections -O3 -ffat-lto-objects -c .\Generated_Source\PSoC5\CAN_1.c -o .\ARM_GCC_493\Debug\CAN_1.o
-arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -Wno-main -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\ARM_GCC_493\Debug/CAN_1_INT.lst -g -ffunction-sections -O3 -ffat-lto-objects -c .\Generated_Source\PSoC5\CAN_1_INT.c -o .\ARM_GCC_493\Debug\CAN_1_INT.o
-arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -Wno-main -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\ARM_GCC_493\Debug/CAN_1_PM.lst -g -ffunction-sections -O3 -ffat-lto-objects -c .\Generated_Source\PSoC5\CAN_1_PM.c -o .\ARM_GCC_493\Debug\CAN_1_PM.o
-arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -Wno-main -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\ARM_GCC_493\Debug/CAN_1_TX_RX_func.lst -g -ffunction-sections -O3 -ffat-lto-objects -c .\Generated_Source\PSoC5\CAN_1_TX_RX_func.c -o .\ARM_GCC_493\Debug\CAN_1_TX_RX_func.o
-arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -Wno-main -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\ARM_GCC_493\Debug/Clock_2.lst -g -ffunction-sections -O3 -ffat-lto-objects -c .\Generated_Source\PSoC5\Clock_2.c -o .\ARM_GCC_493\Debug\Clock_2.o
-arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -Wno-main -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\ARM_GCC_493\Debug/Enc_A.lst -g -ffunction-sections -O3 -ffat-lto-objects -c .\Generated_Source\PSoC5\Enc_A.c -o .\ARM_GCC_493\Debug\Enc_A.o
-arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -Wno-main -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\ARM_GCC_493\Debug/Clock_3.lst -g -ffunction-sections -O3 -ffat-lto-objects -c .\Generated_Source\PSoC5\Clock_3.c -o .\ARM_GCC_493\Debug\Clock_3.o
-arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -Wno-main -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\ARM_GCC_493\Debug/Encoder_Count.lst -g -ffunction-sections -O3 -ffat-lto-objects -c .\Generated_Source\PSoC5\Encoder_Count.c -o .\ARM_GCC_493\Debug\Encoder_Count.o
-arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -Wno-main -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\ARM_GCC_493\Debug/Encoder_Count_PM.lst -g -ffunction-sections -O3 -ffat-lto-objects -c .\Generated_Source\PSoC5\Encoder_Count_PM.c -o .\ARM_GCC_493\Debug\Encoder_Count_PM.o
-arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -Wno-main -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\ARM_GCC_493\Debug/Time_Count.lst -g -ffunction-sections -O3 -ffat-lto-objects -c .\Generated_Source\PSoC5\Time_Count.c -o .\ARM_GCC_493\Debug\Time_Count.o
-arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -Wno-main -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\ARM_GCC_493\Debug/Time_Count_PM.lst -g -ffunction-sections -O3 -ffat-lto-objects -c .\Generated_Source\PSoC5\Time_Count_PM.c -o .\ARM_GCC_493\Debug\Time_Count_PM.o
-arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -Wno-main -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\ARM_GCC_493\Debug/CAN_TIMER.lst -g -ffunction-sections -O3 -ffat-lto-objects -c .\Generated_Source\PSoC5\CAN_TIMER.c -o .\ARM_GCC_493\Debug\CAN_TIMER.o
-arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -Wno-main -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\ARM_GCC_493\Debug/CAN_TIMER_PM.lst -g -ffunction-sections -O3 -ffat-lto-objects -c .\Generated_Source\PSoC5\CAN_TIMER_PM.c -o .\ARM_GCC_493\Debug\CAN_TIMER_PM.o
-arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -Wno-main -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\ARM_GCC_493\Debug/CAN_ISR.lst -g -ffunction-sections -O3 -ffat-lto-objects -c .\Generated_Source\PSoC5\CAN_ISR.c -o .\ARM_GCC_493\Debug\CAN_ISR.o
-arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -Wno-main -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\ARM_GCC_493\Debug/Test_Pin.lst -g -ffunction-sections -O3 -ffat-lto-objects -c .\Generated_Source\PSoC5\Test_Pin.c -o .\ARM_GCC_493\Debug\Test_Pin.o
-arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -Wno-main -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\ARM_GCC_493\Debug/ISR_PIN.lst -g -ffunction-sections -O3 -ffat-lto-objects -c .\Generated_Source\PSoC5\ISR_PIN.c -o .\ARM_GCC_493\Debug\ISR_PIN.o
-arm-none-eabi-ar.exe -rs ".\ARM_GCC_493\Debug\CE95277 ADC and UART.a" .\ARM_GCC_493\Debug\cyfitter_cfg.o .\ARM_GCC_493\Debug\UART_1.o .\ARM_GCC_493\Debug\UART_1_PM.o .\ARM_GCC_493\Debug\UART_1_INT.o .\ARM_GCC_493\Debug\UART_1_BOOT.o .\ARM_GCC_493\Debug\UART_1_IntClock.o .\ARM_GCC_493\Debug\CyBootAsmGnu.o .\ARM_GCC_493\Debug\CyDmac.o .\ARM_GCC_493\Debug\CyFlash.o .\ARM_GCC_493\Debug\CyLib.o .\ARM_GCC_493\Debug\cyPm.o .\ARM_GCC_493\Debug\CySpc.o .\ARM_GCC_493\Debug\cyutils.o .\ARM_GCC_493\Debug\Clock_1.o .\ARM_GCC_493\Debug\ADC_SAR_1.o .\ARM_GCC_493\Debug\ADC_SAR_1_INT.o .\ARM_GCC_493\Debug\ADC_SAR_1_PM.o .\ARM_GCC_493\Debug\ADC_SAR_1_IRQ.o .\ARM_GCC_493\Debug\ADC_SAR_1_theACLK.o .\ARM_GCC_493\Debug\ADC_SAR_1_Bypass.o .\ARM_GCC_493\Debug\AMux_1.o .\ARM_GCC_493\Debug\Vin_180.o .\ARM_GCC_493\Debug\Vin_90.o .\ARM_GCC_493\Debug\Vin_Pot.o .\ARM_GCC_493\Debug\mcp2515_clk.o .\ARM_GCC_493\Debug\RX_2.o .\ARM_GCC_493\Debug\TX_2.o .\ARM_GCC_493\Debug\CAN_1.o .\ARM_GCC_493\Debug\CAN_1_INT.o .\ARM_GCC_493\Debug\CAN_1_PM.o .\ARM_GCC_493\Debug\CAN_1_TX_RX_func.o .\ARM_GCC_493\Debug\Clock_2.o .\ARM_GCC_493\Debug\Enc_A.o .\ARM_GCC_493\Debug\Clock_3.o .\ARM_GCC_493\Debug\Encoder_Count.o .\ARM_GCC_493\Debug\Encoder_Count_PM.o .\ARM_GCC_493\Debug\Time_Count.o .\ARM_GCC_493\Debug\Time_Count_PM.o .\ARM_GCC_493\Debug\CAN_TIMER.o .\ARM_GCC_493\Debug\CAN_TIMER_PM.o .\ARM_GCC_493\Debug\CAN_ISR.o .\ARM_GCC_493\Debug\Test_Pin.o .\ARM_GCC_493\Debug\ISR_PIN.o
-arm-none-eabi-ar.exe: creating .\ARM_GCC_493\Debug\CE95277 ADC and UART.a
-arm-none-eabi-gcc.exe -Wl,--start-group -o ".\ARM_GCC_493\Debug\CE95277 ADC and UART.elf" .\ARM_GCC_493\Debug\main.o .\ARM_GCC_493\Debug\cymetadata.o .\ARM_GCC_493\Debug\Cm3Start.o ".\ARM_GCC_493\Debug\CE95277 ADC and UART.a" "C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CortexM3\ARM_GCC_493\Debug\CyComponentLibrary.a" -mcpu=cortex-m3 -mthumb -g -ffunction-sections -O3 -ffat-lto-objects -L Generated_Source\PSoC5 "-Wl,-Map,.\ARM_GCC_493\Debug/CE95277 ADC and UART.map" -T Generated_Source\PSoC5\cm3gcc.ld -specs=nano.specs -Wl,--end-group
-cyelftool.exe -C "C:\Users\Patrick\Desktop\cy8ckit-059\CE95277 ADC and UART\CE95277 ADC and UART.cydsn\ARM_GCC_493\Debug\CE95277 ADC and UART.elf" --flash_row_size 256 --flash_size 262144
-cyelftool.exe -S "C:\Users\Patrick\Desktop\cy8ckit-059\CE95277 ADC and UART\CE95277 ADC and UART.cydsn\ARM_GCC_493\Debug\CE95277 ADC and UART.elf"
-Flash used: 24832 of 262144 bytes (9.5 %).
-SRAM used: 2781 of 65536 bytes (4.2 %). Stack: 2048 bytes. Heap: 128 bytes.
---------------- Rebuild Succeeded: 08/03/2016 04:33:57 ---------------
+arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -Wno-main -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\ARM_GCC_493\Debug/CyDmac.lst -g -ffunction-sections -O0 -ffat-lto-objects -c .\Generated_Source\PSoC5\CyDmac.c -o .\ARM_GCC_493\Debug\CyDmac.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -Wno-main -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\ARM_GCC_493\Debug/CyFlash.lst -g -ffunction-sections -O0 -ffat-lto-objects -c .\Generated_Source\PSoC5\CyFlash.c -o .\ARM_GCC_493\Debug\CyFlash.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -Wno-main -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\ARM_GCC_493\Debug/CyLib.lst -g -ffunction-sections -O0 -ffat-lto-objects -c .\Generated_Source\PSoC5\CyLib.c -o .\ARM_GCC_493\Debug\CyLib.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -Wno-main -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\ARM_GCC_493\Debug/cyPm.lst -g -ffunction-sections -O0 -ffat-lto-objects -c .\Generated_Source\PSoC5\cyPm.c -o .\ARM_GCC_493\Debug\cyPm.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -Wno-main -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\ARM_GCC_493\Debug/CySpc.lst -g -ffunction-sections -O0 -ffat-lto-objects -c .\Generated_Source\PSoC5\CySpc.c -o .\ARM_GCC_493\Debug\CySpc.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -Wno-main -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\ARM_GCC_493\Debug/cyutils.lst -g -ffunction-sections -O0 -ffat-lto-objects -c .\Generated_Source\PSoC5\cyutils.c -o .\ARM_GCC_493\Debug\cyutils.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -Wno-main -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\ARM_GCC_493\Debug/Clock_1.lst -g -ffunction-sections -O0 -ffat-lto-objects -c .\Generated_Source\PSoC5\Clock_1.c -o .\ARM_GCC_493\Debug\Clock_1.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -Wno-main -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\ARM_GCC_493\Debug/ADC_SAR_1.lst -g -ffunction-sections -O0 -ffat-lto-objects -c .\Generated_Source\PSoC5\ADC_SAR_1.c -o .\ARM_GCC_493\Debug\ADC_SAR_1.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -Wno-main -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\ARM_GCC_493\Debug/ADC_SAR_1_INT.lst -g -ffunction-sections -O0 -ffat-lto-objects -c .\Generated_Source\PSoC5\ADC_SAR_1_INT.c -o .\ARM_GCC_493\Debug\ADC_SAR_1_INT.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -Wno-main -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\ARM_GCC_493\Debug/ADC_SAR_1_PM.lst -g -ffunction-sections -O0 -ffat-lto-objects -c .\Generated_Source\PSoC5\ADC_SAR_1_PM.c -o .\ARM_GCC_493\Debug\ADC_SAR_1_PM.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -Wno-main -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\ARM_GCC_493\Debug/ADC_SAR_1_IRQ.lst -g -ffunction-sections -O0 -ffat-lto-objects -c .\Generated_Source\PSoC5\ADC_SAR_1_IRQ.c -o .\ARM_GCC_493\Debug\ADC_SAR_1_IRQ.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -Wno-main -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\ARM_GCC_493\Debug/ADC_SAR_1_theACLK.lst -g -ffunction-sections -O0 -ffat-lto-objects -c .\Generated_Source\PSoC5\ADC_SAR_1_theACLK.c -o .\ARM_GCC_493\Debug\ADC_SAR_1_theACLK.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -Wno-main -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\ARM_GCC_493\Debug/ADC_SAR_1_Bypass.lst -g -ffunction-sections -O0 -ffat-lto-objects -c .\Generated_Source\PSoC5\ADC_SAR_1_Bypass.c -o .\ARM_GCC_493\Debug\ADC_SAR_1_Bypass.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -Wno-main -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\ARM_GCC_493\Debug/AMux_1.lst -g -ffunction-sections -O0 -ffat-lto-objects -c .\Generated_Source\PSoC5\AMux_1.c -o .\ARM_GCC_493\Debug\AMux_1.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -Wno-main -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\ARM_GCC_493\Debug/mcp2515_clk.lst -g -ffunction-sections -O0 -ffat-lto-objects -c .\Generated_Source\PSoC5\mcp2515_clk.c -o .\ARM_GCC_493\Debug\mcp2515_clk.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -Wno-main -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\ARM_GCC_493\Debug/RX_2.lst -g -ffunction-sections -O0 -ffat-lto-objects -c .\Generated_Source\PSoC5\RX_2.c -o .\ARM_GCC_493\Debug\RX_2.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -Wno-main -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\ARM_GCC_493\Debug/TX_2.lst -g -ffunction-sections -O0 -ffat-lto-objects -c .\Generated_Source\PSoC5\TX_2.c -o .\ARM_GCC_493\Debug\TX_2.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -Wno-main -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\ARM_GCC_493\Debug/CAN_1.lst -g -ffunction-sections -O0 -ffat-lto-objects -c .\Generated_Source\PSoC5\CAN_1.c -o .\ARM_GCC_493\Debug\CAN_1.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -Wno-main -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\ARM_GCC_493\Debug/CAN_1_INT.lst -g -ffunction-sections -O0 -ffat-lto-objects -c .\Generated_Source\PSoC5\CAN_1_INT.c -o .\ARM_GCC_493\Debug\CAN_1_INT.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -Wno-main -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\ARM_GCC_493\Debug/CAN_1_PM.lst -g -ffunction-sections -O0 -ffat-lto-objects -c .\Generated_Source\PSoC5\CAN_1_PM.c -o .\ARM_GCC_493\Debug\CAN_1_PM.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -Wno-main -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\ARM_GCC_493\Debug/CAN_1_TX_RX_func.lst -g -ffunction-sections -O0 -ffat-lto-objects -c .\Generated_Source\PSoC5\CAN_1_TX_RX_func.c -o .\ARM_GCC_493\Debug\CAN_1_TX_RX_func.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -Wno-main -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\ARM_GCC_493\Debug/Clock_2.lst -g -ffunction-sections -O0 -ffat-lto-objects -c .\Generated_Source\PSoC5\Clock_2.c -o .\ARM_GCC_493\Debug\Clock_2.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -Wno-main -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\ARM_GCC_493\Debug/Clock_3.lst -g -ffunction-sections -O0 -ffat-lto-objects -c .\Generated_Source\PSoC5\Clock_3.c -o .\ARM_GCC_493\Debug\Clock_3.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -Wno-main -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\ARM_GCC_493\Debug/Encoder_Left.lst -g -ffunction-sections -O0 -ffat-lto-objects -c .\Generated_Source\PSoC5\Encoder_Left.c -o .\ARM_GCC_493\Debug\Encoder_Left.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -Wno-main -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\ARM_GCC_493\Debug/Encoder_Left_PM.lst -g -ffunction-sections -O0 -ffat-lto-objects -c .\Generated_Source\PSoC5\Encoder_Left_PM.c -o .\ARM_GCC_493\Debug\Encoder_Left_PM.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -Wno-main -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\ARM_GCC_493\Debug/Enc_L.lst -g -ffunction-sections -O0 -ffat-lto-objects -c .\Generated_Source\PSoC5\Enc_L.c -o .\ARM_GCC_493\Debug\Enc_L.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -Wno-main -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\ARM_GCC_493\Debug/Encoder_Right.lst -g -ffunction-sections -O0 -ffat-lto-objects -c .\Generated_Source\PSoC5\Encoder_Right.c -o .\ARM_GCC_493\Debug\Encoder_Right.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -Wno-main -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\ARM_GCC_493\Debug/Encoder_Right_PM.lst -g -ffunction-sections -O0 -ffat-lto-objects -c .\Generated_Source\PSoC5\Encoder_Right_PM.c -o .\ARM_GCC_493\Debug\Encoder_Right_PM.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -Wno-main -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\ARM_GCC_493\Debug/Enc_R.lst -g -ffunction-sections -O0 -ffat-lto-objects -c .\Generated_Source\PSoC5\Enc_R.c -o .\ARM_GCC_493\Debug\Enc_R.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -Wno-main -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\ARM_GCC_493\Debug/leftEncTimer.lst -g -ffunction-sections -O0 -ffat-lto-objects -c .\Generated_Source\PSoC5\leftEncTimer.c -o .\ARM_GCC_493\Debug\leftEncTimer.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -Wno-main -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\ARM_GCC_493\Debug/leftEncTimer_PM.lst -g -ffunction-sections -O0 -ffat-lto-objects -c .\Generated_Source\PSoC5\leftEncTimer_PM.c -o .\ARM_GCC_493\Debug\leftEncTimer_PM.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -Wno-main -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\ARM_GCC_493\Debug/rightEncTimer.lst -g -ffunction-sections -O0 -ffat-lto-objects -c .\Generated_Source\PSoC5\rightEncTimer.c -o .\ARM_GCC_493\Debug\rightEncTimer.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -Wno-main -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\ARM_GCC_493\Debug/rightEncTimer_PM.lst -g -ffunction-sections -O0 -ffat-lto-objects -c .\Generated_Source\PSoC5\rightEncTimer_PM.c -o .\ARM_GCC_493\Debug\rightEncTimer_PM.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -Wno-main -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\ARM_GCC_493\Debug/two.lst -g -ffunction-sections -O0 -ffat-lto-objects -c .\Generated_Source\PSoC5\two.c -o .\ARM_GCC_493\Debug\two.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -Wno-main -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\ARM_GCC_493\Debug/one.lst -g -ffunction-sections -O0 -ffat-lto-objects -c .\Generated_Source\PSoC5\one.c -o .\ARM_GCC_493\Debug\one.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -Wno-main -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\ARM_GCC_493\Debug/zero.lst -g -ffunction-sections -O0 -ffat-lto-objects -c .\Generated_Source\PSoC5\zero.c -o .\ARM_GCC_493\Debug\zero.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -Wno-main -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\ARM_GCC_493\Debug/three.lst -g -ffunction-sections -O0 -ffat-lto-objects -c .\Generated_Source\PSoC5\three.c -o .\ARM_GCC_493\Debug\three.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -Wno-main -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\ARM_GCC_493\Debug/four.lst -g -ffunction-sections -O0 -ffat-lto-objects -c .\Generated_Source\PSoC5\four.c -o .\ARM_GCC_493\Debug\four.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -Wno-main -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\ARM_GCC_493\Debug/five.lst -g -ffunction-sections -O0 -ffat-lto-objects -c .\Generated_Source\PSoC5\five.c -o .\ARM_GCC_493\Debug\five.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -Wno-main -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\ARM_GCC_493\Debug/Em_EEPROM.lst -g -ffunction-sections -O0 -ffat-lto-objects -c .\Generated_Source\PSoC5\Em_EEPROM.c -o .\ARM_GCC_493\Debug\Em_EEPROM.o
+arm-none-eabi-ar.exe -rs .\ARM_GCC_493\Debug\C-CAN.a .\ARM_GCC_493\Debug\cyfitter_cfg.o .\ARM_GCC_493\Debug\UART_1.o .\ARM_GCC_493\Debug\UART_1_PM.o .\ARM_GCC_493\Debug\UART_1_INT.o .\ARM_GCC_493\Debug\UART_1_BOOT.o .\ARM_GCC_493\Debug\UART_1_IntClock.o .\ARM_GCC_493\Debug\CyBootAsmGnu.o .\ARM_GCC_493\Debug\CyDmac.o .\ARM_GCC_493\Debug\CyFlash.o .\ARM_GCC_493\Debug\CyLib.o .\ARM_GCC_493\Debug\cyPm.o .\ARM_GCC_493\Debug\CySpc.o .\ARM_GCC_493\Debug\cyutils.o .\ARM_GCC_493\Debug\Clock_1.o .\ARM_GCC_493\Debug\ADC_SAR_1.o .\ARM_GCC_493\Debug\ADC_SAR_1_INT.o .\ARM_GCC_493\Debug\ADC_SAR_1_PM.o .\ARM_GCC_493\Debug\ADC_SAR_1_IRQ.o .\ARM_GCC_493\Debug\ADC_SAR_1_theACLK.o .\ARM_GCC_493\Debug\ADC_SAR_1_Bypass.o .\ARM_GCC_493\Debug\AMux_1.o .\ARM_GCC_493\Debug\mcp2515_clk.o .\ARM_GCC_493\Debug\RX_2.o .\ARM_GCC_493\Debug\TX_2.o .\ARM_GCC_493\Debug\CAN_1.o .\ARM_GCC_493\Debug\CAN_1_INT.o .\ARM_GCC_493\Debug\CAN_1_PM.o .\ARM_GCC_493\Debug\CAN_1_TX_RX_func.o .\ARM_GCC_493\Debug\Clock_2.o .\ARM_GCC_493\Debug\Clock_3.o .\ARM_GCC_493\Debug\Encoder_Left.o .\ARM_GCC_493\Debug\Encoder_Left_PM.o .\ARM_GCC_493\Debug\Enc_L.o .\ARM_GCC_493\Debug\Encoder_Right.o .\ARM_GCC_493\Debug\Encoder_Right_PM.o .\ARM_GCC_493\Debug\Enc_R.o .\ARM_GCC_493\Debug\leftEncTimer.o .\ARM_GCC_493\Debug\leftEncTimer_PM.o .\ARM_GCC_493\Debug\rightEncTimer.o .\ARM_GCC_493\Debug\rightEncTimer_PM.o .\ARM_GCC_493\Debug\two.o .\ARM_GCC_493\Debug\one.o .\ARM_GCC_493\Debug\zero.o .\ARM_GCC_493\Debug\three.o .\ARM_GCC_493\Debug\four.o .\ARM_GCC_493\Debug\five.o .\ARM_GCC_493\Debug\Em_EEPROM.o
+arm-none-eabi-ar.exe: creating .\ARM_GCC_493\Debug\C-CAN.a
+arm-none-eabi-gcc.exe -Wl,--start-group -o .\ARM_GCC_493\Debug\C-CAN.elf .\ARM_GCC_493\Debug\main.o .\ARM_GCC_493\Debug\myUART.o .\ARM_GCC_493\Debug\C-CAN.o .\ARM_GCC_493\Debug\cymetadata.o .\ARM_GCC_493\Debug\Cm3Start.o .\ARM_GCC_493\Debug\C-CAN.a "C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CortexM3\ARM_GCC_493\Debug\CyComponentLibrary.a" -mcpu=cortex-m3 -mthumb -g -ffunction-sections -O0 -ffat-lto-objects -L Generated_Source\PSoC5 -Wl,-Map,.\ARM_GCC_493\Debug/C-CAN.map -T Generated_Source\PSoC5\cm3gcc.ld -specs=nano.specs -Wl,--end-group
+.\ARM_GCC_493\Debug\main.o: In function `CAN_1_SendMsg0':
+C:\Users\Patrick\Documents\GitHub\PSoC 5LP FIles\C-CAN_PSoC_DevKit\C-CAN.cydsn/Generated_Source\PSoC5/CAN_1_TX_RX_func.c:244: undefined reference to `TxMessage1'
+.\ARM_GCC_493\Debug\C-CAN.o: In function `CAN_Send':
+C:\Users\Patrick\Documents\GitHub\PSoC 5LP FIles\C-CAN_PSoC_DevKit\C-CAN.cydsn/.\C-CAN.c:239: undefined reference to `TxMessage1'
+collect2.exe: error: ld returned 1 exit status
+The command 'arm-none-eabi-gcc.exe' failed with exit code '1'.
+--------------- Rebuild Failed: 09/07/2016 17:11:22 ---------------

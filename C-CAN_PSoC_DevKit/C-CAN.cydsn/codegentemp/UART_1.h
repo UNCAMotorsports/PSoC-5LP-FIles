@@ -31,8 +31,8 @@
 #define UART_1_RX_ENABLED                     (1u)
 #define UART_1_TX_ENABLED                     (1u)
 #define UART_1_HD_ENABLED                     (0u)
-#define UART_1_RX_INTERRUPT_ENABLED           (0u)
-#define UART_1_TX_INTERRUPT_ENABLED           (0u)
+#define UART_1_RX_INTERRUPT_ENABLED           (1u)
+#define UART_1_TX_INTERRUPT_ENABLED           (1u)
 #define UART_1_INTERNAL_CLOCK_USED            (1u)
 #define UART_1_RXHW_ADDRESS_ENABLED           (0u)
 #define UART_1_OVER_SAMPLE_COUNT              (8u)
@@ -45,8 +45,8 @@
 #define UART_1_USE23POLLING                   (1u)
 #define UART_1_FLOW_CONTROL                   (0u)
 #define UART_1_CLK_FREQ                       (0u)
-#define UART_1_TX_BUFFER_SIZE                 (4u)
-#define UART_1_RX_BUFFER_SIZE                 (4u)
+#define UART_1_TX_BUFFER_SIZE                 (80u)
+#define UART_1_RX_BUFFER_SIZE                 (80u)
 
 /* Check to see if required defines such as CY_PSOC5LP are available */
 /* They are defined starting with cy_boot v3.0 */
@@ -369,7 +369,7 @@ extern uint8 UART_1_initVar;
 
 #define UART_1_INIT_TX_INTERRUPTS_MASK \
                                   (uint8)((0 << UART_1_TX_STS_COMPLETE_SHIFT) \
-                                        | (0 << UART_1_TX_STS_FIFO_EMPTY_SHIFT) \
+                                        | (1 << UART_1_TX_STS_FIFO_EMPTY_SHIFT) \
                                         | (0 << UART_1_TX_STS_FIFO_FULL_SHIFT) \
                                         | (0 << UART_1_TX_STS_FIFO_NOT_FULL_SHIFT))
 

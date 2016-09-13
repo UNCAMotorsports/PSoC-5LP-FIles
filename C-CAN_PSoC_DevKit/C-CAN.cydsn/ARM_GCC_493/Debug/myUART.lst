@@ -1,0 +1,1153 @@
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccQYkIqY.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m3
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 6
+  11              		.eabi_attribute 34, 1
+  12              		.eabi_attribute 18, 4
+  13              		.thumb
+  14              		.file	"myUART.c"
+  15              		.text
+  16              	.Ltext0:
+  17              		.cfi_sections	.debug_frame
+  18              		.comm	RB,20,4
+  19              		.comm	RxBuffer,128,4
+  20              		.global	RxReadIndex
+  21              		.data
+  22              		.align	2
+  23              		.type	RxReadIndex, %object
+  24              		.size	RxReadIndex, 4
+  25              	RxReadIndex:
+  26 0000 00000000 		.word	RxBuffer
+  27              		.global	RxWriteIndex
+  28              		.align	2
+  29              		.type	RxWriteIndex, %object
+  30              		.size	RxWriteIndex, 4
+  31              	RxWriteIndex:
+  32 0004 00000000 		.word	RxBuffer
+  33              		.global	RxStrIndex
+  34              		.align	2
+  35              		.type	RxStrIndex, %object
+  36              		.size	RxStrIndex, 4
+  37              	RxStrIndex:
+  38 0008 00000000 		.word	RB
+  39              		.section	.text.MyRxInt,"ax",%progbits
+  40              		.align	2
+  41              		.global	MyRxInt
+  42              		.thumb
+  43              		.thumb_func
+  44              		.type	MyRxInt, %function
+  45              	MyRxInt:
+  46              	.LFB63:
+  47              		.file 1 ".\\myUART.c"
+   1:.\myUART.c    **** /* ==================================================
+   2:.\myUART.c    ****  * Followed by project posted by 
+   3:.\myUART.c    ****  * Bob Marlowe TxRx20
+   4:.\myUART.c    ****  * http://www.cypress.com/?app=forum&id=2233&rID=63901
+   5:.\myUART.c    **** 
+   6:.\myUART.c    ****  * Provided As-is, without any warranties to perform
+   7:.\myUART.c    ****  * under license terms CREATIVE COMMONS - SHARE ALIKE
+   8:.\myUART.c    ****  *
+   9:.\myUART.c    ****  * ==================================================
+  10:.\myUART.c    **** */
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccQYkIqY.s 			page 2
+
+
+  11:.\myUART.c    **** 
+  12:.\myUART.c    ****     
+  13:.\myUART.c    **** #include <myUART.h>
+  14:.\myUART.c    **** 
+  15:.\myUART.c    **** 
+  16:.\myUART.c    **** // defines ==================================================================
+  17:.\myUART.c    **** 
+  18:.\myUART.c    **** 
+  19:.\myUART.c    **** uint8	RxBuffer[RxBufferSize];     // Rx circular buffer to hold all incoming command
+  20:.\myUART.c    **** uint8  *RxReadIndex	 = RxBuffer;    // pointer to position in RxBuffer to write incoming Rx bytes
+  21:.\myUART.c    **** uint8  *RxWriteIndex = RxBuffer;    // pointer to position in RxBuffer to read and process bytes
+  22:.\myUART.c    **** 
+  23:.\myUART.c    **** 
+  24:.\myUART.c    **** char   *RxStrIndex = RB.RxStr;      // pointer to command string buffer (processed messages)
+  25:.\myUART.c    ****                                     // each Rx command consists of: <byte command><string value><CR
+  26:.\myUART.c    **** 
+  27:.\myUART.c    **** //===========================================================================
+  28:.\myUART.c    **** 
+  29:.\myUART.c    **** CY_ISR(MyRxInt) //interrupt on Rx byte received
+  30:.\myUART.c    **** {   
+  48              		.loc 1 30 0
+  49              		.cfi_startproc
+  50              		@ args = 0, pretend = 0, frame = 0
+  51              		@ frame_needed = 1, uses_anonymous_args = 0
+  52 0000 98B5     		push	{r3, r4, r7, lr}
+  53              		.cfi_def_cfa_offset 16
+  54              		.cfi_offset 3, -16
+  55              		.cfi_offset 4, -12
+  56              		.cfi_offset 7, -8
+  57              		.cfi_offset 14, -4
+  58 0002 00AF     		add	r7, sp, #0
+  59              		.cfi_def_cfa_register 7
+  31:.\myUART.c    ****     //move all available characters from Rx queue to RxBuffer
+  32:.\myUART.c    ****     while(UART_1_ReadRxStatus() & UART_1_RX_STS_FIFO_NOTEMPTY)
+  60              		.loc 1 32 0
+  61 0004 10E0     		b	.L2
+  62              	.L3:
+  33:.\myUART.c    **** 	{
+  34:.\myUART.c    **** 		*RxWriteIndex++ = UART_1_ReadRxData();
+  63              		.loc 1 34 0
+  64 0006 0C4B     		ldr	r3, .L4
+  65 0008 1C68     		ldr	r4, [r3]
+  66 000a 631C     		adds	r3, r4, #1
+  67 000c 0A4A     		ldr	r2, .L4
+  68 000e 1360     		str	r3, [r2]
+  69 0010 FFF7FEFF 		bl	UART_1_ReadRxData
+  70 0014 0346     		mov	r3, r0
+  71 0016 2370     		strb	r3, [r4]
+  35:.\myUART.c    **** 		if (RxWriteIndex >= RxBuffer + RxBufferSize) RxWriteIndex = RxBuffer;      
+  72              		.loc 1 35 0
+  73 0018 074B     		ldr	r3, .L4
+  74 001a 1B68     		ldr	r3, [r3]
+  75 001c 074A     		ldr	r2, .L4+4
+  76 001e 9342     		cmp	r3, r2
+  77 0020 02D3     		bcc	.L2
+  78              		.loc 1 35 0 is_stmt 0 discriminator 1
+  79 0022 054B     		ldr	r3, .L4
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccQYkIqY.s 			page 3
+
+
+  80 0024 064A     		ldr	r2, .L4+8
+  81 0026 1A60     		str	r2, [r3]
+  82              	.L2:
+  32:.\myUART.c    **** 	{
+  83              		.loc 1 32 0 is_stmt 1
+  84 0028 FFF7FEFF 		bl	UART_1_ReadRxStatus
+  85 002c 0346     		mov	r3, r0
+  86 002e 03F02003 		and	r3, r3, #32
+  87 0032 002B     		cmp	r3, #0
+  88 0034 E7D1     		bne	.L3
+  36:.\myUART.c    **** 	}   
+  37:.\myUART.c    **** }
+  89              		.loc 1 37 0
+  90 0036 98BD     		pop	{r3, r4, r7, pc}
+  91              	.L5:
+  92              		.align	2
+  93              	.L4:
+  94 0038 00000000 		.word	RxWriteIndex
+  95 003c 80000000 		.word	RxBuffer+128
+  96 0040 00000000 		.word	RxBuffer
+  97              		.cfi_endproc
+  98              	.LFE63:
+  99              		.size	MyRxInt, .-MyRxInt
+ 100              		.section	.text.IsCharReady,"ax",%progbits
+ 101              		.align	2
+ 102              		.global	IsCharReady
+ 103              		.thumb
+ 104              		.thumb_func
+ 105              		.type	IsCharReady, %function
+ 106              	IsCharReady:
+ 107              	.LFB64:
+  38:.\myUART.c    **** 
+  39:.\myUART.c    **** //===========================================================================
+  40:.\myUART.c    **** uint8 IsCharReady(void) 
+  41:.\myUART.c    **** {
+ 108              		.loc 1 41 0
+ 109              		.cfi_startproc
+ 110              		@ args = 0, pretend = 0, frame = 0
+ 111              		@ frame_needed = 1, uses_anonymous_args = 0
+ 112              		@ link register save eliminated.
+ 113 0000 80B4     		push	{r7}
+ 114              		.cfi_def_cfa_offset 4
+ 115              		.cfi_offset 7, -4
+ 116 0002 00AF     		add	r7, sp, #0
+ 117              		.cfi_def_cfa_register 7
+  42:.\myUART.c    **** 	return !(RxWriteIndex == RxReadIndex);
+ 118              		.loc 1 42 0
+ 119 0004 064B     		ldr	r3, .L8
+ 120 0006 1A68     		ldr	r2, [r3]
+ 121 0008 064B     		ldr	r3, .L8+4
+ 122 000a 1B68     		ldr	r3, [r3]
+ 123 000c 9A42     		cmp	r2, r3
+ 124 000e 14BF     		ite	ne
+ 125 0010 0123     		movne	r3, #1
+ 126 0012 0023     		moveq	r3, #0
+ 127 0014 DBB2     		uxtb	r3, r3
+  43:.\myUART.c    **** }
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccQYkIqY.s 			page 4
+
+
+ 128              		.loc 1 43 0
+ 129 0016 1846     		mov	r0, r3
+ 130 0018 BD46     		mov	sp, r7
+ 131              		.cfi_def_cfa_register 13
+ 132              		@ sp needed
+ 133 001a 5DF8047B 		ldr	r7, [sp], #4
+ 134              		.cfi_restore 7
+ 135              		.cfi_def_cfa_offset 0
+ 136 001e 7047     		bx	lr
+ 137              	.L9:
+ 138              		.align	2
+ 139              	.L8:
+ 140 0020 00000000 		.word	RxWriteIndex
+ 141 0024 00000000 		.word	RxReadIndex
+ 142              		.cfi_endproc
+ 143              	.LFE64:
+ 144              		.size	IsCharReady, .-IsCharReady
+ 145              		.section	.text.GetRxStr,"ax",%progbits
+ 146              		.align	2
+ 147              		.global	GetRxStr
+ 148              		.thumb
+ 149              		.thumb_func
+ 150              		.type	GetRxStr, %function
+ 151              	GetRxStr:
+ 152              	.LFB65:
+  44:.\myUART.c    **** 
+  45:.\myUART.c    **** //===========================================================================
+  46:.\myUART.c    **** 
+  47:.\myUART.c    **** uint8 GetRxStr(void)
+  48:.\myUART.c    **** {
+ 153              		.loc 1 48 0
+ 154              		.cfi_startproc
+ 155              		@ args = 0, pretend = 0, frame = 8
+ 156              		@ frame_needed = 1, uses_anonymous_args = 0
+ 157              		@ link register save eliminated.
+ 158 0000 80B4     		push	{r7}
+ 159              		.cfi_def_cfa_offset 4
+ 160              		.cfi_offset 7, -4
+ 161 0002 83B0     		sub	sp, sp, #12
+ 162              		.cfi_def_cfa_offset 16
+ 163 0004 00AF     		add	r7, sp, #0
+ 164              		.cfi_def_cfa_register 7
+  49:.\myUART.c    ****     uint8 RxStr_flag = 0;
+ 165              		.loc 1 49 0
+ 166 0006 0023     		movs	r3, #0
+ 167 0008 FB71     		strb	r3, [r7, #7]
+  50:.\myUART.c    ****     static uint8 Ch;//static?
+  51:.\myUART.c    ****    
+  52:.\myUART.c    **** 	Ch = *RxReadIndex++;       //read next char in buffer
+ 168              		.loc 1 52 0
+ 169 000a 1B4B     		ldr	r3, .L17
+ 170 000c 1B68     		ldr	r3, [r3]
+ 171 000e 5A1C     		adds	r2, r3, #1
+ 172 0010 1949     		ldr	r1, .L17
+ 173 0012 0A60     		str	r2, [r1]
+ 174 0014 1A78     		ldrb	r2, [r3]	@ zero_extendqisi2
+ 175 0016 194B     		ldr	r3, .L17+4
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccQYkIqY.s 			page 5
+
+
+ 176 0018 1A70     		strb	r2, [r3]
+  53:.\myUART.c    ****     if (RxReadIndex >= RxBuffer + RxBufferSize) RxReadIndex = RxBuffer;
+ 177              		.loc 1 53 0
+ 178 001a 174B     		ldr	r3, .L17
+ 179 001c 1B68     		ldr	r3, [r3]
+ 180 001e 184A     		ldr	r2, .L17+8
+ 181 0020 9342     		cmp	r3, r2
+ 182 0022 02D3     		bcc	.L11
+ 183              		.loc 1 53 0 is_stmt 0 discriminator 1
+ 184 0024 144B     		ldr	r3, .L17
+ 185 0026 174A     		ldr	r2, .L17+12
+ 186 0028 1A60     		str	r2, [r3]
+ 187              	.L11:
+  54:.\myUART.c    ****             
+  55:.\myUART.c    ****     //if (Ch == EOM_char)
+  56:.\myUART.c    ****     if ( (Ch == EOM_CR) || (Ch == EOM_LF) ) //any standard terminator
+ 188              		.loc 1 56 0 is_stmt 1
+ 189 002a 144B     		ldr	r3, .L17+4
+ 190 002c 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
+ 191 002e 0D2B     		cmp	r3, #13
+ 192 0030 03D0     		beq	.L12
+ 193              		.loc 1 56 0 is_stmt 0 discriminator 1
+ 194 0032 124B     		ldr	r3, .L17+4
+ 195 0034 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
+ 196 0036 0A2B     		cmp	r3, #10
+ 197 0038 0ED1     		bne	.L13
+ 198              	.L12:
+  57:.\myUART.c    ****     {
+  58:.\myUART.c    ****         *RxStrIndex = 0;        //terminate string excluding EOM_char
+ 199              		.loc 1 58 0 is_stmt 1
+ 200 003a 134B     		ldr	r3, .L17+16
+ 201 003c 1B68     		ldr	r3, [r3]
+ 202 003e 0022     		movs	r2, #0
+ 203 0040 1A70     		strb	r2, [r3]
+  59:.\myUART.c    ****         RxStrIndex = RB.RxStr;  //reset pointer
+ 204              		.loc 1 59 0
+ 205 0042 114B     		ldr	r3, .L17+16
+ 206 0044 114A     		ldr	r2, .L17+20
+ 207 0046 1A60     		str	r2, [r3]
+  60:.\myUART.c    ****         if (strlen(RB.RxStr) > 0)//non-empty message received
+ 208              		.loc 1 60 0
+ 209 0048 104B     		ldr	r3, .L17+20
+ 210 004a 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
+ 211 004c 002B     		cmp	r3, #0
+ 212 004e 02D0     		beq	.L14
+  61:.\myUART.c    ****         {
+  62:.\myUART.c    ****             RxStr_flag  = 1;    //set flag to process message
+ 213              		.loc 1 62 0
+ 214 0050 0123     		movs	r3, #1
+ 215 0052 FB71     		strb	r3, [r7, #7]
+  60:.\myUART.c    ****         if (strlen(RB.RxStr) > 0)//non-empty message received
+ 216              		.loc 1 60 0
+ 217 0054 08E0     		b	.L15
+ 218              	.L14:
+ 219 0056 07E0     		b	.L15
+ 220              	.L13:
+  63:.\myUART.c    ****         }   
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccQYkIqY.s 			page 6
+
+
+  64:.\myUART.c    ****     }
+  65:.\myUART.c    ****     else                        //string body char received
+  66:.\myUART.c    ****     {
+  67:.\myUART.c    ****         *RxStrIndex++ = Ch;     //build command message   
+ 221              		.loc 1 67 0
+ 222 0058 0B4B     		ldr	r3, .L17+16
+ 223 005a 1B68     		ldr	r3, [r3]
+ 224 005c 5A1C     		adds	r2, r3, #1
+ 225 005e 0A49     		ldr	r1, .L17+16
+ 226 0060 0A60     		str	r2, [r1]
+ 227 0062 064A     		ldr	r2, .L17+4
+ 228 0064 1278     		ldrb	r2, [r2]	@ zero_extendqisi2
+ 229 0066 1A70     		strb	r2, [r3]
+ 230              	.L15:
+  68:.\myUART.c    ****         //todo: problem if first char is empty space
+  69:.\myUART.c    ****     }   
+  70:.\myUART.c    **** 
+  71:.\myUART.c    ****     return RxStr_flag;        
+ 231              		.loc 1 71 0
+ 232 0068 FB79     		ldrb	r3, [r7, #7]	@ zero_extendqisi2
+  72:.\myUART.c    **** }
+ 233              		.loc 1 72 0
+ 234 006a 1846     		mov	r0, r3
+ 235 006c 0C37     		adds	r7, r7, #12
+ 236              		.cfi_def_cfa_offset 4
+ 237 006e BD46     		mov	sp, r7
+ 238              		.cfi_def_cfa_register 13
+ 239              		@ sp needed
+ 240 0070 5DF8047B 		ldr	r7, [sp], #4
+ 241              		.cfi_restore 7
+ 242              		.cfi_def_cfa_offset 0
+ 243 0074 7047     		bx	lr
+ 244              	.L18:
+ 245 0076 00BF     		.align	2
+ 246              	.L17:
+ 247 0078 00000000 		.word	RxReadIndex
+ 248 007c 00000000 		.word	Ch.6103
+ 249 0080 80000000 		.word	RxBuffer+128
+ 250 0084 00000000 		.word	RxBuffer
+ 251 0088 00000000 		.word	RxStrIndex
+ 252 008c 00000000 		.word	RB
+ 253              		.cfi_endproc
+ 254              	.LFE65:
+ 255              		.size	GetRxStr, .-GetRxStr
+ 256              		.bss
+ 257              	Ch.6103:
+ 258 0000 00       		.space	1
+ 259              		.text
+ 260              	.Letext0:
+ 261              		.file 2 "c:\\program files (x86)\\cypress\\psoc creator\\3.3\\psoc creator\\import\\gnu\\arm\\4.9.
+ 262              		.file 3 "c:\\program files (x86)\\cypress\\psoc creator\\3.3\\psoc creator\\import\\gnu\\arm\\4.9.
+ 263              		.file 4 "Generated_Source\\PSoC5/cytypes.h"
+ 264              		.file 5 "Generated_Source\\PSoC5/core_cm3.h"
+ 265              		.file 6 "./myUART.h"
+ 266              		.section	.debug_info,"",%progbits
+ 267              	.Ldebug_info0:
+ 268 0000 E3010000 		.4byte	0x1e3
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccQYkIqY.s 			page 7
+
+
+ 269 0004 0400     		.2byte	0x4
+ 270 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 271 000a 04       		.byte	0x4
+ 272 000b 01       		.uleb128 0x1
+ 273 000c 6F000000 		.4byte	.LASF23
+ 274 0010 01       		.byte	0x1
+ 275 0011 64000000 		.4byte	.LASF24
+ 276 0015 00000000 		.4byte	.LASF25
+ 277 0019 00000000 		.4byte	.Ldebug_ranges0+0
+ 278 001d 00000000 		.4byte	0
+ 279 0021 00000000 		.4byte	.Ldebug_line0
+ 280 0025 02       		.uleb128 0x2
+ 281 0026 01       		.byte	0x1
+ 282 0027 06       		.byte	0x6
+ 283 0028 F4010000 		.4byte	.LASF0
+ 284 002c 02       		.uleb128 0x2
+ 285 002d 01       		.byte	0x1
+ 286 002e 08       		.byte	0x8
+ 287 002f 28010000 		.4byte	.LASF1
+ 288 0033 02       		.uleb128 0x2
+ 289 0034 02       		.byte	0x2
+ 290 0035 05       		.byte	0x5
+ 291 0036 DB010000 		.4byte	.LASF2
+ 292 003a 02       		.uleb128 0x2
+ 293 003b 02       		.byte	0x2
+ 294 003c 07       		.byte	0x7
+ 295 003d 60010000 		.4byte	.LASF3
+ 296 0041 03       		.uleb128 0x3
+ 297 0042 4F000000 		.4byte	.LASF9
+ 298 0046 02       		.byte	0x2
+ 299 0047 3F       		.byte	0x3f
+ 300 0048 4C000000 		.4byte	0x4c
+ 301 004c 02       		.uleb128 0x2
+ 302 004d 04       		.byte	0x4
+ 303 004e 05       		.byte	0x5
+ 304 004f EB010000 		.4byte	.LASF4
+ 305 0053 02       		.uleb128 0x2
+ 306 0054 04       		.byte	0x4
+ 307 0055 07       		.byte	0x7
+ 308 0056 41010000 		.4byte	.LASF5
+ 309 005a 02       		.uleb128 0x2
+ 310 005b 08       		.byte	0x8
+ 311 005c 05       		.byte	0x5
+ 312 005d C8010000 		.4byte	.LASF6
+ 313 0061 02       		.uleb128 0x2
+ 314 0062 08       		.byte	0x8
+ 315 0063 07       		.byte	0x7
+ 316 0064 A0010000 		.4byte	.LASF7
+ 317 0068 04       		.uleb128 0x4
+ 318 0069 04       		.byte	0x4
+ 319 006a 05       		.byte	0x5
+ 320 006b 696E7400 		.ascii	"int\000"
+ 321 006f 02       		.uleb128 0x2
+ 322 0070 04       		.byte	0x4
+ 323 0071 07       		.byte	0x7
+ 324 0072 93010000 		.4byte	.LASF8
+ 325 0076 03       		.uleb128 0x3
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccQYkIqY.s 			page 8
+
+
+ 326 0077 B7010000 		.4byte	.LASF10
+ 327 007b 03       		.byte	0x3
+ 328 007c 2C       		.byte	0x2c
+ 329 007d 41000000 		.4byte	0x41
+ 330 0081 05       		.uleb128 0x5
+ 331 0082 E5010000 		.4byte	.LASF11
+ 332 0086 04       		.byte	0x4
+ 333 0087 9201     		.2byte	0x192
+ 334 0089 2C000000 		.4byte	0x2c
+ 335 008d 02       		.uleb128 0x2
+ 336 008e 04       		.byte	0x4
+ 337 008f 04       		.byte	0x4
+ 338 0090 19010000 		.4byte	.LASF12
+ 339 0094 02       		.uleb128 0x2
+ 340 0095 08       		.byte	0x8
+ 341 0096 04       		.byte	0x4
+ 342 0097 80010000 		.4byte	.LASF13
+ 343 009b 02       		.uleb128 0x2
+ 344 009c 01       		.byte	0x1
+ 345 009d 08       		.byte	0x8
+ 346 009e D6010000 		.4byte	.LASF14
+ 347 00a2 02       		.uleb128 0x2
+ 348 00a3 04       		.byte	0x4
+ 349 00a4 07       		.byte	0x7
+ 350 00a5 BF010000 		.4byte	.LASF15
+ 351 00a9 06       		.uleb128 0x6
+ 352 00aa 04       		.byte	0x4
+ 353 00ab 9B000000 		.4byte	0x9b
+ 354 00af 07       		.uleb128 0x7
+ 355 00b0 14       		.byte	0x14
+ 356 00b1 06       		.byte	0x6
+ 357 00b2 23       		.byte	0x23
+ 358 00b3 D0000000 		.4byte	0xd0
+ 359 00b7 08       		.uleb128 0x8
+ 360 00b8 636D6400 		.ascii	"cmd\000"
+ 361 00bc 06       		.byte	0x6
+ 362 00bd 24       		.byte	0x24
+ 363 00be 9B000000 		.4byte	0x9b
+ 364 00c2 00       		.byte	0
+ 365 00c3 09       		.uleb128 0x9
+ 366 00c4 11020000 		.4byte	.LASF16
+ 367 00c8 06       		.byte	0x6
+ 368 00c9 25       		.byte	0x25
+ 369 00ca D0000000 		.4byte	0xd0
+ 370 00ce 01       		.byte	0x1
+ 371 00cf 00       		.byte	0
+ 372 00d0 0A       		.uleb128 0xa
+ 373 00d1 9B000000 		.4byte	0x9b
+ 374 00d5 E0000000 		.4byte	0xe0
+ 375 00d9 0B       		.uleb128 0xb
+ 376 00da A2000000 		.4byte	0xa2
+ 377 00de 12       		.byte	0x12
+ 378 00df 00       		.byte	0
+ 379 00e0 0C       		.uleb128 0xc
+ 380 00e1 0F010000 		.4byte	.LASF26
+ 381 00e5 14       		.byte	0x14
+ 382 00e6 06       		.byte	0x6
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccQYkIqY.s 			page 9
+
+
+ 383 00e7 21       		.byte	0x21
+ 384 00e8 FD000000 		.4byte	0xfd
+ 385 00ec 0D       		.uleb128 0xd
+ 386 00ed 09010000 		.4byte	.LASF27
+ 387 00f1 06       		.byte	0x6
+ 388 00f2 22       		.byte	0x22
+ 389 00f3 FD000000 		.4byte	0xfd
+ 390 00f7 0E       		.uleb128 0xe
+ 391 00f8 AF000000 		.4byte	0xaf
+ 392 00fc 00       		.byte	0
+ 393 00fd 0A       		.uleb128 0xa
+ 394 00fe 9B000000 		.4byte	0x9b
+ 395 0102 0D010000 		.4byte	0x10d
+ 396 0106 0B       		.uleb128 0xb
+ 397 0107 A2000000 		.4byte	0xa2
+ 398 010b 13       		.byte	0x13
+ 399 010c 00       		.byte	0
+ 400 010d 0F       		.uleb128 0xf
+ 401 010e 00020000 		.4byte	.LASF28
+ 402 0112 01       		.byte	0x1
+ 403 0113 1D       		.byte	0x1d
+ 404 0114 00000000 		.4byte	.LFB63
+ 405 0118 44000000 		.4byte	.LFE63-.LFB63
+ 406 011c 01       		.uleb128 0x1
+ 407 011d 9C       		.byte	0x9c
+ 408 011e 10       		.uleb128 0x10
+ 409 011f 87010000 		.4byte	.LASF29
+ 410 0123 01       		.byte	0x1
+ 411 0124 28       		.byte	0x28
+ 412 0125 81000000 		.4byte	0x81
+ 413 0129 00000000 		.4byte	.LFB64
+ 414 012d 28000000 		.4byte	.LFE64-.LFB64
+ 415 0131 01       		.uleb128 0x1
+ 416 0132 9C       		.byte	0x9c
+ 417 0133 11       		.uleb128 0x11
+ 418 0134 08020000 		.4byte	.LASF30
+ 419 0138 01       		.byte	0x1
+ 420 0139 2F       		.byte	0x2f
+ 421 013a 81000000 		.4byte	0x81
+ 422 013e 00000000 		.4byte	.LFB65
+ 423 0142 90000000 		.4byte	.LFE65-.LFB65
+ 424 0146 01       		.uleb128 0x1
+ 425 0147 9C       		.byte	0x9c
+ 426 0148 6B010000 		.4byte	0x16b
+ 427 014c 12       		.uleb128 0x12
+ 428 014d 36010000 		.4byte	.LASF17
+ 429 0151 01       		.byte	0x1
+ 430 0152 31       		.byte	0x31
+ 431 0153 81000000 		.4byte	0x81
+ 432 0157 02       		.uleb128 0x2
+ 433 0158 91       		.byte	0x91
+ 434 0159 77       		.sleb128 -9
+ 435 015a 13       		.uleb128 0x13
+ 436 015b 436800   		.ascii	"Ch\000"
+ 437 015e 01       		.byte	0x1
+ 438 015f 32       		.byte	0x32
+ 439 0160 81000000 		.4byte	0x81
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccQYkIqY.s 			page 10
+
+
+ 440 0164 05       		.uleb128 0x5
+ 441 0165 03       		.byte	0x3
+ 442 0166 00000000 		.4byte	Ch.6103
+ 443 016a 00       		.byte	0
+ 444 016b 14       		.uleb128 0x14
+ 445 016c 73010000 		.4byte	.LASF18
+ 446 0170 05       		.byte	0x5
+ 447 0171 9606     		.2byte	0x696
+ 448 0173 77010000 		.4byte	0x177
+ 449 0177 15       		.uleb128 0x15
+ 450 0178 76000000 		.4byte	0x76
+ 451 017c 16       		.uleb128 0x16
+ 452 017d 524200   		.ascii	"RB\000"
+ 453 0180 06       		.byte	0x6
+ 454 0181 27       		.byte	0x27
+ 455 0182 E0000000 		.4byte	0xe0
+ 456 0186 05       		.uleb128 0x5
+ 457 0187 03       		.byte	0x3
+ 458 0188 00000000 		.4byte	RB
+ 459 018c 0A       		.uleb128 0xa
+ 460 018d 81000000 		.4byte	0x81
+ 461 0191 9C010000 		.4byte	0x19c
+ 462 0195 0B       		.uleb128 0xb
+ 463 0196 A2000000 		.4byte	0xa2
+ 464 019a 7F       		.byte	0x7f
+ 465 019b 00       		.byte	0
+ 466 019c 17       		.uleb128 0x17
+ 467 019d 1F010000 		.4byte	.LASF19
+ 468 01a1 01       		.byte	0x1
+ 469 01a2 13       		.byte	0x13
+ 470 01a3 8C010000 		.4byte	0x18c
+ 471 01a7 05       		.uleb128 0x5
+ 472 01a8 03       		.byte	0x3
+ 473 01a9 00000000 		.4byte	RxBuffer
+ 474 01ad 17       		.uleb128 0x17
+ 475 01ae FD000000 		.4byte	.LASF20
+ 476 01b2 01       		.byte	0x1
+ 477 01b3 14       		.byte	0x14
+ 478 01b4 BE010000 		.4byte	0x1be
+ 479 01b8 05       		.uleb128 0x5
+ 480 01b9 03       		.byte	0x3
+ 481 01ba 00000000 		.4byte	RxReadIndex
+ 482 01be 06       		.uleb128 0x6
+ 483 01bf 04       		.byte	0x4
+ 484 01c0 81000000 		.4byte	0x81
+ 485 01c4 17       		.uleb128 0x17
+ 486 01c5 53010000 		.4byte	.LASF21
+ 487 01c9 01       		.byte	0x1
+ 488 01ca 15       		.byte	0x15
+ 489 01cb BE010000 		.4byte	0x1be
+ 490 01cf 05       		.uleb128 0x5
+ 491 01d0 03       		.byte	0x3
+ 492 01d1 00000000 		.4byte	RxWriteIndex
+ 493 01d5 17       		.uleb128 0x17
+ 494 01d6 59000000 		.4byte	.LASF22
+ 495 01da 01       		.byte	0x1
+ 496 01db 18       		.byte	0x18
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccQYkIqY.s 			page 11
+
+
+ 497 01dc A9000000 		.4byte	0xa9
+ 498 01e0 05       		.uleb128 0x5
+ 499 01e1 03       		.byte	0x3
+ 500 01e2 00000000 		.4byte	RxStrIndex
+ 501 01e6 00       		.byte	0
+ 502              		.section	.debug_abbrev,"",%progbits
+ 503              	.Ldebug_abbrev0:
+ 504 0000 01       		.uleb128 0x1
+ 505 0001 11       		.uleb128 0x11
+ 506 0002 01       		.byte	0x1
+ 507 0003 25       		.uleb128 0x25
+ 508 0004 0E       		.uleb128 0xe
+ 509 0005 13       		.uleb128 0x13
+ 510 0006 0B       		.uleb128 0xb
+ 511 0007 03       		.uleb128 0x3
+ 512 0008 0E       		.uleb128 0xe
+ 513 0009 1B       		.uleb128 0x1b
+ 514 000a 0E       		.uleb128 0xe
+ 515 000b 55       		.uleb128 0x55
+ 516 000c 17       		.uleb128 0x17
+ 517 000d 11       		.uleb128 0x11
+ 518 000e 01       		.uleb128 0x1
+ 519 000f 10       		.uleb128 0x10
+ 520 0010 17       		.uleb128 0x17
+ 521 0011 00       		.byte	0
+ 522 0012 00       		.byte	0
+ 523 0013 02       		.uleb128 0x2
+ 524 0014 24       		.uleb128 0x24
+ 525 0015 00       		.byte	0
+ 526 0016 0B       		.uleb128 0xb
+ 527 0017 0B       		.uleb128 0xb
+ 528 0018 3E       		.uleb128 0x3e
+ 529 0019 0B       		.uleb128 0xb
+ 530 001a 03       		.uleb128 0x3
+ 531 001b 0E       		.uleb128 0xe
+ 532 001c 00       		.byte	0
+ 533 001d 00       		.byte	0
+ 534 001e 03       		.uleb128 0x3
+ 535 001f 16       		.uleb128 0x16
+ 536 0020 00       		.byte	0
+ 537 0021 03       		.uleb128 0x3
+ 538 0022 0E       		.uleb128 0xe
+ 539 0023 3A       		.uleb128 0x3a
+ 540 0024 0B       		.uleb128 0xb
+ 541 0025 3B       		.uleb128 0x3b
+ 542 0026 0B       		.uleb128 0xb
+ 543 0027 49       		.uleb128 0x49
+ 544 0028 13       		.uleb128 0x13
+ 545 0029 00       		.byte	0
+ 546 002a 00       		.byte	0
+ 547 002b 04       		.uleb128 0x4
+ 548 002c 24       		.uleb128 0x24
+ 549 002d 00       		.byte	0
+ 550 002e 0B       		.uleb128 0xb
+ 551 002f 0B       		.uleb128 0xb
+ 552 0030 3E       		.uleb128 0x3e
+ 553 0031 0B       		.uleb128 0xb
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccQYkIqY.s 			page 12
+
+
+ 554 0032 03       		.uleb128 0x3
+ 555 0033 08       		.uleb128 0x8
+ 556 0034 00       		.byte	0
+ 557 0035 00       		.byte	0
+ 558 0036 05       		.uleb128 0x5
+ 559 0037 16       		.uleb128 0x16
+ 560 0038 00       		.byte	0
+ 561 0039 03       		.uleb128 0x3
+ 562 003a 0E       		.uleb128 0xe
+ 563 003b 3A       		.uleb128 0x3a
+ 564 003c 0B       		.uleb128 0xb
+ 565 003d 3B       		.uleb128 0x3b
+ 566 003e 05       		.uleb128 0x5
+ 567 003f 49       		.uleb128 0x49
+ 568 0040 13       		.uleb128 0x13
+ 569 0041 00       		.byte	0
+ 570 0042 00       		.byte	0
+ 571 0043 06       		.uleb128 0x6
+ 572 0044 0F       		.uleb128 0xf
+ 573 0045 00       		.byte	0
+ 574 0046 0B       		.uleb128 0xb
+ 575 0047 0B       		.uleb128 0xb
+ 576 0048 49       		.uleb128 0x49
+ 577 0049 13       		.uleb128 0x13
+ 578 004a 00       		.byte	0
+ 579 004b 00       		.byte	0
+ 580 004c 07       		.uleb128 0x7
+ 581 004d 13       		.uleb128 0x13
+ 582 004e 01       		.byte	0x1
+ 583 004f 0B       		.uleb128 0xb
+ 584 0050 0B       		.uleb128 0xb
+ 585 0051 3A       		.uleb128 0x3a
+ 586 0052 0B       		.uleb128 0xb
+ 587 0053 3B       		.uleb128 0x3b
+ 588 0054 0B       		.uleb128 0xb
+ 589 0055 01       		.uleb128 0x1
+ 590 0056 13       		.uleb128 0x13
+ 591 0057 00       		.byte	0
+ 592 0058 00       		.byte	0
+ 593 0059 08       		.uleb128 0x8
+ 594 005a 0D       		.uleb128 0xd
+ 595 005b 00       		.byte	0
+ 596 005c 03       		.uleb128 0x3
+ 597 005d 08       		.uleb128 0x8
+ 598 005e 3A       		.uleb128 0x3a
+ 599 005f 0B       		.uleb128 0xb
+ 600 0060 3B       		.uleb128 0x3b
+ 601 0061 0B       		.uleb128 0xb
+ 602 0062 49       		.uleb128 0x49
+ 603 0063 13       		.uleb128 0x13
+ 604 0064 38       		.uleb128 0x38
+ 605 0065 0B       		.uleb128 0xb
+ 606 0066 00       		.byte	0
+ 607 0067 00       		.byte	0
+ 608 0068 09       		.uleb128 0x9
+ 609 0069 0D       		.uleb128 0xd
+ 610 006a 00       		.byte	0
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccQYkIqY.s 			page 13
+
+
+ 611 006b 03       		.uleb128 0x3
+ 612 006c 0E       		.uleb128 0xe
+ 613 006d 3A       		.uleb128 0x3a
+ 614 006e 0B       		.uleb128 0xb
+ 615 006f 3B       		.uleb128 0x3b
+ 616 0070 0B       		.uleb128 0xb
+ 617 0071 49       		.uleb128 0x49
+ 618 0072 13       		.uleb128 0x13
+ 619 0073 38       		.uleb128 0x38
+ 620 0074 0B       		.uleb128 0xb
+ 621 0075 00       		.byte	0
+ 622 0076 00       		.byte	0
+ 623 0077 0A       		.uleb128 0xa
+ 624 0078 01       		.uleb128 0x1
+ 625 0079 01       		.byte	0x1
+ 626 007a 49       		.uleb128 0x49
+ 627 007b 13       		.uleb128 0x13
+ 628 007c 01       		.uleb128 0x1
+ 629 007d 13       		.uleb128 0x13
+ 630 007e 00       		.byte	0
+ 631 007f 00       		.byte	0
+ 632 0080 0B       		.uleb128 0xb
+ 633 0081 21       		.uleb128 0x21
+ 634 0082 00       		.byte	0
+ 635 0083 49       		.uleb128 0x49
+ 636 0084 13       		.uleb128 0x13
+ 637 0085 2F       		.uleb128 0x2f
+ 638 0086 0B       		.uleb128 0xb
+ 639 0087 00       		.byte	0
+ 640 0088 00       		.byte	0
+ 641 0089 0C       		.uleb128 0xc
+ 642 008a 17       		.uleb128 0x17
+ 643 008b 01       		.byte	0x1
+ 644 008c 03       		.uleb128 0x3
+ 645 008d 0E       		.uleb128 0xe
+ 646 008e 0B       		.uleb128 0xb
+ 647 008f 0B       		.uleb128 0xb
+ 648 0090 3A       		.uleb128 0x3a
+ 649 0091 0B       		.uleb128 0xb
+ 650 0092 3B       		.uleb128 0x3b
+ 651 0093 0B       		.uleb128 0xb
+ 652 0094 01       		.uleb128 0x1
+ 653 0095 13       		.uleb128 0x13
+ 654 0096 00       		.byte	0
+ 655 0097 00       		.byte	0
+ 656 0098 0D       		.uleb128 0xd
+ 657 0099 0D       		.uleb128 0xd
+ 658 009a 00       		.byte	0
+ 659 009b 03       		.uleb128 0x3
+ 660 009c 0E       		.uleb128 0xe
+ 661 009d 3A       		.uleb128 0x3a
+ 662 009e 0B       		.uleb128 0xb
+ 663 009f 3B       		.uleb128 0x3b
+ 664 00a0 0B       		.uleb128 0xb
+ 665 00a1 49       		.uleb128 0x49
+ 666 00a2 13       		.uleb128 0x13
+ 667 00a3 00       		.byte	0
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccQYkIqY.s 			page 14
+
+
+ 668 00a4 00       		.byte	0
+ 669 00a5 0E       		.uleb128 0xe
+ 670 00a6 0D       		.uleb128 0xd
+ 671 00a7 00       		.byte	0
+ 672 00a8 49       		.uleb128 0x49
+ 673 00a9 13       		.uleb128 0x13
+ 674 00aa 00       		.byte	0
+ 675 00ab 00       		.byte	0
+ 676 00ac 0F       		.uleb128 0xf
+ 677 00ad 2E       		.uleb128 0x2e
+ 678 00ae 00       		.byte	0
+ 679 00af 3F       		.uleb128 0x3f
+ 680 00b0 19       		.uleb128 0x19
+ 681 00b1 03       		.uleb128 0x3
+ 682 00b2 0E       		.uleb128 0xe
+ 683 00b3 3A       		.uleb128 0x3a
+ 684 00b4 0B       		.uleb128 0xb
+ 685 00b5 3B       		.uleb128 0x3b
+ 686 00b6 0B       		.uleb128 0xb
+ 687 00b7 27       		.uleb128 0x27
+ 688 00b8 19       		.uleb128 0x19
+ 689 00b9 11       		.uleb128 0x11
+ 690 00ba 01       		.uleb128 0x1
+ 691 00bb 12       		.uleb128 0x12
+ 692 00bc 06       		.uleb128 0x6
+ 693 00bd 40       		.uleb128 0x40
+ 694 00be 18       		.uleb128 0x18
+ 695 00bf 9642     		.uleb128 0x2116
+ 696 00c1 19       		.uleb128 0x19
+ 697 00c2 00       		.byte	0
+ 698 00c3 00       		.byte	0
+ 699 00c4 10       		.uleb128 0x10
+ 700 00c5 2E       		.uleb128 0x2e
+ 701 00c6 00       		.byte	0
+ 702 00c7 3F       		.uleb128 0x3f
+ 703 00c8 19       		.uleb128 0x19
+ 704 00c9 03       		.uleb128 0x3
+ 705 00ca 0E       		.uleb128 0xe
+ 706 00cb 3A       		.uleb128 0x3a
+ 707 00cc 0B       		.uleb128 0xb
+ 708 00cd 3B       		.uleb128 0x3b
+ 709 00ce 0B       		.uleb128 0xb
+ 710 00cf 27       		.uleb128 0x27
+ 711 00d0 19       		.uleb128 0x19
+ 712 00d1 49       		.uleb128 0x49
+ 713 00d2 13       		.uleb128 0x13
+ 714 00d3 11       		.uleb128 0x11
+ 715 00d4 01       		.uleb128 0x1
+ 716 00d5 12       		.uleb128 0x12
+ 717 00d6 06       		.uleb128 0x6
+ 718 00d7 40       		.uleb128 0x40
+ 719 00d8 18       		.uleb128 0x18
+ 720 00d9 9742     		.uleb128 0x2117
+ 721 00db 19       		.uleb128 0x19
+ 722 00dc 00       		.byte	0
+ 723 00dd 00       		.byte	0
+ 724 00de 11       		.uleb128 0x11
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccQYkIqY.s 			page 15
+
+
+ 725 00df 2E       		.uleb128 0x2e
+ 726 00e0 01       		.byte	0x1
+ 727 00e1 3F       		.uleb128 0x3f
+ 728 00e2 19       		.uleb128 0x19
+ 729 00e3 03       		.uleb128 0x3
+ 730 00e4 0E       		.uleb128 0xe
+ 731 00e5 3A       		.uleb128 0x3a
+ 732 00e6 0B       		.uleb128 0xb
+ 733 00e7 3B       		.uleb128 0x3b
+ 734 00e8 0B       		.uleb128 0xb
+ 735 00e9 27       		.uleb128 0x27
+ 736 00ea 19       		.uleb128 0x19
+ 737 00eb 49       		.uleb128 0x49
+ 738 00ec 13       		.uleb128 0x13
+ 739 00ed 11       		.uleb128 0x11
+ 740 00ee 01       		.uleb128 0x1
+ 741 00ef 12       		.uleb128 0x12
+ 742 00f0 06       		.uleb128 0x6
+ 743 00f1 40       		.uleb128 0x40
+ 744 00f2 18       		.uleb128 0x18
+ 745 00f3 9742     		.uleb128 0x2117
+ 746 00f5 19       		.uleb128 0x19
+ 747 00f6 01       		.uleb128 0x1
+ 748 00f7 13       		.uleb128 0x13
+ 749 00f8 00       		.byte	0
+ 750 00f9 00       		.byte	0
+ 751 00fa 12       		.uleb128 0x12
+ 752 00fb 34       		.uleb128 0x34
+ 753 00fc 00       		.byte	0
+ 754 00fd 03       		.uleb128 0x3
+ 755 00fe 0E       		.uleb128 0xe
+ 756 00ff 3A       		.uleb128 0x3a
+ 757 0100 0B       		.uleb128 0xb
+ 758 0101 3B       		.uleb128 0x3b
+ 759 0102 0B       		.uleb128 0xb
+ 760 0103 49       		.uleb128 0x49
+ 761 0104 13       		.uleb128 0x13
+ 762 0105 02       		.uleb128 0x2
+ 763 0106 18       		.uleb128 0x18
+ 764 0107 00       		.byte	0
+ 765 0108 00       		.byte	0
+ 766 0109 13       		.uleb128 0x13
+ 767 010a 34       		.uleb128 0x34
+ 768 010b 00       		.byte	0
+ 769 010c 03       		.uleb128 0x3
+ 770 010d 08       		.uleb128 0x8
+ 771 010e 3A       		.uleb128 0x3a
+ 772 010f 0B       		.uleb128 0xb
+ 773 0110 3B       		.uleb128 0x3b
+ 774 0111 0B       		.uleb128 0xb
+ 775 0112 49       		.uleb128 0x49
+ 776 0113 13       		.uleb128 0x13
+ 777 0114 02       		.uleb128 0x2
+ 778 0115 18       		.uleb128 0x18
+ 779 0116 00       		.byte	0
+ 780 0117 00       		.byte	0
+ 781 0118 14       		.uleb128 0x14
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccQYkIqY.s 			page 16
+
+
+ 782 0119 34       		.uleb128 0x34
+ 783 011a 00       		.byte	0
+ 784 011b 03       		.uleb128 0x3
+ 785 011c 0E       		.uleb128 0xe
+ 786 011d 3A       		.uleb128 0x3a
+ 787 011e 0B       		.uleb128 0xb
+ 788 011f 3B       		.uleb128 0x3b
+ 789 0120 05       		.uleb128 0x5
+ 790 0121 49       		.uleb128 0x49
+ 791 0122 13       		.uleb128 0x13
+ 792 0123 3F       		.uleb128 0x3f
+ 793 0124 19       		.uleb128 0x19
+ 794 0125 3C       		.uleb128 0x3c
+ 795 0126 19       		.uleb128 0x19
+ 796 0127 00       		.byte	0
+ 797 0128 00       		.byte	0
+ 798 0129 15       		.uleb128 0x15
+ 799 012a 35       		.uleb128 0x35
+ 800 012b 00       		.byte	0
+ 801 012c 49       		.uleb128 0x49
+ 802 012d 13       		.uleb128 0x13
+ 803 012e 00       		.byte	0
+ 804 012f 00       		.byte	0
+ 805 0130 16       		.uleb128 0x16
+ 806 0131 34       		.uleb128 0x34
+ 807 0132 00       		.byte	0
+ 808 0133 03       		.uleb128 0x3
+ 809 0134 08       		.uleb128 0x8
+ 810 0135 3A       		.uleb128 0x3a
+ 811 0136 0B       		.uleb128 0xb
+ 812 0137 3B       		.uleb128 0x3b
+ 813 0138 0B       		.uleb128 0xb
+ 814 0139 49       		.uleb128 0x49
+ 815 013a 13       		.uleb128 0x13
+ 816 013b 3F       		.uleb128 0x3f
+ 817 013c 19       		.uleb128 0x19
+ 818 013d 02       		.uleb128 0x2
+ 819 013e 18       		.uleb128 0x18
+ 820 013f 00       		.byte	0
+ 821 0140 00       		.byte	0
+ 822 0141 17       		.uleb128 0x17
+ 823 0142 34       		.uleb128 0x34
+ 824 0143 00       		.byte	0
+ 825 0144 03       		.uleb128 0x3
+ 826 0145 0E       		.uleb128 0xe
+ 827 0146 3A       		.uleb128 0x3a
+ 828 0147 0B       		.uleb128 0xb
+ 829 0148 3B       		.uleb128 0x3b
+ 830 0149 0B       		.uleb128 0xb
+ 831 014a 49       		.uleb128 0x49
+ 832 014b 13       		.uleb128 0x13
+ 833 014c 3F       		.uleb128 0x3f
+ 834 014d 19       		.uleb128 0x19
+ 835 014e 02       		.uleb128 0x2
+ 836 014f 18       		.uleb128 0x18
+ 837 0150 00       		.byte	0
+ 838 0151 00       		.byte	0
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccQYkIqY.s 			page 17
+
+
+ 839 0152 00       		.byte	0
+ 840              		.section	.debug_aranges,"",%progbits
+ 841 0000 2C000000 		.4byte	0x2c
+ 842 0004 0200     		.2byte	0x2
+ 843 0006 00000000 		.4byte	.Ldebug_info0
+ 844 000a 04       		.byte	0x4
+ 845 000b 00       		.byte	0
+ 846 000c 0000     		.2byte	0
+ 847 000e 0000     		.2byte	0
+ 848 0010 00000000 		.4byte	.LFB63
+ 849 0014 44000000 		.4byte	.LFE63-.LFB63
+ 850 0018 00000000 		.4byte	.LFB64
+ 851 001c 28000000 		.4byte	.LFE64-.LFB64
+ 852 0020 00000000 		.4byte	.LFB65
+ 853 0024 90000000 		.4byte	.LFE65-.LFB65
+ 854 0028 00000000 		.4byte	0
+ 855 002c 00000000 		.4byte	0
+ 856              		.section	.debug_ranges,"",%progbits
+ 857              	.Ldebug_ranges0:
+ 858 0000 00000000 		.4byte	.LFB63
+ 859 0004 44000000 		.4byte	.LFE63
+ 860 0008 00000000 		.4byte	.LFB64
+ 861 000c 28000000 		.4byte	.LFE64
+ 862 0010 00000000 		.4byte	.LFB65
+ 863 0014 90000000 		.4byte	.LFE65
+ 864 0018 00000000 		.4byte	0
+ 865 001c 00000000 		.4byte	0
+ 866              		.section	.debug_line,"",%progbits
+ 867              	.Ldebug_line0:
+ 868 0000 B4010000 		.section	.debug_str,"MS",%progbits,1
+ 868      02005901 
+ 868      00000201 
+ 868      FB0E0D00 
+ 868      01010101 
+ 869              	.LASF25:
+ 870 0000 433A5C55 		.ascii	"C:\\Users\\Patrick\\Documents\\GitHub\\PSoC 5LP FIl"
+ 870      73657273 
+ 870      5C506174 
+ 870      7269636B 
+ 870      5C446F63 
+ 871 002e 65735C43 		.ascii	"es\\C-CAN_PSoC_DevKit\\C-CAN.cydsn\000"
+ 871      2D43414E 
+ 871      5F50536F 
+ 871      435F4465 
+ 871      764B6974 
+ 872              	.LASF9:
+ 873 004f 5F5F696E 		.ascii	"__int32_t\000"
+ 873      7433325F 
+ 873      7400
+ 874              	.LASF22:
+ 875 0059 52785374 		.ascii	"RxStrIndex\000"
+ 875      72496E64 
+ 875      657800
+ 876              	.LASF24:
+ 877 0064 2E5C6D79 		.ascii	".\\myUART.c\000"
+ 877      55415254 
+ 877      2E6300
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccQYkIqY.s 			page 18
+
+
+ 878              	.LASF23:
+ 879 006f 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
+ 879      4320342E 
+ 879      392E3320 
+ 879      32303135 
+ 879      30333033 
+ 880 00a2 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m3 -mthumb -g -O"
+ 880      20726576 
+ 880      6973696F 
+ 880      6E203232 
+ 880      31323230 
+ 881 00d5 30202D66 		.ascii	"0 -ffunction-sections -ffat-lto-objects\000"
+ 881      66756E63 
+ 881      74696F6E 
+ 881      2D736563 
+ 881      74696F6E 
+ 882              	.LASF20:
+ 883 00fd 52785265 		.ascii	"RxReadIndex\000"
+ 883      6164496E 
+ 883      64657800 
+ 884              	.LASF27:
+ 885 0109 52785374 		.ascii	"RxStr\000"
+ 885      7200
+ 886              	.LASF26:
+ 887 010f 54527842 		.ascii	"TRxBuffer\000"
+ 887      75666665 
+ 887      7200
+ 888              	.LASF12:
+ 889 0119 666C6F61 		.ascii	"float\000"
+ 889      7400
+ 890              	.LASF19:
+ 891 011f 52784275 		.ascii	"RxBuffer\000"
+ 891      66666572 
+ 891      00
+ 892              	.LASF1:
+ 893 0128 756E7369 		.ascii	"unsigned char\000"
+ 893      676E6564 
+ 893      20636861 
+ 893      7200
+ 894              	.LASF17:
+ 895 0136 52785374 		.ascii	"RxStr_flag\000"
+ 895      725F666C 
+ 895      616700
+ 896              	.LASF5:
+ 897 0141 6C6F6E67 		.ascii	"long unsigned int\000"
+ 897      20756E73 
+ 897      69676E65 
+ 897      6420696E 
+ 897      7400
+ 898              	.LASF21:
+ 899 0153 52785772 		.ascii	"RxWriteIndex\000"
+ 899      69746549 
+ 899      6E646578 
+ 899      00
+ 900              	.LASF3:
+ 901 0160 73686F72 		.ascii	"short unsigned int\000"
+ 901      7420756E 
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccQYkIqY.s 			page 19
+
+
+ 901      7369676E 
+ 901      65642069 
+ 901      6E7400
+ 902              	.LASF18:
+ 903 0173 49544D5F 		.ascii	"ITM_RxBuffer\000"
+ 903      52784275 
+ 903      66666572 
+ 903      00
+ 904              	.LASF13:
+ 905 0180 646F7562 		.ascii	"double\000"
+ 905      6C6500
+ 906              	.LASF29:
+ 907 0187 49734368 		.ascii	"IsCharReady\000"
+ 907      61725265 
+ 907      61647900 
+ 908              	.LASF8:
+ 909 0193 756E7369 		.ascii	"unsigned int\000"
+ 909      676E6564 
+ 909      20696E74 
+ 909      00
+ 910              	.LASF7:
+ 911 01a0 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 911      206C6F6E 
+ 911      6720756E 
+ 911      7369676E 
+ 911      65642069 
+ 912              	.LASF10:
+ 913 01b7 696E7433 		.ascii	"int32_t\000"
+ 913      325F7400 
+ 914              	.LASF15:
+ 915 01bf 73697A65 		.ascii	"sizetype\000"
+ 915      74797065 
+ 915      00
+ 916              	.LASF6:
+ 917 01c8 6C6F6E67 		.ascii	"long long int\000"
+ 917      206C6F6E 
+ 917      6720696E 
+ 917      7400
+ 918              	.LASF14:
+ 919 01d6 63686172 		.ascii	"char\000"
+ 919      00
+ 920              	.LASF2:
+ 921 01db 73686F72 		.ascii	"short int\000"
+ 921      7420696E 
+ 921      7400
+ 922              	.LASF11:
+ 923 01e5 75696E74 		.ascii	"uint8\000"
+ 923      3800
+ 924              	.LASF4:
+ 925 01eb 6C6F6E67 		.ascii	"long int\000"
+ 925      20696E74 
+ 925      00
+ 926              	.LASF0:
+ 927 01f4 7369676E 		.ascii	"signed char\000"
+ 927      65642063 
+ 927      68617200 
+ 928              	.LASF28:
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccQYkIqY.s 			page 20
+
+
+ 929 0200 4D795278 		.ascii	"MyRxInt\000"
+ 929      496E7400 
+ 930              	.LASF30:
+ 931 0208 47657452 		.ascii	"GetRxStr\000"
+ 931      78537472 
+ 931      00
+ 932              	.LASF16:
+ 933 0211 76616C73 		.ascii	"valstr\000"
+ 933      747200
+ 934              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.9.3 20150303 (release) [ARM/embedded-4_9-br

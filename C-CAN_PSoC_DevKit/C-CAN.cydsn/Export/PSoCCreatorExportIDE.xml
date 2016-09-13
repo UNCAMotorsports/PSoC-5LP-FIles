@@ -6,8 +6,8 @@
     <Toolchain Name="ARM GCC Generic" Selected="True">
       <Tool Name="prebuild" Command="" Options="" />
       <Tool Name="assembler" Command="arm-none-eabi-as.exe" Options="-mcpu=cortex-m3 -mthumb -I. -IGenerated_Source\PSoC5 -alh=${OutputDir}/${CompileFile}.lst -g" />
-      <Tool Name="compiler" Command="arm-none-eabi-gcc.exe" Options="-mcpu=cortex-m3 -mthumb -Wno-main -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -ffunction-sections -O3 -ffat-lto-objects" />
-      <Tool Name="linker" Command="arm-none-eabi-gcc.exe" Options="-mcpu=cortex-m3 -mthumb -g -ffunction-sections -O3 -ffat-lto-objects -L Generated_Source\PSoC5 -Wl,-Map,${OutputDir}/${ProjectShortName}.map -T Generated_Source\PSoC5\cm3gcc.ld -specs=nano.specs" />
+      <Tool Name="compiler" Command="arm-none-eabi-gcc.exe" Options="-mcpu=cortex-m3 -mthumb -Wno-main -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -ffunction-sections -O0 -ffat-lto-objects" />
+      <Tool Name="linker" Command="arm-none-eabi-gcc.exe" Options="-mcpu=cortex-m3 -mthumb -g -ffunction-sections -O0 -ffat-lto-objects -L Generated_Source\PSoC5 -Wl,-Map,${OutputDir}/${ProjectShortName}.map -T Generated_Source\PSoC5\cm3gcc.ld -specs=nano.specs" />
       <Tool Name="postbuild" Command="" Options="" />
     </Toolchain>
     <Toolchain Name="ARM MDK Generic" Selected="False">
@@ -25,7 +25,7 @@
       <Tool Name="postbuild" Command="" Options="" />
     </Toolchain>
   </Toolchains>
-  <Project Name="C-CAN" Path="C:\Users\Patrick\Documents\GitHub\PSoC 5LP FIles\C-CAN_PSoC_DevKit\C-CAN.cydsn" Version="5.40" Type="Bootloadable">
+  <Project Name="C-CAN" Path="C:\Users\Patrick\Documents\GitHub\PSoC 5LP FIles\C-CAN_PSoC_DevKit\C-CAN.cydsn" Version="5.40" Type="Normal">
     <CMSIS_SVD_File>C-CAN.svd</CMSIS_SVD_File>
     <Datasheet />
     <LinkerFiles>
@@ -37,7 +37,9 @@
       <Folder BuildType="BUILD" Path="C:\Users\Patrick\Documents\GitHub\PSoC 5LP FIles\C-CAN_PSoC_DevKit\C-CAN.cydsn">
         <Files Root="C:\Users\Patrick\Documents\GitHub\PSoC 5LP FIles\C-CAN_PSoC_DevKit\C-CAN.cydsn">
           <File BuildType="BUILD" Toolchain="">.\device.h</File>
+          <File BuildType="BUILD" Toolchain="">.\C-CAN.h</File>
           <File BuildType="BUILD" Toolchain="">.\main.c</File>
+          <File BuildType="BUILD" Toolchain="">.\C-CAN.c</File>
         </Files>
       </Folder>
       <Folder BuildType="STRICT" Path="C:\Users\Patrick\Documents\GitHub\PSoC 5LP FIles\C-CAN_PSoC_DevKit\C-CAN.cydsn\Generated_Source\PSoC5">
@@ -110,15 +112,6 @@
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\ADC_SAR_1_Bypass.h</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\AMux_1.c</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\AMux_1.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\Vin_180_aliases.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\Vin_180.c</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\Vin_180.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\Vin_90_aliases.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\Vin_90.c</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\Vin_90.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\Vin_Pot_aliases.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\Vin_Pot.c</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\Vin_Pot.h</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\mcp2515_clk_aliases.h</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\mcp2515_clk.c</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\mcp2515_clk.h</File>
@@ -137,17 +130,6 @@
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\Clock_2.h</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\Clock_3.c</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\Clock_3.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\CAN_TIMER.c</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\CAN_TIMER.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\CAN_TIMER_PM.c</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\CAN_ISR.c</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\CAN_ISR.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\Test_Pin_aliases.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\Test_Pin.c</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\Test_Pin.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\ISR_PIN_aliases.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\ISR_PIN.c</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\ISR_PIN.h</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\Encoder_Left.c</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\Encoder_Left.h</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\Encoder_Left_PM.c</File>
@@ -166,10 +148,26 @@
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\rightEncTimer.c</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\rightEncTimer.h</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\rightEncTimer_PM.c</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\cybootloader.icf</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\cybootloader.c</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\Bootloadable_1.c</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\Bootloadable_1.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\two_aliases.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\two.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\two.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\one_aliases.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\one.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\one.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\zero_aliases.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\zero.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\zero.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\three_aliases.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\three.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\three.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\four_aliases.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\four.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\four.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\five_aliases.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\five.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\five.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\Em_EEPROM.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\Em_EEPROM.h</File>
         </Files>
       </Folder>
       <Folder BuildType="STRICT" Path="C:\Users\Patrick\Documents\GitHub\PSoC 5LP FIles\C-CAN_PSoC_DevKit\C-CAN.cydsn\Export\ARM_GCC_Generic">

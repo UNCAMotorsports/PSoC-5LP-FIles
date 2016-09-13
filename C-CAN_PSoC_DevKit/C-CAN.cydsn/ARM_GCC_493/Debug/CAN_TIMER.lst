@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cczdaqc7.s 			page 1
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccree80V.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cczdaqc7.s 			page 1
   29:.\Generated_Source\PSoC5/CAN_TIMER.c **** /*******************************************************************************
   30:.\Generated_Source\PSoC5/CAN_TIMER.c **** * Function Name: CAN_TIMER_Init
   31:.\Generated_Source\PSoC5/CAN_TIMER.c **** ********************************************************************************
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cczdaqc7.s 			page 2
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccree80V.s 			page 2
 
 
   32:.\Generated_Source\PSoC5/CAN_TIMER.c **** *
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cczdaqc7.s 			page 1
   75:.\Generated_Source\PSoC5/CAN_TIMER.c **** 
   76:.\Generated_Source\PSoC5/CAN_TIMER.c ****             #if (CY_PSOC3 || CY_PSOC5LP)
   77:.\Generated_Source\PSoC5/CAN_TIMER.c ****                 /* Set last 2 bits of control3 register if one shot(halt on
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cczdaqc7.s 			page 3
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccree80V.s 			page 3
 
 
   78:.\Generated_Source\PSoC5/CAN_TIMER.c ****                 interrupt) is enabled*/
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cczdaqc7.s 			page 1
  132:.\Generated_Source\PSoC5/CAN_TIMER.c ****             #if (!CAN_TIMER_UDB_CONTROL_REG_REMOVED)
  133:.\Generated_Source\PSoC5/CAN_TIMER.c ****                 if (0u == (CAN_TIMER_CONTROL & CAN_TIMER__B_TIMER__TM_SOFTWARE))
  134:.\Generated_Source\PSoC5/CAN_TIMER.c ****                 {
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cczdaqc7.s 			page 4
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccree80V.s 			page 4
 
 
  135:.\Generated_Source\PSoC5/CAN_TIMER.c ****                     CAN_TIMER_SetTriggerMode(CAN_TIMER_INIT_TRIGGER_MODE);
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cczdaqc7.s 			page 1
  189:.\Generated_Source\PSoC5/CAN_TIMER.c ****     #if (!CAN_TIMER_UDB_CONTROL_REG_REMOVED || CAN_TIMER_UsingFixedFunction)
  190:.\Generated_Source\PSoC5/CAN_TIMER.c ****         CAN_TIMER_CONTROL |= CAN_TIMER_CTRL_ENABLE;
  191:.\Generated_Source\PSoC5/CAN_TIMER.c ****     #endif /* Remove assignment if control register is removed */
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cczdaqc7.s 			page 5
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccree80V.s 			page 5
 
 
  192:.\Generated_Source\PSoC5/CAN_TIMER.c **** }
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cczdaqc7.s 			page 1
  246:.\Generated_Source\PSoC5/CAN_TIMER.c **** *******************************************************************************/
  247:.\Generated_Source\PSoC5/CAN_TIMER.c **** void CAN_TIMER_Stop(void) 
  248:.\Generated_Source\PSoC5/CAN_TIMER.c **** {
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cczdaqc7.s 			page 6
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccree80V.s 			page 6
 
 
  249:.\Generated_Source\PSoC5/CAN_TIMER.c ****     /* Disable Timer */
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cczdaqc7.s 			page 1
  303:.\Generated_Source\PSoC5/CAN_TIMER.c **** {
  304:.\Generated_Source\PSoC5/CAN_TIMER.c ****     /* Generate a software capture by reading the counter register */
  305:.\Generated_Source\PSoC5/CAN_TIMER.c ****     #if(CAN_TIMER_UsingFixedFunction)
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cczdaqc7.s 			page 7
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccree80V.s 			page 7
 
 
  306:.\Generated_Source\PSoC5/CAN_TIMER.c ****         (void)CY_GET_REG16(CAN_TIMER_COUNTER_LSB_PTR);
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cczdaqc7.s 			page 1
  360:.\Generated_Source\PSoC5/CAN_TIMER.c ****     #else
  361:.\Generated_Source\PSoC5/CAN_TIMER.c ****         return (0);
  362:.\Generated_Source\PSoC5/CAN_TIMER.c ****     #endif /* (!CAN_TIMER_UDB_CONTROL_REG_REMOVED) */
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cczdaqc7.s 			page 8
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccree80V.s 			page 8
 
 
  363:.\Generated_Source\PSoC5/CAN_TIMER.c **** }
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cczdaqc7.s 			page 1
  417:.\Generated_Source\PSoC5/CAN_TIMER.c **** ********************************************************************************
  418:.\Generated_Source\PSoC5/CAN_TIMER.c **** *
  419:.\Generated_Source\PSoC5/CAN_TIMER.c **** * Summary:
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cczdaqc7.s 			page 9
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccree80V.s 			page 9
 
 
  420:.\Generated_Source\PSoC5/CAN_TIMER.c **** *  This function is used to change the period of the counter.  The new period
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cczdaqc7.s 			page 1
  467:.\Generated_Source\PSoC5/CAN_TIMER.c **** * Function Name: CAN_TIMER_WriteCounter
  468:.\Generated_Source\PSoC5/CAN_TIMER.c **** ********************************************************************************
  469:.\Generated_Source\PSoC5/CAN_TIMER.c **** *
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cczdaqc7.s 			page 10
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccree80V.s 			page 10
 
 
  470:.\Generated_Source\PSoC5/CAN_TIMER.c **** * Summary:
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cczdaqc7.s 			page 1
   75              	.LBB42:
   76              	.LBB43:
  335:.\Generated_Source\PSoC5/CAN_TIMER.c **** }
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cczdaqc7.s 			page 11
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccree80V.s 			page 11
 
 
   77              		.loc 1 335 0
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cczdaqc7.s 			page 1
  539:.\Generated_Source\PSoC5/CAN_TIMER.c **** 
  540:.\Generated_Source\PSoC5/CAN_TIMER.c **** /*******************************************************************************
  541:.\Generated_Source\PSoC5/CAN_TIMER.c **** * Function Name: CAN_TIMER_SetCaptureMode
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cczdaqc7.s 			page 12
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccree80V.s 			page 12
 
 
  542:.\Generated_Source\PSoC5/CAN_TIMER.c **** ********************************************************************************
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cczdaqc7.s 			page 1
  596:.\Generated_Source\PSoC5/CAN_TIMER.c ****     #define CAN_TIMER__B_TIMER__TM_RISINGEDGE 0x04u
  597:.\Generated_Source\PSoC5/CAN_TIMER.c ****     #define CAN_TIMER__B_TIMER__TM_FALLINGEDGE 0x08u
  598:.\Generated_Source\PSoC5/CAN_TIMER.c ****     #define CAN_TIMER__B_TIMER__TM_EITHEREDGE 0x0Cu
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cczdaqc7.s 			page 13
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccree80V.s 			page 13
 
 
  599:.\Generated_Source\PSoC5/CAN_TIMER.c ****     #define CAN_TIMER__B_TIMER__TM_SOFTWARE 0x10u
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cczdaqc7.s 			page 1
  653:.\Generated_Source\PSoC5/CAN_TIMER.c **** * Parameters:
  654:.\Generated_Source\PSoC5/CAN_TIMER.c **** *  void
  655:.\Generated_Source\PSoC5/CAN_TIMER.c **** *
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cczdaqc7.s 			page 14
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccree80V.s 			page 14
 
 
  656:.\Generated_Source\PSoC5/CAN_TIMER.c **** * Return:
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cczdaqc7.s 			page 1
  710:.\Generated_Source\PSoC5/CAN_TIMER.c **** * Summary:
  711:.\Generated_Source\PSoC5/CAN_TIMER.c **** *  This function sets the capture count
  712:.\Generated_Source\PSoC5/CAN_TIMER.c **** *
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cczdaqc7.s 			page 15
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccree80V.s 			page 15
 
 
  713:.\Generated_Source\PSoC5/CAN_TIMER.c **** * Parameters:
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cczdaqc7.s 			page 1
   83 0024 1907     		lsls	r1, r3, #28
   84 0026 04D5     		bpl	.L2
   85              	.LBB45:
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cczdaqc7.s 			page 16
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccree80V.s 			page 16
 
 
   86              	.LBB46:
@@ -934,12 +934,12 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cczdaqc7.s 			page 1
  113              	.L12:
  114 003a 00BF     		.align	2
  115              	.L11:
- 116 003c 44680040 		.word	1073768516
- 117 0040 04680040 		.word	1073768452
- 118 0044 93640040 		.word	1073767571
- 119 0048 63640040 		.word	1073767523
- 120 004c 84680040 		.word	1073768580
- 121 0050 83640040 		.word	1073767555
+ 116 003c 48680040 		.word	1073768520
+ 117 0040 08680040 		.word	1073768456
+ 118 0044 95640040 		.word	1073767573
+ 119 0048 65640040 		.word	1073767525
+ 120 004c 88680040 		.word	1073768584
+ 121 0050 85640040 		.word	1073767557
  122              	.LBE49:
  123              	.LBE48:
  124              		.cfi_endproc
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cczdaqc7.s 			page 1
  136              		.cfi_startproc
  137              		@ args = 0, pretend = 0, frame = 0
  138              		@ frame_needed = 0, uses_anonymous_args = 0
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cczdaqc7.s 			page 17
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccree80V.s 			page 17
 
 
  139              		@ link register save eliminated.
@@ -972,7 +972,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cczdaqc7.s 			page 1
  146              	.L15:
  147              		.align	2
  148              	.L14:
- 149 000c 73640040 		.word	1073767539
+ 149 000c 75640040 		.word	1073767541
  150              		.cfi_endproc
  151              	.LFE1:
  152              		.size	CAN_TIMER_Enable, .-CAN_TIMER_Enable
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cczdaqc7.s 			page 1
  189              	.LBB71:
  437:.\Generated_Source\PSoC5/CAN_TIMER.c ****     #endif /*Write Period value with appropriate resolution suffix depending on UDB or fixed functi
  190              		.loc 1 437 0
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cczdaqc7.s 			page 18
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccree80V.s 			page 18
 
 
  191 0014 42F20F73 		movw	r3, #9999
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cczdaqc7.s 			page 1
  238              	.LBB84:
  461:.\Generated_Source\PSoC5/CAN_TIMER.c ****    #endif /* (CAN_TIMER_UsingFixedFunction) */
  239              		.loc 1 461 0
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cczdaqc7.s 			page 19
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccree80V.s 			page 19
 
 
  240 003a 0B49     		ldr	r1, .L27+24
@@ -1119,13 +1119,13 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cczdaqc7.s 			page 1
  272 004e 00BF     		.align	2
  273              	.L27:
  274 0050 00000000 		.word	.LANCHOR0
- 275 0054 73640040 		.word	1073767539
- 276 0058 44680040 		.word	1073768516
- 277 005c 04680040 		.word	1073768452
- 278 0060 93640040 		.word	1073767571
- 279 0064 63640040 		.word	1073767523
- 280 0068 84680040 		.word	1073768580
- 281 006c 83640040 		.word	1073767555
+ 275 0054 75640040 		.word	1073767541
+ 276 0058 48680040 		.word	1073768520
+ 277 005c 08680040 		.word	1073768456
+ 278 0060 95640040 		.word	1073767573
+ 279 0064 65640040 		.word	1073767525
+ 280 0068 88680040 		.word	1073768584
+ 281 006c 85640040 		.word	1073767557
  282              		.cfi_endproc
  283              	.LFE2:
  284              		.size	CAN_TIMER_Start, .-CAN_TIMER_Start
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cczdaqc7.s 			page 1
  291              	CAN_TIMER_Stop:
  292              	.LFB3:
  248:.\Generated_Source\PSoC5/CAN_TIMER.c ****     /* Disable Timer */
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cczdaqc7.s 			page 20
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccree80V.s 			page 20
 
 
  293              		.loc 1 248 0
@@ -1156,7 +1156,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cczdaqc7.s 			page 1
  304              	.L31:
  305              		.align	2
  306              	.L30:
- 307 000c 73640040 		.word	1073767539
+ 307 000c 75640040 		.word	1073767541
  308              		.cfi_endproc
  309              	.LFE3:
  310              		.size	CAN_TIMER_Stop, .-CAN_TIMER_Stop
@@ -1183,7 +1183,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cczdaqc7.s 			page 1
  329              	.L34:
  330 0006 00BF     		.align	2
  331              	.L33:
- 332 0008 83640040 		.word	1073767555
+ 332 0008 85640040 		.word	1073767557
  333              		.cfi_endproc
  334              	.LFE4:
  335              		.size	CAN_TIMER_SetInterruptMode, .-CAN_TIMER_SetInterruptMode
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cczdaqc7.s 			page 1
  303:.\Generated_Source\PSoC5/CAN_TIMER.c ****     /* Generate a software capture by reading the counter register */
  344              		.loc 1 303 0
  345              		.cfi_startproc
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cczdaqc7.s 			page 21
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccree80V.s 			page 21
 
 
  346              		@ args = 0, pretend = 0, frame = 0
@@ -1212,7 +1212,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cczdaqc7.s 			page 1
  353              	.L37:
  354 0006 00BF     		.align	2
  355              	.L36:
- 356 0008 02640040 		.word	1073767426
+ 356 0008 04640040 		.word	1073767428
  357              		.cfi_endproc
  358              	.LFE5:
  359              		.size	CAN_TIMER_SoftwareCapture, .-CAN_TIMER_SoftwareCapture
@@ -1240,7 +1240,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cczdaqc7.s 			page 1
  378              	.L40:
  379 0006 00BF     		.align	2
  380              	.L39:
- 381 0008 63640040 		.word	1073767523
+ 381 0008 65640040 		.word	1073767525
  382              		.cfi_endproc
  383              	.LFE6:
  384              		.size	CAN_TIMER_ReadStatusRegister, .-CAN_TIMER_ReadStatusRegister
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cczdaqc7.s 			page 1
  395              		@ args = 0, pretend = 0, frame = 0
  396              		@ frame_needed = 0, uses_anonymous_args = 0
  397              		@ link register save eliminated.
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cczdaqc7.s 			page 22
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccree80V.s 			page 22
 
 
  359:.\Generated_Source\PSoC5/CAN_TIMER.c ****     #else
@@ -1271,7 +1271,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cczdaqc7.s 			page 1
  403              	.L43:
  404 0006 00BF     		.align	2
  405              	.L42:
- 406 0008 73640040 		.word	1073767539
+ 406 0008 75640040 		.word	1073767541
  407              		.cfi_endproc
  408              	.LFE7:
  409              		.size	CAN_TIMER_ReadControlRegister, .-CAN_TIMER_ReadControlRegister
@@ -1298,7 +1298,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cczdaqc7.s 			page 1
  428              	.L46:
  429 0006 00BF     		.align	2
  430              	.L45:
- 431 0008 73640040 		.word	1073767539
+ 431 0008 75640040 		.word	1073767541
  432              		.cfi_endproc
  433              	.LFE8:
  434              		.size	CAN_TIMER_WriteControlRegister, .-CAN_TIMER_WriteControlRegister
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cczdaqc7.s 			page 1
  447              		@ link register save eliminated.
  410:.\Generated_Source\PSoC5/CAN_TIMER.c ****    #endif /* (CAN_TIMER_UsingFixedFunction) */
  448              		.loc 1 410 0
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cczdaqc7.s 			page 23
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccree80V.s 			page 23
 
 
  449 0000 014B     		ldr	r3, .L48
@@ -1330,7 +1330,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cczdaqc7.s 			page 1
  454              	.L49:
  455              		.align	2
  456              	.L48:
- 457 0008 44680040 		.word	1073768516
+ 457 0008 48680040 		.word	1073768520
  458              		.cfi_endproc
  459              	.LFE9:
  460              		.size	CAN_TIMER_ReadPeriod, .-CAN_TIMER_ReadPeriod
@@ -1357,7 +1357,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cczdaqc7.s 			page 1
  479              	.L52:
  480 0006 00BF     		.align	2
  481              	.L51:
- 482 0008 44680040 		.word	1073768516
+ 482 0008 48680040 		.word	1073768520
  483              		.cfi_endproc
  484              	.LFE10:
  485              		.size	CAN_TIMER_WritePeriod, .-CAN_TIMER_WritePeriod
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cczdaqc7.s 			page 1
  461:.\Generated_Source\PSoC5/CAN_TIMER.c ****    #endif /* (CAN_TIMER_UsingFixedFunction) */
  499              		.loc 1 461 0
  500 0000 014B     		ldr	r3, .L54
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cczdaqc7.s 			page 24
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccree80V.s 			page 24
 
 
  501 0002 1888     		ldrh	r0, [r3]
@@ -1389,7 +1389,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cczdaqc7.s 			page 1
  505              	.L55:
  506              		.align	2
  507              	.L54:
- 508 0008 84680040 		.word	1073768580
+ 508 0008 88680040 		.word	1073768584
  509              		.cfi_endproc
  510              	.LFE11:
  511              		.size	CAN_TIMER_ReadCapture, .-CAN_TIMER_ReadCapture
@@ -1416,7 +1416,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cczdaqc7.s 			page 1
  530              	.L58:
  531 0006 00BF     		.align	2
  532              	.L57:
- 533 0008 04680040 		.word	1073768452
+ 533 0008 08680040 		.word	1073768456
  534              		.cfi_endproc
  535              	.LFE12:
  536              		.size	CAN_TIMER_WriteCounter, .-CAN_TIMER_WriteCounter
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cczdaqc7.s 			page 1
  550              		.loc 1 523 0
  551 0000 024B     		ldr	r3, .L60
  516:.\Generated_Source\PSoC5/CAN_TIMER.c ****     #endif/* (CAN_TIMER_UsingFixedFunction) */
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cczdaqc7.s 			page 25
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccree80V.s 			page 25
 
 
  552              		.loc 1 516 0
@@ -1454,8 +1454,8 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cczdaqc7.s 			page 1
  560              	.L61:
  561              		.align	2
  562              	.L60:
- 563 000c 84680040 		.word	1073768580
- 564 0010 02640040 		.word	1073767426
+ 563 000c 88680040 		.word	1073768584
+ 564 0010 04640040 		.word	1073767428
  565              		.cfi_endproc
  566              	.LFE13:
  567              		.size	CAN_TIMER_ReadCounter, .-CAN_TIMER_ReadCounter
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cczdaqc7.s 			page 1
  335:.\Generated_Source\PSoC5/CAN_TIMER.c **** }
  601              		.loc 1 335 0
  602 000c 1378     		ldrb	r3, [r2]	@ zero_extendqisi2
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cczdaqc7.s 			page 26
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccree80V.s 			page 26
 
 
  603              	.LBE90:
@@ -1511,8 +1511,8 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cczdaqc7.s 			page 1
  610              	.L71:
  611              		.align	2
  612              	.L70:
- 613 0014 63640040 		.word	1073767523
- 614 0018 84680040 		.word	1073768580
+ 613 0014 65640040 		.word	1073767525
+ 614 0018 88680040 		.word	1073768584
  615              		.cfi_endproc
  616              	.LFE14:
  617              		.size	CAN_TIMER_ClearFIFO, .-CAN_TIMER_ClearFIFO
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cczdaqc7.s 			page 1
  657 003c 07       		.byte	0x7
  658 003d A8000000 		.4byte	.LASF3
  659 0041 02       		.uleb128 0x2
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cczdaqc7.s 			page 27
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccree80V.s 			page 27
 
 
  660 0042 04       		.byte	0x4
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cczdaqc7.s 			page 1
  714 00ae 02       		.byte	0x2
  715 00af 3D02     		.2byte	0x23d
  716 00b1 B5000000 		.4byte	0xb5
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cczdaqc7.s 			page 28
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccree80V.s 			page 28
 
 
  717 00b5 05       		.uleb128 0x5
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cczdaqc7.s 			page 1
  771 0126 E5020000 		.4byte	.LASF24
  772 012a 01       		.byte	0x1
  773 012b 1701     		.2byte	0x117
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cczdaqc7.s 			page 29
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccree80V.s 			page 29
 
 
  774 012d 6B000000 		.4byte	0x6b
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cczdaqc7.s 			page 1
  828 01ad 12000000 		.4byte	.LBE40-.LBB40
  829 01b1 01       		.byte	0x1
  830 01b2 9F       		.byte	0x9f
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cczdaqc7.s 			page 30
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccree80V.s 			page 30
 
 
  831 01b3 D8010000 		.4byte	0x1d8
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cczdaqc7.s 			page 1
  885 0239 3A010000 		.4byte	0x13a
  886 023d 14000000 		.4byte	.LBB68
  887 0241 36000000 		.4byte	.LBE68-.LBB68
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cczdaqc7.s 			page 31
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccree80V.s 			page 31
 
 
  888 0245 01       		.byte	0x1
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cczdaqc7.s 			page 1
  942 02d0 01       		.byte	0x1
  943 02d1 A2       		.byte	0xa2
  944 02d2 DD020000 		.4byte	0x2dd
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cczdaqc7.s 			page 32
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccree80V.s 			page 32
 
 
  945 02d6 14       		.uleb128 0x14
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cczdaqc7.s 			page 1
  999 0353 01       		.uleb128 0x1
  1000 0354 9C       		.byte	0x9c
  1001 0355 1F       		.uleb128 0x1f
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cczdaqc7.s 			page 33
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccree80V.s 			page 33
 
 
  1002 0356 DF010000 		.4byte	.LASF31
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cczdaqc7.s 			page 1
  1056 03d4 00       		.byte	0
  1057 03d5 1E       		.uleb128 0x1e
  1058 03d6 B3020000 		.4byte	.LASF34
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cczdaqc7.s 			page 34
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccree80V.s 			page 34
 
 
  1059 03da 01       		.byte	0x1
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cczdaqc7.s 			page 1
  1113 0004 0E       		.uleb128 0xe
  1114 0005 13       		.uleb128 0x13
  1115 0006 0B       		.uleb128 0xb
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cczdaqc7.s 			page 35
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccree80V.s 			page 35
 
 
  1116 0007 03       		.uleb128 0x3
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cczdaqc7.s 			page 1
  1170 003d 06       		.uleb128 0x6
  1171 003e 2E       		.uleb128 0x2e
  1172 003f 00       		.byte	0
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cczdaqc7.s 			page 36
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccree80V.s 			page 36
 
 
  1173 0040 3F       		.uleb128 0x3f
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cczdaqc7.s 			page 1
  1227 0076 0E       		.uleb128 0xe
  1228 0077 3A       		.uleb128 0x3a
  1229 0078 0B       		.uleb128 0xb
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cczdaqc7.s 			page 37
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccree80V.s 			page 37
 
 
  1230 0079 3B       		.uleb128 0x3b
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cczdaqc7.s 			page 1
  1284 00af 13       		.uleb128 0x13
  1285 00b0 00       		.byte	0
  1286 00b1 00       		.byte	0
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cczdaqc7.s 			page 38
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccree80V.s 			page 38
 
 
  1287 00b2 0D       		.uleb128 0xd
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cczdaqc7.s 			page 1
  1341 00e9 01       		.byte	0x1
  1342 00ea 31       		.uleb128 0x31
  1343 00eb 13       		.uleb128 0x13
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cczdaqc7.s 			page 39
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccree80V.s 			page 39
 
 
  1344 00ec 11       		.uleb128 0x11
@@ -2338,7 +2338,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cczdaqc7.s 			page 1
  1398 0124 11       		.uleb128 0x11
  1399 0125 01       		.uleb128 0x1
  1400 0126 31       		.uleb128 0x31
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cczdaqc7.s 			page 40
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccree80V.s 			page 40
 
 
  1401 0127 13       		.uleb128 0x13
@@ -2398,7 +2398,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cczdaqc7.s 			page 1
  1455 015f 59       		.uleb128 0x59
  1456 0160 0B       		.uleb128 0xb
  1457 0161 00       		.byte	0
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cczdaqc7.s 			page 41
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccree80V.s 			page 41
 
 
  1458 0162 00       		.byte	0
@@ -2458,7 +2458,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cczdaqc7.s 			page 1
  1512 0199 18       		.uleb128 0x18
  1513 019a 00       		.byte	0
  1514 019b 00       		.byte	0
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cczdaqc7.s 			page 42
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccree80V.s 			page 42
 
 
  1515 019c 1D       		.uleb128 0x1d
@@ -2518,7 +2518,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cczdaqc7.s 			page 1
  1569 01d4 0E       		.uleb128 0xe
  1570 01d5 3A       		.uleb128 0x3a
  1571 01d6 0B       		.uleb128 0xb
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cczdaqc7.s 			page 43
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccree80V.s 			page 43
 
 
  1572 01d7 3B       		.uleb128 0x3b
@@ -2578,7 +2578,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cczdaqc7.s 			page 1
  1626 020e 0E       		.uleb128 0xe
  1627 020f 3A       		.uleb128 0x3a
  1628 0210 0B       		.uleb128 0xb
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cczdaqc7.s 			page 44
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccree80V.s 			page 44
 
 
  1629 0211 3B       		.uleb128 0x3b
@@ -2638,7 +2638,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cczdaqc7.s 			page 1
  1683 0006 00000000 		.4byte	.Ldebug_info0
  1684 000a 04       		.byte	0x4
  1685 000b 00       		.byte	0
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cczdaqc7.s 			page 45
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccree80V.s 			page 45
 
 
  1686 000c 0000     		.2byte	0
@@ -2698,7 +2698,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cczdaqc7.s 			page 1
  1740 0048 14000000 		.4byte	.LBB70
  1741 004c 1A000000 		.4byte	.LBE70
  1742 0050 1C000000 		.4byte	.LBB76
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cczdaqc7.s 			page 46
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccree80V.s 			page 46
 
 
  1743 0054 1E000000 		.4byte	.LBE76
@@ -2758,7 +2758,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cczdaqc7.s 			page 1
  1797              	.Ldebug_line0:
  1798 0000 D1010000 		.section	.debug_str,"MS",%progbits,1
  1798      02005300 
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cczdaqc7.s 			page 47
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccree80V.s 			page 47
 
 
  1798      00000201 
@@ -2818,7 +2818,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cczdaqc7.s 			page 1
  1817      6F756E74 
  1818              	.LASF25:
  1819 00e2 43414E5F 		.ascii	"CAN_TIMER_ClearFIFO\000"
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cczdaqc7.s 			page 48
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccree80V.s 			page 48
 
 
  1819      54494D45 
@@ -2878,7 +2878,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cczdaqc7.s 			page 1
  1837      20756E73 
  1837      69676E65 
  1837      6420696E 
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cczdaqc7.s 			page 49
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccree80V.s 			page 49
 
 
  1837      7400
@@ -2938,7 +2938,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cczdaqc7.s 			page 1
  1861      6164436F 
  1861      756E7465 
  1862              	.LASF14:
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cczdaqc7.s 			page 50
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccree80V.s 			page 50
 
 
  1863 02c9 72656738 		.ascii	"reg8\000"
@@ -2998,7 +2998,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cczdaqc7.s 			page 1
  1886              	.LASF26:
  1887 0375 43414E5F 		.ascii	"CAN_TIMER_Enable\000"
  1887      54494D45 
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cczdaqc7.s 			page 51
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccree80V.s 			page 51
 
 
  1887      525F456E 

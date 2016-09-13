@@ -6,7 +6,7 @@
 
 #Build Date:         Apr 25 2016 12:55:34
 
-#File Generated:     Sep 1 2016 00:47:00
+#File Generated:     Sep 7 2016 17:10:48
 
 #Purpose:            
 
@@ -44,18 +44,18 @@ Phase 2
 Phase 3
 
 Design Statistics after Packing
-    Number of Combinational MCs 	:	22
+    Number of Combinational MCs 	:	21
     Number of Sequential MCs    	:	27
-    Number of DPs               	:	13
-    Number of Controls          	:	6
-    Number of Status            	:	7
+    Number of DPs               	:	11
+    Number of Controls          	:	5
+    Number of Status            	:	6
     Number of SyncCells         	:	2
     Number of count7cells       	:	1
 
 Device Utilization Summary after Packing
-    Macrocells                  :	49/192
-    UDBS                        :	14/24
-    IOs                         :	13/72
+    Macrocells                  :	48/192
+    UDBS                        :	12/24
+    IOs                         :	14/72
 
 
 D2088: Phase 3, elapsed time : 0.0 (sec)
@@ -84,7 +84,7 @@ Clock: ADC_SAR_1_theACLK    | Frequency: N/A       | Target:  18.0 MHz
 Clock: ADC_SAR_1_theACLK(routed) | Frequency: N/A       | Target:  18.0 MHz
 Clock: Clock_1              | Frequency: N/A       | Target:  12.0 MHz
 Clock: Clock_1(routed)      | Frequency: N/A       | Target:  12.0 MHz
-Clock: Clock_2              | Frequency:  53.9 MHz | Target:  24.0 MHz
+Clock: Clock_2              | Frequency:  62.6 MHz | Target:  24.0 MHz
 Clock: Clock_3              | Frequency: N/A       | Target:   1.0 MHz
 Clock: Clock_3(routed)      | Frequency: N/A       | Target:   1.0 MHz
 Clock: CyBUS_CLK            | Frequency:  76.5 MHz | Target:  72.0 MHz
@@ -93,13 +93,13 @@ Clock: CyILO                | Frequency: N/A       | Target:   0.0 MHz
 Clock: CyIMO                | Frequency: N/A       | Target:   3.0 MHz
 Clock: CyMASTER_CLK         | Frequency: N/A       | Target:  72.0 MHz
 Clock: CyPLL_OUT            | Frequency: N/A       | Target:  72.0 MHz
-Clock: UART_1_IntClock      | Frequency:  63.8 MHz | Target:   0.9 MHz
+Clock: UART_1_IntClock      | Frequency:  61.6 MHz | Target:   0.9 MHz
 
 ======================================================================
                      End of Clock Summary
 ######################################################################
 
-D2088: Phase 6, elapsed time : 0.0 (sec)
+D2088: Phase 6, elapsed time : 0.1 (sec)
 
 Phase 7
 ######################################################################
@@ -110,7 +110,7 @@ Clock: ADC_SAR_1_theACLK    | Frequency: N/A       | Target:  18.0 MHz
 Clock: ADC_SAR_1_theACLK(routed) | Frequency: N/A       | Target:  18.0 MHz
 Clock: Clock_1              | Frequency: N/A       | Target:  12.0 MHz
 Clock: Clock_1(routed)      | Frequency: N/A       | Target:  12.0 MHz
-Clock: Clock_2              | Frequency:  53.9 MHz | Target:  24.0 MHz
+Clock: Clock_2              | Frequency:  62.6 MHz | Target:  24.0 MHz
 Clock: Clock_3              | Frequency: N/A       | Target:   1.0 MHz
 Clock: Clock_3(routed)      | Frequency: N/A       | Target:   1.0 MHz
 Clock: CyBUS_CLK            | Frequency:   5.9 MHz | Target:  72.0 MHz
@@ -124,21 +124,21 @@ Clock: UART_1_IntClock      | Frequency:   5.9 MHz | Target:   0.9 MHz
 ======================================================================
                      End of Clock Summary
 ######################################################################
-D2088: Phase 7, elapsed time : 0.7 (sec)
+D2088: Phase 7, elapsed time : 1.5 (sec)
 
 Final Design Statistics
-    Number of Combinational MCs 	:	22
+    Number of Combinational MCs 	:	21
     Number of Sequential MCs    	:	27
-    Number of DPs               	:	13
-    Number of Controls          	:	6
-    Number of Status            	:	7
+    Number of DPs               	:	11
+    Number of Controls          	:	5
+    Number of Status            	:	6
     Number of SyncCells         	:	2
     Number of count7cells       	:	1
-    Number of IOs       	:	13
+    Number of IOs       	:	14
 
 Device Utilization Summary
-    Macrocells                  :	49/192
-    IOs                         :	13/72
+    Macrocells                  :	48/192
+    IOs                         :	14/72
 
 
 
@@ -159,7 +159,7 @@ Clock: ADC_SAR_1_theACLK    | Frequency: N/A       | Target:  18.0 MHz
 Clock: ADC_SAR_1_theACLK(routed) | Frequency: N/A       | Target:  18.0 MHz
 Clock: Clock_1              | Frequency: N/A       | Target:  12.0 MHz
 Clock: Clock_1(routed)      | Frequency: N/A       | Target:  12.0 MHz
-Clock: Clock_2              | Frequency:  48.0 MHz | Target:  24.0 MHz
+Clock: Clock_2              | Frequency:  48.6 MHz | Target:  24.0 MHz
 Clock: Clock_3              | Frequency: N/A       | Target:   1.0 MHz
 Clock: Clock_3(routed)      | Frequency: N/A       | Target:   1.0 MHz
 Clock: CyBUS_CLK            | Frequency:   6.2 MHz | Target:  72.0 MHz
@@ -179,5 +179,5 @@ D2088: Phase 8, elapsed time : 0.0 (sec)
 
 D2054: Placement of the design completed successfully
 
-I2076: Total run-time: 1.4 sec.
+I2076: Total run-time: 3.4 sec.
 
