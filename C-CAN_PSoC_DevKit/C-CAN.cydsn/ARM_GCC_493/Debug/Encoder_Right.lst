@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjq8Y3F.s 			page 1
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccJcNYLc.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjq8Y3F.s 			page 1
   23:.\Generated_Source\PSoC5/Encoder_Right.c **** 
   24:.\Generated_Source\PSoC5/Encoder_Right.c **** /*******************************************************************************
   25:.\Generated_Source\PSoC5/Encoder_Right.c **** * Function Name: Encoder_Right_Init
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjq8Y3F.s 			page 2
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccJcNYLc.s 			page 2
 
 
   26:.\Generated_Source\PSoC5/Encoder_Right.c **** ********************************************************************************
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjq8Y3F.s 			page 1
   68:.\Generated_Source\PSoC5/Encoder_Right.c ****             /* Clear and Set SYNCTC and SYNCCMP bits of RT1 register */
   69:.\Generated_Source\PSoC5/Encoder_Right.c ****             Encoder_Right_RT1 &= ((uint8)(~Encoder_Right_RT1_MASK));
   70:.\Generated_Source\PSoC5/Encoder_Right.c ****             Encoder_Right_RT1 |= Encoder_Right_SYNC;     
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjq8Y3F.s 			page 3
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccJcNYLc.s 			page 3
 
 
   71:.\Generated_Source\PSoC5/Encoder_Right.c ****                     
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjq8Y3F.s 			page 1
   69              		.loc 1 100 0
   70 0034 0020     		movs	r0, #0
   71 0036 FFF7FEFF 		bl	Encoder_Right_WritePeriod
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjq8Y3F.s 			page 4
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccJcNYLc.s 			page 4
 
 
  101:.\Generated_Source\PSoC5/Encoder_Right.c ****         #if (!(Encoder_Right_UsingFixedFunction && (CY_PSOC5A)))
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjq8Y3F.s 			page 1
  103              		.cfi_def_cfa_register 13
  104              		@ sp needed
  105 0074 80BD     		pop	{r7, pc}
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjq8Y3F.s 			page 5
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccJcNYLc.s 			page 5
 
 
  106              	.L3:
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjq8Y3F.s 			page 1
  152:.\Generated_Source\PSoC5/Encoder_Right.c ****     /* If Fixed Function then make sure Mode is set correctly */
  153:.\Generated_Source\PSoC5/Encoder_Right.c ****     /* else make sure reset is clear */
  154:.\Generated_Source\PSoC5/Encoder_Right.c ****     #if(!Encoder_Right_ControlRegRemoved || Encoder_Right_UsingFixedFunction)
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjq8Y3F.s 			page 6
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccJcNYLc.s 			page 6
 
 
  155:.\Generated_Source\PSoC5/Encoder_Right.c ****         Encoder_Right_CONTROL |= Encoder_Right_CTRL_ENABLE;                
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjq8Y3F.s 			page 1
  178:.\Generated_Source\PSoC5/Encoder_Right.c **** void Encoder_Right_Start(void) 
  179:.\Generated_Source\PSoC5/Encoder_Right.c **** {
  163              		.loc 1 179 0
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjq8Y3F.s 			page 7
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccJcNYLc.s 			page 7
 
 
  164              		.cfi_startproc
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjq8Y3F.s 			page 1
  194:.\Generated_Source\PSoC5/Encoder_Right.c **** ********************************************************************************
  195:.\Generated_Source\PSoC5/Encoder_Right.c **** * Summary:
  196:.\Generated_Source\PSoC5/Encoder_Right.c **** * Halts the counter, but does not change any modes or disable interrupts.
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjq8Y3F.s 			page 8
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccJcNYLc.s 			page 8
 
 
  197:.\Generated_Source\PSoC5/Encoder_Right.c **** *
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjq8Y3F.s 			page 1
  234              		.cfi_endproc
  235              	.LFE3:
  236              		.size	Encoder_Right_Stop, .-Encoder_Right_Stop
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjq8Y3F.s 			page 9
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccJcNYLc.s 			page 9
 
 
  237              		.section	.text.Encoder_Right_SetInterruptMode,"ax",%progbits
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjq8Y3F.s 			page 1
  271              		.cfi_def_cfa_offset 0
  272 0018 7047     		bx	lr
  273              	.L16:
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjq8Y3F.s 			page 10
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccJcNYLc.s 			page 10
 
 
  274 001a 00BF     		.align	2
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjq8Y3F.s 			page 1
  304 000c BD46     		mov	sp, r7
  305              		.cfi_def_cfa_register 13
  306              		@ sp needed
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjq8Y3F.s 			page 11
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccJcNYLc.s 			page 11
 
 
  307 000e 5DF8047B 		ldr	r7, [sp], #4
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjq8Y3F.s 			page 1
  286:.\Generated_Source\PSoC5/Encoder_Right.c **** }
  340              		.loc 1 286 0
  341 000a 1846     		mov	r0, r3
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjq8Y3F.s 			page 12
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccJcNYLc.s 			page 12
 
 
  342 000c BD46     		mov	sp, r7
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjq8Y3F.s 			page 1
  377 0008 FB71     		strb	r3, [r7, #7]
  306:.\Generated_Source\PSoC5/Encoder_Right.c ****     Encoder_Right_CONTROL = control;
  378              		.loc 1 306 0
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjq8Y3F.s 			page 13
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccJcNYLc.s 			page 13
 
 
  379 000a 044A     		ldr	r2, .L26
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjq8Y3F.s 			page 1
  411              		@ link register save eliminated.
  412 0000 80B4     		push	{r7}
  413              		.cfi_def_cfa_offset 4
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjq8Y3F.s 			page 14
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccJcNYLc.s 			page 14
 
 
  414              		.cfi_offset 7, -4
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjq8Y3F.s 			page 1
  347:.\Generated_Source\PSoC5/Encoder_Right.c **** * Returns the current value of the counter.  It doesn't matter
  348:.\Generated_Source\PSoC5/Encoder_Right.c **** * if the counter is enabled or running.
  349:.\Generated_Source\PSoC5/Encoder_Right.c **** *
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjq8Y3F.s 			page 15
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccJcNYLc.s 			page 15
 
 
  350:.\Generated_Source\PSoC5/Encoder_Right.c **** * Parameters:  
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjq8Y3F.s 			page 1
  479 0018 0A640040 		.word	1073767434
  480 001c 94680040 		.word	1073768596
  481              		.cfi_endproc
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjq8Y3F.s 			page 16
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccJcNYLc.s 			page 16
 
 
  482              	.LFE9:
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjq8Y3F.s 			page 1
  513              		.cfi_def_cfa_offset 0
  514 0012 7047     		bx	lr
  515              	.L38:
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjq8Y3F.s 			page 17
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccJcNYLc.s 			page 17
 
 
  516              		.align	2
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjq8Y3F.s 			page 1
  547 000e 1380     		strh	r3, [r2]	@ movhi
  421:.\Generated_Source\PSoC5/Encoder_Right.c ****     #endif /* (Encoder_Right_UsingFixedFunction) */
  422:.\Generated_Source\PSoC5/Encoder_Right.c **** }
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjq8Y3F.s 			page 18
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccJcNYLc.s 			page 18
 
 
  548              		.loc 1 422 0
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjq8Y3F.s 			page 1
  442:.\Generated_Source\PSoC5/Encoder_Right.c ****     #else
  443:.\Generated_Source\PSoC5/Encoder_Right.c ****         return (CY_GET_REG16(Encoder_Right_PERIOD_LSB_PTR));
  583              		.loc 1 443 0
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjq8Y3F.s 			page 19
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccJcNYLc.s 			page 19
 
 
  584 0004 034B     		ldr	r3, .L44
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjq8Y3F.s 			page 1
  614              		@ frame_needed = 1, uses_anonymous_args = 0
  615              		@ link register save eliminated.
  616 0000 80B4     		push	{r7}
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjq8Y3F.s 			page 20
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccJcNYLc.s 			page 20
 
 
  617              		.cfi_def_cfa_offset 4
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjq8Y3F.s 			page 1
  485:.\Generated_Source\PSoC5/Encoder_Right.c **** * Return: 
  486:.\Generated_Source\PSoC5/Encoder_Right.c **** *  (uint16) Present compare value.
  487:.\Generated_Source\PSoC5/Encoder_Right.c **** *
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjq8Y3F.s 			page 21
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccJcNYLc.s 			page 21
 
 
  488:.\Generated_Source\PSoC5/Encoder_Right.c **** *******************************************************************************/
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjq8Y3F.s 			page 1
  504:.\Generated_Source\PSoC5/Encoder_Right.c **** *
  505:.\Generated_Source\PSoC5/Encoder_Right.c **** * Return:
  506:.\Generated_Source\PSoC5/Encoder_Right.c **** *  void
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjq8Y3F.s 			page 22
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccJcNYLc.s 			page 22
 
 
  507:.\Generated_Source\PSoC5/Encoder_Right.c **** *
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjq8Y3F.s 			page 1
  693              		.cfi_startproc
  694              		@ args = 0, pretend = 0, frame = 0
  695              		@ frame_needed = 1, uses_anonymous_args = 0
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjq8Y3F.s 			page 23
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccJcNYLc.s 			page 23
 
 
  696 0000 80B5     		push	{r7, lr}
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjq8Y3F.s 			page 1
  742 002e 08       		.byte	0x8
  743 002f F6000000 		.4byte	.LASF1
  744 0033 02       		.uleb128 0x2
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjq8Y3F.s 			page 24
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccJcNYLc.s 			page 24
 
 
  745 0034 02       		.byte	0x2
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjq8Y3F.s 			page 1
  799 0099 04010000 		.4byte	.LASF14
  800 009d 02       		.byte	0x2
  801 009e 3C02     		.2byte	0x23c
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjq8Y3F.s 			page 25
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccJcNYLc.s 			page 25
 
 
  802 00a0 A4000000 		.4byte	0xa4
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjq8Y3F.s 			page 1
  856 0113 01       		.uleb128 0x1
  857 0114 9C       		.byte	0x9c
  858 0115 08       		.uleb128 0x8
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjq8Y3F.s 			page 26
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccJcNYLc.s 			page 26
 
 
  859 0116 B6000000 		.4byte	.LASF21
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjq8Y3F.s 			page 1
  913 0191 01       		.byte	0x1
  914 0192 3001     		.2byte	0x130
  915 0194 6B000000 		.4byte	0x6b
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjq8Y3F.s 			page 27
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccJcNYLc.s 			page 27
 
 
  916 0198 02       		.uleb128 0x2
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjq8Y3F.s 			page 1
  970 0210 02       		.uleb128 0x2
  971 0211 91       		.byte	0x91
  972 0212 76       		.sleb128 -10
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjq8Y3F.s 			page 28
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccJcNYLc.s 			page 28
 
 
  973 0213 00       		.byte	0
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjq8Y3F.s 			page 1
  1027              		.section	.debug_abbrev,"",%progbits
  1028              	.Ldebug_abbrev0:
  1029 0000 01       		.uleb128 0x1
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjq8Y3F.s 			page 29
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccJcNYLc.s 			page 29
 
 
  1030 0001 11       		.uleb128 0x11
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjq8Y3F.s 			page 1
  1084 0037 35       		.uleb128 0x35
  1085 0038 00       		.byte	0
  1086 0039 49       		.uleb128 0x49
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjq8Y3F.s 			page 30
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccJcNYLc.s 			page 30
 
 
  1087 003a 13       		.uleb128 0x13
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjq8Y3F.s 			page 1
  1141 0071 27       		.uleb128 0x27
  1142 0072 19       		.uleb128 0x19
  1143 0073 11       		.uleb128 0x11
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjq8Y3F.s 			page 31
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccJcNYLc.s 			page 31
 
 
  1144 0074 01       		.uleb128 0x1
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjq8Y3F.s 			page 1
  1198 00ad 13       		.uleb128 0x13
  1199 00ae 00       		.byte	0
  1200 00af 00       		.byte	0
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjq8Y3F.s 			page 32
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccJcNYLc.s 			page 32
 
 
  1201 00b0 0B       		.uleb128 0xb
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjq8Y3F.s 			page 1
  1255 00e7 01       		.uleb128 0x1
  1256 00e8 12       		.uleb128 0x12
  1257 00e9 06       		.uleb128 0x6
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjq8Y3F.s 			page 33
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccJcNYLc.s 			page 33
 
 
  1258 00ea 40       		.uleb128 0x40
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjq8Y3F.s 			page 1
  1312 0122 0B       		.uleb128 0xb
  1313 0123 49       		.uleb128 0x49
  1314 0124 13       		.uleb128 0x13
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjq8Y3F.s 			page 34
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccJcNYLc.s 			page 34
 
 
  1315 0125 3F       		.uleb128 0x3f
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjq8Y3F.s 			page 1
  1369 000c 20000000 		.4byte	.LFE1
  1370 0010 00000000 		.4byte	.LFB2
  1371 0014 20000000 		.4byte	.LFE2
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjq8Y3F.s 			page 35
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccJcNYLc.s 			page 35
 
 
  1372 0018 00000000 		.4byte	.LFB3
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjq8Y3F.s 			page 1
  1411      6F6400
  1412              	.LASF41:
  1413 0064 2E5C4765 		.ascii	".\\Generated_Source\\PSoC5\\Encoder_Right.c\000"
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjq8Y3F.s 			page 36
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccJcNYLc.s 			page 36
 
 
  1413      6E657261 
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjq8Y3F.s 			page 1
  1436              	.LASF27:
  1437 0129 696E7465 		.ascii	"interruptsMask\000"
  1437      72727570 
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjq8Y3F.s 			page 37
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccJcNYLc.s 			page 37
 
 
  1437      74734D61 
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjq8Y3F.s 			page 1
  1457 0248 456E636F 		.ascii	"Encoder_Right_ReadStatusRegister\000"
  1457      6465725F 
  1457      52696768 
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjq8Y3F.s 			page 38
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccJcNYLc.s 			page 38
 
 
  1457      745F5265 
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjq8Y3F.s 			page 1
  1479 032e 73686F72 		.ascii	"short int\000"
  1479      7420696E 
  1479      7400
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccjq8Y3F.s 			page 39
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccJcNYLc.s 			page 39
 
 
  1480              	.LASF29:

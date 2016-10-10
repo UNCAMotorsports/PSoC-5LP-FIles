@@ -73,7 +73,7 @@ void GetRPM(Encoder * encoder){
     */
     
     
-    if(encoder->sensor.number == 0){ //calculate left rpm
+    if(encoder->sensor.number == 6){ //calculate left rpm
         encoder->sensor.accumulator -= encoder->sensor.data[encoder->sensor.index];
         encoder->sensor.data[encoder->sensor.index] = Encoder_Left_ReadCounter();
         Encoder_Left_WriteCounter(0); //clear the pulse counter
@@ -85,7 +85,7 @@ void GetRPM(Encoder * encoder){
         leftEncTimer_WriteCounter(0); //clear the microsecond counter
     }
     
-    if(encoder->sensor.number == 1){ //calculate right rpm
+    if(encoder->sensor.number == 7){ //calculate right rpm
         encoder->sensor.accumulator -= encoder->sensor.data[encoder->sensor.index];
         encoder->sensor.data[encoder->sensor.index] = Encoder_Right_ReadCounter();
         Encoder_Right_WriteCounter(0); //clear the pulse counter
@@ -111,6 +111,12 @@ void GetRPM(Encoder * encoder){
 }
 
 void SensorSet(Sensor * sensor, uint8 number_set, uint8 window_set, uint16 rate_set){
+    
+    /* This functions sets up a sensor. It should be called during initialization after
+    *  the sensor objects have been initialized. It sets the filtering window, sensor number
+    *  and sampling rate.
+    */
+    
     sensor->number = number_set;
     sensor->window = window_set;
     sensor->rate = rate_set;
@@ -120,6 +126,11 @@ void SensorSet(Sensor * sensor, uint8 number_set, uint8 window_set, uint16 rate_
 }
 
 void PotInit(Pot * pot){
+    
+    /* This function initializes a Pot object. It clears the accumulator, mV, and data buffer.
+    *  It also clears the sensor flag and sets the sensor window index to 0.
+    */
+    
     int i = 0;
     pot->sensor.accumulator = 0;
     pot->mV = 0;
@@ -131,6 +142,11 @@ void PotInit(Pot * pot){
 }
 
 void EncoderInit(Encoder * encoder){
+    
+    /* Same thing as the PotInit function, except Encoder objects have an accumulator that's a 
+    *  float rather than an integer, so the Encoder accumulator is not inherited from the Sensor
+    *  object.
+    */
     int i = 0;
     encoder->accumulator = 0;
     encoder->rpm = 0;
@@ -142,98 +158,7 @@ void EncoderInit(Encoder * encoder){
 }
 
 void Config(void){
-    uint8 i = 0;
-    char ch = 0;
-    char config[7] = {'c','o','n','f','i','g','\0'};
-    char transmit[TRANSMIT_BUFFER_SIZE];
     
-    static char RxBuffer[32] = {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
-    static uint8 RxBufferIndex = 0;
-    while(UART_1_GetRxBufferSize()){
-	    //sprintf(transmit,"%d",UART_1_GetRxBufferSize());
-        //UART_1_PutString(transmit);
-        RxBuffer[RxBufferIndex] = UART_1_ReadRxData();
-        UART_1_PutChar(RxBuffer[RxBufferIndex]);
-        if(RxBufferIndex >= 31) RxBufferIndex = 0;
-        RxBufferIndex++;
-	}
-    
-    if((RxBuffer[RxBufferIndex-1] == EOM_CR) || (RxBuffer[RxBufferIndex-1] == EOM_LF)){
-        
-        RxBuffer[RxBufferIndex-1] = '\0';
-        /*
-        sprintf(transmit,"\n\r%d\n\r",RxBufferIndex);
-        UART_1_PutString(transmit);
-        UART_1_PutString(RxBuffer);
-        sprintf(transmit,"\n\r");
-        UART_1_PutString(transmit);
-        UART_1_PutString(config);
-        */
-        if(memcmp(RxBuffer,config,7)==0){
-            
-            EnableSave(&zero.sensor);
-            EnableSave(&one.sensor);
-            EnableSave(&two.sensor);
-            EnableSave(&three.sensor);
-            EnableSave(&four.sensor);
-            EnableSave(&five.sensor);
-            EnableSave(&left.sensor);
-            EnableSave(&right.sensor);
-            
-            SensorEnable(&zero.sensor,  FALSE);
-            SensorEnable(&one.sensor,   FALSE);
-            SensorEnable(&two.sensor,   FALSE);
-            SensorEnable(&three.sensor, FALSE);
-            SensorEnable(&four.sensor,  FALSE);
-            SensorEnable(&five.sensor,  FALSE);
-            SensorEnable(&left.sensor,  FALSE);
-            SensorEnable(&right.sensor, FALSE);
-            
-            //RxBufferIndex = 0;
-            for(i=0;i<32;i++){
-                RxBuffer[i] = 0;
-            }
-            
-            sprintf(transmit,"\n\rPrint current config? Y/N\n\r");
-            UART_1_PutString(transmit);
-            
-            //RxBufferIndex = 0;
-            //while(!UART_1_GetRxBufferSize());
-            while(1){
-                while(UART_1_GetRxBufferSize()){
-                    ch = UART_1_ReadRxData();
-                    UART_1_PutChar(ch);
-                    if((ch=='Y')||(ch=='y')){
-                        sprintf(transmit,"\n\rEnable, Rate, Window.\n\r");
-                        UART_1_PutString(transmit);
-                        sprintf(transmit,"\n\rSensor Zero:   %d, %d, %d\n\r",zero.sensor.enable,zero.sensor.rate,zero.sensor.window);
-                        UART_1_PutString(transmit);
-                        sprintf(transmit,"\n\rSensor One:    %d, %d, %d\n\r",one.sensor.enable,one.sensor.rate,one.sensor.window);
-                        UART_1_PutString(transmit);
-                        sprintf(transmit,"\n\rSensor Two:    %d, %d, %d\n\r",two.sensor.enable,two.sensor.rate,two.sensor.window);
-                        UART_1_PutString(transmit);
-                        sprintf(transmit,"\n\rSensor Three:  %d, %d, %d\n\r",three.sensor.enable,three.sensor.rate,three.sensor.window);
-                        UART_1_PutString(transmit);
-                        sprintf(transmit,"\n\rSensor Four:   %d, %d, %d\n\r",four.sensor.enable,four.sensor.rate,four.sensor.window);
-                        UART_1_PutString(transmit);
-                        sprintf(transmit,"\n\rSensor Five:   %d, %d, %d\n\r",five.sensor.enable,five.sensor.rate,five.sensor.window);
-                        UART_1_PutString(transmit);
-                        sprintf(transmit,"\n\rLeft Encoder:  %d, %d, %d\n\r",left.sensor.enable,left.sensor.rate,left.sensor.window);
-                        UART_1_PutString(transmit);
-                        sprintf(transmit,"\n\rRight Encoder: %d, %d, %d\n\r",right.sensor.enable,right.sensor.rate,right.sensor.window);
-                        UART_1_PutString(transmit);
-                        break;
-                }
- 
-            }
-                        
-        }
-        
-    }
-    
-    //RxBufferIndex++;
-
-    }
 }
 
 void CAN_Send(uint8 zero, uint8 one, uint8 two, uint8 three, uint8 four, uint8 five, uint8 six, uint8 seven){
@@ -247,23 +172,23 @@ void CAN_Send(uint8 zero, uint8 one, uint8 two, uint8 three, uint8 four, uint8 f
     TxMessage1[7] = seven;
 }
     
-void SetFlag(Sensor * sensor, bool flag_set){
+void SetFlag(Sensor * sensor, bool flag_set){ //Sets the execution flag for sensor sampling
     sensor->flag = flag_set;
 }
 
-uint16 GetRate(Sensor * sensor){
+uint16 GetRate(Sensor * sensor){ //Gets the sampling rate for a sensor to determine when to set the flag
     return INTERRUPT_FREQ/(sensor->rate);
 }
 
-void SensorEnable(Sensor * sensor, bool enable_set){
+void SensorEnable(Sensor * sensor, bool enable_set){ //Enables or disables a sensor
     sensor->enable = enable_set;
 }
 
-void EnableSave(Sensor * sensor){
+void EnableSave(Sensor * sensor){ //Saves the enable bit for a given sensor to temp_enable
     temp_enable[sensor->number] = sensor->enable;
 }
 
-void EnableRestore(Sensor * sensor){
+void EnableRestore(Sensor * sensor){ //Restores the enable setting for a sensor
     sensor->enable = temp_enable[sensor->number];
 }
 

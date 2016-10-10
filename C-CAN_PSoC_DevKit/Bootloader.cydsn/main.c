@@ -17,6 +17,8 @@ int main()
     
     PWM_1_Start();
     
+    CyDelay(1000);
+    
     Bootloader_Start();
 
     /* Place your initialization/startup code here (e.g. MyInst_Start()) */

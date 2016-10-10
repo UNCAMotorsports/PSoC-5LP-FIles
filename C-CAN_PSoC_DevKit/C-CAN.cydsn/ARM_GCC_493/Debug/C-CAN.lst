@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc1mFfdQ.s 			page 1
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc4ZZri1.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc1mFfdQ.s 			page 1
   12:.\C-CAN.c     **** 
   13:.\C-CAN.c     **** #include <C-CAN.h>
   14:.\C-CAN.c     **** 
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc1mFfdQ.s 			page 2
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc4ZZri1.s 			page 2
 
 
   15:.\C-CAN.c     **** void GetSample( Pot * pot){
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc1mFfdQ.s 			page 1
   81 003c 7B68     		ldr	r3, [r7, #4]
   82 003e C3F89420 		str	r2, [r3, #148]
   31:.\C-CAN.c     ****         pot->sensor.data[pot->sensor.index] = ADC_SAR_1_GetResult16();
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc1mFfdQ.s 			page 3
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc4ZZri1.s 			page 3
 
 
   83              		.loc 1 31 0
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc1mFfdQ.s 			page 1
  129              		.loc 1 39 0
  130 00a6 7B68     		ldr	r3, [r7, #4]
  131 00a8 D3F89430 		ldr	r3, [r3, #148]
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc1mFfdQ.s 			page 4
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc4ZZri1.s 			page 4
 
 
  132 00ac 7A68     		ldr	r2, [r7, #4]
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc1mFfdQ.s 			page 1
  171              		@ args = 0, pretend = 0, frame = 8
  172              		@ frame_needed = 1, uses_anonymous_args = 0
  173 0000 90B5     		push	{r4, r7, lr}
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc1mFfdQ.s 			page 5
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc4ZZri1.s 			page 5
 
 
  174              		.cfi_def_cfa_offset 12
@@ -271,11 +271,11 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc1mFfdQ.s 			page 1
   73:.\C-CAN.c     ****     */
   74:.\C-CAN.c     ****     
   75:.\C-CAN.c     ****     
-  76:.\C-CAN.c     ****     if(encoder->sensor.number == 0){ //calculate left rpm
+  76:.\C-CAN.c     ****     if(encoder->sensor.number == 6){ //calculate left rpm
  183              		.loc 1 76 0
  184 0008 7B68     		ldr	r3, [r7, #4]
  185 000a 93F89830 		ldrb	r3, [r3, #152]	@ zero_extendqisi2
- 186 000e 002B     		cmp	r3, #0
+ 186 000e 062B     		cmp	r3, #6
  187 0010 60D1     		bne	.L5
   77:.\C-CAN.c     ****         encoder->sensor.accumulator -= encoder->sensor.data[encoder->sensor.index];
  188              		.loc 1 77 0
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc1mFfdQ.s 			page 1
  204 0036 1C46     		mov	r4, r3
  205 0038 FFF7FEFF 		bl	Encoder_Left_ReadCounter
  206 003c 0346     		mov	r3, r0
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc1mFfdQ.s 			page 6
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc4ZZri1.s 			page 6
 
 
  207 003e 1946     		mov	r1, r3
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc1mFfdQ.s 			page 1
  255 00b2 0346     		mov	r3, r0
  256 00b4 1846     		mov	r0, r3
  257 00b6 FFF7FEFF 		bl	__aeabi_i2f
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc1mFfdQ.s 			page 7
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc4ZZri1.s 			page 7
 
 
  258 00ba 0346     		mov	r3, r0
@@ -376,11 +376,11 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc1mFfdQ.s 			page 1
  269              	.L5:
   86:.\C-CAN.c     ****     }
   87:.\C-CAN.c     ****     
-  88:.\C-CAN.c     ****     if(encoder->sensor.number == 1){ //calculate right rpm
+  88:.\C-CAN.c     ****     if(encoder->sensor.number == 7){ //calculate right rpm
  270              		.loc 1 88 0
  271 00d4 7B68     		ldr	r3, [r7, #4]
  272 00d6 93F89830 		ldrb	r3, [r3, #152]	@ zero_extendqisi2
- 273 00da 012B     		cmp	r3, #1
+ 273 00da 072B     		cmp	r3, #7
  274 00dc 60D1     		bne	.L6
   89:.\C-CAN.c     ****         encoder->sensor.accumulator -= encoder->sensor.data[encoder->sensor.index];
  275              		.loc 1 89 0
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc1mFfdQ.s 			page 1
  304              		.loc 1 92 0
  305 0120 7B68     		ldr	r3, [r7, #4]
  306 0122 D3F8A040 		ldr	r4, [r3, #160]	@ float
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc1mFfdQ.s 			page 8
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc4ZZri1.s 			page 8
 
 
  307 0126 7B68     		ldr	r3, [r7, #4]
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc1mFfdQ.s 			page 1
   97:.\C-CAN.c     ****     
   98:.\C-CAN.c     ****     encoder->sensor.index++;
  357              		.loc 1 98 0
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc1mFfdQ.s 			page 9
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc4ZZri1.s 			page 9
 
 
  358 01a0 7B68     		ldr	r3, [r7, #4]
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc1mFfdQ.s 			page 1
  399              		.type	SensorSet, %function
  400              	SensorSet:
  401              	.LFB65:
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc1mFfdQ.s 			page 10
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc4ZZri1.s 			page 10
 
 
  112:.\C-CAN.c     **** 
@@ -565,42 +565,48 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc1mFfdQ.s 			page 1
  421 0014 BB70     		strb	r3, [r7, #2]
  422 0016 1346     		mov	r3, r2	@ movhi
  423 0018 3B80     		strh	r3, [r7]	@ movhi
- 114:.\C-CAN.c     ****     sensor->number = number_set;
- 424              		.loc 1 114 0
+ 114:.\C-CAN.c     ****     
+ 115:.\C-CAN.c     ****     /* This functions sets up a sensor. It should be called during initialization after
+ 116:.\C-CAN.c     ****     *  the sensor objects have been initialized. It sets the filtering window, sensor number
+ 117:.\C-CAN.c     ****     *  and sampling rate.
+ 118:.\C-CAN.c     ****     */
+ 119:.\C-CAN.c     ****     
+ 120:.\C-CAN.c     ****     sensor->number = number_set;
+ 424              		.loc 1 120 0
  425 001a 7B68     		ldr	r3, [r7, #4]
  426 001c FA78     		ldrb	r2, [r7, #3]
  427 001e 83F89820 		strb	r2, [r3, #152]
- 115:.\C-CAN.c     ****     sensor->window = window_set;
- 428              		.loc 1 115 0
+ 121:.\C-CAN.c     ****     sensor->window = window_set;
+ 428              		.loc 1 121 0
  429 0022 7B68     		ldr	r3, [r7, #4]
  430 0024 BA78     		ldrb	r2, [r7, #2]
  431 0026 83F89A20 		strb	r2, [r3, #154]
- 116:.\C-CAN.c     ****     sensor->rate = rate_set;
- 432              		.loc 1 116 0
+ 122:.\C-CAN.c     ****     sensor->rate = rate_set;
+ 432              		.loc 1 122 0
  433 002a 7B68     		ldr	r3, [r7, #4]
  434 002c 3A88     		ldrh	r2, [r7]	@ movhi
  435 002e A3F89E20 		strh	r2, [r3, #158]	@ movhi
- 117:.\C-CAN.c     ****     if(window_set>=BUFF){
- 436              		.loc 1 117 0
+ 123:.\C-CAN.c     ****     if(window_set>=BUFF){
+ 436              		.loc 1 123 0
  437 0032 BB78     		ldrb	r3, [r7, #2]	@ zero_extendqisi2
  438 0034 3F2B     		cmp	r3, #63
  439 0036 03D9     		bls	.L10
- 118:.\C-CAN.c     ****         sensor->window = BUFF;
- 440              		.loc 1 118 0
+ 124:.\C-CAN.c     ****         sensor->window = BUFF;
+ 440              		.loc 1 124 0
  441 0038 7B68     		ldr	r3, [r7, #4]
  442 003a 4022     		movs	r2, #64
  443 003c 83F89A20 		strb	r2, [r3, #154]
  444              	.L10:
- 119:.\C-CAN.c     ****     }
- 120:.\C-CAN.c     **** }
- 445              		.loc 1 120 0
+ 125:.\C-CAN.c     ****     }
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc4ZZri1.s 			page 11
+
+
+ 126:.\C-CAN.c     **** }
+ 445              		.loc 1 126 0
  446 0040 0C37     		adds	r7, r7, #12
  447              		.cfi_def_cfa_offset 4
  448 0042 BD46     		mov	sp, r7
  449              		.cfi_def_cfa_register 13
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc1mFfdQ.s 			page 11
-
-
  450              		@ sp needed
  451 0044 5DF8047B 		ldr	r7, [sp], #4
  452              		.cfi_restore 7
@@ -617,9 +623,9 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc1mFfdQ.s 			page 1
  463              		.type	PotInit, %function
  464              	PotInit:
  465              	.LFB66:
- 121:.\C-CAN.c     **** 
- 122:.\C-CAN.c     **** void PotInit(Pot * pot){
- 466              		.loc 1 122 0
+ 127:.\C-CAN.c     **** 
+ 128:.\C-CAN.c     **** void PotInit(Pot * pot){
+ 466              		.loc 1 128 0
  467              		.cfi_startproc
  468              		@ args = 0, pretend = 0, frame = 16
  469              		@ frame_needed = 1, uses_anonymous_args = 0
@@ -632,41 +638,46 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc1mFfdQ.s 			page 1
  476 0004 00AF     		add	r7, sp, #0
  477              		.cfi_def_cfa_register 7
  478 0006 7860     		str	r0, [r7, #4]
- 123:.\C-CAN.c     ****     int i = 0;
- 479              		.loc 1 123 0
+ 129:.\C-CAN.c     ****     
+ 130:.\C-CAN.c     ****     /* This function initializes a Pot object. It clears the accumulator, mV, and data buffer.
+ 131:.\C-CAN.c     ****     *  It also clears the sensor flag and sets the sensor window index to 0.
+ 132:.\C-CAN.c     ****     */
+ 133:.\C-CAN.c     ****     
+ 134:.\C-CAN.c     ****     int i = 0;
+ 479              		.loc 1 134 0
  480 0008 0023     		movs	r3, #0
  481 000a FB60     		str	r3, [r7, #12]
- 124:.\C-CAN.c     ****     pot->sensor.accumulator = 0;
- 482              		.loc 1 124 0
+ 135:.\C-CAN.c     ****     pot->sensor.accumulator = 0;
+ 482              		.loc 1 135 0
  483 000c 7B68     		ldr	r3, [r7, #4]
  484 000e 0022     		movs	r2, #0
  485 0010 C3F89420 		str	r2, [r3, #148]
- 125:.\C-CAN.c     ****     pot->mV = 0;
- 486              		.loc 1 125 0
+ 136:.\C-CAN.c     ****     pot->mV = 0;
+ 486              		.loc 1 136 0
  487 0014 7B68     		ldr	r3, [r7, #4]
  488 0016 0022     		movs	r2, #0
  489 0018 A3F8A020 		strh	r2, [r3, #160]	@ movhi
- 126:.\C-CAN.c     ****     pot->sensor.index = 0;
- 490              		.loc 1 126 0
+ 137:.\C-CAN.c     ****     pot->sensor.index = 0;
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc4ZZri1.s 			page 12
+
+
+ 490              		.loc 1 137 0
  491 001c 7B68     		ldr	r3, [r7, #4]
  492 001e 0022     		movs	r2, #0
  493 0020 83F89920 		strb	r2, [r3, #153]
- 127:.\C-CAN.c     ****     pot->sensor.flag = 0;
- 494              		.loc 1 127 0
+ 138:.\C-CAN.c     ****     pot->sensor.flag = 0;
+ 494              		.loc 1 138 0
  495 0024 7B68     		ldr	r3, [r7, #4]
  496 0026 0022     		movs	r2, #0
  497 0028 83F89B20 		strb	r2, [r3, #155]
- 128:.\C-CAN.c     ****     for(i=0;i<BUFF;i++){
- 498              		.loc 1 128 0
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc1mFfdQ.s 			page 12
-
-
+ 139:.\C-CAN.c     ****     for(i=0;i<BUFF;i++){
+ 498              		.loc 1 139 0
  499 002c 0023     		movs	r3, #0
  500 002e FB60     		str	r3, [r7, #12]
  501 0030 09E0     		b	.L13
  502              	.L14:
- 129:.\C-CAN.c     ****         pot->sensor.data[i]=0;
- 503              		.loc 1 129 0 discriminator 3
+ 140:.\C-CAN.c     ****         pot->sensor.data[i]=0;
+ 503              		.loc 1 140 0 discriminator 3
  504 0032 7A68     		ldr	r2, [r7, #4]
  505 0034 FB68     		ldr	r3, [r7, #12]
  506 0036 0833     		adds	r3, r3, #8
@@ -674,20 +685,20 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc1mFfdQ.s 			page 1
  508 003a 1344     		add	r3, r3, r2
  509 003c 0022     		movs	r2, #0
  510 003e 5A80     		strh	r2, [r3, #2]	@ movhi
- 128:.\C-CAN.c     ****     for(i=0;i<BUFF;i++){
- 511              		.loc 1 128 0 discriminator 3
+ 139:.\C-CAN.c     ****     for(i=0;i<BUFF;i++){
+ 511              		.loc 1 139 0 discriminator 3
  512 0040 FB68     		ldr	r3, [r7, #12]
  513 0042 0133     		adds	r3, r3, #1
  514 0044 FB60     		str	r3, [r7, #12]
  515              	.L13:
- 128:.\C-CAN.c     ****     for(i=0;i<BUFF;i++){
- 516              		.loc 1 128 0 is_stmt 0 discriminator 1
+ 139:.\C-CAN.c     ****     for(i=0;i<BUFF;i++){
+ 516              		.loc 1 139 0 is_stmt 0 discriminator 1
  517 0046 FB68     		ldr	r3, [r7, #12]
  518 0048 3F2B     		cmp	r3, #63
  519 004a F2DD     		ble	.L14
- 130:.\C-CAN.c     ****     }
- 131:.\C-CAN.c     **** }
- 520              		.loc 1 131 0 is_stmt 1
+ 141:.\C-CAN.c     ****     }
+ 142:.\C-CAN.c     **** }
+ 520              		.loc 1 142 0 is_stmt 1
  521 004c 1437     		adds	r7, r7, #20
  522              		.cfi_def_cfa_offset 4
  523 004e BD46     		mov	sp, r7
@@ -707,10 +718,13 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc1mFfdQ.s 			page 1
  537              		.thumb_func
  538              		.type	EncoderInit, %function
  539              	EncoderInit:
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc4ZZri1.s 			page 13
+
+
  540              	.LFB67:
- 132:.\C-CAN.c     **** 
- 133:.\C-CAN.c     **** void EncoderInit(Encoder * encoder){
- 541              		.loc 1 133 0
+ 143:.\C-CAN.c     **** 
+ 144:.\C-CAN.c     **** void EncoderInit(Encoder * encoder){
+ 541              		.loc 1 144 0
  542              		.cfi_startproc
  543              		@ args = 0, pretend = 0, frame = 16
  544              		@ frame_needed = 1, uses_anonymous_args = 0
@@ -718,70 +732,72 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc1mFfdQ.s 			page 1
  546 0000 80B4     		push	{r7}
  547              		.cfi_def_cfa_offset 4
  548              		.cfi_offset 7, -4
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc1mFfdQ.s 			page 13
-
-
  549 0002 85B0     		sub	sp, sp, #20
  550              		.cfi_def_cfa_offset 24
  551 0004 00AF     		add	r7, sp, #0
  552              		.cfi_def_cfa_register 7
  553 0006 7860     		str	r0, [r7, #4]
- 134:.\C-CAN.c     ****     int i = 0;
- 554              		.loc 1 134 0
+ 145:.\C-CAN.c     ****     
+ 146:.\C-CAN.c     ****     /* Same thing as the PotInit function, except Encoder objects have an accumulator that's a 
+ 147:.\C-CAN.c     ****     *  float rather than an integer, so the Encoder accumulator is not inherited from the Sensor
+ 148:.\C-CAN.c     ****     *  object.
+ 149:.\C-CAN.c     ****     */
+ 150:.\C-CAN.c     ****     int i = 0;
+ 554              		.loc 1 150 0
  555 0008 0023     		movs	r3, #0
  556 000a FB60     		str	r3, [r7, #12]
- 135:.\C-CAN.c     ****     encoder->accumulator = 0;
- 557              		.loc 1 135 0
+ 151:.\C-CAN.c     ****     encoder->accumulator = 0;
+ 557              		.loc 1 151 0
  558 000c 7B68     		ldr	r3, [r7, #4]
  559 000e 4FF00002 		mov	r2, #0
  560 0012 C3F8A020 		str	r2, [r3, #160]	@ float
- 136:.\C-CAN.c     ****     encoder->rpm = 0;
- 561              		.loc 1 136 0
+ 152:.\C-CAN.c     ****     encoder->rpm = 0;
+ 561              		.loc 1 152 0
  562 0016 7B68     		ldr	r3, [r7, #4]
  563 0018 4FF00002 		mov	r2, #0
  564 001c C3F8A420 		str	r2, [r3, #164]	@ float
- 137:.\C-CAN.c     ****     encoder->sensor.index = 0;
- 565              		.loc 1 137 0
+ 153:.\C-CAN.c     ****     encoder->sensor.index = 0;
+ 565              		.loc 1 153 0
  566 0020 7B68     		ldr	r3, [r7, #4]
  567 0022 0022     		movs	r2, #0
  568 0024 83F89920 		strb	r2, [r3, #153]
- 138:.\C-CAN.c     ****     encoder->sensor.flag = 0;
- 569              		.loc 1 138 0
+ 154:.\C-CAN.c     ****     encoder->sensor.flag = 0;
+ 569              		.loc 1 154 0
  570 0028 7B68     		ldr	r3, [r7, #4]
  571 002a 0022     		movs	r2, #0
  572 002c 83F89B20 		strb	r2, [r3, #155]
- 139:.\C-CAN.c     ****     for(i=0;i<BUFF;i++){
- 573              		.loc 1 139 0
+ 155:.\C-CAN.c     ****     for(i=0;i<BUFF;i++){
+ 573              		.loc 1 155 0
  574 0030 0023     		movs	r3, #0
  575 0032 FB60     		str	r3, [r7, #12]
  576 0034 09E0     		b	.L16
  577              	.L17:
- 140:.\C-CAN.c     ****         encoder->sensor.data[i]=0;
- 578              		.loc 1 140 0 discriminator 3
+ 156:.\C-CAN.c     ****         encoder->sensor.data[i]=0;
+ 578              		.loc 1 156 0 discriminator 3
  579 0036 7A68     		ldr	r2, [r7, #4]
  580 0038 FB68     		ldr	r3, [r7, #12]
  581 003a 0833     		adds	r3, r3, #8
  582 003c 5B00     		lsls	r3, r3, #1
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc4ZZri1.s 			page 14
+
+
  583 003e 1344     		add	r3, r3, r2
  584 0040 0022     		movs	r2, #0
  585 0042 5A80     		strh	r2, [r3, #2]	@ movhi
- 139:.\C-CAN.c     ****     for(i=0;i<BUFF;i++){
- 586              		.loc 1 139 0 discriminator 3
+ 155:.\C-CAN.c     ****     for(i=0;i<BUFF;i++){
+ 586              		.loc 1 155 0 discriminator 3
  587 0044 FB68     		ldr	r3, [r7, #12]
  588 0046 0133     		adds	r3, r3, #1
  589 0048 FB60     		str	r3, [r7, #12]
  590              	.L16:
- 139:.\C-CAN.c     ****     for(i=0;i<BUFF;i++){
- 591              		.loc 1 139 0 is_stmt 0 discriminator 1
+ 155:.\C-CAN.c     ****     for(i=0;i<BUFF;i++){
+ 591              		.loc 1 155 0 is_stmt 0 discriminator 1
  592 004a FB68     		ldr	r3, [r7, #12]
  593 004c 3F2B     		cmp	r3, #63
  594 004e F2DD     		ble	.L17
- 141:.\C-CAN.c     ****     }
- 142:.\C-CAN.c     **** }
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc1mFfdQ.s 			page 14
-
-
- 595              		.loc 1 142 0 is_stmt 1
+ 157:.\C-CAN.c     ****     }
+ 158:.\C-CAN.c     **** }
+ 595              		.loc 1 158 0 is_stmt 1
  596 0050 1437     		adds	r7, r7, #20
  597              		.cfi_def_cfa_offset 4
  598 0052 BD46     		mov	sp, r7
@@ -794,2616 +810,1869 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc1mFfdQ.s 			page 1
  605              		.cfi_endproc
  606              	.LFE67:
  607              		.size	EncoderInit, .-EncoderInit
- 608 005a 00BF     		.section	.rodata
+ 608 005a 00BF     		.section	.text.Config,"ax",%progbits
  609              		.align	2
- 610              	.LC1:
- 611 0000 0A0D5072 		.ascii	"\012\015Print current config? Y/N\012\015\000"
- 611      696E7420 
- 611      63757272 
- 611      656E7420 
- 611      636F6E66 
- 612 001e 0000     		.align	2
- 613              	.LC2:
- 614 0020 0A0D456E 		.ascii	"\012\015Enable, Rate, Window.\012\015\000"
- 614      61626C65 
- 614      2C205261 
- 614      74652C20 
- 614      57696E64 
- 615 003a 0000     		.align	2
- 616              	.LC3:
- 617 003c 0A0D5365 		.ascii	"\012\015Sensor Zero:   %d, %d, %d\012\015\000"
- 617      6E736F72 
- 617      205A6572 
- 617      6F3A2020 
- 617      2025642C 
- 618 005a 0000     		.align	2
- 619              	.LC4:
- 620 005c 0A0D5365 		.ascii	"\012\015Sensor One:    %d, %d, %d\012\015\000"
- 620      6E736F72 
- 620      204F6E65 
- 620      3A202020 
- 620      2025642C 
- 621 007a 0000     		.align	2
- 622              	.LC5:
- 623 007c 0A0D5365 		.ascii	"\012\015Sensor Two:    %d, %d, %d\012\015\000"
- 623      6E736F72 
- 623      2054776F 
- 623      3A202020 
- 623      2025642C 
- 624 009a 0000     		.align	2
- 625              	.LC6:
- 626 009c 0A0D5365 		.ascii	"\012\015Sensor Three:  %d, %d, %d\012\015\000"
- 626      6E736F72 
- 626      20546872 
- 626      65653A20 
- 626      2025642C 
- 627 00ba 0000     		.align	2
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc1mFfdQ.s 			page 15
-
-
- 628              	.LC7:
- 629 00bc 0A0D5365 		.ascii	"\012\015Sensor Four:   %d, %d, %d\012\015\000"
- 629      6E736F72 
- 629      20466F75 
- 629      723A2020 
- 629      2025642C 
- 630 00da 0000     		.align	2
- 631              	.LC8:
- 632 00dc 0A0D5365 		.ascii	"\012\015Sensor Five:   %d, %d, %d\012\015\000"
- 632      6E736F72 
- 632      20466976 
- 632      653A2020 
- 632      2025642C 
- 633 00fa 0000     		.align	2
- 634              	.LC9:
- 635 00fc 0A0D4C65 		.ascii	"\012\015Left Encoder:  %d, %d, %d\012\015\000"
- 635      66742045 
- 635      6E636F64 
- 635      65723A20 
- 635      2025642C 
- 636 011a 0000     		.align	2
- 637              	.LC10:
- 638 011c 0A0D5269 		.ascii	"\012\015Right Encoder: %d, %d, %d\012\015\000"
- 638      67687420 
- 638      456E636F 
- 638      6465723A 
- 638      2025642C 
- 639 013a 0000     		.align	2
- 640              	.LC0:
- 641 013c 63       		.byte	99
- 642 013d 6F       		.byte	111
- 643 013e 6E       		.byte	110
- 644 013f 66       		.byte	102
- 645 0140 69       		.byte	105
- 646 0141 67       		.byte	103
- 647 0142 00       		.byte	0
- 648 0143 00       		.section	.text.Config,"ax",%progbits
- 649              		.align	2
- 650              		.global	Config
- 651              		.thumb
- 652              		.thumb_func
- 653              		.type	Config, %function
- 654              	Config:
- 655              	.LFB68:
- 143:.\C-CAN.c     **** 
- 144:.\C-CAN.c     **** void Config(void){
- 656              		.loc 1 144 0
- 657              		.cfi_startproc
- 658              		@ args = 0, pretend = 0, frame = 96
- 659              		@ frame_needed = 1, uses_anonymous_args = 0
- 660 0000 B0B5     		push	{r4, r5, r7, lr}
- 661              		.cfi_def_cfa_offset 16
- 662              		.cfi_offset 4, -16
- 663              		.cfi_offset 5, -12
- 664              		.cfi_offset 7, -8
- 665              		.cfi_offset 14, -4
- 666 0002 9AB0     		sub	sp, sp, #104
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc1mFfdQ.s 			page 16
-
-
- 667              		.cfi_def_cfa_offset 120
- 668 0004 02AF     		add	r7, sp, #8
- 669              		.cfi_def_cfa 7, 112
- 145:.\C-CAN.c     ****     uint8 i = 0;
- 670              		.loc 1 145 0
- 671 0006 0023     		movs	r3, #0
- 672 0008 87F85F30 		strb	r3, [r7, #95]
- 146:.\C-CAN.c     ****     char ch = 0;
- 673              		.loc 1 146 0
- 674 000c 0023     		movs	r3, #0
- 675 000e 87F85E30 		strb	r3, [r7, #94]
- 147:.\C-CAN.c     ****     char config[7] = {'c','o','n','f','i','g','\0'};
- 676              		.loc 1 147 0
- 677 0012 C94A     		ldr	r2, .L31
- 678 0014 07F15403 		add	r3, r7, #84
- 679 0018 1068     		ldr	r0, [r2]	@ unaligned
- 680 001a 1860     		str	r0, [r3]	@ unaligned
- 681 001c 9188     		ldrh	r1, [r2, #4]	@ unaligned
- 682 001e 9279     		ldrb	r2, [r2, #6]
- 683 0020 9980     		strh	r1, [r3, #4]	@ unaligned
- 684 0022 9A71     		strb	r2, [r3, #6]
- 148:.\C-CAN.c     ****     char transmit[TRANSMIT_BUFFER_SIZE];
- 149:.\C-CAN.c     ****     
- 150:.\C-CAN.c     ****     static char RxBuffer[32] = {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
- 151:.\C-CAN.c     ****     static uint8 RxBufferIndex = 0;
- 152:.\C-CAN.c     ****     while(UART_1_GetRxBufferSize()){
- 685              		.loc 1 152 0
- 686 0024 1DE0     		b	.L19
- 687              	.L21:
- 153:.\C-CAN.c     **** 	    //sprintf(transmit,"%d",UART_1_GetRxBufferSize());
- 154:.\C-CAN.c     ****         //UART_1_PutString(transmit);
- 155:.\C-CAN.c     ****         RxBuffer[RxBufferIndex] = UART_1_ReadRxData();
- 688              		.loc 1 155 0
- 689 0026 C54B     		ldr	r3, .L31+4
- 690 0028 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
- 691 002a 1C46     		mov	r4, r3
- 692 002c FFF7FEFF 		bl	UART_1_ReadRxData
- 693 0030 0346     		mov	r3, r0
- 694 0032 1A46     		mov	r2, r3
- 695 0034 C24B     		ldr	r3, .L31+8
- 696 0036 1A55     		strb	r2, [r3, r4]
- 156:.\C-CAN.c     ****         UART_1_PutChar(RxBuffer[RxBufferIndex]);
- 697              		.loc 1 156 0
- 698 0038 C04B     		ldr	r3, .L31+4
- 699 003a 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
- 700 003c 1A46     		mov	r2, r3
- 701 003e C04B     		ldr	r3, .L31+8
- 702 0040 9B5C     		ldrb	r3, [r3, r2]	@ zero_extendqisi2
- 703 0042 1846     		mov	r0, r3
- 704 0044 FFF7FEFF 		bl	UART_1_PutChar
- 157:.\C-CAN.c     ****         if(RxBufferIndex >= 31) RxBufferIndex = 0;
- 705              		.loc 1 157 0
- 706 0048 BC4B     		ldr	r3, .L31+4
- 707 004a 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
- 708 004c 1E2B     		cmp	r3, #30
- 709 004e 02D9     		bls	.L20
- 710              		.loc 1 157 0 is_stmt 0 discriminator 1
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc1mFfdQ.s 			page 17
-
-
- 711 0050 BA4B     		ldr	r3, .L31+4
- 712 0052 0022     		movs	r2, #0
- 713 0054 1A70     		strb	r2, [r3]
- 714              	.L20:
- 158:.\C-CAN.c     ****         RxBufferIndex++;
- 715              		.loc 1 158 0 is_stmt 1
- 716 0056 B94B     		ldr	r3, .L31+4
- 717 0058 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
- 718 005a 0133     		adds	r3, r3, #1
- 719 005c DAB2     		uxtb	r2, r3
- 720 005e B74B     		ldr	r3, .L31+4
- 721 0060 1A70     		strb	r2, [r3]
- 722              	.L19:
- 152:.\C-CAN.c     **** 	    //sprintf(transmit,"%d",UART_1_GetRxBufferSize());
- 723              		.loc 1 152 0
- 724 0062 FFF7FEFF 		bl	UART_1_GetRxBufferSize
- 725 0066 0346     		mov	r3, r0
- 726 0068 002B     		cmp	r3, #0
- 727 006a DCD1     		bne	.L21
- 159:.\C-CAN.c     **** 	}
- 160:.\C-CAN.c     ****     
- 161:.\C-CAN.c     ****     if((RxBuffer[RxBufferIndex-1] == EOM_CR) || (RxBuffer[RxBufferIndex-1] == EOM_LF)){
- 728              		.loc 1 161 0
- 729 006c B34B     		ldr	r3, .L31+4
- 730 006e 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
- 731 0070 013B     		subs	r3, r3, #1
- 732 0072 B34A     		ldr	r2, .L31+8
- 733 0074 D35C     		ldrb	r3, [r2, r3]	@ zero_extendqisi2
- 734 0076 0D2B     		cmp	r3, #13
- 735 0078 07D0     		beq	.L22
- 736              		.loc 1 161 0 is_stmt 0 discriminator 1
- 737 007a B04B     		ldr	r3, .L31+4
- 738 007c 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
- 739 007e 013B     		subs	r3, r3, #1
- 740 0080 AF4A     		ldr	r2, .L31+8
- 741 0082 D35C     		ldrb	r3, [r2, r3]	@ zero_extendqisi2
- 742 0084 0A2B     		cmp	r3, #10
- 743 0086 40F05381 		bne	.L18
- 744              	.L22:
- 162:.\C-CAN.c     ****         
- 163:.\C-CAN.c     ****         RxBuffer[RxBufferIndex-1] = '\0';
- 745              		.loc 1 163 0 is_stmt 1
- 746 008a AC4B     		ldr	r3, .L31+4
- 747 008c 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
- 748 008e 013B     		subs	r3, r3, #1
- 749 0090 AB4A     		ldr	r2, .L31+8
- 750 0092 0021     		movs	r1, #0
- 751 0094 D154     		strb	r1, [r2, r3]
- 164:.\C-CAN.c     ****         /*
- 165:.\C-CAN.c     ****         sprintf(transmit,"\n\r%d\n\r",RxBufferIndex);
- 166:.\C-CAN.c     ****         UART_1_PutString(transmit);
- 167:.\C-CAN.c     ****         UART_1_PutString(RxBuffer);
- 168:.\C-CAN.c     ****         sprintf(transmit,"\n\r");
- 169:.\C-CAN.c     ****         UART_1_PutString(transmit);
- 170:.\C-CAN.c     ****         UART_1_PutString(config);
- 171:.\C-CAN.c     ****         */
- 172:.\C-CAN.c     ****         if(memcmp(RxBuffer,config,7)==0){
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc1mFfdQ.s 			page 18
-
-
- 752              		.loc 1 172 0
- 753 0096 07F15403 		add	r3, r7, #84
- 754 009a A948     		ldr	r0, .L31+8
- 755 009c 1946     		mov	r1, r3
- 756 009e 0722     		movs	r2, #7
- 757 00a0 FFF7FEFF 		bl	memcmp
- 758 00a4 0346     		mov	r3, r0
- 759 00a6 002B     		cmp	r3, #0
- 760 00a8 40F04281 		bne	.L18
- 173:.\C-CAN.c     ****             
- 174:.\C-CAN.c     ****             EnableSave(&zero.sensor);
- 761              		.loc 1 174 0
- 762 00ac A548     		ldr	r0, .L31+12
- 763 00ae FFF7FEFF 		bl	EnableSave
- 175:.\C-CAN.c     ****             EnableSave(&one.sensor);
- 764              		.loc 1 175 0
- 765 00b2 A548     		ldr	r0, .L31+16
- 766 00b4 FFF7FEFF 		bl	EnableSave
- 176:.\C-CAN.c     ****             EnableSave(&two.sensor);
- 767              		.loc 1 176 0
- 768 00b8 A448     		ldr	r0, .L31+20
- 769 00ba FFF7FEFF 		bl	EnableSave
- 177:.\C-CAN.c     ****             EnableSave(&three.sensor);
- 770              		.loc 1 177 0
- 771 00be A448     		ldr	r0, .L31+24
- 772 00c0 FFF7FEFF 		bl	EnableSave
- 178:.\C-CAN.c     ****             EnableSave(&four.sensor);
- 773              		.loc 1 178 0
- 774 00c4 A348     		ldr	r0, .L31+28
- 775 00c6 FFF7FEFF 		bl	EnableSave
- 179:.\C-CAN.c     ****             EnableSave(&five.sensor);
- 776              		.loc 1 179 0
- 777 00ca A348     		ldr	r0, .L31+32
- 778 00cc FFF7FEFF 		bl	EnableSave
- 180:.\C-CAN.c     ****             EnableSave(&left.sensor);
- 779              		.loc 1 180 0
- 780 00d0 A248     		ldr	r0, .L31+36
- 781 00d2 FFF7FEFF 		bl	EnableSave
- 181:.\C-CAN.c     ****             EnableSave(&right.sensor);
- 782              		.loc 1 181 0
- 783 00d6 A248     		ldr	r0, .L31+40
- 784 00d8 FFF7FEFF 		bl	EnableSave
- 182:.\C-CAN.c     ****             
- 183:.\C-CAN.c     ****             SensorEnable(&zero.sensor,  FALSE);
- 785              		.loc 1 183 0
- 786 00dc 9948     		ldr	r0, .L31+12
- 787 00de 0021     		movs	r1, #0
- 788 00e0 FFF7FEFF 		bl	SensorEnable
- 184:.\C-CAN.c     ****             SensorEnable(&one.sensor,   FALSE);
- 789              		.loc 1 184 0
- 790 00e4 9848     		ldr	r0, .L31+16
- 791 00e6 0021     		movs	r1, #0
- 792 00e8 FFF7FEFF 		bl	SensorEnable
- 185:.\C-CAN.c     ****             SensorEnable(&two.sensor,   FALSE);
- 793              		.loc 1 185 0
- 794 00ec 9748     		ldr	r0, .L31+20
- 795 00ee 0021     		movs	r1, #0
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc1mFfdQ.s 			page 19
-
-
- 796 00f0 FFF7FEFF 		bl	SensorEnable
- 186:.\C-CAN.c     ****             SensorEnable(&three.sensor, FALSE);
- 797              		.loc 1 186 0
- 798 00f4 9648     		ldr	r0, .L31+24
- 799 00f6 0021     		movs	r1, #0
- 800 00f8 FFF7FEFF 		bl	SensorEnable
- 187:.\C-CAN.c     ****             SensorEnable(&four.sensor,  FALSE);
- 801              		.loc 1 187 0
- 802 00fc 9548     		ldr	r0, .L31+28
- 803 00fe 0021     		movs	r1, #0
- 804 0100 FFF7FEFF 		bl	SensorEnable
- 188:.\C-CAN.c     ****             SensorEnable(&five.sensor,  FALSE);
- 805              		.loc 1 188 0
- 806 0104 9448     		ldr	r0, .L31+32
- 807 0106 0021     		movs	r1, #0
- 808 0108 FFF7FEFF 		bl	SensorEnable
- 189:.\C-CAN.c     ****             SensorEnable(&left.sensor,  FALSE);
- 809              		.loc 1 189 0
- 810 010c 9348     		ldr	r0, .L31+36
- 811 010e 0021     		movs	r1, #0
- 812 0110 FFF7FEFF 		bl	SensorEnable
- 190:.\C-CAN.c     ****             SensorEnable(&right.sensor, FALSE);
- 813              		.loc 1 190 0
- 814 0114 9248     		ldr	r0, .L31+40
- 815 0116 0021     		movs	r1, #0
- 816 0118 FFF7FEFF 		bl	SensorEnable
- 191:.\C-CAN.c     ****             
- 192:.\C-CAN.c     ****             //RxBufferIndex = 0;
- 193:.\C-CAN.c     ****             for(i=0;i<32;i++){
- 817              		.loc 1 193 0
- 818 011c 0023     		movs	r3, #0
- 819 011e 87F85F30 		strb	r3, [r7, #95]
- 820 0122 09E0     		b	.L24
- 821              	.L25:
- 194:.\C-CAN.c     ****                 RxBuffer[i] = 0;
- 822              		.loc 1 194 0 discriminator 3
- 823 0124 97F85F30 		ldrb	r3, [r7, #95]	@ zero_extendqisi2
- 824 0128 854A     		ldr	r2, .L31+8
- 825 012a 0021     		movs	r1, #0
- 826 012c D154     		strb	r1, [r2, r3]
- 193:.\C-CAN.c     ****                 RxBuffer[i] = 0;
- 827              		.loc 1 193 0 discriminator 3
- 828 012e 97F85F30 		ldrb	r3, [r7, #95]	@ zero_extendqisi2
- 829 0132 0133     		adds	r3, r3, #1
- 830 0134 87F85F30 		strb	r3, [r7, #95]
- 831              	.L24:
- 193:.\C-CAN.c     ****                 RxBuffer[i] = 0;
- 832              		.loc 1 193 0 is_stmt 0 discriminator 1
- 833 0138 97F85F30 		ldrb	r3, [r7, #95]	@ zero_extendqisi2
- 834 013c 1F2B     		cmp	r3, #31
- 835 013e F1D9     		bls	.L25
- 195:.\C-CAN.c     ****             }
- 196:.\C-CAN.c     ****             
- 197:.\C-CAN.c     ****             sprintf(transmit,"\n\rPrint current config? Y/N\n\r");
- 836              		.loc 1 197 0 is_stmt 1
- 837 0140 3B1D     		adds	r3, r7, #4
- 838 0142 884A     		ldr	r2, .L31+44
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc1mFfdQ.s 			page 20
-
-
- 839 0144 1C46     		mov	r4, r3
- 840 0146 1546     		mov	r5, r2
- 841 0148 0FCD     		ldmia	r5!, {r0, r1, r2, r3}
- 842 014a 0FC4     		stmia	r4!, {r0, r1, r2, r3}
- 843 014c 95E80F00 		ldmia	r5, {r0, r1, r2, r3}
- 844 0150 07C4     		stmia	r4!, {r0, r1, r2}
- 845 0152 2380     		strh	r3, [r4]	@ movhi
- 198:.\C-CAN.c     ****             UART_1_PutString(transmit);
- 846              		.loc 1 198 0
- 847 0154 3B1D     		adds	r3, r7, #4
- 848 0156 1846     		mov	r0, r3
- 849 0158 FFF7FEFF 		bl	UART_1_PutString
- 850              	.L30:
- 199:.\C-CAN.c     ****             
- 200:.\C-CAN.c     ****             //RxBufferIndex = 0;
- 201:.\C-CAN.c     ****             //while(!UART_1_GetRxBufferSize());
- 202:.\C-CAN.c     ****             while(1){
- 203:.\C-CAN.c     ****                 while(UART_1_GetRxBufferSize()){
- 851              		.loc 1 203 0 discriminator 1
- 852 015c E1E0     		b	.L26
- 853              	.L29:
- 204:.\C-CAN.c     ****                     ch = UART_1_ReadRxData();
- 854              		.loc 1 204 0
- 855 015e FFF7FEFF 		bl	UART_1_ReadRxData
- 856 0162 0346     		mov	r3, r0
- 857 0164 87F85E30 		strb	r3, [r7, #94]
- 205:.\C-CAN.c     ****                     UART_1_PutChar(ch);
- 858              		.loc 1 205 0
- 859 0168 97F85E30 		ldrb	r3, [r7, #94]	@ zero_extendqisi2
- 860 016c 1846     		mov	r0, r3
- 861 016e FFF7FEFF 		bl	UART_1_PutChar
- 206:.\C-CAN.c     ****                     if((ch=='Y')||(ch=='y')){
- 862              		.loc 1 206 0
- 863 0172 97F85E30 		ldrb	r3, [r7, #94]	@ zero_extendqisi2
- 864 0176 592B     		cmp	r3, #89
- 865 0178 04D0     		beq	.L27
- 866              		.loc 1 206 0 is_stmt 0 discriminator 1
- 867 017a 97F85E30 		ldrb	r3, [r7, #94]	@ zero_extendqisi2
- 868 017e 792B     		cmp	r3, #121
- 869 0180 40F0CF80 		bne	.L26
- 870              	.L27:
- 207:.\C-CAN.c     ****                         sprintf(transmit,"\n\rEnable, Rate, Window.\n\r");
- 871              		.loc 1 207 0 is_stmt 1
- 872 0184 3B1D     		adds	r3, r7, #4
- 873 0186 784A     		ldr	r2, .L31+48
- 874 0188 1C46     		mov	r4, r3
- 875 018a 1546     		mov	r5, r2
- 876 018c 0FCD     		ldmia	r5!, {r0, r1, r2, r3}
- 877 018e 0FC4     		stmia	r4!, {r0, r1, r2, r3}
- 878 0190 95E80700 		ldmia	r5, {r0, r1, r2}
- 879 0194 03C4     		stmia	r4!, {r0, r1}
- 880 0196 2280     		strh	r2, [r4]	@ movhi
- 208:.\C-CAN.c     ****                         UART_1_PutString(transmit);
- 881              		.loc 1 208 0
- 882 0198 3B1D     		adds	r3, r7, #4
- 883 019a 1846     		mov	r0, r3
- 884 019c FFF7FEFF 		bl	UART_1_PutString
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc1mFfdQ.s 			page 21
-
-
- 209:.\C-CAN.c     ****                         sprintf(transmit,"\n\rSensor Zero:   %d, %d, %d\n\r",zero.sensor.enable,zer
- 885              		.loc 1 209 0
- 886 01a0 684B     		ldr	r3, .L31+12
- 887 01a2 93F89C30 		ldrb	r3, [r3, #156]	@ zero_extendqisi2
- 888 01a6 1D46     		mov	r5, r3
- 889 01a8 664B     		ldr	r3, .L31+12
- 890 01aa B3F89E30 		ldrh	r3, [r3, #158]
- 891 01ae 1C46     		mov	r4, r3
- 892 01b0 644B     		ldr	r3, .L31+12
- 893 01b2 93F89A30 		ldrb	r3, [r3, #154]	@ zero_extendqisi2
- 894 01b6 1A46     		mov	r2, r3
- 895 01b8 3B1D     		adds	r3, r7, #4
- 896 01ba 0092     		str	r2, [sp]
- 897 01bc 1846     		mov	r0, r3
- 898 01be 6B49     		ldr	r1, .L31+52
- 899 01c0 2A46     		mov	r2, r5
- 900 01c2 2346     		mov	r3, r4
- 901 01c4 FFF7FEFF 		bl	sprintf
- 210:.\C-CAN.c     ****                         UART_1_PutString(transmit);
- 902              		.loc 1 210 0
- 903 01c8 3B1D     		adds	r3, r7, #4
- 904 01ca 1846     		mov	r0, r3
- 905 01cc FFF7FEFF 		bl	UART_1_PutString
- 211:.\C-CAN.c     ****                         sprintf(transmit,"\n\rSensor One:    %d, %d, %d\n\r",one.sensor.enable,one.
- 906              		.loc 1 211 0
- 907 01d0 5D4B     		ldr	r3, .L31+16
- 908 01d2 93F89C30 		ldrb	r3, [r3, #156]	@ zero_extendqisi2
- 909 01d6 1D46     		mov	r5, r3
- 910 01d8 5B4B     		ldr	r3, .L31+16
- 911 01da B3F89E30 		ldrh	r3, [r3, #158]
- 912 01de 1C46     		mov	r4, r3
- 913 01e0 594B     		ldr	r3, .L31+16
- 914 01e2 93F89A30 		ldrb	r3, [r3, #154]	@ zero_extendqisi2
- 915 01e6 1A46     		mov	r2, r3
- 916 01e8 3B1D     		adds	r3, r7, #4
- 917 01ea 0092     		str	r2, [sp]
- 918 01ec 1846     		mov	r0, r3
- 919 01ee 6049     		ldr	r1, .L31+56
- 920 01f0 2A46     		mov	r2, r5
- 921 01f2 2346     		mov	r3, r4
- 922 01f4 FFF7FEFF 		bl	sprintf
- 212:.\C-CAN.c     ****                         UART_1_PutString(transmit);
- 923              		.loc 1 212 0
- 924 01f8 3B1D     		adds	r3, r7, #4
- 925 01fa 1846     		mov	r0, r3
- 926 01fc FFF7FEFF 		bl	UART_1_PutString
- 213:.\C-CAN.c     ****                         sprintf(transmit,"\n\rSensor Two:    %d, %d, %d\n\r",two.sensor.enable,two.
- 927              		.loc 1 213 0
- 928 0200 524B     		ldr	r3, .L31+20
- 929 0202 93F89C30 		ldrb	r3, [r3, #156]	@ zero_extendqisi2
- 930 0206 1D46     		mov	r5, r3
- 931 0208 504B     		ldr	r3, .L31+20
- 932 020a B3F89E30 		ldrh	r3, [r3, #158]
- 933 020e 1C46     		mov	r4, r3
- 934 0210 4E4B     		ldr	r3, .L31+20
- 935 0212 93F89A30 		ldrb	r3, [r3, #154]	@ zero_extendqisi2
- 936 0216 1A46     		mov	r2, r3
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc1mFfdQ.s 			page 22
-
-
- 937 0218 3B1D     		adds	r3, r7, #4
- 938 021a 0092     		str	r2, [sp]
- 939 021c 1846     		mov	r0, r3
- 940 021e 5549     		ldr	r1, .L31+60
- 941 0220 2A46     		mov	r2, r5
- 942 0222 2346     		mov	r3, r4
- 943 0224 FFF7FEFF 		bl	sprintf
- 214:.\C-CAN.c     ****                         UART_1_PutString(transmit);
- 944              		.loc 1 214 0
- 945 0228 3B1D     		adds	r3, r7, #4
- 946 022a 1846     		mov	r0, r3
- 947 022c FFF7FEFF 		bl	UART_1_PutString
- 215:.\C-CAN.c     ****                         sprintf(transmit,"\n\rSensor Three:  %d, %d, %d\n\r",three.sensor.enable,th
- 948              		.loc 1 215 0
- 949 0230 474B     		ldr	r3, .L31+24
- 950 0232 93F89C30 		ldrb	r3, [r3, #156]	@ zero_extendqisi2
- 951 0236 1D46     		mov	r5, r3
- 952 0238 454B     		ldr	r3, .L31+24
- 953 023a B3F89E30 		ldrh	r3, [r3, #158]
- 954 023e 1C46     		mov	r4, r3
- 955 0240 434B     		ldr	r3, .L31+24
- 956 0242 93F89A30 		ldrb	r3, [r3, #154]	@ zero_extendqisi2
- 957 0246 1A46     		mov	r2, r3
- 958 0248 3B1D     		adds	r3, r7, #4
- 959 024a 0092     		str	r2, [sp]
- 960 024c 1846     		mov	r0, r3
- 961 024e 4A49     		ldr	r1, .L31+64
- 962 0250 2A46     		mov	r2, r5
- 963 0252 2346     		mov	r3, r4
- 964 0254 FFF7FEFF 		bl	sprintf
- 216:.\C-CAN.c     ****                         UART_1_PutString(transmit);
- 965              		.loc 1 216 0
- 966 0258 3B1D     		adds	r3, r7, #4
- 967 025a 1846     		mov	r0, r3
- 968 025c FFF7FEFF 		bl	UART_1_PutString
- 217:.\C-CAN.c     ****                         sprintf(transmit,"\n\rSensor Four:   %d, %d, %d\n\r",four.sensor.enable,fou
- 969              		.loc 1 217 0
- 970 0260 3C4B     		ldr	r3, .L31+28
- 971 0262 93F89C30 		ldrb	r3, [r3, #156]	@ zero_extendqisi2
- 972 0266 1D46     		mov	r5, r3
- 973 0268 3A4B     		ldr	r3, .L31+28
- 974 026a B3F89E30 		ldrh	r3, [r3, #158]
- 975 026e 1C46     		mov	r4, r3
- 976 0270 384B     		ldr	r3, .L31+28
- 977 0272 93F89A30 		ldrb	r3, [r3, #154]	@ zero_extendqisi2
- 978 0276 1A46     		mov	r2, r3
- 979 0278 3B1D     		adds	r3, r7, #4
- 980 027a 0092     		str	r2, [sp]
- 981 027c 1846     		mov	r0, r3
- 982 027e 3F49     		ldr	r1, .L31+68
- 983 0280 2A46     		mov	r2, r5
- 984 0282 2346     		mov	r3, r4
- 985 0284 FFF7FEFF 		bl	sprintf
- 218:.\C-CAN.c     ****                         UART_1_PutString(transmit);
- 986              		.loc 1 218 0
- 987 0288 3B1D     		adds	r3, r7, #4
- 988 028a 1846     		mov	r0, r3
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc1mFfdQ.s 			page 23
-
-
- 989 028c FFF7FEFF 		bl	UART_1_PutString
- 219:.\C-CAN.c     ****                         sprintf(transmit,"\n\rSensor Five:   %d, %d, %d\n\r",five.sensor.enable,fiv
- 990              		.loc 1 219 0
- 991 0290 314B     		ldr	r3, .L31+32
- 992 0292 93F89C30 		ldrb	r3, [r3, #156]	@ zero_extendqisi2
- 993 0296 1D46     		mov	r5, r3
- 994 0298 2F4B     		ldr	r3, .L31+32
- 995 029a B3F89E30 		ldrh	r3, [r3, #158]
- 996 029e 1C46     		mov	r4, r3
- 997 02a0 2D4B     		ldr	r3, .L31+32
- 998 02a2 93F89A30 		ldrb	r3, [r3, #154]	@ zero_extendqisi2
- 999 02a6 1A46     		mov	r2, r3
- 1000 02a8 3B1D     		adds	r3, r7, #4
- 1001 02aa 0092     		str	r2, [sp]
- 1002 02ac 1846     		mov	r0, r3
- 1003 02ae 3449     		ldr	r1, .L31+72
- 1004 02b0 2A46     		mov	r2, r5
- 1005 02b2 2346     		mov	r3, r4
- 1006 02b4 FFF7FEFF 		bl	sprintf
- 220:.\C-CAN.c     ****                         UART_1_PutString(transmit);
- 1007              		.loc 1 220 0
- 1008 02b8 3B1D     		adds	r3, r7, #4
- 1009 02ba 1846     		mov	r0, r3
- 1010 02bc FFF7FEFF 		bl	UART_1_PutString
- 221:.\C-CAN.c     ****                         sprintf(transmit,"\n\rLeft Encoder:  %d, %d, %d\n\r",left.sensor.enable,lef
- 1011              		.loc 1 221 0
- 1012 02c0 264B     		ldr	r3, .L31+36
- 1013 02c2 93F89C30 		ldrb	r3, [r3, #156]	@ zero_extendqisi2
- 1014 02c6 1D46     		mov	r5, r3
- 1015 02c8 244B     		ldr	r3, .L31+36
- 1016 02ca B3F89E30 		ldrh	r3, [r3, #158]
- 1017 02ce 1C46     		mov	r4, r3
- 1018 02d0 224B     		ldr	r3, .L31+36
- 1019 02d2 93F89A30 		ldrb	r3, [r3, #154]	@ zero_extendqisi2
- 1020 02d6 1A46     		mov	r2, r3
- 1021 02d8 3B1D     		adds	r3, r7, #4
- 1022 02da 0092     		str	r2, [sp]
- 1023 02dc 1846     		mov	r0, r3
- 1024 02de 2949     		ldr	r1, .L31+76
- 1025 02e0 2A46     		mov	r2, r5
- 1026 02e2 2346     		mov	r3, r4
- 1027 02e4 FFF7FEFF 		bl	sprintf
- 222:.\C-CAN.c     ****                         UART_1_PutString(transmit);
- 1028              		.loc 1 222 0
- 1029 02e8 3B1D     		adds	r3, r7, #4
- 1030 02ea 1846     		mov	r0, r3
- 1031 02ec FFF7FEFF 		bl	UART_1_PutString
- 223:.\C-CAN.c     ****                         sprintf(transmit,"\n\rRight Encoder: %d, %d, %d\n\r",right.sensor.enable,ri
- 1032              		.loc 1 223 0
- 1033 02f0 1B4B     		ldr	r3, .L31+40
- 1034 02f2 93F89C30 		ldrb	r3, [r3, #156]	@ zero_extendqisi2
- 1035 02f6 1D46     		mov	r5, r3
- 1036 02f8 194B     		ldr	r3, .L31+40
- 1037 02fa B3F89E30 		ldrh	r3, [r3, #158]
- 1038 02fe 1C46     		mov	r4, r3
- 1039 0300 174B     		ldr	r3, .L31+40
- 1040 0302 93F89A30 		ldrb	r3, [r3, #154]	@ zero_extendqisi2
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc1mFfdQ.s 			page 24
-
-
- 1041 0306 1A46     		mov	r2, r3
- 1042 0308 3B1D     		adds	r3, r7, #4
- 1043 030a 0092     		str	r2, [sp]
- 1044 030c 1846     		mov	r0, r3
- 1045 030e 1E49     		ldr	r1, .L31+80
- 1046 0310 2A46     		mov	r2, r5
- 1047 0312 2346     		mov	r3, r4
- 1048 0314 FFF7FEFF 		bl	sprintf
- 224:.\C-CAN.c     ****                         UART_1_PutString(transmit);
- 1049              		.loc 1 224 0
- 1050 0318 3B1D     		adds	r3, r7, #4
- 1051 031a 1846     		mov	r0, r3
- 1052 031c FFF7FEFF 		bl	UART_1_PutString
- 225:.\C-CAN.c     ****                         break;
- 1053              		.loc 1 225 0
- 1054 0320 05E0     		b	.L28
- 1055              	.L26:
- 203:.\C-CAN.c     ****                     ch = UART_1_ReadRxData();
- 1056              		.loc 1 203 0
- 1057 0322 FFF7FEFF 		bl	UART_1_GetRxBufferSize
- 1058 0326 0346     		mov	r3, r0
- 1059 0328 002B     		cmp	r3, #0
- 1060 032a 7FF418AF 		bne	.L29
- 1061              	.L28:
- 226:.\C-CAN.c     ****                 }
- 227:.\C-CAN.c     ****  
- 228:.\C-CAN.c     ****             }
- 229:.\C-CAN.c     ****                         
- 230:.\C-CAN.c     ****         }
- 1062              		.loc 1 230 0
- 1063 032e 15E7     		b	.L30
- 1064              	.L18:
- 231:.\C-CAN.c     ****         
- 232:.\C-CAN.c     ****     }
- 233:.\C-CAN.c     ****     
- 234:.\C-CAN.c     ****     //RxBufferIndex++;
- 235:.\C-CAN.c     **** 
- 236:.\C-CAN.c     ****     }
- 237:.\C-CAN.c     **** }
- 1065              		.loc 1 237 0
- 1066 0330 6037     		adds	r7, r7, #96
- 1067              		.cfi_def_cfa_offset 16
- 1068 0332 BD46     		mov	sp, r7
- 1069              		.cfi_def_cfa_register 13
- 1070              		@ sp needed
- 1071 0334 B0BD     		pop	{r4, r5, r7, pc}
- 1072              	.L32:
- 1073 0336 00BF     		.align	2
- 1074              	.L31:
- 1075 0338 3C010000 		.word	.LC0
- 1076 033c 08000000 		.word	RxBufferIndex.7377
- 1077 0340 0C000000 		.word	RxBuffer.7376
- 1078 0344 00000000 		.word	zero
- 1079 0348 00000000 		.word	one
- 1080 034c 00000000 		.word	two
- 1081 0350 00000000 		.word	three
- 1082 0354 00000000 		.word	four
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc1mFfdQ.s 			page 25
-
-
- 1083 0358 00000000 		.word	five
- 1084 035c 00000000 		.word	left
- 1085 0360 00000000 		.word	right
- 1086 0364 00000000 		.word	.LC1
- 1087 0368 20000000 		.word	.LC2
- 1088 036c 3C000000 		.word	.LC3
- 1089 0370 5C000000 		.word	.LC4
- 1090 0374 7C000000 		.word	.LC5
- 1091 0378 9C000000 		.word	.LC6
- 1092 037c BC000000 		.word	.LC7
- 1093 0380 DC000000 		.word	.LC8
- 1094 0384 FC000000 		.word	.LC9
- 1095 0388 1C010000 		.word	.LC10
- 1096              		.cfi_endproc
- 1097              	.LFE68:
- 1098              		.size	Config, .-Config
- 1099              		.section	.text.CAN_Send,"ax",%progbits
- 1100              		.align	2
- 1101              		.global	CAN_Send
- 1102              		.thumb
- 1103              		.thumb_func
- 1104              		.type	CAN_Send, %function
- 1105              	CAN_Send:
- 1106              	.LFB69:
- 238:.\C-CAN.c     **** 
- 239:.\C-CAN.c     **** void CAN_Send(uint8 zero, uint8 one, uint8 two, uint8 three, uint8 four, uint8 five, uint8 six, uin
- 1107              		.loc 1 239 0
- 1108              		.cfi_startproc
- 1109              		@ args = 16, pretend = 0, frame = 8
- 1110              		@ frame_needed = 1, uses_anonymous_args = 0
- 1111              		@ link register save eliminated.
- 1112 0000 90B4     		push	{r4, r7}
- 1113              		.cfi_def_cfa_offset 8
- 1114              		.cfi_offset 4, -8
- 1115              		.cfi_offset 7, -4
- 1116 0002 82B0     		sub	sp, sp, #8
- 1117              		.cfi_def_cfa_offset 16
- 1118 0004 00AF     		add	r7, sp, #0
- 1119              		.cfi_def_cfa_register 7
- 1120 0006 0446     		mov	r4, r0
- 1121 0008 0846     		mov	r0, r1
- 1122 000a 1146     		mov	r1, r2
- 1123 000c 1A46     		mov	r2, r3
- 1124 000e 2346     		mov	r3, r4
- 1125 0010 FB71     		strb	r3, [r7, #7]
- 1126 0012 0346     		mov	r3, r0
- 1127 0014 BB71     		strb	r3, [r7, #6]
- 1128 0016 0B46     		mov	r3, r1
- 1129 0018 7B71     		strb	r3, [r7, #5]
- 1130 001a 1346     		mov	r3, r2
- 1131 001c 3B71     		strb	r3, [r7, #4]
- 240:.\C-CAN.c     ****     TxMessage1[0] = zero;
- 1132              		.loc 1 240 0
- 1133 001e 0E4A     		ldr	r2, .L34
- 1134 0020 FB79     		ldrb	r3, [r7, #7]
- 1135 0022 1370     		strb	r3, [r2]
- 241:.\C-CAN.c     ****     TxMessage1[1] = one;
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc1mFfdQ.s 			page 26
-
-
- 1136              		.loc 1 241 0
- 1137 0024 0C4A     		ldr	r2, .L34
- 1138 0026 BB79     		ldrb	r3, [r7, #6]
- 1139 0028 5370     		strb	r3, [r2, #1]
- 242:.\C-CAN.c     ****     TxMessage1[2] = two;
- 1140              		.loc 1 242 0
- 1141 002a 0B4A     		ldr	r2, .L34
- 1142 002c 7B79     		ldrb	r3, [r7, #5]
- 1143 002e 9370     		strb	r3, [r2, #2]
- 243:.\C-CAN.c     ****     TxMessage1[3] = three;
- 1144              		.loc 1 243 0
- 1145 0030 094A     		ldr	r2, .L34
- 1146 0032 3B79     		ldrb	r3, [r7, #4]
- 1147 0034 D370     		strb	r3, [r2, #3]
- 244:.\C-CAN.c     ****     TxMessage1[4] = four;
- 1148              		.loc 1 244 0
- 1149 0036 084A     		ldr	r2, .L34
- 1150 0038 3B7C     		ldrb	r3, [r7, #16]
- 1151 003a 1371     		strb	r3, [r2, #4]
- 245:.\C-CAN.c     ****     TxMessage1[5] = five;
- 1152              		.loc 1 245 0
- 1153 003c 064A     		ldr	r2, .L34
- 1154 003e 3B7D     		ldrb	r3, [r7, #20]
- 1155 0040 5371     		strb	r3, [r2, #5]
- 246:.\C-CAN.c     ****     TxMessage1[6] = six;
- 1156              		.loc 1 246 0
- 1157 0042 054A     		ldr	r2, .L34
- 1158 0044 3B7E     		ldrb	r3, [r7, #24]
- 1159 0046 9371     		strb	r3, [r2, #6]
- 247:.\C-CAN.c     ****     TxMessage1[7] = seven;
- 1160              		.loc 1 247 0
- 1161 0048 034A     		ldr	r2, .L34
- 1162 004a 3B7F     		ldrb	r3, [r7, #28]
- 1163 004c D371     		strb	r3, [r2, #7]
- 248:.\C-CAN.c     **** }
- 1164              		.loc 1 248 0
- 1165 004e 0837     		adds	r7, r7, #8
- 1166              		.cfi_def_cfa_offset 8
- 1167 0050 BD46     		mov	sp, r7
- 1168              		.cfi_def_cfa_register 13
- 1169              		@ sp needed
- 1170 0052 90BC     		pop	{r4, r7}
- 1171              		.cfi_restore 7
- 1172              		.cfi_restore 4
- 1173              		.cfi_def_cfa_offset 0
- 1174 0054 7047     		bx	lr
- 1175              	.L35:
- 1176 0056 00BF     		.align	2
- 1177              	.L34:
- 1178 0058 00000000 		.word	TxMessage1
- 1179              		.cfi_endproc
- 1180              	.LFE69:
- 1181              		.size	CAN_Send, .-CAN_Send
- 1182              		.section	.text.SetFlag,"ax",%progbits
- 1183              		.align	2
- 1184              		.global	SetFlag
- 1185              		.thumb
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc1mFfdQ.s 			page 27
-
-
- 1186              		.thumb_func
- 1187              		.type	SetFlag, %function
- 1188              	SetFlag:
- 1189              	.LFB70:
- 249:.\C-CAN.c     ****     
- 250:.\C-CAN.c     **** void SetFlag(Sensor * sensor, bool flag_set){
- 1190              		.loc 1 250 0
- 1191              		.cfi_startproc
- 1192              		@ args = 0, pretend = 0, frame = 8
- 1193              		@ frame_needed = 1, uses_anonymous_args = 0
- 1194              		@ link register save eliminated.
- 1195 0000 80B4     		push	{r7}
- 1196              		.cfi_def_cfa_offset 4
- 1197              		.cfi_offset 7, -4
- 1198 0002 83B0     		sub	sp, sp, #12
- 1199              		.cfi_def_cfa_offset 16
- 1200 0004 00AF     		add	r7, sp, #0
- 1201              		.cfi_def_cfa_register 7
- 1202 0006 7860     		str	r0, [r7, #4]
- 1203 0008 0B46     		mov	r3, r1
- 1204 000a FB70     		strb	r3, [r7, #3]
- 251:.\C-CAN.c     ****     sensor->flag = flag_set;
- 1205              		.loc 1 251 0
- 1206 000c 7B68     		ldr	r3, [r7, #4]
- 1207 000e FA78     		ldrb	r2, [r7, #3]
- 1208 0010 83F89B20 		strb	r2, [r3, #155]
- 252:.\C-CAN.c     **** }
- 1209              		.loc 1 252 0
- 1210 0014 0C37     		adds	r7, r7, #12
- 1211              		.cfi_def_cfa_offset 4
- 1212 0016 BD46     		mov	sp, r7
- 1213              		.cfi_def_cfa_register 13
- 1214              		@ sp needed
- 1215 0018 5DF8047B 		ldr	r7, [sp], #4
- 1216              		.cfi_restore 7
- 1217              		.cfi_def_cfa_offset 0
- 1218 001c 7047     		bx	lr
- 1219              		.cfi_endproc
- 1220              	.LFE70:
- 1221              		.size	SetFlag, .-SetFlag
- 1222 001e 00BF     		.section	.text.GetRate,"ax",%progbits
- 1223              		.align	2
- 1224              		.global	GetRate
- 1225              		.thumb
- 1226              		.thumb_func
- 1227              		.type	GetRate, %function
- 1228              	GetRate:
- 1229              	.LFB71:
- 253:.\C-CAN.c     **** 
- 254:.\C-CAN.c     **** uint16 GetRate(Sensor * sensor){
- 1230              		.loc 1 254 0
- 1231              		.cfi_startproc
- 1232              		@ args = 0, pretend = 0, frame = 8
- 1233              		@ frame_needed = 1, uses_anonymous_args = 0
- 1234              		@ link register save eliminated.
- 1235 0000 80B4     		push	{r7}
- 1236              		.cfi_def_cfa_offset 4
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc1mFfdQ.s 			page 28
-
-
- 1237              		.cfi_offset 7, -4
- 1238 0002 83B0     		sub	sp, sp, #12
- 1239              		.cfi_def_cfa_offset 16
- 1240 0004 00AF     		add	r7, sp, #0
- 1241              		.cfi_def_cfa_register 7
- 1242 0006 7860     		str	r0, [r7, #4]
- 255:.\C-CAN.c     ****     return INTERRUPT_FREQ/(sensor->rate);
- 1243              		.loc 1 255 0
- 1244 0008 7B68     		ldr	r3, [r7, #4]
- 1245 000a B3F89E30 		ldrh	r3, [r3, #158]
- 1246 000e 4CF25032 		movw	r2, #50000
- 1247 0012 B2FBF3F3 		udiv	r3, r2, r3
- 1248 0016 9BB2     		uxth	r3, r3
- 256:.\C-CAN.c     **** }
- 1249              		.loc 1 256 0
- 1250 0018 1846     		mov	r0, r3
- 1251 001a 0C37     		adds	r7, r7, #12
- 1252              		.cfi_def_cfa_offset 4
- 1253 001c BD46     		mov	sp, r7
- 1254              		.cfi_def_cfa_register 13
- 1255              		@ sp needed
- 1256 001e 5DF8047B 		ldr	r7, [sp], #4
- 1257              		.cfi_restore 7
- 1258              		.cfi_def_cfa_offset 0
- 1259 0022 7047     		bx	lr
- 1260              		.cfi_endproc
- 1261              	.LFE71:
- 1262              		.size	GetRate, .-GetRate
- 1263              		.section	.text.SensorEnable,"ax",%progbits
- 1264              		.align	2
- 1265              		.global	SensorEnable
- 1266              		.thumb
- 1267              		.thumb_func
- 1268              		.type	SensorEnable, %function
- 1269              	SensorEnable:
- 1270              	.LFB72:
- 257:.\C-CAN.c     **** 
- 258:.\C-CAN.c     **** void SensorEnable(Sensor * sensor, bool enable_set){
- 1271              		.loc 1 258 0
- 1272              		.cfi_startproc
- 1273              		@ args = 0, pretend = 0, frame = 8
- 1274              		@ frame_needed = 1, uses_anonymous_args = 0
- 1275              		@ link register save eliminated.
- 1276 0000 80B4     		push	{r7}
- 1277              		.cfi_def_cfa_offset 4
- 1278              		.cfi_offset 7, -4
- 1279 0002 83B0     		sub	sp, sp, #12
- 1280              		.cfi_def_cfa_offset 16
- 1281 0004 00AF     		add	r7, sp, #0
- 1282              		.cfi_def_cfa_register 7
- 1283 0006 7860     		str	r0, [r7, #4]
- 1284 0008 0B46     		mov	r3, r1
- 1285 000a FB70     		strb	r3, [r7, #3]
- 259:.\C-CAN.c     ****     sensor->enable = enable_set;
- 1286              		.loc 1 259 0
- 1287 000c 7B68     		ldr	r3, [r7, #4]
- 1288 000e FA78     		ldrb	r2, [r7, #3]
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc1mFfdQ.s 			page 29
-
-
- 1289 0010 83F89C20 		strb	r2, [r3, #156]
- 260:.\C-CAN.c     **** }
- 1290              		.loc 1 260 0
- 1291 0014 0C37     		adds	r7, r7, #12
- 1292              		.cfi_def_cfa_offset 4
- 1293 0016 BD46     		mov	sp, r7
- 1294              		.cfi_def_cfa_register 13
- 1295              		@ sp needed
- 1296 0018 5DF8047B 		ldr	r7, [sp], #4
- 1297              		.cfi_restore 7
- 1298              		.cfi_def_cfa_offset 0
- 1299 001c 7047     		bx	lr
- 1300              		.cfi_endproc
- 1301              	.LFE72:
- 1302              		.size	SensorEnable, .-SensorEnable
- 1303 001e 00BF     		.section	.text.EnableSave,"ax",%progbits
- 1304              		.align	2
- 1305              		.global	EnableSave
- 1306              		.thumb
- 1307              		.thumb_func
- 1308              		.type	EnableSave, %function
- 1309              	EnableSave:
- 1310              	.LFB73:
- 261:.\C-CAN.c     **** 
- 262:.\C-CAN.c     **** void EnableSave(Sensor * sensor){
- 1311              		.loc 1 262 0
- 1312              		.cfi_startproc
- 1313              		@ args = 0, pretend = 0, frame = 8
- 1314              		@ frame_needed = 1, uses_anonymous_args = 0
- 1315              		@ link register save eliminated.
- 1316 0000 80B4     		push	{r7}
- 1317              		.cfi_def_cfa_offset 4
- 1318              		.cfi_offset 7, -4
- 1319 0002 83B0     		sub	sp, sp, #12
- 1320              		.cfi_def_cfa_offset 16
- 1321 0004 00AF     		add	r7, sp, #0
- 1322              		.cfi_def_cfa_register 7
- 1323 0006 7860     		str	r0, [r7, #4]
- 263:.\C-CAN.c     ****     temp_enable[sensor->number] = sensor->enable;
- 1324              		.loc 1 263 0
- 1325 0008 7B68     		ldr	r3, [r7, #4]
- 1326 000a 93F89830 		ldrb	r3, [r3, #152]	@ zero_extendqisi2
- 1327 000e 1A46     		mov	r2, r3
- 1328 0010 7B68     		ldr	r3, [r7, #4]
- 1329 0012 93F89C10 		ldrb	r1, [r3, #156]	@ zero_extendqisi2
- 1330 0016 034B     		ldr	r3, .L41
- 1331 0018 9954     		strb	r1, [r3, r2]
- 264:.\C-CAN.c     **** }
- 1332              		.loc 1 264 0
- 1333 001a 0C37     		adds	r7, r7, #12
- 1334              		.cfi_def_cfa_offset 4
- 1335 001c BD46     		mov	sp, r7
- 1336              		.cfi_def_cfa_register 13
- 1337              		@ sp needed
- 1338 001e 5DF8047B 		ldr	r7, [sp], #4
- 1339              		.cfi_restore 7
- 1340              		.cfi_def_cfa_offset 0
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc1mFfdQ.s 			page 30
-
-
- 1341 0022 7047     		bx	lr
- 1342              	.L42:
- 1343              		.align	2
- 1344              	.L41:
- 1345 0024 00000000 		.word	temp_enable
- 1346              		.cfi_endproc
- 1347              	.LFE73:
- 1348              		.size	EnableSave, .-EnableSave
- 1349              		.section	.text.EnableRestore,"ax",%progbits
- 1350              		.align	2
- 1351              		.global	EnableRestore
- 1352              		.thumb
- 1353              		.thumb_func
- 1354              		.type	EnableRestore, %function
- 1355              	EnableRestore:
- 1356              	.LFB74:
- 265:.\C-CAN.c     **** 
- 266:.\C-CAN.c     **** void EnableRestore(Sensor * sensor){
- 1357              		.loc 1 266 0
- 1358              		.cfi_startproc
- 1359              		@ args = 0, pretend = 0, frame = 8
- 1360              		@ frame_needed = 1, uses_anonymous_args = 0
- 1361              		@ link register save eliminated.
- 1362 0000 80B4     		push	{r7}
- 1363              		.cfi_def_cfa_offset 4
- 1364              		.cfi_offset 7, -4
- 1365 0002 83B0     		sub	sp, sp, #12
- 1366              		.cfi_def_cfa_offset 16
- 1367 0004 00AF     		add	r7, sp, #0
- 1368              		.cfi_def_cfa_register 7
- 1369 0006 7860     		str	r0, [r7, #4]
- 267:.\C-CAN.c     ****     sensor->enable = temp_enable[sensor->number];
- 1370              		.loc 1 267 0
- 1371 0008 7B68     		ldr	r3, [r7, #4]
- 1372 000a 93F89830 		ldrb	r3, [r3, #152]	@ zero_extendqisi2
- 1373 000e 1A46     		mov	r2, r3
- 1374 0010 044B     		ldr	r3, .L44
- 1375 0012 9A5C     		ldrb	r2, [r3, r2]	@ zero_extendqisi2
- 1376 0014 7B68     		ldr	r3, [r7, #4]
- 1377 0016 83F89C20 		strb	r2, [r3, #156]
- 268:.\C-CAN.c     **** }
- 1378              		.loc 1 268 0
- 1379 001a 0C37     		adds	r7, r7, #12
- 1380              		.cfi_def_cfa_offset 4
- 1381 001c BD46     		mov	sp, r7
- 1382              		.cfi_def_cfa_register 13
- 1383              		@ sp needed
- 1384 001e 5DF8047B 		ldr	r7, [sp], #4
- 1385              		.cfi_restore 7
- 1386              		.cfi_def_cfa_offset 0
- 1387 0022 7047     		bx	lr
- 1388              	.L45:
- 1389              		.align	2
- 1390              	.L44:
- 1391 0024 00000000 		.word	temp_enable
- 1392              		.cfi_endproc
- 1393              	.LFE74:
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc1mFfdQ.s 			page 31
-
-
- 1394              		.size	EnableRestore, .-EnableRestore
- 1395              		.bss
- 1396              	RxBufferIndex.7377:
- 1397 0008 00       		.space	1
- 1398 0009 000000   		.align	2
- 1399              	RxBuffer.7376:
- 1400 000c 00000000 		.space	32
- 1400      00000000 
- 1400      00000000 
- 1400      00000000 
- 1400      00000000 
- 1401              		.text
- 1402              	.Letext0:
- 1403              		.file 2 "c:\\program files (x86)\\cypress\\psoc creator\\3.3\\psoc creator\\import\\gnu\\arm\\4.9.
- 1404              		.file 3 "c:\\program files (x86)\\cypress\\psoc creator\\3.3\\psoc creator\\import\\gnu\\arm\\4.9.
- 1405              		.file 4 "Generated_Source\\PSoC5/cytypes.h"
- 1406              		.file 5 "./C-CAN.h"
- 1407              		.file 6 "Generated_Source\\PSoC5/core_cm3.h"
- 1408              		.section	.debug_info,"",%progbits
- 1409              	.Ldebug_info0:
- 1410 0000 F9050000 		.4byte	0x5f9
- 1411 0004 0400     		.2byte	0x4
- 1412 0006 00000000 		.4byte	.Ldebug_abbrev0
- 1413 000a 04       		.byte	0x4
- 1414 000b 01       		.uleb128 0x1
- 1415 000c C0000000 		.4byte	.LASF69
- 1416 0010 01       		.byte	0x1
- 1417 0011 67010000 		.4byte	.LASF70
- 1418 0015 BA020000 		.4byte	.LASF71
- 1419 0019 00000000 		.4byte	.Ldebug_ranges0+0
- 1420 001d 00000000 		.4byte	0
- 1421 0021 00000000 		.4byte	.Ldebug_line0
- 1422 0025 02       		.uleb128 0x2
- 1423 0026 01       		.byte	0x1
- 1424 0027 06       		.byte	0x6
- 1425 0028 70000000 		.4byte	.LASF0
- 1426 002c 02       		.uleb128 0x2
- 1427 002d 01       		.byte	0x1
- 1428 002e 08       		.byte	0x8
- 1429 002f 9F010000 		.4byte	.LASF1
- 1430 0033 02       		.uleb128 0x2
- 1431 0034 02       		.byte	0x2
- 1432 0035 05       		.byte	0x5
- 1433 0036 17000000 		.4byte	.LASF2
- 1434 003a 02       		.uleb128 0x2
- 1435 003b 02       		.byte	0x2
- 1436 003c 07       		.byte	0x7
- 1437 003d 18020000 		.4byte	.LASF3
- 1438 0041 03       		.uleb128 0x3
- 1439 0042 89020000 		.4byte	.LASF9
- 1440 0046 02       		.byte	0x2
- 1441 0047 3F       		.byte	0x3f
- 1442 0048 4C000000 		.4byte	0x4c
- 1443 004c 02       		.uleb128 0x2
- 1444 004d 04       		.byte	0x4
- 1445 004e 05       		.byte	0x5
- 1446 004f 30020000 		.4byte	.LASF4
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc1mFfdQ.s 			page 32
-
-
- 1447 0053 02       		.uleb128 0x2
- 1448 0054 04       		.byte	0x4
- 1449 0055 07       		.byte	0x7
- 1450 0056 55020000 		.4byte	.LASF5
- 1451 005a 02       		.uleb128 0x2
- 1452 005b 08       		.byte	0x8
- 1453 005c 05       		.byte	0x5
- 1454 005d A3000000 		.4byte	.LASF6
- 1455 0061 02       		.uleb128 0x2
- 1456 0062 08       		.byte	0x8
- 1457 0063 07       		.byte	0x7
- 1458 0064 C8010000 		.4byte	.LASF7
- 1459 0068 04       		.uleb128 0x4
- 1460 0069 04       		.byte	0x4
- 1461 006a 05       		.byte	0x5
- 1462 006b 696E7400 		.ascii	"int\000"
- 1463 006f 02       		.uleb128 0x2
- 1464 0070 04       		.byte	0x4
- 1465 0071 07       		.byte	0x7
- 1466 0072 DF010000 		.4byte	.LASF8
- 1467 0076 03       		.uleb128 0x3
- 1468 0077 57010000 		.4byte	.LASF10
- 1469 007b 03       		.byte	0x3
- 1470 007c 2C       		.byte	0x2c
- 1471 007d 41000000 		.4byte	0x41
- 1472 0081 05       		.uleb128 0x5
- 1473 0082 5A000000 		.4byte	.LASF11
- 1474 0086 04       		.byte	0x4
- 1475 0087 9201     		.2byte	0x192
- 1476 0089 2C000000 		.4byte	0x2c
- 1477 008d 05       		.uleb128 0x5
- 1478 008e 42000000 		.4byte	.LASF12
- 1479 0092 04       		.byte	0x4
- 1480 0093 9301     		.2byte	0x193
- 1481 0095 3A000000 		.4byte	0x3a
- 1482 0099 05       		.uleb128 0x5
- 1483 009a 4E020000 		.4byte	.LASF13
- 1484 009e 04       		.byte	0x4
- 1485 009f 9401     		.2byte	0x194
- 1486 00a1 53000000 		.4byte	0x53
- 1487 00a5 05       		.uleb128 0x5
- 1488 00a6 54000000 		.4byte	.LASF14
- 1489 00aa 04       		.byte	0x4
- 1490 00ab 9601     		.2byte	0x196
- 1491 00ad 33000000 		.4byte	0x33
- 1492 00b1 02       		.uleb128 0x2
- 1493 00b2 04       		.byte	0x4
- 1494 00b3 04       		.byte	0x4
- 1495 00b4 84000000 		.4byte	.LASF15
- 1496 00b8 02       		.uleb128 0x2
- 1497 00b9 08       		.byte	0x8
- 1498 00ba 04       		.byte	0x4
- 1499 00bb 67020000 		.4byte	.LASF16
- 1500 00bf 02       		.uleb128 0x2
- 1501 00c0 01       		.byte	0x1
- 1502 00c1 08       		.byte	0x8
- 1503 00c2 2B020000 		.4byte	.LASF17
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc1mFfdQ.s 			page 33
-
-
- 1504 00c6 02       		.uleb128 0x2
- 1505 00c7 04       		.byte	0x4
- 1506 00c8 07       		.byte	0x7
- 1507 00c9 4E010000 		.4byte	.LASF18
- 1508 00cd 06       		.uleb128 0x6
- 1509 00ce 81000000 		.4byte	0x81
- 1510 00d2 DD000000 		.4byte	0xdd
- 1511 00d6 07       		.uleb128 0x7
- 1512 00d7 C6000000 		.4byte	0xc6
- 1513 00db 07       		.byte	0x7
- 1514 00dc 00       		.byte	0
- 1515 00dd 03       		.uleb128 0x3
- 1516 00de 6B000000 		.4byte	.LASF19
- 1517 00e2 05       		.byte	0x5
- 1518 00e3 1E       		.byte	0x1e
- 1519 00e4 2C000000 		.4byte	0x2c
- 1520 00e8 08       		.uleb128 0x8
- 1521 00e9 7C000000 		.4byte	.LASF30
- 1522 00ed A0       		.byte	0xa0
- 1523 00ee 05       		.byte	0x5
- 1524 00ef 26       		.byte	0x26
- 1525 00f0 61010000 		.4byte	0x161
- 1526 00f4 09       		.uleb128 0x9
- 1527 00f5 86010000 		.4byte	.LASF20
- 1528 00f9 05       		.byte	0x5
- 1529 00fa 27       		.byte	0x27
- 1530 00fb 61010000 		.4byte	0x161
- 1531 00ff 00       		.byte	0
- 1532 0100 09       		.uleb128 0x9
- 1533 0101 49020000 		.4byte	.LASF21
- 1534 0105 05       		.byte	0x5
- 1535 0106 28       		.byte	0x28
- 1536 0107 71010000 		.4byte	0x171
- 1537 010b 12       		.byte	0x12
- 1538 010c 09       		.uleb128 0x9
- 1539 010d 97000000 		.4byte	.LASF22
- 1540 0111 05       		.byte	0x5
- 1541 0112 29       		.byte	0x29
- 1542 0113 99000000 		.4byte	0x99
- 1543 0117 94       		.byte	0x94
- 1544 0118 09       		.uleb128 0x9
- 1545 0119 0E030000 		.4byte	.LASF23
- 1546 011d 05       		.byte	0x5
- 1547 011e 2A       		.byte	0x2a
- 1548 011f 81000000 		.4byte	0x81
- 1549 0123 98       		.byte	0x98
- 1550 0124 09       		.uleb128 0x9
- 1551 0125 4E000000 		.4byte	.LASF24
- 1552 0129 05       		.byte	0x5
- 1553 012a 2B       		.byte	0x2b
- 1554 012b 81000000 		.4byte	0x81
- 1555 012f 99       		.byte	0x99
- 1556 0130 09       		.uleb128 0x9
- 1557 0131 05020000 		.4byte	.LASF25
- 1558 0135 05       		.byte	0x5
- 1559 0136 2C       		.byte	0x2c
- 1560 0137 81000000 		.4byte	0x81
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc1mFfdQ.s 			page 34
-
-
- 1561 013b 9A       		.byte	0x9a
- 1562 013c 09       		.uleb128 0x9
- 1563 013d 09030000 		.4byte	.LASF26
- 1564 0141 05       		.byte	0x5
- 1565 0142 2D       		.byte	0x2d
- 1566 0143 DD000000 		.4byte	0xdd
- 1567 0147 9B       		.byte	0x9b
- 1568 0148 09       		.uleb128 0x9
- 1569 0149 07000000 		.4byte	.LASF27
- 1570 014d 05       		.byte	0x5
- 1571 014e 2E       		.byte	0x2e
- 1572 014f DD000000 		.4byte	0xdd
- 1573 0153 9C       		.byte	0x9c
- 1574 0154 09       		.uleb128 0x9
- 1575 0155 A1020000 		.4byte	.LASF28
- 1576 0159 05       		.byte	0x5
- 1577 015a 2F       		.byte	0x2f
- 1578 015b 8D000000 		.4byte	0x8d
- 1579 015f 9E       		.byte	0x9e
- 1580 0160 00       		.byte	0
- 1581 0161 06       		.uleb128 0x6
- 1582 0162 BF000000 		.4byte	0xbf
- 1583 0166 71010000 		.4byte	0x171
- 1584 016a 07       		.uleb128 0x7
- 1585 016b C6000000 		.4byte	0xc6
- 1586 016f 10       		.byte	0x10
- 1587 0170 00       		.byte	0
- 1588 0171 06       		.uleb128 0x6
- 1589 0172 8D000000 		.4byte	0x8d
- 1590 0176 81010000 		.4byte	0x181
- 1591 017a 07       		.uleb128 0x7
- 1592 017b C6000000 		.4byte	0xc6
- 1593 017f 3F       		.byte	0x3f
- 1594 0180 00       		.byte	0
- 1595 0181 03       		.uleb128 0x3
- 1596 0182 8B010000 		.4byte	.LASF29
- 1597 0186 05       		.byte	0x5
- 1598 0187 30       		.byte	0x30
- 1599 0188 E8000000 		.4byte	0xe8
- 1600 018c 08       		.uleb128 0x8
- 1601 018d 49000000 		.4byte	.LASF31
- 1602 0191 A4       		.byte	0xa4
- 1603 0192 05       		.byte	0x5
- 1604 0193 32       		.byte	0x32
- 1605 0194 B0010000 		.4byte	0x1b0
- 1606 0198 09       		.uleb128 0x9
- 1607 0199 21000000 		.4byte	.LASF32
- 1608 019d 05       		.byte	0x5
- 1609 019e 33       		.byte	0x33
- 1610 019f 81010000 		.4byte	0x181
- 1611 01a3 00       		.byte	0
- 1612 01a4 0A       		.uleb128 0xa
- 1613 01a5 6D5600   		.ascii	"mV\000"
- 1614 01a8 05       		.byte	0x5
- 1615 01a9 34       		.byte	0x34
- 1616 01aa A5000000 		.4byte	0xa5
- 1617 01ae A0       		.byte	0xa0
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc1mFfdQ.s 			page 35
-
-
- 1618 01af 00       		.byte	0
- 1619 01b0 0B       		.uleb128 0xb
- 1620 01b1 506F7400 		.ascii	"Pot\000"
- 1621 01b5 05       		.byte	0x5
- 1622 01b6 35       		.byte	0x35
- 1623 01b7 8C010000 		.4byte	0x18c
- 1624 01bb 08       		.uleb128 0x8
- 1625 01bc 22030000 		.4byte	.LASF33
- 1626 01c0 A8       		.byte	0xa8
- 1627 01c1 05       		.byte	0x5
- 1628 01c2 37       		.byte	0x37
- 1629 01c3 EC010000 		.4byte	0x1ec
- 1630 01c7 09       		.uleb128 0x9
- 1631 01c8 21000000 		.4byte	.LASF32
- 1632 01cc 05       		.byte	0x5
- 1633 01cd 38       		.byte	0x38
- 1634 01ce 81010000 		.4byte	0x181
- 1635 01d2 00       		.byte	0
- 1636 01d3 09       		.uleb128 0x9
- 1637 01d4 97000000 		.4byte	.LASF22
- 1638 01d8 05       		.byte	0x5
- 1639 01d9 39       		.byte	0x39
- 1640 01da B1000000 		.4byte	0xb1
- 1641 01de A0       		.byte	0xa0
- 1642 01df 0A       		.uleb128 0xa
- 1643 01e0 72706D00 		.ascii	"rpm\000"
- 1644 01e4 05       		.byte	0x5
- 1645 01e5 3A       		.byte	0x3a
- 1646 01e6 B1000000 		.4byte	0xb1
- 1647 01ea A4       		.byte	0xa4
- 1648 01eb 00       		.byte	0
- 1649 01ec 03       		.uleb128 0x3
- 1650 01ed C0010000 		.4byte	.LASF34
- 1651 01f1 05       		.byte	0x5
- 1652 01f2 3B       		.byte	0x3b
- 1653 01f3 BB010000 		.4byte	0x1bb
- 1654 01f7 0C       		.uleb128 0xc
- 1655 01f8 79020000 		.4byte	.LASF35
- 1656 01fc 01       		.byte	0x1
- 1657 01fd 0F       		.byte	0xf
- 1658 01fe 00000000 		.4byte	.LFB63
- 1659 0202 D8000000 		.4byte	.LFE63-.LFB63
- 1660 0206 01       		.uleb128 0x1
- 1661 0207 9C       		.byte	0x9c
- 1662 0208 1B020000 		.4byte	0x21b
- 1663 020c 0D       		.uleb128 0xd
- 1664 020d 706F7400 		.ascii	"pot\000"
- 1665 0211 01       		.byte	0x1
- 1666 0212 0F       		.byte	0xf
- 1667 0213 1B020000 		.4byte	0x21b
- 1668 0217 02       		.uleb128 0x2
- 1669 0218 91       		.byte	0x91
- 1670 0219 6C       		.sleb128 -20
- 1671 021a 00       		.byte	0
- 1672 021b 0E       		.uleb128 0xe
- 1673 021c 04       		.byte	0x4
- 1674 021d B0010000 		.4byte	0x1b0
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc1mFfdQ.s 			page 36
-
-
- 1675 0221 0C       		.uleb128 0xc
- 1676 0222 92010000 		.4byte	.LASF36
- 1677 0226 01       		.byte	0x1
- 1678 0227 36       		.byte	0x36
- 1679 0228 00000000 		.4byte	.LFB64
- 1680 022c DC010000 		.4byte	.LFE64-.LFB64
- 1681 0230 01       		.uleb128 0x1
- 1682 0231 9C       		.byte	0x9c
- 1683 0232 45020000 		.4byte	0x245
- 1684 0236 0F       		.uleb128 0xf
- 1685 0237 B2020000 		.4byte	.LASF37
- 1686 023b 01       		.byte	0x1
- 1687 023c 36       		.byte	0x36
- 1688 023d 45020000 		.4byte	0x245
- 1689 0241 02       		.uleb128 0x2
- 1690 0242 91       		.byte	0x91
- 1691 0243 6C       		.sleb128 -20
- 1692 0244 00       		.byte	0
- 1693 0245 0E       		.uleb128 0xe
- 1694 0246 04       		.byte	0x4
- 1695 0247 EC010000 		.4byte	0x1ec
- 1696 024b 10       		.uleb128 0x10
- 1697 024c AD010000 		.4byte	.LASF38
- 1698 0250 01       		.byte	0x1
- 1699 0251 71       		.byte	0x71
- 1700 0252 00000000 		.4byte	.LFB65
- 1701 0256 4A000000 		.4byte	.LFE65-.LFB65
- 1702 025a 01       		.uleb128 0x1
- 1703 025b 9C       		.byte	0x9c
- 1704 025c 99020000 		.4byte	0x299
- 1705 0260 0F       		.uleb128 0xf
- 1706 0261 21000000 		.4byte	.LASF32
- 1707 0265 01       		.byte	0x1
- 1708 0266 71       		.byte	0x71
- 1709 0267 99020000 		.4byte	0x299
- 1710 026b 02       		.uleb128 0x2
- 1711 026c 91       		.byte	0x91
- 1712 026d 74       		.sleb128 -12
- 1713 026e 0F       		.uleb128 0xf
- 1714 026f 60000000 		.4byte	.LASF39
- 1715 0273 01       		.byte	0x1
- 1716 0274 71       		.byte	0x71
- 1717 0275 81000000 		.4byte	0x81
- 1718 0279 02       		.uleb128 0x2
- 1719 027a 91       		.byte	0x91
- 1720 027b 73       		.sleb128 -13
- 1721 027c 0F       		.uleb128 0xf
- 1722 027d EC010000 		.4byte	.LASF40
- 1723 0281 01       		.byte	0x1
- 1724 0282 71       		.byte	0x71
- 1725 0283 81000000 		.4byte	0x81
- 1726 0287 02       		.uleb128 0x2
- 1727 0288 91       		.byte	0x91
- 1728 0289 72       		.sleb128 -14
- 1729 028a 0F       		.uleb128 0xf
- 1730 028b 98020000 		.4byte	.LASF41
- 1731 028f 01       		.byte	0x1
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc1mFfdQ.s 			page 37
-
-
- 1732 0290 71       		.byte	0x71
- 1733 0291 8D000000 		.4byte	0x8d
- 1734 0295 02       		.uleb128 0x2
- 1735 0296 91       		.byte	0x91
- 1736 0297 70       		.sleb128 -16
- 1737 0298 00       		.byte	0
- 1738 0299 0E       		.uleb128 0xe
- 1739 029a 04       		.byte	0x4
- 1740 029b 81010000 		.4byte	0x181
- 1741 029f 10       		.uleb128 0x10
- 1742 02a0 30030000 		.4byte	.LASF42
- 1743 02a4 01       		.byte	0x1
- 1744 02a5 7A       		.byte	0x7a
- 1745 02a6 00000000 		.4byte	.LFB66
- 1746 02aa 56000000 		.4byte	.LFE66-.LFB66
- 1747 02ae 01       		.uleb128 0x1
- 1748 02af 9C       		.byte	0x9c
- 1749 02b0 CF020000 		.4byte	0x2cf
- 1750 02b4 0D       		.uleb128 0xd
- 1751 02b5 706F7400 		.ascii	"pot\000"
- 1752 02b9 01       		.byte	0x1
- 1753 02ba 7A       		.byte	0x7a
- 1754 02bb 1B020000 		.4byte	0x21b
- 1755 02bf 02       		.uleb128 0x2
- 1756 02c0 91       		.byte	0x91
- 1757 02c1 6C       		.sleb128 -20
- 1758 02c2 11       		.uleb128 0x11
- 1759 02c3 6900     		.ascii	"i\000"
- 1760 02c5 01       		.byte	0x1
- 1761 02c6 7B       		.byte	0x7b
- 1762 02c7 68000000 		.4byte	0x68
- 1763 02cb 02       		.uleb128 0x2
- 1764 02cc 91       		.byte	0x91
- 1765 02cd 74       		.sleb128 -12
- 1766 02ce 00       		.byte	0
- 1767 02cf 10       		.uleb128 0x10
- 1768 02d0 0C020000 		.4byte	.LASF43
- 1769 02d4 01       		.byte	0x1
- 1770 02d5 85       		.byte	0x85
- 1771 02d6 00000000 		.4byte	.LFB67
- 1772 02da 5A000000 		.4byte	.LFE67-.LFB67
- 1773 02de 01       		.uleb128 0x1
- 1774 02df 9C       		.byte	0x9c
- 1775 02e0 FF020000 		.4byte	0x2ff
- 1776 02e4 0F       		.uleb128 0xf
- 1777 02e5 B2020000 		.4byte	.LASF37
- 1778 02e9 01       		.byte	0x1
- 1779 02ea 85       		.byte	0x85
- 1780 02eb 45020000 		.4byte	0x245
- 1781 02ef 02       		.uleb128 0x2
- 1782 02f0 91       		.byte	0x91
- 1783 02f1 6C       		.sleb128 -20
- 1784 02f2 11       		.uleb128 0x11
- 1785 02f3 6900     		.ascii	"i\000"
- 1786 02f5 01       		.byte	0x1
- 1787 02f6 86       		.byte	0x86
- 1788 02f7 68000000 		.4byte	0x68
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc1mFfdQ.s 			page 38
-
-
- 1789 02fb 02       		.uleb128 0x2
- 1790 02fc 91       		.byte	0x91
- 1791 02fd 74       		.sleb128 -12
- 1792 02fe 00       		.byte	0
- 1793 02ff 0C       		.uleb128 0xc
- 1794 0300 71010000 		.4byte	.LASF44
- 1795 0304 01       		.byte	0x1
- 1796 0305 90       		.byte	0x90
- 1797 0306 00000000 		.4byte	.LFB68
- 1798 030a 8C030000 		.4byte	.LFE68-.LFB68
- 1799 030e 01       		.uleb128 0x1
- 1800 030f 9C       		.byte	0x9c
- 1801 0310 6D030000 		.4byte	0x36d
- 1802 0314 11       		.uleb128 0x11
- 1803 0315 6900     		.ascii	"i\000"
- 1804 0317 01       		.byte	0x1
- 1805 0318 91       		.byte	0x91
- 1806 0319 81000000 		.4byte	0x81
- 1807 031d 02       		.uleb128 0x2
- 1808 031e 91       		.byte	0x91
- 1809 031f 6F       		.sleb128 -17
- 1810 0320 11       		.uleb128 0x11
- 1811 0321 636800   		.ascii	"ch\000"
- 1812 0324 01       		.byte	0x1
- 1813 0325 92       		.byte	0x92
- 1814 0326 BF000000 		.4byte	0xbf
- 1815 032a 02       		.uleb128 0x2
- 1816 032b 91       		.byte	0x91
- 1817 032c 6E       		.sleb128 -18
- 1818 032d 12       		.uleb128 0x12
- 1819 032e 3B000000 		.4byte	.LASF45
- 1820 0332 01       		.byte	0x1
- 1821 0333 93       		.byte	0x93
- 1822 0334 6D030000 		.4byte	0x36d
- 1823 0338 02       		.uleb128 0x2
- 1824 0339 91       		.byte	0x91
- 1825 033a 64       		.sleb128 -28
- 1826 033b 12       		.uleb128 0x12
- 1827 033c 48030000 		.4byte	.LASF46
- 1828 0340 01       		.byte	0x1
- 1829 0341 94       		.byte	0x94
- 1830 0342 7D030000 		.4byte	0x37d
- 1831 0346 03       		.uleb128 0x3
- 1832 0347 91       		.byte	0x91
- 1833 0348 947F     		.sleb128 -108
- 1834 034a 12       		.uleb128 0x12
- 1835 034b 0E000000 		.4byte	.LASF47
- 1836 034f 01       		.byte	0x1
- 1837 0350 96       		.byte	0x96
- 1838 0351 8D030000 		.4byte	0x38d
- 1839 0355 05       		.uleb128 0x5
- 1840 0356 03       		.byte	0x3
- 1841 0357 0C000000 		.4byte	RxBuffer.7376
- 1842 035b 12       		.uleb128 0x12
- 1843 035c 78010000 		.4byte	.LASF48
- 1844 0360 01       		.byte	0x1
- 1845 0361 97       		.byte	0x97
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc1mFfdQ.s 			page 39
-
-
- 1846 0362 81000000 		.4byte	0x81
- 1847 0366 05       		.uleb128 0x5
- 1848 0367 03       		.byte	0x3
- 1849 0368 08000000 		.4byte	RxBufferIndex.7377
- 1850 036c 00       		.byte	0
- 1851 036d 06       		.uleb128 0x6
- 1852 036e BF000000 		.4byte	0xbf
- 1853 0372 7D030000 		.4byte	0x37d
- 1854 0376 07       		.uleb128 0x7
- 1855 0377 C6000000 		.4byte	0xc6
- 1856 037b 06       		.byte	0x6
- 1857 037c 00       		.byte	0
- 1858 037d 06       		.uleb128 0x6
- 1859 037e BF000000 		.4byte	0xbf
- 1860 0382 8D030000 		.4byte	0x38d
- 1861 0386 07       		.uleb128 0x7
- 1862 0387 C6000000 		.4byte	0xc6
- 1863 038b 4F       		.byte	0x4f
- 1864 038c 00       		.byte	0
- 1865 038d 06       		.uleb128 0x6
- 1866 038e BF000000 		.4byte	0xbf
- 1867 0392 9D030000 		.4byte	0x39d
- 1868 0396 07       		.uleb128 0x7
- 1869 0397 C6000000 		.4byte	0xc6
- 1870 039b 1F       		.byte	0x1f
- 1871 039c 00       		.byte	0
- 1872 039d 10       		.uleb128 0x10
- 1873 039e B1000000 		.4byte	.LASF49
- 1874 03a2 01       		.byte	0x1
- 1875 03a3 EF       		.byte	0xef
- 1876 03a4 00000000 		.4byte	.LFB69
- 1877 03a8 5C000000 		.4byte	.LFE69-.LFB69
- 1878 03ac 01       		.uleb128 0x1
- 1879 03ad 9C       		.byte	0x9c
- 1880 03ae 23040000 		.4byte	0x423
- 1881 03b2 0F       		.uleb128 0xf
- 1882 03b3 43030000 		.4byte	.LASF50
- 1883 03b7 01       		.byte	0x1
- 1884 03b8 EF       		.byte	0xef
- 1885 03b9 81000000 		.4byte	0x81
- 1886 03bd 02       		.uleb128 0x2
- 1887 03be 91       		.byte	0x91
- 1888 03bf 77       		.sleb128 -9
- 1889 03c0 0D       		.uleb128 0xd
- 1890 03c1 6F6E6500 		.ascii	"one\000"
- 1891 03c5 01       		.byte	0x1
- 1892 03c6 EF       		.byte	0xef
- 1893 03c7 81000000 		.4byte	0x81
- 1894 03cb 02       		.uleb128 0x2
- 1895 03cc 91       		.byte	0x91
- 1896 03cd 76       		.sleb128 -10
- 1897 03ce 0D       		.uleb128 0xd
- 1898 03cf 74776F00 		.ascii	"two\000"
- 1899 03d3 01       		.byte	0x1
- 1900 03d4 EF       		.byte	0xef
- 1901 03d5 81000000 		.4byte	0x81
- 1902 03d9 02       		.uleb128 0x2
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc1mFfdQ.s 			page 40
-
-
- 1903 03da 91       		.byte	0x91
- 1904 03db 75       		.sleb128 -11
- 1905 03dc 0F       		.uleb128 0xf
- 1906 03dd BA000000 		.4byte	.LASF51
- 1907 03e1 01       		.byte	0x1
- 1908 03e2 EF       		.byte	0xef
- 1909 03e3 81000000 		.4byte	0x81
- 1910 03e7 02       		.uleb128 0x2
- 1911 03e8 91       		.byte	0x91
- 1912 03e9 74       		.sleb128 -12
- 1913 03ea 0F       		.uleb128 0xf
- 1914 03eb 2B030000 		.4byte	.LASF52
- 1915 03ef 01       		.byte	0x1
- 1916 03f0 EF       		.byte	0xef
- 1917 03f1 81000000 		.4byte	0x81
- 1918 03f5 02       		.uleb128 0x2
- 1919 03f6 91       		.byte	0x91
- 1920 03f7 00       		.sleb128 0
- 1921 03f8 0F       		.uleb128 0xf
- 1922 03f9 93020000 		.4byte	.LASF53
- 1923 03fd 01       		.byte	0x1
- 1924 03fe EF       		.byte	0xef
- 1925 03ff 81000000 		.4byte	0x81
- 1926 0403 02       		.uleb128 0x2
- 1927 0404 91       		.byte	0x91
- 1928 0405 04       		.sleb128 4
- 1929 0406 0D       		.uleb128 0xd
- 1930 0407 73697800 		.ascii	"six\000"
- 1931 040b 01       		.byte	0x1
- 1932 040c EF       		.byte	0xef
- 1933 040d 81000000 		.4byte	0x81
- 1934 0411 02       		.uleb128 0x2
- 1935 0412 91       		.byte	0x91
- 1936 0413 08       		.sleb128 8
- 1937 0414 0F       		.uleb128 0xf
- 1938 0415 83020000 		.4byte	.LASF54
- 1939 0419 01       		.byte	0x1
- 1940 041a EF       		.byte	0xef
- 1941 041b 81000000 		.4byte	0x81
- 1942 041f 02       		.uleb128 0x2
- 1943 0420 91       		.byte	0x91
- 1944 0421 0C       		.sleb128 12
- 1945 0422 00       		.byte	0
- 1946 0423 10       		.uleb128 0x10
- 1947 0424 51030000 		.4byte	.LASF55
- 1948 0428 01       		.byte	0x1
- 1949 0429 FA       		.byte	0xfa
- 1950 042a 00000000 		.4byte	.LFB70
- 1951 042e 1E000000 		.4byte	.LFE70-.LFB70
- 1952 0432 01       		.uleb128 0x1
- 1953 0433 9C       		.byte	0x9c
- 1954 0434 55040000 		.4byte	0x455
- 1955 0438 0F       		.uleb128 0xf
- 1956 0439 21000000 		.4byte	.LASF32
- 1957 043d 01       		.byte	0x1
- 1958 043e FA       		.byte	0xfa
- 1959 043f 99020000 		.4byte	0x299
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc1mFfdQ.s 			page 41
-
-
- 1960 0443 02       		.uleb128 0x2
- 1961 0444 91       		.byte	0x91
- 1962 0445 74       		.sleb128 -12
- 1963 0446 0F       		.uleb128 0xf
- 1964 0447 B7010000 		.4byte	.LASF56
- 1965 044b 01       		.byte	0x1
- 1966 044c FA       		.byte	0xfa
- 1967 044d DD000000 		.4byte	0xdd
- 1968 0451 02       		.uleb128 0x2
- 1969 0452 91       		.byte	0x91
- 1970 0453 73       		.sleb128 -13
- 1971 0454 00       		.byte	0
- 1972 0455 13       		.uleb128 0x13
- 1973 0456 5F010000 		.4byte	.LASF72
- 1974 045a 01       		.byte	0x1
- 1975 045b FE       		.byte	0xfe
- 1976 045c 8D000000 		.4byte	0x8d
- 1977 0460 00000000 		.4byte	.LFB71
- 1978 0464 24000000 		.4byte	.LFE71-.LFB71
- 1979 0468 01       		.uleb128 0x1
- 1980 0469 9C       		.byte	0x9c
- 1981 046a 7D040000 		.4byte	0x47d
- 1982 046e 0F       		.uleb128 0xf
- 1983 046f 21000000 		.4byte	.LASF32
- 1984 0473 01       		.byte	0x1
- 1985 0474 FE       		.byte	0xfe
- 1986 0475 99020000 		.4byte	0x299
- 1987 0479 02       		.uleb128 0x2
- 1988 047a 91       		.byte	0x91
- 1989 047b 74       		.sleb128 -12
- 1990 047c 00       		.byte	0
- 1991 047d 14       		.uleb128 0x14
- 1992 047e 8A000000 		.4byte	.LASF57
- 1993 0482 01       		.byte	0x1
- 1994 0483 0201     		.2byte	0x102
- 1995 0485 00000000 		.4byte	.LFB72
- 1996 0489 1E000000 		.4byte	.LFE72-.LFB72
- 1997 048d 01       		.uleb128 0x1
- 1998 048e 9C       		.byte	0x9c
- 1999 048f B2040000 		.4byte	0x4b2
- 2000 0493 15       		.uleb128 0x15
- 2001 0494 21000000 		.4byte	.LASF32
- 2002 0498 01       		.byte	0x1
- 2003 0499 0201     		.2byte	0x102
- 2004 049b 99020000 		.4byte	0x299
- 2005 049f 02       		.uleb128 0x2
- 2006 04a0 91       		.byte	0x91
- 2007 04a1 74       		.sleb128 -12
- 2008 04a2 15       		.uleb128 0x15
- 2009 04a3 3E020000 		.4byte	.LASF58
- 2010 04a7 01       		.byte	0x1
- 2011 04a8 0201     		.2byte	0x102
- 2012 04aa DD000000 		.4byte	0xdd
- 2013 04ae 02       		.uleb128 0x2
- 2014 04af 91       		.byte	0x91
- 2015 04b0 73       		.sleb128 -13
- 2016 04b1 00       		.byte	0
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc1mFfdQ.s 			page 42
-
-
- 2017 04b2 14       		.uleb128 0x14
- 2018 04b3 6E020000 		.4byte	.LASF59
- 2019 04b7 01       		.byte	0x1
- 2020 04b8 0601     		.2byte	0x106
- 2021 04ba 00000000 		.4byte	.LFB73
- 2022 04be 28000000 		.4byte	.LFE73-.LFB73
- 2023 04c2 01       		.uleb128 0x1
- 2024 04c3 9C       		.byte	0x9c
- 2025 04c4 D8040000 		.4byte	0x4d8
- 2026 04c8 15       		.uleb128 0x15
- 2027 04c9 21000000 		.4byte	.LASF32
- 2028 04cd 01       		.byte	0x1
- 2029 04ce 0601     		.2byte	0x106
- 2030 04d0 99020000 		.4byte	0x299
- 2031 04d4 02       		.uleb128 0x2
- 2032 04d5 91       		.byte	0x91
- 2033 04d6 74       		.sleb128 -12
- 2034 04d7 00       		.byte	0
- 2035 04d8 14       		.uleb128 0x14
- 2036 04d9 F7010000 		.4byte	.LASF60
- 2037 04dd 01       		.byte	0x1
- 2038 04de 0A01     		.2byte	0x10a
- 2039 04e0 00000000 		.4byte	.LFB74
- 2040 04e4 28000000 		.4byte	.LFE74-.LFB74
- 2041 04e8 01       		.uleb128 0x1
- 2042 04e9 9C       		.byte	0x9c
- 2043 04ea FE040000 		.4byte	0x4fe
- 2044 04ee 15       		.uleb128 0x15
- 2045 04ef 21000000 		.4byte	.LASF32
- 2046 04f3 01       		.byte	0x1
- 2047 04f4 0A01     		.2byte	0x10a
- 2048 04f6 99020000 		.4byte	0x299
- 2049 04fa 02       		.uleb128 0x2
- 2050 04fb 91       		.byte	0x91
- 2051 04fc 74       		.sleb128 -12
- 2052 04fd 00       		.byte	0
- 2053 04fe 06       		.uleb128 0x6
- 2054 04ff DD000000 		.4byte	0xdd
- 2055 0503 0E050000 		.4byte	0x50e
- 2056 0507 07       		.uleb128 0x7
- 2057 0508 C6000000 		.4byte	0xc6
- 2058 050c 07       		.byte	0x7
- 2059 050d 00       		.byte	0
- 2060 050e 12       		.uleb128 0x12
- 2061 050f A6020000 		.4byte	.LASF61
- 2062 0513 05       		.byte	0x5
- 2063 0514 46       		.byte	0x46
- 2064 0515 FE040000 		.4byte	0x4fe
- 2065 0519 05       		.uleb128 0x5
- 2066 051a 03       		.byte	0x3
- 2067 051b 00000000 		.4byte	temp_enable
- 2068 051f 16       		.uleb128 0x16
- 2069 0520 15030000 		.4byte	.LASF62
- 2070 0524 06       		.byte	0x6
- 2071 0525 9606     		.2byte	0x696
- 2072 0527 2B050000 		.4byte	0x52b
- 2073 052b 17       		.uleb128 0x17
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc1mFfdQ.s 			page 43
-
-
- 2074 052c 76000000 		.4byte	0x76
- 2075 0530 18       		.uleb128 0x18
- 2076 0531 43030000 		.4byte	.LASF50
- 2077 0535 05       		.byte	0x5
- 2078 0536 3D       		.byte	0x3d
- 2079 0537 B0010000 		.4byte	0x1b0
- 2080 053b 05       		.uleb128 0x5
- 2081 053c 03       		.byte	0x3
- 2082 053d 00000000 		.4byte	zero
- 2083 0541 19       		.uleb128 0x19
- 2084 0542 6F6E6500 		.ascii	"one\000"
- 2085 0546 05       		.byte	0x5
- 2086 0547 3E       		.byte	0x3e
- 2087 0548 B0010000 		.4byte	0x1b0
- 2088 054c 05       		.uleb128 0x5
- 2089 054d 03       		.byte	0x3
- 2090 054e 00000000 		.4byte	one
- 2091 0552 19       		.uleb128 0x19
- 2092 0553 74776F00 		.ascii	"two\000"
- 2093 0557 05       		.byte	0x5
- 2094 0558 3F       		.byte	0x3f
- 2095 0559 B0010000 		.4byte	0x1b0
- 2096 055d 05       		.uleb128 0x5
- 2097 055e 03       		.byte	0x3
- 2098 055f 00000000 		.4byte	two
- 2099 0563 18       		.uleb128 0x18
- 2100 0564 BA000000 		.4byte	.LASF51
- 2101 0568 05       		.byte	0x5
- 2102 0569 40       		.byte	0x40
- 2103 056a B0010000 		.4byte	0x1b0
- 2104 056e 05       		.uleb128 0x5
- 2105 056f 03       		.byte	0x3
- 2106 0570 00000000 		.4byte	three
- 2107 0574 18       		.uleb128 0x18
- 2108 0575 2B030000 		.4byte	.LASF52
- 2109 0579 05       		.byte	0x5
- 2110 057a 41       		.byte	0x41
- 2111 057b B0010000 		.4byte	0x1b0
- 2112 057f 05       		.uleb128 0x5
- 2113 0580 03       		.byte	0x3
- 2114 0581 00000000 		.4byte	four
- 2115 0585 18       		.uleb128 0x18
- 2116 0586 93020000 		.4byte	.LASF53
- 2117 058a 05       		.byte	0x5
- 2118 058b 42       		.byte	0x42
- 2119 058c B0010000 		.4byte	0x1b0
- 2120 0590 05       		.uleb128 0x5
- 2121 0591 03       		.byte	0x3
- 2122 0592 00000000 		.4byte	five
- 2123 0596 18       		.uleb128 0x18
- 2124 0597 39020000 		.4byte	.LASF63
- 2125 059b 05       		.byte	0x5
- 2126 059c 43       		.byte	0x43
- 2127 059d EC010000 		.4byte	0x1ec
- 2128 05a1 05       		.uleb128 0x5
- 2129 05a2 03       		.byte	0x3
- 2130 05a3 00000000 		.4byte	left
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc1mFfdQ.s 			page 44
-
-
- 2131 05a7 18       		.uleb128 0x18
- 2132 05a8 99010000 		.4byte	.LASF64
- 2133 05ac 05       		.byte	0x5
- 2134 05ad 44       		.byte	0x44
- 2135 05ae EC010000 		.4byte	0x1ec
- 2136 05b2 05       		.uleb128 0x5
- 2137 05b3 03       		.byte	0x3
- 2138 05b4 00000000 		.4byte	right
- 2139 05b8 18       		.uleb128 0x18
- 2140 05b9 38030000 		.4byte	.LASF65
- 2141 05bd 05       		.byte	0x5
- 2142 05be 48       		.byte	0x48
- 2143 05bf CD000000 		.4byte	0xcd
- 2144 05c3 05       		.uleb128 0x5
- 2145 05c4 03       		.byte	0x3
- 2146 05c5 00000000 		.4byte	TxMessage1
- 2147 05c9 18       		.uleb128 0x18
- 2148 05ca 28000000 		.4byte	.LASF66
- 2149 05ce 05       		.byte	0x5
- 2150 05cf 49       		.byte	0x49
- 2151 05d0 CD000000 		.4byte	0xcd
- 2152 05d4 05       		.uleb128 0x5
- 2153 05d5 03       		.byte	0x3
- 2154 05d6 00000000 		.4byte	RxMessage1
- 2155 05da 18       		.uleb128 0x18
- 2156 05db 00000000 		.4byte	.LASF67
- 2157 05df 05       		.byte	0x5
- 2158 05e0 4A       		.byte	0x4a
- 2159 05e1 81000000 		.4byte	0x81
- 2160 05e5 05       		.uleb128 0x5
- 2161 05e6 03       		.byte	0x3
- 2162 05e7 00000000 		.4byte	RXDLC1
- 2163 05eb 18       		.uleb128 0x18
- 2164 05ec 33000000 		.4byte	.LASF68
- 2165 05f0 05       		.byte	0x5
- 2166 05f1 4B       		.byte	0x4b
- 2167 05f2 81000000 		.4byte	0x81
- 2168 05f6 05       		.uleb128 0x5
- 2169 05f7 03       		.byte	0x3
- 2170 05f8 00000000 		.4byte	RxFlag1
- 2171 05fc 00       		.byte	0
- 2172              		.section	.debug_abbrev,"",%progbits
- 2173              	.Ldebug_abbrev0:
- 2174 0000 01       		.uleb128 0x1
- 2175 0001 11       		.uleb128 0x11
- 2176 0002 01       		.byte	0x1
- 2177 0003 25       		.uleb128 0x25
- 2178 0004 0E       		.uleb128 0xe
- 2179 0005 13       		.uleb128 0x13
- 2180 0006 0B       		.uleb128 0xb
- 2181 0007 03       		.uleb128 0x3
- 2182 0008 0E       		.uleb128 0xe
- 2183 0009 1B       		.uleb128 0x1b
- 2184 000a 0E       		.uleb128 0xe
- 2185 000b 55       		.uleb128 0x55
- 2186 000c 17       		.uleb128 0x17
- 2187 000d 11       		.uleb128 0x11
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc1mFfdQ.s 			page 45
-
-
- 2188 000e 01       		.uleb128 0x1
- 2189 000f 10       		.uleb128 0x10
- 2190 0010 17       		.uleb128 0x17
- 2191 0011 00       		.byte	0
- 2192 0012 00       		.byte	0
- 2193 0013 02       		.uleb128 0x2
- 2194 0014 24       		.uleb128 0x24
- 2195 0015 00       		.byte	0
- 2196 0016 0B       		.uleb128 0xb
- 2197 0017 0B       		.uleb128 0xb
- 2198 0018 3E       		.uleb128 0x3e
- 2199 0019 0B       		.uleb128 0xb
- 2200 001a 03       		.uleb128 0x3
- 2201 001b 0E       		.uleb128 0xe
- 2202 001c 00       		.byte	0
- 2203 001d 00       		.byte	0
- 2204 001e 03       		.uleb128 0x3
- 2205 001f 16       		.uleb128 0x16
- 2206 0020 00       		.byte	0
- 2207 0021 03       		.uleb128 0x3
- 2208 0022 0E       		.uleb128 0xe
- 2209 0023 3A       		.uleb128 0x3a
- 2210 0024 0B       		.uleb128 0xb
- 2211 0025 3B       		.uleb128 0x3b
- 2212 0026 0B       		.uleb128 0xb
- 2213 0027 49       		.uleb128 0x49
- 2214 0028 13       		.uleb128 0x13
- 2215 0029 00       		.byte	0
- 2216 002a 00       		.byte	0
- 2217 002b 04       		.uleb128 0x4
- 2218 002c 24       		.uleb128 0x24
- 2219 002d 00       		.byte	0
- 2220 002e 0B       		.uleb128 0xb
- 2221 002f 0B       		.uleb128 0xb
- 2222 0030 3E       		.uleb128 0x3e
- 2223 0031 0B       		.uleb128 0xb
- 2224 0032 03       		.uleb128 0x3
- 2225 0033 08       		.uleb128 0x8
- 2226 0034 00       		.byte	0
- 2227 0035 00       		.byte	0
- 2228 0036 05       		.uleb128 0x5
- 2229 0037 16       		.uleb128 0x16
- 2230 0038 00       		.byte	0
- 2231 0039 03       		.uleb128 0x3
- 2232 003a 0E       		.uleb128 0xe
- 2233 003b 3A       		.uleb128 0x3a
- 2234 003c 0B       		.uleb128 0xb
- 2235 003d 3B       		.uleb128 0x3b
- 2236 003e 05       		.uleb128 0x5
- 2237 003f 49       		.uleb128 0x49
- 2238 0040 13       		.uleb128 0x13
- 2239 0041 00       		.byte	0
- 2240 0042 00       		.byte	0
- 2241 0043 06       		.uleb128 0x6
- 2242 0044 01       		.uleb128 0x1
- 2243 0045 01       		.byte	0x1
- 2244 0046 49       		.uleb128 0x49
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc1mFfdQ.s 			page 46
-
-
- 2245 0047 13       		.uleb128 0x13
- 2246 0048 01       		.uleb128 0x1
- 2247 0049 13       		.uleb128 0x13
- 2248 004a 00       		.byte	0
- 2249 004b 00       		.byte	0
- 2250 004c 07       		.uleb128 0x7
- 2251 004d 21       		.uleb128 0x21
- 2252 004e 00       		.byte	0
- 2253 004f 49       		.uleb128 0x49
- 2254 0050 13       		.uleb128 0x13
- 2255 0051 2F       		.uleb128 0x2f
- 2256 0052 0B       		.uleb128 0xb
- 2257 0053 00       		.byte	0
- 2258 0054 00       		.byte	0
- 2259 0055 08       		.uleb128 0x8
- 2260 0056 13       		.uleb128 0x13
- 2261 0057 01       		.byte	0x1
- 2262 0058 03       		.uleb128 0x3
- 2263 0059 0E       		.uleb128 0xe
- 2264 005a 0B       		.uleb128 0xb
- 2265 005b 0B       		.uleb128 0xb
- 2266 005c 3A       		.uleb128 0x3a
- 2267 005d 0B       		.uleb128 0xb
- 2268 005e 3B       		.uleb128 0x3b
- 2269 005f 0B       		.uleb128 0xb
- 2270 0060 01       		.uleb128 0x1
- 2271 0061 13       		.uleb128 0x13
- 2272 0062 00       		.byte	0
- 2273 0063 00       		.byte	0
- 2274 0064 09       		.uleb128 0x9
- 2275 0065 0D       		.uleb128 0xd
- 2276 0066 00       		.byte	0
- 2277 0067 03       		.uleb128 0x3
- 2278 0068 0E       		.uleb128 0xe
- 2279 0069 3A       		.uleb128 0x3a
- 2280 006a 0B       		.uleb128 0xb
- 2281 006b 3B       		.uleb128 0x3b
- 2282 006c 0B       		.uleb128 0xb
- 2283 006d 49       		.uleb128 0x49
- 2284 006e 13       		.uleb128 0x13
- 2285 006f 38       		.uleb128 0x38
- 2286 0070 0B       		.uleb128 0xb
- 2287 0071 00       		.byte	0
- 2288 0072 00       		.byte	0
- 2289 0073 0A       		.uleb128 0xa
- 2290 0074 0D       		.uleb128 0xd
- 2291 0075 00       		.byte	0
- 2292 0076 03       		.uleb128 0x3
- 2293 0077 08       		.uleb128 0x8
- 2294 0078 3A       		.uleb128 0x3a
- 2295 0079 0B       		.uleb128 0xb
- 2296 007a 3B       		.uleb128 0x3b
- 2297 007b 0B       		.uleb128 0xb
- 2298 007c 49       		.uleb128 0x49
- 2299 007d 13       		.uleb128 0x13
- 2300 007e 38       		.uleb128 0x38
- 2301 007f 0B       		.uleb128 0xb
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc1mFfdQ.s 			page 47
-
-
- 2302 0080 00       		.byte	0
- 2303 0081 00       		.byte	0
- 2304 0082 0B       		.uleb128 0xb
- 2305 0083 16       		.uleb128 0x16
- 2306 0084 00       		.byte	0
- 2307 0085 03       		.uleb128 0x3
- 2308 0086 08       		.uleb128 0x8
- 2309 0087 3A       		.uleb128 0x3a
- 2310 0088 0B       		.uleb128 0xb
- 2311 0089 3B       		.uleb128 0x3b
- 2312 008a 0B       		.uleb128 0xb
- 2313 008b 49       		.uleb128 0x49
- 2314 008c 13       		.uleb128 0x13
- 2315 008d 00       		.byte	0
- 2316 008e 00       		.byte	0
- 2317 008f 0C       		.uleb128 0xc
- 2318 0090 2E       		.uleb128 0x2e
- 2319 0091 01       		.byte	0x1
- 2320 0092 3F       		.uleb128 0x3f
- 2321 0093 19       		.uleb128 0x19
- 2322 0094 03       		.uleb128 0x3
- 2323 0095 0E       		.uleb128 0xe
- 2324 0096 3A       		.uleb128 0x3a
- 2325 0097 0B       		.uleb128 0xb
- 2326 0098 3B       		.uleb128 0x3b
- 2327 0099 0B       		.uleb128 0xb
- 2328 009a 27       		.uleb128 0x27
- 2329 009b 19       		.uleb128 0x19
- 2330 009c 11       		.uleb128 0x11
- 2331 009d 01       		.uleb128 0x1
- 2332 009e 12       		.uleb128 0x12
- 2333 009f 06       		.uleb128 0x6
- 2334 00a0 40       		.uleb128 0x40
- 2335 00a1 18       		.uleb128 0x18
- 2336 00a2 9642     		.uleb128 0x2116
- 2337 00a4 19       		.uleb128 0x19
- 2338 00a5 01       		.uleb128 0x1
- 2339 00a6 13       		.uleb128 0x13
- 2340 00a7 00       		.byte	0
- 2341 00a8 00       		.byte	0
- 2342 00a9 0D       		.uleb128 0xd
- 2343 00aa 05       		.uleb128 0x5
- 2344 00ab 00       		.byte	0
- 2345 00ac 03       		.uleb128 0x3
- 2346 00ad 08       		.uleb128 0x8
- 2347 00ae 3A       		.uleb128 0x3a
- 2348 00af 0B       		.uleb128 0xb
- 2349 00b0 3B       		.uleb128 0x3b
- 2350 00b1 0B       		.uleb128 0xb
- 2351 00b2 49       		.uleb128 0x49
- 2352 00b3 13       		.uleb128 0x13
- 2353 00b4 02       		.uleb128 0x2
- 2354 00b5 18       		.uleb128 0x18
- 2355 00b6 00       		.byte	0
- 2356 00b7 00       		.byte	0
- 2357 00b8 0E       		.uleb128 0xe
- 2358 00b9 0F       		.uleb128 0xf
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc1mFfdQ.s 			page 48
-
-
- 2359 00ba 00       		.byte	0
- 2360 00bb 0B       		.uleb128 0xb
- 2361 00bc 0B       		.uleb128 0xb
- 2362 00bd 49       		.uleb128 0x49
- 2363 00be 13       		.uleb128 0x13
- 2364 00bf 00       		.byte	0
- 2365 00c0 00       		.byte	0
- 2366 00c1 0F       		.uleb128 0xf
- 2367 00c2 05       		.uleb128 0x5
- 2368 00c3 00       		.byte	0
- 2369 00c4 03       		.uleb128 0x3
- 2370 00c5 0E       		.uleb128 0xe
- 2371 00c6 3A       		.uleb128 0x3a
- 2372 00c7 0B       		.uleb128 0xb
- 2373 00c8 3B       		.uleb128 0x3b
- 2374 00c9 0B       		.uleb128 0xb
- 2375 00ca 49       		.uleb128 0x49
- 2376 00cb 13       		.uleb128 0x13
- 2377 00cc 02       		.uleb128 0x2
- 2378 00cd 18       		.uleb128 0x18
- 2379 00ce 00       		.byte	0
- 2380 00cf 00       		.byte	0
- 2381 00d0 10       		.uleb128 0x10
- 2382 00d1 2E       		.uleb128 0x2e
- 2383 00d2 01       		.byte	0x1
- 2384 00d3 3F       		.uleb128 0x3f
- 2385 00d4 19       		.uleb128 0x19
- 2386 00d5 03       		.uleb128 0x3
- 2387 00d6 0E       		.uleb128 0xe
- 2388 00d7 3A       		.uleb128 0x3a
- 2389 00d8 0B       		.uleb128 0xb
- 2390 00d9 3B       		.uleb128 0x3b
- 2391 00da 0B       		.uleb128 0xb
- 2392 00db 27       		.uleb128 0x27
- 2393 00dc 19       		.uleb128 0x19
- 2394 00dd 11       		.uleb128 0x11
- 2395 00de 01       		.uleb128 0x1
- 2396 00df 12       		.uleb128 0x12
- 2397 00e0 06       		.uleb128 0x6
- 2398 00e1 40       		.uleb128 0x40
- 2399 00e2 18       		.uleb128 0x18
- 2400 00e3 9742     		.uleb128 0x2117
- 2401 00e5 19       		.uleb128 0x19
- 2402 00e6 01       		.uleb128 0x1
- 2403 00e7 13       		.uleb128 0x13
- 2404 00e8 00       		.byte	0
- 2405 00e9 00       		.byte	0
- 2406 00ea 11       		.uleb128 0x11
- 2407 00eb 34       		.uleb128 0x34
- 2408 00ec 00       		.byte	0
- 2409 00ed 03       		.uleb128 0x3
- 2410 00ee 08       		.uleb128 0x8
- 2411 00ef 3A       		.uleb128 0x3a
- 2412 00f0 0B       		.uleb128 0xb
- 2413 00f1 3B       		.uleb128 0x3b
- 2414 00f2 0B       		.uleb128 0xb
- 2415 00f3 49       		.uleb128 0x49
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc1mFfdQ.s 			page 49
-
-
- 2416 00f4 13       		.uleb128 0x13
- 2417 00f5 02       		.uleb128 0x2
- 2418 00f6 18       		.uleb128 0x18
- 2419 00f7 00       		.byte	0
- 2420 00f8 00       		.byte	0
- 2421 00f9 12       		.uleb128 0x12
- 2422 00fa 34       		.uleb128 0x34
- 2423 00fb 00       		.byte	0
- 2424 00fc 03       		.uleb128 0x3
- 2425 00fd 0E       		.uleb128 0xe
- 2426 00fe 3A       		.uleb128 0x3a
- 2427 00ff 0B       		.uleb128 0xb
- 2428 0100 3B       		.uleb128 0x3b
- 2429 0101 0B       		.uleb128 0xb
- 2430 0102 49       		.uleb128 0x49
- 2431 0103 13       		.uleb128 0x13
- 2432 0104 02       		.uleb128 0x2
- 2433 0105 18       		.uleb128 0x18
- 2434 0106 00       		.byte	0
- 2435 0107 00       		.byte	0
- 2436 0108 13       		.uleb128 0x13
- 2437 0109 2E       		.uleb128 0x2e
- 2438 010a 01       		.byte	0x1
- 2439 010b 3F       		.uleb128 0x3f
- 2440 010c 19       		.uleb128 0x19
- 2441 010d 03       		.uleb128 0x3
- 2442 010e 0E       		.uleb128 0xe
- 2443 010f 3A       		.uleb128 0x3a
- 2444 0110 0B       		.uleb128 0xb
- 2445 0111 3B       		.uleb128 0x3b
- 2446 0112 0B       		.uleb128 0xb
- 2447 0113 27       		.uleb128 0x27
- 2448 0114 19       		.uleb128 0x19
- 2449 0115 49       		.uleb128 0x49
- 2450 0116 13       		.uleb128 0x13
- 2451 0117 11       		.uleb128 0x11
- 2452 0118 01       		.uleb128 0x1
- 2453 0119 12       		.uleb128 0x12
- 2454 011a 06       		.uleb128 0x6
- 2455 011b 40       		.uleb128 0x40
- 2456 011c 18       		.uleb128 0x18
- 2457 011d 9742     		.uleb128 0x2117
- 2458 011f 19       		.uleb128 0x19
- 2459 0120 01       		.uleb128 0x1
- 2460 0121 13       		.uleb128 0x13
- 2461 0122 00       		.byte	0
- 2462 0123 00       		.byte	0
- 2463 0124 14       		.uleb128 0x14
- 2464 0125 2E       		.uleb128 0x2e
- 2465 0126 01       		.byte	0x1
- 2466 0127 3F       		.uleb128 0x3f
- 2467 0128 19       		.uleb128 0x19
- 2468 0129 03       		.uleb128 0x3
- 2469 012a 0E       		.uleb128 0xe
- 2470 012b 3A       		.uleb128 0x3a
- 2471 012c 0B       		.uleb128 0xb
- 2472 012d 3B       		.uleb128 0x3b
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc1mFfdQ.s 			page 50
-
-
- 2473 012e 05       		.uleb128 0x5
- 2474 012f 27       		.uleb128 0x27
- 2475 0130 19       		.uleb128 0x19
- 2476 0131 11       		.uleb128 0x11
- 2477 0132 01       		.uleb128 0x1
- 2478 0133 12       		.uleb128 0x12
- 2479 0134 06       		.uleb128 0x6
- 2480 0135 40       		.uleb128 0x40
- 2481 0136 18       		.uleb128 0x18
- 2482 0137 9742     		.uleb128 0x2117
- 2483 0139 19       		.uleb128 0x19
- 2484 013a 01       		.uleb128 0x1
- 2485 013b 13       		.uleb128 0x13
- 2486 013c 00       		.byte	0
- 2487 013d 00       		.byte	0
- 2488 013e 15       		.uleb128 0x15
- 2489 013f 05       		.uleb128 0x5
- 2490 0140 00       		.byte	0
- 2491 0141 03       		.uleb128 0x3
- 2492 0142 0E       		.uleb128 0xe
- 2493 0143 3A       		.uleb128 0x3a
- 2494 0144 0B       		.uleb128 0xb
- 2495 0145 3B       		.uleb128 0x3b
- 2496 0146 05       		.uleb128 0x5
- 2497 0147 49       		.uleb128 0x49
- 2498 0148 13       		.uleb128 0x13
- 2499 0149 02       		.uleb128 0x2
- 2500 014a 18       		.uleb128 0x18
- 2501 014b 00       		.byte	0
- 2502 014c 00       		.byte	0
- 2503 014d 16       		.uleb128 0x16
- 2504 014e 34       		.uleb128 0x34
- 2505 014f 00       		.byte	0
- 2506 0150 03       		.uleb128 0x3
- 2507 0151 0E       		.uleb128 0xe
- 2508 0152 3A       		.uleb128 0x3a
- 2509 0153 0B       		.uleb128 0xb
- 2510 0154 3B       		.uleb128 0x3b
- 2511 0155 05       		.uleb128 0x5
- 2512 0156 49       		.uleb128 0x49
- 2513 0157 13       		.uleb128 0x13
- 2514 0158 3F       		.uleb128 0x3f
- 2515 0159 19       		.uleb128 0x19
- 2516 015a 3C       		.uleb128 0x3c
- 2517 015b 19       		.uleb128 0x19
- 2518 015c 00       		.byte	0
- 2519 015d 00       		.byte	0
- 2520 015e 17       		.uleb128 0x17
- 2521 015f 35       		.uleb128 0x35
- 2522 0160 00       		.byte	0
- 2523 0161 49       		.uleb128 0x49
- 2524 0162 13       		.uleb128 0x13
- 2525 0163 00       		.byte	0
- 2526 0164 00       		.byte	0
- 2527 0165 18       		.uleb128 0x18
- 2528 0166 34       		.uleb128 0x34
- 2529 0167 00       		.byte	0
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc1mFfdQ.s 			page 51
-
-
- 2530 0168 03       		.uleb128 0x3
- 2531 0169 0E       		.uleb128 0xe
- 2532 016a 3A       		.uleb128 0x3a
- 2533 016b 0B       		.uleb128 0xb
- 2534 016c 3B       		.uleb128 0x3b
- 2535 016d 0B       		.uleb128 0xb
- 2536 016e 49       		.uleb128 0x49
- 2537 016f 13       		.uleb128 0x13
- 2538 0170 3F       		.uleb128 0x3f
- 2539 0171 19       		.uleb128 0x19
- 2540 0172 02       		.uleb128 0x2
- 2541 0173 18       		.uleb128 0x18
- 2542 0174 00       		.byte	0
- 2543 0175 00       		.byte	0
- 2544 0176 19       		.uleb128 0x19
- 2545 0177 34       		.uleb128 0x34
- 2546 0178 00       		.byte	0
- 2547 0179 03       		.uleb128 0x3
- 2548 017a 08       		.uleb128 0x8
- 2549 017b 3A       		.uleb128 0x3a
- 2550 017c 0B       		.uleb128 0xb
- 2551 017d 3B       		.uleb128 0x3b
- 2552 017e 0B       		.uleb128 0xb
- 2553 017f 49       		.uleb128 0x49
- 2554 0180 13       		.uleb128 0x13
- 2555 0181 3F       		.uleb128 0x3f
- 2556 0182 19       		.uleb128 0x19
- 2557 0183 02       		.uleb128 0x2
- 2558 0184 18       		.uleb128 0x18
- 2559 0185 00       		.byte	0
- 2560 0186 00       		.byte	0
- 2561 0187 00       		.byte	0
- 2562              		.section	.debug_aranges,"",%progbits
- 2563 0000 74000000 		.4byte	0x74
- 2564 0004 0200     		.2byte	0x2
- 2565 0006 00000000 		.4byte	.Ldebug_info0
- 2566 000a 04       		.byte	0x4
- 2567 000b 00       		.byte	0
- 2568 000c 0000     		.2byte	0
- 2569 000e 0000     		.2byte	0
- 2570 0010 00000000 		.4byte	.LFB63
- 2571 0014 D8000000 		.4byte	.LFE63-.LFB63
- 2572 0018 00000000 		.4byte	.LFB64
- 2573 001c DC010000 		.4byte	.LFE64-.LFB64
- 2574 0020 00000000 		.4byte	.LFB65
- 2575 0024 4A000000 		.4byte	.LFE65-.LFB65
- 2576 0028 00000000 		.4byte	.LFB66
- 2577 002c 56000000 		.4byte	.LFE66-.LFB66
- 2578 0030 00000000 		.4byte	.LFB67
- 2579 0034 5A000000 		.4byte	.LFE67-.LFB67
- 2580 0038 00000000 		.4byte	.LFB68
- 2581 003c 8C030000 		.4byte	.LFE68-.LFB68
- 2582 0040 00000000 		.4byte	.LFB69
- 2583 0044 5C000000 		.4byte	.LFE69-.LFB69
- 2584 0048 00000000 		.4byte	.LFB70
- 2585 004c 1E000000 		.4byte	.LFE70-.LFB70
- 2586 0050 00000000 		.4byte	.LFB71
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc1mFfdQ.s 			page 52
-
-
- 2587 0054 24000000 		.4byte	.LFE71-.LFB71
- 2588 0058 00000000 		.4byte	.LFB72
- 2589 005c 1E000000 		.4byte	.LFE72-.LFB72
- 2590 0060 00000000 		.4byte	.LFB73
- 2591 0064 28000000 		.4byte	.LFE73-.LFB73
- 2592 0068 00000000 		.4byte	.LFB74
- 2593 006c 28000000 		.4byte	.LFE74-.LFB74
- 2594 0070 00000000 		.4byte	0
- 2595 0074 00000000 		.4byte	0
- 2596              		.section	.debug_ranges,"",%progbits
- 2597              	.Ldebug_ranges0:
- 2598 0000 00000000 		.4byte	.LFB63
- 2599 0004 D8000000 		.4byte	.LFE63
- 2600 0008 00000000 		.4byte	.LFB64
- 2601 000c DC010000 		.4byte	.LFE64
- 2602 0010 00000000 		.4byte	.LFB65
- 2603 0014 4A000000 		.4byte	.LFE65
- 2604 0018 00000000 		.4byte	.LFB66
- 2605 001c 56000000 		.4byte	.LFE66
- 2606 0020 00000000 		.4byte	.LFB67
- 2607 0024 5A000000 		.4byte	.LFE67
- 2608 0028 00000000 		.4byte	.LFB68
- 2609 002c 8C030000 		.4byte	.LFE68
- 2610 0030 00000000 		.4byte	.LFB69
- 2611 0034 5C000000 		.4byte	.LFE69
- 2612 0038 00000000 		.4byte	.LFB70
- 2613 003c 1E000000 		.4byte	.LFE70
- 2614 0040 00000000 		.4byte	.LFB71
- 2615 0044 24000000 		.4byte	.LFE71
- 2616 0048 00000000 		.4byte	.LFB72
- 2617 004c 1E000000 		.4byte	.LFE72
- 2618 0050 00000000 		.4byte	.LFB73
- 2619 0054 28000000 		.4byte	.LFE73
- 2620 0058 00000000 		.4byte	.LFB74
- 2621 005c 28000000 		.4byte	.LFE74
- 2622 0060 00000000 		.4byte	0
- 2623 0064 00000000 		.4byte	0
- 2624              		.section	.debug_line,"",%progbits
- 2625              	.Ldebug_line0:
- 2626 0000 05030000 		.section	.debug_str,"MS",%progbits,1
- 2626      02005701 
- 2626      00000201 
- 2626      FB0E0D00 
- 2626      01010101 
- 2627              	.LASF67:
- 2628 0000 5258444C 		.ascii	"RXDLC1\000"
- 2628      433100
- 2629              	.LASF27:
- 2630 0007 656E6162 		.ascii	"enable\000"
- 2630      6C6500
- 2631              	.LASF47:
- 2632 000e 52784275 		.ascii	"RxBuffer\000"
- 2632      66666572 
- 2632      00
- 2633              	.LASF2:
- 2634 0017 73686F72 		.ascii	"short int\000"
- 2634      7420696E 
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc1mFfdQ.s 			page 53
-
-
- 2634      7400
- 2635              	.LASF32:
- 2636 0021 73656E73 		.ascii	"sensor\000"
- 2636      6F7200
- 2637              	.LASF66:
- 2638 0028 52784D65 		.ascii	"RxMessage1\000"
- 2638      73736167 
- 2638      653100
- 2639              	.LASF68:
- 2640 0033 5278466C 		.ascii	"RxFlag1\000"
- 2640      61673100 
- 2641              	.LASF45:
- 2642 003b 636F6E66 		.ascii	"config\000"
- 2642      696700
- 2643              	.LASF12:
- 2644 0042 75696E74 		.ascii	"uint16\000"
- 2644      313600
- 2645              	.LASF31:
- 2646 0049 506F7473 		.ascii	"Pots\000"
- 2646      00
- 2647              	.LASF24:
- 2648 004e 696E6465 		.ascii	"index\000"
- 2648      7800
- 2649              	.LASF14:
- 2650 0054 696E7431 		.ascii	"int16\000"
- 2650      3600
- 2651              	.LASF11:
- 2652 005a 75696E74 		.ascii	"uint8\000"
- 2652      3800
- 2653              	.LASF39:
- 2654 0060 6E756D62 		.ascii	"number_set\000"
- 2654      65725F73 
- 2654      657400
- 2655              	.LASF19:
- 2656 006b 626F6F6C 		.ascii	"bool\000"
- 2656      00
- 2657              	.LASF0:
- 2658 0070 7369676E 		.ascii	"signed char\000"
- 2658      65642063 
- 2658      68617200 
- 2659              	.LASF30:
- 2660 007c 53656E73 		.ascii	"Sensors\000"
- 2660      6F727300 
- 2661              	.LASF15:
- 2662 0084 666C6F61 		.ascii	"float\000"
- 2662      7400
- 2663              	.LASF57:
- 2664 008a 53656E73 		.ascii	"SensorEnable\000"
- 2664      6F72456E 
- 2664      61626C65 
- 2664      00
- 2665              	.LASF22:
- 2666 0097 61636375 		.ascii	"accumulator\000"
- 2666      6D756C61 
- 2666      746F7200 
- 2667              	.LASF6:
- 2668 00a3 6C6F6E67 		.ascii	"long long int\000"
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc1mFfdQ.s 			page 54
-
-
- 2668      206C6F6E 
- 2668      6720696E 
- 2668      7400
- 2669              	.LASF49:
- 2670 00b1 43414E5F 		.ascii	"CAN_Send\000"
- 2670      53656E64 
- 2670      00
- 2671              	.LASF51:
- 2672 00ba 74687265 		.ascii	"three\000"
- 2672      6500
- 2673              	.LASF69:
- 2674 00c0 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
- 2674      4320342E 
- 2674      392E3320 
- 2674      32303135 
- 2674      30333033 
- 2675 00f3 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m3 -mthumb -g -O"
- 2675      20726576 
- 2675      6973696F 
- 2675      6E203232 
- 2675      31323230 
- 2676 0126 30202D66 		.ascii	"0 -ffunction-sections -ffat-lto-objects\000"
- 2676      66756E63 
- 2676      74696F6E 
- 2676      2D736563 
- 2676      74696F6E 
- 2677              	.LASF18:
- 2678 014e 73697A65 		.ascii	"sizetype\000"
- 2678      74797065 
- 2678      00
- 2679              	.LASF10:
- 2680 0157 696E7433 		.ascii	"int32_t\000"
- 2680      325F7400 
- 2681              	.LASF72:
- 2682 015f 47657452 		.ascii	"GetRate\000"
- 2682      61746500 
- 2683              	.LASF70:
- 2684 0167 2E5C432D 		.ascii	".\\C-CAN.c\000"
- 2684      43414E2E 
- 2684      6300
- 2685              	.LASF44:
- 2686 0171 436F6E66 		.ascii	"Config\000"
- 2686      696700
- 2687              	.LASF48:
- 2688 0178 52784275 		.ascii	"RxBufferIndex\000"
- 2688      66666572 
- 2688      496E6465 
- 2688      7800
- 2689              	.LASF20:
- 2690 0186 6E616D65 		.ascii	"name\000"
- 2690      00
- 2691              	.LASF29:
- 2692 018b 53656E73 		.ascii	"Sensor\000"
- 2692      6F7200
- 2693              	.LASF36:
- 2694 0192 47657452 		.ascii	"GetRPM\000"
- 2694      504D00
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc1mFfdQ.s 			page 55
-
-
- 2695              	.LASF64:
- 2696 0199 72696768 		.ascii	"right\000"
- 2696      7400
- 2697              	.LASF1:
- 2698 019f 756E7369 		.ascii	"unsigned char\000"
- 2698      676E6564 
- 2698      20636861 
- 2698      7200
- 2699              	.LASF38:
- 2700 01ad 53656E73 		.ascii	"SensorSet\000"
- 2700      6F725365 
- 2700      7400
- 2701              	.LASF56:
- 2702 01b7 666C6167 		.ascii	"flag_set\000"
- 2702      5F736574 
- 2702      00
- 2703              	.LASF34:
- 2704 01c0 456E636F 		.ascii	"Encoder\000"
- 2704      64657200 
- 2705              	.LASF7:
- 2706 01c8 6C6F6E67 		.ascii	"long long unsigned int\000"
- 2706      206C6F6E 
- 2706      6720756E 
- 2706      7369676E 
- 2706      65642069 
- 2707              	.LASF8:
- 2708 01df 756E7369 		.ascii	"unsigned int\000"
- 2708      676E6564 
- 2708      20696E74 
- 2708      00
- 2709              	.LASF40:
- 2710 01ec 77696E64 		.ascii	"window_set\000"
- 2710      6F775F73 
- 2710      657400
- 2711              	.LASF60:
- 2712 01f7 456E6162 		.ascii	"EnableRestore\000"
- 2712      6C655265 
- 2712      73746F72 
- 2712      6500
- 2713              	.LASF25:
- 2714 0205 77696E64 		.ascii	"window\000"
- 2714      6F7700
- 2715              	.LASF43:
- 2716 020c 456E636F 		.ascii	"EncoderInit\000"
- 2716      64657249 
- 2716      6E697400 
- 2717              	.LASF3:
- 2718 0218 73686F72 		.ascii	"short unsigned int\000"
- 2718      7420756E 
- 2718      7369676E 
- 2718      65642069 
- 2718      6E7400
- 2719              	.LASF17:
- 2720 022b 63686172 		.ascii	"char\000"
- 2720      00
- 2721              	.LASF4:
- 2722 0230 6C6F6E67 		.ascii	"long int\000"
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc1mFfdQ.s 			page 56
-
-
- 2722      20696E74 
- 2722      00
- 2723              	.LASF63:
- 2724 0239 6C656674 		.ascii	"left\000"
- 2724      00
- 2725              	.LASF58:
- 2726 023e 656E6162 		.ascii	"enable_set\000"
- 2726      6C655F73 
- 2726      657400
- 2727              	.LASF21:
- 2728 0249 64617461 		.ascii	"data\000"
- 2728      00
- 2729              	.LASF13:
- 2730 024e 75696E74 		.ascii	"uint32\000"
- 2730      333200
- 2731              	.LASF5:
- 2732 0255 6C6F6E67 		.ascii	"long unsigned int\000"
- 2732      20756E73 
- 2732      69676E65 
- 2732      6420696E 
- 2732      7400
- 2733              	.LASF16:
- 2734 0267 646F7562 		.ascii	"double\000"
- 2734      6C6500
- 2735              	.LASF59:
- 2736 026e 456E6162 		.ascii	"EnableSave\000"
- 2736      6C655361 
- 2736      766500
- 2737              	.LASF35:
- 2738 0279 47657453 		.ascii	"GetSample\000"
- 2738      616D706C 
- 2738      6500
- 2739              	.LASF54:
- 2740 0283 73657665 		.ascii	"seven\000"
- 2740      6E00
- 2741              	.LASF9:
- 2742 0289 5F5F696E 		.ascii	"__int32_t\000"
- 2742      7433325F 
- 2742      7400
- 2743              	.LASF53:
- 2744 0293 66697665 		.ascii	"five\000"
- 2744      00
- 2745              	.LASF41:
- 2746 0298 72617465 		.ascii	"rate_set\000"
- 2746      5F736574 
- 2746      00
- 2747              	.LASF28:
- 2748 02a1 72617465 		.ascii	"rate\000"
- 2748      00
- 2749              	.LASF61:
- 2750 02a6 74656D70 		.ascii	"temp_enable\000"
- 2750      5F656E61 
- 2750      626C6500 
- 2751              	.LASF37:
- 2752 02b2 656E636F 		.ascii	"encoder\000"
- 2752      64657200 
- 2753              	.LASF71:
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc1mFfdQ.s 			page 57
-
-
- 2754 02ba 433A5C55 		.ascii	"C:\\Users\\Patrick\\Documents\\GitHub\\PSoC 5LP FIl"
- 2754      73657273 
- 2754      5C506174 
- 2754      7269636B 
- 2754      5C446F63 
- 2755 02e8 65735C43 		.ascii	"es\\C-CAN_PSoC_DevKit\\C-CAN.cydsn\000"
- 2755      2D43414E 
- 2755      5F50536F 
- 2755      435F4465 
- 2755      764B6974 
- 2756              	.LASF26:
- 2757 0309 666C6167 		.ascii	"flag\000"
- 2757      00
- 2758              	.LASF23:
- 2759 030e 6E756D62 		.ascii	"number\000"
- 2759      657200
- 2760              	.LASF62:
- 2761 0315 49544D5F 		.ascii	"ITM_RxBuffer\000"
- 2761      52784275 
- 2761      66666572 
- 2761      00
- 2762              	.LASF33:
- 2763 0322 456E636F 		.ascii	"Encoders\000"
- 2763      64657273 
- 2763      00
- 2764              	.LASF52:
- 2765 032b 666F7572 		.ascii	"four\000"
- 2765      00
- 2766              	.LASF42:
- 2767 0330 506F7449 		.ascii	"PotInit\000"
- 2767      6E697400 
- 2768              	.LASF65:
- 2769 0338 54784D65 		.ascii	"TxMessage1\000"
- 2769      73736167 
- 2769      653100
- 2770              	.LASF50:
- 2771 0343 7A65726F 		.ascii	"zero\000"
- 2771      00
- 2772              	.LASF46:
- 2773 0348 7472616E 		.ascii	"transmit\000"
- 2773      736D6974 
- 2773      00
- 2774              	.LASF55:
- 2775 0351 53657446 		.ascii	"SetFlag\000"
- 2775      6C616700 
- 2776              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.9.3 20150303 (release) [ARM/embedded-4_9-br
+ 610              		.global	Config
+ 611              		.thumb
+ 612              		.thumb_func
+ 613              		.type	Config, %function
+ 614              	Config:
+ 615              	.LFB68:
+ 159:.\C-CAN.c     **** 
+ 160:.\C-CAN.c     **** void Config(void){
+ 616              		.loc 1 160 0
+ 617              		.cfi_startproc
+ 618              		@ args = 0, pretend = 0, frame = 0
+ 619              		@ frame_needed = 1, uses_anonymous_args = 0
+ 620              		@ link register save eliminated.
+ 621 0000 80B4     		push	{r7}
+ 622              		.cfi_def_cfa_offset 4
+ 623              		.cfi_offset 7, -4
+ 624 0002 00AF     		add	r7, sp, #0
+ 625              		.cfi_def_cfa_register 7
+ 161:.\C-CAN.c     ****     
+ 162:.\C-CAN.c     **** }
+ 626              		.loc 1 162 0
+ 627 0004 BD46     		mov	sp, r7
+ 628              		.cfi_def_cfa_register 13
+ 629              		@ sp needed
+ 630 0006 5DF8047B 		ldr	r7, [sp], #4
+ 631              		.cfi_restore 7
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc4ZZri1.s 			page 15
+
+
+ 632              		.cfi_def_cfa_offset 0
+ 633 000a 7047     		bx	lr
+ 634              		.cfi_endproc
+ 635              	.LFE68:
+ 636              		.size	Config, .-Config
+ 637              		.section	.text.CAN_Send,"ax",%progbits
+ 638              		.align	2
+ 639              		.global	CAN_Send
+ 640              		.thumb
+ 641              		.thumb_func
+ 642              		.type	CAN_Send, %function
+ 643              	CAN_Send:
+ 644              	.LFB69:
+ 163:.\C-CAN.c     **** 
+ 164:.\C-CAN.c     **** void CAN_Send(uint8 zero, uint8 one, uint8 two, uint8 three, uint8 four, uint8 five, uint8 six, uin
+ 645              		.loc 1 164 0
+ 646              		.cfi_startproc
+ 647              		@ args = 16, pretend = 0, frame = 8
+ 648              		@ frame_needed = 1, uses_anonymous_args = 0
+ 649              		@ link register save eliminated.
+ 650 0000 90B4     		push	{r4, r7}
+ 651              		.cfi_def_cfa_offset 8
+ 652              		.cfi_offset 4, -8
+ 653              		.cfi_offset 7, -4
+ 654 0002 82B0     		sub	sp, sp, #8
+ 655              		.cfi_def_cfa_offset 16
+ 656 0004 00AF     		add	r7, sp, #0
+ 657              		.cfi_def_cfa_register 7
+ 658 0006 0446     		mov	r4, r0
+ 659 0008 0846     		mov	r0, r1
+ 660 000a 1146     		mov	r1, r2
+ 661 000c 1A46     		mov	r2, r3
+ 662 000e 2346     		mov	r3, r4
+ 663 0010 FB71     		strb	r3, [r7, #7]
+ 664 0012 0346     		mov	r3, r0
+ 665 0014 BB71     		strb	r3, [r7, #6]
+ 666 0016 0B46     		mov	r3, r1
+ 667 0018 7B71     		strb	r3, [r7, #5]
+ 668 001a 1346     		mov	r3, r2
+ 669 001c 3B71     		strb	r3, [r7, #4]
+ 165:.\C-CAN.c     ****     TxMessage1[0] = zero;
+ 670              		.loc 1 165 0
+ 671 001e 0E4A     		ldr	r2, .L20
+ 672 0020 FB79     		ldrb	r3, [r7, #7]
+ 673 0022 1370     		strb	r3, [r2]
+ 166:.\C-CAN.c     ****     TxMessage1[1] = one;
+ 674              		.loc 1 166 0
+ 675 0024 0C4A     		ldr	r2, .L20
+ 676 0026 BB79     		ldrb	r3, [r7, #6]
+ 677 0028 5370     		strb	r3, [r2, #1]
+ 167:.\C-CAN.c     ****     TxMessage1[2] = two;
+ 678              		.loc 1 167 0
+ 679 002a 0B4A     		ldr	r2, .L20
+ 680 002c 7B79     		ldrb	r3, [r7, #5]
+ 681 002e 9370     		strb	r3, [r2, #2]
+ 168:.\C-CAN.c     ****     TxMessage1[3] = three;
+ 682              		.loc 1 168 0
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc4ZZri1.s 			page 16
+
+
+ 683 0030 094A     		ldr	r2, .L20
+ 684 0032 3B79     		ldrb	r3, [r7, #4]
+ 685 0034 D370     		strb	r3, [r2, #3]
+ 169:.\C-CAN.c     ****     TxMessage1[4] = four;
+ 686              		.loc 1 169 0
+ 687 0036 084A     		ldr	r2, .L20
+ 688 0038 3B7C     		ldrb	r3, [r7, #16]
+ 689 003a 1371     		strb	r3, [r2, #4]
+ 170:.\C-CAN.c     ****     TxMessage1[5] = five;
+ 690              		.loc 1 170 0
+ 691 003c 064A     		ldr	r2, .L20
+ 692 003e 3B7D     		ldrb	r3, [r7, #20]
+ 693 0040 5371     		strb	r3, [r2, #5]
+ 171:.\C-CAN.c     ****     TxMessage1[6] = six;
+ 694              		.loc 1 171 0
+ 695 0042 054A     		ldr	r2, .L20
+ 696 0044 3B7E     		ldrb	r3, [r7, #24]
+ 697 0046 9371     		strb	r3, [r2, #6]
+ 172:.\C-CAN.c     ****     TxMessage1[7] = seven;
+ 698              		.loc 1 172 0
+ 699 0048 034A     		ldr	r2, .L20
+ 700 004a 3B7F     		ldrb	r3, [r7, #28]
+ 701 004c D371     		strb	r3, [r2, #7]
+ 173:.\C-CAN.c     **** }
+ 702              		.loc 1 173 0
+ 703 004e 0837     		adds	r7, r7, #8
+ 704              		.cfi_def_cfa_offset 8
+ 705 0050 BD46     		mov	sp, r7
+ 706              		.cfi_def_cfa_register 13
+ 707              		@ sp needed
+ 708 0052 90BC     		pop	{r4, r7}
+ 709              		.cfi_restore 7
+ 710              		.cfi_restore 4
+ 711              		.cfi_def_cfa_offset 0
+ 712 0054 7047     		bx	lr
+ 713              	.L21:
+ 714 0056 00BF     		.align	2
+ 715              	.L20:
+ 716 0058 00000000 		.word	TxMessage1
+ 717              		.cfi_endproc
+ 718              	.LFE69:
+ 719              		.size	CAN_Send, .-CAN_Send
+ 720              		.section	.text.SetFlag,"ax",%progbits
+ 721              		.align	2
+ 722              		.global	SetFlag
+ 723              		.thumb
+ 724              		.thumb_func
+ 725              		.type	SetFlag, %function
+ 726              	SetFlag:
+ 727              	.LFB70:
+ 174:.\C-CAN.c     ****     
+ 175:.\C-CAN.c     **** void SetFlag(Sensor * sensor, bool flag_set){ //Sets the execution flag for sensor sampling
+ 728              		.loc 1 175 0
+ 729              		.cfi_startproc
+ 730              		@ args = 0, pretend = 0, frame = 8
+ 731              		@ frame_needed = 1, uses_anonymous_args = 0
+ 732              		@ link register save eliminated.
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc4ZZri1.s 			page 17
+
+
+ 733 0000 80B4     		push	{r7}
+ 734              		.cfi_def_cfa_offset 4
+ 735              		.cfi_offset 7, -4
+ 736 0002 83B0     		sub	sp, sp, #12
+ 737              		.cfi_def_cfa_offset 16
+ 738 0004 00AF     		add	r7, sp, #0
+ 739              		.cfi_def_cfa_register 7
+ 740 0006 7860     		str	r0, [r7, #4]
+ 741 0008 0B46     		mov	r3, r1
+ 742 000a FB70     		strb	r3, [r7, #3]
+ 176:.\C-CAN.c     ****     sensor->flag = flag_set;
+ 743              		.loc 1 176 0
+ 744 000c 7B68     		ldr	r3, [r7, #4]
+ 745 000e FA78     		ldrb	r2, [r7, #3]
+ 746 0010 83F89B20 		strb	r2, [r3, #155]
+ 177:.\C-CAN.c     **** }
+ 747              		.loc 1 177 0
+ 748 0014 0C37     		adds	r7, r7, #12
+ 749              		.cfi_def_cfa_offset 4
+ 750 0016 BD46     		mov	sp, r7
+ 751              		.cfi_def_cfa_register 13
+ 752              		@ sp needed
+ 753 0018 5DF8047B 		ldr	r7, [sp], #4
+ 754              		.cfi_restore 7
+ 755              		.cfi_def_cfa_offset 0
+ 756 001c 7047     		bx	lr
+ 757              		.cfi_endproc
+ 758              	.LFE70:
+ 759              		.size	SetFlag, .-SetFlag
+ 760 001e 00BF     		.section	.text.GetRate,"ax",%progbits
+ 761              		.align	2
+ 762              		.global	GetRate
+ 763              		.thumb
+ 764              		.thumb_func
+ 765              		.type	GetRate, %function
+ 766              	GetRate:
+ 767              	.LFB71:
+ 178:.\C-CAN.c     **** 
+ 179:.\C-CAN.c     **** uint16 GetRate(Sensor * sensor){ //Gets the sampling rate for a sensor to determine when to set the
+ 768              		.loc 1 179 0
+ 769              		.cfi_startproc
+ 770              		@ args = 0, pretend = 0, frame = 8
+ 771              		@ frame_needed = 1, uses_anonymous_args = 0
+ 772              		@ link register save eliminated.
+ 773 0000 80B4     		push	{r7}
+ 774              		.cfi_def_cfa_offset 4
+ 775              		.cfi_offset 7, -4
+ 776 0002 83B0     		sub	sp, sp, #12
+ 777              		.cfi_def_cfa_offset 16
+ 778 0004 00AF     		add	r7, sp, #0
+ 779              		.cfi_def_cfa_register 7
+ 780 0006 7860     		str	r0, [r7, #4]
+ 180:.\C-CAN.c     ****     return INTERRUPT_FREQ/(sensor->rate);
+ 781              		.loc 1 180 0
+ 782 0008 7B68     		ldr	r3, [r7, #4]
+ 783 000a B3F89E30 		ldrh	r3, [r3, #158]
+ 784 000e 4CF25032 		movw	r2, #50000
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc4ZZri1.s 			page 18
+
+
+ 785 0012 B2FBF3F3 		udiv	r3, r2, r3
+ 786 0016 9BB2     		uxth	r3, r3
+ 181:.\C-CAN.c     **** }
+ 787              		.loc 1 181 0
+ 788 0018 1846     		mov	r0, r3
+ 789 001a 0C37     		adds	r7, r7, #12
+ 790              		.cfi_def_cfa_offset 4
+ 791 001c BD46     		mov	sp, r7
+ 792              		.cfi_def_cfa_register 13
+ 793              		@ sp needed
+ 794 001e 5DF8047B 		ldr	r7, [sp], #4
+ 795              		.cfi_restore 7
+ 796              		.cfi_def_cfa_offset 0
+ 797 0022 7047     		bx	lr
+ 798              		.cfi_endproc
+ 799              	.LFE71:
+ 800              		.size	GetRate, .-GetRate
+ 801              		.section	.text.SensorEnable,"ax",%progbits
+ 802              		.align	2
+ 803              		.global	SensorEnable
+ 804              		.thumb
+ 805              		.thumb_func
+ 806              		.type	SensorEnable, %function
+ 807              	SensorEnable:
+ 808              	.LFB72:
+ 182:.\C-CAN.c     **** 
+ 183:.\C-CAN.c     **** void SensorEnable(Sensor * sensor, bool enable_set){ //Enables or disables a sensor
+ 809              		.loc 1 183 0
+ 810              		.cfi_startproc
+ 811              		@ args = 0, pretend = 0, frame = 8
+ 812              		@ frame_needed = 1, uses_anonymous_args = 0
+ 813              		@ link register save eliminated.
+ 814 0000 80B4     		push	{r7}
+ 815              		.cfi_def_cfa_offset 4
+ 816              		.cfi_offset 7, -4
+ 817 0002 83B0     		sub	sp, sp, #12
+ 818              		.cfi_def_cfa_offset 16
+ 819 0004 00AF     		add	r7, sp, #0
+ 820              		.cfi_def_cfa_register 7
+ 821 0006 7860     		str	r0, [r7, #4]
+ 822 0008 0B46     		mov	r3, r1
+ 823 000a FB70     		strb	r3, [r7, #3]
+ 184:.\C-CAN.c     ****     sensor->enable = enable_set;
+ 824              		.loc 1 184 0
+ 825 000c 7B68     		ldr	r3, [r7, #4]
+ 826 000e FA78     		ldrb	r2, [r7, #3]
+ 827 0010 83F89C20 		strb	r2, [r3, #156]
+ 185:.\C-CAN.c     **** }
+ 828              		.loc 1 185 0
+ 829 0014 0C37     		adds	r7, r7, #12
+ 830              		.cfi_def_cfa_offset 4
+ 831 0016 BD46     		mov	sp, r7
+ 832              		.cfi_def_cfa_register 13
+ 833              		@ sp needed
+ 834 0018 5DF8047B 		ldr	r7, [sp], #4
+ 835              		.cfi_restore 7
+ 836              		.cfi_def_cfa_offset 0
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc4ZZri1.s 			page 19
+
+
+ 837 001c 7047     		bx	lr
+ 838              		.cfi_endproc
+ 839              	.LFE72:
+ 840              		.size	SensorEnable, .-SensorEnable
+ 841 001e 00BF     		.section	.text.EnableSave,"ax",%progbits
+ 842              		.align	2
+ 843              		.global	EnableSave
+ 844              		.thumb
+ 845              		.thumb_func
+ 846              		.type	EnableSave, %function
+ 847              	EnableSave:
+ 848              	.LFB73:
+ 186:.\C-CAN.c     **** 
+ 187:.\C-CAN.c     **** void EnableSave(Sensor * sensor){ //Saves the enable bit for a given sensor to temp_enable
+ 849              		.loc 1 187 0
+ 850              		.cfi_startproc
+ 851              		@ args = 0, pretend = 0, frame = 8
+ 852              		@ frame_needed = 1, uses_anonymous_args = 0
+ 853              		@ link register save eliminated.
+ 854 0000 80B4     		push	{r7}
+ 855              		.cfi_def_cfa_offset 4
+ 856              		.cfi_offset 7, -4
+ 857 0002 83B0     		sub	sp, sp, #12
+ 858              		.cfi_def_cfa_offset 16
+ 859 0004 00AF     		add	r7, sp, #0
+ 860              		.cfi_def_cfa_register 7
+ 861 0006 7860     		str	r0, [r7, #4]
+ 188:.\C-CAN.c     ****     temp_enable[sensor->number] = sensor->enable;
+ 862              		.loc 1 188 0
+ 863 0008 7B68     		ldr	r3, [r7, #4]
+ 864 000a 93F89830 		ldrb	r3, [r3, #152]	@ zero_extendqisi2
+ 865 000e 1A46     		mov	r2, r3
+ 866 0010 7B68     		ldr	r3, [r7, #4]
+ 867 0012 93F89C10 		ldrb	r1, [r3, #156]	@ zero_extendqisi2
+ 868 0016 034B     		ldr	r3, .L27
+ 869 0018 9954     		strb	r1, [r3, r2]
+ 189:.\C-CAN.c     **** }
+ 870              		.loc 1 189 0
+ 871 001a 0C37     		adds	r7, r7, #12
+ 872              		.cfi_def_cfa_offset 4
+ 873 001c BD46     		mov	sp, r7
+ 874              		.cfi_def_cfa_register 13
+ 875              		@ sp needed
+ 876 001e 5DF8047B 		ldr	r7, [sp], #4
+ 877              		.cfi_restore 7
+ 878              		.cfi_def_cfa_offset 0
+ 879 0022 7047     		bx	lr
+ 880              	.L28:
+ 881              		.align	2
+ 882              	.L27:
+ 883 0024 00000000 		.word	temp_enable
+ 884              		.cfi_endproc
+ 885              	.LFE73:
+ 886              		.size	EnableSave, .-EnableSave
+ 887              		.section	.text.EnableRestore,"ax",%progbits
+ 888              		.align	2
+ 889              		.global	EnableRestore
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc4ZZri1.s 			page 20
+
+
+ 890              		.thumb
+ 891              		.thumb_func
+ 892              		.type	EnableRestore, %function
+ 893              	EnableRestore:
+ 894              	.LFB74:
+ 190:.\C-CAN.c     **** 
+ 191:.\C-CAN.c     **** void EnableRestore(Sensor * sensor){ //Restores the enable setting for a sensor
+ 895              		.loc 1 191 0
+ 896              		.cfi_startproc
+ 897              		@ args = 0, pretend = 0, frame = 8
+ 898              		@ frame_needed = 1, uses_anonymous_args = 0
+ 899              		@ link register save eliminated.
+ 900 0000 80B4     		push	{r7}
+ 901              		.cfi_def_cfa_offset 4
+ 902              		.cfi_offset 7, -4
+ 903 0002 83B0     		sub	sp, sp, #12
+ 904              		.cfi_def_cfa_offset 16
+ 905 0004 00AF     		add	r7, sp, #0
+ 906              		.cfi_def_cfa_register 7
+ 907 0006 7860     		str	r0, [r7, #4]
+ 192:.\C-CAN.c     ****     sensor->enable = temp_enable[sensor->number];
+ 908              		.loc 1 192 0
+ 909 0008 7B68     		ldr	r3, [r7, #4]
+ 910 000a 93F89830 		ldrb	r3, [r3, #152]	@ zero_extendqisi2
+ 911 000e 1A46     		mov	r2, r3
+ 912 0010 044B     		ldr	r3, .L30
+ 913 0012 9A5C     		ldrb	r2, [r3, r2]	@ zero_extendqisi2
+ 914 0014 7B68     		ldr	r3, [r7, #4]
+ 915 0016 83F89C20 		strb	r2, [r3, #156]
+ 193:.\C-CAN.c     **** }
+ 916              		.loc 1 193 0
+ 917 001a 0C37     		adds	r7, r7, #12
+ 918              		.cfi_def_cfa_offset 4
+ 919 001c BD46     		mov	sp, r7
+ 920              		.cfi_def_cfa_register 13
+ 921              		@ sp needed
+ 922 001e 5DF8047B 		ldr	r7, [sp], #4
+ 923              		.cfi_restore 7
+ 924              		.cfi_def_cfa_offset 0
+ 925 0022 7047     		bx	lr
+ 926              	.L31:
+ 927              		.align	2
+ 928              	.L30:
+ 929 0024 00000000 		.word	temp_enable
+ 930              		.cfi_endproc
+ 931              	.LFE74:
+ 932              		.size	EnableRestore, .-EnableRestore
+ 933              		.text
+ 934              	.Letext0:
+ 935              		.file 2 "c:\\program files (x86)\\cypress\\psoc creator\\3.3\\psoc creator\\import\\gnu\\arm\\4.9.
+ 936              		.file 3 "c:\\program files (x86)\\cypress\\psoc creator\\3.3\\psoc creator\\import\\gnu\\arm\\4.9.
+ 937              		.file 4 "Generated_Source\\PSoC5/cytypes.h"
+ 938              		.file 5 "./C-CAN.h"
+ 939              		.file 6 "Generated_Source\\PSoC5/core_cm3.h"
+ 940              		.section	.debug_info,"",%progbits
+ 941              	.Ldebug_info0:
+ 942 0000 65050000 		.4byte	0x565
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc4ZZri1.s 			page 21
+
+
+ 943 0004 0400     		.2byte	0x4
+ 944 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 945 000a 04       		.byte	0x4
+ 946 000b 01       		.uleb128 0x1
+ 947 000c AB000000 		.4byte	.LASF64
+ 948 0010 01       		.byte	0x1
+ 949 0011 52010000 		.4byte	.LASF65
+ 950 0015 97020000 		.4byte	.LASF66
+ 951 0019 00000000 		.4byte	.Ldebug_ranges0+0
+ 952 001d 00000000 		.4byte	0
+ 953 0021 00000000 		.4byte	.Ldebug_line0
+ 954 0025 02       		.uleb128 0x2
+ 955 0026 01       		.byte	0x1
+ 956 0027 06       		.byte	0x6
+ 957 0028 5B000000 		.4byte	.LASF0
+ 958 002c 02       		.uleb128 0x2
+ 959 002d 01       		.byte	0x1
+ 960 002e 08       		.byte	0x8
+ 961 002f 7C010000 		.4byte	.LASF1
+ 962 0033 02       		.uleb128 0x2
+ 963 0034 02       		.byte	0x2
+ 964 0035 05       		.byte	0x5
+ 965 0036 0E000000 		.4byte	.LASF2
+ 966 003a 02       		.uleb128 0x2
+ 967 003b 02       		.byte	0x2
+ 968 003c 07       		.byte	0x7
+ 969 003d F5010000 		.4byte	.LASF3
+ 970 0041 03       		.uleb128 0x3
+ 971 0042 66020000 		.4byte	.LASF9
+ 972 0046 02       		.byte	0x2
+ 973 0047 3F       		.byte	0x3f
+ 974 0048 4C000000 		.4byte	0x4c
+ 975 004c 02       		.uleb128 0x2
+ 976 004d 04       		.byte	0x4
+ 977 004e 05       		.byte	0x5
+ 978 004f 0D020000 		.4byte	.LASF4
+ 979 0053 02       		.uleb128 0x2
+ 980 0054 04       		.byte	0x4
+ 981 0055 07       		.byte	0x7
+ 982 0056 32020000 		.4byte	.LASF5
+ 983 005a 02       		.uleb128 0x2
+ 984 005b 08       		.byte	0x8
+ 985 005c 05       		.byte	0x5
+ 986 005d 8E000000 		.4byte	.LASF6
+ 987 0061 02       		.uleb128 0x2
+ 988 0062 08       		.byte	0x8
+ 989 0063 07       		.byte	0x7
+ 990 0064 A5010000 		.4byte	.LASF7
+ 991 0068 04       		.uleb128 0x4
+ 992 0069 04       		.byte	0x4
+ 993 006a 05       		.byte	0x5
+ 994 006b 696E7400 		.ascii	"int\000"
+ 995 006f 02       		.uleb128 0x2
+ 996 0070 04       		.byte	0x4
+ 997 0071 07       		.byte	0x7
+ 998 0072 BC010000 		.4byte	.LASF8
+ 999 0076 03       		.uleb128 0x3
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc4ZZri1.s 			page 22
+
+
+ 1000 0077 42010000 		.4byte	.LASF10
+ 1001 007b 03       		.byte	0x3
+ 1002 007c 2C       		.byte	0x2c
+ 1003 007d 41000000 		.4byte	0x41
+ 1004 0081 05       		.uleb128 0x5
+ 1005 0082 45000000 		.4byte	.LASF11
+ 1006 0086 04       		.byte	0x4
+ 1007 0087 9201     		.2byte	0x192
+ 1008 0089 2C000000 		.4byte	0x2c
+ 1009 008d 05       		.uleb128 0x5
+ 1010 008e 32000000 		.4byte	.LASF12
+ 1011 0092 04       		.byte	0x4
+ 1012 0093 9301     		.2byte	0x193
+ 1013 0095 3A000000 		.4byte	0x3a
+ 1014 0099 05       		.uleb128 0x5
+ 1015 009a 2B020000 		.4byte	.LASF13
+ 1016 009e 04       		.byte	0x4
+ 1017 009f 9401     		.2byte	0x194
+ 1018 00a1 53000000 		.4byte	0x53
+ 1019 00a5 05       		.uleb128 0x5
+ 1020 00a6 3F000000 		.4byte	.LASF14
+ 1021 00aa 04       		.byte	0x4
+ 1022 00ab 9601     		.2byte	0x196
+ 1023 00ad 33000000 		.4byte	0x33
+ 1024 00b1 02       		.uleb128 0x2
+ 1025 00b2 04       		.byte	0x4
+ 1026 00b3 04       		.byte	0x4
+ 1027 00b4 6F000000 		.4byte	.LASF15
+ 1028 00b8 02       		.uleb128 0x2
+ 1029 00b9 08       		.byte	0x8
+ 1030 00ba 04       		.byte	0x4
+ 1031 00bb 44020000 		.4byte	.LASF16
+ 1032 00bf 02       		.uleb128 0x2
+ 1033 00c0 01       		.byte	0x1
+ 1034 00c1 08       		.byte	0x8
+ 1035 00c2 08020000 		.4byte	.LASF17
+ 1036 00c6 02       		.uleb128 0x2
+ 1037 00c7 04       		.byte	0x4
+ 1038 00c8 07       		.byte	0x7
+ 1039 00c9 39010000 		.4byte	.LASF18
+ 1040 00cd 06       		.uleb128 0x6
+ 1041 00ce 81000000 		.4byte	0x81
+ 1042 00d2 DD000000 		.4byte	0xdd
+ 1043 00d6 07       		.uleb128 0x7
+ 1044 00d7 C6000000 		.4byte	0xc6
+ 1045 00db 07       		.byte	0x7
+ 1046 00dc 00       		.byte	0
+ 1047 00dd 03       		.uleb128 0x3
+ 1048 00de 56000000 		.4byte	.LASF19
+ 1049 00e2 05       		.byte	0x5
+ 1050 00e3 1B       		.byte	0x1b
+ 1051 00e4 2C000000 		.4byte	0x2c
+ 1052 00e8 08       		.uleb128 0x8
+ 1053 00e9 67000000 		.4byte	.LASF30
+ 1054 00ed A0       		.byte	0xa0
+ 1055 00ee 05       		.byte	0x5
+ 1056 00ef 1E       		.byte	0x1e
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc4ZZri1.s 			page 23
+
+
+ 1057 00f0 61010000 		.4byte	0x161
+ 1058 00f4 09       		.uleb128 0x9
+ 1059 00f5 63010000 		.4byte	.LASF20
+ 1060 00f9 05       		.byte	0x5
+ 1061 00fa 1F       		.byte	0x1f
+ 1062 00fb 61010000 		.4byte	0x161
+ 1063 00ff 00       		.byte	0
+ 1064 0100 09       		.uleb128 0x9
+ 1065 0101 26020000 		.4byte	.LASF21
+ 1066 0105 05       		.byte	0x5
+ 1067 0106 20       		.byte	0x20
+ 1068 0107 71010000 		.4byte	0x171
+ 1069 010b 12       		.byte	0x12
+ 1070 010c 09       		.uleb128 0x9
+ 1071 010d 82000000 		.4byte	.LASF22
+ 1072 0111 05       		.byte	0x5
+ 1073 0112 21       		.byte	0x21
+ 1074 0113 99000000 		.4byte	0x99
+ 1075 0117 94       		.byte	0x94
+ 1076 0118 09       		.uleb128 0x9
+ 1077 0119 EB020000 		.4byte	.LASF23
+ 1078 011d 05       		.byte	0x5
+ 1079 011e 22       		.byte	0x22
+ 1080 011f 81000000 		.4byte	0x81
+ 1081 0123 98       		.byte	0x98
+ 1082 0124 09       		.uleb128 0x9
+ 1083 0125 39000000 		.4byte	.LASF24
+ 1084 0129 05       		.byte	0x5
+ 1085 012a 23       		.byte	0x23
+ 1086 012b 81000000 		.4byte	0x81
+ 1087 012f 99       		.byte	0x99
+ 1088 0130 09       		.uleb128 0x9
+ 1089 0131 E2010000 		.4byte	.LASF25
+ 1090 0135 05       		.byte	0x5
+ 1091 0136 24       		.byte	0x24
+ 1092 0137 81000000 		.4byte	0x81
+ 1093 013b 9A       		.byte	0x9a
+ 1094 013c 09       		.uleb128 0x9
+ 1095 013d E6020000 		.4byte	.LASF26
+ 1096 0141 05       		.byte	0x5
+ 1097 0142 25       		.byte	0x25
+ 1098 0143 DD000000 		.4byte	0xdd
+ 1099 0147 9B       		.byte	0x9b
+ 1100 0148 09       		.uleb128 0x9
+ 1101 0149 07000000 		.4byte	.LASF27
+ 1102 014d 05       		.byte	0x5
+ 1103 014e 26       		.byte	0x26
+ 1104 014f DD000000 		.4byte	0xdd
+ 1105 0153 9C       		.byte	0x9c
+ 1106 0154 09       		.uleb128 0x9
+ 1107 0155 7E020000 		.4byte	.LASF28
+ 1108 0159 05       		.byte	0x5
+ 1109 015a 27       		.byte	0x27
+ 1110 015b 8D000000 		.4byte	0x8d
+ 1111 015f 9E       		.byte	0x9e
+ 1112 0160 00       		.byte	0
+ 1113 0161 06       		.uleb128 0x6
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc4ZZri1.s 			page 24
+
+
+ 1114 0162 BF000000 		.4byte	0xbf
+ 1115 0166 71010000 		.4byte	0x171
+ 1116 016a 07       		.uleb128 0x7
+ 1117 016b C6000000 		.4byte	0xc6
+ 1118 016f 10       		.byte	0x10
+ 1119 0170 00       		.byte	0
+ 1120 0171 06       		.uleb128 0x6
+ 1121 0172 8D000000 		.4byte	0x8d
+ 1122 0176 81010000 		.4byte	0x181
+ 1123 017a 07       		.uleb128 0x7
+ 1124 017b C6000000 		.4byte	0xc6
+ 1125 017f 3F       		.byte	0x3f
+ 1126 0180 00       		.byte	0
+ 1127 0181 03       		.uleb128 0x3
+ 1128 0182 68010000 		.4byte	.LASF29
+ 1129 0186 05       		.byte	0x5
+ 1130 0187 28       		.byte	0x28
+ 1131 0188 E8000000 		.4byte	0xe8
+ 1132 018c 08       		.uleb128 0x8
+ 1133 018d 25030000 		.4byte	.LASF31
+ 1134 0191 A4       		.byte	0xa4
+ 1135 0192 05       		.byte	0x5
+ 1136 0193 2A       		.byte	0x2a
+ 1137 0194 B0010000 		.4byte	0x1b0
+ 1138 0198 09       		.uleb128 0x9
+ 1139 0199 18000000 		.4byte	.LASF32
+ 1140 019d 05       		.byte	0x5
+ 1141 019e 2B       		.byte	0x2b
+ 1142 019f 81010000 		.4byte	0x181
+ 1143 01a3 00       		.byte	0
+ 1144 01a4 0A       		.uleb128 0xa
+ 1145 01a5 6D5600   		.ascii	"mV\000"
+ 1146 01a8 05       		.byte	0x5
+ 1147 01a9 2C       		.byte	0x2c
+ 1148 01aa A5000000 		.4byte	0xa5
+ 1149 01ae A0       		.byte	0xa0
+ 1150 01af 00       		.byte	0
+ 1151 01b0 0B       		.uleb128 0xb
+ 1152 01b1 506F7400 		.ascii	"Pot\000"
+ 1153 01b5 05       		.byte	0x5
+ 1154 01b6 2D       		.byte	0x2d
+ 1155 01b7 8C010000 		.4byte	0x18c
+ 1156 01bb 08       		.uleb128 0x8
+ 1157 01bc FF020000 		.4byte	.LASF33
+ 1158 01c0 A8       		.byte	0xa8
+ 1159 01c1 05       		.byte	0x5
+ 1160 01c2 2F       		.byte	0x2f
+ 1161 01c3 EC010000 		.4byte	0x1ec
+ 1162 01c7 09       		.uleb128 0x9
+ 1163 01c8 18000000 		.4byte	.LASF32
+ 1164 01cc 05       		.byte	0x5
+ 1165 01cd 30       		.byte	0x30
+ 1166 01ce 81010000 		.4byte	0x181
+ 1167 01d2 00       		.byte	0
+ 1168 01d3 09       		.uleb128 0x9
+ 1169 01d4 82000000 		.4byte	.LASF22
+ 1170 01d8 05       		.byte	0x5
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc4ZZri1.s 			page 25
+
+
+ 1171 01d9 31       		.byte	0x31
+ 1172 01da B1000000 		.4byte	0xb1
+ 1173 01de A0       		.byte	0xa0
+ 1174 01df 0A       		.uleb128 0xa
+ 1175 01e0 72706D00 		.ascii	"rpm\000"
+ 1176 01e4 05       		.byte	0x5
+ 1177 01e5 32       		.byte	0x32
+ 1178 01e6 B1000000 		.4byte	0xb1
+ 1179 01ea A4       		.byte	0xa4
+ 1180 01eb 00       		.byte	0
+ 1181 01ec 03       		.uleb128 0x3
+ 1182 01ed 9D010000 		.4byte	.LASF34
+ 1183 01f1 05       		.byte	0x5
+ 1184 01f2 33       		.byte	0x33
+ 1185 01f3 BB010000 		.4byte	0x1bb
+ 1186 01f7 0C       		.uleb128 0xc
+ 1187 01f8 56020000 		.4byte	.LASF35
+ 1188 01fc 01       		.byte	0x1
+ 1189 01fd 0F       		.byte	0xf
+ 1190 01fe 00000000 		.4byte	.LFB63
+ 1191 0202 D8000000 		.4byte	.LFE63-.LFB63
+ 1192 0206 01       		.uleb128 0x1
+ 1193 0207 9C       		.byte	0x9c
+ 1194 0208 1B020000 		.4byte	0x21b
+ 1195 020c 0D       		.uleb128 0xd
+ 1196 020d 706F7400 		.ascii	"pot\000"
+ 1197 0211 01       		.byte	0x1
+ 1198 0212 0F       		.byte	0xf
+ 1199 0213 1B020000 		.4byte	0x21b
+ 1200 0217 02       		.uleb128 0x2
+ 1201 0218 91       		.byte	0x91
+ 1202 0219 6C       		.sleb128 -20
+ 1203 021a 00       		.byte	0
+ 1204 021b 0E       		.uleb128 0xe
+ 1205 021c 04       		.byte	0x4
+ 1206 021d B0010000 		.4byte	0x1b0
+ 1207 0221 0C       		.uleb128 0xc
+ 1208 0222 6F010000 		.4byte	.LASF36
+ 1209 0226 01       		.byte	0x1
+ 1210 0227 36       		.byte	0x36
+ 1211 0228 00000000 		.4byte	.LFB64
+ 1212 022c DC010000 		.4byte	.LFE64-.LFB64
+ 1213 0230 01       		.uleb128 0x1
+ 1214 0231 9C       		.byte	0x9c
+ 1215 0232 45020000 		.4byte	0x245
+ 1216 0236 0F       		.uleb128 0xf
+ 1217 0237 8F020000 		.4byte	.LASF37
+ 1218 023b 01       		.byte	0x1
+ 1219 023c 36       		.byte	0x36
+ 1220 023d 45020000 		.4byte	0x245
+ 1221 0241 02       		.uleb128 0x2
+ 1222 0242 91       		.byte	0x91
+ 1223 0243 6C       		.sleb128 -20
+ 1224 0244 00       		.byte	0
+ 1225 0245 0E       		.uleb128 0xe
+ 1226 0246 04       		.byte	0x4
+ 1227 0247 EC010000 		.4byte	0x1ec
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc4ZZri1.s 			page 26
+
+
+ 1228 024b 10       		.uleb128 0x10
+ 1229 024c 8A010000 		.4byte	.LASF38
+ 1230 0250 01       		.byte	0x1
+ 1231 0251 71       		.byte	0x71
+ 1232 0252 00000000 		.4byte	.LFB65
+ 1233 0256 4A000000 		.4byte	.LFE65-.LFB65
+ 1234 025a 01       		.uleb128 0x1
+ 1235 025b 9C       		.byte	0x9c
+ 1236 025c 99020000 		.4byte	0x299
+ 1237 0260 0F       		.uleb128 0xf
+ 1238 0261 18000000 		.4byte	.LASF32
+ 1239 0265 01       		.byte	0x1
+ 1240 0266 71       		.byte	0x71
+ 1241 0267 99020000 		.4byte	0x299
+ 1242 026b 02       		.uleb128 0x2
+ 1243 026c 91       		.byte	0x91
+ 1244 026d 74       		.sleb128 -12
+ 1245 026e 0F       		.uleb128 0xf
+ 1246 026f 4B000000 		.4byte	.LASF39
+ 1247 0273 01       		.byte	0x1
+ 1248 0274 71       		.byte	0x71
+ 1249 0275 81000000 		.4byte	0x81
+ 1250 0279 02       		.uleb128 0x2
+ 1251 027a 91       		.byte	0x91
+ 1252 027b 73       		.sleb128 -13
+ 1253 027c 0F       		.uleb128 0xf
+ 1254 027d C9010000 		.4byte	.LASF40
+ 1255 0281 01       		.byte	0x1
+ 1256 0282 71       		.byte	0x71
+ 1257 0283 81000000 		.4byte	0x81
+ 1258 0287 02       		.uleb128 0x2
+ 1259 0288 91       		.byte	0x91
+ 1260 0289 72       		.sleb128 -14
+ 1261 028a 0F       		.uleb128 0xf
+ 1262 028b 75020000 		.4byte	.LASF41
+ 1263 028f 01       		.byte	0x1
+ 1264 0290 71       		.byte	0x71
+ 1265 0291 8D000000 		.4byte	0x8d
+ 1266 0295 02       		.uleb128 0x2
+ 1267 0296 91       		.byte	0x91
+ 1268 0297 70       		.sleb128 -16
+ 1269 0298 00       		.byte	0
+ 1270 0299 0E       		.uleb128 0xe
+ 1271 029a 04       		.byte	0x4
+ 1272 029b 81010000 		.4byte	0x181
+ 1273 029f 10       		.uleb128 0x10
+ 1274 02a0 0D030000 		.4byte	.LASF42
+ 1275 02a4 01       		.byte	0x1
+ 1276 02a5 80       		.byte	0x80
+ 1277 02a6 00000000 		.4byte	.LFB66
+ 1278 02aa 56000000 		.4byte	.LFE66-.LFB66
+ 1279 02ae 01       		.uleb128 0x1
+ 1280 02af 9C       		.byte	0x9c
+ 1281 02b0 CF020000 		.4byte	0x2cf
+ 1282 02b4 0D       		.uleb128 0xd
+ 1283 02b5 706F7400 		.ascii	"pot\000"
+ 1284 02b9 01       		.byte	0x1
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc4ZZri1.s 			page 27
+
+
+ 1285 02ba 80       		.byte	0x80
+ 1286 02bb 1B020000 		.4byte	0x21b
+ 1287 02bf 02       		.uleb128 0x2
+ 1288 02c0 91       		.byte	0x91
+ 1289 02c1 6C       		.sleb128 -20
+ 1290 02c2 11       		.uleb128 0x11
+ 1291 02c3 6900     		.ascii	"i\000"
+ 1292 02c5 01       		.byte	0x1
+ 1293 02c6 86       		.byte	0x86
+ 1294 02c7 68000000 		.4byte	0x68
+ 1295 02cb 02       		.uleb128 0x2
+ 1296 02cc 91       		.byte	0x91
+ 1297 02cd 74       		.sleb128 -12
+ 1298 02ce 00       		.byte	0
+ 1299 02cf 10       		.uleb128 0x10
+ 1300 02d0 E9010000 		.4byte	.LASF43
+ 1301 02d4 01       		.byte	0x1
+ 1302 02d5 90       		.byte	0x90
+ 1303 02d6 00000000 		.4byte	.LFB67
+ 1304 02da 5A000000 		.4byte	.LFE67-.LFB67
+ 1305 02de 01       		.uleb128 0x1
+ 1306 02df 9C       		.byte	0x9c
+ 1307 02e0 FF020000 		.4byte	0x2ff
+ 1308 02e4 0F       		.uleb128 0xf
+ 1309 02e5 8F020000 		.4byte	.LASF37
+ 1310 02e9 01       		.byte	0x1
+ 1311 02ea 90       		.byte	0x90
+ 1312 02eb 45020000 		.4byte	0x245
+ 1313 02ef 02       		.uleb128 0x2
+ 1314 02f0 91       		.byte	0x91
+ 1315 02f1 6C       		.sleb128 -20
+ 1316 02f2 11       		.uleb128 0x11
+ 1317 02f3 6900     		.ascii	"i\000"
+ 1318 02f5 01       		.byte	0x1
+ 1319 02f6 96       		.byte	0x96
+ 1320 02f7 68000000 		.4byte	0x68
+ 1321 02fb 02       		.uleb128 0x2
+ 1322 02fc 91       		.byte	0x91
+ 1323 02fd 74       		.sleb128 -12
+ 1324 02fe 00       		.byte	0
+ 1325 02ff 12       		.uleb128 0x12
+ 1326 0300 5C010000 		.4byte	.LASF67
+ 1327 0304 01       		.byte	0x1
+ 1328 0305 A0       		.byte	0xa0
+ 1329 0306 00000000 		.4byte	.LFB68
+ 1330 030a 0C000000 		.4byte	.LFE68-.LFB68
+ 1331 030e 01       		.uleb128 0x1
+ 1332 030f 9C       		.byte	0x9c
+ 1333 0310 10       		.uleb128 0x10
+ 1334 0311 9C000000 		.4byte	.LASF44
+ 1335 0315 01       		.byte	0x1
+ 1336 0316 A4       		.byte	0xa4
+ 1337 0317 00000000 		.4byte	.LFB69
+ 1338 031b 5C000000 		.4byte	.LFE69-.LFB69
+ 1339 031f 01       		.uleb128 0x1
+ 1340 0320 9C       		.byte	0x9c
+ 1341 0321 96030000 		.4byte	0x396
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc4ZZri1.s 			page 28
+
+
+ 1342 0325 0F       		.uleb128 0xf
+ 1343 0326 20030000 		.4byte	.LASF45
+ 1344 032a 01       		.byte	0x1
+ 1345 032b A4       		.byte	0xa4
+ 1346 032c 81000000 		.4byte	0x81
+ 1347 0330 02       		.uleb128 0x2
+ 1348 0331 91       		.byte	0x91
+ 1349 0332 77       		.sleb128 -9
+ 1350 0333 0D       		.uleb128 0xd
+ 1351 0334 6F6E6500 		.ascii	"one\000"
+ 1352 0338 01       		.byte	0x1
+ 1353 0339 A4       		.byte	0xa4
+ 1354 033a 81000000 		.4byte	0x81
+ 1355 033e 02       		.uleb128 0x2
+ 1356 033f 91       		.byte	0x91
+ 1357 0340 76       		.sleb128 -10
+ 1358 0341 0D       		.uleb128 0xd
+ 1359 0342 74776F00 		.ascii	"two\000"
+ 1360 0346 01       		.byte	0x1
+ 1361 0347 A4       		.byte	0xa4
+ 1362 0348 81000000 		.4byte	0x81
+ 1363 034c 02       		.uleb128 0x2
+ 1364 034d 91       		.byte	0x91
+ 1365 034e 75       		.sleb128 -11
+ 1366 034f 0F       		.uleb128 0xf
+ 1367 0350 A5000000 		.4byte	.LASF46
+ 1368 0354 01       		.byte	0x1
+ 1369 0355 A4       		.byte	0xa4
+ 1370 0356 81000000 		.4byte	0x81
+ 1371 035a 02       		.uleb128 0x2
+ 1372 035b 91       		.byte	0x91
+ 1373 035c 74       		.sleb128 -12
+ 1374 035d 0F       		.uleb128 0xf
+ 1375 035e 08030000 		.4byte	.LASF47
+ 1376 0362 01       		.byte	0x1
+ 1377 0363 A4       		.byte	0xa4
+ 1378 0364 81000000 		.4byte	0x81
+ 1379 0368 02       		.uleb128 0x2
+ 1380 0369 91       		.byte	0x91
+ 1381 036a 00       		.sleb128 0
+ 1382 036b 0F       		.uleb128 0xf
+ 1383 036c 70020000 		.4byte	.LASF48
+ 1384 0370 01       		.byte	0x1
+ 1385 0371 A4       		.byte	0xa4
+ 1386 0372 81000000 		.4byte	0x81
+ 1387 0376 02       		.uleb128 0x2
+ 1388 0377 91       		.byte	0x91
+ 1389 0378 04       		.sleb128 4
+ 1390 0379 0D       		.uleb128 0xd
+ 1391 037a 73697800 		.ascii	"six\000"
+ 1392 037e 01       		.byte	0x1
+ 1393 037f A4       		.byte	0xa4
+ 1394 0380 81000000 		.4byte	0x81
+ 1395 0384 02       		.uleb128 0x2
+ 1396 0385 91       		.byte	0x91
+ 1397 0386 08       		.sleb128 8
+ 1398 0387 0F       		.uleb128 0xf
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc4ZZri1.s 			page 29
+
+
+ 1399 0388 60020000 		.4byte	.LASF49
+ 1400 038c 01       		.byte	0x1
+ 1401 038d A4       		.byte	0xa4
+ 1402 038e 81000000 		.4byte	0x81
+ 1403 0392 02       		.uleb128 0x2
+ 1404 0393 91       		.byte	0x91
+ 1405 0394 0C       		.sleb128 12
+ 1406 0395 00       		.byte	0
+ 1407 0396 10       		.uleb128 0x10
+ 1408 0397 2A030000 		.4byte	.LASF50
+ 1409 039b 01       		.byte	0x1
+ 1410 039c AF       		.byte	0xaf
+ 1411 039d 00000000 		.4byte	.LFB70
+ 1412 03a1 1E000000 		.4byte	.LFE70-.LFB70
+ 1413 03a5 01       		.uleb128 0x1
+ 1414 03a6 9C       		.byte	0x9c
+ 1415 03a7 C8030000 		.4byte	0x3c8
+ 1416 03ab 0F       		.uleb128 0xf
+ 1417 03ac 18000000 		.4byte	.LASF32
+ 1418 03b0 01       		.byte	0x1
+ 1419 03b1 AF       		.byte	0xaf
+ 1420 03b2 99020000 		.4byte	0x299
+ 1421 03b6 02       		.uleb128 0x2
+ 1422 03b7 91       		.byte	0x91
+ 1423 03b8 74       		.sleb128 -12
+ 1424 03b9 0F       		.uleb128 0xf
+ 1425 03ba 94010000 		.4byte	.LASF51
+ 1426 03be 01       		.byte	0x1
+ 1427 03bf AF       		.byte	0xaf
+ 1428 03c0 DD000000 		.4byte	0xdd
+ 1429 03c4 02       		.uleb128 0x2
+ 1430 03c5 91       		.byte	0x91
+ 1431 03c6 73       		.sleb128 -13
+ 1432 03c7 00       		.byte	0
+ 1433 03c8 13       		.uleb128 0x13
+ 1434 03c9 4A010000 		.4byte	.LASF68
+ 1435 03cd 01       		.byte	0x1
+ 1436 03ce B3       		.byte	0xb3
+ 1437 03cf 8D000000 		.4byte	0x8d
+ 1438 03d3 00000000 		.4byte	.LFB71
+ 1439 03d7 24000000 		.4byte	.LFE71-.LFB71
+ 1440 03db 01       		.uleb128 0x1
+ 1441 03dc 9C       		.byte	0x9c
+ 1442 03dd F0030000 		.4byte	0x3f0
+ 1443 03e1 0F       		.uleb128 0xf
+ 1444 03e2 18000000 		.4byte	.LASF32
+ 1445 03e6 01       		.byte	0x1
+ 1446 03e7 B3       		.byte	0xb3
+ 1447 03e8 99020000 		.4byte	0x299
+ 1448 03ec 02       		.uleb128 0x2
+ 1449 03ed 91       		.byte	0x91
+ 1450 03ee 74       		.sleb128 -12
+ 1451 03ef 00       		.byte	0
+ 1452 03f0 10       		.uleb128 0x10
+ 1453 03f1 75000000 		.4byte	.LASF52
+ 1454 03f5 01       		.byte	0x1
+ 1455 03f6 B7       		.byte	0xb7
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc4ZZri1.s 			page 30
+
+
+ 1456 03f7 00000000 		.4byte	.LFB72
+ 1457 03fb 1E000000 		.4byte	.LFE72-.LFB72
+ 1458 03ff 01       		.uleb128 0x1
+ 1459 0400 9C       		.byte	0x9c
+ 1460 0401 22040000 		.4byte	0x422
+ 1461 0405 0F       		.uleb128 0xf
+ 1462 0406 18000000 		.4byte	.LASF32
+ 1463 040a 01       		.byte	0x1
+ 1464 040b B7       		.byte	0xb7
+ 1465 040c 99020000 		.4byte	0x299
+ 1466 0410 02       		.uleb128 0x2
+ 1467 0411 91       		.byte	0x91
+ 1468 0412 74       		.sleb128 -12
+ 1469 0413 0F       		.uleb128 0xf
+ 1470 0414 1B020000 		.4byte	.LASF53
+ 1471 0418 01       		.byte	0x1
+ 1472 0419 B7       		.byte	0xb7
+ 1473 041a DD000000 		.4byte	0xdd
+ 1474 041e 02       		.uleb128 0x2
+ 1475 041f 91       		.byte	0x91
+ 1476 0420 73       		.sleb128 -13
+ 1477 0421 00       		.byte	0
+ 1478 0422 10       		.uleb128 0x10
+ 1479 0423 4B020000 		.4byte	.LASF54
+ 1480 0427 01       		.byte	0x1
+ 1481 0428 BB       		.byte	0xbb
+ 1482 0429 00000000 		.4byte	.LFB73
+ 1483 042d 28000000 		.4byte	.LFE73-.LFB73
+ 1484 0431 01       		.uleb128 0x1
+ 1485 0432 9C       		.byte	0x9c
+ 1486 0433 46040000 		.4byte	0x446
+ 1487 0437 0F       		.uleb128 0xf
+ 1488 0438 18000000 		.4byte	.LASF32
+ 1489 043c 01       		.byte	0x1
+ 1490 043d BB       		.byte	0xbb
+ 1491 043e 99020000 		.4byte	0x299
+ 1492 0442 02       		.uleb128 0x2
+ 1493 0443 91       		.byte	0x91
+ 1494 0444 74       		.sleb128 -12
+ 1495 0445 00       		.byte	0
+ 1496 0446 10       		.uleb128 0x10
+ 1497 0447 D4010000 		.4byte	.LASF55
+ 1498 044b 01       		.byte	0x1
+ 1499 044c BF       		.byte	0xbf
+ 1500 044d 00000000 		.4byte	.LFB74
+ 1501 0451 28000000 		.4byte	.LFE74-.LFB74
+ 1502 0455 01       		.uleb128 0x1
+ 1503 0456 9C       		.byte	0x9c
+ 1504 0457 6A040000 		.4byte	0x46a
+ 1505 045b 0F       		.uleb128 0xf
+ 1506 045c 18000000 		.4byte	.LASF32
+ 1507 0460 01       		.byte	0x1
+ 1508 0461 BF       		.byte	0xbf
+ 1509 0462 99020000 		.4byte	0x299
+ 1510 0466 02       		.uleb128 0x2
+ 1511 0467 91       		.byte	0x91
+ 1512 0468 74       		.sleb128 -12
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc4ZZri1.s 			page 31
+
+
+ 1513 0469 00       		.byte	0
+ 1514 046a 06       		.uleb128 0x6
+ 1515 046b DD000000 		.4byte	0xdd
+ 1516 046f 7A040000 		.4byte	0x47a
+ 1517 0473 07       		.uleb128 0x7
+ 1518 0474 C6000000 		.4byte	0xc6
+ 1519 0478 07       		.byte	0x7
+ 1520 0479 00       		.byte	0
+ 1521 047a 14       		.uleb128 0x14
+ 1522 047b 83020000 		.4byte	.LASF56
+ 1523 047f 05       		.byte	0x5
+ 1524 0480 3E       		.byte	0x3e
+ 1525 0481 6A040000 		.4byte	0x46a
+ 1526 0485 05       		.uleb128 0x5
+ 1527 0486 03       		.byte	0x3
+ 1528 0487 00000000 		.4byte	temp_enable
+ 1529 048b 15       		.uleb128 0x15
+ 1530 048c F2020000 		.4byte	.LASF57
+ 1531 0490 06       		.byte	0x6
+ 1532 0491 9606     		.2byte	0x696
+ 1533 0493 97040000 		.4byte	0x497
+ 1534 0497 16       		.uleb128 0x16
+ 1535 0498 76000000 		.4byte	0x76
+ 1536 049c 17       		.uleb128 0x17
+ 1537 049d 20030000 		.4byte	.LASF45
+ 1538 04a1 05       		.byte	0x5
+ 1539 04a2 35       		.byte	0x35
+ 1540 04a3 B0010000 		.4byte	0x1b0
+ 1541 04a7 05       		.uleb128 0x5
+ 1542 04a8 03       		.byte	0x3
+ 1543 04a9 00000000 		.4byte	zero
+ 1544 04ad 18       		.uleb128 0x18
+ 1545 04ae 6F6E6500 		.ascii	"one\000"
+ 1546 04b2 05       		.byte	0x5
+ 1547 04b3 36       		.byte	0x36
+ 1548 04b4 B0010000 		.4byte	0x1b0
+ 1549 04b8 05       		.uleb128 0x5
+ 1550 04b9 03       		.byte	0x3
+ 1551 04ba 00000000 		.4byte	one
+ 1552 04be 18       		.uleb128 0x18
+ 1553 04bf 74776F00 		.ascii	"two\000"
+ 1554 04c3 05       		.byte	0x5
+ 1555 04c4 37       		.byte	0x37
+ 1556 04c5 B0010000 		.4byte	0x1b0
+ 1557 04c9 05       		.uleb128 0x5
+ 1558 04ca 03       		.byte	0x3
+ 1559 04cb 00000000 		.4byte	two
+ 1560 04cf 17       		.uleb128 0x17
+ 1561 04d0 A5000000 		.4byte	.LASF46
+ 1562 04d4 05       		.byte	0x5
+ 1563 04d5 38       		.byte	0x38
+ 1564 04d6 B0010000 		.4byte	0x1b0
+ 1565 04da 05       		.uleb128 0x5
+ 1566 04db 03       		.byte	0x3
+ 1567 04dc 00000000 		.4byte	three
+ 1568 04e0 17       		.uleb128 0x17
+ 1569 04e1 08030000 		.4byte	.LASF47
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc4ZZri1.s 			page 32
+
+
+ 1570 04e5 05       		.byte	0x5
+ 1571 04e6 39       		.byte	0x39
+ 1572 04e7 B0010000 		.4byte	0x1b0
+ 1573 04eb 05       		.uleb128 0x5
+ 1574 04ec 03       		.byte	0x3
+ 1575 04ed 00000000 		.4byte	four
+ 1576 04f1 17       		.uleb128 0x17
+ 1577 04f2 70020000 		.4byte	.LASF48
+ 1578 04f6 05       		.byte	0x5
+ 1579 04f7 3A       		.byte	0x3a
+ 1580 04f8 B0010000 		.4byte	0x1b0
+ 1581 04fc 05       		.uleb128 0x5
+ 1582 04fd 03       		.byte	0x3
+ 1583 04fe 00000000 		.4byte	five
+ 1584 0502 17       		.uleb128 0x17
+ 1585 0503 16020000 		.4byte	.LASF58
+ 1586 0507 05       		.byte	0x5
+ 1587 0508 3B       		.byte	0x3b
+ 1588 0509 EC010000 		.4byte	0x1ec
+ 1589 050d 05       		.uleb128 0x5
+ 1590 050e 03       		.byte	0x3
+ 1591 050f 00000000 		.4byte	left
+ 1592 0513 17       		.uleb128 0x17
+ 1593 0514 76010000 		.4byte	.LASF59
+ 1594 0518 05       		.byte	0x5
+ 1595 0519 3C       		.byte	0x3c
+ 1596 051a EC010000 		.4byte	0x1ec
+ 1597 051e 05       		.uleb128 0x5
+ 1598 051f 03       		.byte	0x3
+ 1599 0520 00000000 		.4byte	right
+ 1600 0524 17       		.uleb128 0x17
+ 1601 0525 15030000 		.4byte	.LASF60
+ 1602 0529 05       		.byte	0x5
+ 1603 052a 40       		.byte	0x40
+ 1604 052b CD000000 		.4byte	0xcd
+ 1605 052f 05       		.uleb128 0x5
+ 1606 0530 03       		.byte	0x3
+ 1607 0531 00000000 		.4byte	TxMessage1
+ 1608 0535 17       		.uleb128 0x17
+ 1609 0536 1F000000 		.4byte	.LASF61
+ 1610 053a 05       		.byte	0x5
+ 1611 053b 41       		.byte	0x41
+ 1612 053c CD000000 		.4byte	0xcd
+ 1613 0540 05       		.uleb128 0x5
+ 1614 0541 03       		.byte	0x3
+ 1615 0542 00000000 		.4byte	RxMessage1
+ 1616 0546 17       		.uleb128 0x17
+ 1617 0547 00000000 		.4byte	.LASF62
+ 1618 054b 05       		.byte	0x5
+ 1619 054c 42       		.byte	0x42
+ 1620 054d 81000000 		.4byte	0x81
+ 1621 0551 05       		.uleb128 0x5
+ 1622 0552 03       		.byte	0x3
+ 1623 0553 00000000 		.4byte	RXDLC1
+ 1624 0557 17       		.uleb128 0x17
+ 1625 0558 2A000000 		.4byte	.LASF63
+ 1626 055c 05       		.byte	0x5
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc4ZZri1.s 			page 33
+
+
+ 1627 055d 43       		.byte	0x43
+ 1628 055e 81000000 		.4byte	0x81
+ 1629 0562 05       		.uleb128 0x5
+ 1630 0563 03       		.byte	0x3
+ 1631 0564 00000000 		.4byte	RxFlag1
+ 1632 0568 00       		.byte	0
+ 1633              		.section	.debug_abbrev,"",%progbits
+ 1634              	.Ldebug_abbrev0:
+ 1635 0000 01       		.uleb128 0x1
+ 1636 0001 11       		.uleb128 0x11
+ 1637 0002 01       		.byte	0x1
+ 1638 0003 25       		.uleb128 0x25
+ 1639 0004 0E       		.uleb128 0xe
+ 1640 0005 13       		.uleb128 0x13
+ 1641 0006 0B       		.uleb128 0xb
+ 1642 0007 03       		.uleb128 0x3
+ 1643 0008 0E       		.uleb128 0xe
+ 1644 0009 1B       		.uleb128 0x1b
+ 1645 000a 0E       		.uleb128 0xe
+ 1646 000b 55       		.uleb128 0x55
+ 1647 000c 17       		.uleb128 0x17
+ 1648 000d 11       		.uleb128 0x11
+ 1649 000e 01       		.uleb128 0x1
+ 1650 000f 10       		.uleb128 0x10
+ 1651 0010 17       		.uleb128 0x17
+ 1652 0011 00       		.byte	0
+ 1653 0012 00       		.byte	0
+ 1654 0013 02       		.uleb128 0x2
+ 1655 0014 24       		.uleb128 0x24
+ 1656 0015 00       		.byte	0
+ 1657 0016 0B       		.uleb128 0xb
+ 1658 0017 0B       		.uleb128 0xb
+ 1659 0018 3E       		.uleb128 0x3e
+ 1660 0019 0B       		.uleb128 0xb
+ 1661 001a 03       		.uleb128 0x3
+ 1662 001b 0E       		.uleb128 0xe
+ 1663 001c 00       		.byte	0
+ 1664 001d 00       		.byte	0
+ 1665 001e 03       		.uleb128 0x3
+ 1666 001f 16       		.uleb128 0x16
+ 1667 0020 00       		.byte	0
+ 1668 0021 03       		.uleb128 0x3
+ 1669 0022 0E       		.uleb128 0xe
+ 1670 0023 3A       		.uleb128 0x3a
+ 1671 0024 0B       		.uleb128 0xb
+ 1672 0025 3B       		.uleb128 0x3b
+ 1673 0026 0B       		.uleb128 0xb
+ 1674 0027 49       		.uleb128 0x49
+ 1675 0028 13       		.uleb128 0x13
+ 1676 0029 00       		.byte	0
+ 1677 002a 00       		.byte	0
+ 1678 002b 04       		.uleb128 0x4
+ 1679 002c 24       		.uleb128 0x24
+ 1680 002d 00       		.byte	0
+ 1681 002e 0B       		.uleb128 0xb
+ 1682 002f 0B       		.uleb128 0xb
+ 1683 0030 3E       		.uleb128 0x3e
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc4ZZri1.s 			page 34
+
+
+ 1684 0031 0B       		.uleb128 0xb
+ 1685 0032 03       		.uleb128 0x3
+ 1686 0033 08       		.uleb128 0x8
+ 1687 0034 00       		.byte	0
+ 1688 0035 00       		.byte	0
+ 1689 0036 05       		.uleb128 0x5
+ 1690 0037 16       		.uleb128 0x16
+ 1691 0038 00       		.byte	0
+ 1692 0039 03       		.uleb128 0x3
+ 1693 003a 0E       		.uleb128 0xe
+ 1694 003b 3A       		.uleb128 0x3a
+ 1695 003c 0B       		.uleb128 0xb
+ 1696 003d 3B       		.uleb128 0x3b
+ 1697 003e 05       		.uleb128 0x5
+ 1698 003f 49       		.uleb128 0x49
+ 1699 0040 13       		.uleb128 0x13
+ 1700 0041 00       		.byte	0
+ 1701 0042 00       		.byte	0
+ 1702 0043 06       		.uleb128 0x6
+ 1703 0044 01       		.uleb128 0x1
+ 1704 0045 01       		.byte	0x1
+ 1705 0046 49       		.uleb128 0x49
+ 1706 0047 13       		.uleb128 0x13
+ 1707 0048 01       		.uleb128 0x1
+ 1708 0049 13       		.uleb128 0x13
+ 1709 004a 00       		.byte	0
+ 1710 004b 00       		.byte	0
+ 1711 004c 07       		.uleb128 0x7
+ 1712 004d 21       		.uleb128 0x21
+ 1713 004e 00       		.byte	0
+ 1714 004f 49       		.uleb128 0x49
+ 1715 0050 13       		.uleb128 0x13
+ 1716 0051 2F       		.uleb128 0x2f
+ 1717 0052 0B       		.uleb128 0xb
+ 1718 0053 00       		.byte	0
+ 1719 0054 00       		.byte	0
+ 1720 0055 08       		.uleb128 0x8
+ 1721 0056 13       		.uleb128 0x13
+ 1722 0057 01       		.byte	0x1
+ 1723 0058 03       		.uleb128 0x3
+ 1724 0059 0E       		.uleb128 0xe
+ 1725 005a 0B       		.uleb128 0xb
+ 1726 005b 0B       		.uleb128 0xb
+ 1727 005c 3A       		.uleb128 0x3a
+ 1728 005d 0B       		.uleb128 0xb
+ 1729 005e 3B       		.uleb128 0x3b
+ 1730 005f 0B       		.uleb128 0xb
+ 1731 0060 01       		.uleb128 0x1
+ 1732 0061 13       		.uleb128 0x13
+ 1733 0062 00       		.byte	0
+ 1734 0063 00       		.byte	0
+ 1735 0064 09       		.uleb128 0x9
+ 1736 0065 0D       		.uleb128 0xd
+ 1737 0066 00       		.byte	0
+ 1738 0067 03       		.uleb128 0x3
+ 1739 0068 0E       		.uleb128 0xe
+ 1740 0069 3A       		.uleb128 0x3a
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc4ZZri1.s 			page 35
+
+
+ 1741 006a 0B       		.uleb128 0xb
+ 1742 006b 3B       		.uleb128 0x3b
+ 1743 006c 0B       		.uleb128 0xb
+ 1744 006d 49       		.uleb128 0x49
+ 1745 006e 13       		.uleb128 0x13
+ 1746 006f 38       		.uleb128 0x38
+ 1747 0070 0B       		.uleb128 0xb
+ 1748 0071 00       		.byte	0
+ 1749 0072 00       		.byte	0
+ 1750 0073 0A       		.uleb128 0xa
+ 1751 0074 0D       		.uleb128 0xd
+ 1752 0075 00       		.byte	0
+ 1753 0076 03       		.uleb128 0x3
+ 1754 0077 08       		.uleb128 0x8
+ 1755 0078 3A       		.uleb128 0x3a
+ 1756 0079 0B       		.uleb128 0xb
+ 1757 007a 3B       		.uleb128 0x3b
+ 1758 007b 0B       		.uleb128 0xb
+ 1759 007c 49       		.uleb128 0x49
+ 1760 007d 13       		.uleb128 0x13
+ 1761 007e 38       		.uleb128 0x38
+ 1762 007f 0B       		.uleb128 0xb
+ 1763 0080 00       		.byte	0
+ 1764 0081 00       		.byte	0
+ 1765 0082 0B       		.uleb128 0xb
+ 1766 0083 16       		.uleb128 0x16
+ 1767 0084 00       		.byte	0
+ 1768 0085 03       		.uleb128 0x3
+ 1769 0086 08       		.uleb128 0x8
+ 1770 0087 3A       		.uleb128 0x3a
+ 1771 0088 0B       		.uleb128 0xb
+ 1772 0089 3B       		.uleb128 0x3b
+ 1773 008a 0B       		.uleb128 0xb
+ 1774 008b 49       		.uleb128 0x49
+ 1775 008c 13       		.uleb128 0x13
+ 1776 008d 00       		.byte	0
+ 1777 008e 00       		.byte	0
+ 1778 008f 0C       		.uleb128 0xc
+ 1779 0090 2E       		.uleb128 0x2e
+ 1780 0091 01       		.byte	0x1
+ 1781 0092 3F       		.uleb128 0x3f
+ 1782 0093 19       		.uleb128 0x19
+ 1783 0094 03       		.uleb128 0x3
+ 1784 0095 0E       		.uleb128 0xe
+ 1785 0096 3A       		.uleb128 0x3a
+ 1786 0097 0B       		.uleb128 0xb
+ 1787 0098 3B       		.uleb128 0x3b
+ 1788 0099 0B       		.uleb128 0xb
+ 1789 009a 27       		.uleb128 0x27
+ 1790 009b 19       		.uleb128 0x19
+ 1791 009c 11       		.uleb128 0x11
+ 1792 009d 01       		.uleb128 0x1
+ 1793 009e 12       		.uleb128 0x12
+ 1794 009f 06       		.uleb128 0x6
+ 1795 00a0 40       		.uleb128 0x40
+ 1796 00a1 18       		.uleb128 0x18
+ 1797 00a2 9642     		.uleb128 0x2116
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc4ZZri1.s 			page 36
+
+
+ 1798 00a4 19       		.uleb128 0x19
+ 1799 00a5 01       		.uleb128 0x1
+ 1800 00a6 13       		.uleb128 0x13
+ 1801 00a7 00       		.byte	0
+ 1802 00a8 00       		.byte	0
+ 1803 00a9 0D       		.uleb128 0xd
+ 1804 00aa 05       		.uleb128 0x5
+ 1805 00ab 00       		.byte	0
+ 1806 00ac 03       		.uleb128 0x3
+ 1807 00ad 08       		.uleb128 0x8
+ 1808 00ae 3A       		.uleb128 0x3a
+ 1809 00af 0B       		.uleb128 0xb
+ 1810 00b0 3B       		.uleb128 0x3b
+ 1811 00b1 0B       		.uleb128 0xb
+ 1812 00b2 49       		.uleb128 0x49
+ 1813 00b3 13       		.uleb128 0x13
+ 1814 00b4 02       		.uleb128 0x2
+ 1815 00b5 18       		.uleb128 0x18
+ 1816 00b6 00       		.byte	0
+ 1817 00b7 00       		.byte	0
+ 1818 00b8 0E       		.uleb128 0xe
+ 1819 00b9 0F       		.uleb128 0xf
+ 1820 00ba 00       		.byte	0
+ 1821 00bb 0B       		.uleb128 0xb
+ 1822 00bc 0B       		.uleb128 0xb
+ 1823 00bd 49       		.uleb128 0x49
+ 1824 00be 13       		.uleb128 0x13
+ 1825 00bf 00       		.byte	0
+ 1826 00c0 00       		.byte	0
+ 1827 00c1 0F       		.uleb128 0xf
+ 1828 00c2 05       		.uleb128 0x5
+ 1829 00c3 00       		.byte	0
+ 1830 00c4 03       		.uleb128 0x3
+ 1831 00c5 0E       		.uleb128 0xe
+ 1832 00c6 3A       		.uleb128 0x3a
+ 1833 00c7 0B       		.uleb128 0xb
+ 1834 00c8 3B       		.uleb128 0x3b
+ 1835 00c9 0B       		.uleb128 0xb
+ 1836 00ca 49       		.uleb128 0x49
+ 1837 00cb 13       		.uleb128 0x13
+ 1838 00cc 02       		.uleb128 0x2
+ 1839 00cd 18       		.uleb128 0x18
+ 1840 00ce 00       		.byte	0
+ 1841 00cf 00       		.byte	0
+ 1842 00d0 10       		.uleb128 0x10
+ 1843 00d1 2E       		.uleb128 0x2e
+ 1844 00d2 01       		.byte	0x1
+ 1845 00d3 3F       		.uleb128 0x3f
+ 1846 00d4 19       		.uleb128 0x19
+ 1847 00d5 03       		.uleb128 0x3
+ 1848 00d6 0E       		.uleb128 0xe
+ 1849 00d7 3A       		.uleb128 0x3a
+ 1850 00d8 0B       		.uleb128 0xb
+ 1851 00d9 3B       		.uleb128 0x3b
+ 1852 00da 0B       		.uleb128 0xb
+ 1853 00db 27       		.uleb128 0x27
+ 1854 00dc 19       		.uleb128 0x19
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc4ZZri1.s 			page 37
+
+
+ 1855 00dd 11       		.uleb128 0x11
+ 1856 00de 01       		.uleb128 0x1
+ 1857 00df 12       		.uleb128 0x12
+ 1858 00e0 06       		.uleb128 0x6
+ 1859 00e1 40       		.uleb128 0x40
+ 1860 00e2 18       		.uleb128 0x18
+ 1861 00e3 9742     		.uleb128 0x2117
+ 1862 00e5 19       		.uleb128 0x19
+ 1863 00e6 01       		.uleb128 0x1
+ 1864 00e7 13       		.uleb128 0x13
+ 1865 00e8 00       		.byte	0
+ 1866 00e9 00       		.byte	0
+ 1867 00ea 11       		.uleb128 0x11
+ 1868 00eb 34       		.uleb128 0x34
+ 1869 00ec 00       		.byte	0
+ 1870 00ed 03       		.uleb128 0x3
+ 1871 00ee 08       		.uleb128 0x8
+ 1872 00ef 3A       		.uleb128 0x3a
+ 1873 00f0 0B       		.uleb128 0xb
+ 1874 00f1 3B       		.uleb128 0x3b
+ 1875 00f2 0B       		.uleb128 0xb
+ 1876 00f3 49       		.uleb128 0x49
+ 1877 00f4 13       		.uleb128 0x13
+ 1878 00f5 02       		.uleb128 0x2
+ 1879 00f6 18       		.uleb128 0x18
+ 1880 00f7 00       		.byte	0
+ 1881 00f8 00       		.byte	0
+ 1882 00f9 12       		.uleb128 0x12
+ 1883 00fa 2E       		.uleb128 0x2e
+ 1884 00fb 00       		.byte	0
+ 1885 00fc 3F       		.uleb128 0x3f
+ 1886 00fd 19       		.uleb128 0x19
+ 1887 00fe 03       		.uleb128 0x3
+ 1888 00ff 0E       		.uleb128 0xe
+ 1889 0100 3A       		.uleb128 0x3a
+ 1890 0101 0B       		.uleb128 0xb
+ 1891 0102 3B       		.uleb128 0x3b
+ 1892 0103 0B       		.uleb128 0xb
+ 1893 0104 27       		.uleb128 0x27
+ 1894 0105 19       		.uleb128 0x19
+ 1895 0106 11       		.uleb128 0x11
+ 1896 0107 01       		.uleb128 0x1
+ 1897 0108 12       		.uleb128 0x12
+ 1898 0109 06       		.uleb128 0x6
+ 1899 010a 40       		.uleb128 0x40
+ 1900 010b 18       		.uleb128 0x18
+ 1901 010c 9742     		.uleb128 0x2117
+ 1902 010e 19       		.uleb128 0x19
+ 1903 010f 00       		.byte	0
+ 1904 0110 00       		.byte	0
+ 1905 0111 13       		.uleb128 0x13
+ 1906 0112 2E       		.uleb128 0x2e
+ 1907 0113 01       		.byte	0x1
+ 1908 0114 3F       		.uleb128 0x3f
+ 1909 0115 19       		.uleb128 0x19
+ 1910 0116 03       		.uleb128 0x3
+ 1911 0117 0E       		.uleb128 0xe
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc4ZZri1.s 			page 38
+
+
+ 1912 0118 3A       		.uleb128 0x3a
+ 1913 0119 0B       		.uleb128 0xb
+ 1914 011a 3B       		.uleb128 0x3b
+ 1915 011b 0B       		.uleb128 0xb
+ 1916 011c 27       		.uleb128 0x27
+ 1917 011d 19       		.uleb128 0x19
+ 1918 011e 49       		.uleb128 0x49
+ 1919 011f 13       		.uleb128 0x13
+ 1920 0120 11       		.uleb128 0x11
+ 1921 0121 01       		.uleb128 0x1
+ 1922 0122 12       		.uleb128 0x12
+ 1923 0123 06       		.uleb128 0x6
+ 1924 0124 40       		.uleb128 0x40
+ 1925 0125 18       		.uleb128 0x18
+ 1926 0126 9742     		.uleb128 0x2117
+ 1927 0128 19       		.uleb128 0x19
+ 1928 0129 01       		.uleb128 0x1
+ 1929 012a 13       		.uleb128 0x13
+ 1930 012b 00       		.byte	0
+ 1931 012c 00       		.byte	0
+ 1932 012d 14       		.uleb128 0x14
+ 1933 012e 34       		.uleb128 0x34
+ 1934 012f 00       		.byte	0
+ 1935 0130 03       		.uleb128 0x3
+ 1936 0131 0E       		.uleb128 0xe
+ 1937 0132 3A       		.uleb128 0x3a
+ 1938 0133 0B       		.uleb128 0xb
+ 1939 0134 3B       		.uleb128 0x3b
+ 1940 0135 0B       		.uleb128 0xb
+ 1941 0136 49       		.uleb128 0x49
+ 1942 0137 13       		.uleb128 0x13
+ 1943 0138 02       		.uleb128 0x2
+ 1944 0139 18       		.uleb128 0x18
+ 1945 013a 00       		.byte	0
+ 1946 013b 00       		.byte	0
+ 1947 013c 15       		.uleb128 0x15
+ 1948 013d 34       		.uleb128 0x34
+ 1949 013e 00       		.byte	0
+ 1950 013f 03       		.uleb128 0x3
+ 1951 0140 0E       		.uleb128 0xe
+ 1952 0141 3A       		.uleb128 0x3a
+ 1953 0142 0B       		.uleb128 0xb
+ 1954 0143 3B       		.uleb128 0x3b
+ 1955 0144 05       		.uleb128 0x5
+ 1956 0145 49       		.uleb128 0x49
+ 1957 0146 13       		.uleb128 0x13
+ 1958 0147 3F       		.uleb128 0x3f
+ 1959 0148 19       		.uleb128 0x19
+ 1960 0149 3C       		.uleb128 0x3c
+ 1961 014a 19       		.uleb128 0x19
+ 1962 014b 00       		.byte	0
+ 1963 014c 00       		.byte	0
+ 1964 014d 16       		.uleb128 0x16
+ 1965 014e 35       		.uleb128 0x35
+ 1966 014f 00       		.byte	0
+ 1967 0150 49       		.uleb128 0x49
+ 1968 0151 13       		.uleb128 0x13
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc4ZZri1.s 			page 39
+
+
+ 1969 0152 00       		.byte	0
+ 1970 0153 00       		.byte	0
+ 1971 0154 17       		.uleb128 0x17
+ 1972 0155 34       		.uleb128 0x34
+ 1973 0156 00       		.byte	0
+ 1974 0157 03       		.uleb128 0x3
+ 1975 0158 0E       		.uleb128 0xe
+ 1976 0159 3A       		.uleb128 0x3a
+ 1977 015a 0B       		.uleb128 0xb
+ 1978 015b 3B       		.uleb128 0x3b
+ 1979 015c 0B       		.uleb128 0xb
+ 1980 015d 49       		.uleb128 0x49
+ 1981 015e 13       		.uleb128 0x13
+ 1982 015f 3F       		.uleb128 0x3f
+ 1983 0160 19       		.uleb128 0x19
+ 1984 0161 02       		.uleb128 0x2
+ 1985 0162 18       		.uleb128 0x18
+ 1986 0163 00       		.byte	0
+ 1987 0164 00       		.byte	0
+ 1988 0165 18       		.uleb128 0x18
+ 1989 0166 34       		.uleb128 0x34
+ 1990 0167 00       		.byte	0
+ 1991 0168 03       		.uleb128 0x3
+ 1992 0169 08       		.uleb128 0x8
+ 1993 016a 3A       		.uleb128 0x3a
+ 1994 016b 0B       		.uleb128 0xb
+ 1995 016c 3B       		.uleb128 0x3b
+ 1996 016d 0B       		.uleb128 0xb
+ 1997 016e 49       		.uleb128 0x49
+ 1998 016f 13       		.uleb128 0x13
+ 1999 0170 3F       		.uleb128 0x3f
+ 2000 0171 19       		.uleb128 0x19
+ 2001 0172 02       		.uleb128 0x2
+ 2002 0173 18       		.uleb128 0x18
+ 2003 0174 00       		.byte	0
+ 2004 0175 00       		.byte	0
+ 2005 0176 00       		.byte	0
+ 2006              		.section	.debug_aranges,"",%progbits
+ 2007 0000 74000000 		.4byte	0x74
+ 2008 0004 0200     		.2byte	0x2
+ 2009 0006 00000000 		.4byte	.Ldebug_info0
+ 2010 000a 04       		.byte	0x4
+ 2011 000b 00       		.byte	0
+ 2012 000c 0000     		.2byte	0
+ 2013 000e 0000     		.2byte	0
+ 2014 0010 00000000 		.4byte	.LFB63
+ 2015 0014 D8000000 		.4byte	.LFE63-.LFB63
+ 2016 0018 00000000 		.4byte	.LFB64
+ 2017 001c DC010000 		.4byte	.LFE64-.LFB64
+ 2018 0020 00000000 		.4byte	.LFB65
+ 2019 0024 4A000000 		.4byte	.LFE65-.LFB65
+ 2020 0028 00000000 		.4byte	.LFB66
+ 2021 002c 56000000 		.4byte	.LFE66-.LFB66
+ 2022 0030 00000000 		.4byte	.LFB67
+ 2023 0034 5A000000 		.4byte	.LFE67-.LFB67
+ 2024 0038 00000000 		.4byte	.LFB68
+ 2025 003c 0C000000 		.4byte	.LFE68-.LFB68
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc4ZZri1.s 			page 40
+
+
+ 2026 0040 00000000 		.4byte	.LFB69
+ 2027 0044 5C000000 		.4byte	.LFE69-.LFB69
+ 2028 0048 00000000 		.4byte	.LFB70
+ 2029 004c 1E000000 		.4byte	.LFE70-.LFB70
+ 2030 0050 00000000 		.4byte	.LFB71
+ 2031 0054 24000000 		.4byte	.LFE71-.LFB71
+ 2032 0058 00000000 		.4byte	.LFB72
+ 2033 005c 1E000000 		.4byte	.LFE72-.LFB72
+ 2034 0060 00000000 		.4byte	.LFB73
+ 2035 0064 28000000 		.4byte	.LFE73-.LFB73
+ 2036 0068 00000000 		.4byte	.LFB74
+ 2037 006c 28000000 		.4byte	.LFE74-.LFB74
+ 2038 0070 00000000 		.4byte	0
+ 2039 0074 00000000 		.4byte	0
+ 2040              		.section	.debug_ranges,"",%progbits
+ 2041              	.Ldebug_ranges0:
+ 2042 0000 00000000 		.4byte	.LFB63
+ 2043 0004 D8000000 		.4byte	.LFE63
+ 2044 0008 00000000 		.4byte	.LFB64
+ 2045 000c DC010000 		.4byte	.LFE64
+ 2046 0010 00000000 		.4byte	.LFB65
+ 2047 0014 4A000000 		.4byte	.LFE65
+ 2048 0018 00000000 		.4byte	.LFB66
+ 2049 001c 56000000 		.4byte	.LFE66
+ 2050 0020 00000000 		.4byte	.LFB67
+ 2051 0024 5A000000 		.4byte	.LFE67
+ 2052 0028 00000000 		.4byte	.LFB68
+ 2053 002c 0C000000 		.4byte	.LFE68
+ 2054 0030 00000000 		.4byte	.LFB69
+ 2055 0034 5C000000 		.4byte	.LFE69
+ 2056 0038 00000000 		.4byte	.LFB70
+ 2057 003c 1E000000 		.4byte	.LFE70
+ 2058 0040 00000000 		.4byte	.LFB71
+ 2059 0044 24000000 		.4byte	.LFE71
+ 2060 0048 00000000 		.4byte	.LFB72
+ 2061 004c 1E000000 		.4byte	.LFE72
+ 2062 0050 00000000 		.4byte	.LFB73
+ 2063 0054 28000000 		.4byte	.LFE73
+ 2064 0058 00000000 		.4byte	.LFB74
+ 2065 005c 28000000 		.4byte	.LFE74
+ 2066 0060 00000000 		.4byte	0
+ 2067 0064 00000000 		.4byte	0
+ 2068              		.section	.debug_line,"",%progbits
+ 2069              	.Ldebug_line0:
+ 2070 0000 91020000 		.section	.debug_str,"MS",%progbits,1
+ 2070      02005701 
+ 2070      00000201 
+ 2070      FB0E0D00 
+ 2070      01010101 
+ 2071              	.LASF62:
+ 2072 0000 5258444C 		.ascii	"RXDLC1\000"
+ 2072      433100
+ 2073              	.LASF27:
+ 2074 0007 656E6162 		.ascii	"enable\000"
+ 2074      6C6500
+ 2075              	.LASF2:
+ 2076 000e 73686F72 		.ascii	"short int\000"
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc4ZZri1.s 			page 41
+
+
+ 2076      7420696E 
+ 2076      7400
+ 2077              	.LASF32:
+ 2078 0018 73656E73 		.ascii	"sensor\000"
+ 2078      6F7200
+ 2079              	.LASF61:
+ 2080 001f 52784D65 		.ascii	"RxMessage1\000"
+ 2080      73736167 
+ 2080      653100
+ 2081              	.LASF63:
+ 2082 002a 5278466C 		.ascii	"RxFlag1\000"
+ 2082      61673100 
+ 2083              	.LASF12:
+ 2084 0032 75696E74 		.ascii	"uint16\000"
+ 2084      313600
+ 2085              	.LASF24:
+ 2086 0039 696E6465 		.ascii	"index\000"
+ 2086      7800
+ 2087              	.LASF14:
+ 2088 003f 696E7431 		.ascii	"int16\000"
+ 2088      3600
+ 2089              	.LASF11:
+ 2090 0045 75696E74 		.ascii	"uint8\000"
+ 2090      3800
+ 2091              	.LASF39:
+ 2092 004b 6E756D62 		.ascii	"number_set\000"
+ 2092      65725F73 
+ 2092      657400
+ 2093              	.LASF19:
+ 2094 0056 626F6F6C 		.ascii	"bool\000"
+ 2094      00
+ 2095              	.LASF0:
+ 2096 005b 7369676E 		.ascii	"signed char\000"
+ 2096      65642063 
+ 2096      68617200 
+ 2097              	.LASF30:
+ 2098 0067 53656E73 		.ascii	"Sensors\000"
+ 2098      6F727300 
+ 2099              	.LASF15:
+ 2100 006f 666C6F61 		.ascii	"float\000"
+ 2100      7400
+ 2101              	.LASF52:
+ 2102 0075 53656E73 		.ascii	"SensorEnable\000"
+ 2102      6F72456E 
+ 2102      61626C65 
+ 2102      00
+ 2103              	.LASF22:
+ 2104 0082 61636375 		.ascii	"accumulator\000"
+ 2104      6D756C61 
+ 2104      746F7200 
+ 2105              	.LASF6:
+ 2106 008e 6C6F6E67 		.ascii	"long long int\000"
+ 2106      206C6F6E 
+ 2106      6720696E 
+ 2106      7400
+ 2107              	.LASF44:
+ 2108 009c 43414E5F 		.ascii	"CAN_Send\000"
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc4ZZri1.s 			page 42
+
+
+ 2108      53656E64 
+ 2108      00
+ 2109              	.LASF46:
+ 2110 00a5 74687265 		.ascii	"three\000"
+ 2110      6500
+ 2111              	.LASF64:
+ 2112 00ab 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
+ 2112      4320342E 
+ 2112      392E3320 
+ 2112      32303135 
+ 2112      30333033 
+ 2113 00de 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m3 -mthumb -g -O"
+ 2113      20726576 
+ 2113      6973696F 
+ 2113      6E203232 
+ 2113      31323230 
+ 2114 0111 30202D66 		.ascii	"0 -ffunction-sections -ffat-lto-objects\000"
+ 2114      66756E63 
+ 2114      74696F6E 
+ 2114      2D736563 
+ 2114      74696F6E 
+ 2115              	.LASF18:
+ 2116 0139 73697A65 		.ascii	"sizetype\000"
+ 2116      74797065 
+ 2116      00
+ 2117              	.LASF10:
+ 2118 0142 696E7433 		.ascii	"int32_t\000"
+ 2118      325F7400 
+ 2119              	.LASF68:
+ 2120 014a 47657452 		.ascii	"GetRate\000"
+ 2120      61746500 
+ 2121              	.LASF65:
+ 2122 0152 2E5C432D 		.ascii	".\\C-CAN.c\000"
+ 2122      43414E2E 
+ 2122      6300
+ 2123              	.LASF67:
+ 2124 015c 436F6E66 		.ascii	"Config\000"
+ 2124      696700
+ 2125              	.LASF20:
+ 2126 0163 6E616D65 		.ascii	"name\000"
+ 2126      00
+ 2127              	.LASF29:
+ 2128 0168 53656E73 		.ascii	"Sensor\000"
+ 2128      6F7200
+ 2129              	.LASF36:
+ 2130 016f 47657452 		.ascii	"GetRPM\000"
+ 2130      504D00
+ 2131              	.LASF59:
+ 2132 0176 72696768 		.ascii	"right\000"
+ 2132      7400
+ 2133              	.LASF1:
+ 2134 017c 756E7369 		.ascii	"unsigned char\000"
+ 2134      676E6564 
+ 2134      20636861 
+ 2134      7200
+ 2135              	.LASF38:
+ 2136 018a 53656E73 		.ascii	"SensorSet\000"
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc4ZZri1.s 			page 43
+
+
+ 2136      6F725365 
+ 2136      7400
+ 2137              	.LASF51:
+ 2138 0194 666C6167 		.ascii	"flag_set\000"
+ 2138      5F736574 
+ 2138      00
+ 2139              	.LASF34:
+ 2140 019d 456E636F 		.ascii	"Encoder\000"
+ 2140      64657200 
+ 2141              	.LASF7:
+ 2142 01a5 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 2142      206C6F6E 
+ 2142      6720756E 
+ 2142      7369676E 
+ 2142      65642069 
+ 2143              	.LASF8:
+ 2144 01bc 756E7369 		.ascii	"unsigned int\000"
+ 2144      676E6564 
+ 2144      20696E74 
+ 2144      00
+ 2145              	.LASF40:
+ 2146 01c9 77696E64 		.ascii	"window_set\000"
+ 2146      6F775F73 
+ 2146      657400
+ 2147              	.LASF55:
+ 2148 01d4 456E6162 		.ascii	"EnableRestore\000"
+ 2148      6C655265 
+ 2148      73746F72 
+ 2148      6500
+ 2149              	.LASF25:
+ 2150 01e2 77696E64 		.ascii	"window\000"
+ 2150      6F7700
+ 2151              	.LASF43:
+ 2152 01e9 456E636F 		.ascii	"EncoderInit\000"
+ 2152      64657249 
+ 2152      6E697400 
+ 2153              	.LASF3:
+ 2154 01f5 73686F72 		.ascii	"short unsigned int\000"
+ 2154      7420756E 
+ 2154      7369676E 
+ 2154      65642069 
+ 2154      6E7400
+ 2155              	.LASF17:
+ 2156 0208 63686172 		.ascii	"char\000"
+ 2156      00
+ 2157              	.LASF4:
+ 2158 020d 6C6F6E67 		.ascii	"long int\000"
+ 2158      20696E74 
+ 2158      00
+ 2159              	.LASF58:
+ 2160 0216 6C656674 		.ascii	"left\000"
+ 2160      00
+ 2161              	.LASF53:
+ 2162 021b 656E6162 		.ascii	"enable_set\000"
+ 2162      6C655F73 
+ 2162      657400
+ 2163              	.LASF21:
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc4ZZri1.s 			page 44
+
+
+ 2164 0226 64617461 		.ascii	"data\000"
+ 2164      00
+ 2165              	.LASF13:
+ 2166 022b 75696E74 		.ascii	"uint32\000"
+ 2166      333200
+ 2167              	.LASF5:
+ 2168 0232 6C6F6E67 		.ascii	"long unsigned int\000"
+ 2168      20756E73 
+ 2168      69676E65 
+ 2168      6420696E 
+ 2168      7400
+ 2169              	.LASF16:
+ 2170 0244 646F7562 		.ascii	"double\000"
+ 2170      6C6500
+ 2171              	.LASF54:
+ 2172 024b 456E6162 		.ascii	"EnableSave\000"
+ 2172      6C655361 
+ 2172      766500
+ 2173              	.LASF35:
+ 2174 0256 47657453 		.ascii	"GetSample\000"
+ 2174      616D706C 
+ 2174      6500
+ 2175              	.LASF49:
+ 2176 0260 73657665 		.ascii	"seven\000"
+ 2176      6E00
+ 2177              	.LASF9:
+ 2178 0266 5F5F696E 		.ascii	"__int32_t\000"
+ 2178      7433325F 
+ 2178      7400
+ 2179              	.LASF48:
+ 2180 0270 66697665 		.ascii	"five\000"
+ 2180      00
+ 2181              	.LASF41:
+ 2182 0275 72617465 		.ascii	"rate_set\000"
+ 2182      5F736574 
+ 2182      00
+ 2183              	.LASF28:
+ 2184 027e 72617465 		.ascii	"rate\000"
+ 2184      00
+ 2185              	.LASF56:
+ 2186 0283 74656D70 		.ascii	"temp_enable\000"
+ 2186      5F656E61 
+ 2186      626C6500 
+ 2187              	.LASF37:
+ 2188 028f 656E636F 		.ascii	"encoder\000"
+ 2188      64657200 
+ 2189              	.LASF66:
+ 2190 0297 433A5C55 		.ascii	"C:\\Users\\Patrick\\Documents\\GitHub\\PSoC 5LP FIl"
+ 2190      73657273 
+ 2190      5C506174 
+ 2190      7269636B 
+ 2190      5C446F63 
+ 2191 02c5 65735C43 		.ascii	"es\\C-CAN_PSoC_DevKit\\C-CAN.cydsn\000"
+ 2191      2D43414E 
+ 2191      5F50536F 
+ 2191      435F4465 
+ 2191      764B6974 
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc4ZZri1.s 			page 45
+
+
+ 2192              	.LASF26:
+ 2193 02e6 666C6167 		.ascii	"flag\000"
+ 2193      00
+ 2194              	.LASF23:
+ 2195 02eb 6E756D62 		.ascii	"number\000"
+ 2195      657200
+ 2196              	.LASF57:
+ 2197 02f2 49544D5F 		.ascii	"ITM_RxBuffer\000"
+ 2197      52784275 
+ 2197      66666572 
+ 2197      00
+ 2198              	.LASF33:
+ 2199 02ff 456E636F 		.ascii	"Encoders\000"
+ 2199      64657273 
+ 2199      00
+ 2200              	.LASF47:
+ 2201 0308 666F7572 		.ascii	"four\000"
+ 2201      00
+ 2202              	.LASF42:
+ 2203 030d 506F7449 		.ascii	"PotInit\000"
+ 2203      6E697400 
+ 2204              	.LASF60:
+ 2205 0315 54784D65 		.ascii	"TxMessage1\000"
+ 2205      73736167 
+ 2205      653100
+ 2206              	.LASF45:
+ 2207 0320 7A65726F 		.ascii	"zero\000"
+ 2207      00
+ 2208              	.LASF31:
+ 2209 0325 506F7473 		.ascii	"Pots\000"
+ 2209      00
+ 2210              	.LASF50:
+ 2211 032a 53657446 		.ascii	"SetFlag\000"
+ 2211      6C616700 
+ 2212              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.9.3 20150303 (release) [ARM/embedded-4_9-br

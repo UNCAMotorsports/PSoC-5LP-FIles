@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cctyYNOZ.s 			page 1
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccXPoakb.s 			page 1
 
 
    1              		.syntax unified
@@ -18,2633 +18,2514 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cctyYNOZ.s 			page 1
   15              		.text
   16              	.Ltext0:
   17              		.cfi_sections	.debug_frame
-  18              		.global	cy_meta_configecc
-  19              		.section	.cyconfigecc,"a",%progbits
+  18              		.global	cy_meta_loadable
+  19              		.section	.cyloadablemeta,"a",%progbits
   20              		.align	2
-  21              		.type	cy_meta_configecc, %object
-  22              		.size	cy_meta_configecc, 2028
-  23              	cy_meta_configecc:
-  24 0000 01       		.byte	1
-  25 0001 52       		.byte	82
-  26 0002 00       		.byte	0
-  27 0003 40       		.byte	64
-  28 0004 01       		.byte	1
-  29 0005 5B       		.byte	91
-  30 0006 00       		.byte	0
-  31 0007 40       		.byte	64
-  32 0008 04       		.byte	4
-  33 0009 64       		.byte	100
-  34 000a 00       		.byte	0
-  35 000b 40       		.byte	64
-  36 000c 03       		.byte	3
-  37 000d 65       		.byte	101
-  38 000e 00       		.byte	0
-  39 000f 40       		.byte	64
-  40 0010 04       		.byte	4
-  41 0011 02       		.byte	2
-  42 0012 01       		.byte	1
-  43 0013 40       		.byte	64
-  44 0014 02       		.byte	2
-  45 0015 03       		.byte	3
-  46 0016 01       		.byte	1
-  47 0017 40       		.byte	64
-  48 0018 03       		.byte	3
-  49 0019 05       		.byte	5
-  50 001a 01       		.byte	1
-  51 001b 40       		.byte	64
-  52 001c 03       		.byte	3
-  53 001d 07       		.byte	7
-  54 001e 01       		.byte	1
-  55 001f 40       		.byte	64
-  56 0020 5B       		.byte	91
-  57 0021 08       		.byte	8
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cctyYNOZ.s 			page 2
-
-
-  58 0022 01       		.byte	1
-  59 0023 40       		.byte	64
-  60 0024 46       		.byte	70
-  61 0025 09       		.byte	9
-  62 0026 01       		.byte	1
-  63 0027 40       		.byte	64
-  64 0028 63       		.byte	99
-  65 0029 0A       		.byte	10
-  66 002a 01       		.byte	1
-  67 002b 40       		.byte	64
-  68 002c 35       		.byte	53
-  69 002d 0B       		.byte	11
-  70 002e 01       		.byte	1
-  71 002f 40       		.byte	64
-  72 0030 03       		.byte	3
-  73 0031 0D       		.byte	13
-  74 0032 01       		.byte	1
-  75 0033 40       		.byte	64
-  76 0034 46       		.byte	70
-  77 0035 14       		.byte	20
-  78 0036 01       		.byte	1
-  79 0037 40       		.byte	64
-  80 0038 26       		.byte	38
-  81 0039 15       		.byte	21
-  82 003a 01       		.byte	1
-  83 003b 40       		.byte	64
-  84 003c 46       		.byte	70
-  85 003d 16       		.byte	22
-  86 003e 01       		.byte	1
-  87 003f 40       		.byte	64
-  88 0040 26       		.byte	38
-  89 0041 17       		.byte	23
-  90 0042 01       		.byte	1
-  91 0043 40       		.byte	64
-  92 0044 23       		.byte	35
-  93 0045 18       		.byte	24
-  94 0046 01       		.byte	1
-  95 0047 40       		.byte	64
-  96 0048 38       		.byte	56
-  97 0049 19       		.byte	25
-  98 004a 01       		.byte	1
-  99 004b 40       		.byte	64
- 100 004c 11       		.byte	17
- 101 004d 1A       		.byte	26
- 102 004e 01       		.byte	1
- 103 004f 40       		.byte	64
- 104 0050 44       		.byte	68
- 105 0051 1B       		.byte	27
- 106 0052 01       		.byte	1
- 107 0053 40       		.byte	64
- 108 0054 04       		.byte	4
- 109 0055 40       		.byte	64
- 110 0056 01       		.byte	1
- 111 0057 40       		.byte	64
- 112 0058 05       		.byte	5
- 113 0059 41       		.byte	65
- 114 005a 01       		.byte	1
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cctyYNOZ.s 			page 3
-
-
- 115 005b 40       		.byte	64
- 116 005c 05       		.byte	5
- 117 005d 42       		.byte	66
- 118 005e 01       		.byte	1
- 119 005f 40       		.byte	64
- 120 0060 03       		.byte	3
- 121 0061 43       		.byte	67
- 122 0062 01       		.byte	1
- 123 0063 40       		.byte	64
- 124 0064 02       		.byte	2
- 125 0065 46       		.byte	70
- 126 0066 01       		.byte	1
- 127 0067 40       		.byte	64
- 128 0068 05       		.byte	5
- 129 0069 47       		.byte	71
- 130 006a 01       		.byte	1
- 131 006b 40       		.byte	64
- 132 006c 08       		.byte	8
- 133 006d 48       		.byte	72
- 134 006e 01       		.byte	1
- 135 006f 40       		.byte	64
- 136 0070 03       		.byte	3
- 137 0071 49       		.byte	73
- 138 0072 01       		.byte	1
- 139 0073 40       		.byte	64
- 140 0074 09       		.byte	9
- 141 0075 4C       		.byte	76
- 142 0076 01       		.byte	1
- 143 0077 40       		.byte	64
- 144 0078 10       		.byte	16
- 145 0079 4D       		.byte	77
- 146 007a 01       		.byte	1
- 147 007b 40       		.byte	64
- 148 007c 09       		.byte	9
- 149 007d 50       		.byte	80
- 150 007e 01       		.byte	1
- 151 007f 40       		.byte	64
- 152 0080 01       		.byte	1
- 153 0081 51       		.byte	81
- 154 0082 01       		.byte	1
- 155 0083 40       		.byte	64
- 156 0084 61       		.byte	97
- 157 0085 80       		.byte	-128
- 158 0086 27       		.byte	39
- 159 0087 84       		.byte	-124
- 160 0088 88       		.byte	-120
- 161 0089 38       		.byte	56
- 162 008a 89       		.byte	-119
- 163 008b 67       		.byte	103
- 164 008c 8A       		.byte	-118
- 165 008d 0F       		.byte	15
- 166 008e 8B       		.byte	-117
- 167 008f 67       		.byte	103
- 168 0090 85       		.byte	-123
- 169 0091 67       		.byte	103
- 170 0092 87       		.byte	-121
- 171 0093 67       		.byte	103
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cctyYNOZ.s 			page 4
-
-
- 172 0094 89       		.byte	-119
- 173 0095 72       		.byte	114
- 174 0096 B9       		.byte	-71
- 175 0097 02       		.byte	2
- 176 0098 BF       		.byte	-65
- 177 0099 01       		.byte	1
- 178 009a D9       		.byte	-39
- 179 009b 04       		.byte	4
- 180 009c DF       		.byte	-33
- 181 009d 01       		.byte	1
- 182 009e 22       		.byte	34
- 183 009f 02       		.byte	2
- 184 00a0 8E       		.byte	-114
- 185 00a1 02       		.byte	2
- 186 00a2 84       		.byte	-124
- 187 00a3 01       		.byte	1
- 188 00a4 A2       		.byte	-94
- 189 00a5 02       		.byte	2
- 190 00a6 E2       		.byte	-30
- 191 00a7 06       		.byte	6
- 192 00a8 98       		.byte	-104
- 193 00a9 01       		.byte	1
- 194 00aa A2       		.byte	-94
- 195 00ab 02       		.byte	2
- 196 00ac EE       		.byte	-18
- 197 00ad 04       		.byte	4
- 198 00ae 01       		.byte	1
- 199 00af 03       		.byte	3
- 200 00b0 02       		.byte	2
- 201 00b1 03       		.byte	3
- 202 00b2 0E       		.byte	14
- 203 00b3 08       		.byte	8
- 204 00b4 0F       		.byte	15
- 205 00b5 01       		.byte	1
- 206 00b6 10       		.byte	16
- 207 00b7 01       		.byte	1
- 208 00b8 11       		.byte	17
- 209 00b9 03       		.byte	3
- 210 00ba 12       		.byte	18
- 211 00bb 0E       		.byte	14
- 212 00bc 16       		.byte	22
- 213 00bd 0C       		.byte	12
- 214 00be 1C       		.byte	28
- 215 00bf 01       		.byte	1
- 216 00c0 1E       		.byte	30
- 217 00c1 06       		.byte	6
- 218 00c2 20       		.byte	32
- 219 00c3 0C       		.byte	12
- 220 00c4 21       		.byte	33
- 221 00c5 02       		.byte	2
- 222 00c6 22       		.byte	34
- 223 00c7 03       		.byte	3
- 224 00c8 31       		.byte	49
- 225 00c9 03       		.byte	3
- 226 00ca 36       		.byte	54
- 227 00cb 0F       		.byte	15
- 228 00cc 39       		.byte	57
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cctyYNOZ.s 			page 5
-
-
- 229 00cd 02       		.byte	2
- 230 00ce 3A       		.byte	58
- 231 00cf 80       		.byte	-128
- 232 00d0 3F       		.byte	63
- 233 00d1 01       		.byte	1
- 234 00d2 40       		.byte	64
- 235 00d3 01       		.byte	1
- 236 00d4 45       		.byte	69
- 237 00d5 40       		.byte	64
- 238 00d6 49       		.byte	73
- 239 00d7 FF       		.byte	-1
- 240 00d8 4A       		.byte	74
- 241 00d9 07       		.byte	7
- 242 00da 4B       		.byte	75
- 243 00db FF       		.byte	-1
- 244 00dc 4C       		.byte	76
- 245 00dd 40       		.byte	64
- 246 00de 4D       		.byte	77
- 247 00df 20       		.byte	32
- 248 00e0 4E       		.byte	78
- 249 00e1 F0       		.byte	-16
- 250 00e2 4F       		.byte	79
- 251 00e3 05       		.byte	5
- 252 00e4 50       		.byte	80
- 253 00e5 08       		.byte	8
- 254 00e6 54       		.byte	84
- 255 00e7 18       		.byte	24
- 256 00e8 56       		.byte	86
- 257 00e9 04       		.byte	4
- 258 00ea 58       		.byte	88
- 259 00eb 04       		.byte	4
- 260 00ec 59       		.byte	89
- 261 00ed 04       		.byte	4
- 262 00ee 5A       		.byte	90
- 263 00ef 04       		.byte	4
- 264 00f0 5B       		.byte	91
- 265 00f1 04       		.byte	4
- 266 00f2 5C       		.byte	92
- 267 00f3 04       		.byte	4
- 268 00f4 5D       		.byte	93
- 269 00f5 44       		.byte	68
- 270 00f6 5F       		.byte	95
- 271 00f7 01       		.byte	1
- 272 00f8 60       		.byte	96
- 273 00f9 40       		.byte	64
- 274 00fa 61       		.byte	97
- 275 00fb A8       		.byte	-88
- 276 00fc 62       		.byte	98
- 277 00fd 40       		.byte	64
- 278 00fe 63       		.byte	99
- 279 00ff 20       		.byte	32
- 280 0100 80       		.byte	-128
- 281 0101 10       		.byte	16
- 282 0102 82       		.byte	-126
- 283 0103 0C       		.byte	12
- 284 0104 83       		.byte	-125
- 285 0105 05       		.byte	5
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cctyYNOZ.s 			page 6
-
-
- 286 0106 88       		.byte	-120
- 287 0107 40       		.byte	64
- 288 0108 8A       		.byte	-118
- 289 0109 03       		.byte	3
- 290 010a 8C       		.byte	-116
- 291 010b 20       		.byte	32
- 292 010c 8F       		.byte	-113
- 293 010d 02       		.byte	2
- 294 010e 90       		.byte	-112
- 295 010f 0C       		.byte	12
- 296 0110 92       		.byte	-110
- 297 0111 11       		.byte	17
- 298 0112 93       		.byte	-109
- 299 0113 03       		.byte	3
- 300 0114 94       		.byte	-108
- 301 0115 09       		.byte	9
- 302 0116 96       		.byte	-106
- 303 0117 10       		.byte	16
- 304 0118 97       		.byte	-105
- 305 0119 06       		.byte	6
- 306 011a 9C       		.byte	-100
- 307 011b 1C       		.byte	28
- 308 011c 9D       		.byte	-99
- 309 011d 06       		.byte	6
- 310 011e 9E       		.byte	-98
- 311 011f 02       		.byte	2
- 312 0120 9F       		.byte	-97
- 313 0121 01       		.byte	1
- 314 0122 A0       		.byte	-96
- 315 0123 10       		.byte	16
- 316 0124 A3       		.byte	-93
- 317 0125 01       		.byte	1
- 318 0126 A4       		.byte	-92
- 319 0127 14       		.byte	20
- 320 0128 AE       		.byte	-82
- 321 0129 20       		.byte	32
- 322 012a B0       		.byte	-80
- 323 012b 20       		.byte	32
- 324 012c B1       		.byte	-79
- 325 012d 07       		.byte	7
- 326 012e B2       		.byte	-78
- 327 012f 1F       		.byte	31
- 328 0130 B4       		.byte	-76
- 329 0131 40       		.byte	64
- 330 0132 BB       		.byte	-69
- 331 0133 02       		.byte	2
- 332 0134 BE       		.byte	-66
- 333 0135 11       		.byte	17
- 334 0136 C0       		.byte	-64
- 335 0137 54       		.byte	84
- 336 0138 C1       		.byte	-63
- 337 0139 01       		.byte	1
- 338 013a C5       		.byte	-59
- 339 013b 0C       		.byte	12
- 340 013c C6       		.byte	-58
- 341 013d B0       		.byte	-80
- 342 013e C7       		.byte	-57
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cctyYNOZ.s 			page 7
-
-
- 343 013f 0E       		.byte	14
- 344 0140 C8       		.byte	-56
- 345 0141 19       		.byte	25
- 346 0142 C9       		.byte	-55
- 347 0143 FF       		.byte	-1
- 348 0144 CA       		.byte	-54
- 349 0145 FF       		.byte	-1
- 350 0146 CB       		.byte	-53
- 351 0147 FF       		.byte	-1
- 352 0148 CE       		.byte	-50
- 353 0149 F0       		.byte	-16
- 354 014a CF       		.byte	-49
- 355 014b 44       		.byte	68
- 356 014c D0       		.byte	-48
- 357 014d 0C       		.byte	12
- 358 014e D4       		.byte	-44
- 359 014f 07       		.byte	7
- 360 0150 D8       		.byte	-40
- 361 0151 04       		.byte	4
- 362 0152 D9       		.byte	-39
- 363 0153 04       		.byte	4
- 364 0154 DA       		.byte	-38
- 365 0155 04       		.byte	4
- 366 0156 DB       		.byte	-37
- 367 0157 04       		.byte	4
- 368 0158 DC       		.byte	-36
- 369 0159 44       		.byte	68
- 370 015a DD       		.byte	-35
- 371 015b 04       		.byte	4
- 372 015c DF       		.byte	-33
- 373 015d 01       		.byte	1
- 374 015e E6       		.byte	-26
- 375 015f C0       		.byte	-64
- 376 0160 EA       		.byte	-22
- 377 0161 40       		.byte	64
- 378 0162 EB       		.byte	-21
- 379 0163 02       		.byte	2
- 380 0164 00       		.byte	0
- 381 0165 12       		.byte	18
- 382 0166 01       		.byte	1
- 383 0167 80       		.byte	-128
- 384 0168 04       		.byte	4
- 385 0169 80       		.byte	-128
- 386 016a 06       		.byte	6
- 387 016b 40       		.byte	64
- 388 016c 08       		.byte	8
- 389 016d 42       		.byte	66
- 390 016e 09       		.byte	9
- 391 016f 88       		.byte	-120
- 392 0170 0D       		.byte	13
- 393 0171 09       		.byte	9
- 394 0172 0F       		.byte	15
- 395 0173 01       		.byte	1
- 396 0174 10       		.byte	16
- 397 0175 A0       		.byte	-96
- 398 0176 12       		.byte	18
- 399 0177 01       		.byte	1
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cctyYNOZ.s 			page 8
-
-
- 400 0178 14       		.byte	20
- 401 0179 40       		.byte	64
- 402 017a 18       		.byte	24
- 403 017b 10       		.byte	16
- 404 017c 19       		.byte	25
- 405 017d 20       		.byte	32
- 406 017e 1A       		.byte	26
- 407 017f 40       		.byte	64
- 408 0180 1D       		.byte	29
- 409 0181 80       		.byte	-128
- 410 0182 1F       		.byte	31
- 411 0183 40       		.byte	64
- 412 0184 21       		.byte	33
- 413 0185 01       		.byte	1
- 414 0186 22       		.byte	34
- 415 0187 02       		.byte	2
- 416 0188 27       		.byte	39
- 417 0189 40       		.byte	64
- 418 018a 2B       		.byte	43
- 419 018b 40       		.byte	64
- 420 018c 2F       		.byte	47
- 421 018d 40       		.byte	64
- 422 018e 31       		.byte	49
- 423 018f 88       		.byte	-120
- 424 0190 32       		.byte	50
- 425 0191 02       		.byte	2
- 426 0192 34       		.byte	52
- 427 0193 02       		.byte	2
- 428 0194 36       		.byte	54
- 429 0195 02       		.byte	2
- 430 0196 38       		.byte	56
- 431 0197 80       		.byte	-128
- 432 0198 3B       		.byte	59
- 433 0199 01       		.byte	1
- 434 019a 3C       		.byte	60
- 435 019b 02       		.byte	2
- 436 019c 3F       		.byte	63
- 437 019d 81       		.byte	-127
- 438 019e 40       		.byte	64
- 439 019f 02       		.byte	2
- 440 01a0 42       		.byte	66
- 441 01a1 80       		.byte	-128
- 442 01a2 47       		.byte	71
- 443 01a3 40       		.byte	64
- 444 01a4 48       		.byte	72
- 445 01a5 01       		.byte	1
- 446 01a6 49       		.byte	73
- 447 01a7 08       		.byte	8
- 448 01a8 4C       		.byte	76
- 449 01a9 C0       		.byte	-64
- 450 01aa 50       		.byte	80
- 451 01ab 20       		.byte	32
- 452 01ac 53       		.byte	83
- 453 01ad 08       		.byte	8
- 454 01ae 56       		.byte	86
- 455 01af C0       		.byte	-64
- 456 01b0 57       		.byte	87
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cctyYNOZ.s 			page 9
-
-
- 457 01b1 40       		.byte	64
- 458 01b2 58       		.byte	88
- 459 01b3 10       		.byte	16
- 460 01b4 5A       		.byte	90
- 461 01b5 40       		.byte	64
- 462 01b6 5B       		.byte	91
- 463 01b7 04       		.byte	4
- 464 01b8 5F       		.byte	95
- 465 01b9 02       		.byte	2
- 466 01ba 61       		.byte	97
- 467 01bb 04       		.byte	4
- 468 01bc 62       		.byte	98
- 469 01bd 10       		.byte	16
- 470 01be 64       		.byte	100
- 471 01bf 80       		.byte	-128
- 472 01c0 67       		.byte	103
- 473 01c1 06       		.byte	6
- 474 01c2 89       		.byte	-119
- 475 01c3 20       		.byte	32
- 476 01c4 93       		.byte	-109
- 477 01c5 01       		.byte	1
- 478 01c6 94       		.byte	-108
- 479 01c7 04       		.byte	4
- 480 01c8 97       		.byte	-105
- 481 01c9 80       		.byte	-128
- 482 01ca 9C       		.byte	-100
- 483 01cb 02       		.byte	2
- 484 01cc 9D       		.byte	-99
- 485 01cd 08       		.byte	8
- 486 01ce 9E       		.byte	-98
- 487 01cf 40       		.byte	64
- 488 01d0 A1       		.byte	-95
- 489 01d1 18       		.byte	24
- 490 01d2 A6       		.byte	-90
- 491 01d3 02       		.byte	2
- 492 01d4 A7       		.byte	-89
- 493 01d5 08       		.byte	8
- 494 01d6 AE       		.byte	-82
- 495 01d7 01       		.byte	1
- 496 01d8 AF       		.byte	-81
- 497 01d9 08       		.byte	8
- 498 01da C0       		.byte	-64
- 499 01db 9B       		.byte	-101
- 500 01dc C2       		.byte	-62
- 501 01dd BD       		.byte	-67
- 502 01de C4       		.byte	-60
- 503 01df 1D       		.byte	29
- 504 01e0 CA       		.byte	-54
- 505 01e1 81       		.byte	-127
- 506 01e2 CC       		.byte	-52
- 507 01e3 8B       		.byte	-117
- 508 01e4 CE       		.byte	-50
- 509 01e5 99       		.byte	-103
- 510 01e6 D0       		.byte	-48
- 511 01e7 19       		.byte	25
- 512 01e8 D2       		.byte	-46
- 513 01e9 08       		.byte	8
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cctyYNOZ.s 			page 10
-
-
- 514 01ea D6       		.byte	-42
- 515 01eb 8E       		.byte	-114
- 516 01ec D8       		.byte	-40
- 517 01ed B6       		.byte	-74
- 518 01ee EE       		.byte	-18
- 519 01ef 04       		.byte	4
- 520 01f0 01       		.byte	1
- 521 01f1 03       		.byte	3
- 522 01f2 03       		.byte	3
- 523 01f3 0C       		.byte	12
- 524 01f4 06       		.byte	6
- 525 01f5 01       		.byte	1
- 526 01f6 0C       		.byte	12
- 527 01f7 01       		.byte	1
- 528 01f8 0D       		.byte	13
- 529 01f9 0A       		.byte	10
- 530 01fa 0F       		.byte	15
- 531 01fb 04       		.byte	4
- 532 01fc 12       		.byte	18
- 533 01fd 01       		.byte	1
- 534 01fe 17       		.byte	23
- 535 01ff 08       		.byte	8
- 536 0200 1C       		.byte	28
- 537 0201 01       		.byte	1
- 538 0202 22       		.byte	34
- 539 0203 01       		.byte	1
- 540 0204 23       		.byte	35
- 541 0205 05       		.byte	5
- 542 0206 25       		.byte	37
- 543 0207 03       		.byte	3
- 544 0208 27       		.byte	39
- 545 0209 04       		.byte	4
- 546 020a 29       		.byte	41
- 547 020b 10       		.byte	16
- 548 020c 2D       		.byte	45
- 549 020d 03       		.byte	3
- 550 020e 2F       		.byte	47
- 551 020f 04       		.byte	4
- 552 0210 30       		.byte	48
- 553 0211 01       		.byte	1
- 554 0212 33       		.byte	51
- 555 0213 10       		.byte	16
- 556 0214 37       		.byte	55
- 557 0215 0F       		.byte	15
- 558 0216 3B       		.byte	59
- 559 0217 80       		.byte	-128
- 560 0218 3E       		.byte	62
- 561 0219 01       		.byte	1
- 562 021a 3F       		.byte	63
- 563 021b 04       		.byte	4
- 564 021c 40       		.byte	64
- 565 021d 20       		.byte	32
- 566 021e 41       		.byte	65
- 567 021f 06       		.byte	6
- 568 0220 49       		.byte	73
- 569 0221 FF       		.byte	-1
- 570 0222 4A       		.byte	74
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cctyYNOZ.s 			page 11
-
-
- 571 0223 FF       		.byte	-1
- 572 0224 4B       		.byte	75
- 573 0225 FF       		.byte	-1
- 574 0226 4D       		.byte	77
- 575 0227 A0       		.byte	-96
- 576 0228 4F       		.byte	79
- 577 0229 01       		.byte	1
- 578 022a 50       		.byte	80
- 579 022b 18       		.byte	24
- 580 022c 54       		.byte	84
- 581 022d 01       		.byte	1
- 582 022e 56       		.byte	86
- 583 022f 04       		.byte	4
- 584 0230 58       		.byte	88
- 585 0231 04       		.byte	4
- 586 0232 59       		.byte	89
- 587 0233 04       		.byte	4
- 588 0234 5A       		.byte	90
- 589 0235 04       		.byte	4
- 590 0236 5B       		.byte	91
- 591 0237 04       		.byte	4
- 592 0238 5C       		.byte	92
- 593 0239 40       		.byte	64
- 594 023a 5D       		.byte	93
- 595 023b 40       		.byte	64
- 596 023c 5F       		.byte	95
- 597 023d 01       		.byte	1
- 598 023e 60       		.byte	96
- 599 023f 40       		.byte	64
- 600 0240 62       		.byte	98
- 601 0241 80       		.byte	-128
- 602 0242 64       		.byte	100
- 603 0243 40       		.byte	64
- 604 0244 65       		.byte	101
- 605 0245 40       		.byte	64
- 606 0246 66       		.byte	102
- 607 0247 80       		.byte	-128
- 608 0248 68       		.byte	104
- 609 0249 40       		.byte	64
- 610 024a 6A       		.byte	106
- 611 024b 50       		.byte	80
- 612 024c 6B       		.byte	107
- 613 024d A8       		.byte	-88
- 614 024e 6C       		.byte	108
- 615 024f 40       		.byte	64
- 616 0250 6D       		.byte	109
- 617 0251 20       		.byte	32
- 618 0252 6E       		.byte	110
- 619 0253 50       		.byte	80
- 620 0254 6F       		.byte	111
- 621 0255 A8       		.byte	-88
- 622 0256 81       		.byte	-127
- 623 0257 01       		.byte	1
- 624 0258 90       		.byte	-112
- 625 0259 01       		.byte	1
- 626 025a 91       		.byte	-111
- 627 025b 01       		.byte	1
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cctyYNOZ.s 			page 12
-
-
- 628 025c 94       		.byte	-108
- 629 025d 02       		.byte	2
- 630 025e 9D       		.byte	-99
- 631 025f 02       		.byte	2
- 632 0260 9E       		.byte	-98
- 633 0261 05       		.byte	5
- 634 0262 A3       		.byte	-93
- 635 0263 01       		.byte	1
- 636 0264 AE       		.byte	-82
- 637 0265 0A       		.byte	10
- 638 0266 B0       		.byte	-80
- 639 0267 04       		.byte	4
- 640 0268 B2       		.byte	-78
- 641 0269 08       		.byte	8
- 642 026a B3       		.byte	-77
- 643 026b 03       		.byte	3
- 644 026c B4       		.byte	-76
- 645 026d 02       		.byte	2
- 646 026e B6       		.byte	-74
- 647 026f 01       		.byte	1
- 648 0270 B9       		.byte	-71
- 649 0271 08       		.byte	8
- 650 0272 BE       		.byte	-66
- 651 0273 50       		.byte	80
- 652 0274 C0       		.byte	-64
- 653 0275 20       		.byte	32
- 654 0276 C1       		.byte	-63
- 655 0277 06       		.byte	6
- 656 0278 C5       		.byte	-59
- 657 0279 5C       		.byte	92
- 658 027a C6       		.byte	-58
- 659 027b 20       		.byte	32
- 660 027c C7       		.byte	-57
- 661 027d 0E       		.byte	14
- 662 027e C8       		.byte	-56
- 663 027f 3B       		.byte	59
- 664 0280 C9       		.byte	-55
- 665 0281 FF       		.byte	-1
- 666 0282 CA       		.byte	-54
- 667 0283 FF       		.byte	-1
- 668 0284 CB       		.byte	-53
- 669 0285 FF       		.byte	-1
- 670 0286 CD       		.byte	-51
- 671 0287 AF       		.byte	-81
- 672 0288 CE       		.byte	-50
- 673 0289 07       		.byte	7
- 674 028a CF       		.byte	-49
- 675 028b 01       		.byte	1
- 676 028c D0       		.byte	-48
- 677 028d 18       		.byte	24
- 678 028e D2       		.byte	-46
- 679 028f 80       		.byte	-128
- 680 0290 D4       		.byte	-44
- 681 0291 07       		.byte	7
- 682 0292 D8       		.byte	-40
- 683 0293 04       		.byte	4
- 684 0294 D9       		.byte	-39
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cctyYNOZ.s 			page 13
-
-
- 685 0295 04       		.byte	4
- 686 0296 DA       		.byte	-38
- 687 0297 04       		.byte	4
- 688 0298 DB       		.byte	-37
- 689 0299 04       		.byte	4
- 690 029a DC       		.byte	-36
- 691 029b 40       		.byte	64
- 692 029c DF       		.byte	-33
- 693 029d 01       		.byte	1
- 694 029e E0       		.byte	-32
- 695 029f 40       		.byte	64
- 696 02a0 E2       		.byte	-30
- 697 02a1 80       		.byte	-128
- 698 02a2 E4       		.byte	-28
- 699 02a3 40       		.byte	64
- 700 02a4 E5       		.byte	-27
- 701 02a5 40       		.byte	64
- 702 02a6 E6       		.byte	-26
- 703 02a7 80       		.byte	-128
- 704 02a8 E8       		.byte	-24
- 705 02a9 40       		.byte	64
- 706 02aa EA       		.byte	-22
- 707 02ab 50       		.byte	80
- 708 02ac EB       		.byte	-21
- 709 02ad A8       		.byte	-88
- 710 02ae EC       		.byte	-20
- 711 02af 40       		.byte	64
- 712 02b0 ED       		.byte	-19
- 713 02b1 20       		.byte	32
- 714 02b2 EE       		.byte	-18
- 715 02b3 50       		.byte	80
- 716 02b4 EF       		.byte	-17
- 717 02b5 A8       		.byte	-88
- 718 02b6 01       		.byte	1
- 719 02b7 08       		.byte	8
- 720 02b8 02       		.byte	2
- 721 02b9 02       		.byte	2
- 722 02ba 0B       		.byte	11
- 723 02bb 81       		.byte	-127
- 724 02bc 0E       		.byte	14
- 725 02bd 60       		.byte	96
- 726 02be 0F       		.byte	15
- 727 02bf 02       		.byte	2
- 728 02c0 10       		.byte	16
- 729 02c1 40       		.byte	64
- 730 02c2 12       		.byte	18
- 731 02c3 C0       		.byte	-64
- 732 02c4 16       		.byte	22
- 733 02c5 02       		.byte	2
- 734 02c6 1A       		.byte	26
- 735 02c7 80       		.byte	-128
- 736 02c8 1E       		.byte	30
- 737 02c9 6A       		.byte	106
- 738 02ca 22       		.byte	34
- 739 02cb 04       		.byte	4
- 740 02cc 23       		.byte	35
- 741 02cd 01       		.byte	1
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cctyYNOZ.s 			page 14
-
-
- 742 02ce 25       		.byte	37
- 743 02cf 08       		.byte	8
- 744 02d0 28       		.byte	40
- 745 02d1 52       		.byte	82
- 746 02d2 29       		.byte	41
- 747 02d3 08       		.byte	8
- 748 02d4 2B       		.byte	43
- 749 02d5 08       		.byte	8
- 750 02d6 2F       		.byte	47
- 751 02d7 40       		.byte	64
- 752 02d8 31       		.byte	49
- 753 02d9 08       		.byte	8
- 754 02da 36       		.byte	54
- 755 02db 82       		.byte	-126
- 756 02dc 3B       		.byte	59
- 757 02dd 81       		.byte	-127
- 758 02de 3F       		.byte	63
- 759 02df 01       		.byte	1
- 760 02e0 40       		.byte	64
- 761 02e1 04       		.byte	4
- 762 02e2 42       		.byte	66
- 763 02e3 30       		.byte	48
- 764 02e4 43       		.byte	67
- 765 02e5 10       		.byte	16
- 766 02e6 47       		.byte	71
- 767 02e7 10       		.byte	16
- 768 02e8 48       		.byte	72
- 769 02e9 08       		.byte	8
- 770 02ea 49       		.byte	73
- 771 02eb 80       		.byte	-128
- 772 02ec 4A       		.byte	74
- 773 02ed 01       		.byte	1
- 774 02ee 4C       		.byte	76
- 775 02ef 08       		.byte	8
- 776 02f0 4F       		.byte	79
- 777 02f1 06       		.byte	6
- 778 02f2 56       		.byte	86
- 779 02f3 2A       		.byte	42
- 780 02f4 58       		.byte	88
- 781 02f5 10       		.byte	16
- 782 02f6 5A       		.byte	90
- 783 02f7 8A       		.byte	-118
- 784 02f8 5D       		.byte	93
- 785 02f9 80       		.byte	-128
- 786 02fa 5E       		.byte	94
- 787 02fb 18       		.byte	24
- 788 02fc 63       		.byte	99
- 789 02fd 80       		.byte	-128
- 790 02fe 66       		.byte	102
- 791 02ff 08       		.byte	8
- 792 0300 67       		.byte	103
- 793 0301 04       		.byte	4
- 794 0302 76       		.byte	118
- 795 0303 80       		.byte	-128
- 796 0304 83       		.byte	-125
- 797 0305 40       		.byte	64
- 798 0306 86       		.byte	-122
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cctyYNOZ.s 			page 15
-
-
- 799 0307 80       		.byte	-128
- 800 0308 A0       		.byte	-96
- 801 0309 08       		.byte	8
- 802 030a A1       		.byte	-95
- 803 030b 10       		.byte	16
- 804 030c C0       		.byte	-64
- 805 030d 05       		.byte	5
- 806 030e C2       		.byte	-62
- 807 030f B9       		.byte	-71
- 808 0310 C4       		.byte	-60
- 809 0311 88       		.byte	-120
- 810 0312 CA       		.byte	-54
- 811 0313 8F       		.byte	-113
- 812 0314 CC       		.byte	-52
- 813 0315 92       		.byte	-110
- 814 0316 CE       		.byte	-50
- 815 0317 89       		.byte	-119
- 816 0318 D0       		.byte	-48
- 817 0319 24       		.byte	36
- 818 031a D2       		.byte	-46
- 819 031b 24       		.byte	36
- 820 031c D6       		.byte	-42
- 821 031d 7F       		.byte	127
- 822 031e D8       		.byte	-40
- 823 031f 61       		.byte	97
- 824 0320 8C       		.byte	-116
- 825 0321 08       		.byte	8
- 826 0322 8D       		.byte	-115
- 827 0323 10       		.byte	16
- 828 0324 E4       		.byte	-28
- 829 0325 10       		.byte	16
- 830 0326 0C       		.byte	12
- 831 0327 01       		.byte	1
- 832 0328 12       		.byte	18
- 833 0329 01       		.byte	1
- 834 032a 2E       		.byte	46
- 835 032b 01       		.byte	1
- 836 032c 34       		.byte	52
- 837 032d 01       		.byte	1
- 838 032e 3E       		.byte	62
- 839 032f 10       		.byte	16
- 840 0330 40       		.byte	64
- 841 0331 20       		.byte	32
- 842 0332 41       		.byte	65
- 843 0333 05       		.byte	5
- 844 0334 49       		.byte	73
- 845 0335 FF       		.byte	-1
- 846 0336 4A       		.byte	74
- 847 0337 FF       		.byte	-1
- 848 0338 4B       		.byte	75
- 849 0339 FF       		.byte	-1
- 850 033a 4D       		.byte	77
- 851 033b A0       		.byte	-96
- 852 033c 4F       		.byte	79
- 853 033d 01       		.byte	1
- 854 033e 50       		.byte	80
- 855 033f 18       		.byte	24
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cctyYNOZ.s 			page 16
-
-
- 856 0340 52       		.byte	82
- 857 0341 80       		.byte	-128
- 858 0342 56       		.byte	86
- 859 0343 08       		.byte	8
- 860 0344 58       		.byte	88
- 861 0345 04       		.byte	4
- 862 0346 5A       		.byte	90
- 863 0347 04       		.byte	4
- 864 0348 5B       		.byte	91
- 865 0349 04       		.byte	4
- 866 034a 5F       		.byte	95
- 867 034b 01       		.byte	1
- 868 034c 60       		.byte	96
- 869 034d 40       		.byte	64
- 870 034e 62       		.byte	98
- 871 034f 80       		.byte	-128
- 872 0350 64       		.byte	100
- 873 0351 40       		.byte	64
- 874 0352 65       		.byte	101
- 875 0353 40       		.byte	64
- 876 0354 66       		.byte	102
- 877 0355 80       		.byte	-128
- 878 0356 68       		.byte	104
- 879 0357 40       		.byte	64
- 880 0358 6A       		.byte	106
- 881 0359 50       		.byte	80
- 882 035a 6B       		.byte	107
- 883 035b A8       		.byte	-88
- 884 035c 6C       		.byte	108
- 885 035d 40       		.byte	64
- 886 035e 6D       		.byte	109
- 887 035f 20       		.byte	32
- 888 0360 6E       		.byte	110
- 889 0361 50       		.byte	80
- 890 0362 6F       		.byte	111
- 891 0363 A8       		.byte	-88
- 892 0364 82       		.byte	-126
- 893 0365 0A       		.byte	10
- 894 0366 90       		.byte	-112
- 895 0367 01       		.byte	1
- 896 0368 94       		.byte	-108
- 897 0369 02       		.byte	2
- 898 036a 9E       		.byte	-98
- 899 036b 05       		.byte	5
- 900 036c B0       		.byte	-80
- 901 036d 04       		.byte	4
- 902 036e B2       		.byte	-78
- 903 036f 08       		.byte	8
- 904 0370 B4       		.byte	-76
- 905 0371 02       		.byte	2
- 906 0372 B6       		.byte	-74
- 907 0373 01       		.byte	1
- 908 0374 BE       		.byte	-66
- 909 0375 50       		.byte	80
- 910 0376 C0       		.byte	-64
- 911 0377 20       		.byte	32
- 912 0378 C1       		.byte	-63
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cctyYNOZ.s 			page 17
-
-
- 913 0379 05       		.byte	5
- 914 037a C5       		.byte	-59
- 915 037b 5C       		.byte	92
- 916 037c C6       		.byte	-58
- 917 037d 20       		.byte	32
- 918 037e C7       		.byte	-57
- 919 037f 0E       		.byte	14
- 920 0380 C8       		.byte	-56
- 921 0381 1F       		.byte	31
- 922 0382 C9       		.byte	-55
- 923 0383 FF       		.byte	-1
- 924 0384 CA       		.byte	-54
- 925 0385 FF       		.byte	-1
- 926 0386 CB       		.byte	-53
- 927 0387 FF       		.byte	-1
- 928 0388 CD       		.byte	-51
- 929 0389 AF       		.byte	-81
- 930 038a CE       		.byte	-50
- 931 038b 07       		.byte	7
- 932 038c CF       		.byte	-49
- 933 038d 01       		.byte	1
- 934 038e D0       		.byte	-48
- 935 038f 18       		.byte	24
- 936 0390 D4       		.byte	-44
- 937 0391 07       		.byte	7
- 938 0392 D8       		.byte	-40
- 939 0393 04       		.byte	4
- 940 0394 DA       		.byte	-38
- 941 0395 04       		.byte	4
- 942 0396 DB       		.byte	-37
- 943 0397 04       		.byte	4
- 944 0398 DF       		.byte	-33
- 945 0399 01       		.byte	1
- 946 039a E0       		.byte	-32
- 947 039b 40       		.byte	64
- 948 039c E2       		.byte	-30
- 949 039d 80       		.byte	-128
- 950 039e E4       		.byte	-28
- 951 039f 40       		.byte	64
- 952 03a0 E5       		.byte	-27
- 953 03a1 40       		.byte	64
- 954 03a2 E6       		.byte	-26
- 955 03a3 80       		.byte	-128
- 956 03a4 E8       		.byte	-24
- 957 03a5 40       		.byte	64
- 958 03a6 EA       		.byte	-22
- 959 03a7 50       		.byte	80
- 960 03a8 EB       		.byte	-21
- 961 03a9 A8       		.byte	-88
- 962 03aa EC       		.byte	-20
- 963 03ab 40       		.byte	64
- 964 03ac ED       		.byte	-19
- 965 03ad 20       		.byte	32
- 966 03ae EE       		.byte	-18
- 967 03af 50       		.byte	80
- 968 03b0 EF       		.byte	-17
- 969 03b1 A8       		.byte	-88
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cctyYNOZ.s 			page 18
-
-
- 970 03b2 00       		.byte	0
- 971 03b3 40       		.byte	64
- 972 03b4 06       		.byte	6
- 973 03b5 80       		.byte	-128
- 974 03b6 08       		.byte	8
- 975 03b7 02       		.byte	2
- 976 03b8 0E       		.byte	14
- 977 03b9 60       		.byte	96
- 978 03ba 0F       		.byte	15
- 979 03bb 02       		.byte	2
- 980 03bc 10       		.byte	16
- 981 03bd 02       		.byte	2
- 982 03be 18       		.byte	24
- 983 03bf 04       		.byte	4
- 984 03c0 1E       		.byte	30
- 985 03c1 68       		.byte	104
- 986 03c2 1F       		.byte	31
- 987 03c3 40       		.byte	64
- 988 03c4 3B       		.byte	59
- 989 03c5 C0       		.byte	-64
- 990 03c6 3E       		.byte	62
- 991 03c7 20       		.byte	32
- 992 03c8 3F       		.byte	63
- 993 03c9 10       		.byte	16
- 994 03ca 40       		.byte	64
- 995 03cb 04       		.byte	4
- 996 03cc 43       		.byte	67
- 997 03cd 10       		.byte	16
- 998 03ce 47       		.byte	71
- 999 03cf 10       		.byte	16
- 1000 03d0 4A       		.byte	74
- 1001 03d1 02       		.byte	2
- 1002 03d2 4E       		.byte	78
- 1003 03d3 02       		.byte	2
- 1004 03d4 4F       		.byte	79
- 1005 03d5 06       		.byte	6
- 1006 03d6 56       		.byte	86
- 1007 03d7 A8       		.byte	-88
- 1008 03d8 5B       		.byte	91
- 1009 03d9 40       		.byte	64
- 1010 03da 5E       		.byte	94
- 1011 03db 08       		.byte	8
- 1012 03dc 5F       		.byte	95
- 1013 03dd 50       		.byte	80
- 1014 03de 60       		.byte	96
- 1015 03df 02       		.byte	2
- 1016 03e0 66       		.byte	102
- 1017 03e1 08       		.byte	8
- 1018 03e2 67       		.byte	103
- 1019 03e3 04       		.byte	4
- 1020 03e4 70       		.byte	112
- 1021 03e5 02       		.byte	2
- 1022 03e6 8F       		.byte	-113
- 1023 03e7 40       		.byte	64
- 1024 03e8 90       		.byte	-112
- 1025 03e9 40       		.byte	64
- 1026 03ea 9C       		.byte	-100
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cctyYNOZ.s 			page 19
-
-
- 1027 03eb 02       		.byte	2
- 1028 03ec A2       		.byte	-94
- 1029 03ed 02       		.byte	2
- 1030 03ee C0       		.byte	-64
- 1031 03ef 11       		.byte	17
- 1032 03f0 C2       		.byte	-62
- 1033 03f1 B8       		.byte	-72
- 1034 03f2 C4       		.byte	-60
- 1035 03f3 01       		.byte	1
- 1036 03f4 D0       		.byte	-48
- 1037 03f5 24       		.byte	36
- 1038 03f6 D2       		.byte	-46
- 1039 03f7 18       		.byte	24
- 1040 03f8 D6       		.byte	-42
- 1041 03f9 78       		.byte	120
- 1042 03fa D8       		.byte	-40
- 1043 03fb 68       		.byte	104
- 1044 03fc E0       		.byte	-32
- 1045 03fd 10       		.byte	16
- 1046 03fe 40       		.byte	64
- 1047 03ff 10       		.byte	16
- 1048 0400 41       		.byte	65
- 1049 0401 05       		.byte	5
- 1050 0402 49       		.byte	73
- 1051 0403 FF       		.byte	-1
- 1052 0404 4A       		.byte	74
- 1053 0405 FF       		.byte	-1
- 1054 0406 4B       		.byte	75
- 1055 0407 FF       		.byte	-1
- 1056 0408 4D       		.byte	77
- 1057 0409 A0       		.byte	-96
- 1058 040a 4F       		.byte	79
- 1059 040b 01       		.byte	1
- 1060 040c 50       		.byte	80
- 1061 040d 18       		.byte	24
- 1062 040e 5A       		.byte	90
- 1063 040f 04       		.byte	4
- 1064 0410 5F       		.byte	95
- 1065 0411 01       		.byte	1
- 1066 0412 60       		.byte	96
- 1067 0413 40       		.byte	64
- 1068 0414 62       		.byte	98
- 1069 0415 80       		.byte	-128
- 1070 0416 64       		.byte	100
- 1071 0417 40       		.byte	64
- 1072 0418 65       		.byte	101
- 1073 0419 40       		.byte	64
- 1074 041a 66       		.byte	102
- 1075 041b 80       		.byte	-128
- 1076 041c 68       		.byte	104
- 1077 041d 40       		.byte	64
- 1078 041e 6A       		.byte	106
- 1079 041f 50       		.byte	80
- 1080 0420 6B       		.byte	107
- 1081 0421 A8       		.byte	-88
- 1082 0422 6C       		.byte	108
- 1083 0423 40       		.byte	64
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cctyYNOZ.s 			page 20
-
-
- 1084 0424 6D       		.byte	109
- 1085 0425 20       		.byte	32
- 1086 0426 6E       		.byte	110
- 1087 0427 50       		.byte	80
- 1088 0428 6F       		.byte	111
- 1089 0429 A8       		.byte	-88
- 1090 042a 8D       		.byte	-115
- 1091 042b 01       		.byte	1
- 1092 042c 92       		.byte	-110
- 1093 042d 02       		.byte	2
- 1094 042e 93       		.byte	-109
- 1095 042f 01       		.byte	1
- 1096 0430 94       		.byte	-108
- 1097 0431 01       		.byte	1
- 1098 0432 9F       		.byte	-97
- 1099 0433 02       		.byte	2
- 1100 0434 A2       		.byte	-94
- 1101 0435 08       		.byte	8
- 1102 0436 A6       		.byte	-90
- 1103 0437 05       		.byte	5
- 1104 0438 A9       		.byte	-87
- 1105 0439 02       		.byte	2
- 1106 043a AF       		.byte	-81
- 1107 043b 01       		.byte	1
- 1108 043c B0       		.byte	-80
- 1109 043d 02       		.byte	2
- 1110 043e B2       		.byte	-78
- 1111 043f 04       		.byte	4
- 1112 0440 B3       		.byte	-77
- 1113 0441 02       		.byte	2
- 1114 0442 B4       		.byte	-76
- 1115 0443 08       		.byte	8
- 1116 0444 B6       		.byte	-74
- 1117 0445 01       		.byte	1
- 1118 0446 B7       		.byte	-73
- 1119 0447 01       		.byte	1
- 1120 0448 BE       		.byte	-66
- 1121 0449 40       		.byte	64
- 1122 044a BF       		.byte	-65
- 1123 044b 44       		.byte	68
- 1124 044c C0       		.byte	-64
- 1125 044d 10       		.byte	16
- 1126 044e C1       		.byte	-63
- 1127 044f 05       		.byte	5
- 1128 0450 C5       		.byte	-59
- 1129 0451 05       		.byte	5
- 1130 0452 C6       		.byte	-58
- 1131 0453 C2       		.byte	-62
- 1132 0454 C7       		.byte	-57
- 1133 0455 0E       		.byte	14
- 1134 0456 C8       		.byte	-56
- 1135 0457 1F       		.byte	31
- 1136 0458 C9       		.byte	-55
- 1137 0459 FF       		.byte	-1
- 1138 045a CA       		.byte	-54
- 1139 045b FF       		.byte	-1
- 1140 045c CB       		.byte	-53
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cctyYNOZ.s 			page 21
-
-
- 1141 045d FF       		.byte	-1
- 1142 045e CD       		.byte	-51
- 1143 045f AF       		.byte	-81
- 1144 0460 CE       		.byte	-50
- 1145 0461 07       		.byte	7
- 1146 0462 CF       		.byte	-49
- 1147 0463 01       		.byte	1
- 1148 0464 D0       		.byte	-48
- 1149 0465 18       		.byte	24
- 1150 0466 D4       		.byte	-44
- 1151 0467 07       		.byte	7
- 1152 0468 D8       		.byte	-40
- 1153 0469 04       		.byte	4
- 1154 046a D9       		.byte	-39
- 1155 046b 04       		.byte	4
- 1156 046c DA       		.byte	-38
- 1157 046d 04       		.byte	4
- 1158 046e DB       		.byte	-37
- 1159 046f 04       		.byte	4
- 1160 0470 DF       		.byte	-33
- 1161 0471 01       		.byte	1
- 1162 0472 E0       		.byte	-32
- 1163 0473 40       		.byte	64
- 1164 0474 E2       		.byte	-30
- 1165 0475 80       		.byte	-128
- 1166 0476 E4       		.byte	-28
- 1167 0477 40       		.byte	64
- 1168 0478 E5       		.byte	-27
- 1169 0479 40       		.byte	64
- 1170 047a E6       		.byte	-26
- 1171 047b 80       		.byte	-128
- 1172 047c E8       		.byte	-24
- 1173 047d 40       		.byte	64
- 1174 047e EA       		.byte	-22
- 1175 047f 50       		.byte	80
- 1176 0480 EB       		.byte	-21
- 1177 0481 A8       		.byte	-88
- 1178 0482 EC       		.byte	-20
- 1179 0483 40       		.byte	64
- 1180 0484 ED       		.byte	-19
- 1181 0485 20       		.byte	32
- 1182 0486 EE       		.byte	-18
- 1183 0487 50       		.byte	80
- 1184 0488 EF       		.byte	-17
- 1185 0489 A8       		.byte	-88
- 1186 048a 08       		.byte	8
- 1187 048b 02       		.byte	2
- 1188 048c 0A       		.byte	10
- 1189 048d 10       		.byte	16
- 1190 048e 10       		.byte	16
- 1191 048f A0       		.byte	-96
- 1192 0490 18       		.byte	24
- 1193 0491 40       		.byte	64
- 1194 0492 19       		.byte	25
- 1195 0493 60       		.byte	96
- 1196 0494 1A       		.byte	26
- 1197 0495 10       		.byte	16
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cctyYNOZ.s 			page 22
-
-
- 1198 0496 21       		.byte	33
- 1199 0497 80       		.byte	-128
- 1200 0498 22       		.byte	34
- 1201 0499 04       		.byte	4
- 1202 049a 28       		.byte	40
- 1203 049b 02       		.byte	2
- 1204 049c 29       		.byte	41
- 1205 049d 20       		.byte	32
- 1206 049e 30       		.byte	48
- 1207 049f 81       		.byte	-127
- 1208 04a0 38       		.byte	56
- 1209 04a1 40       		.byte	64
- 1210 04a2 41       		.byte	65
- 1211 04a3 80       		.byte	-128
- 1212 04a4 45       		.byte	69
- 1213 04a5 80       		.byte	-128
- 1214 04a6 48       		.byte	72
- 1215 04a7 A0       		.byte	-96
- 1216 04a8 4A       		.byte	74
- 1217 04a9 02       		.byte	2
- 1218 04aa 4E       		.byte	78
- 1219 04ab 02       		.byte	2
- 1220 04ac 51       		.byte	81
- 1221 04ad 08       		.byte	8
- 1222 04ae 52       		.byte	82
- 1223 04af 90       		.byte	-112
- 1224 04b0 59       		.byte	89
- 1225 04b1 50       		.byte	80
- 1226 04b2 5A       		.byte	90
- 1227 04b3 08       		.byte	8
- 1228 04b4 61       		.byte	97
- 1229 04b5 08       		.byte	8
- 1230 04b6 62       		.byte	98
- 1231 04b7 10       		.byte	16
- 1232 04b8 81       		.byte	-127
- 1233 04b9 10       		.byte	16
- 1234 04ba 82       		.byte	-126
- 1235 04bb 80       		.byte	-128
- 1236 04bc 98       		.byte	-104
- 1237 04bd 01       		.byte	1
- 1238 04be A2       		.byte	-94
- 1239 04bf 02       		.byte	2
- 1240 04c0 C2       		.byte	-62
- 1241 04c1 0C       		.byte	12
- 1242 04c2 C4       		.byte	-60
- 1243 04c3 0C       		.byte	12
- 1244 04c4 CA       		.byte	-54
- 1245 04c5 0C       		.byte	12
- 1246 04c6 CC       		.byte	-52
- 1247 04c7 09       		.byte	9
- 1248 04c8 CE       		.byte	-50
- 1249 04c9 08       		.byte	8
- 1250 04ca D0       		.byte	-48
- 1251 04cb 18       		.byte	24
- 1252 04cc D2       		.byte	-46
- 1253 04cd 18       		.byte	24
- 1254 04ce D6       		.byte	-42
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cctyYNOZ.s 			page 23
-
-
- 1255 04cf 0E       		.byte	14
- 1256 04d0 D8       		.byte	-40
- 1257 04d1 06       		.byte	6
- 1258 04d2 E0       		.byte	-32
- 1259 04d3 01       		.byte	1
- 1260 04d4 EE       		.byte	-18
- 1261 04d5 02       		.byte	2
- 1262 04d6 17       		.byte	23
- 1263 04d7 02       		.byte	2
- 1264 04d8 1F       		.byte	31
- 1265 04d9 01       		.byte	1
- 1266 04da 21       		.byte	33
- 1267 04db 01       		.byte	1
- 1268 04dc 2E       		.byte	46
- 1269 04dd 01       		.byte	1
- 1270 04de 2F       		.byte	47
- 1271 04df 02       		.byte	2
- 1272 04e0 31       		.byte	49
- 1273 04e1 02       		.byte	2
- 1274 04e2 35       		.byte	53
- 1275 04e3 01       		.byte	1
- 1276 04e4 36       		.byte	54
- 1277 04e5 01       		.byte	1
- 1278 04e6 3F       		.byte	63
- 1279 04e7 11       		.byte	17
- 1280 04e8 40       		.byte	64
- 1281 04e9 30       		.byte	48
- 1282 04ea 41       		.byte	65
- 1283 04eb 02       		.byte	2
- 1284 04ec 49       		.byte	73
- 1285 04ed FF       		.byte	-1
- 1286 04ee 4A       		.byte	74
- 1287 04ef FF       		.byte	-1
- 1288 04f0 4B       		.byte	75
- 1289 04f1 FF       		.byte	-1
- 1290 04f2 4D       		.byte	77
- 1291 04f3 A0       		.byte	-96
- 1292 04f4 4F       		.byte	79
- 1293 04f5 01       		.byte	1
- 1294 04f6 50       		.byte	80
- 1295 04f7 18       		.byte	24
- 1296 04f8 52       		.byte	82
- 1297 04f9 80       		.byte	-128
- 1298 04fa 58       		.byte	88
- 1299 04fb 04       		.byte	4
- 1300 04fc 59       		.byte	89
- 1301 04fd 04       		.byte	4
- 1302 04fe 5A       		.byte	90
- 1303 04ff 04       		.byte	4
- 1304 0500 5B       		.byte	91
- 1305 0501 04       		.byte	4
- 1306 0502 5F       		.byte	95
- 1307 0503 01       		.byte	1
- 1308 0504 60       		.byte	96
- 1309 0505 40       		.byte	64
- 1310 0506 62       		.byte	98
- 1311 0507 80       		.byte	-128
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cctyYNOZ.s 			page 24
-
-
- 1312 0508 64       		.byte	100
- 1313 0509 40       		.byte	64
- 1314 050a 65       		.byte	101
- 1315 050b 40       		.byte	64
- 1316 050c 66       		.byte	102
- 1317 050d 80       		.byte	-128
- 1318 050e 68       		.byte	104
- 1319 050f 40       		.byte	64
- 1320 0510 6A       		.byte	106
- 1321 0511 50       		.byte	80
- 1322 0512 6B       		.byte	107
- 1323 0513 A8       		.byte	-88
- 1324 0514 6C       		.byte	108
- 1325 0515 40       		.byte	64
- 1326 0516 6D       		.byte	109
- 1327 0517 20       		.byte	32
- 1328 0518 6E       		.byte	110
- 1329 0519 50       		.byte	80
- 1330 051a 6F       		.byte	111
- 1331 051b A8       		.byte	-88
- 1332 051c 00       		.byte	0
- 1333 051d 50       		.byte	80
- 1334 051e 03       		.byte	3
- 1335 051f 20       		.byte	32
- 1336 0520 08       		.byte	8
- 1337 0521 40       		.byte	64
- 1338 0522 0A       		.byte	10
- 1339 0523 C1       		.byte	-63
- 1340 0524 12       		.byte	18
- 1341 0525 41       		.byte	65
- 1342 0526 13       		.byte	19
- 1343 0527 20       		.byte	32
- 1344 0528 15       		.byte	21
- 1345 0529 80       		.byte	-128
- 1346 052a 18       		.byte	24
- 1347 052b 14       		.byte	20
- 1348 052c 19       		.byte	25
- 1349 052d 81       		.byte	-127
- 1350 052e 1F       		.byte	31
- 1351 052f 80       		.byte	-128
- 1352 0530 20       		.byte	32
- 1353 0531 02       		.byte	2
- 1354 0532 22       		.byte	34
- 1355 0533 04       		.byte	4
- 1356 0534 23       		.byte	35
- 1357 0535 48       		.byte	72
- 1358 0536 26       		.byte	38
- 1359 0537 02       		.byte	2
- 1360 0538 27       		.byte	39
- 1361 0539 04       		.byte	4
- 1362 053a 28       		.byte	40
- 1363 053b 40       		.byte	64
- 1364 053c 2B       		.byte	43
- 1365 053d 28       		.byte	40
- 1366 053e 2F       		.byte	47
- 1367 053f 82       		.byte	-126
- 1368 0540 32       		.byte	50
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cctyYNOZ.s 			page 25
-
-
- 1369 0541 44       		.byte	68
- 1370 0542 33       		.byte	51
- 1371 0543 01       		.byte	1
- 1372 0544 36       		.byte	54
- 1373 0545 80       		.byte	-128
- 1374 0546 37       		.byte	55
- 1375 0547 08       		.byte	8
- 1376 0548 38       		.byte	56
- 1377 0549 41       		.byte	65
- 1378 054a 39       		.byte	57
- 1379 054b 14       		.byte	20
- 1380 054c 40       		.byte	64
- 1381 054d 08       		.byte	8
- 1382 054e 41       		.byte	65
- 1383 054f 08       		.byte	8
- 1384 0550 44       		.byte	68
- 1385 0551 08       		.byte	8
- 1386 0552 45       		.byte	69
- 1387 0553 18       		.byte	24
- 1388 0554 49       		.byte	73
- 1389 0555 04       		.byte	4
- 1390 0556 51       		.byte	81
- 1391 0557 40       		.byte	64
- 1392 0558 52       		.byte	82
- 1393 0559 95       		.byte	-107
- 1394 055a 59       		.byte	89
- 1395 055b 01       		.byte	1
- 1396 055c 64       		.byte	100
- 1397 055d 10       		.byte	16
- 1398 055e 66       		.byte	102
- 1399 055f 04       		.byte	4
- 1400 0560 69       		.byte	105
- 1401 0561 14       		.byte	20
- 1402 0562 6B       		.byte	107
- 1403 0563 01       		.byte	1
- 1404 0564 70       		.byte	112
- 1405 0565 BC       		.byte	-68
- 1406 0566 76       		.byte	118
- 1407 0567 40       		.byte	64
- 1408 0568 8B       		.byte	-117
- 1409 0569 48       		.byte	72
- 1410 056a 94       		.byte	-108
- 1411 056b 04       		.byte	4
- 1412 056c 97       		.byte	-105
- 1413 056d 06       		.byte	6
- 1414 056e 9C       		.byte	-100
- 1415 056f 10       		.byte	16
- 1416 0570 9D       		.byte	-99
- 1417 0571 84       		.byte	-124
- 1418 0572 9E       		.byte	-98
- 1419 0573 11       		.byte	17
- 1420 0574 9F       		.byte	-97
- 1421 0575 06       		.byte	6
- 1422 0576 A1       		.byte	-95
- 1423 0577 10       		.byte	16
- 1424 0578 AC       		.byte	-84
- 1425 0579 80       		.byte	-128
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cctyYNOZ.s 			page 26
-
-
- 1426 057a C0       		.byte	-64
- 1427 057b 07       		.byte	7
- 1428 057c C2       		.byte	-62
- 1429 057d 09       		.byte	9
- 1430 057e C4       		.byte	-60
- 1431 057f 8B       		.byte	-117
- 1432 0580 CA       		.byte	-54
- 1433 0581 97       		.byte	-105
- 1434 0582 CC       		.byte	-52
- 1435 0583 5B       		.byte	91
- 1436 0584 CE       		.byte	-50
- 1437 0585 0F       		.byte	15
- 1438 0586 D0       		.byte	-48
- 1439 0587 66       		.byte	102
- 1440 0588 D6       		.byte	-42
- 1441 0589 01       		.byte	1
- 1442 058a E0       		.byte	-32
- 1443 058b 01       		.byte	1
- 1444 058c 83       		.byte	-125
- 1445 058d 01       		.byte	1
- 1446 058e 90       		.byte	-112
- 1447 058f 01       		.byte	1
- 1448 0590 9B       		.byte	-101
- 1449 0591 01       		.byte	1
- 1450 0592 A6       		.byte	-90
- 1451 0593 03       		.byte	3
- 1452 0594 AE       		.byte	-82
- 1453 0595 01       		.byte	1
- 1454 0596 B0       		.byte	-80
- 1455 0597 02       		.byte	2
- 1456 0598 B2       		.byte	-78
- 1457 0599 01       		.byte	1
- 1458 059a B3       		.byte	-77
- 1459 059b 01       		.byte	1
- 1460 059c BB       		.byte	-69
- 1461 059d 02       		.byte	2
- 1462 059e BE       		.byte	-66
- 1463 059f 04       		.byte	4
- 1464 05a0 BF       		.byte	-65
- 1465 05a1 04       		.byte	4
- 1466 05a2 D2       		.byte	-46
- 1467 05a3 80       		.byte	-128
- 1468 05a4 D8       		.byte	-40
- 1469 05a5 04       		.byte	4
- 1470 05a6 D9       		.byte	-39
- 1471 05a7 04       		.byte	4
- 1472 05a8 DB       		.byte	-37
- 1473 05a9 04       		.byte	4
- 1474 05aa DC       		.byte	-36
- 1475 05ab 40       		.byte	64
- 1476 05ac DF       		.byte	-33
- 1477 05ad 01       		.byte	1
- 1478 05ae 00       		.byte	0
- 1479 05af 42       		.byte	66
- 1480 05b0 03       		.byte	3
- 1481 05b1 28       		.byte	40
- 1482 05b2 08       		.byte	8
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cctyYNOZ.s 			page 27
-
-
- 1483 05b3 06       		.byte	6
- 1484 05b4 0A       		.byte	10
- 1485 05b5 01       		.byte	1
- 1486 05b6 0B       		.byte	11
- 1487 05b7 08       		.byte	8
- 1488 05b8 0E       		.byte	14
- 1489 05b9 80       		.byte	-128
- 1490 05ba 10       		.byte	16
- 1491 05bb A8       		.byte	-88
- 1492 05bc 13       		.byte	19
- 1493 05bd 40       		.byte	64
- 1494 05be 15       		.byte	21
- 1495 05bf 08       		.byte	8
- 1496 05c0 17       		.byte	23
- 1497 05c1 80       		.byte	-128
- 1498 05c2 19       		.byte	25
- 1499 05c3 81       		.byte	-127
- 1500 05c4 1A       		.byte	26
- 1501 05c5 41       		.byte	65
- 1502 05c6 1B       		.byte	27
- 1503 05c7 20       		.byte	32
- 1504 05c8 1D       		.byte	29
- 1505 05c9 08       		.byte	8
- 1506 05ca 1E       		.byte	30
- 1507 05cb 80       		.byte	-128
- 1508 05cc 20       		.byte	32
- 1509 05cd 04       		.byte	4
- 1510 05ce 22       		.byte	34
- 1511 05cf 08       		.byte	8
- 1512 05d0 23       		.byte	35
- 1513 05d1 62       		.byte	98
- 1514 05d2 24       		.byte	36
- 1515 05d3 40       		.byte	64
- 1516 05d4 26       		.byte	38
- 1517 05d5 04       		.byte	4
- 1518 05d6 29       		.byte	41
- 1519 05d7 81       		.byte	-127
- 1520 05d8 2A       		.byte	42
- 1521 05d9 02       		.byte	2
- 1522 05da 2B       		.byte	43
- 1523 05db 08       		.byte	8
- 1524 05dc 30       		.byte	48
- 1525 05dd 84       		.byte	-124
- 1526 05de 32       		.byte	50
- 1527 05df 06       		.byte	6
- 1528 05e0 33       		.byte	51
- 1529 05e1 20       		.byte	32
- 1530 05e2 37       		.byte	55
- 1531 05e3 20       		.byte	32
- 1532 05e4 38       		.byte	56
- 1533 05e5 69       		.byte	105
- 1534 05e6 3F       		.byte	63
- 1535 05e7 01       		.byte	1
- 1536 05e8 40       		.byte	64
- 1537 05e9 44       		.byte	68
- 1538 05ea 42       		.byte	66
- 1539 05eb 02       		.byte	2
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cctyYNOZ.s 			page 28
-
-
- 1540 05ec 48       		.byte	72
- 1541 05ed 01       		.byte	1
- 1542 05ee 4A       		.byte	74
- 1543 05ef 0A       		.byte	10
- 1544 05f0 4B       		.byte	75
- 1545 05f1 01       		.byte	1
- 1546 05f2 53       		.byte	83
- 1547 05f3 02       		.byte	2
- 1548 05f4 58       		.byte	88
- 1549 05f5 80       		.byte	-128
- 1550 05f6 60       		.byte	96
- 1551 05f7 03       		.byte	3
- 1552 05f8 77       		.byte	119
- 1553 05f9 80       		.byte	-128
- 1554 05fa 82       		.byte	-126
- 1555 05fb 04       		.byte	4
- 1556 05fc 83       		.byte	-125
- 1557 05fd 01       		.byte	1
- 1558 05fe 88       		.byte	-120
- 1559 05ff 80       		.byte	-128
- 1560 0600 8A       		.byte	-118
- 1561 0601 02       		.byte	2
- 1562 0602 8B       		.byte	-117
- 1563 0603 04       		.byte	4
- 1564 0604 90       		.byte	-112
- 1565 0605 28       		.byte	40
- 1566 0606 91       		.byte	-111
- 1567 0607 08       		.byte	8
- 1568 0608 92       		.byte	-110
- 1569 0609 08       		.byte	8
- 1570 060a 94       		.byte	-108
- 1571 060b 41       		.byte	65
- 1572 060c 96       		.byte	-106
- 1573 060d 41       		.byte	65
- 1574 060e 97       		.byte	-105
- 1575 060f 02       		.byte	2
- 1576 0610 9F       		.byte	-97
- 1577 0611 02       		.byte	2
- 1578 0612 A0       		.byte	-96
- 1579 0613 A9       		.byte	-87
- 1580 0614 A3       		.byte	-93
- 1581 0615 08       		.byte	8
- 1582 0616 A5       		.byte	-91
- 1583 0617 08       		.byte	8
- 1584 0618 A7       		.byte	-89
- 1585 0619 22       		.byte	34
- 1586 061a AE       		.byte	-82
- 1587 061b 02       		.byte	2
- 1588 061c AF       		.byte	-81
- 1589 061d 04       		.byte	4
- 1590 061e B1       		.byte	-79
- 1591 061f 04       		.byte	4
- 1592 0620 B7       		.byte	-73
- 1593 0621 20       		.byte	32
- 1594 0622 C0       		.byte	-64
- 1595 0623 0F       		.byte	15
- 1596 0624 C2       		.byte	-62
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cctyYNOZ.s 			page 29
-
-
- 1597 0625 1F       		.byte	31
- 1598 0626 C4       		.byte	-60
- 1599 0627 AF       		.byte	-81
- 1600 0628 CA       		.byte	-54
- 1601 0629 0D       		.byte	13
- 1602 062a CC       		.byte	-52
- 1603 062b 2F       		.byte	47
- 1604 062c CE       		.byte	-50
- 1605 062d 8F       		.byte	-113
- 1606 062e D0       		.byte	-48
- 1607 062f 0D       		.byte	13
- 1608 0630 D2       		.byte	-46
- 1609 0631 0C       		.byte	12
- 1610 0632 D6       		.byte	-42
- 1611 0633 08       		.byte	8
- 1612 0634 D8       		.byte	-40
- 1613 0635 08       		.byte	8
- 1614 0636 30       		.byte	48
- 1615 0637 02       		.byte	2
- 1616 0638 33       		.byte	51
- 1617 0639 20       		.byte	32
- 1618 063a 36       		.byte	54
- 1619 063b 40       		.byte	64
- 1620 063c CC       		.byte	-52
- 1621 063d 70       		.byte	112
- 1622 063e 52       		.byte	82
- 1623 063f 08       		.byte	8
- 1624 0640 A4       		.byte	-92
- 1625 0641 02       		.byte	2
- 1626 0642 A6       		.byte	-90
- 1627 0643 40       		.byte	64
- 1628 0644 A7       		.byte	-89
- 1629 0645 20       		.byte	32
- 1630 0646 D4       		.byte	-44
- 1631 0647 20       		.byte	32
- 1632 0648 80       		.byte	-128
- 1633 0649 02       		.byte	2
- 1634 064a A4       		.byte	-92
- 1635 064b 02       		.byte	2
- 1636 064c A6       		.byte	-90
- 1637 064d 48       		.byte	72
- 1638 064e A7       		.byte	-89
- 1639 064f 20       		.byte	32
- 1640 0650 E2       		.byte	-30
- 1641 0651 20       		.byte	32
- 1642 0652 A6       		.byte	-90
- 1643 0653 48       		.byte	72
- 1644 0654 AB       		.byte	-85
- 1645 0655 20       		.byte	32
- 1646 0656 EE       		.byte	-18
- 1647 0657 20       		.byte	32
- 1648 0658 1B       		.byte	27
- 1649 0659 04       		.byte	4
- 1650 065a C6       		.byte	-58
- 1651 065b 08       		.byte	8
- 1652 065c 47       		.byte	71
- 1653 065d 80       		.byte	-128
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cctyYNOZ.s 			page 30
-
-
- 1654 065e 8B       		.byte	-117
- 1655 065f 40       		.byte	64
- 1656 0660 AB       		.byte	-85
- 1657 0661 04       		.byte	4
- 1658 0662 D0       		.byte	-48
- 1659 0663 04       		.byte	4
- 1660 0664 E0       		.byte	-32
- 1661 0665 04       		.byte	4
- 1662 0666 23       		.byte	35
- 1663 0667 20       		.byte	32
- 1664 0668 26       		.byte	38
- 1665 0669 08       		.byte	8
- 1666 066a 83       		.byte	-125
- 1667 066b 20       		.byte	32
- 1668 066c A6       		.byte	-90
- 1669 066d 08       		.byte	8
- 1670 066e AE       		.byte	-82
- 1671 066f 40       		.byte	64
- 1672 0670 C8       		.byte	-56
- 1673 0671 C0       		.byte	-64
- 1674 0672 E0       		.byte	-32
- 1675 0673 80       		.byte	-128
- 1676 0674 EE       		.byte	-18
- 1677 0675 40       		.byte	64
- 1678 0676 18       		.byte	24
- 1679 0677 08       		.byte	8
- 1680 0678 8C       		.byte	-116
- 1681 0679 04       		.byte	4
- 1682 067a C6       		.byte	-58
- 1683 067b 40       		.byte	64
- 1684 067c 08       		.byte	8
- 1685 067d 04       		.byte	4
- 1686 067e 09       		.byte	9
- 1687 067f 20       		.byte	32
- 1688 0680 0D       		.byte	13
- 1689 0681 40       		.byte	64
- 1690 0682 59       		.byte	89
- 1691 0683 01       		.byte	1
- 1692 0684 83       		.byte	-125
- 1693 0685 80       		.byte	-128
- 1694 0686 93       		.byte	-109
- 1695 0687 40       		.byte	64
- 1696 0688 9F       		.byte	-97
- 1697 0689 80       		.byte	-128
- 1698 068a C2       		.byte	-62
- 1699 068b 0B       		.byte	11
- 1700 068c D6       		.byte	-42
- 1701 068d 02       		.byte	2
- 1702 068e 10       		.byte	16
- 1703 068f 10       		.byte	16
- 1704 0690 19       		.byte	25
- 1705 0691 01       		.byte	1
- 1706 0692 73       		.byte	115
- 1707 0693 40       		.byte	64
- 1708 0694 78       		.byte	120
- 1709 0695 04       		.byte	4
- 1710 0696 88       		.byte	-120
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cctyYNOZ.s 			page 31
-
-
- 1711 0697 10       		.byte	16
- 1712 0698 93       		.byte	-109
- 1713 0699 40       		.byte	64
- 1714 069a 98       		.byte	-104
- 1715 069b 04       		.byte	4
- 1716 069c 9D       		.byte	-99
- 1717 069d 01       		.byte	1
- 1718 069e B1       		.byte	-79
- 1719 069f 20       		.byte	32
- 1720 06a0 B5       		.byte	-75
- 1721 06a1 40       		.byte	64
- 1722 06a2 C4       		.byte	-60
- 1723 06a3 08       		.byte	8
- 1724 06a4 C6       		.byte	-58
- 1725 06a5 08       		.byte	8
- 1726 06a6 DC       		.byte	-36
- 1727 06a7 01       		.byte	1
- 1728 06a8 DE       		.byte	-34
- 1729 06a9 02       		.byte	2
- 1730 06aa E2       		.byte	-30
- 1731 06ab 04       		.byte	4
- 1732 06ac EE       		.byte	-18
- 1733 06ad 09       		.byte	9
- 1734 06ae 00       		.byte	0
- 1735 06af 11       		.byte	17
- 1736 06b0 02       		.byte	2
- 1737 06b1 14       		.byte	20
- 1738 06b2 0C       		.byte	12
- 1739 06b3 11       		.byte	17
- 1740 06b4 10       		.byte	16
- 1741 06b5 11       		.byte	17
- 1742 06b6 11       		.byte	17
- 1743 06b7 01       		.byte	1
- 1744 06b8 12       		.byte	18
- 1745 06b9 14       		.byte	20
- 1746 06ba 1A       		.byte	26
- 1747 06bb 01       		.byte	1
- 1748 06bc 1C       		.byte	28
- 1749 06bd 11       		.byte	17
- 1750 06be 1D       		.byte	29
- 1751 06bf 01       		.byte	1
- 1752 06c0 00       		.byte	0
- 1753 06c1 3F       		.byte	63
- 1754 06c2 00       		.byte	0
- 1755 06c3 00       		.byte	0
- 1756 06c4 00       		.byte	0
- 1757 06c5 12       		.byte	18
- 1758 06c6 00       		.byte	0
- 1759 06c7 05       		.byte	5
- 1760 06c8 01       		.byte	1
- 1761 06c9 3F       		.byte	63
- 1762 06ca 00       		.byte	0
- 1763 06cb 00       		.byte	0
- 1764 06cc 02       		.byte	2
- 1765 06cd 3F       		.byte	63
- 1766 06ce 00       		.byte	0
- 1767 06cf 00       		.byte	0
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cctyYNOZ.s 			page 32
-
-
- 1768 06d0 01       		.byte	1
- 1769 06d1 40       		.byte	64
- 1770 06d2 00       		.byte	0
- 1771 06d3 00       		.byte	0
- 1772 06d4 01       		.byte	1
- 1773 06d5 20       		.byte	32
- 1774 06d6 00       		.byte	0
- 1775 06d7 00       		.byte	0
- 1776 06d8 00       		.byte	0
- 1777 06d9 09       		.byte	9
- 1778 06da 00       		.byte	0
- 1779 06db 06       		.byte	6
- 1780 06dc 00       		.byte	0
- 1781 06dd 00       		.byte	0
- 1782 06de 00       		.byte	0
- 1783 06df 00       		.byte	0
- 1784 06e0 01       		.byte	1
- 1785 06e1 40       		.byte	64
- 1786 06e2 00       		.byte	0
- 1787 06e3 00       		.byte	0
- 1788 06e4 00       		.byte	0
- 1789 06e5 00       		.byte	0
- 1790 06e6 02       		.byte	2
- 1791 06e7 40       		.byte	64
- 1792 06e8 00       		.byte	0
- 1793 06e9 00       		.byte	0
- 1794 06ea 00       		.byte	0
- 1795 06eb 40       		.byte	64
- 1796 06ec 00       		.byte	0
- 1797 06ed 04       		.byte	4
- 1798 06ee 0A       		.byte	10
- 1799 06ef 18       		.byte	24
- 1800 06f0 00       		.byte	0
- 1801 06f1 00       		.byte	0
- 1802 06f2 04       		.byte	4
- 1803 06f3 00       		.byte	0
- 1804 06f4 01       		.byte	1
- 1805 06f5 1C       		.byte	28
- 1806 06f6 08       		.byte	8
- 1807 06f7 03       		.byte	3
- 1808 06f8 02       		.byte	2
- 1809 06f9 40       		.byte	64
- 1810 06fa 04       		.byte	4
- 1811 06fb 20       		.byte	32
- 1812 06fc 00       		.byte	0
- 1813 06fd 20       		.byte	32
- 1814 06fe 00       		.byte	0
- 1815 06ff 00       		.byte	0
- 1816 0700 00       		.byte	0
- 1817 0701 00       		.byte	0
- 1818 0702 11       		.byte	17
- 1819 0703 00       		.byte	0
- 1820 0704 30       		.byte	48
- 1821 0705 02       		.byte	2
- 1822 0706 00       		.byte	0
- 1823 0707 00       		.byte	0
- 1824 0708 00       		.byte	0
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cctyYNOZ.s 			page 33
-
-
- 1825 0709 0E       		.byte	14
- 1826 070a C0       		.byte	-64
- 1827 070b 52       		.byte	82
- 1828 070c 3D       		.byte	61
- 1829 070d FF       		.byte	-1
- 1830 070e FF       		.byte	-1
- 1831 070f FF       		.byte	-1
- 1832 0710 00       		.byte	0
- 1833 0711 AF       		.byte	-81
- 1834 0712 07       		.byte	7
- 1835 0713 01       		.byte	1
- 1836 0714 18       		.byte	24
- 1837 0715 00       		.byte	0
- 1838 0716 00       		.byte	0
- 1839 0717 00       		.byte	0
- 1840 0718 00       		.byte	0
- 1841 0719 00       		.byte	0
- 1842 071a 02       		.byte	2
- 1843 071b 13       		.byte	19
- 1844 071c 04       		.byte	4
- 1845 071d 04       		.byte	4
- 1846 071e 04       		.byte	4
- 1847 071f 04       		.byte	4
- 1848 0720 40       		.byte	64
- 1849 0721 40       		.byte	64
- 1850 0722 00       		.byte	0
- 1851 0723 01       		.byte	1
- 1852 0724 40       		.byte	64
- 1853 0725 00       		.byte	0
- 1854 0726 80       		.byte	-128
- 1855 0727 00       		.byte	0
- 1856 0728 40       		.byte	64
- 1857 0729 40       		.byte	64
- 1858 072a 80       		.byte	-128
- 1859 072b 00       		.byte	0
- 1860 072c 40       		.byte	64
- 1861 072d 00       		.byte	0
- 1862 072e 50       		.byte	80
- 1863 072f A8       		.byte	-88
- 1864 0730 40       		.byte	64
- 1865 0731 20       		.byte	32
- 1866 0732 50       		.byte	80
- 1867 0733 A8       		.byte	-88
- 1868 0734 00       		.byte	0
- 1869 0735 00       		.byte	0
- 1870 0736 00       		.byte	0
- 1871 0737 00       		.byte	0
- 1872 0738 00       		.byte	0
- 1873 0739 00       		.byte	0
- 1874 073a 00       		.byte	0
- 1875 073b 00       		.byte	0
- 1876 073c 00       		.byte	0
- 1877 073d 00       		.byte	0
- 1878 073e 00       		.byte	0
- 1879 073f 00       		.byte	0
- 1880 0740 00       		.byte	0
- 1881 0741 00       		.byte	0
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cctyYNOZ.s 			page 34
-
-
- 1882 0742 00       		.byte	0
- 1883 0743 00       		.byte	0
- 1884 0744 00       		.byte	0
- 1885 0745 02       		.byte	2
- 1886 0746 B3       		.byte	-77
- 1887 0747 88       		.byte	-120
- 1888 0748 4C       		.byte	76
- 1889 0749 60       		.byte	96
- 1890 074a A3       		.byte	-93
- 1891 074b 00       		.byte	0
- 1892 074c 03       		.byte	3
- 1893 074d 20       		.byte	32
- 1894 074e 00       		.byte	0
- 1895 074f 00       		.byte	0
- 1896 0750 FF       		.byte	-1
- 1897 0751 73       		.byte	115
- 1898 0752 00       		.byte	0
- 1899 0753 00       		.byte	0
- 1900 0754 42       		.byte	66
- 1901 0755 00       		.byte	0
- 1902 0756 00       		.byte	0
- 1903 0757 13       		.byte	19
- 1904 0758 01       		.byte	1
- 1905 0759 01       		.byte	1
- 1906 075a 00       		.byte	0
- 1907 075b 08       		.byte	8
- 1908 075c F3       		.byte	-13
- 1909 075d 70       		.byte	112
- 1910 075e 0C       		.byte	12
- 1911 075f 03       		.byte	3
- 1912 0760 4F       		.byte	79
- 1913 0761 40       		.byte	64
- 1914 0762 90       		.byte	-112
- 1915 0763 00       		.byte	0
- 1916 0764 08       		.byte	8
- 1917 0765 13       		.byte	19
- 1918 0766 00       		.byte	0
- 1919 0767 60       		.byte	96
- 1920 0768 04       		.byte	4
- 1921 0769 00       		.byte	0
- 1922 076a 00       		.byte	0
- 1923 076b 00       		.byte	0
- 1924 076c 0C       		.byte	12
- 1925 076d 03       		.byte	3
- 1926 076e 00       		.byte	0
- 1927 076f 04       		.byte	4
- 1928 0770 00       		.byte	0
- 1929 0771 60       		.byte	96
- 1930 0772 40       		.byte	64
- 1931 0773 13       		.byte	19
- 1932 0774 0F       		.byte	15
- 1933 0775 80       		.byte	-128
- 1934 0776 00       		.byte	0
- 1935 0777 70       		.byte	112
- 1936 0778 7C       		.byte	124
- 1937 0779 0C       		.byte	12
- 1938 077a 8C       		.byte	-116
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cctyYNOZ.s 			page 35
-
-
- 1939 077b 03       		.byte	3
- 1940 077c 00       		.byte	0
- 1941 077d 00       		.byte	0
- 1942 077e A2       		.byte	-94
- 1943 077f 00       		.byte	0
- 1944 0780 00       		.byte	0
- 1945 0781 00       		.byte	0
- 1946 0782 00       		.byte	0
- 1947 0783 10       		.byte	16
- 1948 0784 15       		.byte	21
- 1949 0785 04       		.byte	4
- 1950 0786 06       		.byte	6
- 1951 0787 00       		.byte	0
- 1952 0788 02       		.byte	2
- 1953 0789 C0       		.byte	-64
- 1954 078a 00       		.byte	0
- 1955 078b E0       		.byte	-32
- 1956 078c 22       		.byte	34
- 1957 078d FF       		.byte	-1
- 1958 078e FF       		.byte	-1
- 1959 078f FF       		.byte	-1
- 1960 0790 62       		.byte	98
- 1961 0791 A0       		.byte	-96
- 1962 0792 F0       		.byte	-16
- 1963 0793 41       		.byte	65
- 1964 0794 0C       		.byte	12
- 1965 0795 00       		.byte	0
- 1966 0796 00       		.byte	0
- 1967 0797 00       		.byte	0
- 1968 0798 00       		.byte	0
- 1969 0799 00       		.byte	0
- 1970 079a 08       		.byte	8
- 1971 079b 00       		.byte	0
- 1972 079c 04       		.byte	4
- 1973 079d 04       		.byte	4
- 1974 079e 04       		.byte	4
- 1975 079f 04       		.byte	4
- 1976 07a0 44       		.byte	68
- 1977 07a1 94       		.byte	-108
- 1978 07a2 00       		.byte	0
- 1979 07a3 01       		.byte	1
- 1980 07a4 00       		.byte	0
- 1981 07a5 00       		.byte	0
- 1982 07a6 00       		.byte	0
- 1983 07a7 00       		.byte	0
- 1984 07a8 00       		.byte	0
- 1985 07a9 00       		.byte	0
- 1986 07aa 40       		.byte	64
- 1987 07ab 02       		.byte	2
- 1988 07ac 00       		.byte	0
- 1989 07ad 10       		.byte	16
- 1990 07ae 30       		.byte	48
- 1991 07af 10       		.byte	16
- 1992 07b0 00       		.byte	0
- 1993 07b1 10       		.byte	16
- 1994 07b2 10       		.byte	16
- 1995 07b3 12       		.byte	18
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cctyYNOZ.s 			page 36
-
-
- 1996 07b4 00       		.byte	0
- 1997 07b5 00       		.byte	0
- 1998 07b6 00       		.byte	0
- 1999 07b7 00       		.byte	0
- 2000 07b8 00       		.byte	0
- 2001 07b9 00       		.byte	0
- 2002 07ba 00       		.byte	0
- 2003 07bb 00       		.byte	0
- 2004 07bc 00       		.byte	0
- 2005 07bd 00       		.byte	0
- 2006 07be 00       		.byte	0
- 2007 07bf 00       		.byte	0
- 2008 07c0 00       		.byte	0
- 2009 07c1 00       		.byte	0
- 2010 07c2 00       		.byte	0
- 2011 07c3 00       		.byte	0
- 2012 07c4 00       		.byte	0
- 2013 07c5 02       		.byte	2
- 2014 07c6 02       		.byte	2
- 2015 07c7 00       		.byte	0
- 2016 07c8 02       		.byte	2
- 2017 07c9 00       		.byte	0
- 2018 07ca 10       		.byte	16
- 2019 07cb 00       		.byte	0
- 2020 07cc 80       		.byte	-128
- 2021 07cd 00       		.byte	0
- 2022 07ce 40       		.byte	64
- 2023 07cf 80       		.byte	-128
- 2024 07d0 80       		.byte	-128
- 2025 07d1 00       		.byte	0
- 2026 07d2 80       		.byte	-128
- 2027 07d3 00       		.byte	0
- 2028 07d4 00       		.byte	0
- 2029 07d5 00       		.byte	0
- 2030 07d6 00       		.byte	0
- 2031 07d7 00       		.byte	0
- 2032 07d8 C0       		.byte	-64
- 2033 07d9 00       		.byte	0
- 2034 07da 10       		.byte	16
- 2035 07db E0       		.byte	-32
- 2036 07dc 20       		.byte	32
- 2037 07dd 00       		.byte	0
- 2038 07de 20       		.byte	32
- 2039 07df 00       		.byte	0
- 2040 07e0 00       		.byte	0
- 2041 07e1 00       		.byte	0
- 2042 07e2 00       		.byte	0
- 2043 07e3 00       		.byte	0
- 2044 07e4 00       		.byte	0
- 2045 07e5 00       		.byte	0
- 2046 07e6 00       		.byte	0
- 2047 07e7 00       		.byte	0
- 2048 07e8 00       		.byte	0
- 2049 07e9 00       		.byte	0
- 2050 07ea 3F       		.byte	63
- 2051 07eb 00       		.byte	0
- 2052              		.global	cy_meta_custnvl
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cctyYNOZ.s 			page 37
-
-
- 2053              		.section	.cycustnvl,"a",%progbits
- 2054              		.align	2
- 2055              		.type	cy_meta_custnvl, %object
- 2056              		.size	cy_meta_custnvl, 4
- 2057              	cy_meta_custnvl:
- 2058 0000 00       		.byte	0
- 2059 0001 00       		.byte	0
- 2060 0002 40       		.byte	64
- 2061 0003 05       		.byte	5
- 2062              		.global	cy_meta_wonvl
- 2063              		.section	.cywolatch,"a",%progbits
- 2064              		.align	2
- 2065              		.type	cy_meta_wonvl, %object
- 2066              		.size	cy_meta_wonvl, 4
- 2067              	cy_meta_wonvl:
- 2068 0000 BC       		.byte	-68
- 2069 0001 90       		.byte	-112
- 2070 0002 AC       		.byte	-84
- 2071 0003 AF       		.byte	-81
- 2072              		.global	cy_meta_flashprotect
- 2073              		.section	.cyflashprotect,"a",%progbits
- 2074              		.align	2
- 2075              		.type	cy_meta_flashprotect, %object
- 2076              		.size	cy_meta_flashprotect, 256
- 2077              	cy_meta_flashprotect:
- 2078 0000 00000000 		.space	256
- 2078      00000000 
- 2078      00000000 
- 2078      00000000 
- 2078      00000000 
- 2079              		.global	cy_metadata
- 2080              		.section	.cymeta,"a",%progbits
- 2081              		.align	2
- 2082              		.type	cy_metadata, %object
- 2083              		.size	cy_metadata, 12
- 2084              	cy_metadata:
- 2085 0000 00       		.byte	0
- 2086 0001 01       		.byte	1
- 2087 0002 2E       		.byte	46
- 2088 0003 16       		.byte	22
- 2089 0004 10       		.byte	16
- 2090 0005 69       		.byte	105
- 2091 0006 00       		.byte	0
- 2092 0007 01       		.byte	1
- 2093 0008 00       		.byte	0
- 2094 0009 00       		.byte	0
- 2095 000a 00       		.byte	0
- 2096 000b 00       		.byte	0
- 2097              		.text
- 2098              	.Letext0:
- 2099              		.file 1 ".\\Generated_Source\\PSoC5\\cymetadata.c"
- 2100              		.file 2 ".\\Generated_Source\\PSoC5\\cytypes.h"
- 2101              		.section	.debug_info,"",%progbits
- 2102              	.Ldebug_info0:
- 2103 0000 3B010000 		.4byte	0x13b
- 2104 0004 0400     		.2byte	0x4
- 2105 0006 00000000 		.4byte	.Ldebug_abbrev0
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cctyYNOZ.s 			page 38
-
-
- 2106 000a 04       		.byte	0x4
- 2107 000b 01       		.uleb128 0x1
- 2108 000c 4F000000 		.4byte	.LASF18
- 2109 0010 01       		.byte	0x1
- 2110 0011 DD000000 		.4byte	.LASF19
- 2111 0015 00000000 		.4byte	.LASF20
- 2112 0019 00000000 		.4byte	.Ldebug_line0
- 2113 001d 02       		.uleb128 0x2
- 2114 001e 01       		.byte	0x1
- 2115 001f 06       		.byte	0x6
- 2116 0020 ED010000 		.4byte	.LASF0
- 2117 0024 02       		.uleb128 0x2
- 2118 0025 01       		.byte	0x1
- 2119 0026 08       		.byte	0x8
- 2120 0027 15010000 		.4byte	.LASF1
- 2121 002b 02       		.uleb128 0x2
- 2122 002c 02       		.byte	0x2
- 2123 002d 05       		.byte	0x5
- 2124 002e D4010000 		.4byte	.LASF2
- 2125 0032 02       		.uleb128 0x2
- 2126 0033 02       		.byte	0x2
- 2127 0034 07       		.byte	0x7
- 2128 0035 35010000 		.4byte	.LASF3
- 2129 0039 02       		.uleb128 0x2
- 2130 003a 04       		.byte	0x4
- 2131 003b 05       		.byte	0x5
- 2132 003c E4010000 		.4byte	.LASF4
- 2133 0040 02       		.uleb128 0x2
- 2134 0041 04       		.byte	0x4
- 2135 0042 07       		.byte	0x7
- 2136 0043 23010000 		.4byte	.LASF5
- 2137 0047 02       		.uleb128 0x2
- 2138 0048 08       		.byte	0x8
- 2139 0049 05       		.byte	0x5
- 2140 004a C1010000 		.4byte	.LASF6
- 2141 004e 02       		.uleb128 0x2
- 2142 004f 08       		.byte	0x8
- 2143 0050 07       		.byte	0x7
- 2144 0051 7E010000 		.4byte	.LASF7
- 2145 0055 03       		.uleb128 0x3
- 2146 0056 04       		.byte	0x4
- 2147 0057 05       		.byte	0x5
- 2148 0058 696E7400 		.ascii	"int\000"
- 2149 005c 02       		.uleb128 0x2
- 2150 005d 04       		.byte	0x4
- 2151 005e 07       		.byte	0x7
- 2152 005f 71010000 		.4byte	.LASF8
- 2153 0063 04       		.uleb128 0x4
- 2154 0064 DE010000 		.4byte	.LASF21
- 2155 0068 02       		.byte	0x2
- 2156 0069 9201     		.2byte	0x192
- 2157 006b 24000000 		.4byte	0x24
- 2158 006f 02       		.uleb128 0x2
- 2159 0070 04       		.byte	0x4
- 2160 0071 04       		.byte	0x4
- 2161 0072 0F010000 		.4byte	.LASF9
- 2162 0076 02       		.uleb128 0x2
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cctyYNOZ.s 			page 39
-
-
- 2163 0077 08       		.byte	0x8
- 2164 0078 04       		.byte	0x4
- 2165 0079 48010000 		.4byte	.LASF10
- 2166 007d 02       		.uleb128 0x2
- 2167 007e 01       		.byte	0x1
- 2168 007f 08       		.byte	0x8
- 2169 0080 CF010000 		.4byte	.LASF11
- 2170 0084 05       		.uleb128 0x5
- 2171 0085 63000000 		.4byte	0x63
- 2172 0089 95000000 		.4byte	0x95
- 2173 008d 06       		.uleb128 0x6
- 2174 008e 95000000 		.4byte	0x95
- 2175 0092 EB07     		.2byte	0x7eb
- 2176 0094 00       		.byte	0
- 2177 0095 02       		.uleb128 0x2
- 2178 0096 04       		.byte	0x4
- 2179 0097 07       		.byte	0x7
- 2180 0098 B8010000 		.4byte	.LASF12
- 2181 009c 07       		.uleb128 0x7
- 2182 009d 5F010000 		.4byte	.LASF13
- 2183 00a1 01       		.byte	0x1
- 2184 00a2 1F       		.byte	0x1f
- 2185 00a3 AD000000 		.4byte	0xad
- 2186 00a7 05       		.uleb128 0x5
- 2187 00a8 03       		.byte	0x3
- 2188 00a9 00000000 		.4byte	cy_meta_configecc
- 2189 00ad 08       		.uleb128 0x8
- 2190 00ae 84000000 		.4byte	0x84
- 2191 00b2 05       		.uleb128 0x5
- 2192 00b3 63000000 		.4byte	0x63
- 2193 00b7 C2000000 		.4byte	0xc2
- 2194 00bb 09       		.uleb128 0x9
- 2195 00bc 95000000 		.4byte	0x95
- 2196 00c0 03       		.byte	0x3
- 2197 00c1 00       		.byte	0
- 2198 00c2 0A       		.uleb128 0xa
- 2199 00c3 4F010000 		.4byte	.LASF14
- 2200 00c7 01       		.byte	0x1
- 2201 00c8 2A01     		.2byte	0x12a
- 2202 00ca D4000000 		.4byte	0xd4
- 2203 00ce 05       		.uleb128 0x5
- 2204 00cf 03       		.byte	0x3
- 2205 00d0 00000000 		.4byte	cy_meta_custnvl
- 2206 00d4 08       		.uleb128 0x8
- 2207 00d5 B2000000 		.4byte	0xb2
- 2208 00d9 0A       		.uleb128 0xa
- 2209 00da AA010000 		.4byte	.LASF15
- 2210 00de 01       		.byte	0x1
- 2211 00df 3801     		.2byte	0x138
- 2212 00e1 EB000000 		.4byte	0xeb
- 2213 00e5 05       		.uleb128 0x5
- 2214 00e6 03       		.byte	0x3
- 2215 00e7 00000000 		.4byte	cy_meta_wonvl
- 2216 00eb 08       		.uleb128 0x8
- 2217 00ec B2000000 		.4byte	0xb2
- 2218 00f0 05       		.uleb128 0x5
- 2219 00f1 63000000 		.4byte	0x63
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cctyYNOZ.s 			page 40
-
-
- 2220 00f5 00010000 		.4byte	0x100
- 2221 00f9 09       		.uleb128 0x9
- 2222 00fa 95000000 		.4byte	0x95
- 2223 00fe FF       		.byte	0xff
- 2224 00ff 00       		.byte	0
- 2225 0100 0A       		.uleb128 0xa
- 2226 0101 95010000 		.4byte	.LASF16
- 2227 0105 01       		.byte	0x1
- 2228 0106 4601     		.2byte	0x146
- 2229 0108 12010000 		.4byte	0x112
- 2230 010c 05       		.uleb128 0x5
- 2231 010d 03       		.byte	0x3
- 2232 010e 00000000 		.4byte	cy_meta_flashprotect
- 2233 0112 08       		.uleb128 0x8
- 2234 0113 F0000000 		.4byte	0xf0
- 2235 0117 05       		.uleb128 0x5
- 2236 0118 63000000 		.4byte	0x63
- 2237 011c 27010000 		.4byte	0x127
- 2238 0120 09       		.uleb128 0x9
- 2239 0121 95000000 		.4byte	0x95
- 2240 0125 0B       		.byte	0xb
- 2241 0126 00       		.byte	0
- 2242 0127 0A       		.uleb128 0xa
- 2243 0128 03010000 		.4byte	.LASF17
- 2244 012c 01       		.byte	0x1
- 2245 012d 7301     		.2byte	0x173
- 2246 012f 39010000 		.4byte	0x139
- 2247 0133 05       		.uleb128 0x5
- 2248 0134 03       		.byte	0x3
- 2249 0135 00000000 		.4byte	cy_metadata
- 2250 0139 08       		.uleb128 0x8
- 2251 013a 17010000 		.4byte	0x117
- 2252 013e 00       		.byte	0
- 2253              		.section	.debug_abbrev,"",%progbits
- 2254              	.Ldebug_abbrev0:
- 2255 0000 01       		.uleb128 0x1
- 2256 0001 11       		.uleb128 0x11
- 2257 0002 01       		.byte	0x1
- 2258 0003 25       		.uleb128 0x25
- 2259 0004 0E       		.uleb128 0xe
- 2260 0005 13       		.uleb128 0x13
- 2261 0006 0B       		.uleb128 0xb
- 2262 0007 03       		.uleb128 0x3
- 2263 0008 0E       		.uleb128 0xe
- 2264 0009 1B       		.uleb128 0x1b
- 2265 000a 0E       		.uleb128 0xe
- 2266 000b 10       		.uleb128 0x10
- 2267 000c 17       		.uleb128 0x17
- 2268 000d 00       		.byte	0
- 2269 000e 00       		.byte	0
- 2270 000f 02       		.uleb128 0x2
- 2271 0010 24       		.uleb128 0x24
- 2272 0011 00       		.byte	0
- 2273 0012 0B       		.uleb128 0xb
- 2274 0013 0B       		.uleb128 0xb
- 2275 0014 3E       		.uleb128 0x3e
- 2276 0015 0B       		.uleb128 0xb
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cctyYNOZ.s 			page 41
-
-
- 2277 0016 03       		.uleb128 0x3
- 2278 0017 0E       		.uleb128 0xe
- 2279 0018 00       		.byte	0
- 2280 0019 00       		.byte	0
- 2281 001a 03       		.uleb128 0x3
- 2282 001b 24       		.uleb128 0x24
- 2283 001c 00       		.byte	0
- 2284 001d 0B       		.uleb128 0xb
- 2285 001e 0B       		.uleb128 0xb
- 2286 001f 3E       		.uleb128 0x3e
- 2287 0020 0B       		.uleb128 0xb
- 2288 0021 03       		.uleb128 0x3
- 2289 0022 08       		.uleb128 0x8
- 2290 0023 00       		.byte	0
- 2291 0024 00       		.byte	0
- 2292 0025 04       		.uleb128 0x4
- 2293 0026 16       		.uleb128 0x16
- 2294 0027 00       		.byte	0
- 2295 0028 03       		.uleb128 0x3
- 2296 0029 0E       		.uleb128 0xe
- 2297 002a 3A       		.uleb128 0x3a
- 2298 002b 0B       		.uleb128 0xb
- 2299 002c 3B       		.uleb128 0x3b
- 2300 002d 05       		.uleb128 0x5
- 2301 002e 49       		.uleb128 0x49
- 2302 002f 13       		.uleb128 0x13
- 2303 0030 00       		.byte	0
- 2304 0031 00       		.byte	0
- 2305 0032 05       		.uleb128 0x5
- 2306 0033 01       		.uleb128 0x1
- 2307 0034 01       		.byte	0x1
- 2308 0035 49       		.uleb128 0x49
- 2309 0036 13       		.uleb128 0x13
- 2310 0037 01       		.uleb128 0x1
- 2311 0038 13       		.uleb128 0x13
- 2312 0039 00       		.byte	0
- 2313 003a 00       		.byte	0
- 2314 003b 06       		.uleb128 0x6
- 2315 003c 21       		.uleb128 0x21
- 2316 003d 00       		.byte	0
- 2317 003e 49       		.uleb128 0x49
- 2318 003f 13       		.uleb128 0x13
- 2319 0040 2F       		.uleb128 0x2f
- 2320 0041 05       		.uleb128 0x5
- 2321 0042 00       		.byte	0
- 2322 0043 00       		.byte	0
- 2323 0044 07       		.uleb128 0x7
- 2324 0045 34       		.uleb128 0x34
- 2325 0046 00       		.byte	0
- 2326 0047 03       		.uleb128 0x3
- 2327 0048 0E       		.uleb128 0xe
- 2328 0049 3A       		.uleb128 0x3a
- 2329 004a 0B       		.uleb128 0xb
- 2330 004b 3B       		.uleb128 0x3b
- 2331 004c 0B       		.uleb128 0xb
- 2332 004d 49       		.uleb128 0x49
- 2333 004e 13       		.uleb128 0x13
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cctyYNOZ.s 			page 42
-
-
- 2334 004f 3F       		.uleb128 0x3f
- 2335 0050 19       		.uleb128 0x19
- 2336 0051 02       		.uleb128 0x2
- 2337 0052 18       		.uleb128 0x18
- 2338 0053 00       		.byte	0
- 2339 0054 00       		.byte	0
- 2340 0055 08       		.uleb128 0x8
- 2341 0056 26       		.uleb128 0x26
- 2342 0057 00       		.byte	0
- 2343 0058 49       		.uleb128 0x49
- 2344 0059 13       		.uleb128 0x13
- 2345 005a 00       		.byte	0
- 2346 005b 00       		.byte	0
- 2347 005c 09       		.uleb128 0x9
- 2348 005d 21       		.uleb128 0x21
- 2349 005e 00       		.byte	0
- 2350 005f 49       		.uleb128 0x49
- 2351 0060 13       		.uleb128 0x13
- 2352 0061 2F       		.uleb128 0x2f
- 2353 0062 0B       		.uleb128 0xb
- 2354 0063 00       		.byte	0
- 2355 0064 00       		.byte	0
- 2356 0065 0A       		.uleb128 0xa
- 2357 0066 34       		.uleb128 0x34
- 2358 0067 00       		.byte	0
- 2359 0068 03       		.uleb128 0x3
- 2360 0069 0E       		.uleb128 0xe
- 2361 006a 3A       		.uleb128 0x3a
- 2362 006b 0B       		.uleb128 0xb
- 2363 006c 3B       		.uleb128 0x3b
- 2364 006d 05       		.uleb128 0x5
- 2365 006e 49       		.uleb128 0x49
- 2366 006f 13       		.uleb128 0x13
- 2367 0070 3F       		.uleb128 0x3f
- 2368 0071 19       		.uleb128 0x19
- 2369 0072 02       		.uleb128 0x2
- 2370 0073 18       		.uleb128 0x18
- 2371 0074 00       		.byte	0
- 2372 0075 00       		.byte	0
- 2373 0076 00       		.byte	0
- 2374              		.section	.debug_aranges,"",%progbits
- 2375 0000 14000000 		.4byte	0x14
- 2376 0004 0200     		.2byte	0x2
- 2377 0006 00000000 		.4byte	.Ldebug_info0
- 2378 000a 04       		.byte	0x4
- 2379 000b 00       		.byte	0
- 2380 000c 0000     		.2byte	0
- 2381 000e 0000     		.2byte	0
- 2382 0010 00000000 		.4byte	0
- 2383 0014 00000000 		.4byte	0
- 2384              		.section	.debug_line,"",%progbits
- 2385              	.Ldebug_line0:
- 2386 0000 4F000000 		.section	.debug_str,"MS",%progbits,1
- 2386      02004900 
- 2386      00000201 
- 2386      FB0E0D00 
- 2386      01010101 
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cctyYNOZ.s 			page 43
-
-
- 2387              	.LASF20:
- 2388 0000 433A5C55 		.ascii	"C:\\Users\\Patrick\\Documents\\GitHub\\PSoC 5LP FIl"
- 2388      73657273 
- 2388      5C506174 
- 2388      7269636B 
- 2388      5C446F63 
- 2389 002e 65735C43 		.ascii	"es\\C-CAN_PSoC_DevKit\\C-CAN.cydsn\000"
- 2389      2D43414E 
- 2389      5F50536F 
- 2389      435F4465 
- 2389      764B6974 
- 2390              	.LASF18:
- 2391 004f 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
- 2391      4320342E 
- 2391      392E3320 
- 2391      32303135 
- 2391      30333033 
- 2392 0082 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m3 -mthumb -g -O"
- 2392      20726576 
- 2392      6973696F 
- 2392      6E203232 
- 2392      31323230 
- 2393 00b5 30202D66 		.ascii	"0 -ffunction-sections -ffat-lto-objects\000"
- 2393      66756E63 
- 2393      74696F6E 
- 2393      2D736563 
- 2393      74696F6E 
- 2394              	.LASF19:
- 2395 00dd 2E5C4765 		.ascii	".\\Generated_Source\\PSoC5\\cymetadata.c\000"
- 2395      6E657261 
- 2395      7465645F 
- 2395      536F7572 
- 2395      63655C50 
- 2396              	.LASF17:
- 2397 0103 63795F6D 		.ascii	"cy_metadata\000"
- 2397      65746164 
- 2397      61746100 
- 2398              	.LASF9:
- 2399 010f 666C6F61 		.ascii	"float\000"
- 2399      7400
- 2400              	.LASF1:
- 2401 0115 756E7369 		.ascii	"unsigned char\000"
- 2401      676E6564 
- 2401      20636861 
- 2401      7200
- 2402              	.LASF5:
- 2403 0123 6C6F6E67 		.ascii	"long unsigned int\000"
- 2403      20756E73 
- 2403      69676E65 
- 2403      6420696E 
- 2403      7400
- 2404              	.LASF3:
- 2405 0135 73686F72 		.ascii	"short unsigned int\000"
- 2405      7420756E 
- 2405      7369676E 
- 2405      65642069 
- 2405      6E7400
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cctyYNOZ.s 			page 44
-
-
- 2406              	.LASF10:
- 2407 0148 646F7562 		.ascii	"double\000"
- 2407      6C6500
- 2408              	.LASF14:
- 2409 014f 63795F6D 		.ascii	"cy_meta_custnvl\000"
- 2409      6574615F 
- 2409      63757374 
- 2409      6E766C00 
- 2410              	.LASF13:
- 2411 015f 63795F6D 		.ascii	"cy_meta_configecc\000"
- 2411      6574615F 
- 2411      636F6E66 
- 2411      69676563 
- 2411      6300
- 2412              	.LASF8:
- 2413 0171 756E7369 		.ascii	"unsigned int\000"
- 2413      676E6564 
- 2413      20696E74 
- 2413      00
- 2414              	.LASF7:
- 2415 017e 6C6F6E67 		.ascii	"long long unsigned int\000"
- 2415      206C6F6E 
- 2415      6720756E 
- 2415      7369676E 
- 2415      65642069 
- 2416              	.LASF16:
- 2417 0195 63795F6D 		.ascii	"cy_meta_flashprotect\000"
- 2417      6574615F 
- 2417      666C6173 
- 2417      6870726F 
- 2417      74656374 
- 2418              	.LASF15:
- 2419 01aa 63795F6D 		.ascii	"cy_meta_wonvl\000"
- 2419      6574615F 
- 2419      776F6E76 
- 2419      6C00
- 2420              	.LASF12:
- 2421 01b8 73697A65 		.ascii	"sizetype\000"
- 2421      74797065 
- 2421      00
- 2422              	.LASF6:
- 2423 01c1 6C6F6E67 		.ascii	"long long int\000"
- 2423      206C6F6E 
- 2423      6720696E 
- 2423      7400
- 2424              	.LASF11:
- 2425 01cf 63686172 		.ascii	"char\000"
- 2425      00
- 2426              	.LASF2:
- 2427 01d4 73686F72 		.ascii	"short int\000"
- 2427      7420696E 
- 2427      7400
- 2428              	.LASF21:
- 2429 01de 75696E74 		.ascii	"uint8\000"
- 2429      3800
- 2430              	.LASF4:
- 2431 01e4 6C6F6E67 		.ascii	"long int\000"
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cctyYNOZ.s 			page 45
-
-
- 2431      20696E74 
- 2431      00
- 2432              	.LASF0:
- 2433 01ed 7369676E 		.ascii	"signed char\000"
- 2433      65642063 
- 2433      68617200 
- 2434              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.9.3 20150303 (release) [ARM/embedded-4_9-br
+  21              		.type	cy_meta_loadable, %object
+  22              		.size	cy_meta_loadable, 64
+  23              	cy_meta_loadable:
+  24 0000 00000000 		.space	64
+  24      00000000 
+  24      00000000 
+  24      00000000 
+  24      00000000 
+  25              		.global	cy_meta_configecc
+  26              		.section	.cyconfigecc,"a",%progbits
+  27              		.align	2
+  28              		.type	cy_meta_configecc, %object
+  29              		.size	cy_meta_configecc, 2028
+  30              	cy_meta_configecc:
+  31 0000 01       		.byte	1
+  32 0001 52       		.byte	82
+  33 0002 00       		.byte	0
+  34 0003 40       		.byte	64
+  35 0004 01       		.byte	1
+  36 0005 5B       		.byte	91
+  37 0006 00       		.byte	0
+  38 0007 40       		.byte	64
+  39 0008 04       		.byte	4
+  40 0009 64       		.byte	100
+  41 000a 00       		.byte	0
+  42 000b 40       		.byte	64
+  43 000c 03       		.byte	3
+  44 000d 65       		.byte	101
+  45 000e 00       		.byte	0
+  46 000f 40       		.byte	64
+  47 0010 04       		.byte	4
+  48 0011 02       		.byte	2
+  49 0012 01       		.byte	1
+  50 0013 40       		.byte	64
+  51 0014 02       		.byte	2
+  52 0015 03       		.byte	3
+  53 0016 01       		.byte	1
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccXPoakb.s 			page 2
+
+
+  54 0017 40       		.byte	64
+  55 0018 03       		.byte	3
+  56 0019 05       		.byte	5
+  57 001a 01       		.byte	1
+  58 001b 40       		.byte	64
+  59 001c 03       		.byte	3
+  60 001d 07       		.byte	7
+  61 001e 01       		.byte	1
+  62 001f 40       		.byte	64
+  63 0020 5B       		.byte	91
+  64 0021 08       		.byte	8
+  65 0022 01       		.byte	1
+  66 0023 40       		.byte	64
+  67 0024 46       		.byte	70
+  68 0025 09       		.byte	9
+  69 0026 01       		.byte	1
+  70 0027 40       		.byte	64
+  71 0028 63       		.byte	99
+  72 0029 0A       		.byte	10
+  73 002a 01       		.byte	1
+  74 002b 40       		.byte	64
+  75 002c 35       		.byte	53
+  76 002d 0B       		.byte	11
+  77 002e 01       		.byte	1
+  78 002f 40       		.byte	64
+  79 0030 03       		.byte	3
+  80 0031 0D       		.byte	13
+  81 0032 01       		.byte	1
+  82 0033 40       		.byte	64
+  83 0034 46       		.byte	70
+  84 0035 14       		.byte	20
+  85 0036 01       		.byte	1
+  86 0037 40       		.byte	64
+  87 0038 26       		.byte	38
+  88 0039 15       		.byte	21
+  89 003a 01       		.byte	1
+  90 003b 40       		.byte	64
+  91 003c 46       		.byte	70
+  92 003d 16       		.byte	22
+  93 003e 01       		.byte	1
+  94 003f 40       		.byte	64
+  95 0040 26       		.byte	38
+  96 0041 17       		.byte	23
+  97 0042 01       		.byte	1
+  98 0043 40       		.byte	64
+  99 0044 23       		.byte	35
+ 100 0045 18       		.byte	24
+ 101 0046 01       		.byte	1
+ 102 0047 40       		.byte	64
+ 103 0048 38       		.byte	56
+ 104 0049 19       		.byte	25
+ 105 004a 01       		.byte	1
+ 106 004b 40       		.byte	64
+ 107 004c 11       		.byte	17
+ 108 004d 1A       		.byte	26
+ 109 004e 01       		.byte	1
+ 110 004f 40       		.byte	64
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccXPoakb.s 			page 3
+
+
+ 111 0050 44       		.byte	68
+ 112 0051 1B       		.byte	27
+ 113 0052 01       		.byte	1
+ 114 0053 40       		.byte	64
+ 115 0054 04       		.byte	4
+ 116 0055 40       		.byte	64
+ 117 0056 01       		.byte	1
+ 118 0057 40       		.byte	64
+ 119 0058 05       		.byte	5
+ 120 0059 41       		.byte	65
+ 121 005a 01       		.byte	1
+ 122 005b 40       		.byte	64
+ 123 005c 05       		.byte	5
+ 124 005d 42       		.byte	66
+ 125 005e 01       		.byte	1
+ 126 005f 40       		.byte	64
+ 127 0060 03       		.byte	3
+ 128 0061 43       		.byte	67
+ 129 0062 01       		.byte	1
+ 130 0063 40       		.byte	64
+ 131 0064 02       		.byte	2
+ 132 0065 46       		.byte	70
+ 133 0066 01       		.byte	1
+ 134 0067 40       		.byte	64
+ 135 0068 05       		.byte	5
+ 136 0069 47       		.byte	71
+ 137 006a 01       		.byte	1
+ 138 006b 40       		.byte	64
+ 139 006c 08       		.byte	8
+ 140 006d 48       		.byte	72
+ 141 006e 01       		.byte	1
+ 142 006f 40       		.byte	64
+ 143 0070 03       		.byte	3
+ 144 0071 49       		.byte	73
+ 145 0072 01       		.byte	1
+ 146 0073 40       		.byte	64
+ 147 0074 09       		.byte	9
+ 148 0075 4C       		.byte	76
+ 149 0076 01       		.byte	1
+ 150 0077 40       		.byte	64
+ 151 0078 10       		.byte	16
+ 152 0079 4D       		.byte	77
+ 153 007a 01       		.byte	1
+ 154 007b 40       		.byte	64
+ 155 007c 09       		.byte	9
+ 156 007d 50       		.byte	80
+ 157 007e 01       		.byte	1
+ 158 007f 40       		.byte	64
+ 159 0080 01       		.byte	1
+ 160 0081 51       		.byte	81
+ 161 0082 01       		.byte	1
+ 162 0083 40       		.byte	64
+ 163 0084 61       		.byte	97
+ 164 0085 80       		.byte	-128
+ 165 0086 27       		.byte	39
+ 166 0087 84       		.byte	-124
+ 167 0088 88       		.byte	-120
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccXPoakb.s 			page 4
+
+
+ 168 0089 38       		.byte	56
+ 169 008a 89       		.byte	-119
+ 170 008b 67       		.byte	103
+ 171 008c 8A       		.byte	-118
+ 172 008d 0F       		.byte	15
+ 173 008e 8B       		.byte	-117
+ 174 008f 67       		.byte	103
+ 175 0090 85       		.byte	-123
+ 176 0091 67       		.byte	103
+ 177 0092 87       		.byte	-121
+ 178 0093 67       		.byte	103
+ 179 0094 89       		.byte	-119
+ 180 0095 72       		.byte	114
+ 181 0096 B9       		.byte	-71
+ 182 0097 02       		.byte	2
+ 183 0098 BF       		.byte	-65
+ 184 0099 01       		.byte	1
+ 185 009a D9       		.byte	-39
+ 186 009b 04       		.byte	4
+ 187 009c DF       		.byte	-33
+ 188 009d 01       		.byte	1
+ 189 009e 22       		.byte	34
+ 190 009f 02       		.byte	2
+ 191 00a0 8E       		.byte	-114
+ 192 00a1 02       		.byte	2
+ 193 00a2 84       		.byte	-124
+ 194 00a3 01       		.byte	1
+ 195 00a4 A2       		.byte	-94
+ 196 00a5 02       		.byte	2
+ 197 00a6 E2       		.byte	-30
+ 198 00a7 06       		.byte	6
+ 199 00a8 98       		.byte	-104
+ 200 00a9 01       		.byte	1
+ 201 00aa A2       		.byte	-94
+ 202 00ab 02       		.byte	2
+ 203 00ac EE       		.byte	-18
+ 204 00ad 04       		.byte	4
+ 205 00ae 01       		.byte	1
+ 206 00af 03       		.byte	3
+ 207 00b0 02       		.byte	2
+ 208 00b1 03       		.byte	3
+ 209 00b2 0E       		.byte	14
+ 210 00b3 08       		.byte	8
+ 211 00b4 0F       		.byte	15
+ 212 00b5 01       		.byte	1
+ 213 00b6 10       		.byte	16
+ 214 00b7 01       		.byte	1
+ 215 00b8 11       		.byte	17
+ 216 00b9 03       		.byte	3
+ 217 00ba 12       		.byte	18
+ 218 00bb 0E       		.byte	14
+ 219 00bc 16       		.byte	22
+ 220 00bd 0C       		.byte	12
+ 221 00be 1C       		.byte	28
+ 222 00bf 01       		.byte	1
+ 223 00c0 1E       		.byte	30
+ 224 00c1 06       		.byte	6
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccXPoakb.s 			page 5
+
+
+ 225 00c2 20       		.byte	32
+ 226 00c3 0C       		.byte	12
+ 227 00c4 21       		.byte	33
+ 228 00c5 02       		.byte	2
+ 229 00c6 22       		.byte	34
+ 230 00c7 03       		.byte	3
+ 231 00c8 31       		.byte	49
+ 232 00c9 03       		.byte	3
+ 233 00ca 36       		.byte	54
+ 234 00cb 0F       		.byte	15
+ 235 00cc 39       		.byte	57
+ 236 00cd 02       		.byte	2
+ 237 00ce 3A       		.byte	58
+ 238 00cf 80       		.byte	-128
+ 239 00d0 3F       		.byte	63
+ 240 00d1 01       		.byte	1
+ 241 00d2 40       		.byte	64
+ 242 00d3 01       		.byte	1
+ 243 00d4 45       		.byte	69
+ 244 00d5 40       		.byte	64
+ 245 00d6 49       		.byte	73
+ 246 00d7 FF       		.byte	-1
+ 247 00d8 4A       		.byte	74
+ 248 00d9 07       		.byte	7
+ 249 00da 4B       		.byte	75
+ 250 00db FF       		.byte	-1
+ 251 00dc 4C       		.byte	76
+ 252 00dd 40       		.byte	64
+ 253 00de 4D       		.byte	77
+ 254 00df 20       		.byte	32
+ 255 00e0 4E       		.byte	78
+ 256 00e1 F0       		.byte	-16
+ 257 00e2 4F       		.byte	79
+ 258 00e3 05       		.byte	5
+ 259 00e4 50       		.byte	80
+ 260 00e5 08       		.byte	8
+ 261 00e6 54       		.byte	84
+ 262 00e7 18       		.byte	24
+ 263 00e8 56       		.byte	86
+ 264 00e9 04       		.byte	4
+ 265 00ea 58       		.byte	88
+ 266 00eb 04       		.byte	4
+ 267 00ec 59       		.byte	89
+ 268 00ed 04       		.byte	4
+ 269 00ee 5A       		.byte	90
+ 270 00ef 04       		.byte	4
+ 271 00f0 5B       		.byte	91
+ 272 00f1 04       		.byte	4
+ 273 00f2 5C       		.byte	92
+ 274 00f3 04       		.byte	4
+ 275 00f4 5D       		.byte	93
+ 276 00f5 44       		.byte	68
+ 277 00f6 5F       		.byte	95
+ 278 00f7 01       		.byte	1
+ 279 00f8 60       		.byte	96
+ 280 00f9 40       		.byte	64
+ 281 00fa 61       		.byte	97
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccXPoakb.s 			page 6
+
+
+ 282 00fb A8       		.byte	-88
+ 283 00fc 62       		.byte	98
+ 284 00fd 40       		.byte	64
+ 285 00fe 63       		.byte	99
+ 286 00ff 20       		.byte	32
+ 287 0100 80       		.byte	-128
+ 288 0101 10       		.byte	16
+ 289 0102 82       		.byte	-126
+ 290 0103 0C       		.byte	12
+ 291 0104 83       		.byte	-125
+ 292 0105 05       		.byte	5
+ 293 0106 88       		.byte	-120
+ 294 0107 40       		.byte	64
+ 295 0108 8A       		.byte	-118
+ 296 0109 03       		.byte	3
+ 297 010a 8C       		.byte	-116
+ 298 010b 20       		.byte	32
+ 299 010c 8F       		.byte	-113
+ 300 010d 02       		.byte	2
+ 301 010e 90       		.byte	-112
+ 302 010f 0C       		.byte	12
+ 303 0110 92       		.byte	-110
+ 304 0111 11       		.byte	17
+ 305 0112 93       		.byte	-109
+ 306 0113 03       		.byte	3
+ 307 0114 94       		.byte	-108
+ 308 0115 09       		.byte	9
+ 309 0116 96       		.byte	-106
+ 310 0117 10       		.byte	16
+ 311 0118 97       		.byte	-105
+ 312 0119 06       		.byte	6
+ 313 011a 9C       		.byte	-100
+ 314 011b 1C       		.byte	28
+ 315 011c 9D       		.byte	-99
+ 316 011d 06       		.byte	6
+ 317 011e 9E       		.byte	-98
+ 318 011f 02       		.byte	2
+ 319 0120 9F       		.byte	-97
+ 320 0121 01       		.byte	1
+ 321 0122 A0       		.byte	-96
+ 322 0123 10       		.byte	16
+ 323 0124 A3       		.byte	-93
+ 324 0125 01       		.byte	1
+ 325 0126 A4       		.byte	-92
+ 326 0127 14       		.byte	20
+ 327 0128 AE       		.byte	-82
+ 328 0129 20       		.byte	32
+ 329 012a B0       		.byte	-80
+ 330 012b 20       		.byte	32
+ 331 012c B1       		.byte	-79
+ 332 012d 07       		.byte	7
+ 333 012e B2       		.byte	-78
+ 334 012f 1F       		.byte	31
+ 335 0130 B4       		.byte	-76
+ 336 0131 40       		.byte	64
+ 337 0132 BB       		.byte	-69
+ 338 0133 02       		.byte	2
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccXPoakb.s 			page 7
+
+
+ 339 0134 BE       		.byte	-66
+ 340 0135 11       		.byte	17
+ 341 0136 C0       		.byte	-64
+ 342 0137 54       		.byte	84
+ 343 0138 C1       		.byte	-63
+ 344 0139 01       		.byte	1
+ 345 013a C5       		.byte	-59
+ 346 013b 0C       		.byte	12
+ 347 013c C6       		.byte	-58
+ 348 013d B0       		.byte	-80
+ 349 013e C7       		.byte	-57
+ 350 013f 0E       		.byte	14
+ 351 0140 C8       		.byte	-56
+ 352 0141 19       		.byte	25
+ 353 0142 C9       		.byte	-55
+ 354 0143 FF       		.byte	-1
+ 355 0144 CA       		.byte	-54
+ 356 0145 FF       		.byte	-1
+ 357 0146 CB       		.byte	-53
+ 358 0147 FF       		.byte	-1
+ 359 0148 CE       		.byte	-50
+ 360 0149 F0       		.byte	-16
+ 361 014a CF       		.byte	-49
+ 362 014b 44       		.byte	68
+ 363 014c D0       		.byte	-48
+ 364 014d 0C       		.byte	12
+ 365 014e D4       		.byte	-44
+ 366 014f 07       		.byte	7
+ 367 0150 D8       		.byte	-40
+ 368 0151 04       		.byte	4
+ 369 0152 D9       		.byte	-39
+ 370 0153 04       		.byte	4
+ 371 0154 DA       		.byte	-38
+ 372 0155 04       		.byte	4
+ 373 0156 DB       		.byte	-37
+ 374 0157 04       		.byte	4
+ 375 0158 DC       		.byte	-36
+ 376 0159 44       		.byte	68
+ 377 015a DD       		.byte	-35
+ 378 015b 04       		.byte	4
+ 379 015c DF       		.byte	-33
+ 380 015d 01       		.byte	1
+ 381 015e E6       		.byte	-26
+ 382 015f C0       		.byte	-64
+ 383 0160 EA       		.byte	-22
+ 384 0161 40       		.byte	64
+ 385 0162 EB       		.byte	-21
+ 386 0163 02       		.byte	2
+ 387 0164 00       		.byte	0
+ 388 0165 12       		.byte	18
+ 389 0166 01       		.byte	1
+ 390 0167 80       		.byte	-128
+ 391 0168 04       		.byte	4
+ 392 0169 80       		.byte	-128
+ 393 016a 06       		.byte	6
+ 394 016b 40       		.byte	64
+ 395 016c 08       		.byte	8
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccXPoakb.s 			page 8
+
+
+ 396 016d 42       		.byte	66
+ 397 016e 09       		.byte	9
+ 398 016f 88       		.byte	-120
+ 399 0170 0D       		.byte	13
+ 400 0171 09       		.byte	9
+ 401 0172 0F       		.byte	15
+ 402 0173 01       		.byte	1
+ 403 0174 10       		.byte	16
+ 404 0175 A0       		.byte	-96
+ 405 0176 12       		.byte	18
+ 406 0177 01       		.byte	1
+ 407 0178 14       		.byte	20
+ 408 0179 40       		.byte	64
+ 409 017a 18       		.byte	24
+ 410 017b 10       		.byte	16
+ 411 017c 19       		.byte	25
+ 412 017d 20       		.byte	32
+ 413 017e 1A       		.byte	26
+ 414 017f 40       		.byte	64
+ 415 0180 1D       		.byte	29
+ 416 0181 80       		.byte	-128
+ 417 0182 1F       		.byte	31
+ 418 0183 40       		.byte	64
+ 419 0184 21       		.byte	33
+ 420 0185 01       		.byte	1
+ 421 0186 22       		.byte	34
+ 422 0187 02       		.byte	2
+ 423 0188 27       		.byte	39
+ 424 0189 40       		.byte	64
+ 425 018a 2B       		.byte	43
+ 426 018b 40       		.byte	64
+ 427 018c 2F       		.byte	47
+ 428 018d 40       		.byte	64
+ 429 018e 31       		.byte	49
+ 430 018f 88       		.byte	-120
+ 431 0190 32       		.byte	50
+ 432 0191 02       		.byte	2
+ 433 0192 34       		.byte	52
+ 434 0193 02       		.byte	2
+ 435 0194 36       		.byte	54
+ 436 0195 02       		.byte	2
+ 437 0196 38       		.byte	56
+ 438 0197 80       		.byte	-128
+ 439 0198 3B       		.byte	59
+ 440 0199 01       		.byte	1
+ 441 019a 3C       		.byte	60
+ 442 019b 02       		.byte	2
+ 443 019c 3F       		.byte	63
+ 444 019d 81       		.byte	-127
+ 445 019e 40       		.byte	64
+ 446 019f 02       		.byte	2
+ 447 01a0 42       		.byte	66
+ 448 01a1 80       		.byte	-128
+ 449 01a2 47       		.byte	71
+ 450 01a3 40       		.byte	64
+ 451 01a4 48       		.byte	72
+ 452 01a5 01       		.byte	1
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccXPoakb.s 			page 9
+
+
+ 453 01a6 49       		.byte	73
+ 454 01a7 08       		.byte	8
+ 455 01a8 4C       		.byte	76
+ 456 01a9 C0       		.byte	-64
+ 457 01aa 50       		.byte	80
+ 458 01ab 20       		.byte	32
+ 459 01ac 53       		.byte	83
+ 460 01ad 08       		.byte	8
+ 461 01ae 56       		.byte	86
+ 462 01af C0       		.byte	-64
+ 463 01b0 57       		.byte	87
+ 464 01b1 40       		.byte	64
+ 465 01b2 58       		.byte	88
+ 466 01b3 10       		.byte	16
+ 467 01b4 5A       		.byte	90
+ 468 01b5 40       		.byte	64
+ 469 01b6 5B       		.byte	91
+ 470 01b7 04       		.byte	4
+ 471 01b8 5F       		.byte	95
+ 472 01b9 02       		.byte	2
+ 473 01ba 61       		.byte	97
+ 474 01bb 04       		.byte	4
+ 475 01bc 62       		.byte	98
+ 476 01bd 10       		.byte	16
+ 477 01be 64       		.byte	100
+ 478 01bf 80       		.byte	-128
+ 479 01c0 67       		.byte	103
+ 480 01c1 06       		.byte	6
+ 481 01c2 89       		.byte	-119
+ 482 01c3 20       		.byte	32
+ 483 01c4 93       		.byte	-109
+ 484 01c5 01       		.byte	1
+ 485 01c6 94       		.byte	-108
+ 486 01c7 04       		.byte	4
+ 487 01c8 97       		.byte	-105
+ 488 01c9 80       		.byte	-128
+ 489 01ca 9C       		.byte	-100
+ 490 01cb 02       		.byte	2
+ 491 01cc 9D       		.byte	-99
+ 492 01cd 08       		.byte	8
+ 493 01ce 9E       		.byte	-98
+ 494 01cf 40       		.byte	64
+ 495 01d0 A1       		.byte	-95
+ 496 01d1 18       		.byte	24
+ 497 01d2 A6       		.byte	-90
+ 498 01d3 02       		.byte	2
+ 499 01d4 A7       		.byte	-89
+ 500 01d5 08       		.byte	8
+ 501 01d6 AE       		.byte	-82
+ 502 01d7 01       		.byte	1
+ 503 01d8 AF       		.byte	-81
+ 504 01d9 08       		.byte	8
+ 505 01da C0       		.byte	-64
+ 506 01db 9B       		.byte	-101
+ 507 01dc C2       		.byte	-62
+ 508 01dd BD       		.byte	-67
+ 509 01de C4       		.byte	-60
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccXPoakb.s 			page 10
+
+
+ 510 01df 1D       		.byte	29
+ 511 01e0 CA       		.byte	-54
+ 512 01e1 81       		.byte	-127
+ 513 01e2 CC       		.byte	-52
+ 514 01e3 8B       		.byte	-117
+ 515 01e4 CE       		.byte	-50
+ 516 01e5 99       		.byte	-103
+ 517 01e6 D0       		.byte	-48
+ 518 01e7 19       		.byte	25
+ 519 01e8 D2       		.byte	-46
+ 520 01e9 08       		.byte	8
+ 521 01ea D6       		.byte	-42
+ 522 01eb 8E       		.byte	-114
+ 523 01ec D8       		.byte	-40
+ 524 01ed B6       		.byte	-74
+ 525 01ee EE       		.byte	-18
+ 526 01ef 04       		.byte	4
+ 527 01f0 01       		.byte	1
+ 528 01f1 03       		.byte	3
+ 529 01f2 03       		.byte	3
+ 530 01f3 0C       		.byte	12
+ 531 01f4 06       		.byte	6
+ 532 01f5 01       		.byte	1
+ 533 01f6 0C       		.byte	12
+ 534 01f7 01       		.byte	1
+ 535 01f8 0D       		.byte	13
+ 536 01f9 0A       		.byte	10
+ 537 01fa 0F       		.byte	15
+ 538 01fb 04       		.byte	4
+ 539 01fc 12       		.byte	18
+ 540 01fd 01       		.byte	1
+ 541 01fe 17       		.byte	23
+ 542 01ff 08       		.byte	8
+ 543 0200 1C       		.byte	28
+ 544 0201 01       		.byte	1
+ 545 0202 22       		.byte	34
+ 546 0203 01       		.byte	1
+ 547 0204 23       		.byte	35
+ 548 0205 05       		.byte	5
+ 549 0206 25       		.byte	37
+ 550 0207 03       		.byte	3
+ 551 0208 27       		.byte	39
+ 552 0209 04       		.byte	4
+ 553 020a 29       		.byte	41
+ 554 020b 10       		.byte	16
+ 555 020c 2D       		.byte	45
+ 556 020d 03       		.byte	3
+ 557 020e 2F       		.byte	47
+ 558 020f 04       		.byte	4
+ 559 0210 30       		.byte	48
+ 560 0211 01       		.byte	1
+ 561 0212 33       		.byte	51
+ 562 0213 10       		.byte	16
+ 563 0214 37       		.byte	55
+ 564 0215 0F       		.byte	15
+ 565 0216 3B       		.byte	59
+ 566 0217 80       		.byte	-128
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccXPoakb.s 			page 11
+
+
+ 567 0218 3E       		.byte	62
+ 568 0219 01       		.byte	1
+ 569 021a 3F       		.byte	63
+ 570 021b 04       		.byte	4
+ 571 021c 40       		.byte	64
+ 572 021d 20       		.byte	32
+ 573 021e 41       		.byte	65
+ 574 021f 06       		.byte	6
+ 575 0220 49       		.byte	73
+ 576 0221 FF       		.byte	-1
+ 577 0222 4A       		.byte	74
+ 578 0223 FF       		.byte	-1
+ 579 0224 4B       		.byte	75
+ 580 0225 FF       		.byte	-1
+ 581 0226 4D       		.byte	77
+ 582 0227 A0       		.byte	-96
+ 583 0228 4F       		.byte	79
+ 584 0229 01       		.byte	1
+ 585 022a 50       		.byte	80
+ 586 022b 18       		.byte	24
+ 587 022c 54       		.byte	84
+ 588 022d 01       		.byte	1
+ 589 022e 56       		.byte	86
+ 590 022f 04       		.byte	4
+ 591 0230 58       		.byte	88
+ 592 0231 04       		.byte	4
+ 593 0232 59       		.byte	89
+ 594 0233 04       		.byte	4
+ 595 0234 5A       		.byte	90
+ 596 0235 04       		.byte	4
+ 597 0236 5B       		.byte	91
+ 598 0237 04       		.byte	4
+ 599 0238 5C       		.byte	92
+ 600 0239 40       		.byte	64
+ 601 023a 5D       		.byte	93
+ 602 023b 40       		.byte	64
+ 603 023c 5F       		.byte	95
+ 604 023d 01       		.byte	1
+ 605 023e 60       		.byte	96
+ 606 023f 40       		.byte	64
+ 607 0240 62       		.byte	98
+ 608 0241 80       		.byte	-128
+ 609 0242 64       		.byte	100
+ 610 0243 40       		.byte	64
+ 611 0244 65       		.byte	101
+ 612 0245 40       		.byte	64
+ 613 0246 66       		.byte	102
+ 614 0247 80       		.byte	-128
+ 615 0248 68       		.byte	104
+ 616 0249 40       		.byte	64
+ 617 024a 6A       		.byte	106
+ 618 024b 50       		.byte	80
+ 619 024c 6B       		.byte	107
+ 620 024d A8       		.byte	-88
+ 621 024e 6C       		.byte	108
+ 622 024f 40       		.byte	64
+ 623 0250 6D       		.byte	109
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccXPoakb.s 			page 12
+
+
+ 624 0251 20       		.byte	32
+ 625 0252 6E       		.byte	110
+ 626 0253 50       		.byte	80
+ 627 0254 6F       		.byte	111
+ 628 0255 A8       		.byte	-88
+ 629 0256 81       		.byte	-127
+ 630 0257 01       		.byte	1
+ 631 0258 90       		.byte	-112
+ 632 0259 01       		.byte	1
+ 633 025a 91       		.byte	-111
+ 634 025b 01       		.byte	1
+ 635 025c 94       		.byte	-108
+ 636 025d 02       		.byte	2
+ 637 025e 9D       		.byte	-99
+ 638 025f 02       		.byte	2
+ 639 0260 9E       		.byte	-98
+ 640 0261 05       		.byte	5
+ 641 0262 A3       		.byte	-93
+ 642 0263 01       		.byte	1
+ 643 0264 AE       		.byte	-82
+ 644 0265 0A       		.byte	10
+ 645 0266 B0       		.byte	-80
+ 646 0267 04       		.byte	4
+ 647 0268 B2       		.byte	-78
+ 648 0269 08       		.byte	8
+ 649 026a B3       		.byte	-77
+ 650 026b 03       		.byte	3
+ 651 026c B4       		.byte	-76
+ 652 026d 02       		.byte	2
+ 653 026e B6       		.byte	-74
+ 654 026f 01       		.byte	1
+ 655 0270 B9       		.byte	-71
+ 656 0271 08       		.byte	8
+ 657 0272 BE       		.byte	-66
+ 658 0273 50       		.byte	80
+ 659 0274 C0       		.byte	-64
+ 660 0275 20       		.byte	32
+ 661 0276 C1       		.byte	-63
+ 662 0277 06       		.byte	6
+ 663 0278 C5       		.byte	-59
+ 664 0279 5C       		.byte	92
+ 665 027a C6       		.byte	-58
+ 666 027b 20       		.byte	32
+ 667 027c C7       		.byte	-57
+ 668 027d 0E       		.byte	14
+ 669 027e C8       		.byte	-56
+ 670 027f 3B       		.byte	59
+ 671 0280 C9       		.byte	-55
+ 672 0281 FF       		.byte	-1
+ 673 0282 CA       		.byte	-54
+ 674 0283 FF       		.byte	-1
+ 675 0284 CB       		.byte	-53
+ 676 0285 FF       		.byte	-1
+ 677 0286 CD       		.byte	-51
+ 678 0287 AF       		.byte	-81
+ 679 0288 CE       		.byte	-50
+ 680 0289 07       		.byte	7
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccXPoakb.s 			page 13
+
+
+ 681 028a CF       		.byte	-49
+ 682 028b 01       		.byte	1
+ 683 028c D0       		.byte	-48
+ 684 028d 18       		.byte	24
+ 685 028e D2       		.byte	-46
+ 686 028f 80       		.byte	-128
+ 687 0290 D4       		.byte	-44
+ 688 0291 07       		.byte	7
+ 689 0292 D8       		.byte	-40
+ 690 0293 04       		.byte	4
+ 691 0294 D9       		.byte	-39
+ 692 0295 04       		.byte	4
+ 693 0296 DA       		.byte	-38
+ 694 0297 04       		.byte	4
+ 695 0298 DB       		.byte	-37
+ 696 0299 04       		.byte	4
+ 697 029a DC       		.byte	-36
+ 698 029b 40       		.byte	64
+ 699 029c DF       		.byte	-33
+ 700 029d 01       		.byte	1
+ 701 029e E0       		.byte	-32
+ 702 029f 40       		.byte	64
+ 703 02a0 E2       		.byte	-30
+ 704 02a1 80       		.byte	-128
+ 705 02a2 E4       		.byte	-28
+ 706 02a3 40       		.byte	64
+ 707 02a4 E5       		.byte	-27
+ 708 02a5 40       		.byte	64
+ 709 02a6 E6       		.byte	-26
+ 710 02a7 80       		.byte	-128
+ 711 02a8 E8       		.byte	-24
+ 712 02a9 40       		.byte	64
+ 713 02aa EA       		.byte	-22
+ 714 02ab 50       		.byte	80
+ 715 02ac EB       		.byte	-21
+ 716 02ad A8       		.byte	-88
+ 717 02ae EC       		.byte	-20
+ 718 02af 40       		.byte	64
+ 719 02b0 ED       		.byte	-19
+ 720 02b1 20       		.byte	32
+ 721 02b2 EE       		.byte	-18
+ 722 02b3 50       		.byte	80
+ 723 02b4 EF       		.byte	-17
+ 724 02b5 A8       		.byte	-88
+ 725 02b6 01       		.byte	1
+ 726 02b7 08       		.byte	8
+ 727 02b8 02       		.byte	2
+ 728 02b9 02       		.byte	2
+ 729 02ba 0B       		.byte	11
+ 730 02bb 81       		.byte	-127
+ 731 02bc 0E       		.byte	14
+ 732 02bd 60       		.byte	96
+ 733 02be 0F       		.byte	15
+ 734 02bf 02       		.byte	2
+ 735 02c0 10       		.byte	16
+ 736 02c1 40       		.byte	64
+ 737 02c2 12       		.byte	18
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccXPoakb.s 			page 14
+
+
+ 738 02c3 C0       		.byte	-64
+ 739 02c4 16       		.byte	22
+ 740 02c5 02       		.byte	2
+ 741 02c6 1A       		.byte	26
+ 742 02c7 80       		.byte	-128
+ 743 02c8 1E       		.byte	30
+ 744 02c9 6A       		.byte	106
+ 745 02ca 22       		.byte	34
+ 746 02cb 04       		.byte	4
+ 747 02cc 23       		.byte	35
+ 748 02cd 01       		.byte	1
+ 749 02ce 25       		.byte	37
+ 750 02cf 08       		.byte	8
+ 751 02d0 28       		.byte	40
+ 752 02d1 52       		.byte	82
+ 753 02d2 29       		.byte	41
+ 754 02d3 08       		.byte	8
+ 755 02d4 2B       		.byte	43
+ 756 02d5 08       		.byte	8
+ 757 02d6 2F       		.byte	47
+ 758 02d7 40       		.byte	64
+ 759 02d8 31       		.byte	49
+ 760 02d9 08       		.byte	8
+ 761 02da 36       		.byte	54
+ 762 02db 82       		.byte	-126
+ 763 02dc 3B       		.byte	59
+ 764 02dd 81       		.byte	-127
+ 765 02de 3F       		.byte	63
+ 766 02df 01       		.byte	1
+ 767 02e0 40       		.byte	64
+ 768 02e1 04       		.byte	4
+ 769 02e2 42       		.byte	66
+ 770 02e3 30       		.byte	48
+ 771 02e4 43       		.byte	67
+ 772 02e5 10       		.byte	16
+ 773 02e6 47       		.byte	71
+ 774 02e7 10       		.byte	16
+ 775 02e8 48       		.byte	72
+ 776 02e9 08       		.byte	8
+ 777 02ea 49       		.byte	73
+ 778 02eb 80       		.byte	-128
+ 779 02ec 4A       		.byte	74
+ 780 02ed 01       		.byte	1
+ 781 02ee 4C       		.byte	76
+ 782 02ef 08       		.byte	8
+ 783 02f0 4F       		.byte	79
+ 784 02f1 06       		.byte	6
+ 785 02f2 56       		.byte	86
+ 786 02f3 2A       		.byte	42
+ 787 02f4 58       		.byte	88
+ 788 02f5 10       		.byte	16
+ 789 02f6 5A       		.byte	90
+ 790 02f7 8A       		.byte	-118
+ 791 02f8 5D       		.byte	93
+ 792 02f9 80       		.byte	-128
+ 793 02fa 5E       		.byte	94
+ 794 02fb 18       		.byte	24
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccXPoakb.s 			page 15
+
+
+ 795 02fc 63       		.byte	99
+ 796 02fd 80       		.byte	-128
+ 797 02fe 66       		.byte	102
+ 798 02ff 08       		.byte	8
+ 799 0300 67       		.byte	103
+ 800 0301 04       		.byte	4
+ 801 0302 76       		.byte	118
+ 802 0303 80       		.byte	-128
+ 803 0304 83       		.byte	-125
+ 804 0305 40       		.byte	64
+ 805 0306 86       		.byte	-122
+ 806 0307 80       		.byte	-128
+ 807 0308 A0       		.byte	-96
+ 808 0309 08       		.byte	8
+ 809 030a A1       		.byte	-95
+ 810 030b 10       		.byte	16
+ 811 030c C0       		.byte	-64
+ 812 030d 05       		.byte	5
+ 813 030e C2       		.byte	-62
+ 814 030f B9       		.byte	-71
+ 815 0310 C4       		.byte	-60
+ 816 0311 88       		.byte	-120
+ 817 0312 CA       		.byte	-54
+ 818 0313 8F       		.byte	-113
+ 819 0314 CC       		.byte	-52
+ 820 0315 92       		.byte	-110
+ 821 0316 CE       		.byte	-50
+ 822 0317 89       		.byte	-119
+ 823 0318 D0       		.byte	-48
+ 824 0319 24       		.byte	36
+ 825 031a D2       		.byte	-46
+ 826 031b 24       		.byte	36
+ 827 031c D6       		.byte	-42
+ 828 031d 7F       		.byte	127
+ 829 031e D8       		.byte	-40
+ 830 031f 61       		.byte	97
+ 831 0320 8C       		.byte	-116
+ 832 0321 08       		.byte	8
+ 833 0322 8D       		.byte	-115
+ 834 0323 10       		.byte	16
+ 835 0324 E4       		.byte	-28
+ 836 0325 10       		.byte	16
+ 837 0326 0C       		.byte	12
+ 838 0327 01       		.byte	1
+ 839 0328 12       		.byte	18
+ 840 0329 01       		.byte	1
+ 841 032a 2E       		.byte	46
+ 842 032b 01       		.byte	1
+ 843 032c 34       		.byte	52
+ 844 032d 01       		.byte	1
+ 845 032e 3E       		.byte	62
+ 846 032f 10       		.byte	16
+ 847 0330 40       		.byte	64
+ 848 0331 20       		.byte	32
+ 849 0332 41       		.byte	65
+ 850 0333 05       		.byte	5
+ 851 0334 49       		.byte	73
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccXPoakb.s 			page 16
+
+
+ 852 0335 FF       		.byte	-1
+ 853 0336 4A       		.byte	74
+ 854 0337 FF       		.byte	-1
+ 855 0338 4B       		.byte	75
+ 856 0339 FF       		.byte	-1
+ 857 033a 4D       		.byte	77
+ 858 033b A0       		.byte	-96
+ 859 033c 4F       		.byte	79
+ 860 033d 01       		.byte	1
+ 861 033e 50       		.byte	80
+ 862 033f 18       		.byte	24
+ 863 0340 52       		.byte	82
+ 864 0341 80       		.byte	-128
+ 865 0342 56       		.byte	86
+ 866 0343 08       		.byte	8
+ 867 0344 58       		.byte	88
+ 868 0345 04       		.byte	4
+ 869 0346 5A       		.byte	90
+ 870 0347 04       		.byte	4
+ 871 0348 5B       		.byte	91
+ 872 0349 04       		.byte	4
+ 873 034a 5F       		.byte	95
+ 874 034b 01       		.byte	1
+ 875 034c 60       		.byte	96
+ 876 034d 40       		.byte	64
+ 877 034e 62       		.byte	98
+ 878 034f 80       		.byte	-128
+ 879 0350 64       		.byte	100
+ 880 0351 40       		.byte	64
+ 881 0352 65       		.byte	101
+ 882 0353 40       		.byte	64
+ 883 0354 66       		.byte	102
+ 884 0355 80       		.byte	-128
+ 885 0356 68       		.byte	104
+ 886 0357 40       		.byte	64
+ 887 0358 6A       		.byte	106
+ 888 0359 50       		.byte	80
+ 889 035a 6B       		.byte	107
+ 890 035b A8       		.byte	-88
+ 891 035c 6C       		.byte	108
+ 892 035d 40       		.byte	64
+ 893 035e 6D       		.byte	109
+ 894 035f 20       		.byte	32
+ 895 0360 6E       		.byte	110
+ 896 0361 50       		.byte	80
+ 897 0362 6F       		.byte	111
+ 898 0363 A8       		.byte	-88
+ 899 0364 82       		.byte	-126
+ 900 0365 0A       		.byte	10
+ 901 0366 90       		.byte	-112
+ 902 0367 01       		.byte	1
+ 903 0368 94       		.byte	-108
+ 904 0369 02       		.byte	2
+ 905 036a 9E       		.byte	-98
+ 906 036b 05       		.byte	5
+ 907 036c B0       		.byte	-80
+ 908 036d 04       		.byte	4
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccXPoakb.s 			page 17
+
+
+ 909 036e B2       		.byte	-78
+ 910 036f 08       		.byte	8
+ 911 0370 B4       		.byte	-76
+ 912 0371 02       		.byte	2
+ 913 0372 B6       		.byte	-74
+ 914 0373 01       		.byte	1
+ 915 0374 BE       		.byte	-66
+ 916 0375 50       		.byte	80
+ 917 0376 C0       		.byte	-64
+ 918 0377 20       		.byte	32
+ 919 0378 C1       		.byte	-63
+ 920 0379 05       		.byte	5
+ 921 037a C5       		.byte	-59
+ 922 037b 5C       		.byte	92
+ 923 037c C6       		.byte	-58
+ 924 037d 20       		.byte	32
+ 925 037e C7       		.byte	-57
+ 926 037f 0E       		.byte	14
+ 927 0380 C8       		.byte	-56
+ 928 0381 1F       		.byte	31
+ 929 0382 C9       		.byte	-55
+ 930 0383 FF       		.byte	-1
+ 931 0384 CA       		.byte	-54
+ 932 0385 FF       		.byte	-1
+ 933 0386 CB       		.byte	-53
+ 934 0387 FF       		.byte	-1
+ 935 0388 CD       		.byte	-51
+ 936 0389 AF       		.byte	-81
+ 937 038a CE       		.byte	-50
+ 938 038b 07       		.byte	7
+ 939 038c CF       		.byte	-49
+ 940 038d 01       		.byte	1
+ 941 038e D0       		.byte	-48
+ 942 038f 18       		.byte	24
+ 943 0390 D4       		.byte	-44
+ 944 0391 07       		.byte	7
+ 945 0392 D8       		.byte	-40
+ 946 0393 04       		.byte	4
+ 947 0394 DA       		.byte	-38
+ 948 0395 04       		.byte	4
+ 949 0396 DB       		.byte	-37
+ 950 0397 04       		.byte	4
+ 951 0398 DF       		.byte	-33
+ 952 0399 01       		.byte	1
+ 953 039a E0       		.byte	-32
+ 954 039b 40       		.byte	64
+ 955 039c E2       		.byte	-30
+ 956 039d 80       		.byte	-128
+ 957 039e E4       		.byte	-28
+ 958 039f 40       		.byte	64
+ 959 03a0 E5       		.byte	-27
+ 960 03a1 40       		.byte	64
+ 961 03a2 E6       		.byte	-26
+ 962 03a3 80       		.byte	-128
+ 963 03a4 E8       		.byte	-24
+ 964 03a5 40       		.byte	64
+ 965 03a6 EA       		.byte	-22
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccXPoakb.s 			page 18
+
+
+ 966 03a7 50       		.byte	80
+ 967 03a8 EB       		.byte	-21
+ 968 03a9 A8       		.byte	-88
+ 969 03aa EC       		.byte	-20
+ 970 03ab 40       		.byte	64
+ 971 03ac ED       		.byte	-19
+ 972 03ad 20       		.byte	32
+ 973 03ae EE       		.byte	-18
+ 974 03af 50       		.byte	80
+ 975 03b0 EF       		.byte	-17
+ 976 03b1 A8       		.byte	-88
+ 977 03b2 00       		.byte	0
+ 978 03b3 40       		.byte	64
+ 979 03b4 06       		.byte	6
+ 980 03b5 80       		.byte	-128
+ 981 03b6 08       		.byte	8
+ 982 03b7 02       		.byte	2
+ 983 03b8 0E       		.byte	14
+ 984 03b9 60       		.byte	96
+ 985 03ba 0F       		.byte	15
+ 986 03bb 02       		.byte	2
+ 987 03bc 10       		.byte	16
+ 988 03bd 02       		.byte	2
+ 989 03be 18       		.byte	24
+ 990 03bf 04       		.byte	4
+ 991 03c0 1E       		.byte	30
+ 992 03c1 68       		.byte	104
+ 993 03c2 1F       		.byte	31
+ 994 03c3 40       		.byte	64
+ 995 03c4 3B       		.byte	59
+ 996 03c5 C0       		.byte	-64
+ 997 03c6 3E       		.byte	62
+ 998 03c7 20       		.byte	32
+ 999 03c8 3F       		.byte	63
+ 1000 03c9 10       		.byte	16
+ 1001 03ca 40       		.byte	64
+ 1002 03cb 04       		.byte	4
+ 1003 03cc 43       		.byte	67
+ 1004 03cd 10       		.byte	16
+ 1005 03ce 47       		.byte	71
+ 1006 03cf 10       		.byte	16
+ 1007 03d0 4A       		.byte	74
+ 1008 03d1 02       		.byte	2
+ 1009 03d2 4E       		.byte	78
+ 1010 03d3 02       		.byte	2
+ 1011 03d4 4F       		.byte	79
+ 1012 03d5 06       		.byte	6
+ 1013 03d6 56       		.byte	86
+ 1014 03d7 A8       		.byte	-88
+ 1015 03d8 5B       		.byte	91
+ 1016 03d9 40       		.byte	64
+ 1017 03da 5E       		.byte	94
+ 1018 03db 08       		.byte	8
+ 1019 03dc 5F       		.byte	95
+ 1020 03dd 50       		.byte	80
+ 1021 03de 60       		.byte	96
+ 1022 03df 02       		.byte	2
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccXPoakb.s 			page 19
+
+
+ 1023 03e0 66       		.byte	102
+ 1024 03e1 08       		.byte	8
+ 1025 03e2 67       		.byte	103
+ 1026 03e3 04       		.byte	4
+ 1027 03e4 70       		.byte	112
+ 1028 03e5 02       		.byte	2
+ 1029 03e6 8F       		.byte	-113
+ 1030 03e7 40       		.byte	64
+ 1031 03e8 90       		.byte	-112
+ 1032 03e9 40       		.byte	64
+ 1033 03ea 9C       		.byte	-100
+ 1034 03eb 02       		.byte	2
+ 1035 03ec A2       		.byte	-94
+ 1036 03ed 02       		.byte	2
+ 1037 03ee C0       		.byte	-64
+ 1038 03ef 11       		.byte	17
+ 1039 03f0 C2       		.byte	-62
+ 1040 03f1 B8       		.byte	-72
+ 1041 03f2 C4       		.byte	-60
+ 1042 03f3 01       		.byte	1
+ 1043 03f4 D0       		.byte	-48
+ 1044 03f5 24       		.byte	36
+ 1045 03f6 D2       		.byte	-46
+ 1046 03f7 18       		.byte	24
+ 1047 03f8 D6       		.byte	-42
+ 1048 03f9 78       		.byte	120
+ 1049 03fa D8       		.byte	-40
+ 1050 03fb 68       		.byte	104
+ 1051 03fc E0       		.byte	-32
+ 1052 03fd 10       		.byte	16
+ 1053 03fe 40       		.byte	64
+ 1054 03ff 10       		.byte	16
+ 1055 0400 41       		.byte	65
+ 1056 0401 05       		.byte	5
+ 1057 0402 49       		.byte	73
+ 1058 0403 FF       		.byte	-1
+ 1059 0404 4A       		.byte	74
+ 1060 0405 FF       		.byte	-1
+ 1061 0406 4B       		.byte	75
+ 1062 0407 FF       		.byte	-1
+ 1063 0408 4D       		.byte	77
+ 1064 0409 A0       		.byte	-96
+ 1065 040a 4F       		.byte	79
+ 1066 040b 01       		.byte	1
+ 1067 040c 50       		.byte	80
+ 1068 040d 18       		.byte	24
+ 1069 040e 5A       		.byte	90
+ 1070 040f 04       		.byte	4
+ 1071 0410 5F       		.byte	95
+ 1072 0411 01       		.byte	1
+ 1073 0412 60       		.byte	96
+ 1074 0413 40       		.byte	64
+ 1075 0414 62       		.byte	98
+ 1076 0415 80       		.byte	-128
+ 1077 0416 64       		.byte	100
+ 1078 0417 40       		.byte	64
+ 1079 0418 65       		.byte	101
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccXPoakb.s 			page 20
+
+
+ 1080 0419 40       		.byte	64
+ 1081 041a 66       		.byte	102
+ 1082 041b 80       		.byte	-128
+ 1083 041c 68       		.byte	104
+ 1084 041d 40       		.byte	64
+ 1085 041e 6A       		.byte	106
+ 1086 041f 50       		.byte	80
+ 1087 0420 6B       		.byte	107
+ 1088 0421 A8       		.byte	-88
+ 1089 0422 6C       		.byte	108
+ 1090 0423 40       		.byte	64
+ 1091 0424 6D       		.byte	109
+ 1092 0425 20       		.byte	32
+ 1093 0426 6E       		.byte	110
+ 1094 0427 50       		.byte	80
+ 1095 0428 6F       		.byte	111
+ 1096 0429 A8       		.byte	-88
+ 1097 042a 8D       		.byte	-115
+ 1098 042b 01       		.byte	1
+ 1099 042c 92       		.byte	-110
+ 1100 042d 02       		.byte	2
+ 1101 042e 93       		.byte	-109
+ 1102 042f 01       		.byte	1
+ 1103 0430 94       		.byte	-108
+ 1104 0431 01       		.byte	1
+ 1105 0432 9F       		.byte	-97
+ 1106 0433 02       		.byte	2
+ 1107 0434 A2       		.byte	-94
+ 1108 0435 08       		.byte	8
+ 1109 0436 A6       		.byte	-90
+ 1110 0437 05       		.byte	5
+ 1111 0438 A9       		.byte	-87
+ 1112 0439 02       		.byte	2
+ 1113 043a AF       		.byte	-81
+ 1114 043b 01       		.byte	1
+ 1115 043c B0       		.byte	-80
+ 1116 043d 02       		.byte	2
+ 1117 043e B2       		.byte	-78
+ 1118 043f 04       		.byte	4
+ 1119 0440 B3       		.byte	-77
+ 1120 0441 02       		.byte	2
+ 1121 0442 B4       		.byte	-76
+ 1122 0443 08       		.byte	8
+ 1123 0444 B6       		.byte	-74
+ 1124 0445 01       		.byte	1
+ 1125 0446 B7       		.byte	-73
+ 1126 0447 01       		.byte	1
+ 1127 0448 BE       		.byte	-66
+ 1128 0449 40       		.byte	64
+ 1129 044a BF       		.byte	-65
+ 1130 044b 44       		.byte	68
+ 1131 044c C0       		.byte	-64
+ 1132 044d 10       		.byte	16
+ 1133 044e C1       		.byte	-63
+ 1134 044f 05       		.byte	5
+ 1135 0450 C5       		.byte	-59
+ 1136 0451 05       		.byte	5
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccXPoakb.s 			page 21
+
+
+ 1137 0452 C6       		.byte	-58
+ 1138 0453 C2       		.byte	-62
+ 1139 0454 C7       		.byte	-57
+ 1140 0455 0E       		.byte	14
+ 1141 0456 C8       		.byte	-56
+ 1142 0457 1F       		.byte	31
+ 1143 0458 C9       		.byte	-55
+ 1144 0459 FF       		.byte	-1
+ 1145 045a CA       		.byte	-54
+ 1146 045b FF       		.byte	-1
+ 1147 045c CB       		.byte	-53
+ 1148 045d FF       		.byte	-1
+ 1149 045e CD       		.byte	-51
+ 1150 045f AF       		.byte	-81
+ 1151 0460 CE       		.byte	-50
+ 1152 0461 07       		.byte	7
+ 1153 0462 CF       		.byte	-49
+ 1154 0463 01       		.byte	1
+ 1155 0464 D0       		.byte	-48
+ 1156 0465 18       		.byte	24
+ 1157 0466 D4       		.byte	-44
+ 1158 0467 07       		.byte	7
+ 1159 0468 D8       		.byte	-40
+ 1160 0469 04       		.byte	4
+ 1161 046a D9       		.byte	-39
+ 1162 046b 04       		.byte	4
+ 1163 046c DA       		.byte	-38
+ 1164 046d 04       		.byte	4
+ 1165 046e DB       		.byte	-37
+ 1166 046f 04       		.byte	4
+ 1167 0470 DF       		.byte	-33
+ 1168 0471 01       		.byte	1
+ 1169 0472 E0       		.byte	-32
+ 1170 0473 40       		.byte	64
+ 1171 0474 E2       		.byte	-30
+ 1172 0475 80       		.byte	-128
+ 1173 0476 E4       		.byte	-28
+ 1174 0477 40       		.byte	64
+ 1175 0478 E5       		.byte	-27
+ 1176 0479 40       		.byte	64
+ 1177 047a E6       		.byte	-26
+ 1178 047b 80       		.byte	-128
+ 1179 047c E8       		.byte	-24
+ 1180 047d 40       		.byte	64
+ 1181 047e EA       		.byte	-22
+ 1182 047f 50       		.byte	80
+ 1183 0480 EB       		.byte	-21
+ 1184 0481 A8       		.byte	-88
+ 1185 0482 EC       		.byte	-20
+ 1186 0483 40       		.byte	64
+ 1187 0484 ED       		.byte	-19
+ 1188 0485 20       		.byte	32
+ 1189 0486 EE       		.byte	-18
+ 1190 0487 50       		.byte	80
+ 1191 0488 EF       		.byte	-17
+ 1192 0489 A8       		.byte	-88
+ 1193 048a 08       		.byte	8
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccXPoakb.s 			page 22
+
+
+ 1194 048b 02       		.byte	2
+ 1195 048c 0A       		.byte	10
+ 1196 048d 10       		.byte	16
+ 1197 048e 10       		.byte	16
+ 1198 048f A0       		.byte	-96
+ 1199 0490 18       		.byte	24
+ 1200 0491 40       		.byte	64
+ 1201 0492 19       		.byte	25
+ 1202 0493 60       		.byte	96
+ 1203 0494 1A       		.byte	26
+ 1204 0495 10       		.byte	16
+ 1205 0496 21       		.byte	33
+ 1206 0497 80       		.byte	-128
+ 1207 0498 22       		.byte	34
+ 1208 0499 04       		.byte	4
+ 1209 049a 28       		.byte	40
+ 1210 049b 02       		.byte	2
+ 1211 049c 29       		.byte	41
+ 1212 049d 20       		.byte	32
+ 1213 049e 30       		.byte	48
+ 1214 049f 81       		.byte	-127
+ 1215 04a0 38       		.byte	56
+ 1216 04a1 40       		.byte	64
+ 1217 04a2 41       		.byte	65
+ 1218 04a3 80       		.byte	-128
+ 1219 04a4 45       		.byte	69
+ 1220 04a5 80       		.byte	-128
+ 1221 04a6 48       		.byte	72
+ 1222 04a7 A0       		.byte	-96
+ 1223 04a8 4A       		.byte	74
+ 1224 04a9 02       		.byte	2
+ 1225 04aa 4E       		.byte	78
+ 1226 04ab 02       		.byte	2
+ 1227 04ac 51       		.byte	81
+ 1228 04ad 08       		.byte	8
+ 1229 04ae 52       		.byte	82
+ 1230 04af 90       		.byte	-112
+ 1231 04b0 59       		.byte	89
+ 1232 04b1 50       		.byte	80
+ 1233 04b2 5A       		.byte	90
+ 1234 04b3 08       		.byte	8
+ 1235 04b4 61       		.byte	97
+ 1236 04b5 08       		.byte	8
+ 1237 04b6 62       		.byte	98
+ 1238 04b7 10       		.byte	16
+ 1239 04b8 81       		.byte	-127
+ 1240 04b9 10       		.byte	16
+ 1241 04ba 82       		.byte	-126
+ 1242 04bb 80       		.byte	-128
+ 1243 04bc 98       		.byte	-104
+ 1244 04bd 01       		.byte	1
+ 1245 04be A2       		.byte	-94
+ 1246 04bf 02       		.byte	2
+ 1247 04c0 C2       		.byte	-62
+ 1248 04c1 0C       		.byte	12
+ 1249 04c2 C4       		.byte	-60
+ 1250 04c3 0C       		.byte	12
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccXPoakb.s 			page 23
+
+
+ 1251 04c4 CA       		.byte	-54
+ 1252 04c5 0C       		.byte	12
+ 1253 04c6 CC       		.byte	-52
+ 1254 04c7 09       		.byte	9
+ 1255 04c8 CE       		.byte	-50
+ 1256 04c9 08       		.byte	8
+ 1257 04ca D0       		.byte	-48
+ 1258 04cb 18       		.byte	24
+ 1259 04cc D2       		.byte	-46
+ 1260 04cd 18       		.byte	24
+ 1261 04ce D6       		.byte	-42
+ 1262 04cf 0E       		.byte	14
+ 1263 04d0 D8       		.byte	-40
+ 1264 04d1 06       		.byte	6
+ 1265 04d2 E0       		.byte	-32
+ 1266 04d3 01       		.byte	1
+ 1267 04d4 EE       		.byte	-18
+ 1268 04d5 02       		.byte	2
+ 1269 04d6 17       		.byte	23
+ 1270 04d7 02       		.byte	2
+ 1271 04d8 1F       		.byte	31
+ 1272 04d9 01       		.byte	1
+ 1273 04da 21       		.byte	33
+ 1274 04db 01       		.byte	1
+ 1275 04dc 2E       		.byte	46
+ 1276 04dd 01       		.byte	1
+ 1277 04de 2F       		.byte	47
+ 1278 04df 02       		.byte	2
+ 1279 04e0 31       		.byte	49
+ 1280 04e1 02       		.byte	2
+ 1281 04e2 35       		.byte	53
+ 1282 04e3 01       		.byte	1
+ 1283 04e4 36       		.byte	54
+ 1284 04e5 01       		.byte	1
+ 1285 04e6 3F       		.byte	63
+ 1286 04e7 11       		.byte	17
+ 1287 04e8 40       		.byte	64
+ 1288 04e9 30       		.byte	48
+ 1289 04ea 41       		.byte	65
+ 1290 04eb 02       		.byte	2
+ 1291 04ec 49       		.byte	73
+ 1292 04ed FF       		.byte	-1
+ 1293 04ee 4A       		.byte	74
+ 1294 04ef FF       		.byte	-1
+ 1295 04f0 4B       		.byte	75
+ 1296 04f1 FF       		.byte	-1
+ 1297 04f2 4D       		.byte	77
+ 1298 04f3 A0       		.byte	-96
+ 1299 04f4 4F       		.byte	79
+ 1300 04f5 01       		.byte	1
+ 1301 04f6 50       		.byte	80
+ 1302 04f7 18       		.byte	24
+ 1303 04f8 52       		.byte	82
+ 1304 04f9 80       		.byte	-128
+ 1305 04fa 58       		.byte	88
+ 1306 04fb 04       		.byte	4
+ 1307 04fc 59       		.byte	89
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccXPoakb.s 			page 24
+
+
+ 1308 04fd 04       		.byte	4
+ 1309 04fe 5A       		.byte	90
+ 1310 04ff 04       		.byte	4
+ 1311 0500 5B       		.byte	91
+ 1312 0501 04       		.byte	4
+ 1313 0502 5F       		.byte	95
+ 1314 0503 01       		.byte	1
+ 1315 0504 60       		.byte	96
+ 1316 0505 40       		.byte	64
+ 1317 0506 62       		.byte	98
+ 1318 0507 80       		.byte	-128
+ 1319 0508 64       		.byte	100
+ 1320 0509 40       		.byte	64
+ 1321 050a 65       		.byte	101
+ 1322 050b 40       		.byte	64
+ 1323 050c 66       		.byte	102
+ 1324 050d 80       		.byte	-128
+ 1325 050e 68       		.byte	104
+ 1326 050f 40       		.byte	64
+ 1327 0510 6A       		.byte	106
+ 1328 0511 50       		.byte	80
+ 1329 0512 6B       		.byte	107
+ 1330 0513 A8       		.byte	-88
+ 1331 0514 6C       		.byte	108
+ 1332 0515 40       		.byte	64
+ 1333 0516 6D       		.byte	109
+ 1334 0517 20       		.byte	32
+ 1335 0518 6E       		.byte	110
+ 1336 0519 50       		.byte	80
+ 1337 051a 6F       		.byte	111
+ 1338 051b A8       		.byte	-88
+ 1339 051c 00       		.byte	0
+ 1340 051d 50       		.byte	80
+ 1341 051e 03       		.byte	3
+ 1342 051f 20       		.byte	32
+ 1343 0520 08       		.byte	8
+ 1344 0521 40       		.byte	64
+ 1345 0522 0A       		.byte	10
+ 1346 0523 C1       		.byte	-63
+ 1347 0524 12       		.byte	18
+ 1348 0525 41       		.byte	65
+ 1349 0526 13       		.byte	19
+ 1350 0527 20       		.byte	32
+ 1351 0528 15       		.byte	21
+ 1352 0529 80       		.byte	-128
+ 1353 052a 18       		.byte	24
+ 1354 052b 14       		.byte	20
+ 1355 052c 19       		.byte	25
+ 1356 052d 81       		.byte	-127
+ 1357 052e 1F       		.byte	31
+ 1358 052f 80       		.byte	-128
+ 1359 0530 20       		.byte	32
+ 1360 0531 02       		.byte	2
+ 1361 0532 22       		.byte	34
+ 1362 0533 04       		.byte	4
+ 1363 0534 23       		.byte	35
+ 1364 0535 48       		.byte	72
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccXPoakb.s 			page 25
+
+
+ 1365 0536 26       		.byte	38
+ 1366 0537 02       		.byte	2
+ 1367 0538 27       		.byte	39
+ 1368 0539 04       		.byte	4
+ 1369 053a 28       		.byte	40
+ 1370 053b 40       		.byte	64
+ 1371 053c 2B       		.byte	43
+ 1372 053d 28       		.byte	40
+ 1373 053e 2F       		.byte	47
+ 1374 053f 82       		.byte	-126
+ 1375 0540 32       		.byte	50
+ 1376 0541 44       		.byte	68
+ 1377 0542 33       		.byte	51
+ 1378 0543 01       		.byte	1
+ 1379 0544 36       		.byte	54
+ 1380 0545 80       		.byte	-128
+ 1381 0546 37       		.byte	55
+ 1382 0547 08       		.byte	8
+ 1383 0548 38       		.byte	56
+ 1384 0549 41       		.byte	65
+ 1385 054a 39       		.byte	57
+ 1386 054b 14       		.byte	20
+ 1387 054c 40       		.byte	64
+ 1388 054d 08       		.byte	8
+ 1389 054e 41       		.byte	65
+ 1390 054f 08       		.byte	8
+ 1391 0550 44       		.byte	68
+ 1392 0551 08       		.byte	8
+ 1393 0552 45       		.byte	69
+ 1394 0553 18       		.byte	24
+ 1395 0554 49       		.byte	73
+ 1396 0555 04       		.byte	4
+ 1397 0556 51       		.byte	81
+ 1398 0557 40       		.byte	64
+ 1399 0558 52       		.byte	82
+ 1400 0559 95       		.byte	-107
+ 1401 055a 59       		.byte	89
+ 1402 055b 01       		.byte	1
+ 1403 055c 64       		.byte	100
+ 1404 055d 10       		.byte	16
+ 1405 055e 66       		.byte	102
+ 1406 055f 04       		.byte	4
+ 1407 0560 69       		.byte	105
+ 1408 0561 14       		.byte	20
+ 1409 0562 6B       		.byte	107
+ 1410 0563 01       		.byte	1
+ 1411 0564 70       		.byte	112
+ 1412 0565 BC       		.byte	-68
+ 1413 0566 76       		.byte	118
+ 1414 0567 40       		.byte	64
+ 1415 0568 8B       		.byte	-117
+ 1416 0569 48       		.byte	72
+ 1417 056a 94       		.byte	-108
+ 1418 056b 04       		.byte	4
+ 1419 056c 97       		.byte	-105
+ 1420 056d 06       		.byte	6
+ 1421 056e 9C       		.byte	-100
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccXPoakb.s 			page 26
+
+
+ 1422 056f 10       		.byte	16
+ 1423 0570 9D       		.byte	-99
+ 1424 0571 84       		.byte	-124
+ 1425 0572 9E       		.byte	-98
+ 1426 0573 11       		.byte	17
+ 1427 0574 9F       		.byte	-97
+ 1428 0575 06       		.byte	6
+ 1429 0576 A1       		.byte	-95
+ 1430 0577 10       		.byte	16
+ 1431 0578 AC       		.byte	-84
+ 1432 0579 80       		.byte	-128
+ 1433 057a C0       		.byte	-64
+ 1434 057b 07       		.byte	7
+ 1435 057c C2       		.byte	-62
+ 1436 057d 09       		.byte	9
+ 1437 057e C4       		.byte	-60
+ 1438 057f 8B       		.byte	-117
+ 1439 0580 CA       		.byte	-54
+ 1440 0581 97       		.byte	-105
+ 1441 0582 CC       		.byte	-52
+ 1442 0583 5B       		.byte	91
+ 1443 0584 CE       		.byte	-50
+ 1444 0585 0F       		.byte	15
+ 1445 0586 D0       		.byte	-48
+ 1446 0587 66       		.byte	102
+ 1447 0588 D6       		.byte	-42
+ 1448 0589 01       		.byte	1
+ 1449 058a E0       		.byte	-32
+ 1450 058b 01       		.byte	1
+ 1451 058c 83       		.byte	-125
+ 1452 058d 01       		.byte	1
+ 1453 058e 90       		.byte	-112
+ 1454 058f 01       		.byte	1
+ 1455 0590 9B       		.byte	-101
+ 1456 0591 01       		.byte	1
+ 1457 0592 A6       		.byte	-90
+ 1458 0593 03       		.byte	3
+ 1459 0594 AE       		.byte	-82
+ 1460 0595 01       		.byte	1
+ 1461 0596 B0       		.byte	-80
+ 1462 0597 02       		.byte	2
+ 1463 0598 B2       		.byte	-78
+ 1464 0599 01       		.byte	1
+ 1465 059a B3       		.byte	-77
+ 1466 059b 01       		.byte	1
+ 1467 059c BB       		.byte	-69
+ 1468 059d 02       		.byte	2
+ 1469 059e BE       		.byte	-66
+ 1470 059f 04       		.byte	4
+ 1471 05a0 BF       		.byte	-65
+ 1472 05a1 04       		.byte	4
+ 1473 05a2 D2       		.byte	-46
+ 1474 05a3 80       		.byte	-128
+ 1475 05a4 D8       		.byte	-40
+ 1476 05a5 04       		.byte	4
+ 1477 05a6 D9       		.byte	-39
+ 1478 05a7 04       		.byte	4
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccXPoakb.s 			page 27
+
+
+ 1479 05a8 DB       		.byte	-37
+ 1480 05a9 04       		.byte	4
+ 1481 05aa DC       		.byte	-36
+ 1482 05ab 40       		.byte	64
+ 1483 05ac DF       		.byte	-33
+ 1484 05ad 01       		.byte	1
+ 1485 05ae 00       		.byte	0
+ 1486 05af 42       		.byte	66
+ 1487 05b0 03       		.byte	3
+ 1488 05b1 28       		.byte	40
+ 1489 05b2 08       		.byte	8
+ 1490 05b3 06       		.byte	6
+ 1491 05b4 0A       		.byte	10
+ 1492 05b5 01       		.byte	1
+ 1493 05b6 0B       		.byte	11
+ 1494 05b7 08       		.byte	8
+ 1495 05b8 0E       		.byte	14
+ 1496 05b9 80       		.byte	-128
+ 1497 05ba 10       		.byte	16
+ 1498 05bb A8       		.byte	-88
+ 1499 05bc 13       		.byte	19
+ 1500 05bd 40       		.byte	64
+ 1501 05be 15       		.byte	21
+ 1502 05bf 08       		.byte	8
+ 1503 05c0 17       		.byte	23
+ 1504 05c1 80       		.byte	-128
+ 1505 05c2 19       		.byte	25
+ 1506 05c3 81       		.byte	-127
+ 1507 05c4 1A       		.byte	26
+ 1508 05c5 41       		.byte	65
+ 1509 05c6 1B       		.byte	27
+ 1510 05c7 20       		.byte	32
+ 1511 05c8 1D       		.byte	29
+ 1512 05c9 08       		.byte	8
+ 1513 05ca 1E       		.byte	30
+ 1514 05cb 80       		.byte	-128
+ 1515 05cc 20       		.byte	32
+ 1516 05cd 04       		.byte	4
+ 1517 05ce 22       		.byte	34
+ 1518 05cf 08       		.byte	8
+ 1519 05d0 23       		.byte	35
+ 1520 05d1 62       		.byte	98
+ 1521 05d2 24       		.byte	36
+ 1522 05d3 40       		.byte	64
+ 1523 05d4 26       		.byte	38
+ 1524 05d5 04       		.byte	4
+ 1525 05d6 29       		.byte	41
+ 1526 05d7 81       		.byte	-127
+ 1527 05d8 2A       		.byte	42
+ 1528 05d9 02       		.byte	2
+ 1529 05da 2B       		.byte	43
+ 1530 05db 08       		.byte	8
+ 1531 05dc 30       		.byte	48
+ 1532 05dd 84       		.byte	-124
+ 1533 05de 32       		.byte	50
+ 1534 05df 06       		.byte	6
+ 1535 05e0 33       		.byte	51
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccXPoakb.s 			page 28
+
+
+ 1536 05e1 20       		.byte	32
+ 1537 05e2 37       		.byte	55
+ 1538 05e3 20       		.byte	32
+ 1539 05e4 38       		.byte	56
+ 1540 05e5 69       		.byte	105
+ 1541 05e6 3F       		.byte	63
+ 1542 05e7 01       		.byte	1
+ 1543 05e8 40       		.byte	64
+ 1544 05e9 44       		.byte	68
+ 1545 05ea 42       		.byte	66
+ 1546 05eb 02       		.byte	2
+ 1547 05ec 48       		.byte	72
+ 1548 05ed 01       		.byte	1
+ 1549 05ee 4A       		.byte	74
+ 1550 05ef 0A       		.byte	10
+ 1551 05f0 4B       		.byte	75
+ 1552 05f1 01       		.byte	1
+ 1553 05f2 53       		.byte	83
+ 1554 05f3 02       		.byte	2
+ 1555 05f4 58       		.byte	88
+ 1556 05f5 80       		.byte	-128
+ 1557 05f6 60       		.byte	96
+ 1558 05f7 03       		.byte	3
+ 1559 05f8 77       		.byte	119
+ 1560 05f9 80       		.byte	-128
+ 1561 05fa 82       		.byte	-126
+ 1562 05fb 04       		.byte	4
+ 1563 05fc 83       		.byte	-125
+ 1564 05fd 01       		.byte	1
+ 1565 05fe 88       		.byte	-120
+ 1566 05ff 80       		.byte	-128
+ 1567 0600 8A       		.byte	-118
+ 1568 0601 02       		.byte	2
+ 1569 0602 8B       		.byte	-117
+ 1570 0603 04       		.byte	4
+ 1571 0604 90       		.byte	-112
+ 1572 0605 28       		.byte	40
+ 1573 0606 91       		.byte	-111
+ 1574 0607 08       		.byte	8
+ 1575 0608 92       		.byte	-110
+ 1576 0609 08       		.byte	8
+ 1577 060a 94       		.byte	-108
+ 1578 060b 41       		.byte	65
+ 1579 060c 96       		.byte	-106
+ 1580 060d 41       		.byte	65
+ 1581 060e 97       		.byte	-105
+ 1582 060f 02       		.byte	2
+ 1583 0610 9F       		.byte	-97
+ 1584 0611 02       		.byte	2
+ 1585 0612 A0       		.byte	-96
+ 1586 0613 A9       		.byte	-87
+ 1587 0614 A3       		.byte	-93
+ 1588 0615 08       		.byte	8
+ 1589 0616 A5       		.byte	-91
+ 1590 0617 08       		.byte	8
+ 1591 0618 A7       		.byte	-89
+ 1592 0619 22       		.byte	34
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccXPoakb.s 			page 29
+
+
+ 1593 061a AE       		.byte	-82
+ 1594 061b 02       		.byte	2
+ 1595 061c AF       		.byte	-81
+ 1596 061d 04       		.byte	4
+ 1597 061e B1       		.byte	-79
+ 1598 061f 04       		.byte	4
+ 1599 0620 B7       		.byte	-73
+ 1600 0621 20       		.byte	32
+ 1601 0622 C0       		.byte	-64
+ 1602 0623 0F       		.byte	15
+ 1603 0624 C2       		.byte	-62
+ 1604 0625 1F       		.byte	31
+ 1605 0626 C4       		.byte	-60
+ 1606 0627 AF       		.byte	-81
+ 1607 0628 CA       		.byte	-54
+ 1608 0629 0D       		.byte	13
+ 1609 062a CC       		.byte	-52
+ 1610 062b 2F       		.byte	47
+ 1611 062c CE       		.byte	-50
+ 1612 062d 8F       		.byte	-113
+ 1613 062e D0       		.byte	-48
+ 1614 062f 0D       		.byte	13
+ 1615 0630 D2       		.byte	-46
+ 1616 0631 0C       		.byte	12
+ 1617 0632 D6       		.byte	-42
+ 1618 0633 08       		.byte	8
+ 1619 0634 D8       		.byte	-40
+ 1620 0635 08       		.byte	8
+ 1621 0636 30       		.byte	48
+ 1622 0637 02       		.byte	2
+ 1623 0638 33       		.byte	51
+ 1624 0639 20       		.byte	32
+ 1625 063a 36       		.byte	54
+ 1626 063b 40       		.byte	64
+ 1627 063c CC       		.byte	-52
+ 1628 063d 70       		.byte	112
+ 1629 063e 52       		.byte	82
+ 1630 063f 08       		.byte	8
+ 1631 0640 A4       		.byte	-92
+ 1632 0641 02       		.byte	2
+ 1633 0642 A6       		.byte	-90
+ 1634 0643 40       		.byte	64
+ 1635 0644 A7       		.byte	-89
+ 1636 0645 20       		.byte	32
+ 1637 0646 D4       		.byte	-44
+ 1638 0647 20       		.byte	32
+ 1639 0648 80       		.byte	-128
+ 1640 0649 02       		.byte	2
+ 1641 064a A4       		.byte	-92
+ 1642 064b 02       		.byte	2
+ 1643 064c A6       		.byte	-90
+ 1644 064d 48       		.byte	72
+ 1645 064e A7       		.byte	-89
+ 1646 064f 20       		.byte	32
+ 1647 0650 E2       		.byte	-30
+ 1648 0651 20       		.byte	32
+ 1649 0652 A6       		.byte	-90
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccXPoakb.s 			page 30
+
+
+ 1650 0653 48       		.byte	72
+ 1651 0654 AB       		.byte	-85
+ 1652 0655 20       		.byte	32
+ 1653 0656 EE       		.byte	-18
+ 1654 0657 20       		.byte	32
+ 1655 0658 1B       		.byte	27
+ 1656 0659 04       		.byte	4
+ 1657 065a C6       		.byte	-58
+ 1658 065b 08       		.byte	8
+ 1659 065c 47       		.byte	71
+ 1660 065d 80       		.byte	-128
+ 1661 065e 8B       		.byte	-117
+ 1662 065f 40       		.byte	64
+ 1663 0660 AB       		.byte	-85
+ 1664 0661 04       		.byte	4
+ 1665 0662 D0       		.byte	-48
+ 1666 0663 04       		.byte	4
+ 1667 0664 E0       		.byte	-32
+ 1668 0665 04       		.byte	4
+ 1669 0666 23       		.byte	35
+ 1670 0667 20       		.byte	32
+ 1671 0668 26       		.byte	38
+ 1672 0669 08       		.byte	8
+ 1673 066a 83       		.byte	-125
+ 1674 066b 20       		.byte	32
+ 1675 066c A6       		.byte	-90
+ 1676 066d 08       		.byte	8
+ 1677 066e AE       		.byte	-82
+ 1678 066f 40       		.byte	64
+ 1679 0670 C8       		.byte	-56
+ 1680 0671 C0       		.byte	-64
+ 1681 0672 E0       		.byte	-32
+ 1682 0673 80       		.byte	-128
+ 1683 0674 EE       		.byte	-18
+ 1684 0675 40       		.byte	64
+ 1685 0676 18       		.byte	24
+ 1686 0677 08       		.byte	8
+ 1687 0678 8C       		.byte	-116
+ 1688 0679 04       		.byte	4
+ 1689 067a C6       		.byte	-58
+ 1690 067b 40       		.byte	64
+ 1691 067c 08       		.byte	8
+ 1692 067d 04       		.byte	4
+ 1693 067e 09       		.byte	9
+ 1694 067f 20       		.byte	32
+ 1695 0680 0D       		.byte	13
+ 1696 0681 40       		.byte	64
+ 1697 0682 59       		.byte	89
+ 1698 0683 01       		.byte	1
+ 1699 0684 83       		.byte	-125
+ 1700 0685 80       		.byte	-128
+ 1701 0686 93       		.byte	-109
+ 1702 0687 40       		.byte	64
+ 1703 0688 9F       		.byte	-97
+ 1704 0689 80       		.byte	-128
+ 1705 068a C2       		.byte	-62
+ 1706 068b 0B       		.byte	11
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccXPoakb.s 			page 31
+
+
+ 1707 068c D6       		.byte	-42
+ 1708 068d 02       		.byte	2
+ 1709 068e 10       		.byte	16
+ 1710 068f 10       		.byte	16
+ 1711 0690 19       		.byte	25
+ 1712 0691 01       		.byte	1
+ 1713 0692 73       		.byte	115
+ 1714 0693 40       		.byte	64
+ 1715 0694 78       		.byte	120
+ 1716 0695 04       		.byte	4
+ 1717 0696 88       		.byte	-120
+ 1718 0697 10       		.byte	16
+ 1719 0698 93       		.byte	-109
+ 1720 0699 40       		.byte	64
+ 1721 069a 98       		.byte	-104
+ 1722 069b 04       		.byte	4
+ 1723 069c 9D       		.byte	-99
+ 1724 069d 01       		.byte	1
+ 1725 069e B1       		.byte	-79
+ 1726 069f 20       		.byte	32
+ 1727 06a0 B5       		.byte	-75
+ 1728 06a1 40       		.byte	64
+ 1729 06a2 C4       		.byte	-60
+ 1730 06a3 08       		.byte	8
+ 1731 06a4 C6       		.byte	-58
+ 1732 06a5 08       		.byte	8
+ 1733 06a6 DC       		.byte	-36
+ 1734 06a7 01       		.byte	1
+ 1735 06a8 DE       		.byte	-34
+ 1736 06a9 02       		.byte	2
+ 1737 06aa E2       		.byte	-30
+ 1738 06ab 04       		.byte	4
+ 1739 06ac EE       		.byte	-18
+ 1740 06ad 09       		.byte	9
+ 1741 06ae 00       		.byte	0
+ 1742 06af 11       		.byte	17
+ 1743 06b0 02       		.byte	2
+ 1744 06b1 14       		.byte	20
+ 1745 06b2 0C       		.byte	12
+ 1746 06b3 11       		.byte	17
+ 1747 06b4 10       		.byte	16
+ 1748 06b5 11       		.byte	17
+ 1749 06b6 11       		.byte	17
+ 1750 06b7 01       		.byte	1
+ 1751 06b8 12       		.byte	18
+ 1752 06b9 14       		.byte	20
+ 1753 06ba 1A       		.byte	26
+ 1754 06bb 01       		.byte	1
+ 1755 06bc 1C       		.byte	28
+ 1756 06bd 11       		.byte	17
+ 1757 06be 1D       		.byte	29
+ 1758 06bf 01       		.byte	1
+ 1759 06c0 00       		.byte	0
+ 1760 06c1 3F       		.byte	63
+ 1761 06c2 00       		.byte	0
+ 1762 06c3 00       		.byte	0
+ 1763 06c4 00       		.byte	0
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccXPoakb.s 			page 32
+
+
+ 1764 06c5 12       		.byte	18
+ 1765 06c6 00       		.byte	0
+ 1766 06c7 05       		.byte	5
+ 1767 06c8 01       		.byte	1
+ 1768 06c9 3F       		.byte	63
+ 1769 06ca 00       		.byte	0
+ 1770 06cb 00       		.byte	0
+ 1771 06cc 02       		.byte	2
+ 1772 06cd 3F       		.byte	63
+ 1773 06ce 00       		.byte	0
+ 1774 06cf 00       		.byte	0
+ 1775 06d0 01       		.byte	1
+ 1776 06d1 40       		.byte	64
+ 1777 06d2 00       		.byte	0
+ 1778 06d3 00       		.byte	0
+ 1779 06d4 01       		.byte	1
+ 1780 06d5 20       		.byte	32
+ 1781 06d6 00       		.byte	0
+ 1782 06d7 00       		.byte	0
+ 1783 06d8 00       		.byte	0
+ 1784 06d9 09       		.byte	9
+ 1785 06da 00       		.byte	0
+ 1786 06db 06       		.byte	6
+ 1787 06dc 00       		.byte	0
+ 1788 06dd 00       		.byte	0
+ 1789 06de 00       		.byte	0
+ 1790 06df 00       		.byte	0
+ 1791 06e0 01       		.byte	1
+ 1792 06e1 40       		.byte	64
+ 1793 06e2 00       		.byte	0
+ 1794 06e3 00       		.byte	0
+ 1795 06e4 00       		.byte	0
+ 1796 06e5 00       		.byte	0
+ 1797 06e6 02       		.byte	2
+ 1798 06e7 40       		.byte	64
+ 1799 06e8 00       		.byte	0
+ 1800 06e9 00       		.byte	0
+ 1801 06ea 00       		.byte	0
+ 1802 06eb 40       		.byte	64
+ 1803 06ec 00       		.byte	0
+ 1804 06ed 04       		.byte	4
+ 1805 06ee 0A       		.byte	10
+ 1806 06ef 18       		.byte	24
+ 1807 06f0 00       		.byte	0
+ 1808 06f1 00       		.byte	0
+ 1809 06f2 04       		.byte	4
+ 1810 06f3 00       		.byte	0
+ 1811 06f4 01       		.byte	1
+ 1812 06f5 1C       		.byte	28
+ 1813 06f6 08       		.byte	8
+ 1814 06f7 03       		.byte	3
+ 1815 06f8 02       		.byte	2
+ 1816 06f9 40       		.byte	64
+ 1817 06fa 04       		.byte	4
+ 1818 06fb 20       		.byte	32
+ 1819 06fc 00       		.byte	0
+ 1820 06fd 20       		.byte	32
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccXPoakb.s 			page 33
+
+
+ 1821 06fe 00       		.byte	0
+ 1822 06ff 00       		.byte	0
+ 1823 0700 00       		.byte	0
+ 1824 0701 00       		.byte	0
+ 1825 0702 11       		.byte	17
+ 1826 0703 00       		.byte	0
+ 1827 0704 30       		.byte	48
+ 1828 0705 02       		.byte	2
+ 1829 0706 00       		.byte	0
+ 1830 0707 00       		.byte	0
+ 1831 0708 00       		.byte	0
+ 1832 0709 0E       		.byte	14
+ 1833 070a C0       		.byte	-64
+ 1834 070b 52       		.byte	82
+ 1835 070c 3D       		.byte	61
+ 1836 070d FF       		.byte	-1
+ 1837 070e FF       		.byte	-1
+ 1838 070f FF       		.byte	-1
+ 1839 0710 00       		.byte	0
+ 1840 0711 AF       		.byte	-81
+ 1841 0712 07       		.byte	7
+ 1842 0713 01       		.byte	1
+ 1843 0714 18       		.byte	24
+ 1844 0715 00       		.byte	0
+ 1845 0716 00       		.byte	0
+ 1846 0717 00       		.byte	0
+ 1847 0718 00       		.byte	0
+ 1848 0719 00       		.byte	0
+ 1849 071a 02       		.byte	2
+ 1850 071b 13       		.byte	19
+ 1851 071c 04       		.byte	4
+ 1852 071d 04       		.byte	4
+ 1853 071e 04       		.byte	4
+ 1854 071f 04       		.byte	4
+ 1855 0720 40       		.byte	64
+ 1856 0721 40       		.byte	64
+ 1857 0722 00       		.byte	0
+ 1858 0723 01       		.byte	1
+ 1859 0724 40       		.byte	64
+ 1860 0725 00       		.byte	0
+ 1861 0726 80       		.byte	-128
+ 1862 0727 00       		.byte	0
+ 1863 0728 40       		.byte	64
+ 1864 0729 40       		.byte	64
+ 1865 072a 80       		.byte	-128
+ 1866 072b 00       		.byte	0
+ 1867 072c 40       		.byte	64
+ 1868 072d 00       		.byte	0
+ 1869 072e 50       		.byte	80
+ 1870 072f A8       		.byte	-88
+ 1871 0730 40       		.byte	64
+ 1872 0731 20       		.byte	32
+ 1873 0732 50       		.byte	80
+ 1874 0733 A8       		.byte	-88
+ 1875 0734 00       		.byte	0
+ 1876 0735 00       		.byte	0
+ 1877 0736 00       		.byte	0
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccXPoakb.s 			page 34
+
+
+ 1878 0737 00       		.byte	0
+ 1879 0738 00       		.byte	0
+ 1880 0739 00       		.byte	0
+ 1881 073a 00       		.byte	0
+ 1882 073b 00       		.byte	0
+ 1883 073c 00       		.byte	0
+ 1884 073d 00       		.byte	0
+ 1885 073e 00       		.byte	0
+ 1886 073f 00       		.byte	0
+ 1887 0740 00       		.byte	0
+ 1888 0741 00       		.byte	0
+ 1889 0742 00       		.byte	0
+ 1890 0743 00       		.byte	0
+ 1891 0744 00       		.byte	0
+ 1892 0745 02       		.byte	2
+ 1893 0746 B3       		.byte	-77
+ 1894 0747 88       		.byte	-120
+ 1895 0748 4C       		.byte	76
+ 1896 0749 60       		.byte	96
+ 1897 074a A3       		.byte	-93
+ 1898 074b 00       		.byte	0
+ 1899 074c 03       		.byte	3
+ 1900 074d 20       		.byte	32
+ 1901 074e 00       		.byte	0
+ 1902 074f 00       		.byte	0
+ 1903 0750 FF       		.byte	-1
+ 1904 0751 73       		.byte	115
+ 1905 0752 00       		.byte	0
+ 1906 0753 00       		.byte	0
+ 1907 0754 42       		.byte	66
+ 1908 0755 00       		.byte	0
+ 1909 0756 00       		.byte	0
+ 1910 0757 13       		.byte	19
+ 1911 0758 01       		.byte	1
+ 1912 0759 01       		.byte	1
+ 1913 075a 00       		.byte	0
+ 1914 075b 08       		.byte	8
+ 1915 075c F3       		.byte	-13
+ 1916 075d 70       		.byte	112
+ 1917 075e 0C       		.byte	12
+ 1918 075f 03       		.byte	3
+ 1919 0760 4F       		.byte	79
+ 1920 0761 40       		.byte	64
+ 1921 0762 90       		.byte	-112
+ 1922 0763 00       		.byte	0
+ 1923 0764 08       		.byte	8
+ 1924 0765 13       		.byte	19
+ 1925 0766 00       		.byte	0
+ 1926 0767 60       		.byte	96
+ 1927 0768 04       		.byte	4
+ 1928 0769 00       		.byte	0
+ 1929 076a 00       		.byte	0
+ 1930 076b 00       		.byte	0
+ 1931 076c 0C       		.byte	12
+ 1932 076d 03       		.byte	3
+ 1933 076e 00       		.byte	0
+ 1934 076f 04       		.byte	4
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccXPoakb.s 			page 35
+
+
+ 1935 0770 00       		.byte	0
+ 1936 0771 60       		.byte	96
+ 1937 0772 40       		.byte	64
+ 1938 0773 13       		.byte	19
+ 1939 0774 0F       		.byte	15
+ 1940 0775 80       		.byte	-128
+ 1941 0776 00       		.byte	0
+ 1942 0777 70       		.byte	112
+ 1943 0778 7C       		.byte	124
+ 1944 0779 0C       		.byte	12
+ 1945 077a 8C       		.byte	-116
+ 1946 077b 03       		.byte	3
+ 1947 077c 00       		.byte	0
+ 1948 077d 00       		.byte	0
+ 1949 077e A2       		.byte	-94
+ 1950 077f 00       		.byte	0
+ 1951 0780 00       		.byte	0
+ 1952 0781 00       		.byte	0
+ 1953 0782 00       		.byte	0
+ 1954 0783 10       		.byte	16
+ 1955 0784 15       		.byte	21
+ 1956 0785 04       		.byte	4
+ 1957 0786 06       		.byte	6
+ 1958 0787 00       		.byte	0
+ 1959 0788 02       		.byte	2
+ 1960 0789 C0       		.byte	-64
+ 1961 078a 00       		.byte	0
+ 1962 078b E0       		.byte	-32
+ 1963 078c 22       		.byte	34
+ 1964 078d FF       		.byte	-1
+ 1965 078e FF       		.byte	-1
+ 1966 078f FF       		.byte	-1
+ 1967 0790 62       		.byte	98
+ 1968 0791 A0       		.byte	-96
+ 1969 0792 F0       		.byte	-16
+ 1970 0793 41       		.byte	65
+ 1971 0794 0C       		.byte	12
+ 1972 0795 00       		.byte	0
+ 1973 0796 00       		.byte	0
+ 1974 0797 00       		.byte	0
+ 1975 0798 00       		.byte	0
+ 1976 0799 00       		.byte	0
+ 1977 079a 08       		.byte	8
+ 1978 079b 00       		.byte	0
+ 1979 079c 04       		.byte	4
+ 1980 079d 04       		.byte	4
+ 1981 079e 04       		.byte	4
+ 1982 079f 04       		.byte	4
+ 1983 07a0 44       		.byte	68
+ 1984 07a1 94       		.byte	-108
+ 1985 07a2 00       		.byte	0
+ 1986 07a3 01       		.byte	1
+ 1987 07a4 00       		.byte	0
+ 1988 07a5 00       		.byte	0
+ 1989 07a6 00       		.byte	0
+ 1990 07a7 00       		.byte	0
+ 1991 07a8 00       		.byte	0
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccXPoakb.s 			page 36
+
+
+ 1992 07a9 00       		.byte	0
+ 1993 07aa 40       		.byte	64
+ 1994 07ab 02       		.byte	2
+ 1995 07ac 00       		.byte	0
+ 1996 07ad 10       		.byte	16
+ 1997 07ae 30       		.byte	48
+ 1998 07af 10       		.byte	16
+ 1999 07b0 00       		.byte	0
+ 2000 07b1 10       		.byte	16
+ 2001 07b2 10       		.byte	16
+ 2002 07b3 12       		.byte	18
+ 2003 07b4 00       		.byte	0
+ 2004 07b5 00       		.byte	0
+ 2005 07b6 00       		.byte	0
+ 2006 07b7 00       		.byte	0
+ 2007 07b8 00       		.byte	0
+ 2008 07b9 00       		.byte	0
+ 2009 07ba 00       		.byte	0
+ 2010 07bb 00       		.byte	0
+ 2011 07bc 00       		.byte	0
+ 2012 07bd 00       		.byte	0
+ 2013 07be 00       		.byte	0
+ 2014 07bf 00       		.byte	0
+ 2015 07c0 00       		.byte	0
+ 2016 07c1 00       		.byte	0
+ 2017 07c2 00       		.byte	0
+ 2018 07c3 00       		.byte	0
+ 2019 07c4 00       		.byte	0
+ 2020 07c5 02       		.byte	2
+ 2021 07c6 02       		.byte	2
+ 2022 07c7 00       		.byte	0
+ 2023 07c8 02       		.byte	2
+ 2024 07c9 00       		.byte	0
+ 2025 07ca 10       		.byte	16
+ 2026 07cb 00       		.byte	0
+ 2027 07cc 80       		.byte	-128
+ 2028 07cd 00       		.byte	0
+ 2029 07ce 40       		.byte	64
+ 2030 07cf 80       		.byte	-128
+ 2031 07d0 80       		.byte	-128
+ 2032 07d1 00       		.byte	0
+ 2033 07d2 80       		.byte	-128
+ 2034 07d3 00       		.byte	0
+ 2035 07d4 00       		.byte	0
+ 2036 07d5 00       		.byte	0
+ 2037 07d6 00       		.byte	0
+ 2038 07d7 00       		.byte	0
+ 2039 07d8 C0       		.byte	-64
+ 2040 07d9 00       		.byte	0
+ 2041 07da 10       		.byte	16
+ 2042 07db E0       		.byte	-32
+ 2043 07dc 20       		.byte	32
+ 2044 07dd 00       		.byte	0
+ 2045 07de 20       		.byte	32
+ 2046 07df 00       		.byte	0
+ 2047 07e0 00       		.byte	0
+ 2048 07e1 00       		.byte	0
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccXPoakb.s 			page 37
+
+
+ 2049 07e2 00       		.byte	0
+ 2050 07e3 00       		.byte	0
+ 2051 07e4 00       		.byte	0
+ 2052 07e5 00       		.byte	0
+ 2053 07e6 00       		.byte	0
+ 2054 07e7 00       		.byte	0
+ 2055 07e8 00       		.byte	0
+ 2056 07e9 00       		.byte	0
+ 2057 07ea 3F       		.byte	63
+ 2058 07eb 00       		.byte	0
+ 2059              		.text
+ 2060              	.Letext0:
+ 2061              		.file 1 ".\\Generated_Source\\PSoC5\\cymetadata.c"
+ 2062              		.file 2 ".\\Generated_Source\\PSoC5\\cytypes.h"
+ 2063              		.section	.debug_info,"",%progbits
+ 2064              	.Ldebug_info0:
+ 2065 0000 D5000000 		.4byte	0xd5
+ 2066 0004 0400     		.2byte	0x4
+ 2067 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 2068 000a 04       		.byte	0x4
+ 2069 000b 01       		.uleb128 0x1
+ 2070 000c 4F000000 		.4byte	.LASF15
+ 2071 0010 01       		.byte	0x1
+ 2072 0011 DD000000 		.4byte	.LASF16
+ 2073 0015 00000000 		.4byte	.LASF17
+ 2074 0019 00000000 		.4byte	.Ldebug_line0
+ 2075 001d 02       		.uleb128 0x2
+ 2076 001e 01       		.byte	0x1
+ 2077 001f 06       		.byte	0x6
+ 2078 0020 BF010000 		.4byte	.LASF0
+ 2079 0024 02       		.uleb128 0x2
+ 2080 0025 01       		.byte	0x1
+ 2081 0026 08       		.byte	0x8
+ 2082 0027 09010000 		.4byte	.LASF1
+ 2083 002b 02       		.uleb128 0x2
+ 2084 002c 02       		.byte	0x2
+ 2085 002d 05       		.byte	0x5
+ 2086 002e A6010000 		.4byte	.LASF2
+ 2087 0032 02       		.uleb128 0x2
+ 2088 0033 02       		.byte	0x2
+ 2089 0034 07       		.byte	0x7
+ 2090 0035 29010000 		.4byte	.LASF3
+ 2091 0039 02       		.uleb128 0x2
+ 2092 003a 04       		.byte	0x4
+ 2093 003b 05       		.byte	0x5
+ 2094 003c B6010000 		.4byte	.LASF4
+ 2095 0040 02       		.uleb128 0x2
+ 2096 0041 04       		.byte	0x4
+ 2097 0042 07       		.byte	0x7
+ 2098 0043 17010000 		.4byte	.LASF5
+ 2099 0047 02       		.uleb128 0x2
+ 2100 0048 08       		.byte	0x8
+ 2101 0049 05       		.byte	0x5
+ 2102 004a 93010000 		.4byte	.LASF6
+ 2103 004e 02       		.uleb128 0x2
+ 2104 004f 08       		.byte	0x8
+ 2105 0050 07       		.byte	0x7
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccXPoakb.s 			page 38
+
+
+ 2106 0051 62010000 		.4byte	.LASF7
+ 2107 0055 03       		.uleb128 0x3
+ 2108 0056 04       		.byte	0x4
+ 2109 0057 05       		.byte	0x5
+ 2110 0058 696E7400 		.ascii	"int\000"
+ 2111 005c 02       		.uleb128 0x2
+ 2112 005d 04       		.byte	0x4
+ 2113 005e 07       		.byte	0x7
+ 2114 005f 55010000 		.4byte	.LASF8
+ 2115 0063 04       		.uleb128 0x4
+ 2116 0064 B0010000 		.4byte	.LASF18
+ 2117 0068 02       		.byte	0x2
+ 2118 0069 9201     		.2byte	0x192
+ 2119 006b 24000000 		.4byte	0x24
+ 2120 006f 02       		.uleb128 0x2
+ 2121 0070 04       		.byte	0x4
+ 2122 0071 04       		.byte	0x4
+ 2123 0072 03010000 		.4byte	.LASF9
+ 2124 0076 02       		.uleb128 0x2
+ 2125 0077 08       		.byte	0x8
+ 2126 0078 04       		.byte	0x4
+ 2127 0079 3C010000 		.4byte	.LASF10
+ 2128 007d 02       		.uleb128 0x2
+ 2129 007e 01       		.byte	0x1
+ 2130 007f 08       		.byte	0x8
+ 2131 0080 A1010000 		.4byte	.LASF11
+ 2132 0084 05       		.uleb128 0x5
+ 2133 0085 63000000 		.4byte	0x63
+ 2134 0089 94000000 		.4byte	0x94
+ 2135 008d 06       		.uleb128 0x6
+ 2136 008e 94000000 		.4byte	0x94
+ 2137 0092 3F       		.byte	0x3f
+ 2138 0093 00       		.byte	0
+ 2139 0094 02       		.uleb128 0x2
+ 2140 0095 04       		.byte	0x4
+ 2141 0096 07       		.byte	0x7
+ 2142 0097 8A010000 		.4byte	.LASF12
+ 2143 009b 07       		.uleb128 0x7
+ 2144 009c 79010000 		.4byte	.LASF13
+ 2145 00a0 01       		.byte	0x1
+ 2146 00a1 1F       		.byte	0x1f
+ 2147 00a2 AC000000 		.4byte	0xac
+ 2148 00a6 05       		.uleb128 0x5
+ 2149 00a7 03       		.byte	0x3
+ 2150 00a8 00000000 		.4byte	cy_meta_loadable
+ 2151 00ac 08       		.uleb128 0x8
+ 2152 00ad 84000000 		.4byte	0x84
+ 2153 00b1 05       		.uleb128 0x5
+ 2154 00b2 63000000 		.4byte	0x63
+ 2155 00b6 C2000000 		.4byte	0xc2
+ 2156 00ba 09       		.uleb128 0x9
+ 2157 00bb 94000000 		.4byte	0x94
+ 2158 00bf EB07     		.2byte	0x7eb
+ 2159 00c1 00       		.byte	0
+ 2160 00c2 07       		.uleb128 0x7
+ 2161 00c3 43010000 		.4byte	.LASF14
+ 2162 00c7 01       		.byte	0x1
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccXPoakb.s 			page 39
+
+
+ 2163 00c8 34       		.byte	0x34
+ 2164 00c9 D3000000 		.4byte	0xd3
+ 2165 00cd 05       		.uleb128 0x5
+ 2166 00ce 03       		.byte	0x3
+ 2167 00cf 00000000 		.4byte	cy_meta_configecc
+ 2168 00d3 08       		.uleb128 0x8
+ 2169 00d4 B1000000 		.4byte	0xb1
+ 2170 00d8 00       		.byte	0
+ 2171              		.section	.debug_abbrev,"",%progbits
+ 2172              	.Ldebug_abbrev0:
+ 2173 0000 01       		.uleb128 0x1
+ 2174 0001 11       		.uleb128 0x11
+ 2175 0002 01       		.byte	0x1
+ 2176 0003 25       		.uleb128 0x25
+ 2177 0004 0E       		.uleb128 0xe
+ 2178 0005 13       		.uleb128 0x13
+ 2179 0006 0B       		.uleb128 0xb
+ 2180 0007 03       		.uleb128 0x3
+ 2181 0008 0E       		.uleb128 0xe
+ 2182 0009 1B       		.uleb128 0x1b
+ 2183 000a 0E       		.uleb128 0xe
+ 2184 000b 10       		.uleb128 0x10
+ 2185 000c 17       		.uleb128 0x17
+ 2186 000d 00       		.byte	0
+ 2187 000e 00       		.byte	0
+ 2188 000f 02       		.uleb128 0x2
+ 2189 0010 24       		.uleb128 0x24
+ 2190 0011 00       		.byte	0
+ 2191 0012 0B       		.uleb128 0xb
+ 2192 0013 0B       		.uleb128 0xb
+ 2193 0014 3E       		.uleb128 0x3e
+ 2194 0015 0B       		.uleb128 0xb
+ 2195 0016 03       		.uleb128 0x3
+ 2196 0017 0E       		.uleb128 0xe
+ 2197 0018 00       		.byte	0
+ 2198 0019 00       		.byte	0
+ 2199 001a 03       		.uleb128 0x3
+ 2200 001b 24       		.uleb128 0x24
+ 2201 001c 00       		.byte	0
+ 2202 001d 0B       		.uleb128 0xb
+ 2203 001e 0B       		.uleb128 0xb
+ 2204 001f 3E       		.uleb128 0x3e
+ 2205 0020 0B       		.uleb128 0xb
+ 2206 0021 03       		.uleb128 0x3
+ 2207 0022 08       		.uleb128 0x8
+ 2208 0023 00       		.byte	0
+ 2209 0024 00       		.byte	0
+ 2210 0025 04       		.uleb128 0x4
+ 2211 0026 16       		.uleb128 0x16
+ 2212 0027 00       		.byte	0
+ 2213 0028 03       		.uleb128 0x3
+ 2214 0029 0E       		.uleb128 0xe
+ 2215 002a 3A       		.uleb128 0x3a
+ 2216 002b 0B       		.uleb128 0xb
+ 2217 002c 3B       		.uleb128 0x3b
+ 2218 002d 05       		.uleb128 0x5
+ 2219 002e 49       		.uleb128 0x49
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccXPoakb.s 			page 40
+
+
+ 2220 002f 13       		.uleb128 0x13
+ 2221 0030 00       		.byte	0
+ 2222 0031 00       		.byte	0
+ 2223 0032 05       		.uleb128 0x5
+ 2224 0033 01       		.uleb128 0x1
+ 2225 0034 01       		.byte	0x1
+ 2226 0035 49       		.uleb128 0x49
+ 2227 0036 13       		.uleb128 0x13
+ 2228 0037 01       		.uleb128 0x1
+ 2229 0038 13       		.uleb128 0x13
+ 2230 0039 00       		.byte	0
+ 2231 003a 00       		.byte	0
+ 2232 003b 06       		.uleb128 0x6
+ 2233 003c 21       		.uleb128 0x21
+ 2234 003d 00       		.byte	0
+ 2235 003e 49       		.uleb128 0x49
+ 2236 003f 13       		.uleb128 0x13
+ 2237 0040 2F       		.uleb128 0x2f
+ 2238 0041 0B       		.uleb128 0xb
+ 2239 0042 00       		.byte	0
+ 2240 0043 00       		.byte	0
+ 2241 0044 07       		.uleb128 0x7
+ 2242 0045 34       		.uleb128 0x34
+ 2243 0046 00       		.byte	0
+ 2244 0047 03       		.uleb128 0x3
+ 2245 0048 0E       		.uleb128 0xe
+ 2246 0049 3A       		.uleb128 0x3a
+ 2247 004a 0B       		.uleb128 0xb
+ 2248 004b 3B       		.uleb128 0x3b
+ 2249 004c 0B       		.uleb128 0xb
+ 2250 004d 49       		.uleb128 0x49
+ 2251 004e 13       		.uleb128 0x13
+ 2252 004f 3F       		.uleb128 0x3f
+ 2253 0050 19       		.uleb128 0x19
+ 2254 0051 02       		.uleb128 0x2
+ 2255 0052 18       		.uleb128 0x18
+ 2256 0053 00       		.byte	0
+ 2257 0054 00       		.byte	0
+ 2258 0055 08       		.uleb128 0x8
+ 2259 0056 26       		.uleb128 0x26
+ 2260 0057 00       		.byte	0
+ 2261 0058 49       		.uleb128 0x49
+ 2262 0059 13       		.uleb128 0x13
+ 2263 005a 00       		.byte	0
+ 2264 005b 00       		.byte	0
+ 2265 005c 09       		.uleb128 0x9
+ 2266 005d 21       		.uleb128 0x21
+ 2267 005e 00       		.byte	0
+ 2268 005f 49       		.uleb128 0x49
+ 2269 0060 13       		.uleb128 0x13
+ 2270 0061 2F       		.uleb128 0x2f
+ 2271 0062 05       		.uleb128 0x5
+ 2272 0063 00       		.byte	0
+ 2273 0064 00       		.byte	0
+ 2274 0065 00       		.byte	0
+ 2275              		.section	.debug_aranges,"",%progbits
+ 2276 0000 14000000 		.4byte	0x14
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccXPoakb.s 			page 41
+
+
+ 2277 0004 0200     		.2byte	0x2
+ 2278 0006 00000000 		.4byte	.Ldebug_info0
+ 2279 000a 04       		.byte	0x4
+ 2280 000b 00       		.byte	0
+ 2281 000c 0000     		.2byte	0
+ 2282 000e 0000     		.2byte	0
+ 2283 0010 00000000 		.4byte	0
+ 2284 0014 00000000 		.4byte	0
+ 2285              		.section	.debug_line,"",%progbits
+ 2286              	.Ldebug_line0:
+ 2287 0000 4F000000 		.section	.debug_str,"MS",%progbits,1
+ 2287      02004900 
+ 2287      00000201 
+ 2287      FB0E0D00 
+ 2287      01010101 
+ 2288              	.LASF17:
+ 2289 0000 433A5C55 		.ascii	"C:\\Users\\Patrick\\Documents\\GitHub\\PSoC 5LP FIl"
+ 2289      73657273 
+ 2289      5C506174 
+ 2289      7269636B 
+ 2289      5C446F63 
+ 2290 002e 65735C43 		.ascii	"es\\C-CAN_PSoC_DevKit\\C-CAN.cydsn\000"
+ 2290      2D43414E 
+ 2290      5F50536F 
+ 2290      435F4465 
+ 2290      764B6974 
+ 2291              	.LASF15:
+ 2292 004f 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
+ 2292      4320342E 
+ 2292      392E3320 
+ 2292      32303135 
+ 2292      30333033 
+ 2293 0082 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m3 -mthumb -g -O"
+ 2293      20726576 
+ 2293      6973696F 
+ 2293      6E203232 
+ 2293      31323230 
+ 2294 00b5 30202D66 		.ascii	"0 -ffunction-sections -ffat-lto-objects\000"
+ 2294      66756E63 
+ 2294      74696F6E 
+ 2294      2D736563 
+ 2294      74696F6E 
+ 2295              	.LASF16:
+ 2296 00dd 2E5C4765 		.ascii	".\\Generated_Source\\PSoC5\\cymetadata.c\000"
+ 2296      6E657261 
+ 2296      7465645F 
+ 2296      536F7572 
+ 2296      63655C50 
+ 2297              	.LASF9:
+ 2298 0103 666C6F61 		.ascii	"float\000"
+ 2298      7400
+ 2299              	.LASF1:
+ 2300 0109 756E7369 		.ascii	"unsigned char\000"
+ 2300      676E6564 
+ 2300      20636861 
+ 2300      7200
+ 2301              	.LASF5:
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccXPoakb.s 			page 42
+
+
+ 2302 0117 6C6F6E67 		.ascii	"long unsigned int\000"
+ 2302      20756E73 
+ 2302      69676E65 
+ 2302      6420696E 
+ 2302      7400
+ 2303              	.LASF3:
+ 2304 0129 73686F72 		.ascii	"short unsigned int\000"
+ 2304      7420756E 
+ 2304      7369676E 
+ 2304      65642069 
+ 2304      6E7400
+ 2305              	.LASF10:
+ 2306 013c 646F7562 		.ascii	"double\000"
+ 2306      6C6500
+ 2307              	.LASF14:
+ 2308 0143 63795F6D 		.ascii	"cy_meta_configecc\000"
+ 2308      6574615F 
+ 2308      636F6E66 
+ 2308      69676563 
+ 2308      6300
+ 2309              	.LASF8:
+ 2310 0155 756E7369 		.ascii	"unsigned int\000"
+ 2310      676E6564 
+ 2310      20696E74 
+ 2310      00
+ 2311              	.LASF7:
+ 2312 0162 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 2312      206C6F6E 
+ 2312      6720756E 
+ 2312      7369676E 
+ 2312      65642069 
+ 2313              	.LASF13:
+ 2314 0179 63795F6D 		.ascii	"cy_meta_loadable\000"
+ 2314      6574615F 
+ 2314      6C6F6164 
+ 2314      61626C65 
+ 2314      00
+ 2315              	.LASF12:
+ 2316 018a 73697A65 		.ascii	"sizetype\000"
+ 2316      74797065 
+ 2316      00
+ 2317              	.LASF6:
+ 2318 0193 6C6F6E67 		.ascii	"long long int\000"
+ 2318      206C6F6E 
+ 2318      6720696E 
+ 2318      7400
+ 2319              	.LASF11:
+ 2320 01a1 63686172 		.ascii	"char\000"
+ 2320      00
+ 2321              	.LASF2:
+ 2322 01a6 73686F72 		.ascii	"short int\000"
+ 2322      7420696E 
+ 2322      7400
+ 2323              	.LASF18:
+ 2324 01b0 75696E74 		.ascii	"uint8\000"
+ 2324      3800
+ 2325              	.LASF4:
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccXPoakb.s 			page 43
+
+
+ 2326 01b6 6C6F6E67 		.ascii	"long int\000"
+ 2326      20696E74 
+ 2326      00
+ 2327              	.LASF0:
+ 2328 01bf 7369676E 		.ascii	"signed char\000"
+ 2328      65642063 
+ 2328      68617200 
+ 2329              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.9.3 20150303 (release) [ARM/embedded-4_9-br

@@ -1,5 +1,5 @@
 -- Project:   C:\Users\Patrick\Documents\GitHub\PSoC 5LP FIles\C-CAN_PSoC_DevKit\Bootloader.cydsn\Bootloader.cyprj
--- Generated: 09/01/2016 00:46:32
+-- Generated: 10/08/2016 17:14:00
 -- PSoC Creator  3.3 CP3
 
 ENTITY Bootloader IS

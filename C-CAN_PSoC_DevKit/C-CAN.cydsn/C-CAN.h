@@ -22,20 +22,12 @@
 #define CLOCK_FREQ BCLK__BUS_CLK__HZ
 #define INTERRUPT_FREQ 50000u
 #define TRANSMIT_BUFFER_SIZE  80
-#define EOM_CR        0x0D    //message separator char (\r)
-#define EOM_LF        0x0A    //message separator char (\n)
-
     
 
-typedef unsigned char bool;
+typedef unsigned char bool; //C doesn't have a boolean type by default
 
 
-
-
-
-
-
-typedef struct Sensors {
+typedef struct Sensors { //Struct that holds all necessary data for a sensor
     char name[17];
     uint16 data[BUFF];
     uint32 accumulator;
@@ -47,18 +39,18 @@ typedef struct Sensors {
     uint16 rate;
 }Sensor;
 
-typedef struct Pots {
+typedef struct Pots { //Pot objects inherit Sensor variables
     Sensor sensor;
     int16 mV;
 }Pot;
 
-typedef struct Encoders {
+typedef struct Encoders { //Encoder objects inherit Sensor variables
     Sensor sensor;
     float accumulator;
     float rpm;
 }Encoder;
 
-Pot zero;
+Pot zero; //Each C-CAN is set up to read 6 analog pots and 2 encoders
 Pot one;
 Pot two;
 Pot three;
@@ -67,7 +59,7 @@ Pot five;
 Encoder left;
 Encoder right;
 
-static bool temp_enable[8];
+static bool temp_enable[8]; //Holds previous enable configuration during config()
 
 uint8 TxMessage1[8];
 uint8 RxMessage1[8];

@@ -6,6 +6,8 @@
   <file name="C:\Users\Patrick\Documents\GitHub\PSoC 5LP FIles\C-CAN_PSoC_DevKit\C-CAN.cydsn\codegentemp\config.hex" value="NONE;" />
   <file name="C:\Users\Patrick\Documents\GitHub\PSoC 5LP FIles\C-CAN_PSoC_DevKit\C-CAN.cydsn\codegentemp\protect.hex" value="NONE;" />
   <file name="C:\Users\Patrick\Documents\GitHub\PSoC 5LP FIles\C-CAN_PSoC_DevKit\C-CAN.cydsn\codegentemp\eeprom.hex" value="NONE;" />
+  <file name="C:\Users\Patrick\Documents\GitHub\PSoC 5LP FIles\C-CAN_PSoC_DevKit\C-CAN.cydsn\codegentemp\cybootloader.icf" value="NONE;" />
+  <file name="C:\Users\Patrick\Documents\GitHub\PSoC 5LP FIles\C-CAN_PSoC_DevKit\C-CAN.cydsn\codegentemp\cybootloader.c" value="ARM_C_FILE;" />
   <file name="C:\Users\Patrick\Documents\GitHub\PSoC 5LP FIles\C-CAN_PSoC_DevKit\C-CAN.cydsn\codegentemp\cymetadata.c" value="ARM_C_FILE;" />
   <file name="C:\Users\Patrick\Documents\GitHub\PSoC 5LP FIles\C-CAN_PSoC_DevKit\C-CAN.cydsn\codegentemp\cydevice.h" value="NONE;" />
   <file name="C:\Users\Patrick\Documents\GitHub\PSoC 5LP FIles\C-CAN_PSoC_DevKit\C-CAN.cydsn\codegentemp\cydevicegnu.inc" value="NONE;" />
@@ -89,6 +91,8 @@
   <file name="C:\Users\Patrick\Documents\GitHub\PSoC 5LP FIles\C-CAN_PSoC_DevKit\C-CAN.cydsn\codegentemp\five.h" value="NONE;five" />
   <file name="C:\Users\Patrick\Documents\GitHub\PSoC 5LP FIles\C-CAN_PSoC_DevKit\C-CAN.cydsn\codegentemp\Em_EEPROM.c" value="ARM_C_FILE;Em_EEPROM" />
   <file name="C:\Users\Patrick\Documents\GitHub\PSoC 5LP FIles\C-CAN_PSoC_DevKit\C-CAN.cydsn\codegentemp\Em_EEPROM.h" value="NONE;Em_EEPROM" />
+  <file name="C:\Users\Patrick\Documents\GitHub\PSoC 5LP FIles\C-CAN_PSoC_DevKit\C-CAN.cydsn\codegentemp\Bootloadable_1.c" value="ARM_C_FILE;Bootloadable_1" />
+  <file name="C:\Users\Patrick\Documents\GitHub\PSoC 5LP FIles\C-CAN_PSoC_DevKit\C-CAN.cydsn\codegentemp\Bootloadable_1.h" value="NONE;Bootloadable_1" />
   <file name="C:\Users\Patrick\Documents\GitHub\PSoC 5LP FIles\C-CAN_PSoC_DevKit\C-CAN.cydsn\codegentemp\UART_1_IntClock.c" value="ARM_C_FILE;UART_1_IntClock" />
   <file name="C:\Users\Patrick\Documents\GitHub\PSoC 5LP FIles\C-CAN_PSoC_DevKit\C-CAN.cydsn\codegentemp\UART_1_IntClock.h" value="NONE;UART_1_IntClock" />
   <file name="C:\Users\Patrick\Documents\GitHub\PSoC 5LP FIles\C-CAN_PSoC_DevKit\C-CAN.cydsn\codegentemp\ADC_SAR_1_IRQ.c" value="ARM_C_FILE;ADC_SAR_1_IRQ" />

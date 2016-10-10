@@ -25,7 +25,7 @@
       <Tool Name="postbuild" Command="" Options="" />
     </Toolchain>
   </Toolchains>
-  <Project Name="C-CAN" Path="C:\Users\Patrick\Documents\GitHub\PSoC 5LP FIles\C-CAN_PSoC_DevKit\C-CAN.cydsn" Version="5.40" Type="Normal">
+  <Project Name="C-CAN" Path="C:\Users\Patrick\Documents\GitHub\PSoC 5LP FIles\C-CAN_PSoC_DevKit\C-CAN.cydsn" Version="5.40" Type="Bootloadable">
     <CMSIS_SVD_File>C-CAN.svd</CMSIS_SVD_File>
     <Datasheet />
     <LinkerFiles>
@@ -148,6 +148,10 @@
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\rightEncTimer.c</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\rightEncTimer.h</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\rightEncTimer_PM.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\cybootloader.icf</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\cybootloader.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\Bootloadable_1.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\Bootloadable_1.h</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\two_aliases.h</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\two.c</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\two.h</File>

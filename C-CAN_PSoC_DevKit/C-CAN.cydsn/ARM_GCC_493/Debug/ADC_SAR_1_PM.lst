@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccRdoFCl.s 			page 1
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc52SUEu.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccRdoFCl.s 			page 1
   25:.\Generated_Source\PSoC5/ADC_SAR_1_PM.c **** {
   26:.\Generated_Source\PSoC5/ADC_SAR_1_PM.c ****     ADC_SAR_1_DISABLED
   27:.\Generated_Source\PSoC5/ADC_SAR_1_PM.c **** };
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccRdoFCl.s 			page 2
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc52SUEu.s 			page 2
 
 
   28:.\Generated_Source\PSoC5/ADC_SAR_1_PM.c **** 
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccRdoFCl.s 			page 1
   53:.\Generated_Source\PSoC5/ADC_SAR_1_PM.c **** *
   54:.\Generated_Source\PSoC5/ADC_SAR_1_PM.c **** * Summary:
   55:.\Generated_Source\PSoC5/ADC_SAR_1_PM.c **** *  Restores the current user configuration.
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccRdoFCl.s 			page 3
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc52SUEu.s 			page 3
 
 
   56:.\Generated_Source\PSoC5/ADC_SAR_1_PM.c **** *
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccRdoFCl.s 			page 1
   81:.\Generated_Source\PSoC5/ADC_SAR_1_PM.c **** *
   82:.\Generated_Source\PSoC5/ADC_SAR_1_PM.c **** * Return:
   83:.\Generated_Source\PSoC5/ADC_SAR_1_PM.c **** *  None.
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccRdoFCl.s 			page 4
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc52SUEu.s 			page 4
 
 
   84:.\Generated_Source\PSoC5/ADC_SAR_1_PM.c **** *
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccRdoFCl.s 			page 1
  124              		.loc 1 102 0
  125 002e FFF7FEFF 		bl	ADC_SAR_1_Stop
  126 0032 02E0     		b	.L3
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccRdoFCl.s 			page 5
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc52SUEu.s 			page 5
 
 
  127              	.L4:
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccRdoFCl.s 			page 1
  132:.\Generated_Source\PSoC5/ADC_SAR_1_PM.c **** void ADC_SAR_1_Wakeup(void)
  133:.\Generated_Source\PSoC5/ADC_SAR_1_PM.c **** {
  152              		.loc 1 133 0
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccRdoFCl.s 			page 6
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc52SUEu.s 			page 6
 
 
  153              		.cfi_startproc
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccRdoFCl.s 			page 1
  196 000a 04       		.byte	0x4
  197 000b 01       		.uleb128 0x1
  198 000c 4F000000 		.4byte	.LASF19
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccRdoFCl.s 			page 7
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc52SUEu.s 			page 7
 
 
  199 0010 01       		.byte	0x1
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccRdoFCl.s 			page 1
  253 007a EE000000 		.4byte	.LASF9
  254 007e 02       		.uleb128 0x2
  255 007f 08       		.byte	0x8
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccRdoFCl.s 			page 8
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc52SUEu.s 			page 8
 
 
  256 0080 04       		.byte	0x4
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccRdoFCl.s 			page 1
  310 00f0 0A       		.uleb128 0xa
  311 00f1 DD000000 		.4byte	.LASF18
  312 00f5 01       		.byte	0x1
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccRdoFCl.s 			page 9
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc52SUEu.s 			page 9
 
 
  313 00f6 84       		.byte	0x84
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccRdoFCl.s 			page 1
  367 0026 08       		.uleb128 0x8
  368 0027 00       		.byte	0
  369 0028 00       		.byte	0
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccRdoFCl.s 			page 10
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc52SUEu.s 			page 10
 
 
  370 0029 04       		.uleb128 0x4
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccRdoFCl.s 			page 1
  424 005f 0B       		.uleb128 0xb
  425 0060 3B       		.uleb128 0x3b
  426 0061 0B       		.uleb128 0xb
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccRdoFCl.s 			page 11
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc52SUEu.s 			page 11
 
 
  427 0062 49       		.uleb128 0x49
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccRdoFCl.s 			page 1
  481 009a 0E       		.uleb128 0xe
  482 009b 3A       		.uleb128 0x3a
  483 009c 0B       		.uleb128 0xb
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccRdoFCl.s 			page 12
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc52SUEu.s 			page 12
 
 
  484 009d 3B       		.uleb128 0x3b
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccRdoFCl.s 			page 1
  528      5F50536F 
  528      435F4465 
  528      764B6974 
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccRdoFCl.s 			page 13
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc52SUEu.s 			page 13
 
 
  529              	.LASF19:
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccRdoFCl.s 			page 1
  549              	.LASF23:
  550 014b 4144435F 		.ascii	"ADC_SAR_1_backup\000"
  550      5341525F 
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccRdoFCl.s 			page 14
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc52SUEu.s 			page 14
 
 
  550      315F6261 
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccRdoFCl.s 			page 1
  572      20696E74 
  572      00
  573              	.LASF22:
-ARM GAS  C:\Users\Patrick\AppData\Local\Temp\ccRdoFCl.s 			page 15
+ARM GAS  C:\Users\Patrick\AppData\Local\Temp\cc52SUEu.s 			page 15
 
 
  574 0211 656E6162 		.ascii	"enableState\000"

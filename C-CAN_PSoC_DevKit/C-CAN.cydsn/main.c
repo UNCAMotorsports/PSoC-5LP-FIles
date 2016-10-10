@@ -13,7 +13,7 @@
 /*Debug Defines*/
 //#define DEBUG_MULTIRATE
 
-//#define LOOP
+#define LOOP
 
 /* Project Defines */
 
@@ -48,12 +48,6 @@ CY_ISR(SysTick_ISR)
 
 int main()
 {
-    /* Variable to store UART received character */
-    uint8 Ch;
-    /* Flags used to store transmit data commands */
-    uint8 ContinuouslySendData;
-    uint8 SendSingleByte;
-    /* Transmit Buffer */
     char TransmitBuffer[TRANSMIT_BUFFER_SIZE];
 
     /* Start the components */
@@ -67,14 +61,6 @@ int main()
     AMux_1_FastSelect(0);
     CAN_1_Start();
     
-    PotInit(&zero);
-    PotInit(&one);
-    PotInit(&two);
-    PotInit(&three);
-    PotInit(&four);
-    PotInit(&five);
-    EncoderInit(&left);
-    EncoderInit(&right);
     #ifdef LOOP
     /*Point the Systick vector to the ISR in this file */
     CyIntSetSysVector(SYSTICK_INTERRUPT_VECTOR_NUMBER, SysTick_ISR);
@@ -89,8 +75,15 @@ int main()
 
     
     /* Initialize Variables */
-    ContinuouslySendData = FALSE;
-    SendSingleByte = FALSE;
+    
+    PotInit(&zero);
+    PotInit(&one);
+    PotInit(&two);
+    PotInit(&three);
+    PotInit(&four);
+    PotInit(&five);
+    EncoderInit(&left);
+    EncoderInit(&right);
     
     SensorEnable(&zero.sensor, TRUE);
     SensorEnable(&one.sensor, TRUE);
@@ -101,14 +94,14 @@ int main()
     SensorEnable(&left.sensor, TRUE);
     SensorEnable(&right.sensor, TRUE);
     
-    SensorSet(&zero.sensor, 0, 50, 1);
-    SensorSet(&one.sensor, 1, 50, 1);
-    SensorSet(&two.sensor, 2, 1, 1);
+    SensorSet(&zero.sensor,  0, 50, 1); //sensor, number, window, rate.
+    SensorSet(&one.sensor,   1, 50, 1);
+    SensorSet(&two.sensor,   2, 1, 1);
     SensorSet(&three.sensor, 3, 1, 1);
-    SensorSet(&four.sensor, 4, 1, 1);
-    SensorSet(&five.sensor, 5, 1, 1);
-    SensorSet(&left.sensor, 2, 10, 1);
-    SensorSet(&right.sensor, 3, 10, 1);
+    SensorSet(&four.sensor,  4, 1, 1);
+    SensorSet(&five.sensor,  5, 1, 1);
+    SensorSet(&left.sensor,  6, 10, 1);
+    SensorSet(&right.sensor, 7, 10, 1);
             
     
     
